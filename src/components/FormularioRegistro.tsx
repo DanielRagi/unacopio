@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { useActionState, useEffect, useMemo, useState } from 'react';
 import { SelectorCategorias } from './SelectorCategorias';
+import { SelectorHorario } from './SelectorHorario';
 import { registrarPunto } from '@/app/registrar/acciones';
 import { ESTADO_INICIAL } from '@/lib/estados';
 import { clienteNavegador } from '@/lib/supabase/cliente';
@@ -175,14 +176,12 @@ export function FormularioRegistro({
       </Bloque>
 
       <Bloque titulo="Cuándo reciben">
-        <Campo etiqueta="Días y horas" error={errores.horario_texto}>
-          <input
-            name="horario_texto"
-            required
-            placeholder="Lunes a sábado de 8am a 6pm"
-            className={CLASE_ENTRADA}
-          />
-        </Campo>
+        {errores.horarios && (
+          <p className="text-sm font-medium text-red-700 dark:text-red-400">
+            {errores.horarios[0]}
+          </p>
+        )}
+        <SelectorHorario />
         <div className="grid gap-4 sm:grid-cols-2">
           <Campo etiqueta="Desde" opcional error={errores.fecha_inicio}>
             <input type="date" name="fecha_inicio" className={CLASE_ENTRADA} />

@@ -1,3 +1,4 @@
+import { leerHorarios, type Franja } from './horarios';
 import { clienteServidor } from './supabase/servidor';
 import type {
   Categoria, Departamento, EstadoPunto, Municipio, NivelCategoria, PuntoPublico,
@@ -162,7 +163,7 @@ export async function listarPuntosModeracion(estado: EstadoPunto): Promise<Punto
 
 export async function contarPorEstado(): Promise<Record<string, number>> {
   const supabase = await clienteServidor();
-  const estados: EstadoPunto[] = ['pendiente', 'publicado', 'cerrado', 'rechazado'];
+  const estados: EstadoPunto[] = ['pendiente', 'publicado', 'lleno', 'cerrado', 'rechazado'];
 
   const conteos = await Promise.all(
     estados.map(async (estado) => {
@@ -175,6 +176,78 @@ export async function contarPorEstado(): Promise<Record<string, number>> {
   );
 
   return Object.fromEntries(conteos);
+}
+
+/* ------------------------------------------------------- ronda de llamadas */
+
+/** Horas tras las cuales un punto vuelve a la cola de llamadas. */
+export const HORAS_FRESCURA = 48;
+
+/** Minutos que un punto queda reservado tras un intento, para no llamar doble. */
+const MINUTOS_RESERVA = 30;
+
+export interface PuntoPorLlamar {
+  id: string;
+  nombre: string;
+  estado: EstadoPunto;
+  telefono: string;
+  whatsapp: boolean;
+  responsable_nombre: string;
+  correo: string | null;
+  ultima_verificacion: string | null;
+  ultimo_intento_llamada: string | null;
+  intentos_fallidos: number;
+  municipios: { nombre: string } | null;
+  departamentos: { nombre: string } | null;
+}
+
+/**
+ * A quién hay que llamar ahora.
+ *
+ * Lo que lleva más tiempo sin confirmarse va primero, y lo que nunca se ha
+ * confirmado va antes que todo. Los puntos que alguien acaba de intentar quedan
+ * fuera un rato: con varios voluntarios llamando a la vez, lo normal sería que
+ * dos marquen el mismo número con cinco minutos de diferencia.
+ */
+export async function listarPorLlamar(): Promise<PuntoPorLlamar[]> {
+  const supabase = await clienteServidor();
+
+  const limite = new Date(Date.now() - HORAS_FRESCURA * 3_600_000).toISOString();
+  const reserva = new Date(Date.now() - MINUTOS_RESERVA * 60_000).toISOString();
+
+  const { data, error } = await supabase
+    .from('puntos')
+    .select(`
+      id, nombre, estado, telefono, whatsapp, responsable_nombre, correo,
+      ultima_verificacion, ultimo_intento_llamada, intentos_fallidos,
+      municipios(nombre), departamentos(nombre)
+    `)
+    .in('estado', ['publicado', 'lleno'])
+    .or(`ultima_verificacion.is.null,ultima_verificacion.lt.${limite}`)
+    .or(`ultimo_intento_llamada.is.null,ultimo_intento_llamada.lt.${reserva}`)
+    .order('ultima_verificacion', { ascending: true, nullsFirst: true })
+    .limit(100);
+
+  if (error) throw new Error(`No se pudo cargar la ronda de llamadas: ${error.message}`);
+  return (data ?? []) as unknown as PuntoPorLlamar[];
+}
+
+export async function contarPorLlamar(): Promise<number> {
+  return (await listarPorLlamar()).length;
+}
+
+export interface Duplicado {
+  id: string;
+  nombre: string;
+  estado: EstadoPunto;
+  metros: number;
+}
+
+/** Puntos parecidos y cerca. Solo responde con sesión de moderador. */
+export async function duplicadosDe(puntoId: string): Promise<Duplicado[]> {
+  const supabase = await clienteServidor();
+  const { data } = await supabase.rpc('posibles_duplicados', { p_punto_id: puntoId });
+  return (data ?? []) as Duplicado[];
 }
 
 export interface Solicitud {
@@ -226,6 +299,33 @@ export async function contarSolicitudes(): Promise<number> {
     .select('id', { count: 'exact', head: true })
     .eq('resuelto', false);
   return count ?? 0;
+}
+
+/** El punto con todo lo editable, incluidas las franjas de horario ya validadas. */
+export async function obtenerPuntoParaEditar(id: string) {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase
+    .from('puntos')
+    .select(`
+      id, nombre, tipo_organizacion, departamento_codigo, municipio_codigo,
+      direccion, barrio, referencia, responsable_nombre, telefono, whatsapp,
+      telefono_publico, correo, horarios, fecha_inicio, fecha_fin,
+      recibe_voluntarios, notas,
+      punto_categoria(categoria_slug, nivel)
+    `)
+    .eq('id', id)
+    .maybeSingle();
+
+  if (error) throw new Error(`No se pudo cargar el punto: ${error.message}`);
+  if (!data) return null;
+
+  return {
+    ...data,
+    horarios: leerHorarios(data.horarios) ?? [],
+  } as Omit<typeof data, 'horarios'> & {
+    horarios: Franja[];
+    punto_categoria: { categoria_slug: string; nivel: NivelCategoria }[];
+  };
 }
 
 /** Devuelve el perfil si quien está en sesión es del equipo. Si no, null. */

@@ -84,9 +84,18 @@ export const esquemaRegistro = z
       .optional()
       .transform((v) => (v === '' ? undefined : v)),
 
-    horario_texto: z.string().trim()
-      .min(4, 'Escribe los días y horas de atención')
-      .max(200),
+    // El horario llega estructurado desde el selector; el texto legible se
+    // genera después, en el servidor, para que no puedan contradecirse.
+    horarios: z
+      .array(
+        z.object({
+          dia: z.number().int().min(0).max(6),
+          desde: z.string().regex(/^\d{2}:\d{2}$/),
+          hasta: z.string().regex(/^\d{2}:\d{2}$/),
+        }).refine((f) => f.hasta > f.desde, 'La hora de cierre debe ser posterior a la de apertura'),
+      )
+      .min(1, 'Marca al menos un día de atención')
+      .max(21),
     fecha_inicio: fechaOpcional,
     fecha_fin: fechaOpcional,
 
@@ -123,6 +132,17 @@ export function leerFormulario(formData: FormData): Record<string, unknown> {
     return typeof v === 'string' ? v : '';
   };
 
+  // El horario viaja como JSON en un campo oculto. Si llega roto se deja pasar
+  // vacío y el esquema da el error en español, en vez de reventar acá.
+  const leerJson = (crudo: string): unknown => {
+    if (!crudo) return [];
+    try {
+      return JSON.parse(crudo);
+    } catch {
+      return [];
+    }
+  };
+
   const categorias: { slug: string; nivel: NivelCategoria }[] = [];
   for (const [campo, valor] of formData.entries()) {
     if (!campo.startsWith('cat_') || typeof valor !== 'string' || valor === '') continue;
@@ -146,7 +166,7 @@ export function leerFormulario(formData: FormData): Record<string, unknown> {
     whatsapp: formData.get('whatsapp') !== null,
     telefono_publico: formData.get('telefono_publico') !== null,
     correo: texto('correo'),
-    horario_texto: texto('horario_texto'),
+    horarios: leerJson(texto('horarios')),
     fecha_inicio: texto('fecha_inicio'),
     fecha_fin: texto('fecha_fin'),
     recibe_voluntarios: formData.get('recibe_voluntarios') !== null,

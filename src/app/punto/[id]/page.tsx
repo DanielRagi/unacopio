@@ -4,7 +4,9 @@ import { notFound } from 'next/navigation';
 import { Encabezado } from '@/components/Encabezado';
 import { ListaCategorias } from '@/components/ListaCategorias';
 import { PieDePagina } from '@/components/PieDePagina';
+import { SelloAbierto } from '@/components/SelloAbierto';
 import { SelloFrescura } from '@/components/SelloFrescura';
+import { SelloLleno } from '@/components/SelloLleno';
 import { obtenerPunto } from '@/lib/datos';
 import {
   enlaceCompartir, enlaceGoogleMaps, enlaceLlamada, enlaceWaze, enlaceWhatsapp, urlPunto,
@@ -43,6 +45,12 @@ export default async function PaginaPunto({ params }: PageProps<'/punto/[id]'>) 
       <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-7 px-5 py-8">
         <header className="flex flex-col gap-2.5">
           <div className="flex flex-wrap items-center gap-2">
+            {punto.estado === 'lleno' && <SelloLleno grande />}
+            <SelloAbierto
+              horarios={punto.horarios}
+              fechaInicio={punto.fecha_inicio}
+              fechaFin={punto.fecha_fin}
+            />
             {punto.entidad_oficial && (
               <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-xs font-semibold text-white">
                 Entidad oficial
@@ -50,6 +58,13 @@ export default async function PaginaPunto({ params }: PageProps<'/punto/[id]'>) 
             )}
             <SelloFrescura ultimaVerificacion={punto.ultima_verificacion} />
           </div>
+
+          {punto.estado === 'lleno' && (
+            <p className="rounded-lg border border-amber-500/40 bg-amber-500/10 p-3 text-sm text-amber-900 dark:text-amber-200">
+              Este punto nos avisó que por ahora no puede recibir más. Antes de
+              ir, llámalos o busca otro punto cerca.
+            </p>
+          )}
           <h1 className="text-3xl font-bold tracking-tight text-balance">{punto.nombre}</h1>
           <p className="text-black/60 dark:text-white/60">
             {TIPOS_ORGANIZACION[punto.tipo_organizacion]} · {punto.municipio},{' '}

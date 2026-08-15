@@ -73,10 +73,10 @@ export function FilaSolicitud({ solicitud }: { solicitud: Solicitud }) {
           </button>
         </form>
         <Link
-          href={`/admin?estado=${punto?.estado ?? 'publicado'}`}
-          className="text-sm underline underline-offset-4"
+          href={`/admin/punto/${solicitud.punto_id}`}
+          className="text-sm font-medium underline underline-offset-4"
         >
-          Ir a la ficha para editarla
+          Aplicar el cambio
         </Link>
       </div>
     </li>

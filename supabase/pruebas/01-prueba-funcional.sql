@@ -31,13 +31,33 @@ select count(*) as columnas_token
 from information_schema.columns
 where table_name = 'puntos' and column_name like '%token%';
 
-\echo '--- registrar_punto'
+\echo '--- registrar_punto, ahora con horario estructurado'
 select registrar_punto(
   'Parroquia San José', 'iglesia', '17', '17001', 'Calle 12 # 4-30',
-  5.0703, -75.5138, 'María Gómez', '+573001112233', 'Lun a Sáb 8am-6pm',
+  5.0703, -75.5138, 'María Gómez', '+573001112233',
+  'Lunes a sábado de 8:00 a.m. a 6:00 p.m.',
   '[{"slug":"agua_embotellada","nivel":"alta"},
-    {"slug":"ropa_usada_buen_estado","nivel":"no_recibe"}]'::jsonb
+    {"slug":"ropa_usada_buen_estado","nivel":"no_recibe"}]'::jsonb,
+  '[{"dia":1,"desde":"08:00","hasta":"18:00"},
+    {"dia":2,"desde":"08:00","hasta":"18:00"}]'::jsonb
 ) as punto_id \gset
+
+select jsonb_array_length(horarios) as franjas_guardadas,
+       horarios -> 0 ->> 'desde' as primera_apertura
+from puntos where id = :'punto_id';
+
+\echo '--- un horario que no sea lista debe ser rechazado'
+do $$
+begin
+  perform registrar_punto('Malo','ong','17','17001','x', 5.07, -75.51,
+                          'y','+573001112233','z','[]'::jsonb, '{"dia":1}'::jsonb);
+  raise exception 'FALLA: acepto un horario que no era una lista';
+exception
+  when others then
+    if sqlerrm like '%lista de franjas%' then raise notice 'OK: rechazo el horario mal formado';
+    else raise; end if;
+end
+$$;
 
 select estado, entidad_oficial, origen,
        round(lat::numeric, 4) as lat, round(lng::numeric, 4) as lng
@@ -134,6 +154,33 @@ select estado, reportes_abiertos from puntos where id = :'punto_id';
 set role anon;
 select count(*) as visibles_final from puntos_publicos;
 reset role;
+
+\echo '--- un punto lleno SI se ve, pero de ultimo'
+update puntos set estado = 'publicado', reportes_abiertos = 0 where id = :'punto_id';
+select registrar_punto(
+  'Coliseo Municipal', 'alcaldia', '17', '17001', 'Carrera 20 # 30-10',
+  5.0600, -75.5100, 'Juan Perez', '+573009998877', 'Todos los dias',
+  '[{"slug":"agua_embotellada","nivel":"si"}]'::jsonb
+) as lleno_id \gset
+update puntos set estado = 'lleno' where id = :'lleno_id';
+
+set role anon;
+select (punto->>'nombre') as nombre, (punto->>'estado') as estado
+from buscar_puntos(p_municipio => '17001');
+reset role;
+
+\echo '--- duplicados: un punto a menos de 200 m del primero'
+select registrar_punto(
+  'Parroquia San Jose (repetido)', 'iglesia', '17', '17001', 'Calle 12 # 4-32',
+  5.0704, -75.5139, 'Otra persona', '+573001110000', 'Lun a Vie',
+  '[{"slug":"agua_embotellada","nivel":"si"}]'::jsonb
+) as duplicado_id \gset
+
+select nombre, estado, round(metros::numeric) as metros
+from posibles_duplicados(:'duplicado_id');
+
+\echo '--- y el coliseo, que esta a mas de 200 m, no aparece como duplicado'
+select count(*) as duplicados_del_coliseo from posibles_duplicados(:'lleno_id');
 
 \echo '--- reportar un punto inexistente falla'
 do $$

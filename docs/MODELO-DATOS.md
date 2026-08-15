@@ -31,14 +31,16 @@ El registro central. Un punto de acopio.
 | `whatsapp` | `boolean` | si ese número recibe WhatsApp |
 | `telefono_publico` | `boolean` | consentimiento Habeas Data; si es `false`, solo lo ve moderación |
 | `correo` | `text null` | interno, para el enlace de edición y el recordatorio de 48h; nunca se publica. Nulable en la base por las cargas de moderación e importación, pero **obligatorio en el formulario público**: desde D8 es el único canal de vuelta hacia el responsable |
-| `horario_texto` | `text` | "Lun a Sáb 8am–6pm, domingos 9am–1pm" — v1 en texto libre |
-| `horarios` | `jsonb null` | estructurado, se llena en F3 para el badge "Abierto ahora" |
+| `horario_texto` | `text` | lo que lee la persona. **Se genera** a partir de `horarios`, no se escribe aparte: si el texto y las franjas pudieran contradecirse, el badge diría una cosa y la ficha otra |
+| `horarios` | `jsonb null` | franjas estructuradas: `[{"dia":1,"desde":"08:00","hasta":"18:00"}]`, con `dia` 0=domingo…6=sábado, igual que `Date.getDay()`. De aquí sale el badge "Abierto ahora", calculado en hora de Colombia. Null en los registros viejos y en las cargas de moderación: sin franjas no se muestra badge |
 | `fecha_inicio` | `date null` | |
 | `fecha_fin` | `date null` | campañas con fecha de cierre |
 | `recibe_voluntarios` | `boolean` | |
 | `notas` | `text null` | "Tenemos parqueadero", "Se puede descargar en carro" |
 | `estado` | `enum` | `pendiente`, `publicado`, `rechazado`, `cerrado`, `lleno` |
-| `ultima_verificacion` | `timestamptz null` | la fija moderación al confirmar por teléfono |
+| `ultima_verificacion` | `timestamptz null` | la fija moderación al confirmar por teléfono. Es la fuente del semáforo de frescura |
+| `ultimo_intento_llamada` | `timestamptz null` | último intento de llamada, **haya contestado o no**. Saca el punto de la cola por 30 minutos para que dos voluntarios no marquen el mismo número |
+| `intentos_fallidos` | `int` | llamadas seguidas sin respuesta; se reinicia al contestar |
 | `verificado_por` | `uuid null` → `perfiles.id` | |
 | `entidad_oficial` | `boolean` | banda verde; solo lo activa moderación |
 | `reportes_abiertos` | `int` | contador desnormalizado, dispara despublicación |
@@ -143,10 +145,14 @@ público entra por una vista y tres funciones.
 
 | Puerta | Quién | Qué hace |
 |---|---|---|
-| Vista `puntos_publicos` | anónimo | Solo `estado = 'publicado'`. Enmascara `telefono` cuando `telefono_publico = false`, y nunca expone `correo`. Trae las categorías ya agregadas en un `jsonb`, para resolver el listado en una sola consulta. |
+| Vista `puntos_publicos` | anónimo | Deja pasar `publicado` y `lleno` (ver D11), y expone `estado` para poder marcarlos. Enmascara `telefono` cuando `telefono_publico = false`, y nunca expone `correo`. Trae las categorías ya agregadas en un `jsonb`, para resolver el listado en una sola consulta. |
 | `registrar_punto(...)` | anónimo | Inserta forzando `estado = 'pendiente'` y `entidad_oficial = false` — el formulario no puede autopublicarse ni autocertificarse. Valida que la coordenada caiga dentro de Colombia. Devuelve el `uuid` del punto. |
 | `buscar_puntos(...)` | anónimo | La única puerta del listado y del mapa. Filtra por departamento, municipio y categoría, y —si le pasan coordenadas— por radio, ordenando por distancia. Sin coordenadas ordena por verificación más reciente. El filtro por categoría solo cuenta si el punto la recibe: un `no_recibe` es justamente la razón para no mostrarlo. |
 | `reportar_punto(...)` | anónimo | Recibe solicitudes y reportes. Ignora repeticiones del mismo `ip_hash` en una hora. Al tercer reporte **de terceros** despublica el punto; las solicitudes con `es_responsable` no suman a ese contador. |
+| `posibles_duplicados(...)` | moderación | Puntos del mismo municipio a menos de 200 m. Va con `SECURITY INVOKER` a propósito: consulta la tabla base, así que RLS lo deja vacío para cualquiera que no sea del equipo. |
+
+La búsqueda ordena los puntos `lleno` de últimos: siguen sirviendo como
+información —evitan un viaje— pero no deberían ser la primera opción de nadie.
 
 Las tres son `security definer` con `search_path` fijo.
 

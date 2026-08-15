@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { alternarEntidadOficial, cambiarEstado, marcarVerificado } from '@/app/admin/acciones';
 import { enlaceLlamada, enlaceWhatsapp } from '@/lib/enlaces';
 import { haceCuanto, TIPOS_ORGANIZACION } from '@/lib/textos';
-import type { PuntoModeracion } from '@/lib/datos';
+import type { Duplicado, PuntoModeracion } from '@/lib/datos';
 
 /**
  * Una fila de la cola de moderación.
@@ -14,12 +14,41 @@ import type { PuntoModeracion } from '@/lib/datos';
  * Los botones son formularios normales contra Server Actions: el panel funciona
  * sin JavaScript, que ayuda cuando se modera desde un celular en la calle.
  */
-export function FilaModeracion({ punto }: { punto: PuntoModeracion }) {
+export function FilaModeracion({
+  punto,
+  duplicados = [],
+}: {
+  punto: PuntoModeracion;
+  duplicados?: Duplicado[];
+}) {
   const urgentes = punto.punto_categoria.filter((c) => c.nivel === 'alta');
   const rechazadas = punto.punto_categoria.filter((c) => c.nivel === 'no_recibe');
 
   return (
     <li className="flex flex-col gap-4 rounded-xl border border-black/10 p-4 dark:border-white/15">
+      {/* Cuando un punto se vuelve conocido, la misma parroquia la registran tres
+          personas distintas con tres nombres distintos. Verlo antes de publicar
+          sale más barato que fusionar fichas después. */}
+      {duplicados.length > 0 && (
+        <div className="rounded-lg border border-amber-500/40 bg-amber-500/10 p-3 text-sm">
+          <p className="font-semibold text-amber-900 dark:text-amber-200">
+            ¿Será el mismo punto? Hay {duplicados.length === 1 ? 'otro' : 'otros'} muy cerca:
+          </p>
+          <ul className="mt-1 flex flex-col gap-0.5">
+            {duplicados.map((d) => (
+              <li key={d.id}>
+                <Link href={`/punto/${d.id}`} className="underline underline-offset-2">
+                  {d.nombre}
+                </Link>{' '}
+                <span className="opacity-70">
+                  · {d.estado} · a {Math.round(d.metros)} m
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+
       <div className="flex flex-col gap-1">
         <div className="flex flex-wrap items-center gap-2">
           {punto.entidad_oficial && (
@@ -144,11 +173,14 @@ export function FilaModeracion({ punto }: { punto: PuntoModeracion }) {
           </button>
         </form>
 
+        <Link
+          href={`/admin/punto/${punto.id}`}
+          className="text-sm font-medium underline underline-offset-4"
+        >
+          Editar
+        </Link>
         {punto.estado === 'publicado' && (
-          <Link
-            href={`/punto/${punto.id}`}
-            className="text-sm underline underline-offset-4"
-          >
+          <Link href={`/punto/${punto.id}`} className="text-sm underline underline-offset-4">
             Ver ficha
           </Link>
         )}

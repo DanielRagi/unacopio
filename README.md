@@ -51,8 +51,10 @@ npm install
    | 3 | `supabase/migrations/0003_municipios_latlng.sql` |
    | 4 | `supabase/migrations/0004_sin_tokens_solicitudes.sql` |
    | 5 | `supabase/migrations/0005_buscar_puntos.sql` |
-   | 6 | `supabase/seed/0001_categorias.sql` |
-   | 7 | `supabase/seed/0002_municipios.sql` |
+   | 6 | `supabase/migrations/0006_llamadas_y_lleno.sql` |
+   | 7 | `supabase/migrations/0007_horarios_estructurados.sql` |
+   | 8 | `supabase/seed/0001_categorias.sql` |
+   | 9 | `supabase/seed/0002_municipios.sql` |
 
    Todo, menos `0001`, se puede volver a pegar completo sin romper nada. El
    editor de Supabase aborta la corrida entera cuando algo falla, así que poder
@@ -99,6 +101,9 @@ los catálogos ya se cargaron.
 | `npm run lint` | ESLint |
 | `npm run municipios` | Regenera `supabase/seed/0002_municipios.sql` desde DIVIPOLA |
 | `npm run db:probar` | Levanta un PostGIS en Docker, aplica todo el SQL y corre la prueba funcional |
+| `npm run db:verificar` | Comprueba el proyecto real: llaves, catálogos, RLS y qué migraciones están aplicadas |
+| `npm run probar:horarios` | Pruebas del cálculo de "abierto ahora" (zona horaria, jornadas partidas, fechas de campaña) |
+| `npm run tipos:scripts` | Chequeo de tipos de `scripts/`, que va aparte del proyecto |
 
 `npm run db:probar` es la red de seguridad del esquema: verifica que el formulario
 público no pueda autopublicarse, que `anon` no alcance la tabla base, que el

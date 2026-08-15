@@ -45,7 +45,7 @@ recibir el primer registro.
 - [x] `/punto/[id]` — ficha completa, con "Llamar", "WhatsApp", "Cómo llegar"
       (Google Maps / Waze) y "Compartir por WhatsApp"
 - [x] `/admin` — cola de moderación (Supabase Auth por correo)
-  - Publicar / rechazar / cerrar / marcar lleno / marcar «oficial»
+  - Publicar / rechazar / cerrar / marcar lleno / marcar «oficial» / editar
   - Publicar firma quién verificó y cuándo, y resuelve los reportes abiertos
   - Muestra correo y teléfono no publicable: es con eso que se llama a confirmar
 - [x] RLS activo en todas las tablas
@@ -78,14 +78,21 @@ Este es el problema real de estos directorios: a la semana la mitad de los punto
 ya cerró y nadie lo actualizó. El sitio pierde credibilidad y la gente vuelve a
 los audios de WhatsApp.
 
-- [ ] Semáforo de frescura: verde <24h, amarillo <72h, gris >72h ("puede estar desactualizado")
-- [ ] Recordatorio automático cada 48h al **correo** del responsable (nunca por
-      WhatsApp, ver D8):
-      "¿Siguen recibiendo? Sí / Cambió / Ya cerramos" — un click, sin login
-- [ ] Panel de moderación con cola priorizada: sin verificar hace más tiempo primero
-- [ ] Detección de duplicados: puntos a <100 m con nombre parecido
-- [ ] Horarios estructurados + badge "Abierto ahora"
-- [ ] Estado `lleno` — "hoy no reciben más, están saturados"
+- [x] Semáforo de frescura: verde <24h, amarillo <72h, gris >72h ("puede estar desactualizado")
+- [x] Ronda de llamadas en vez del recordatorio automático (ver D10): sin
+      proveedor de correo y sin WhatsApp saliente, la verificación la hace un
+      moderador llamando
+- [x] Cola "Por llamar": lo que lleva más de 48h sin confirmarse, de lo más viejo
+      a lo más nuevo, con reserva de 30 minutos para que dos voluntarios no
+      marquen el mismo número
+- [x] Detección de duplicados: puntos a menos de 200 m en el mismo municipio,
+      avisados en la cola de revisión antes de publicar
+- [x] Estado `lleno` visible: "hoy no reciben más", marcado y de último (ver D11)
+- [x] Horarios estructurados + badge "Abierto ahora", calculado en hora de
+      Colombia y con pruebas propias (ver D12)
+- [x] `/admin/punto/[id]` — edición completa desde moderación. Es la contraparte
+      de D9: si el público no edita, alguien tiene que poder aplicar lo que sale
+      de las llamadas y de la bandeja
 
 ## Fase 4 — Alcance y aliados (según cómo evolucione)
 

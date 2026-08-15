@@ -13,6 +13,13 @@ export type EstadoRegistro =
 
 export const ESTADO_INICIAL: EstadoRegistro = { estado: 'inicial' };
 
+export type EstadoEdicion =
+  | { estado: 'inicial' }
+  | { estado: 'error'; errores: Record<string, string[]>; mensaje?: string }
+  | { estado: 'guardado' };
+
+export const EDICION_INICIAL: EstadoEdicion = { estado: 'inicial' };
+
 export type EstadoSolicitud =
   | { estado: 'inicial' }
   | { estado: 'error'; mensaje: string }
