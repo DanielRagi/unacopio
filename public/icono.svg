@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="UnAcopio">
+  <rect width="512" height="512" rx="112" fill="#047857"/>
+  <!-- Una caja de donaciones abierta: es lo que la gente lleva al punto. -->
+  <path d="M128 224h256v168a24 24 0 0 1-24 24H152a24 24 0 0 1-24-24V224z" fill="#ffffff" opacity=".92"/>
+  <path d="M112 168h288a16 16 0 0 1 16 16v40H96v-40a16 16 0 0 1 16-16z" fill="#ffffff"/>
+  <path d="M232 224h48v72l-24-20-24 20v-72z" fill="#047857"/>
+  <path d="M256 152c-18-34-46-48-72-40-24 8-30 34-14 52 14 16 46 26 86 30zm0 0c18-34 46-48 72-40 24 8 30 34 14 52-14 16-46 26-86 30z" fill="#ffffff" opacity=".55"/>
+</svg>

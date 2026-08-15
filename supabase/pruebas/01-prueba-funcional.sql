@@ -182,6 +182,79 @@ from posibles_duplicados(:'duplicado_id');
 \echo '--- y el coliseo, que esta a mas de 200 m, no aparece como duplicado'
 select count(*) as duplicados_del_coliseo from posibles_duplicados(:'lleno_id');
 
+\echo '--- slug de municipio: unico, sin tildes, y desempatado por departamento'
+select (select count(*) from municipios where slug is null)        as sin_slug,
+       (select count(distinct slug) from municipios)               as slugs_distintos,
+       (select slug from municipios where codigo = '05001')        as medellin,
+       (select slug from municipios where codigo = '11001')        as bogota,
+       (select count(*) from municipios where slug like '%-d-c%')  as slugs_feos,
+       (select count(*) from municipios where slug like '%-antioquia') as desempatados_antioquia;
+
+\echo '--- necesidades agregadas en Manizales (el coliseo esta lleno, no cuenta)'
+select slug, urgente, puntos from necesidades(p_municipio => '17001');
+
+\echo '--- municipios con puntos publicados'
+select slug, puntos from municipios_con_puntos();
+
+\echo '--- importar_punto exige sesion de moderador'
+do $$
+begin
+  set local role anon;
+  perform importar_punto('Copiado de internet','ong','05','05001','Calle 50',
+                         6.25, -75.56, 'Sin nombre', '+573000000000', 'Sin horario');
+  raise exception 'FALLA: anon pudo importar un punto';
+exception
+  when insufficient_privilege then raise notice 'OK: anon no puede ni ejecutar importar_punto';
+  when others then
+    if sqlerrm like '%Solo moderacion%' or sqlerrm like '%Solo moderación%'
+      then raise notice 'OK: importar_punto rechazo a quien no es moderador';
+    else raise; end if;
+end
+$$;
+
+\echo '--- importado por moderacion: entra pendiente, sin telefono publico y con fuente'
+-- Se finge una sesión de moderador: `es_moderador()` mira `auth.uid()`, que en
+-- el banco de pruebas es un stub que devuelve null.
+insert into auth.users (id, email)
+  values ('11111111-1111-1111-1111-111111111111', 'moderador@prueba.co')
+  on conflict do nothing;
+insert into perfiles (id, nombre, rol)
+  values ('11111111-1111-1111-1111-111111111111', 'Moderador de prueba', 'moderador')
+  on conflict do nothing;
+create or replace function auth.uid() returns uuid
+  language sql stable as $$ select '11111111-1111-1111-1111-111111111111'::uuid $$;
+
+-- Con parámetros nombrados: son 17 y posicionalmente es cuestión de tiempo
+-- que la fuente termine guardada en las notas.
+select importar_punto(
+  p_nombre              => 'Unidad Deportiva Atanasio Girardot',
+  p_tipo_organizacion   => 'alcaldia',
+  p_departamento_codigo => '05',
+  p_municipio_codigo    => '05001',
+  p_direccion           => 'Carrera 74 # 48-10',
+  p_lat                 => 6.2568,
+  p_lng                 => -75.5906,
+  p_responsable_nombre  => '',
+  p_telefono            => '+573001234567',
+  p_horario_texto       => '',
+  p_categorias          => '[{"slug":"agua_embotellada","nivel":"si"}]'::jsonb,
+  p_barrio              => 'Estadio',
+  p_fuente_nombre       => 'Lista publicada por la Alcaldía',
+  p_fuente_url          => 'https://www.medellin.gov.co/'
+) as importado_id \gset
+
+select estado, origen, telefono_publico, entidad_oficial,
+       fuente_nombre, responsable_nombre, horario_texto
+from puntos where id = :'importado_id';
+
+\echo '--- y no se ve en publico hasta que moderacion lo confirme'
+set role anon;
+select count(*) as importados_visibles from puntos_publicos where municipio_codigo = '05001';
+reset role;
+
+create or replace function auth.uid() returns uuid
+  language sql stable as $$ select null::uuid $$;
+
 \echo '--- reportar un punto inexistente falla'
 do $$
 begin

@@ -26,6 +26,9 @@ const ARCHIVOS = [
   'supabase/migrations/0007_horarios_estructurados.sql',
   'supabase/seed/0001_categorias.sql',
   'supabase/seed/0002_municipios.sql',
+  // 0008 va después de las semillas: calcula el slug de cada municipio, así que
+  // necesita que los 1.122 ya estén cargados.
+  'supabase/migrations/0008_alcance.sql',
   // A propósito dos veces: el editor de Supabase aborta la corrida entera si algo
   // falla, así que 0002 y las semillas tienen que aguantar que uno los vuelva a
   // pegar. Si alguien mete un `create policy` suelto, revienta aquí y no allá.
@@ -37,6 +40,7 @@ const ARCHIVOS = [
   'supabase/migrations/0007_horarios_estructurados.sql',
   'supabase/seed/0001_categorias.sql',
   'supabase/seed/0002_municipios.sql',
+  'supabase/migrations/0008_alcance.sql',
   'supabase/pruebas/01-prueba-funcional.sql',
 ];
 

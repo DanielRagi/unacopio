@@ -103,6 +103,9 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
           </p>
         </div>
         <div className="flex items-center gap-4">
+          <Link href="/admin/importar" className="text-sm underline underline-offset-4">
+            Importar lista
+          </Link>
           <Link href="/" className="text-sm underline underline-offset-4">
             Ver el sitio
           </Link>

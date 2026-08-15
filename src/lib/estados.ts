@@ -6,6 +6,8 @@
  * con «a "use server" file can only export async functions».
  */
 
+import type { FilaRevisada } from './importacion';
+
 export type EstadoRegistro =
   | { estado: 'inicial' }
   | { estado: 'error'; errores: Record<string, string[]>; mensaje?: string }
@@ -26,6 +28,15 @@ export type EstadoSolicitud =
   | { estado: 'enviada' };
 
 export const SOLICITUD_INICIAL: EstadoSolicitud = { estado: 'inicial' };
+
+export type EstadoImportacion =
+  | { estado: 'inicial' }
+  /** Revisado pero sin cargar nada: el CSV vuelve al cliente para confirmarlo. */
+  | { estado: 'revisado'; csv: string; filas: FilaRevisada[] }
+  | { estado: 'cargado'; creados: number; fallidos: { numero: number; nombre: string; mensaje: string }[] }
+  | { estado: 'error'; mensaje: string };
+
+export const IMPORTACION_INICIAL: EstadoImportacion = { estado: 'inicial' };
 
 export type EstadoAcceso =
   | { estado: 'inicial' }

@@ -24,3 +24,40 @@ body {
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
 }
+
+/*
+ * Foco visible en todo lo que se pueda enfocar.
+ *
+ * El anillo por defecto de algunos navegadores es casi invisible sobre fondo
+ * oscuro, y sin él navegar con teclado es adivinar dónde se está parado. El
+ * contenedor `#contenido` recibe foco solo por el enlace de "saltar al
+ * contenido", así que ahí no se dibuja nada.
+ */
+:focus-visible {
+  outline: 3px solid #047857;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+#contenido:focus,
+#contenido:focus-visible {
+  outline: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  :focus-visible {
+    outline-color: #34d399;
+  }
+}
+
+/* Respeta a quien pidió menos movimiento en el sistema. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

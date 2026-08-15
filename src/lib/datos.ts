@@ -1,8 +1,8 @@
 import { leerHorarios, type Franja } from './horarios';
 import { clienteServidor } from './supabase/servidor';
 import type {
-  Categoria, Departamento, EstadoPunto, Municipio, NivelCategoria, PuntoPublico,
-  TipoOrganizacion, TipoReporte,
+  Categoria, Departamento, EstadoPunto, GrupoCategoria, Municipio, NivelCategoria,
+  PuntoPublico, TipoOrganizacion, TipoReporte,
 } from './tipos';
 
 /**
@@ -89,6 +89,83 @@ export async function buscarPuntos(filtro: FiltroPuntos = {}): Promise<Resultado
 
   if (error) throw new Error(`No se pudieron cargar los puntos: ${error.message}`);
   return (data ?? []) as ResultadoPunto[];
+}
+
+export interface Necesidad {
+  slug: string;
+  nombre: string;
+  grupo: GrupoCategoria;
+  /** Cuántos puntos la marcaron como urgente. */
+  urgente: number;
+  /** Cuántos la reciben, urgente o no. */
+  puntos: number;
+}
+
+/**
+ * Lo que más piden en un municipio o departamento.
+ *
+ * Responde la pregunta con la que la gente llega —"¿qué llevo?"— sin obligarla
+ * a abrir treinta fichas y hacer la cuenta a ojo.
+ */
+export async function necesidadesDe(
+  ambito: { departamento?: string; municipio?: string } = {},
+): Promise<Necesidad[]> {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase.rpc('necesidades', {
+    p_departamento: ambito.departamento ?? null,
+    p_municipio: ambito.municipio ?? null,
+    p_limite: 8,
+  });
+
+  // Sin excepción a propósito: esto es un agregado que adorna el listado, y
+  // tumbar la portada entera porque el agregado falló es peor que no mostrarlo.
+  // Lo que la gente vino a buscar —dónde llevar la donación— no depende de acá.
+  if (error) {
+    console.error(`No se pudieron cargar las necesidades: ${error.message}`);
+    return [];
+  }
+  return (data ?? []) as Necesidad[];
+}
+
+export interface MunicipioConPuntos {
+  codigo: string;
+  nombre: string;
+  slug: string;
+  departamento_codigo: string;
+  departamento: string;
+  puntos: number;
+}
+
+/** Los municipios que hoy tienen algo publicado. De aquí sale `/acopio` y el sitemap. */
+export async function municipiosConPuntos(): Promise<MunicipioConPuntos[]> {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase.rpc('municipios_con_puntos');
+
+  if (error) throw new Error(`No se pudieron cargar los municipios: ${error.message}`);
+  return (data ?? []) as MunicipioConPuntos[];
+}
+
+/** Resuelve `/acopio/medellin` al municipio. Devuelve null si el slug no existe. */
+export async function municipioPorSlug(slug: string) {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase
+    .from('municipios')
+    .select('codigo, nombre, slug, lat, lng, departamento_codigo, departamentos(nombre)')
+    .eq('slug', slug)
+    .maybeSingle();
+
+  if (error) throw new Error(`No se pudo cargar el municipio: ${error.message}`);
+  if (!data) return null;
+
+  return data as unknown as {
+    codigo: string;
+    nombre: string;
+    slug: string;
+    lat: number | null;
+    lng: number | null;
+    departamento_codigo: string;
+    departamentos: { nombre: string } | null;
+  };
 }
 
 /** El centroide DANE de un municipio: sirve para centrar el mapa sin GPS. */

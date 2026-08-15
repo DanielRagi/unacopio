@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="UnAcopio">
+  <!-- Versión "maskable": el dibujo cabe en el 80% central, que es lo que
+       Android deja ver cuando recorta el ícono en círculo o en gota. -->
+  <rect width="512" height="512" fill="#047857"/>
+  <g transform="translate(256 256) scale(.62) translate(-256 -256)">
+    <path d="M128 224h256v168a24 24 0 0 1-24 24H152a24 24 0 0 1-24-24V224z" fill="#ffffff" opacity=".92"/>
+    <path d="M112 168h288a16 16 0 0 1 16 16v40H96v-40a16 16 0 0 1 16-16z" fill="#ffffff"/>
+    <path d="M232 224h48v72l-24-20-24 20v-72z" fill="#047857"/>
+  </g>
+</svg>
