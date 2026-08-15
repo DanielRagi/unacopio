@@ -24,16 +24,50 @@ export async function procesarImportacion(
     : revisarImportacion(previo, formData);
 }
 
+/** PostgREST no devuelve más de esto por petición, por más que uno pida. */
+const PAGINA = 1000;
+
+/**
+ * Los 1.122 municipios, todos.
+ *
+ * Hay que paginar: PostgREST corta en 1.000 filas y **no avisa**. La primera
+ * versión de esto pedía la tabla de una y se quedaba con 1.000 municipios en un
+ * orden arbitrario —el físico—, así que unos 122 municipios simplemente no
+ * existían para el importador. Entre ellos Bogotá, que salía rechazada con
+ * «el código DANE "11001" no existe». Un error que miente sobre su causa.
+ *
+ * El `order` no es decorativo: sin él las páginas se solapan y se pierden filas.
+ */
+async function todosLosMunicipios(
+  supabase: Awaited<ReturnType<typeof clienteServidor>>,
+): Promise<CatalogosImportacion['municipios']> {
+  const municipios: CatalogosImportacion['municipios'] = [];
+
+  for (let desde = 0; ; desde += PAGINA) {
+    const { data, error } = await supabase
+      .from('municipios')
+      .select('codigo, nombre, departamento_codigo, lat, lng')
+      .order('codigo')
+      .range(desde, desde + PAGINA - 1);
+
+    if (error) throw new Error(`No se pudo cargar el catálogo de municipios: ${error.message}`);
+    municipios.push(...((data ?? []) as CatalogosImportacion['municipios']));
+    if (!data || data.length < PAGINA) break;
+  }
+
+  return municipios;
+}
+
 async function catalogos(
   supabase: Awaited<ReturnType<typeof clienteServidor>>,
 ): Promise<CatalogosImportacion> {
   const [municipios, categorias] = await Promise.all([
-    supabase.from('municipios').select('codigo, nombre, departamento_codigo, lat, lng'),
+    todosLosMunicipios(supabase),
     supabase.from('categorias').select('slug'),
   ]);
 
   return {
-    municipios: (municipios.data ?? []) as CatalogosImportacion['municipios'],
+    municipios,
     categorias: new Set((categorias.data ?? []).map((c) => c.slug as string)),
     etiquetasDeTipo: TIPOS_ORGANIZACION,
   };

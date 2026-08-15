@@ -1,0 +1,133 @@
+{
+  "_lea_esto_primero": [
+    "Recolección manual del 15 de agosto de 2026 sobre el terremoto del 10 de agosto",
+    "(magnitud 7,4, epicentro en San José del Palmar, Chocó).",
+    "",
+    "NADA DE ESTO ESTÁ VERIFICADO. Es un punto de partida para la ronda de llamadas:",
+    "cada fila entra a UnAcopio como 'pendiente' y se publica solo cuando un moderador",
+    "llame y alguien conteste (ver D13).",
+    "",
+    "Sobre las direcciones: la Alcaldía de Medellín anunció los 10 puntos por nombre,",
+    "sin dirección. Las direcciones de abajo salen del directorio de cada sede —el",
+    "Sistema de Bibliotecas Públicas, Terminales Medellín, EAFIT, el CAM— y están",
+    "marcadas con 'direccion_de'. Que la sede exista en esa dirección es un hecho;",
+    "que ESE DÍA estuviera recibiendo donaciones ahí es lo que falta confirmar.",
+    "",
+    "Los teléfonos son conmutadores institucionales, no números de personas.",
+    "",
+    "Ningún ítem va como 'urgente': las fuentes no priorizan, y marcar todo como",
+    "urgente arruinaría el agregado de 'lo que más falta'. La urgencia se pregunta",
+    "en la llamada."
+  ],
+
+  "municipio_codigo": "05001",
+  "municipio": "Medellín",
+  "recolectado_en": "2026-08-15",
+
+  "fuente_principal": {
+    "nombre": "Alcaldía de Medellín",
+    "url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+    "nota": "Anuncia los 10 puntos por nombre. No publica direcciones, horarios ni teléfonos."
+  },
+
+  "recibe": [
+    "agua_embotellada", "no_perecederos", "granos", "aceite", "enlatados",
+    "panela_azucar", "jabon", "cepillo_crema_dental", "toallas_higienicas",
+    "papel_higienico", "panales_bebe", "colchonetas", "cobijas"
+  ],
+  "no_recibe": [
+    "medicamentos_sellados", "ropa_usada_buen_estado", "ropa_nueva"
+  ],
+  "nota_categorias": "La Alcaldía dijo expresamente: no medicamentos, no ropa, no productos vencidos ni alimentos perecederos. 'Productos listos para consumo' aparece entre lo aceptado pero es ambiguo, así que `comida_preparada` se deja por fuera en vez de adivinar.",
+
+  "horario_reportado": "Lunes a domingo, de 8:00 a.m. a 5:00 p.m. (por confirmar)",
+  "nota_horario": "El Tiempo reporta 8am-5pm; Infobae dice 'entre 8:00 a.m. y 6:00 p.m., dependiendo del lugar'. Ninguna fuente da el horario punto por punto. Se carga como texto, sin franjas estructuradas: sin franjas UnAcopio no muestra el sello de 'Abierto ahora', que es justo lo correcto mientras nadie confirme.",
+
+  "puntos": [
+    {
+      "nombre": "Fundación Banco Arquidiocesano de Alimentos",
+      "tipo": "fundacion",
+      "direccion": "Carrera 52 # 30A-97",
+      "direccion_de": "El Tiempo (la única fuente que publicó esta dirección)",
+      "direccion_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631"
+    },
+    {
+      "nombre": "Fundación Saciar",
+      "tipo": "fundacion",
+      "direccion": "Carrera 50 # 25-261",
+      "direccion_de": "El Tiempo",
+      "direccion_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631"
+    },
+    {
+      "nombre": "Parque Biblioteca Belén",
+      "tipo": "alcaldia",
+      "direccion": "Carrera 76 # 18A-19",
+      "barrio": "Belén",
+      "direccion_de": "Sistema de Bibliotecas Públicas de Medellín",
+      "direccion_url": "https://bibliotecasmedellin.gov.co/parque-biblioteca-belen/"
+    },
+    {
+      "nombre": "Parque Biblioteca San Javier (Pbro. José Luis Arroyave)",
+      "tipo": "alcaldia",
+      "direccion": "Calle 42C # 95-50",
+      "barrio": "San Javier",
+      "direccion_de": "Sistema de Bibliotecas Públicas de Medellín",
+      "direccion_url": "https://bibliotecasmedellin.gov.co/parque-biblioteca-presbitero-jose-luis-arroyave-san-javier/"
+    },
+    {
+      "nombre": "Parque Biblioteca Gabriel García Márquez",
+      "tipo": "alcaldia",
+      "direccion": "Carrera 80 # 104-04",
+      "barrio": "Doce de Octubre",
+      "telefono": "6045570392",
+      "direccion_de": "Sistema de Bibliotecas Públicas de Medellín",
+      "direccion_url": "https://bibliotecasmedellin.gov.co/blog/parque-biblioteca-gabriel-garcia-marquez-doce-de-octubre/",
+      "nota": "OJO: no confundir con el Parque Biblioteca Tomás Carrasquilla (La Quintana), que queda en Carrera 80 # 82-60. Son bibliotecas distintas y varias búsquedas las mezclan."
+    },
+    {
+      "nombre": "Parque Biblioteca León de Greiff",
+      "tipo": "alcaldia",
+      "direccion": "Calle 59A # 36-30",
+      "barrio": "La Ladera",
+      "telefono": "6045570405",
+      "direccion_de": "Sistema de Bibliotecas Públicas de Medellín",
+      "direccion_url": "https://bibliotecasmedellin.gov.co/blog/parque-biblioteca-leon-de-greiff-la-ladera/"
+    },
+    {
+      "nombre": "Biblioteca Pública El Poblado",
+      "tipo": "alcaldia",
+      "direccion": "Calle 3B Sur # 29B-56",
+      "barrio": "El Poblado (UVA Ilusión Verde, Los Naranjos)",
+      "direccion_de": "Red de Bibliotecas / Vivir en El Poblado",
+      "direccion_url": "https://reddebibliotecas.org.co/bibliotecas/biblioteca-el-poblado"
+    },
+    {
+      "nombre": "Terminal del Norte (local 9840)",
+      "tipo": "empresa",
+      "direccion": "Carrera 64C # 78-580",
+      "barrio": "Caribe",
+      "telefono": "6044448020",
+      "direccion_de": "Terminales Medellín",
+      "direccion_url": "https://terminalesmedellin.com/la-entidad/localizaciones-y-atencion-al-publico/",
+      "nota": "El punto es el local 9840 dentro de la terminal. Preguntar por él al llamar."
+    },
+    {
+      "nombre": "Universidad EAFIT (placa cubierta)",
+      "tipo": "universidad",
+      "direccion": "Carrera 49 # 7 Sur-50",
+      "barrio": "El Poblado",
+      "telefono": "6042619500",
+      "direccion_de": "Universidad EAFIT",
+      "direccion_url": "https://www.eafit.edu.co/nuestras-sedes"
+    },
+    {
+      "nombre": "Hall de la Alcaldía de Medellín",
+      "tipo": "alcaldia",
+      "direccion": "Calle 44 # 52-165",
+      "barrio": "La Alpujarra (Centro Administrativo Municipal)",
+      "telefono": "6044444144",
+      "direccion_de": "Alcaldía de Medellín",
+      "direccion_url": "https://www.medellin.gov.co/es/secretaria-de-gestion-humana/servicio-a-la-ciudadania/informacion-de-contacto-y-directorio-institucional/"
+    }
+  ]
+}

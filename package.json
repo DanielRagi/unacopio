@@ -13,7 +13,8 @@
     "tipos:scripts": "tsc --noEmit -p scripts/tsconfig.json",
     "db:probar": "node scripts/probar-sql.mjs",
     "db:verificar": "node --env-file=.env.local scripts/verificar-supabase.mjs",
-    "probar:importacion": "node scripts/probar-importacion.mts"
+    "probar:importacion": "node scripts/probar-importacion.mts",
+    "pilotaje": "node scripts/pilotaje.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",

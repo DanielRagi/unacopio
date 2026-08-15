@@ -1,0 +1,143 @@
+{
+  "_lea_esto_primero": [
+    "Recolección manual del 15 de agosto de 2026 sobre el terremoto del 10 de agosto.",
+    "",
+    "NADA DE ESTO ESTÁ VERIFICADO. Cada fila entra como 'pendiente' y se publica solo",
+    "cuando un moderador llame y alguien conteste (ver D13).",
+    "",
+    "A diferencia de Medellín, acá las fuentes SÍ publicaron direcciones. Donde dos",
+    "fuentes se contradicen queda anotado en `conflicto`: eso es lo primero que hay",
+    "que resolver en la llamada."
+  ],
+
+  "municipio_codigo": "11001",
+  "municipio": "Bogotá D.C.",
+  "recolectado_en": "2026-08-15",
+
+  "fuente_principal": {
+    "nombre": "Alcaldía Mayor de Bogotá",
+    "url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia"
+  },
+
+  "recibe": [
+    "agua_embotellada", "no_perecederos", "granos", "aceite", "enlatados",
+    "panela_azucar", "cobijas", "sabanas", "colchonetas", "toldillos",
+    "tapabocas", "botiquin", "guantes", "jabon", "cepillo_crema_dental",
+    "toallas_higienicas", "papel_higienico", "panales_bebe", "ropa_nueva"
+  ],
+  "no_recibe": [
+    "ropa_usada_buen_estado", "comida_preparada"
+  ],
+  "nota_categorias": "bogota.gov.co lo dice explícito: no alimentos perecederos, no productos destapados o comenzados, no agua con el empaque golpeado, no medicamentos iniciados o próximos a vencer, no ropa usada ni ropa interior usada. `medicamentos_sellados` se deja por fuera: la fuente no los pide y tampoco los prohíbe de plano.",
+
+  "puntos": [
+    {
+      "nombre": "Palacio de los Deportes",
+      "tipo": "alcaldia",
+      "direccion": "Calle 63 # 59A-06",
+      "barrio": "Salitre (junto al Complejo Acuático El Salitre y el parque Los Novios)",
+      "horario": "Todos los días de 8:00 a.m. a 8:00 p.m.",
+      "fuente_nombre": "Alcaldía Mayor de Bogotá",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "conflicto": "bogota.gov.co (nota de 'qué donar') escribe Calle 63 # 54A-06. Las demás fuentes dicen 59A-06. Confirmar el número.",
+      "nota": "Reportado como el punto de acopio para las donaciones que van al Chocó."
+    },
+    {
+      "nombre": "Universidad Jorge Tadeo Lozano",
+      "tipo": "universidad",
+      "direccion": "Carrera 4 # 22-61",
+      "barrio": "Las Nieves / La Candelaria",
+      "horario": "Lunes a domingo de 8:00 a.m. a 9:00 p.m.",
+      "fuente_nombre": "Alcaldía Mayor de Bogotá",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia"
+    },
+    {
+      "nombre": "Punto de acopio de Usaquén",
+      "tipo": "alcaldia",
+      "direccion": "Calle 161A # 7F-55",
+      "barrio": "Usaquén",
+      "horario": "Lunes a domingo de 8:00 a.m. a 9:00 p.m.",
+      "fuente_nombre": "Alcaldía Mayor de Bogotá",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Las fuentes no le dan nombre propio: solo 'un punto en Usaquén'. Preguntar de qué sede se trata."
+    },
+    {
+      "nombre": "Centro Comercial Unicentro",
+      "tipo": "empresa",
+      "direccion": "Carrera 15 # 124-30",
+      "barrio": "Santa Bárbara / Usaquén",
+      "horario": "Lunes a domingo de 8:00 a.m. a 9:00 p.m.",
+      "fuente_nombre": "Alcaldía Mayor de Bogotá",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "conflicto": "Una nota de bogota.gov.co dice 9:00 a.m. a 5:00 p.m. y otra 8:00 a.m. a 9:00 p.m. Confirmar."
+    },
+    {
+      "nombre": "Cruz Roja Colombiana — sede administrativa",
+      "tipo": "cruz_roja",
+      "direccion": "Carrera 24 # 73-38",
+      "horario": "24 horas",
+      "fuente_nombre": "Alcaldía Mayor de Bogotá",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia"
+    },
+    {
+      "nombre": "Estadio El Campín",
+      "tipo": "alcaldia",
+      "direccion": "Avenida NQS (Carrera 30) entre Calle 53B Bis y Calle 57",
+      "barrio": "Teusaquillo",
+      "fuente_nombre": "Alcaldía Mayor de Bogotá",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Sin horario en ninguna fuente. La dirección es un tramo, no una nomenclatura: preguntar por cuál portería se entrega."
+    },
+    {
+      "nombre": "Cruz Roja — SAMU Sur",
+      "tipo": "cruz_roja",
+      "direccion": "Avenida Carrera 68 # 31-41 Sur",
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631"
+    },
+    {
+      "nombre": "Cruz Roja — SAMU Norte",
+      "tipo": "cruz_roja",
+      "direccion": "Carrera 7B Bis # 132-32",
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631",
+      "nota": "El Tiempo lo escribe como 'Calle 134 - Carrera 7b bis # 132-32', que se contradice a sí mismo. Confirmar."
+    },
+    {
+      "nombre": "Cruz Roja — Centro de Salvamento Acuático",
+      "tipo": "cruz_roja",
+      "direccion": "Avenida La Esmeralda # 63-81",
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631"
+    },
+    {
+      "nombre": "Cruz Roja — bodega",
+      "tipo": "cruz_roja",
+      "direccion": "Diagonal 79B # 62-53",
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631",
+      "nota": "Bodega: puede que reciba solo camiones y no público. Preguntarlo antes de publicar."
+    },
+    {
+      "nombre": "Banco de Alimentos de Bogotá",
+      "tipo": "fundacion",
+      "direccion": "Calle 19A # 32-50",
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631",
+      "nota": "Recibe presencial. La fuente también publica cuentas bancarias: eso NO va al directorio (ver D6)."
+    }
+  ],
+
+  "pistas_sin_confirmar": [
+    {
+      "que": "Universidad Pedagógica Nacional e Instituto Pedagógico Nacional",
+      "por_que_no_entro": "La UPN anunció que habilitó sus sedes como puntos de acopio, pero no se pudo leer la dirección exacta en su sitio (el certificado del servidor no valida). Se sabe que una queda por la Calle 72. Conseguir la dirección antes de cargarla.",
+      "url": "https://www.upn.edu.co/nuevos-puntos-de-acopio-en-bogota-universidad-pedagogica-nacional-e-instituto-pedagogico-nacional/"
+    },
+    {
+      "que": "El mapa oficial de Mapas Bogotá",
+      "por_que_no_entro": "bogota.gov.co dice que la lista completa está en un mapa interactivo (mapas.bogota.gov.co, capa 127089), no en el texto de la nota. Ahí puede haber varios puntos más de los que están acá.",
+      "url": "https://bogota.gov.co/mi-ciudad/hacienda/centros-de-acopio-para-donaciones-por-terremoto-en-bogota-2026"
+    }
+  ]
+}

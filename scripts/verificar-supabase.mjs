@@ -46,6 +46,21 @@ if (fuga) {
   fallas++;
 }
 
+// PostgREST corta en 1.000 filas sin avisar, y los municipios son 1.122. Quien
+// se traiga el catálogo entero TIENE que paginar; si no, se queda con un
+// subconjunto arbitrario. Le pasó al importador: Bogotá quedaba fuera y el error
+// decía «el código DANE "11001" no existe».
+const pagina = [];
+for (let desde = 0; ; desde += 1000) {
+  const { data } = await cliente
+    .from('municipios').select('codigo').order('codigo').range(desde, desde + 999);
+  pagina.push(...(data ?? []));
+  if (!data || data.length < 1000) break;
+}
+const completo = pagina.length === 1122 && pagina.some((m) => m.codigo === '11001');
+console.log('catálogo paginado:', completo ? `${pagina.length} municipios, con Bogotá ✓` : `INCOMPLETO (${pagina.length})`);
+if (!completo) fallas++;
+
 const { error: rpcError } = await cliente.rpc('buscar_puntos', {
   p_lat: 5.0689, p_lng: -75.5174, p_radio_m: 20000,
 });
