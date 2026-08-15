@@ -23,7 +23,14 @@ const OPCIONES = [
 // marca. El resto plegado para que el formulario no asuste al abrirlo.
 const ABIERTOS: GrupoCategoria[] = ['agua', 'alimentos', 'aseo'];
 
-export function SelectorCategorias({ categorias }: { categorias: Categoria[] }) {
+export function SelectorCategorias({
+  categorias,
+  valores = {},
+}: {
+  categorias: Categoria[];
+  /** Lo ya marcado, para poder editar un punto sin volver a llenar todo. */
+  valores?: Record<string, string>;
+}) {
   const grupos = [...new Set(categorias.map((c) => c.grupo))];
 
   return (
@@ -54,7 +61,7 @@ export function SelectorCategorias({ categorias }: { categorias: Categoria[] }) 
                           type="radio"
                           name={`cat_${categoria.slug}`}
                           value={opcion.valor}
-                          defaultChecked={opcion.valor === ''}
+                          defaultChecked={(valores[categoria.slug] ?? '') === opcion.valor}
                           className="peer sr-only"
                         />
                         <span

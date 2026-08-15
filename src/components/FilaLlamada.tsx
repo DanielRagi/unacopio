@@ -60,6 +60,12 @@ export function FilaLlamada({ punto }: { punto: PuntoPorLlamar }) {
         <Boton id={punto.id} resultado="lleno">Están llenos</Boton>
         <Boton id={punto.id} resultado="cerrado" tono="peligro">Ya cerraron</Boton>
         <Boton id={punto.id} resultado="no_contesta">No contestan</Boton>
+        <Link
+          href={`/admin/punto/${punto.id}`}
+          className="self-center text-sm font-medium underline underline-offset-4"
+        >
+          Cambió algo
+        </Link>
       </div>
     </li>
   );

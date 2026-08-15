@@ -1,3 +1,4 @@
+import { leerHorarios, type Franja } from './horarios';
 import { clienteServidor } from './supabase/servidor';
 import type {
   Categoria, Departamento, EstadoPunto, Municipio, NivelCategoria, PuntoPublico,
@@ -298,6 +299,33 @@ export async function contarSolicitudes(): Promise<number> {
     .select('id', { count: 'exact', head: true })
     .eq('resuelto', false);
   return count ?? 0;
+}
+
+/** El punto con todo lo editable, incluidas las franjas de horario ya validadas. */
+export async function obtenerPuntoParaEditar(id: string) {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase
+    .from('puntos')
+    .select(`
+      id, nombre, tipo_organizacion, departamento_codigo, municipio_codigo,
+      direccion, barrio, referencia, responsable_nombre, telefono, whatsapp,
+      telefono_publico, correo, horarios, fecha_inicio, fecha_fin,
+      recibe_voluntarios, notas,
+      punto_categoria(categoria_slug, nivel)
+    `)
+    .eq('id', id)
+    .maybeSingle();
+
+  if (error) throw new Error(`No se pudo cargar el punto: ${error.message}`);
+  if (!data) return null;
+
+  return {
+    ...data,
+    horarios: leerHorarios(data.horarios) ?? [],
+  } as Omit<typeof data, 'horarios'> & {
+    horarios: Franja[];
+    punto_categoria: { categoria_slug: string; nivel: NivelCategoria }[];
+  };
 }
 
 /** Devuelve el perfil si quien está en sesión es del equipo. Si no, null. */

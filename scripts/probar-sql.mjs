@@ -23,6 +23,7 @@ const ARCHIVOS = [
   'supabase/migrations/0004_sin_tokens_solicitudes.sql',
   'supabase/migrations/0005_buscar_puntos.sql',
   'supabase/migrations/0006_llamadas_y_lleno.sql',
+  'supabase/migrations/0007_horarios_estructurados.sql',
   'supabase/seed/0001_categorias.sql',
   'supabase/seed/0002_municipios.sql',
   // A propósito dos veces: el editor de Supabase aborta la corrida entera si algo
@@ -33,6 +34,7 @@ const ARCHIVOS = [
   'supabase/migrations/0004_sin_tokens_solicitudes.sql',
   'supabase/migrations/0005_buscar_puntos.sql',
   'supabase/migrations/0006_llamadas_y_lleno.sql',
+  'supabase/migrations/0007_horarios_estructurados.sql',
   'supabase/seed/0001_categorias.sql',
   'supabase/seed/0002_municipios.sql',
   'supabase/pruebas/01-prueba-funcional.sql',

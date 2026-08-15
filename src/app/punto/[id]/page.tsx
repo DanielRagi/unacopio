@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import { Encabezado } from '@/components/Encabezado';
 import { ListaCategorias } from '@/components/ListaCategorias';
 import { PieDePagina } from '@/components/PieDePagina';
+import { SelloAbierto } from '@/components/SelloAbierto';
 import { SelloFrescura } from '@/components/SelloFrescura';
 import { SelloLleno } from '@/components/SelloLleno';
 import { obtenerPunto } from '@/lib/datos';
@@ -45,6 +46,11 @@ export default async function PaginaPunto({ params }: PageProps<'/punto/[id]'>) 
         <header className="flex flex-col gap-2.5">
           <div className="flex flex-wrap items-center gap-2">
             {punto.estado === 'lleno' && <SelloLleno grande />}
+            <SelloAbierto
+              horarios={punto.horarios}
+              fechaInicio={punto.fecha_inicio}
+              fechaFin={punto.fecha_fin}
+            />
             {punto.entidad_oficial && (
               <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-xs font-semibold text-white">
                 Entidad oficial

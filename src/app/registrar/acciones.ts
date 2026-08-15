@@ -2,6 +2,7 @@
 
 import { z } from 'zod';
 import type { EstadoRegistro } from '@/lib/estados';
+import { textoHorario } from '@/lib/horarios';
 import { clienteServidor } from '@/lib/supabase/servidor';
 import { esquemaRegistro, leerFormulario } from '@/lib/validacion';
 
@@ -64,7 +65,10 @@ export async function registrarPunto(
     p_lng: lng,
     p_responsable_nombre: datos.responsable_nombre,
     p_telefono: datos.telefono,
-    p_horario_texto: datos.horario_texto,
+    // El texto legible sale de las franjas, no de un campo aparte: así el badge
+    // "abierto ahora" y lo que lee la persona nunca pueden decir cosas distintas.
+    p_horario_texto: textoHorario(datos.horarios),
+    p_horarios: datos.horarios,
     p_categorias: datos.categorias,
     p_barrio: datos.barrio ?? null,
     p_referencia: datos.referencia ?? null,

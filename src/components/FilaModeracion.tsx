@@ -173,11 +173,14 @@ export function FilaModeracion({
           </button>
         </form>
 
+        <Link
+          href={`/admin/punto/${punto.id}`}
+          className="text-sm font-medium underline underline-offset-4"
+        >
+          Editar
+        </Link>
         {punto.estado === 'publicado' && (
-          <Link
-            href={`/punto/${punto.id}`}
-            className="text-sm underline underline-offset-4"
-          >
+          <Link href={`/punto/${punto.id}`} className="text-sm underline underline-offset-4">
             Ver ficha
           </Link>
         )}

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { ListaCategorias } from './ListaCategorias';
+import { SelloAbierto } from './SelloAbierto';
 import { SelloFrescura } from './SelloFrescura';
 import { SelloLleno } from './SelloLleno';
 import { TIPOS_ORGANIZACION } from '@/lib/textos';
@@ -12,6 +13,11 @@ export function TarjetaPunto({ punto, metros }: { punto: PuntoPublico; metros?: 
         <div className="flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
             {punto.estado === 'lleno' && <SelloLleno />}
+            <SelloAbierto
+              horarios={punto.horarios}
+              fechaInicio={punto.fecha_inicio}
+              fechaFin={punto.fecha_fin}
+            />
             {punto.entidad_oficial && (
               <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-xs font-semibold text-white">
                 Entidad oficial

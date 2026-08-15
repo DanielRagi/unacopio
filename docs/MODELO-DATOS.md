@@ -31,8 +31,8 @@ El registro central. Un punto de acopio.
 | `whatsapp` | `boolean` | si ese número recibe WhatsApp |
 | `telefono_publico` | `boolean` | consentimiento Habeas Data; si es `false`, solo lo ve moderación |
 | `correo` | `text null` | interno, para el enlace de edición y el recordatorio de 48h; nunca se publica. Nulable en la base por las cargas de moderación e importación, pero **obligatorio en el formulario público**: desde D8 es el único canal de vuelta hacia el responsable |
-| `horario_texto` | `text` | "Lun a Sáb 8am–6pm, domingos 9am–1pm" — v1 en texto libre |
-| `horarios` | `jsonb null` | estructurado, se llena en F3 para el badge "Abierto ahora" |
+| `horario_texto` | `text` | lo que lee la persona. **Se genera** a partir de `horarios`, no se escribe aparte: si el texto y las franjas pudieran contradecirse, el badge diría una cosa y la ficha otra |
+| `horarios` | `jsonb null` | franjas estructuradas: `[{"dia":1,"desde":"08:00","hasta":"18:00"}]`, con `dia` 0=domingo…6=sábado, igual que `Date.getDay()`. De aquí sale el badge "Abierto ahora", calculado en hora de Colombia. Null en los registros viejos y en las cargas de moderación: sin franjas no se muestra badge |
 | `fecha_inicio` | `date null` | |
 | `fecha_fin` | `date null` | campañas con fecha de cierre |
 | `recibe_voluntarios` | `boolean` | |

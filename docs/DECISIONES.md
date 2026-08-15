@@ -196,3 +196,33 @@ Ahora aparecen, marcados con "Hoy no reciben más" y de últimos en el orden. La
 ficha además sugiere llamar antes de ir o buscar otro punto cerca. Un viaje que
 no se hace vale más que un renglón menos en la lista.
 
+## D12. El horario se guarda estructurado, y el texto se genera
+
+`puntos.horarios` guarda franjas —día, hora de apertura, hora de cierre— y de ahí
+sale todo: el badge "Abierto ahora" y también el `horario_texto` que lee la
+persona, generado en el servidor.
+
+Se generó en vez de pedirlo aparte porque dos campos que dicen lo mismo terminan
+diciendo cosas distintas. Un punto donde el texto dice "hasta las 6" y el badge
+dice "cerrado" es peor que uno sin horario: destruye la confianza en todo lo
+demás que muestra la ficha.
+
+Detalles que importan:
+
+- Todo se calcula en **hora de Colombia**, no en la del servidor. El sitio corre
+  en Vercel con el reloj en UTC. Se resuelve con `Intl` y no restando 5 horas a
+  mano: Colombia no cambia de hora, pero eso no tiene por qué seguir siendo
+  cierto para siempre.
+- Sin franjas, **no se muestra badge**. Los puntos viejos y los que cargó
+  moderación a mano no tienen horario estructurado, y ahí es mejor callar que
+  afirmar algo que no sabemos.
+- El badge dice también **cuándo abre**, no solo que está cerrado. Quien mira a
+  las siete de la noche quiere saber si le sirve ir mañana temprano.
+- Las fechas de campaña mandan sobre el horario: si ya pasó `fecha_fin`, está
+  cerrado aunque el día y la hora cuadren.
+
+El cálculo está en `src/lib/horarios.ts` y tiene pruebas propias
+(`npm run probar:horarios`), incluidas las de zona horaria y jornada partida. Es
+el tipo de código que se equivoca en silencio, así que conviene que falle ruidoso
+en la consola antes que callado en producción.
+

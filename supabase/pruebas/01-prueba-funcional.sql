@@ -31,13 +31,33 @@ select count(*) as columnas_token
 from information_schema.columns
 where table_name = 'puntos' and column_name like '%token%';
 
-\echo '--- registrar_punto'
+\echo '--- registrar_punto, ahora con horario estructurado'
 select registrar_punto(
   'Parroquia San José', 'iglesia', '17', '17001', 'Calle 12 # 4-30',
-  5.0703, -75.5138, 'María Gómez', '+573001112233', 'Lun a Sáb 8am-6pm',
+  5.0703, -75.5138, 'María Gómez', '+573001112233',
+  'Lunes a sábado de 8:00 a.m. a 6:00 p.m.',
   '[{"slug":"agua_embotellada","nivel":"alta"},
-    {"slug":"ropa_usada_buen_estado","nivel":"no_recibe"}]'::jsonb
+    {"slug":"ropa_usada_buen_estado","nivel":"no_recibe"}]'::jsonb,
+  '[{"dia":1,"desde":"08:00","hasta":"18:00"},
+    {"dia":2,"desde":"08:00","hasta":"18:00"}]'::jsonb
 ) as punto_id \gset
+
+select jsonb_array_length(horarios) as franjas_guardadas,
+       horarios -> 0 ->> 'desde' as primera_apertura
+from puntos where id = :'punto_id';
+
+\echo '--- un horario que no sea lista debe ser rechazado'
+do $$
+begin
+  perform registrar_punto('Malo','ong','17','17001','x', 5.07, -75.51,
+                          'y','+573001112233','z','[]'::jsonb, '{"dia":1}'::jsonb);
+  raise exception 'FALLA: acepto un horario que no era una lista';
+exception
+  when others then
+    if sqlerrm like '%lista de franjas%' then raise notice 'OK: rechazo el horario mal formado';
+    else raise; end if;
+end
+$$;
 
 select estado, entidad_oficial, origen,
        round(lat::numeric, 4) as lat, round(lng::numeric, 4) as lng

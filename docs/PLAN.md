@@ -45,7 +45,7 @@ recibir el primer registro.
 - [x] `/punto/[id]` — ficha completa, con "Llamar", "WhatsApp", "Cómo llegar"
       (Google Maps / Waze) y "Compartir por WhatsApp"
 - [x] `/admin` — cola de moderación (Supabase Auth por correo)
-  - Publicar / rechazar / cerrar / marcar lleno / marcar «oficial»
+  - Publicar / rechazar / cerrar / marcar lleno / marcar «oficial» / editar
   - Publicar firma quién verificó y cuándo, y resuelve los reportes abiertos
   - Muestra correo y teléfono no publicable: es con eso que se llama a confirmar
 - [x] RLS activo en todas las tablas
@@ -88,7 +88,11 @@ los audios de WhatsApp.
 - [x] Detección de duplicados: puntos a menos de 200 m en el mismo municipio,
       avisados en la cola de revisión antes de publicar
 - [x] Estado `lleno` visible: "hoy no reciben más", marcado y de último (ver D11)
-- [ ] Horarios estructurados + badge "Abierto ahora"
+- [x] Horarios estructurados + badge "Abierto ahora", calculado en hora de
+      Colombia y con pruebas propias (ver D12)
+- [x] `/admin/punto/[id]` — edición completa desde moderación. Es la contraparte
+      de D9: si el público no edita, alguien tiene que poder aplicar lo que sale
+      de las llamadas y de la bandeja
 
 ## Fase 4 — Alcance y aliados (según cómo evolucione)
 

@@ -78,6 +78,19 @@ if (servicio) {
   const { error: err6 } = await admin.from('puntos').select('ultimo_intento_llamada').limit(1);
   console.log('0006 llamadas   :', err6 ? 'NO aplicada' : 'sí ✓');
   if (err6) fallas++;
+
+  // Se llama con una coordenada inválida a propósito: si la función acepta
+  // `p_horarios` falla por la coordenada, y si no, falla por el parámetro. En
+  // ninguno de los dos casos se inserta nada.
+  const { error: err7 } = await admin.rpc('registrar_punto', {
+    p_nombre: 'sonda', p_tipo_organizacion: 'ong',
+    p_departamento_codigo: '17', p_municipio_codigo: '17001', p_direccion: 'sonda',
+    p_lat: 0, p_lng: 0, p_responsable_nombre: 'sonda', p_telefono: '+573000000000',
+    p_horario_texto: 'sonda', p_categorias: [], p_horarios: [],
+  });
+  const tiene7 = err7?.message?.includes('dentro de Colombia');
+  console.log('0007 horarios   :', tiene7 ? 'sí ✓' : `NO aplicada (${err7?.message ?? 'sin error'})`);
+  if (!tiene7) fallas++;
 }
 
 console.log(fallas === 0 ? '\n✓ el proyecto responde y RLS está en pie' : `\n✗ ${fallas} problema(s)`);

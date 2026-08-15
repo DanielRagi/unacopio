@@ -1,0 +1,14 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "incremental": false,
+    "types": ["node"],
+    "lib": ["esnext"],
+    "jsx": "preserve",
+    "plugins": [],
+    "allowImportingTsExtensions": true
+  },
+  "include": ["**/*.mts", "../src/lib/**/*.ts"],
+  "exclude": []
+}
