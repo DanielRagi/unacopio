@@ -1,8 +1,9 @@
 import Link from 'next/link';
-import type { Departamento, Municipio } from '@/lib/tipos';
+import { GRUPOS } from '@/lib/textos';
+import type { Categoria, Departamento, GrupoCategoria, Municipio } from '@/lib/tipos';
 
 /**
- * Filtro por departamento y municipio.
+ * Filtro del listado: departamento, municipio y qué quiere donar la persona.
  *
  * Es un `<form method="get">` a propósito: funciona sin una línea de JavaScript,
  * que es la diferencia entre servir o no servir en un celular viejo con señal
@@ -12,19 +13,38 @@ import type { Departamento, Municipio } from '@/lib/tipos';
 export function FiltroUbicacion({
   departamentos,
   municipios,
+  categorias,
   dep,
   mun,
+  cat,
+  lat,
+  lng,
 }: {
   departamentos: Departamento[];
   municipios: Municipio[];
+  categorias: Categoria[];
   dep?: string;
   mun?: string;
+  cat?: string;
+  lat?: string;
+  lng?: string;
 }) {
   const claseSelect =
     'w-full rounded-lg border border-black/15 bg-transparent px-3 py-2.5 text-base dark:border-white/20';
 
+  const grupos = [...new Set(categorias.map((c) => c.grupo))] as GrupoCategoria[];
+  const hayFiltro = Boolean(dep || mun || cat || lat);
+
   return (
     <form method="get" action="/" className="flex flex-col gap-3">
+      {/* Si la persona ya compartió su ubicación, no se pierde al filtrar. */}
+      {lat && lng && (
+        <>
+          <input type="hidden" name="lat" value={lat} />
+          <input type="hidden" name="lng" value={lng} />
+        </>
+      )}
+
       <div className="flex flex-col gap-3 sm:flex-row">
         <label className="flex flex-1 flex-col gap-1.5">
           <span className="text-sm font-medium">Departamento</span>
@@ -49,6 +69,22 @@ export function FiltroUbicacion({
         )}
       </div>
 
+      <label className="flex flex-col gap-1.5">
+        <span className="text-sm font-medium">¿Qué quieres donar?</span>
+        <select name="cat" defaultValue={cat ?? ''} className={claseSelect}>
+          <option value="">Cualquier cosa</option>
+          {grupos.map((grupo) => (
+            <optgroup key={grupo} label={GRUPOS[grupo]}>
+              {categorias
+                .filter((c) => c.grupo === grupo)
+                .map((c) => (
+                  <option key={c.slug} value={c.slug}>{c.nombre}</option>
+                ))}
+            </optgroup>
+          ))}
+        </select>
+      </label>
+
       <div className="flex items-center gap-3">
         <button
           type="submit"
@@ -56,9 +92,9 @@ export function FiltroUbicacion({
         >
           Buscar
         </button>
-        {(dep || mun) && (
+        {hayFiltro && (
           <Link href="/" className="text-sm underline underline-offset-4">
-            Ver todo el país
+            Quitar filtros
           </Link>
         )}
       </div>
