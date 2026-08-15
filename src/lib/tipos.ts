@@ -25,6 +25,9 @@ export interface Municipio {
   codigo: string;
   nombre: string;
   departamento_codigo: string;
+  /** Centroide DANE. Sirve para centrar el mapa y como respaldo sin JavaScript. */
+  lat?: number | null;
+  lng?: number | null;
 }
 
 export interface Categoria {

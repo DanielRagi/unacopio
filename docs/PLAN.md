@@ -28,26 +28,32 @@ Hecho, salvo lo que depende de cuentas que solo puede crear el equipo.
 **Sale de aquí:** el sitio desplegado en el dominio real, con la base lista para
 recibir el primer registro.
 
-## Fase 1 — MVP publicable (≈ 4–6 h) 🎯 objetivo del día 1
+## Fase 1 — MVP publicable 🎯 objetivo del día 1
 
-- [ ] `/registrar` — formulario público de registro de punto
-  - Datos del punto, mapa con pin arrastrable (Leaflet), selector de categorías
-    en tres estados (**prioridad / recibimos / NO recibimos**)
-  - Validación con Zod, Server Action, honeypot anti-spam
-  - Check obligatorio de Habeas Data para publicar el teléfono
-  - Al enviar: pantalla de "queda pendiente de aprobación" + link secreto de edición
-- [ ] `/` — lista de puntos publicados
-  - Filtro por departamento y municipio (server-side, en la URL: `/?dep=05&mun=05001`)
+- [x] `/registrar` — formulario público de registro de punto
+  - Datos del punto, mapa con pin fijo al centro (se mueve el mapa, no el pin),
+    selector de categorías en cuatro estados (**urgente / sí / no llevar / —**)
+  - Validación con Zod en el servidor, Server Action, honeypot anti-spam
+  - Check de Habeas Data para publicar el teléfono
+  - Sin JavaScript el formulario igual sirve: el punto cae en el centroide del
+    municipio y moderación lo afina
+  - Al enviar: pantalla de "queda pendiente" + código secreto de edición
+- [x] `/` — lista de puntos publicados
+  - Filtro por departamento y municipio en un form GET, sin JS, en la URL
   - Tarjeta: nombre, tipo de organización, dirección, horario, qué necesitan con
     urgencia, qué NO reciben, "verificado hace X"
-  - Renderizado en servidor, sin JS obligatorio para ver la lista
-- [ ] `/punto/[id]` — ficha completa, con botones "Llamar", "WhatsApp",
-      "Cómo llegar" (Google Maps / Waze) y "Compartir por WhatsApp"
-- [ ] `/admin` — cola de moderación (Supabase Auth con magic link)
-  - Aprobar / rechazar / editar / marcar como verificado / cerrar
-- [ ] RLS activo en todas las tablas. **No pasar de aquí sin esto.**
-- [ ] Aviso legal fijo: no recolectamos dinero, la información la aportan terceros
-- [ ] Metadatos Open Graph — el 90% del tráfico va a entrar por un link de WhatsApp
+- [x] `/punto/[id]` — ficha completa, con "Llamar", "WhatsApp", "Cómo llegar"
+      (Google Maps / Waze) y "Compartir por WhatsApp"
+- [x] `/admin` — cola de moderación (Supabase Auth por correo)
+  - Publicar / rechazar / cerrar / marcar lleno / marcar «oficial»
+  - Publicar firma quién verificó y cuándo, y resuelve los reportes abiertos
+  - Muestra correo y teléfono no publicable: es con eso que se llama a confirmar
+- [x] RLS activo en todas las tablas
+- [x] Aviso legal fijo: no recolectamos dinero, la información la aportan terceros
+- [x] Metadatos Open Graph, también por punto
+- [x] `/punto/[id]/solicitud` — pedir un cambio o el cierre, con observaciones.
+      Reemplaza al enlace de edición con token (ver D9)
+- [x] Bandeja de solicitudes y reportes en moderación
 
 **Sale de aquí:** el sitio ya sirve. Se puede empezar a difundir.
 

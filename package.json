@@ -7,6 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
+    "prepare": "git config core.hooksPath .githooks || exit 0",
     "municipios": "node scripts/generar-municipios.mjs",
     "db:probar": "node scripts/probar-sql.mjs",
     "db:verificar": "node --env-file=.env.local scripts/verificar-supabase.mjs"

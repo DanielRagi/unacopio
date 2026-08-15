@@ -19,12 +19,16 @@ const ARCHIVOS = [
   'supabase/pruebas/00-stubs-supabase.sql',
   'supabase/migrations/0001_esquema.sql',
   'supabase/migrations/0002_rls_y_funciones.sql',
+  'supabase/migrations/0003_municipios_latlng.sql',
+  'supabase/migrations/0004_sin_tokens_solicitudes.sql',
   'supabase/seed/0001_categorias.sql',
   'supabase/seed/0002_municipios.sql',
   // A propósito dos veces: el editor de Supabase aborta la corrida entera si algo
   // falla, así que 0002 y las semillas tienen que aguantar que uno los vuelva a
   // pegar. Si alguien mete un `create policy` suelto, revienta aquí y no allá.
   'supabase/migrations/0002_rls_y_funciones.sql',
+  'supabase/migrations/0003_municipios_latlng.sql',
+  'supabase/migrations/0004_sin_tokens_solicitudes.sql',
   'supabase/seed/0001_categorias.sql',
   'supabase/seed/0002_municipios.sql',
   'supabase/pruebas/01-prueba-funcional.sql',
