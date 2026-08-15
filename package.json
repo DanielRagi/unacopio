@@ -12,7 +12,8 @@
     "probar:horarios": "node scripts/probar-horarios.mts",
     "tipos:scripts": "tsc --noEmit -p scripts/tsconfig.json",
     "db:probar": "node scripts/probar-sql.mjs",
-    "db:verificar": "node --env-file=.env.local scripts/verificar-supabase.mjs"
+    "db:verificar": "node --env-file=.env.local scripts/verificar-supabase.mjs",
+    "probar:importacion": "node scripts/probar-importacion.mts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",
