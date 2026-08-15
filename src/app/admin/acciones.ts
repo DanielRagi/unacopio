@@ -102,6 +102,54 @@ export async function marcarVerificado(formData: FormData) {
 }
 
 /**
+ * Registra el resultado de una llamada de la ronda de verificación.
+ *
+ * Todos los caminos escriben `ultimo_intento_llamada`, incluso cuando no
+ * contestan. Es lo que saca al punto de la cola por un rato y evita que otro
+ * voluntario marque el mismo número enseguida.
+ */
+export async function registrarLlamada(formData: FormData) {
+  const id = String(formData.get('id') ?? '');
+  const resultado = String(formData.get('resultado') ?? '');
+
+  const supabase = await clienteServidor();
+  const { data: sesion } = await supabase.auth.getUser();
+  if (!sesion.user) redirect('/admin');
+
+  const ahora = new Date().toISOString();
+  const cambios: Record<string, unknown> = { ultimo_intento_llamada: ahora };
+
+  // "Contestaron" es lo que reinicia el reloj de frescura, no el intento.
+  const contestaron = resultado !== 'no_contesta';
+  if (contestaron) {
+    cambios.ultima_verificacion = ahora;
+    cambios.verificado_por = sesion.user.id;
+    cambios.intentos_fallidos = 0;
+  }
+
+  if (resultado === 'sigue') cambios.estado = 'publicado';
+  if (resultado === 'lleno') cambios.estado = 'lleno';
+  if (resultado === 'cerrado') {
+    cambios.estado = 'cerrado';
+    // Ya no está en el directorio: no tiene sentido seguir contando frescura.
+    delete cambios.ultima_verificacion;
+    delete cambios.verificado_por;
+  }
+
+  if (resultado === 'no_contesta') {
+    const { data: actual } = await supabase
+      .from('puntos').select('intentos_fallidos').eq('id', id).maybeSingle();
+    cambios.intentos_fallidos = (actual?.intentos_fallidos ?? 0) + 1;
+  }
+
+  await supabase.from('puntos').update(cambios).eq('id', id);
+
+  revalidatePath('/admin');
+  revalidatePath('/');
+  revalidatePath(`/punto/${id}`);
+}
+
+/**
  * Da por atendida una solicitud.
  *
  * No borra: la bandeja atendida es el historial de por qué un punto quedó como

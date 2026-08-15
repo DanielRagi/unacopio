@@ -51,8 +51,9 @@ npm install
    | 3 | `supabase/migrations/0003_municipios_latlng.sql` |
    | 4 | `supabase/migrations/0004_sin_tokens_solicitudes.sql` |
    | 5 | `supabase/migrations/0005_buscar_puntos.sql` |
-   | 6 | `supabase/seed/0001_categorias.sql` |
-   | 7 | `supabase/seed/0002_municipios.sql` |
+   | 6 | `supabase/migrations/0006_llamadas_y_lleno.sql` |
+   | 7 | `supabase/seed/0001_categorias.sql` |
+   | 8 | `supabase/seed/0002_municipios.sql` |
 
    Todo, menos `0001`, se puede volver a pegar completo sin romper nada. El
    editor de Supabase aborta la corrida entera cuando algo falla, así que poder

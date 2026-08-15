@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ListaCategorias } from './ListaCategorias';
 import { SelloFrescura } from './SelloFrescura';
+import { SelloLleno } from './SelloLleno';
 import { TIPOS_ORGANIZACION } from '@/lib/textos';
 import type { PuntoPublico } from '@/lib/tipos';
 
@@ -10,6 +11,7 @@ export function TarjetaPunto({ punto, metros }: { punto: PuntoPublico; metros?: 
       <Link href={`/punto/${punto.id}`} className="flex flex-col gap-3 p-4 sm:p-5">
         <div className="flex flex-col gap-1.5">
           <div className="flex flex-wrap items-center gap-2">
+            {punto.estado === 'lleno' && <SelloLleno />}
             {punto.entidad_oficial && (
               <span className="rounded-full bg-emerald-600 px-2.5 py-0.5 text-xs font-semibold text-white">
                 Entidad oficial

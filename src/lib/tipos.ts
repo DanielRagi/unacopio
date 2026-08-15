@@ -49,6 +49,8 @@ export interface PuntoPublico {
   id: string;
   nombre: string;
   tipo_organizacion: TipoOrganizacion;
+  /** La vista pública solo deja pasar estos dos. `lleno` sale marcado y de último. */
+  estado: 'publicado' | 'lleno';
   departamento_codigo: string;
   departamento: string;
   municipio_codigo: string;

@@ -74,6 +74,10 @@ if (servicio) {
   const { error: err5 } = await admin.rpc('buscar_puntos', { p_limite: 1 });
   console.log('0005 buscar     :', err5 ? 'NO aplicada' : 'sí ✓');
   if (err5) fallas++;
+
+  const { error: err6 } = await admin.from('puntos').select('ultimo_intento_llamada').limit(1);
+  console.log('0006 llamadas   :', err6 ? 'NO aplicada' : 'sí ✓');
+  if (err6) fallas++;
 }
 
 console.log(fallas === 0 ? '\n✓ el proyecto responde y RLS está en pie' : `\n✗ ${fallas} problema(s)`);

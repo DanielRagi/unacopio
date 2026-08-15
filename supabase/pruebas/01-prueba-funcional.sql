@@ -135,6 +135,33 @@ set role anon;
 select count(*) as visibles_final from puntos_publicos;
 reset role;
 
+\echo '--- un punto lleno SI se ve, pero de ultimo'
+update puntos set estado = 'publicado', reportes_abiertos = 0 where id = :'punto_id';
+select registrar_punto(
+  'Coliseo Municipal', 'alcaldia', '17', '17001', 'Carrera 20 # 30-10',
+  5.0600, -75.5100, 'Juan Perez', '+573009998877', 'Todos los dias',
+  '[{"slug":"agua_embotellada","nivel":"si"}]'::jsonb
+) as lleno_id \gset
+update puntos set estado = 'lleno' where id = :'lleno_id';
+
+set role anon;
+select (punto->>'nombre') as nombre, (punto->>'estado') as estado
+from buscar_puntos(p_municipio => '17001');
+reset role;
+
+\echo '--- duplicados: un punto a menos de 200 m del primero'
+select registrar_punto(
+  'Parroquia San Jose (repetido)', 'iglesia', '17', '17001', 'Calle 12 # 4-32',
+  5.0704, -75.5139, 'Otra persona', '+573001110000', 'Lun a Vie',
+  '[{"slug":"agua_embotellada","nivel":"si"}]'::jsonb
+) as duplicado_id \gset
+
+select nombre, estado, round(metros::numeric) as metros
+from posibles_duplicados(:'duplicado_id');
+
+\echo '--- y el coliseo, que esta a mas de 200 m, no aparece como duplicado'
+select count(*) as duplicados_del_coliseo from posibles_duplicados(:'lleno_id');
+
 \echo '--- reportar un punto inexistente falla'
 do $$
 begin

@@ -1,12 +1,14 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { cerrarSesion } from './acciones';
+import { FilaLlamada } from '@/components/FilaLlamada';
 import { FilaModeracion } from '@/components/FilaModeracion';
 import { FilaSolicitud } from '@/components/FilaSolicitud';
 import { FormularioAcceso } from '@/components/FormularioAcceso';
 import {
-  contarPorEstado, contarSolicitudes, listarPuntosModeracion, listarSolicitudes,
-  obtenerModerador,
+  contarPorEstado, contarSolicitudes, duplicadosDe, HORAS_FRESCURA,
+  listarPorLlamar, listarPuntosModeracion, listarSolicitudes, obtenerModerador,
+  type Duplicado,
 } from '@/lib/datos';
 import type { EstadoPunto } from '@/lib/tipos';
 
@@ -18,6 +20,7 @@ export const metadata: Metadata = {
 const PESTANAS: { estado: EstadoPunto; etiqueta: string }[] = [
   { estado: 'pendiente', etiqueta: 'Por revisar' },
   { estado: 'publicado', etiqueta: 'Publicados' },
+  { estado: 'lleno', etiqueta: 'Llenos' },
   { estado: 'cerrado', etiqueta: 'Cerrados' },
   { estado: 'rechazado', etiqueta: 'Rechazados' },
 ];
@@ -62,7 +65,9 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
     );
   }
 
-  const enBandeja = params.vista === 'solicitudes';
+  const vista = params.vista === 'solicitudes' || params.vista === 'llamadas'
+    ? params.vista
+    : 'puntos';
 
   const estadoActivo =
     (typeof params.estado === 'string' &&
@@ -70,12 +75,23 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
       (params.estado as EstadoPunto)) ||
     'pendiente';
 
-  const [puntos, conteos, solicitudes, pendientesBandeja] = await Promise.all([
-    enBandeja ? Promise.resolve([]) : listarPuntosModeracion(estadoActivo),
+  const [puntos, conteos, solicitudes, pendientesBandeja, porLlamar] = await Promise.all([
+    vista === 'puntos' ? listarPuntosModeracion(estadoActivo) : Promise.resolve([]),
     contarPorEstado(),
-    enBandeja ? listarSolicitudes() : Promise.resolve([]),
+    vista === 'solicitudes' ? listarSolicitudes() : Promise.resolve([]),
     contarSolicitudes(),
+    listarPorLlamar(),
   ]);
+
+  // Solo se buscan duplicados en la cola de revisión, que es donde sirven: una
+  // vez publicado, el punto ya pasó por ojos humanos.
+  const duplicados = new Map<string, Duplicado[]>();
+  if (vista === 'puntos' && estadoActivo === 'pendiente') {
+    const encontrados = await Promise.all(
+      puntos.map(async (p) => [p.id, await duplicadosDe(p.id)] as const),
+    );
+    for (const [id, lista] of encontrados) if (lista.length > 0) duplicados.set(id, lista);
+  }
 
   return (
     <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-6 px-5 py-8">
@@ -99,26 +115,56 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
       </header>
 
       <nav className="flex flex-wrap gap-2">
-        {PESTANAS.map((pestana) => {
-          const activa = !enBandeja && pestana.estado === estadoActivo;
-          return (
-            <Pestana
-              key={pestana.estado}
-              href={`/admin?estado=${pestana.estado}`}
-              activa={activa}
-              cuenta={conteos[pestana.estado] ?? 0}
-            >
-              {pestana.etiqueta}
-            </Pestana>
-          );
-        })}
-        <Pestana href="/admin?vista=solicitudes" activa={enBandeja} cuenta={pendientesBandeja}>
+        <Pestana
+          href="/admin?vista=llamadas"
+          activa={vista === 'llamadas'}
+          cuenta={porLlamar.length}
+        >
+          Por llamar
+        </Pestana>
+        {PESTANAS.map((pestana) => (
+          <Pestana
+            key={pestana.estado}
+            href={`/admin?estado=${pestana.estado}`}
+            activa={vista === 'puntos' && pestana.estado === estadoActivo}
+            cuenta={conteos[pestana.estado] ?? 0}
+          >
+            {pestana.etiqueta}
+          </Pestana>
+        ))}
+        <Pestana
+          href="/admin?vista=solicitudes"
+          activa={vista === 'solicitudes'}
+          cuenta={pendientesBandeja}
+        >
           Solicitudes
         </Pestana>
       </nav>
 
-      {enBandeja ? (
-        solicitudes.length === 0 ? (
+      {vista === 'llamadas' && (
+        <>
+          <p className="rounded-lg bg-black/[0.03] p-3 text-sm text-black/70 dark:bg-white/5 dark:text-white/70">
+            Ronda de verificación: llama y pregunta si siguen recibiendo. Sale lo
+            que lleva más de {HORAS_FRESCURA} horas sin confirmarse, de lo más
+            viejo a lo más nuevo. Al registrar el resultado el punto sale de la
+            cola un rato, para que otro voluntario no marque el mismo número.
+          </p>
+          {porLlamar.length === 0 ? (
+            <p className="rounded-xl border border-dashed border-black/20 p-6 text-black/60 dark:border-white/25 dark:text-white/60">
+              Nada por llamar. Todo el directorio está confirmado.
+            </p>
+          ) : (
+            <ul className="flex flex-col gap-4">
+              {porLlamar.map((punto) => (
+                <FilaLlamada key={punto.id} punto={punto} />
+              ))}
+            </ul>
+          )}
+        </>
+      )}
+
+      {vista === 'solicitudes' &&
+        (solicitudes.length === 0 ? (
           <p className="rounded-xl border border-dashed border-black/20 p-6 text-black/60 dark:border-white/25 dark:text-white/60">
             No hay solicitudes sin atender.
           </p>
@@ -128,29 +174,35 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
               <FilaSolicitud key={solicitud.id} solicitud={solicitud} />
             ))}
           </ul>
-        )
-      ) : (
-        <>
-      {estadoActivo === 'pendiente' && puntos.length > 0 && (
-        <p className="rounded-lg bg-black/[0.03] p-3 text-sm text-black/70 dark:bg-white/5 dark:text-white/70">
-          Antes de publicar, llama al responsable y confirma que el punto existe y
-          sigue recibiendo. Publicar deja tu nombre y la fecha en el registro.
-        </p>
-      )}
+        ))}
 
-      {puntos.length === 0 ? (
-        <p className="rounded-xl border border-dashed border-black/20 p-6 text-black/60 dark:border-white/25 dark:text-white/60">
-          {estadoActivo === 'pendiente'
-            ? 'No hay nada por revisar. Cola limpia.'
-            : 'No hay puntos en este estado.'}
-        </p>
-      ) : (
-        <ul className="flex flex-col gap-4">
-          {puntos.map((punto) => (
-            <FilaModeracion key={punto.id} punto={punto} />
-          ))}
-        </ul>
-      )}
+      {vista === 'puntos' && (
+        <>
+          {estadoActivo === 'pendiente' && puntos.length > 0 && (
+            <p className="rounded-lg bg-black/[0.03] p-3 text-sm text-black/70 dark:bg-white/5 dark:text-white/70">
+              Antes de publicar, llama al responsable y confirma que el punto
+              existe y sigue recibiendo. Publicar deja tu nombre y la fecha en el
+              registro.
+            </p>
+          )}
+
+          {puntos.length === 0 ? (
+            <p className="rounded-xl border border-dashed border-black/20 p-6 text-black/60 dark:border-white/25 dark:text-white/60">
+              {estadoActivo === 'pendiente'
+                ? 'No hay nada por revisar. Cola limpia.'
+                : 'No hay puntos en este estado.'}
+            </p>
+          ) : (
+            <ul className="flex flex-col gap-4">
+              {puntos.map((punto) => (
+                <FilaModeracion
+                  key={punto.id}
+                  punto={punto}
+                  duplicados={duplicados.get(punto.id) ?? []}
+                />
+              ))}
+            </ul>
+          )}
         </>
       )}
     </main>

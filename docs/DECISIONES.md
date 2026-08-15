@@ -99,8 +99,9 @@ de negocio y aprobación de plantillas, que tardan más de lo que dura la ventan
 en la que este sitio sirve para algo. Y un número no verificado escribiéndole a
 gente que acaba de publicar su teléfono es exactamente lo que hace un estafador.
 
-Entonces, canales salientes: **solo correo** (Supabase Auth para el equipo de
-moderación, y el enlace de edición para quien registró un punto).
+Entonces queda un solo canal saliente, y es angosto: el correo de Supabase Auth
+con el enlace de acceso al panel de moderación. Nada más. Al público no le
+escribimos nunca; a los responsables de los puntos se les **llama** (ver D10).
 
 Lo que sí sigue siendo por WhatsApp, porque no lo manda la plataforma sino las
 personas:
@@ -151,3 +152,47 @@ punto está colaborando, no denunciando, así que su solicitud no cuenta para el
 umbral de tres reportes que despublica un punto solo. Si no, alguien tumbaría su
 propio punto al pedir que le corrijan el horario. Ojo: **`es_responsable` no está
 verificado**; es una pista para priorizar, no una credencial.
+
+## D10. La verificación periódica la hace una persona llamando
+
+El plan original tenía un recordatorio automático cada 48 horas al responsable de
+cada punto: "¿siguen recibiendo? Sí / Cambió / Ya cerramos", de un clic. Con D8
+(nada por WhatsApp) y sin proveedor de correo, ese mensaje no tiene por dónde
+salir. Entonces la ronda la hace **un moderador llamando por teléfono**.
+
+No es solo el reemplazo barato. Llamar tiene algo que el mensaje automático no:
+quien contesta suele decir más de lo que se le preguntó —"ya no necesitamos
+ropa pero nos hace falta agua", "estamos llenos hasta el jueves"—, y eso es
+justo lo que mantiene la ficha útil. Y confirma que del otro lado hay alguien
+real, que es la mitad de lo que sostiene la confianza en el directorio.
+
+Lo que cuesta, y hay que decirlo claro: **esto no escala solo**. Un mensaje
+automático sirve igual con 40 puntos que con 400; una ronda de llamadas necesita
+más gente a medida que crece el directorio. La regla práctica es que cada punto
+se llama cada 48 horas, así que con N puntos son N/2 llamadas al día. Pasadas un
+par de centenas hay que conseguir un proveedor de correo y volver al recordatorio
+automático, dejando la llamada para lo que no conteste.
+
+Lo que la app pone para que la ronda funcione con varios voluntarios a la vez:
+
+- Una cola **Por llamar**: lo que lleva más de 48 horas sin confirmarse, de lo
+  más viejo a lo más nuevo, y lo que nunca se verificó antes que todo.
+- Cuatro respuestas de un toque: siguen recibiendo · están llenos · ya cerraron ·
+  no contestan.
+- `ultimo_intento_llamada` se escribe **siempre**, incluso cuando no contestan,
+  y el punto sale de la cola por media hora. Sin eso, dos voluntarios marcan el
+  mismo número con cinco minutos de diferencia, que es exactamente lo que pasa
+  cuando la gente trabaja en paralelo sin coordinarse.
+- `intentos_fallidos` cuenta las llamadas seguidas sin respuesta. Varias
+  seguidas vuelven sospechoso a un punto aunque nadie lo haya reportado.
+
+## D11. Un punto lleno se muestra, no se esconde
+
+`lleno` significa "hoy no pueden recibir más". Antes esos puntos desaparecían del
+directorio, y salía peor: quien se enteró por la radio o por un audio de WhatsApp
+iba de todas formas, y no teníamos dónde decirle que no fuera.
+
+Ahora aparecen, marcados con "Hoy no reciben más" y de últimos en el orden. La
+ficha además sugiere llamar antes de ir o buscar otro punto cerca. Un viaje que
+no se hace vale más que un renglón menos en la lista.
+
