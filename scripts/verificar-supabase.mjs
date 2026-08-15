@@ -91,6 +91,28 @@ if (servicio) {
   const tiene7 = err7?.message?.includes('dentro de Colombia');
   console.log('0007 horarios   :', tiene7 ? 'sí ✓' : `NO aplicada (${err7?.message ?? 'sin error'})`);
   if (!tiene7) fallas++;
+
+  const { data: slugs, error: err8 } = await admin
+    .from('municipios').select('slug').eq('codigo', '11001').maybeSingle();
+  const tiene8 = !err8 && slugs?.slug === 'bogota';
+  console.log('0008 slug       :', tiene8 ? 'sí ✓' : `NO aplicada (${err8?.message ?? slugs?.slug})`);
+  if (!tiene8) fallas++;
+
+  const { error: err8b } = await admin.rpc('necesidades', { p_municipio: '11001' });
+  console.log('0008 necesidades:', err8b ? `NO aplicada (${err8b.message})` : 'sí ✓');
+  if (err8b) fallas++;
+
+  // Debe rechazar: se llama con la llave de servicio, que no tiene perfil de
+  // moderador. Si algún día contesta otra cosa, la función quedó abierta.
+  const { error: err8c } = await admin.rpc('importar_punto', {
+    p_nombre: 'sonda', p_tipo_organizacion: 'ong',
+    p_departamento_codigo: '17', p_municipio_codigo: '17001', p_direccion: 'sonda',
+    p_lat: 0, p_lng: 0, p_responsable_nombre: 'sonda', p_telefono: '+573000000000',
+    p_horario_texto: 'sonda',
+  });
+  const cerrada = err8c?.message?.includes('Solo moderación');
+  console.log('0008 importar   :', cerrada ? 'cerrada ✓' : `revisar (${err8c?.message ?? 'no falló'})`);
+  if (!cerrada) fallas++;
 }
 
 console.log(fallas === 0 ? '\n✓ el proyecto responde y RLS está en pie' : `\n✗ ${fallas} problema(s)`);

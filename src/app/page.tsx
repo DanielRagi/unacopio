@@ -4,14 +4,17 @@ import { Encabezado } from '@/components/Encabezado';
 import { FiltroUbicacion } from '@/components/FiltroUbicacion';
 import { PieDePagina } from '@/components/PieDePagina';
 import { TarjetaPunto } from '@/components/TarjetaPunto';
-import { buscarPuntos, listarCategorias, listarDepartamentos, listarMunicipios } from '@/lib/datos';
+import { Necesidades } from '@/components/Necesidades';
+import {
+  buscarPuntos, listarCategorias, listarDepartamentos, listarMunicipios, necesidadesDe,
+} from '@/lib/datos';
 import { aQueryString, leerFiltros } from '@/lib/filtros';
 
 export default async function Portada({ searchParams }: PageProps<'/'>) {
   const filtros = leerFiltros(await searchParams);
   const porCercania = filtros.lat !== undefined;
 
-  const [departamentos, municipios, categorias, resultados] = await Promise.all([
+  const [departamentos, municipios, categorias, resultados, necesidades] = await Promise.all([
     listarDepartamentos(),
     filtros.dep ? listarMunicipios(filtros.dep) : Promise.resolve([]),
     listarCategorias(),
@@ -25,6 +28,11 @@ export default async function Portada({ searchParams }: PageProps<'/'>) {
       // se mueve más lejos de lo normal con tal de entregar algo.
       radioM: 50000,
     }),
+    // Sin ubicación no se calcula: "lo que más falta a 50 km a la redonda" no
+    // es una pregunta que alguien se haga.
+    porCercania
+      ? Promise.resolve([])
+      : necesidadesDe({ departamento: filtros.dep, municipio: filtros.mun }),
   ]);
 
   const nombreLugar =
@@ -65,6 +73,14 @@ export default async function Portada({ searchParams }: PageProps<'/'>) {
           lat={filtros.lat !== undefined ? String(filtros.lat) : undefined}
           lng={filtros.lng !== undefined ? String(filtros.lng) : undefined}
         />
+
+        {!filtros.cat && (
+          <Necesidades
+            necesidades={necesidades}
+            base={`/${aQueryString(filtros)}`}
+            lugar={nombreLugar}
+          />
+        )}
 
         <section className="flex flex-col gap-4">
           <div className="flex flex-wrap items-center justify-between gap-3">

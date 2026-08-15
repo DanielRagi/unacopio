@@ -196,7 +196,10 @@ begin
 end;
 $$;
 
-revoke execute on function importar_punto from anon;
+-- `public` y no solo `anon`: Postgres le da EXECUTE a PUBLIC en toda función
+-- nueva, y quitárselo a `anon` no toca esa herencia. Dentro la función igual
+-- exige moderador, pero no hay razón para dejarla al alcance de quien no lo es.
+revoke execute on function importar_punto from public, anon;
 grant execute on function importar_punto to authenticated;
 
 -- ---------------------------------------------------------------- agregados
