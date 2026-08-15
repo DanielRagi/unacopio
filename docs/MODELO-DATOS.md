@@ -45,9 +45,12 @@ El registro central. Un punto de acopio.
 | `entidad_oficial` | `boolean` | banda verde; solo lo activa moderación |
 | `reportes_abiertos` | `int` | contador desnormalizado, dispara despublicación |
 | `origen` | `enum` | `formulario`, `moderacion`, `importacion` |
+| `fuente_nombre` | `text null` | de dónde salió un punto importado: "Alcaldía de Medellín", "El Colombiano". **Interno**: no se publica, porque lo que sostiene la ficha es la llamada de confirmación, no la fuente de la que se copió (ver D13) |
+| `fuente_url` | `text null` | el enlace exacto, para poder volver a mirarlo |
 | `creado_en` / `actualizado_en` | `timestamptz` | |
 
-Índices: `GIST(ubicacion)`, `(estado, municipio)`, `(estado, actualizado_en desc)`.
+Índices: `GIST(ubicacion)`, `(estado, municipio)`, `(estado, actualizado_en desc)`,
+`(origen, estado)`.
 
 ## `categorias`
 
@@ -128,8 +131,16 @@ selector y para "puntos en tu municipio" cuando la persona no da permiso de GPS.
 |---|---|
 | `codigo` (pk) | `char(5)` |
 | `nombre` | `text` |
+| `slug` | `text` único |
 | `departamento_codigo` | `char(2)` → `departamentos.codigo` |
 | `centroide` | `geography(Point,4326)` |
+
+El `slug` es el que arma las URLs compartibles: `/acopio/medellin`. Se calcula en
+la migración 0008 a partir del nombre, sin tildes. Los nombres que se repiten
+entre departamentos —Albania, El Peñón, La Unión y unas cuantas decenas más—
+llevan el departamento pegado (`argelia-cauca`). Bogotá va a mano: el DANE la
+llama "Bogotá D.C." y de ahí salía `bogota-d-c`, que nadie escribe ni reconoce.
+Un trigger lo rellena si alguien inserta un municipio sin él.
 
 Se generan con `npm run municipios`, que baja el dataset `pqwj-3fi4` de
 datos.gov.co y escribe `supabase/seed/0002_municipios.sql`. El SQL queda
@@ -150,6 +161,9 @@ público entra por una vista y tres funciones.
 | `buscar_puntos(...)` | anónimo | La única puerta del listado y del mapa. Filtra por departamento, municipio y categoría, y —si le pasan coordenadas— por radio, ordenando por distancia. Sin coordenadas ordena por verificación más reciente. El filtro por categoría solo cuenta si el punto la recibe: un `no_recibe` es justamente la razón para no mostrarlo. |
 | `reportar_punto(...)` | anónimo | Recibe solicitudes y reportes. Ignora repeticiones del mismo `ip_hash` en una hora. Al tercer reporte **de terceros** despublica el punto; las solicitudes con `es_responsable` no suman a ese contador. |
 | `posibles_duplicados(...)` | moderación | Puntos del mismo municipio a menos de 200 m. Va con `SECURITY INVOKER` a propósito: consulta la tabla base, así que RLS lo deja vacío para cualquiera que no sea del equipo. |
+| `necesidades(...)` | anónimo | Qué categorías piden más en un municipio o departamento, ordenadas por cuántos puntos las marcaron `alta`. Los `lleno` no cuentan: hoy no pueden recibir, y sumarlos exageraría la demanda. |
+| `municipios_con_puntos()` | anónimo | Los municipios que hoy tienen algo publicado. De aquí salen el índice `/acopio` y el sitemap; no tiene sentido publicar 1.122 URLs vacías. |
+| `importar_punto(...)` | moderación | Carga masiva desde una lista que ya existe. Igual que `registrar_punto`, fuerza `pendiente` y `telefono_publico = false`; además guarda `fuente_nombre` y `fuente_url`. Verifica `es_moderador()` por dentro, y tiene el `execute` revocado de `public` —Postgres se lo da a PUBLIC por defecto, y quitárselo solo a `anon` no toca esa herencia—. |
 
 La búsqueda ordena los puntos `lleno` de últimos: siguen sirviendo como
 información —evitan un viaje— pero no deberían ser la primera opción de nadie.

@@ -117,7 +117,13 @@ export async function necesidadesDe(
     p_limite: 8,
   });
 
-  if (error) throw new Error(`No se pudieron cargar las necesidades: ${error.message}`);
+  // Sin excepción a propósito: esto es un agregado que adorna el listado, y
+  // tumbar la portada entera porque el agregado falló es peor que no mostrarlo.
+  // Lo que la gente vino a buscar —dónde llevar la donación— no depende de acá.
+  if (error) {
+    console.error(`No se pudieron cargar las necesidades: ${error.message}`);
+    return [];
+  }
   return (data ?? []) as Necesidad[];
 }
 

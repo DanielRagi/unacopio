@@ -226,3 +226,63 @@ El cálculo está en `src/lib/horarios.ts` y tiene pruebas propias
 el tipo de código que se equivoca en silencio, así que conviene que falle ruidoso
 en la consola antes que callado en producción.
 
+
+## D13. Un dato copiado de internet es una pista, no un hecho
+
+Todo lo que entra por `importar_punto` —el CSV de una alcaldía, la lista de un
+periódico, lo que recoja la fase 5— queda en `pendiente`, exactamente igual que
+un registro del formulario público. No hay atajo por venir de una fuente
+"buena": lo que publica un punto es que un moderador llamó y alguien contestó.
+
+Suena excesivo cuando la lista viene del sitio web de la Alcaldía de Medellín.
+No lo es, por dos razones que ya se han visto en otras emergencias:
+
+- Las listas oficiales se publican una vez y no se vuelven a tocar. A los tres
+  días la mitad de los puntos ya cerró o se mudó, y la página sigue igual.
+- Publicar sin llamar rompe la única promesa que este sitio hace de verdad —
+  "esto está confirmado" —, y la rompe justo donde más se nota: al principio,
+  cuando nadie lo conoce todavía y una sola mala experiencia decide si vuelve.
+
+Dos consecuencias en el modelo:
+
+- **El teléfono importado nunca sale publicado.** Copiar un número de una
+  publicación no es la autorización que pide la Ley 1581 de 2012. El número
+  queda visible solo para moderación, que es quien va a llamar; la autorización
+  para publicarlo se pide en esa llamada y se marca a mano.
+- **La procedencia se guarda, pero no se muestra.** `fuente_nombre` y
+  `fuente_url` quedan en la tabla para poder responder "¿de dónde salió esto?".
+  No van en la ficha pública: mostrarlas invitaría a leer la fuente como aval,
+  y el aval es la llamada. Si algún día se muestran, que sea junto a la fecha de
+  verificación y no en su lugar.
+
+## D14. La recolección en internet produce un CSV, no filas en la base
+
+La fase 5 —buscar en internet los puntos que ya circulan en Medellín y Bogotá
+para arrancar con datos reales— se hace con un script que **no escribe en la
+base de datos**. Escribe un CSV, que un moderador abre, revisa y carga por
+`/admin/importar`, donde vuelve a pasar por la revisión fila por fila.
+
+Es una decisión de arquitectura, no de pereza. Un recolector que escribe directo
+es imposible de auditar: cuando aparezca un punto raro no hay forma de saber si
+lo inventó una expresión regular o si de verdad estaba en la página. Con el CSV
+de por medio, cada punto tiene un archivo con su línea y su URL de origen.
+
+Las reglas de la recolección, que valen tanto para el script como para quien lo
+corra a mano:
+
+- **Fuentes públicas y citables.** Páginas de alcaldías, gestión del riesgo,
+  Cruz Roja, Defensa Civil, bomberos, y notas de prensa. Nada detrás de un
+  login, nada de grupos privados de WhatsApp.
+- **Respetar `robots.txt`**, identificarse con un User-Agent propio que diga qué
+  es esto y a dónde escribir, y no pedir más de una página por segundo. No hay
+  ninguna prisa que justifique tumbarle el sitio a una alcaldía en emergencia.
+- **Los datos de contacto de personas no se publican nunca desde la
+  recolección** (ver D13). Entran para poder llamar.
+- **Sin geocodificación de pago.** Nominatim de OSM, un pedido por segundo y con
+  User-Agent identificado, como pide su política de uso. Lo que no resuelva cae
+  al centroide del municipio, que es exactamente lo que ya hace el formulario
+  público cuando alguien registra sin JavaScript.
+- **Se mide.** El pilotaje sirve tanto para sembrar el directorio como para
+  saber cuánto cuesta mantenerlo: cuántas filas sobrevivieron a la revisión,
+  cuántas llamadas hubo que hacer, cuántas contestaron. De ahí sale si la ronda
+  de llamadas de D10 aguanta o si hay que conseguir el proveedor de correo ya.

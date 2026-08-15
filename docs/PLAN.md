@@ -94,15 +94,94 @@ los audios de WhatsApp.
       de D9: si el público no edita, alguien tiene que poder aplicar lo que sale
       de las llamadas y de la bandeja
 
-## Fase 4 — Alcance y aliados (según cómo evolucione)
+## Fase 4 — Alcance y aliados ✅
 
-- [ ] `GET /api/puntos.json` y `.csv` públicos, con licencia abierta, para que
-      medios y alcaldías reutilicen los datos en vez de armar su propia lista
-- [ ] PWA + caché offline de la lista del municipio (conectividad intermitente)
-- [ ] Importación masiva desde CSV para listas que ya tienen las alcaldías
-- [ ] Vista por municipio para compartir: `/acopio/manizales`
-- [ ] Sección de "necesidades agregadas": qué falta más en cada municipio
-- [ ] Accesibilidad: contraste AA, tipografía grande, funciona con lector de pantalla
+- [x] `GET /api/puntos.json` y `.csv` públicos, sin llave, con CORS abierto y
+      licencia CC BY 4.0, para que medios y alcaldías reutilicen los datos en vez
+      de armar su propia lista. El CSV lleva BOM y CRLF: se va a abrir en Excel
+- [x] `/datos` — la página que explica la API en español. Sin ella la API no la
+      usa nadie fuera de un equipo técnico, que no es a quien hay que convencer
+- [x] Importación masiva desde CSV (`/admin/importar`), en dos pasos: revisar
+      fila por fila y confirmar. Detecta el separador, resuelve municipios por
+      código DANE o por nombre y cae al centroide cuando no hay coordenadas
+- [x] Vista por municipio para compartir: `/acopio/medellin`, más el índice
+      `/acopio` de los municipios que ya tienen puntos
+- [x] "Lo que más falta acá": necesidades agregadas por municipio, cada una
+      enlazando al listado ya filtrado
+- [x] PWA + caché offline: las páginas van a la red primero y solo caen a la
+      copia guardada sin señal; `/offline` dice qué sí se puede hacer sin datos
+- [x] `sitemap.xml` con los municipios (las fichas no: se cierran a diario) y
+      `robots.txt`
+- [x] Accesibilidad: enlace de "saltar al contenido", foco visible en todo,
+      `prefers-reduced-motion`
+
+## Fase 5 — Pilotaje con datos reales: Medellín y Bogotá
+
+El sitio ya sirve, pero está vacío, y un directorio vacío no lo comparte nadie.
+Esta fase es la siembra —y, de paso, la primera medición honesta de cuánto
+cuesta mantenerlo—. Ver **D13** (un dato copiado es una pista, no un hecho) y
+**D14** (la recolección produce un CSV, no filas en la base).
+
+Se eligen Medellín y Bogotá porque son donde más información circula y donde el
+error se nota rápido: si el directorio queda mal ahí, se sabe en horas.
+
+### 5.1 — Primero preguntar, que sale más barato que raspar
+
+Antes de escribir una línea de código: escribirle al DAGRD de Medellín, al
+IDIGER en Bogotá, a la Cruz Roja seccional y a las oficinas de prensa de ambas
+alcaldías pidiendo su lista, con la plantilla de `/admin/importar` adjunta y el
+enlace a `/datos`. Una lista entregada llega limpia, con teléfonos que contestan,
+y de paso deja un aliado. Raspar es el plan B y el complemento, no el plan A.
+
+- [ ] Correo a las cuatro entidades, con plantilla CSV y enlace a `/datos`
+- [ ] Cargar por `/admin/importar` lo que llegue
+
+### 5.2 — Recolección desde fuentes públicas
+
+- [ ] `docs/fuentes.json` — lista **curada a mano** de URLs por ciudad: páginas
+      de alcaldía y gestión del riesgo, Cruz Roja, Defensa Civil, bomberos y
+      notas de prensa. Descubrir fuentes automáticamente es una fantasía; lo que
+      sí escala es releer las mismas veinte páginas cada día
+- [ ] `npm run recolectar` (`scripts/recolectar.mjs`) — baja cada fuente,
+      respeta `robots.txt`, un pedido por segundo, User-Agent propio que diga qué
+      es esto y a dónde escribir
+- [ ] Extracción: direcciones colombianas (`Calle|Carrera|Cra|Kr|Av … # …-…`),
+      celulares (`3XX XXX XXXX`), horarios y el bloque de texto alrededor. Lo que
+      no encaje se deja en `notas` en crudo, sin inventar: una dirección mal
+      adivinada manda a alguien a otra parte de la ciudad
+- [ ] Geocodificación con Nominatim de OSM: un pedido por segundo, User-Agent
+      identificado, caché en disco para no volver a pedir lo mismo. Lo que no
+      resuelva cae al centroide del municipio
+- [ ] Salida: un CSV en el formato exacto de `/admin/importar`, con
+      `fuente_nombre` y `fuente_url` en cada fila, más un informe de qué se
+      descartó y por qué
+- [ ] `npm run probar:recoleccion` — pruebas de la extracción contra HTML
+      guardado en el repo, no contra la red: si un sitio cambia, las pruebas
+      tienen que seguir corriendo
+
+### 5.3 — Revisión y llamadas
+
+- [ ] Cargar el CSV y revisar duplicados (la cola ya avisa "hay otro a menos de
+      200 m")
+- [ ] Ronda de llamadas sobre los importados. En la llamada, además de confirmar,
+      se pide autorización para publicar el teléfono (Ley 1581) y se pregunta qué
+      necesitan hoy — que es el dato que ninguna página web tiene al día
+- [ ] Publicar solo lo confirmado
+
+### 5.4 — Lo que hay que medir
+
+El pilotaje vale tanto por los puntos que siembra como por lo que enseña:
+
+| Número | Para qué sirve |
+|---|---|
+| Filas recolectadas vs. filas que sobrevivieron la revisión | Dice si el raspado aporta o solo hace ruido |
+| Llamadas hechas vs. llamadas contestadas | Si contesta menos de la mitad, la ronda de D10 no se sostiene |
+| Minutos por punto (revisar + llamar + publicar) | Cuántos voluntarios hace falta por cada 50 puntos |
+| Puntos que ya habían cerrado al llamar | Mide qué tan rápido se pudre una lista publicada |
+
+**Sale de aquí:** Medellín y Bogotá con puntos reales y confirmados, y un número
+concreto para decidir si la verificación por llamada aguanta el crecimiento o si
+hay que conseguir ya el proveedor de correo (ver D10).
 
 ---
 
@@ -124,7 +203,9 @@ Cada uno de estos suena razonable y hunde el cronograma:
 | Riesgo | Mitigación |
 |---|---|
 | Spam / puntos falsos | Moderación previa obligatoria, honeypot, rate limit por IP, botón de reporte |
-| Información desactualizada | Fase 3 completa: semáforo + recordatorio de 48h |
+| Información desactualizada | Fase 3 completa: semáforo + ronda de llamadas cada 48h (D10) |
+| Datos raspados de internet que resultan viejos o falsos | Todo entra `pendiente` y se publica solo tras la llamada (D13); la fuente queda guardada para poder auditar |
+| Teléfonos copiados de una publicación | No se publican nunca desde importación: la autorización de Habeas Data se pide en la llamada (D13) |
 | Estafas con datos bancarios | Prohibido publicar cuentas; aviso visible; se rechaza el registro |
 | Datos personales expuestos | Consentimiento explícito (Ley 1581/2012), teléfono opt-in, correo nunca público |
 | Pico de tráfico por un trino o una nota de prensa | SSR + caché de la lista; Vercel escala solo |
@@ -142,5 +223,6 @@ El sitio puede estar perfecto y quedar vacío. Hay que sembrarlo con datos el mi
 
 ## Siguiente paso inmediato
 
-Fase 0. Concretamente: `create-next-app`, proyecto en Supabase, migración inicial y
-un deploy en Vercel apuntando al dominio.
+Fase 5.1: escribirle al DAGRD, al IDIGER, a la Cruz Roja y a las oficinas de
+prensa de Medellín y Bogotá pidiendo sus listas. Es lo único de todo el plan que
+no depende de escribir código y sí decide si el directorio arranca lleno o vacío.
