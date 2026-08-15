@@ -1,7 +1,8 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { useActionState } from 'react';
+import { useActionState, useState } from 'react';
 import { SelectorCategorias } from './SelectorCategorias';
 import { SelectorHorario } from './SelectorHorario';
 import { guardarPunto } from '@/app/admin/acciones';
@@ -10,9 +11,19 @@ import type { Franja } from '@/lib/horarios';
 import { TIPOS_ORGANIZACION } from '@/lib/textos';
 import type { Categoria, TipoOrganizacion } from '@/lib/tipos';
 
+// Leaflet toca el `window` al importarse: no puede renderizarse en el servidor.
+const MapaSelector = dynamic(() => import('./MapaSelector'), {
+  ssr: false,
+  loading: () => (
+    <div className="h-72 animate-pulse rounded-xl border border-black/10 bg-black/[0.03] dark:border-white/15 dark:bg-white/5" />
+  ),
+});
+
 export interface PuntoEditable {
   id: string;
   nombre: string;
+  lat: number;
+  lng: number;
   tipo_organizacion: TipoOrganizacion;
   departamento_codigo: string;
   municipio_codigo: string;
@@ -51,6 +62,11 @@ export function FormularioEdicion({
 }) {
   const [estado, enviar, guardando] = useActionState(guardarPunto, EDICION_INICIAL);
   const errores = estado.estado === 'error' ? estado.errores : {};
+
+  const [coordenadas, setCoordenadas] = useState({ lat: punto.lat, lng: punto.lng });
+  const movido =
+    Math.abs(coordenadas.lat - punto.lat) > 0.00001 ||
+    Math.abs(coordenadas.lng - punto.lng) > 0.00001;
 
   return (
     <form action={enviar} className="flex flex-col gap-7" noValidate>
@@ -95,6 +111,27 @@ export function FormularioEdicion({
           <input name="referencia" defaultValue={punto.referencia ?? ''} className={ENTRADA} />
         </Campo>
       </div>
+
+      <section className="flex flex-col gap-3">
+        <h2 className="font-semibold">Dónde queda</h2>
+        <p className="text-sm text-black/65 dark:text-white/65">
+          Mueve el mapa hasta que el pin quede sobre la entrada. Los puntos que
+          se cargaron desde una lista suelen quedar en el centro de la ciudad
+          hasta que alguien los ubica.
+        </p>
+        {/* El municipio sigue sin editarse: el pin se mueve dentro del mismo
+            municipio. Cambiar de municipio es rechazar y volver a registrar. */}
+        <MapaSelector
+          centroMunicipio={{ lat: punto.lat, lng: punto.lng }}
+          alCambiar={(lat, lng) => setCoordenadas({ lat, lng })}
+        />
+        <input type="hidden" name="lat" value={coordenadas.lat} />
+        <input type="hidden" name="lng" value={coordenadas.lng} />
+        <p className="text-sm text-black/55 dark:text-white/55">
+          {movido ? 'Pin movido. ' : ''}
+          {coordenadas.lat.toFixed(5)}, {coordenadas.lng.toFixed(5)}
+        </p>
+      </section>
 
       <section className="flex flex-col gap-3">
         <h2 className="font-semibold">Horario</h2>

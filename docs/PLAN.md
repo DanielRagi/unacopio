@@ -125,6 +125,20 @@ cuesta mantenerlo—. Ver **D13** (un dato copiado es una pista, no un hecho) y
 Se eligen Medellín y Bogotá porque son donde más información circula y donde el
 error se nota rápido: si el directorio queda mal ahí, se sabe en horas.
 
+### Estado: la siembra ya se hizo, falta la ronda de llamadas
+
+- [x] Recolección manual de Medellín (10 puntos) y Bogotá (11), curada a mano
+      desde fuentes oficiales y de prensa, en `datos/pilotaje/*.json`
+- [x] `npm run pilotaje` — geocodifica con Nominatim y arma el CSV
+- [x] `npm run sembrar` — lo carga en la cola de moderación, idempotente y
+      reversible. Los 21 están **en `pendiente`**, invisibles al público
+- [ ] Conseguir 16 teléfonos (sin teléfono el punto no se puede verificar)
+- [ ] Resolver 2 conflictos entre fuentes y ubicar 8 pines
+- [ ] Llamar, publicar, y anotar los números de 5.4
+
+El detalle punto por punto está en
+[`docs/PUESTA-EN-MARCHA.md`](PUESTA-EN-MARCHA.md).
+
 ### 5.1 — Primero preguntar, que sale más barato que raspar
 
 Antes de escribir una línea de código: escribirle al DAGRD de Medellín, al
@@ -223,6 +237,9 @@ El sitio puede estar perfecto y quedar vacío. Hay que sembrarlo con datos el mi
 
 ## Siguiente paso inmediato
 
-Fase 5.1: escribirle al DAGRD, al IDIGER, a la Cruz Roja y a las oficinas de
-prensa de Medellín y Bogotá pidiendo sus listas. Es lo único de todo el plan que
-no depende de escribir código y sí decide si el directorio arranca lleno o vacío.
+Poner el sitio en línea y llamar a los 21 puntos que ya están en la cola.
+Paso a paso en [`docs/PUESTA-EN-MARCHA.md`](PUESTA-EN-MARCHA.md).
+
+Y en paralelo, lo único de todo el plan que no depende de escribir código y sí
+decide si el directorio arranca lleno o vacío: escribirle al DAGRD, al IDIGER, a
+la Cruz Roja y a las oficinas de prensa pidiendo sus listas.

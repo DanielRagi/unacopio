@@ -14,8 +14,39 @@ Dos usos, una sola app:
 
 ## Estado
 
-**Fase 0 lista** — proyecto montado, esquema y catálogos listos para cargar.
-Siguiente: fase 1 (formulario de registro + listado + moderación). Ver [`docs/PLAN.md`](docs/PLAN.md).
+**V1 completa** — fases 0 a 4 construidas y probadas, más la siembra inicial con
+21 puntos reales de Medellín y Bogotá esperando verificación.
+
+Lo que falta no es código: cuentas, un dominio y gente llamando por teléfono.
+Está todo en **[`docs/PUESTA-EN-MARCHA.md`](docs/PUESTA-EN-MARCHA.md)**, que es
+por donde hay que empezar.
+
+| | |
+|---|---|
+| Qué hace y por qué | [`docs/PLAN.md`](docs/PLAN.md) |
+| Por qué está hecho así | [`docs/DECISIONES.md`](docs/DECISIONES.md) — D1 a D14 |
+| Esquema y seguridad | [`docs/MODELO-DATOS.md`](docs/MODELO-DATOS.md) |
+| Los 21 puntos sembrados | [`datos/pilotaje/LEEME.md`](datos/pilotaje/LEEME.md) |
+
+## Qué tiene
+
+**Para quien dona** — listado por cercanía o por municipio, mapa con clusters,
+filtro por lo que se quiere donar, sello de "Abierto ahora" en hora de Colombia,
+semáforo de qué tan reciente es la verificación, y qué **no** llevar en rojo y
+arriba. Botones de llamar, WhatsApp, cómo llegar y compartir. Página por
+municipio para compartir (`/acopio/medellin`) y caché offline de lo ya visto.
+
+**Para quien recoge** — registro público sin cuenta, con mapa y selector de
+horarios. Para corregir o cerrar, una solicitud que aplica moderación.
+
+**Para moderación** — cola de revisión con detección de duplicados a menos de
+200 m, ronda de llamadas con reserva para que dos voluntarios no marquen el
+mismo número, bandeja de solicitudes, edición completa con mapa, e importación
+masiva desde CSV.
+
+**Para todos los demás** — `/api/puntos.json` y `.csv` sin llave, con CC BY 4.0,
+documentados en `/datos`. La idea es que medios y alcaldías reutilicen los datos
+en vez de armar una sexta lista que se contradiga con las otras cinco.
 
 ## Stack
 
@@ -55,6 +86,10 @@ npm install
    | 7 | `supabase/migrations/0007_horarios_estructurados.sql` |
    | 8 | `supabase/seed/0001_categorias.sql` |
    | 9 | `supabase/seed/0002_municipios.sql` |
+   | 10 | `supabase/migrations/0008_alcance.sql` |
+
+   `0008` va **después** de las semillas: calcula el slug de cada municipio, así
+   que necesita que los 1.122 ya estén cargados.
 
    Todo, menos `0001`, se puede volver a pegar completo sin romper nada. El
    editor de Supabase aborta la corrida entera cuando algo falla, así que poder
@@ -103,6 +138,9 @@ los catálogos ya se cargaron.
 | `npm run db:probar` | Levanta un PostGIS en Docker, aplica todo el SQL y corre la prueba funcional |
 | `npm run db:verificar` | Comprueba el proyecto real: llaves, catálogos, RLS y qué migraciones están aplicadas |
 | `npm run probar:horarios` | Pruebas del cálculo de "abierto ahora" (zona horaria, jornadas partidas, fechas de campaña) |
+| `npm run probar:importacion` | Pruebas del parser de CSV y de la revisión fila por fila |
+| `npm run pilotaje` | Regenera el CSV de siembra desde `datos/pilotaje/*.json`, geocodificando con Nominatim |
+| `npm run sembrar` | Carga ese CSV en la cola de moderación. `-- --ver` para ensayar, `-- --limpiar` para deshacer |
 | `npm run tipos:scripts` | Chequeo de tipos de `scripts/`, que va aparte del proyecto |
 
 `npm run db:probar` es la red de seguridad del esquema: verifica que el formulario
@@ -127,10 +165,14 @@ supabase/
   migrations/             esquema, RLS y funciones RPC
   seed/                   catálogos (categorías, municipios DANE)
   pruebas/                banco de pruebas del SQL
+datos/
+  pilotaje/               recolección manual curada a mano + el CSV que produce
 scripts/
   generar-municipios.mjs  descarga DIVIPOLA y genera el seed
   probar-sql.mjs          corre todo el SQL en un PostGIS de Docker
-docs/                     plan, modelo de datos y decisiones
+  pilotaje.mjs            geocodifica la recolección y arma el CSV de siembra
+  sembrar-pilotaje.mjs    carga ese CSV en la cola de moderación
+docs/                     plan, decisiones, modelo de datos y puesta en marcha
 ```
 
 ## Modelo de seguridad, en corto
