@@ -46,10 +46,10 @@ if (fuga) {
   fallas++;
 }
 
-const { error: rpcError } = await cliente.rpc('puntos_cercanos', {
+const { error: rpcError } = await cliente.rpc('buscar_puntos', {
   p_lat: 5.0689, p_lng: -75.5174, p_radio_m: 20000,
 });
-console.log('rpc cercanos    :', rpcError ? `ERROR: ${rpcError.message}` : 'responde ✓');
+console.log('rpc buscar      :', rpcError ? `ERROR: ${rpcError.message}` : 'responde ✓');
 if (rpcError) fallas++;
 
 if (servicio) {
@@ -70,6 +70,10 @@ if (servicio) {
   const { error: err4 } = await admin.from('reportes').select('es_responsable').limit(1);
   console.log('0004 solicitudes:', err4 ? 'NO aplicada' : 'sí ✓');
   if (err4) fallas++;
+
+  const { error: err5 } = await admin.rpc('buscar_puntos', { p_limite: 1 });
+  console.log('0005 buscar     :', err5 ? 'NO aplicada' : 'sí ✓');
+  if (err5) fallas++;
 }
 
 console.log(fallas === 0 ? '\n✓ el proyecto responde y RLS está en pie' : `\n✗ ${fallas} problema(s)`);

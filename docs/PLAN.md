@@ -57,14 +57,20 @@ recibir el primer registro.
 
 **Sale de aquí:** el sitio ya sirve. Se puede empezar a difundir.
 
-## Fase 2 — Encontrar el más cercano (≈ 3–4 h) 🎯 día 2
+## Fase 2 — Encontrar el más cercano 🎯 día 2
 
-- [ ] Botón "Usar mi ubicación" (`navigator.geolocation`) → RPC `puntos_cercanos`,
-      lista ordenada por distancia con "a 1,2 km"
-- [ ] Fallback sin GPS: selector de municipio → centroide DANE
-- [ ] `/mapa` — vista de mapa con marcadores agrupados (clusters) y popup por punto
-- [ ] Filtro por categoría ("quiero donar agua" → solo puntos que reciben agua)
-- [ ] Botón "Reportar" en cada ficha, con despublicación automática a los 3 reportes
+- [x] Botón "Ver los más cercanos a mí" (`navigator.geolocation`) → RPC
+      `buscar_puntos`, lista ordenada por distancia con "a 1,2 km".
+      Las coordenadas van en la URL: ordena el servidor, y la búsqueda se puede
+      compartir tal cual por WhatsApp
+- [x] Fallback sin GPS: el filtro por municipio, y el mapa se centra en el
+      centroide DANE de ese municipio
+- [x] `/mapa` — marcadores agrupados en clusters, popup por punto, encuadre
+      automático sobre los resultados y marca aparte de "estás aquí"
+- [x] Filtro por categoría ("quiero donar agua" → solo puntos que reciben agua;
+      un `no_recibe` es justamente la razón para no mostrarlo)
+- [x] Botón "Reportar" en cada ficha, con despublicación automática a los 3
+      reportes de terceros — resuelto en la fase 1 con el formulario de solicitud
 
 ## Fase 3 — Que la información no se pudra (≈ 1 día)
 

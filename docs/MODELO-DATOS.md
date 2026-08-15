@@ -145,7 +145,7 @@ público entra por una vista y tres funciones.
 |---|---|---|
 | Vista `puntos_publicos` | anónimo | Solo `estado = 'publicado'`. Enmascara `telefono` cuando `telefono_publico = false`, y nunca expone `correo`. Trae las categorías ya agregadas en un `jsonb`, para resolver el listado en una sola consulta. |
 | `registrar_punto(...)` | anónimo | Inserta forzando `estado = 'pendiente'` y `entidad_oficial = false` — el formulario no puede autopublicarse ni autocertificarse. Valida que la coordenada caiga dentro de Colombia. Devuelve el `uuid` del punto. |
-| `puntos_cercanos(...)` | anónimo | Publicados dentro de un radio, ordenados por distancia, con filtro opcional por categoría (solo cuenta si el punto la recibe, no si la rechaza). |
+| `buscar_puntos(...)` | anónimo | La única puerta del listado y del mapa. Filtra por departamento, municipio y categoría, y —si le pasan coordenadas— por radio, ordenando por distancia. Sin coordenadas ordena por verificación más reciente. El filtro por categoría solo cuenta si el punto la recibe: un `no_recibe` es justamente la razón para no mostrarlo. |
 | `reportar_punto(...)` | anónimo | Recibe solicitudes y reportes. Ignora repeticiones del mismo `ip_hash` en una hora. Al tercer reporte **de terceros** despublica el punto; las solicitudes con `es_responsable` no suman a ese contador. |
 
 Las tres son `security definer` con `search_path` fijo.
@@ -158,15 +158,23 @@ No hay edición directa por parte del público (ver D9): corregir o cerrar un pu
 es mandar una solicitud, que cae en la misma tabla `reportes` y la aplica
 moderación.
 
-## Consulta clave: puntos más cercanos
+## Consulta clave: `buscar_puntos`
 
 ```sql
-select * from puntos_cercanos(
+-- "quiero donar agua y estoy por acá"
+select * from buscar_puntos(
   p_lat => 6.2442, p_lng => -75.5812,
   p_radio_m => 20000, p_categoria => 'agua_embotellada'
 );
+
+-- "muéstrame todo lo que hay en Manizales"
+select * from buscar_puntos(p_municipio => '17001');
 ```
 
-Devuelve `(punto jsonb, metros double precision)`. Se llama con
-`supabase.rpc('puntos_cercanos', { p_lat, p_lng, p_radio_m, p_categoria })`, sin
-exponer SQL al navegador. El índice que la sostiene es `GIST(ubicacion)`.
+Devuelve `(punto jsonb, metros double precision)`, con `metros` en `null` cuando
+no se mandaron coordenadas. Se llama con `supabase.rpc('buscar_puntos', {...})`,
+sin exponer SQL al navegador. El índice que la sostiene es `GIST(ubicacion)`.
+
+Es la **única** consulta del listado y del mapa. Tenerla en un solo lugar es lo
+que evita que las dos vistas muestren cosas distintas para el mismo filtro, que
+es de los errores más difíciles de notar.

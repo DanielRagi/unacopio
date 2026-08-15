@@ -1,43 +1,44 @@
 import Link from 'next/link';
+import { BotonUbicacion } from '@/components/BotonUbicacion';
 import { Encabezado } from '@/components/Encabezado';
 import { FiltroUbicacion } from '@/components/FiltroUbicacion';
 import { PieDePagina } from '@/components/PieDePagina';
 import { TarjetaPunto } from '@/components/TarjetaPunto';
-import { listarDepartamentos, listarMunicipios, listarPuntos } from '@/lib/datos';
-
-function primerValor(v: string | string[] | undefined): string | undefined {
-  const valor = Array.isArray(v) ? v[0] : v;
-  return valor && valor.trim() !== '' ? valor : undefined;
-}
+import { buscarPuntos, listarCategorias, listarDepartamentos, listarMunicipios } from '@/lib/datos';
+import { aQueryString, leerFiltros } from '@/lib/filtros';
 
 export default async function Portada({ searchParams }: PageProps<'/'>) {
-  const params = await searchParams;
+  const filtros = leerFiltros(await searchParams);
+  const porCercania = filtros.lat !== undefined;
 
-  let dep = primerValor(params.dep);
-  let mun = primerValor(params.mun);
-
-  // Los códigos DANE encajan: los 5 dígitos del municipio empiezan por los 2 del
-  // departamento. Eso deja resolver solo el caso de quien cambia de departamento
-  // sin cambiar el municipio, que si no filtraría por un municipio de otro lado.
-  if (mun && dep && !mun.startsWith(dep)) mun = undefined;
-  if (mun && !dep) dep = mun.slice(0, 2);
-
-  const [departamentos, municipios, puntos] = await Promise.all([
+  const [departamentos, municipios, categorias, resultados] = await Promise.all([
     listarDepartamentos(),
-    dep ? listarMunicipios(dep) : Promise.resolve([]),
-    listarPuntos({ departamento: dep, municipio: mun }),
+    filtros.dep ? listarMunicipios(filtros.dep) : Promise.resolve([]),
+    listarCategorias(),
+    buscarPuntos({
+      departamento: filtros.dep,
+      municipio: filtros.mun,
+      categoria: filtros.cat,
+      lat: filtros.lat,
+      lng: filtros.lng,
+      // Con ubicación se busca en un radio amplio: en una emergencia la gente
+      // se mueve más lejos de lo normal con tal de entregar algo.
+      radioM: 50000,
+    }),
   ]);
 
   const nombreLugar =
-    (mun && municipios.find((m) => m.codigo === mun)?.nombre) ??
-    (dep && departamentos.find((d) => d.codigo === dep)?.nombre) ??
+    (filtros.mun && municipios.find((m) => m.codigo === filtros.mun)?.nombre) ??
+    (filtros.dep && departamentos.find((d) => d.codigo === filtros.dep)?.nombre) ??
     'Colombia';
+
+  const nombreCategoria = categorias.find((c) => c.slug === filtros.cat)?.nombre;
 
   return (
     <>
       <Encabezado />
 
-      <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-8 px-5 py-8">
+      <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-7 px-5 py-8">
         <section className="flex flex-col gap-3">
           <h1 className="text-3xl font-bold tracking-tight text-balance sm:text-4xl">
             ¿Dónde llevar tu donación?
@@ -52,25 +53,44 @@ export default async function Portada({ searchParams }: PageProps<'/'>) {
           </p>
         </section>
 
+        <BotonUbicacion activa={porCercania} />
+
         <FiltroUbicacion
           departamentos={departamentos}
           municipios={municipios}
-          dep={dep}
-          mun={mun}
+          categorias={categorias}
+          dep={filtros.dep}
+          mun={filtros.mun}
+          cat={filtros.cat}
+          lat={filtros.lat !== undefined ? String(filtros.lat) : undefined}
+          lng={filtros.lng !== undefined ? String(filtros.lng) : undefined}
         />
 
         <section className="flex flex-col gap-4">
-          <h2 className="text-sm font-medium text-black/60 dark:text-white/60">
-            {puntos.length === 0
-              ? `Sin puntos publicados en ${nombreLugar}`
-              : `${puntos.length} ${puntos.length === 1 ? 'punto' : 'puntos'} en ${nombreLugar}`}
-          </h2>
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className="text-sm font-medium text-black/60 dark:text-white/60">
+              {resultados.length === 0
+                ? 'Sin puntos publicados'
+                : `${resultados.length} ${resultados.length === 1 ? 'punto' : 'puntos'}`}
+              {porCercania ? ' cerca de ti' : ` en ${nombreLugar}`}
+              {nombreCategoria && ` que reciben ${nombreCategoria.toLowerCase()}`}
+            </h2>
+            {resultados.length > 0 && (
+              <Link
+                href={`/mapa${aQueryString(filtros)}`}
+                className="text-sm font-medium underline underline-offset-4"
+              >
+                Verlos en el mapa
+              </Link>
+            )}
+          </div>
 
-          {puntos.length === 0 ? (
+          {resultados.length === 0 ? (
             <div className="flex flex-col items-start gap-4 rounded-xl border border-dashed border-black/20 p-6 dark:border-white/25">
               <p className="text-black/70 dark:text-white/70">
-                Todavía no hay puntos publicados aquí. Si conoces uno, o estás
-                recogiendo donaciones, regístralo y lo revisamos para publicarlo.
+                {porCercania
+                  ? 'No hay puntos publicados a menos de 50 km de donde estás. Prueba buscando por departamento.'
+                  : 'Todavía no hay puntos publicados aquí. Si conoces uno, o estás recogiendo donaciones, regístralo y lo revisamos para publicarlo.'}
               </p>
               <Link
                 href="/registrar"
@@ -81,8 +101,8 @@ export default async function Portada({ searchParams }: PageProps<'/'>) {
             </div>
           ) : (
             <ul className="flex flex-col gap-3">
-              {puntos.map((punto) => (
-                <TarjetaPunto key={punto.id} punto={punto} />
+              {resultados.map(({ punto, metros }) => (
+                <TarjetaPunto key={punto.id} punto={punto} metros={metros ?? undefined} />
               ))}
             </ul>
           )}

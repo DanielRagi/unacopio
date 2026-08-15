@@ -73,19 +73,29 @@ update puntos set telefono_publico = true where id = :'punto_id';
 set role anon;
 select telefono from puntos_publicos where id = :'punto_id';
 
-\echo '--- puntos_cercanos desde el centro de Manizales (el punto esta a ~430 m)'
+\echo '--- buscar_puntos por cercania desde el centro de Manizales (~430 m)'
 select (punto->>'nombre') as nombre, round(metros::numeric) as metros
-from puntos_cercanos(5.0689, -75.5174, 20000);
+from buscar_puntos(p_lat => 5.0689, p_lng => -75.5174);
 
 \echo '--- el radio si filtra'
-select 100 as radio_m, count(*) from puntos_cercanos(5.0689, -75.5174, 100)
+select 100 as radio_m, count(*) from buscar_puntos(p_lat => 5.0689, p_lng => -75.5174, p_radio_m => 100)
 union all
-select 500, count(*) from puntos_cercanos(5.0689, -75.5174, 500);
+select 500, count(*) from buscar_puntos(p_lat => 5.0689, p_lng => -75.5174, p_radio_m => 500);
+
+\echo '--- sin ubicacion no hay distancia, pero si hay resultados'
+select (punto->>'nombre') as nombre, metros from buscar_puntos();
 
 \echo '--- filtro por categoria: agua SI, ropa usada NO (esta marcada no_recibe)'
-select 'agua' as filtro, count(*) from puntos_cercanos(5.0689, -75.5174, 20000, 'agua_embotellada')
+select 'agua' as filtro, count(*) from buscar_puntos(p_categoria => 'agua_embotellada')
 union all
-select 'ropa', count(*) from puntos_cercanos(5.0689, -75.5174, 20000, 'ropa_usada_buen_estado');
+select 'ropa', count(*) from buscar_puntos(p_categoria => 'ropa_usada_buen_estado');
+
+\echo '--- filtro por departamento y municipio'
+select 'Caldas'      as filtro, count(*) from buscar_puntos(p_departamento => '17')
+union all
+select 'Manizales',  count(*) from buscar_puntos(p_municipio => '17001')
+union all
+select 'Antioquia',  count(*) from buscar_puntos(p_departamento => '05');
 reset role;
 
 \echo '--- coordenada fuera de Colombia: debe fallar'

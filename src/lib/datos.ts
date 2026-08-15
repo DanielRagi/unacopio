@@ -52,41 +52,56 @@ export async function listarCategorias(): Promise<Categoria[]> {
 export interface FiltroPuntos {
   departamento?: string;
   municipio?: string;
+  categoria?: string;
+  lat?: number;
+  lng?: number;
+  radioM?: number;
+  limite?: number;
+}
+
+export interface ResultadoPunto {
+  punto: PuntoPublico;
+  /** Distancia en metros. Solo viene cuando la persona compartió su ubicación. */
+  metros: number | null;
 }
 
 /**
- * Puntos publicados. Ordenados por verificación más reciente: lo que se confirmó
- * hace poco es lo que menos riesgo tiene de mandar a alguien a un portón cerrado.
+ * Todo el listado pasa por aquí, con o sin ubicación.
+ *
+ * Es una sola RPC (`buscar_puntos`) y no una consulta armada acá por dos
+ * razones: el filtro por categoría vive dentro de un `jsonb` que PostgREST no
+ * sabe recorrer, y tener una sola puerta evita que el listado y el mapa
+ * muestren cosas distintas para el mismo filtro.
  */
-export async function listarPuntos(filtro: FiltroPuntos = {}): Promise<PuntoPublico[]> {
+export async function buscarPuntos(filtro: FiltroPuntos = {}): Promise<ResultadoPunto[]> {
   const supabase = await clienteServidor();
-  let consulta = supabase
-    .from('puntos_publicos')
-    .select('*')
-    .order('ultima_verificacion', { ascending: false, nullsFirst: false })
-    .order('actualizado_en', { ascending: false })
-    .limit(LIMITE_LISTADO);
 
-  if (filtro.municipio) consulta = consulta.eq('municipio_codigo', filtro.municipio);
-  else if (filtro.departamento) consulta = consulta.eq('departamento_codigo', filtro.departamento);
+  const { data, error } = await supabase.rpc('buscar_puntos', {
+    p_departamento: filtro.departamento ?? null,
+    p_municipio: filtro.municipio ?? null,
+    p_categoria: filtro.categoria ?? null,
+    p_lat: filtro.lat ?? null,
+    p_lng: filtro.lng ?? null,
+    p_radio_m: filtro.radioM ?? 20000,
+    p_limite: filtro.limite ?? LIMITE_LISTADO,
+  });
 
-  const { data, error } = await consulta;
   if (error) throw new Error(`No se pudieron cargar los puntos: ${error.message}`);
-  return (data ?? []) as PuntoPublico[];
+  return (data ?? []) as ResultadoPunto[];
 }
 
-export async function contarPuntos(filtro: FiltroPuntos = {}): Promise<number> {
+/** El centroide DANE de un municipio: sirve para centrar el mapa sin GPS. */
+export async function centroideMunicipio(
+  codigo: string,
+): Promise<{ lat: number; lng: number } | null> {
   const supabase = await clienteServidor();
-  let consulta = supabase
-    .from('puntos_publicos')
-    .select('id', { count: 'exact', head: true });
+  const { data } = await supabase
+    .from('municipios')
+    .select('lat, lng')
+    .eq('codigo', codigo)
+    .maybeSingle();
 
-  if (filtro.municipio) consulta = consulta.eq('municipio_codigo', filtro.municipio);
-  else if (filtro.departamento) consulta = consulta.eq('departamento_codigo', filtro.departamento);
-
-  const { count, error } = await consulta;
-  if (error) throw new Error(`No se pudieron contar los puntos: ${error.message}`);
-  return count ?? 0;
+  return data?.lat != null && data?.lng != null ? { lat: data.lat, lng: data.lng } : null;
 }
 
 /* ------------------------------------------------------------------ moderación
