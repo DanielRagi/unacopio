@@ -18,7 +18,12 @@ truncate puntos cascade;
 select (select count(*) from departamentos) as departamentos,
        (select count(*) from municipios)    as municipios,
        (select count(*) from municipios where centroide is null) as sin_centroide,
+       (select count(*) from municipios where lat is null)       as sin_lat,
        (select count(*) from categorias)    as categorias;
+
+\echo '--- el centroide sale como lat/lng usable (Medellin)'
+select nombre, round(lat::numeric, 3) as lat, round(lng::numeric, 3) as lng
+from municipios where codigo = '05001';
 
 \echo '--- registrar_punto'
 select id as punto_id, token as punto_token from registrar_punto(
