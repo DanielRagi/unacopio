@@ -15,6 +15,14 @@ export const SITIO = {
     'Encuentra el punto de acopio más cercano o registra el tuyo. ' +
     'Información abierta sobre dónde llevar donaciones en Colombia.',
   dominio: 'unacopio.co',
+  /**
+   * El único correo del proyecto. Lo lee una persona: no es un `no-reply`.
+   *
+   * Es también el remitente del enlace de acceso a moderación, y eso es a
+   * propósito: si a alguien no le llega y responde, la respuesta cae en un buzón
+   * que alguien abre, no en el vacío.
+   */
+  correo: 'hola@unacopio.co',
 } as const;
 
 export const AVISOS = {

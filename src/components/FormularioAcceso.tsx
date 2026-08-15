@@ -3,6 +3,7 @@
 import { useActionState } from 'react';
 import { enviarEnlaceAcceso } from '@/app/admin/acciones';
 import { ACCESO_INICIAL } from '@/lib/estados';
+import { SITIO } from '@/lib/textos';
 
 export function FormularioAcceso() {
   const [estado, enviar, enviando] = useActionState(enviarEnlaceAcceso, ACCESO_INICIAL);
@@ -14,6 +15,10 @@ export function FormularioAcceso() {
         <p className="text-sm text-black/70 dark:text-white/70">
           Le mandamos un enlace de acceso a <strong>{estado.correo}</strong>. Se
           abre una sola vez y desde este mismo dispositivo.
+        </p>
+        <p className="text-sm text-black/60 dark:text-white/60">
+          Llega de <strong>{SITIO.correo}</strong>. Si no aparece en unos
+          minutos, mira en spam y escríbenos a esa misma dirección.
         </p>
       </div>
     );

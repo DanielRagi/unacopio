@@ -174,8 +174,16 @@ export default function PaginaDatos() {
           <h2 className="text-lg font-semibold">¿Tienes una lista para aportar?</h2>
           <p className="text-sm text-black/70 dark:text-white/70">
             Si tu alcaldía o tu medio ya tiene una lista de puntos de acopio,
-            escríbenos y la cargamos: no hay que volver a digitarla punto por
-            punto. Cada uno entra a la cola de verificación y se publica cuando
+            escríbenos a{' '}
+            <a
+              href={`mailto:${SITIO.correo}?subject=${encodeURIComponent('Lista de puntos de acopio')}`}
+              className="font-medium underline underline-offset-4"
+            >
+              {SITIO.correo}
+            </a>{' '}
+            y la cargamos: no hay que volver a digitarla punto por punto. Sirve
+            un Excel, un CSV o hasta la lista pegada en el cuerpo del correo.
+            Cada punto entra a la cola de verificación y se publica cuando
             alguien confirme por teléfono.{' '}
             <Link href="/acopio" className="font-medium underline underline-offset-4">
               Mira en qué municipios ya hay puntos

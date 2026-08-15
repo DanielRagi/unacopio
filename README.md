@@ -165,6 +165,7 @@ supabase/
   migrations/             esquema, RLS y funciones RPC
   seed/                   catálogos (categorías, municipios DANE)
   pruebas/                banco de pruebas del SQL
+  correos/                plantillas de Auth, se pegan en el panel
 datos/
   pilotaje/               recolección manual curada a mano + el CSV que produce
 scripts/

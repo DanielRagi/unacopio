@@ -20,6 +20,9 @@ export function PieDePagina() {
           <Link href="/registrar" className="underline underline-offset-4">
             Registrar un punto
           </Link>
+          <a href={`mailto:${SITIO.correo}`} className="underline underline-offset-4">
+            {SITIO.correo}
+          </a>
         </nav>
         <p className="text-xs">
           {SITIO.nombre} · {SITIO.dominio} · Información abierta, hecha por
