@@ -1,0 +1,103 @@
+<!--
+  Plantilla del enlace de acceso a moderación.
+
+  Se pega en Supabase → Authentication → Emails → Magic Link. Reemplaza la que
+  trae Supabase, que está en inglés y dice "Your Magic Link": alguien que se
+  ofreció de voluntario ayer, y que recibe un correo en inglés desde un dominio
+  que no reconoce, lo borra pensando que es phishing. Y con razón.
+
+  Reglas que sigue:
+
+  · Todo el CSS va en línea. Gmail y Outlook botan las hojas de estilo.
+  · Sin imágenes. Una que no cargue deja el correo mudo, y muchos clientes
+    bloquean las imágenes por defecto.
+  · Tabla y no flexbox: Outlook renderiza con el motor de Word.
+  · El enlace aparece también como texto plano, porque hay clientes que no
+    muestran botones y porque quien desconfía quiere ver a dónde lo mandan.
+  · Dice explícitamente que nadie va a pedir contraseñas ni dinero. Es un sitio
+    de emergencia: los estafadores llegan solos.
+
+  Variables que rellena Supabase: {{ .ConfirmationURL }} y {{ .Email }}.
+-->
+<table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#f6f7f6;padding:24px 0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <tr>
+    <td align="center">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:520px;background:#ffffff;border:1px solid #e3e5e3;border-radius:12px;">
+        <tr>
+          <td style="padding:28px 28px 0 28px;">
+            <p style="margin:0;font-size:20px;font-weight:700;color:#111111;letter-spacing:-0.3px;">UnAcopio</p>
+            <p style="margin:2px 0 0 0;font-size:13px;color:#6b6b6b;">Puntos de acopio para la emergencia</p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:24px 28px 0 28px;">
+            <p style="margin:0 0 12px 0;font-size:17px;font-weight:600;color:#111111;">
+              Tu enlace para entrar a moderación
+            </p>
+            <p style="margin:0;font-size:15px;line-height:1.55;color:#3d3d3d;">
+              Alguien pidió un enlace de acceso para <strong>{{ .Email }}</strong>.
+              Toca el botón y quedas dentro: no hay contraseña que recordar.
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:22px 28px 0 28px;">
+            <table cellpadding="0" cellspacing="0" border="0">
+              <tr>
+                <td style="background:#047857;border-radius:8px;">
+                  <a href="{{ .ConfirmationURL }}"
+                     style="display:inline-block;padding:13px 26px;font-size:15px;font-weight:600;color:#ffffff;text-decoration:none;">
+                    Entrar a moderación
+                  </a>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:18px 28px 0 28px;">
+            <p style="margin:0 0 6px 0;font-size:13px;color:#6b6b6b;">
+              Si el botón no funciona, copia y pega esta dirección:
+            </p>
+            <p style="margin:0;font-size:12px;line-height:1.5;word-break:break-all;color:#047857;">
+              {{ .ConfirmationURL }}
+            </p>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:22px 28px 0 28px;">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#fdf6e7;border:1px solid #eddcb4;border-radius:8px;">
+              <tr>
+                <td style="padding:14px 16px;">
+                  <p style="margin:0;font-size:13px;line-height:1.55;color:#5c4a1a;">
+                    El enlace <strong>se usa una sola vez</strong> y solo sirve
+                    en el mismo dispositivo desde el que lo pediste. Si no fuiste
+                    tú, ignora este correo: sin tocarlo, no pasa nada.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td style="padding:22px 28px 28px 28px;">
+            <p style="margin:0 0 10px 0;font-size:12px;line-height:1.6;color:#8a8a8a;border-top:1px solid #ececec;padding-top:16px;">
+              UnAcopio nunca te va a pedir contraseñas, ni datos bancarios, ni
+              plata, ni por correo ni por WhatsApp. Tampoco recibimos donaciones:
+              solo publicamos información de puntos que operan terceros.
+            </p>
+            <p style="margin:0;font-size:12px;line-height:1.6;color:#8a8a8a;">
+              ¿Dudas? Responde este correo, lo lee una persona ·
+              <a href="https://unacopio.co" style="color:#047857;text-decoration:none;">unacopio.co</a>
+            </p>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>

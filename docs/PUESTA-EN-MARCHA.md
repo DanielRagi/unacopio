@@ -42,7 +42,93 @@ Authentication → URL Configuration:
 
 Sin esto el enlace del correo de moderación rebota.
 
-### 1.4 Rotar la llave de servicio
+### 1.4 Correo: SMTP propio con Spacemail
+
+El servidor de correo compartido de Supabase manda **dos mensajes por hora**. Con
+eso, un equipo de cinco voluntarios no alcanza ni a entrar el primer día. Con
+buzón propio el tope arranca en 30 por hora y se sube en el panel.
+
+#### a) DNS del dominio
+
+En Spaceship → Domains → `unacopio.co` → DNS. Spacemail suele ponerlos solo
+cuando el dominio está en la misma cuenta; **hay que verificar que estén los
+tres**, porque de ellos depende que el correo no caiga en spam:
+
+| Tipo | Host | Valor |
+|---|---|---|
+| MX | `@` | los de Spacemail, con sus prioridades |
+| TXT (SPF) | `@` | `v=spf1 include:spf.spacemail.com ~all` |
+| TXT (DKIM) | `spacemail._domainkey` | el que genera el panel de Spacemail |
+| TXT (DMARC) | `_dmarc` | `v=DMARC1; p=none; rua=mailto:hola@unacopio.co` |
+
+DKIM es el que más pesa: sin él, Gmail manda el correo a spam o lo rechaza. El
+valor exacto lo da el panel de Spacemail, no se puede inventar.
+
+Empezar el DMARC en `p=none` es a propósito: solo reporta, no bloquea. Cuando
+lleven unos días de correos llegando bien, se sube a `p=quarantine`.
+
+> **Ojo con el dominio en Vercel.** Los registros MX y TXT del correo van en la
+> zona DNS del dominio. Si se apunta `unacopio.co` a Vercel cambiando los
+> *nameservers*, la zona pasa a Vercel y estos registros hay que volverlos a
+> crear allá. Se evita apuntando el dominio con registros `A`/`CNAME` en
+> Spaceship en vez de mover los nameservers.
+
+#### b) SMTP en Supabase
+
+Authentication → Emails → SMTP Settings → *Enable Custom SMTP*:
+
+| Campo | Valor |
+|---|---|
+| Host | `mail.spacemail.com` |
+| Port | `587` |
+| Username | `hola@unacopio.co` |
+| Password | la contraseña del buzón |
+| Sender email | `hola@unacopio.co` |
+| Sender name | `UnAcopio` |
+
+Puerto **587** y no 465: 587 negocia TLS con STARTTLS, que es lo que espera
+Supabase y lo que menos problemas da con redes que filtran puertos.
+
+El remitente es `hola@` y no un `no-reply@` a propósito: si a un moderador no le
+llega el enlace y responde el correo, la respuesta cae en un buzón que alguien
+abre.
+
+#### c) Subir el límite
+
+Authentication → Rate Limits → *Rate limit for sending emails*. Arranca en 30 por
+hora. Para un equipo de moderación sobra; subirlo a 100 deja margen sin exponer
+el buzón a que alguien lo use de trampolín.
+
+#### d) La plantilla en español
+
+Authentication → Emails → **Magic Link**: pegar el contenido de
+[`supabase/correos/enlace-magico.html`](../supabase/correos/enlace-magico.html) y
+poner de asunto `Tu enlace para entrar a UnAcopio`.
+
+La plantilla de Supabase viene en inglés y dice "Your Magic Link". Alguien que se
+ofreció de voluntario ayer, y recibe un correo en inglés desde un dominio que no
+reconoce, lo borra pensando que es phishing — y hace bien.
+
+#### e) Probar antes de invitar a nadie
+
+Pedir un enlace desde `unacopio.co/admin` con un correo que ya esté en
+`auth.users`, y revisar:
+
+- que llegue en menos de un minuto,
+- que **no** caiga en spam (probar con una cuenta de Gmail y otra de Outlook),
+- que el enlace abra `/admin` con la sesión puesta.
+
+Si cae en spam, casi siempre es DKIM sin propagar. Da unas horas y se revisa en
+[mail-tester.com](https://www.mail-tester.com).
+
+> **Spacemail es un buzón, no un proveedor transaccional.** Para los enlaces de
+> acceso de cinco o diez moderadores es exactamente la herramienta correcta. Si
+> algún día se quiere el recordatorio automático de 48 horas a *todos* los
+> responsables de punto (ver D10 y D15), eso ya es envío masivo y necesita
+> Resend, Postmark o SES. Mandarlo desde el buzón termina en throttling, en spam
+> y con el dominio quemado.
+
+### 1.5 Rotar la llave de servicio
 
 La `service_role` estuvo un rato en un archivo que iba a quedar versionado.
 **Nunca llegó a GitHub** —lo frenó el push protection y el commit se rehízo—,
@@ -55,6 +141,10 @@ API → Rotate. Después actualizarla en `.env.local` y en Vercel.
 
 Sin gente que llame, el directorio no publica nada. Es el cuello de botella real
 de todo el proyecto (ver D10).
+
+> **Hacer el 1.4 primero.** La invitación es un correo. Sin SMTP propio salen dos
+> por hora, así que invitar a cinco personas de una toma tres horas y las
+> primeras invitaciones se vencen esperando.
 
 1. Invitar cada moderador en Supabase → Authentication → Users → Invite.
 2. Darle permiso, que es una fila en `perfiles`:

@@ -286,3 +286,49 @@ corra a mano:
   saber cuánto cuesta mantenerlo: cuántas filas sobrevivieron a la revisión,
   cuántas llamadas hubo que hacer, cuántas contestaron. De ahí sale si la ronda
   de llamadas de D10 aguanta o si hay que conseguir el proveedor de correo ya.
+
+## D15. Ya hay correo saliente, y es angosto a propósito
+
+Desde el 15 de agosto de 2026 el proyecto tiene buzón propio: `hola@unacopio.co`,
+en Spacemail, con el dominio. Supabase manda el enlace de acceso a moderación por
+ese SMTP en vez del compartido, que aguantaba **dos correos por hora** — un
+número con el que un equipo de cinco voluntarios no puede ni empezar el turno.
+
+Lo que cambia y lo que no:
+
+- **Cambia** que el enlace de acceso llega. Con SMTP propio el tope arranca en 30
+  por hora y se sube en el panel. Para un equipo de moderación sobra.
+- **Cambia** que hay una dirección pública donde escribirnos. Va en el pie, en
+  `/datos` y en la pantalla de acceso. Antes decíamos "escríbenos" sin decir a
+  dónde, que es peor que no decir nada.
+- **No cambia** D8: al público no se le escribe. El correo es un canal de
+  entrada —alguien nos manda su lista— y de salida solo hacia moderación.
+
+**Spacemail es un buzón, no un proveedor transaccional**, y esa distinción
+importa para lo que viene. Un buzón está pensado para que una persona escriba
+correos; mandar cientos de mensajes automáticos desde ahí termina en throttling y
+en la carpeta de spam, con el dominio quemado de paso. Para los enlaces de acceso
+de cinco o diez moderadores es exactamente la herramienta correcta. Para
+escribirle a 200 responsables de punto cada 48 horas, no.
+
+Entonces **D9 y D10 siguen en pie tal como están**: sin tokens de edición y con
+la verificación por llamada. Las dos se decidieron por no tener correo, y ahora
+lo hay, así que vale la pena decir por qué no se revierten hoy:
+
+- Volver a los tokens (D9) resolvería la lentitud de las correcciones, pero
+  reintroduce el secreto que se filtra en un grupo de WhatsApp. La bandeja de
+  solicitudes está funcionando; el problema que tenía D9 era de arquitectura, no
+  de canal.
+- El recordatorio automático de 48 horas (D10) sí es la mejora que de verdad
+  desbloquearía el correo, y es lo que hay que hacer **cuando el directorio pase
+  de unas cien fichas**. Pero necesita un proveedor transaccional —Resend,
+  Postmark, SES— no el buzón. Meterlo hoy, con 21 puntos, sería cambiar una ronda
+  de once llamadas diarias que además trae información que el formulario no
+  captura ("ya no necesitamos ropa pero nos falta agua").
+
+Dicho de otro modo: el correo dejó de ser el bloqueo, pero el bloqueo siguiente
+—gente que llame— no lo resuelve un correo.
+
+Las credenciales SMTP viven en el panel de Supabase y **no entran al repo**: la
+aplicación no manda correos, los manda Supabase Auth. Lo único versionado son las
+plantillas, en `supabase/correos/`.
