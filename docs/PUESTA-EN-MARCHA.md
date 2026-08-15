@@ -8,6 +8,34 @@ arriba ya sirve.
 
 ---
 
+## 0. Correr `0009_permisos_moderacion.sql` — bloquea todo lo demás
+
+```
+supabase/migrations/0009_permisos_moderacion.sql
+```
+
+Sin esto **el panel de moderación no carga nada**, ni con la sesión bien puesta:
+responde «permission denied for table puntos».
+
+Qué pasó: la migración 0002 le revocaba a `authenticated` todos los permisos
+sobre `puntos`, `punto_categoria` y `reportes`, y confiaba en que las policies de
+RLS le devolvieran el acceso a moderación. En Postgres eso no funciona — **una
+policy no otorga permiso, filtra filas dentro del permiso que ya se tenga**. Sin
+el `grant`, la policy nunca llega a evaluarse.
+
+Estuvo así desde el primer día sin que nadie lo notara, porque `npm run db:probar`
+comprobaba que `anon` estuviera bloqueado —lo estaba— y hacía todo lo demás como
+superusuario, que se salta permisos y RLS por igual. Ahora hay una prueba que se
+pone en el rol `authenticated` con perfil de moderador, y `npm run db:verificar`
+inicia una sesión de verdad y lee las tres tablas.
+
+No afloja nada: `anon` sigue sin tocar las tablas base, y un autenticado sin fila
+en `perfiles` sigue viendo cero filas.
+
+Después de correrlo, `npm run db:verificar` tiene que terminar en verde.
+
+---
+
 ## 1. Poner el sitio en línea
 
 ### 1.1 Vercel
@@ -120,6 +148,39 @@ Pedir un enlace desde `unacopio.co/admin` con un correo que ya esté en
 
 Si cae en spam, casi siempre es DKIM sin propagar. Da unas horas y se revisa en
 [mail-tester.com](https://www.mail-tester.com).
+
+#### f) Cuando el enlace no sirve
+
+Hay tres formas de entrar, y conviene conocerlas antes de necesitarlas a las once
+de la noche.
+
+**El enlace del correo.** Lo cómodo. Falla por cosas que no controlamos:
+
+| Síntoma | Qué pasó | Salida |
+|---|---|---|
+| «El enlace ya se usó o se venció», recién llegado | El antivirus del correo —o el Safe Links de Outlook— **abrió el enlace** para revisarlo. Como es de un solo uso, quedó gastado antes de que lo tocaras | El código de seis dígitos |
+| «Ese enlace solo sirve en el mismo navegador» | Lo pediste en un navegador y lo abriste en otro. El verificador PKCE quedó en el primero | El código de seis dígitos |
+| «El enlace venía incompleto» | Casi siempre `emailRedirectTo` apuntando a un sitio distinto del que pidió el enlace | Revisar Site URL y Redirect URLs |
+
+**El código de seis dígitos.** Llega en el mismo correo. Se escribe a mano en la
+pantalla de acceso, así que ningún escáner lo puede gastar y no depende del
+navegador. Es el camino aburrido y es el que siempre funciona.
+
+**El enlace generado desde la terminal.** La salida de emergencia, para cuando el
+correo no coopera de plano:
+
+```bash
+npm run acceso -- tu@correo.com                              # local
+npm run acceso -- tu@correo.com --url https://unacopio.co    # producción
+```
+
+Imprime un enlace listo para pegar en el navegador. No manda correo, no necesita
+SMTP y sirve en cualquier navegador, incluso de incógnito. Usa la llave de
+servicio, así que solo corre desde una terminal con `.env.local`.
+
+No es una puerta trasera: genera el mismo token de un solo uso que mandaría
+Supabase, solo que en pantalla. El correo tiene que existir ya en `auth.users`, y
+entrar al panel sigue exigiendo la fila en `perfiles`. Si falta, el script avisa.
 
 > **Spacemail es un buzón, no un proveedor transaccional.** Para los enlaces de
 > acceso de cinco o diez moderadores es exactamente la herramienta correcta. Si

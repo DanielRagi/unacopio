@@ -252,6 +252,40 @@ set role anon;
 select count(*) as importados_visibles from puntos_publicos where municipio_codigo = '05001';
 reset role;
 
+/*
+ * Un moderador de verdad: rol `authenticated` con perfil.
+ *
+ * Esta es LA prueba que faltaba. Todo lo de arriba corre como superusuario, que
+ * se salta permisos y RLS por igual, así que durante semanas nadie notó que
+ * 0002 le había revocado el GRANT a `authenticated`: `es_moderador()` decía
+ * `true`, las policies estaban bien escritas, y el panel igual respondía
+ * «permission denied». Una policy no da permiso, filtra dentro del que ya hay.
+ */
+\echo '--- moderacion con rol authenticated SI puede leer y escribir'
+set role authenticated;
+select count(*) > 0 as ve_puntos from puntos;
+select count(*) >= 0 as ve_categorias from punto_categoria;
+select count(*) >= 0 as ve_reportes from reportes;
+update puntos set notas = coalesce(notas, '') where id = :'importado_id';
+select 'pudo actualizar' as escritura;
+reset role;
+
+\echo '--- pero un authenticated SIN perfil no ve nada'
+create or replace function auth.uid() returns uuid
+  language sql stable as $$ select '22222222-2222-2222-2222-222222222222'::uuid $$;
+set role authenticated;
+select count(*) as filas_para_un_extrano from puntos;
+reset role;
+
+do $$
+begin
+  set local role authenticated;
+  update puntos set entidad_oficial = true;
+  if found then raise exception 'FALLA: un authenticated sin perfil pudo escribir';
+  else raise notice 'OK: sin perfil no ve ni toca nada'; end if;
+end
+$$;
+
 create or replace function auth.uid() returns uuid
   language sql stable as $$ select null::uuid $$;
 

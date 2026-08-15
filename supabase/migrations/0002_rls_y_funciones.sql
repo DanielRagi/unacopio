@@ -67,7 +67,26 @@ alter table municipios      enable row level security;
 alter table departamentos   enable row level security;
 
 -- Nadie anónimo toca las tablas base de puntos. Se entra por la vista o por RPC.
-revoke all on puntos, punto_categoria, reportes from anon, authenticated;
+revoke all on puntos, punto_categoria, reportes from anon;
+
+/*
+ * Moderación sí las toca, y necesita el GRANT además de la policy.
+ *
+ * En Postgres una policy no da permiso: **filtra filas dentro del permiso que ya
+ * se tenga**. Revocarle todo a `authenticated` dejaba las policies de abajo sin
+ * efecto, y un moderador con sesión válida y su fila en `perfiles` recibía
+ * «permission denied for table puntos» al abrir el panel. Es decir: la cola de
+ * moderación nunca cargó para nadie que no fuera superusuario.
+ *
+ * Quien esté autenticado pero no sea del equipo no ve nada igual: las policies
+ * preguntan por `es_moderador()`, así que le devuelven cero filas y le rechazan
+ * cualquier escritura. El permiso de tabla abre la puerta; la policy decide
+ * quién pasa.
+ */
+grant select, insert, update, delete on puntos          to authenticated;
+grant select, insert, update, delete on punto_categoria to authenticated;
+grant select, insert, update, delete on reportes        to authenticated;
+
 grant select on puntos_publicos to anon, authenticated;
 grant select on categorias, municipios, departamentos to anon, authenticated;
 

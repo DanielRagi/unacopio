@@ -17,6 +17,32 @@ import { esquemaRegistro, leerFormulario } from '@/lib/validacion';
  * que en un equipo de voluntarios armado a las carreras se terminan compartiendo
  * por chat.
  */
+/**
+ * De dónde salió la petición.
+ *
+ * **El origen real, no `NEXT_PUBLIC_SITIO_URL`.** Esa variable apunta al dominio
+ * de producción, así que usarla acá mandaba a quien pedía el enlace desde
+ * `localhost` a darse contra unacopio.co: el enlace aterrizaba en otro sitio
+ * —a veces sin desplegar— y, aunque llegara, la cookie con el verificador PKCE
+ * se había quedado en localhost. El síntoma era «el enlace caducó», que no dice
+ * nada de lo que en realidad pasó.
+ *
+ * Usar la cabecera `host` no abre un redirect abierto: Supabase solo acepta
+ * `emailRedirectTo` si coincide con su lista de Redirect URLs. Un host inventado
+ * lo rechaza Supabase, no nosotros.
+ */
+async function origenDeLaPeticion(): Promise<string> {
+  const cabeceras = await headers();
+  const host = cabeceras.get('host');
+  if (!host) return process.env.NEXT_PUBLIC_SITIO_URL ?? 'https://unacopio.co';
+
+  const protocolo =
+    cabeceras.get('x-forwarded-proto') ??
+    (host.startsWith('localhost') || host.startsWith('127.0.0.1') ? 'http' : 'https');
+
+  return `${protocolo}://${host}`;
+}
+
 export async function enviarEnlaceAcceso(
   _previo: EstadoAcceso,
   formData: FormData,
@@ -26,10 +52,7 @@ export async function enviarEnlaceAcceso(
     return { estado: 'error', mensaje: 'Escribe un correo válido.' };
   }
 
-  const cabeceras = await headers();
-  const origen =
-    process.env.NEXT_PUBLIC_SITIO_URL ??
-    `https://${cabeceras.get('host') ?? 'unacopio.co'}`;
+  const origen = await origenDeLaPeticion();
 
   const supabase = await clienteServidor();
   const { error } = await supabase.auth.signInWithOtp({
@@ -46,6 +69,47 @@ export async function enviarEnlaceAcceso(
   }
 
   return { estado: 'enviado', correo };
+}
+
+/**
+ * Entrar con el código de seis dígitos que viene en el mismo correo.
+ *
+ * Existe porque el enlace falla por razones que no dependen de nosotros y que
+ * además se ven todas iguales desde afuera («caducó»):
+ *
+ *   · Los antivirus de correo y el Safe Links de Outlook **abren los enlaces**
+ *     para revisarlos. Como el enlace se consume de un solo uso, para cuando la
+ *     persona lo toca ya está gastado.
+ *   · Si el correo se abre en un navegador distinto del que pidió el enlace, la
+ *     cookie con el verificador PKCE no está y el intercambio falla.
+ *
+ * Un código que se escribe a mano no lo puede gastar un escáner ni depende del
+ * navegador. Es el camino aburrido y es el que siempre funciona.
+ */
+export async function verificarCodigo(
+  _previo: EstadoAcceso,
+  formData: FormData,
+): Promise<EstadoAcceso> {
+  const correo = String(formData.get('correo') ?? '').trim().toLowerCase();
+  const codigo = String(formData.get('codigo') ?? '').replace(/\D/g, '');
+
+  if (!correo) return { estado: 'error', mensaje: 'Falta el correo. Vuelve a pedir el enlace.' };
+  if (codigo.length !== 6) {
+    return { estado: 'codigo', correo, mensaje: 'El código son seis dígitos.' };
+  }
+
+  const supabase = await clienteServidor();
+  const { error } = await supabase.auth.verifyOtp({ email: correo, token: codigo, type: 'email' });
+
+  if (error) {
+    return {
+      estado: 'codigo',
+      correo,
+      mensaje: `No sirvió: ${error.message}. Revisa que sea el código del último correo.`,
+    };
+  }
+
+  redirect('/admin');
 }
 
 export async function cerrarSesion() {

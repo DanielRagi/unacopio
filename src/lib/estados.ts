@@ -41,6 +41,8 @@ export const IMPORTACION_INICIAL: EstadoImportacion = { estado: 'inicial' };
 export type EstadoAcceso =
   | { estado: 'inicial' }
   | { estado: 'enviado'; correo: string }
+  /** Escribiendo el código de seis dígitos, con el error del intento anterior. */
+  | { estado: 'codigo'; correo: string; mensaje?: string }
   | { estado: 'error'; mensaje: string };
 
 export const ACCESO_INICIAL: EstadoAcceso = { estado: 'inicial' };
