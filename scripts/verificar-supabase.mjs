@@ -58,6 +58,18 @@ if (servicio) {
   console.log('\n— con service_role —');
   console.log('puntos (todos)  :', error ? `ERROR: ${error.message}` : count);
   if (error) fallas++;
+
+  // Qué migraciones alcanzaron a correr. Es lo primero que uno quiere saber
+  // cuando el sitio se comporta raro después de un despliegue.
+  console.log('\n— migraciones aplicadas —');
+
+  const { error: err3 } = await admin.from('municipios').select('lat').limit(1);
+  console.log('0003 lat/lng    :', err3 ? 'NO aplicada' : 'sí ✓');
+  if (err3) fallas++;
+
+  const { error: err4 } = await admin.from('reportes').select('es_responsable').limit(1);
+  console.log('0004 solicitudes:', err4 ? 'NO aplicada' : 'sí ✓');
+  if (err4) fallas++;
 }
 
 console.log(fallas === 0 ? '\n✓ el proyecto responde y RLS está en pie' : `\n✗ ${fallas} problema(s)`);

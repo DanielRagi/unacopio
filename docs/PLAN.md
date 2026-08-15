@@ -51,8 +51,9 @@ recibir el primer registro.
 - [x] RLS activo en todas las tablas
 - [x] Aviso legal fijo: no recolectamos dinero, la información la aportan terceros
 - [x] Metadatos Open Graph, también por punto
-- [ ] `/editar/[token]` — que el responsable actualice o cierre su punto sin cuenta
-- [ ] Mandar el código de edición por correo al registrar (hoy solo se muestra)
+- [x] `/punto/[id]/solicitud` — pedir un cambio o el cierre, con observaciones.
+      Reemplaza al enlace de edición con token (ver D9)
+- [x] Bandeja de solicitudes y reportes en moderación
 
 **Sale de aquí:** el sitio ya sirve. Se puede empezar a difundir.
 

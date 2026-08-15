@@ -3,8 +3,7 @@
 Postgres en Supabase. Nombres de tablas y columnas en español para que el equipo
 de moderación pueda leer el panel de Supabase sin traducir nada.
 
-Extensiones: `postgis` (activar desde Database → Extensions en Supabase) y
-`pgcrypto` (para los tokens de edición).
+Extensiones: `postgis` (activar desde Database → Extensions en Supabase).
 
 > Implementado en `supabase/migrations/0001_esquema.sql` y
 > `0002_rls_y_funciones.sql`. Este documento explica el porqué; el SQL manda.
@@ -39,7 +38,6 @@ El registro central. Un punto de acopio.
 | `recibe_voluntarios` | `boolean` | |
 | `notas` | `text null` | "Tenemos parqueadero", "Se puede descargar en carro" |
 | `estado` | `enum` | `pendiente`, `publicado`, `rechazado`, `cerrado`, `lleno` |
-| `token_edicion_hash` | `text` | SHA-256 del token del link secreto de edición; el token en claro se muestra una sola vez, al registrar |
 | `ultima_verificacion` | `timestamptz null` | la fija moderación al confirmar por teléfono |
 | `verificado_por` | `uuid null` → `perfiles.id` | |
 | `entidad_oficial` | `boolean` | banda verde; solo lo activa moderación |
@@ -88,16 +86,21 @@ lleguen 300 bultos de ropa usada a un punto que solo necesita agua (ver D5).
 
 ## `reportes`
 
-| Columna | Tipo |
-|---|---|
-| `id` | `uuid pk` |
-| `punto_id` | `uuid` → `puntos.id` |
-| `tipo` | `enum`: `cerrado`, `info_incorrecta`, `duplicado`, `no_existe`, `spam` |
-| `comentario` | `text null` |
-| `contacto` | `text null` |
-| `ip_hash` | `text` — anti-abuso |
-| `resuelto` | `boolean` |
-| `creado_en` | `timestamptz` |
+La bandeja de moderación. Guarda **todo lo que la gente nos dice sobre un punto**:
+tanto la solicitud de quien lo organiza ("cambió el horario", "ya cerramos") como
+el reporte de un tercero ("fui y no había nada").
+
+| Columna | Tipo | Notas |
+|---|---|---|
+| `id` | `uuid pk` | |
+| `punto_id` | `uuid` → `puntos.id` | |
+| `tipo` | `enum`: `cerrado`, `info_incorrecta`, `duplicado`, `no_existe`, `spam` | `info_incorrecta` = pedir un cambio · `cerrado` = pedir el cierre |
+| `comentario` | `text null` | las observaciones; es el mensaje que nos deja la persona |
+| `contacto` | `text null` | opcional, para poder llamar y confirmar |
+| `es_responsable` | `boolean` | dice ser quien organiza el punto. **No está verificado**: es una pista para priorizar, no una credencial. Su solicitud no cuenta para el umbral de tres reportes |
+| `ip_hash` | `text` | anti-abuso: ignora repeticiones sobre el mismo punto en una hora |
+| `resuelto` | `boolean` | atendida por moderación. No se borra: es el historial de por qué un punto quedó como quedó |
+| `creado_en` | `timestamptz` | |
 
 ## `perfiles`
 
@@ -140,10 +143,10 @@ público entra por una vista y tres funciones.
 
 | Puerta | Quién | Qué hace |
 |---|---|---|
-| Vista `puntos_publicos` | anónimo | Solo `estado = 'publicado'`. Enmascara `telefono` cuando `telefono_publico = false`, y nunca expone `correo` ni `token_edicion_hash`. Trae las categorías ya agregadas en un `jsonb`, para resolver el listado en una sola consulta. |
-| `registrar_punto(...)` | anónimo | Inserta forzando `estado = 'pendiente'` y `entidad_oficial = false` — el formulario no puede autopublicarse ni autocertificarse. Valida que la coordenada caiga dentro de Colombia. Devuelve el token de edición en claro, una sola vez. |
+| Vista `puntos_publicos` | anónimo | Solo `estado = 'publicado'`. Enmascara `telefono` cuando `telefono_publico = false`, y nunca expone `correo`. Trae las categorías ya agregadas en un `jsonb`, para resolver el listado en una sola consulta. |
+| `registrar_punto(...)` | anónimo | Inserta forzando `estado = 'pendiente'` y `entidad_oficial = false` — el formulario no puede autopublicarse ni autocertificarse. Valida que la coordenada caiga dentro de Colombia. Devuelve el `uuid` del punto. |
 | `puntos_cercanos(...)` | anónimo | Publicados dentro de un radio, ordenados por distancia, con filtro opcional por categoría (solo cuenta si el punto la recibe, no si la rechaza). |
-| `reportar_punto(...)` | anónimo | Inserta el reporte, ignora repeticiones del mismo `ip_hash` en una hora y despublica el punto al tercer reporte abierto. |
+| `reportar_punto(...)` | anónimo | Recibe solicitudes y reportes. Ignora repeticiones del mismo `ip_hash` en una hora. Al tercer reporte **de terceros** despublica el punto; las solicitudes con `es_responsable` no suman a ese contador. |
 
 Las tres son `security definer` con `search_path` fijo.
 
@@ -151,8 +154,9 @@ La moderación sí entra por RLS normal: las policies de `puntos`, `punto_catego
 y `reportes` preguntan por `es_moderador()`, que consulta `perfiles`. Esa función
 es `security definer` justamente para no morder su propia cola con RLS.
 
-La edición por token no pasa por el cliente: va por una Server Action que compara
-el hash con la `service_role` key. Esa llave nunca sale del servidor.
+No hay edición directa por parte del público (ver D9): corregir o cerrar un punto
+es mandar una solicitud, que cae en la misma tabla `reportes` y la aplica
+moderación.
 
 ## Consulta clave: puntos más cercanos
 

@@ -20,7 +20,7 @@ export async function registrarPunto(
   // Trampa para bots: un campo que los humanos no ven y no llenan. Si viene con
   // algo, se responde como si todo hubiera salido bien y no se guarda nada.
   if ((formData.get('sitio_web') as string)?.trim()) {
-    return { estado: 'listo', id: 'descartado', token: '' };
+    return { estado: 'listo', id: 'descartado' };
   }
 
   const analisis = esquemaRegistro.safeParse(leerFormulario(formData));
@@ -85,10 +85,11 @@ export async function registrarPunto(
     };
   }
 
-  const fila = Array.isArray(data) ? data[0] : data;
-  if (!fila?.id) {
+  // Desde 0004 la función devuelve el uuid pelado, sin token de edición.
+  const id = typeof data === 'string' ? data : null;
+  if (!id) {
     return { estado: 'error', errores: {}, mensaje: 'No pudimos guardar el punto. Intenta de nuevo.' };
   }
 
-  return { estado: 'listo', id: fila.id, token: fila.token };
+  return { estado: 'listo', id };
 }

@@ -1,13 +1,14 @@
 -- Prueba funcional del esquema. Corre con `npm run db:probar`.
 --
 -- Lo que verifica, que es justo lo que no se puede romper sin darse cuenta:
---   · los catálogos quedaron completos
+--   · los catálogos quedaron completos y con centroide usable
 --   · el formulario público no puede autopublicarse ni autocertificarse
---   · el token de edición se guarda hasheado, nunca en claro
 --   · anon no llega a la tabla base, solo a la vista
 --   · el teléfono se enmascara sin consentimiento (Habeas Data)
 --   · la búsqueda por cercanía respeta radio y categorías `no_recibe`
---   · tres reportes despublican el punto solo
+--   · tres reportes de terceros despublican el punto solo
+--   · una solicitud del responsable NO cuenta para ese umbral
+--   · ya no queda rastro de tokens de edición
 
 \set ON_ERROR_STOP on
 \pset pager off
@@ -25,17 +26,20 @@ select (select count(*) from departamentos) as departamentos,
 select nombre, round(lat::numeric, 3) as lat, round(lng::numeric, 3) as lng
 from municipios where codigo = '05001';
 
+\echo '--- ya no existe la columna de token'
+select count(*) as columnas_token
+from information_schema.columns
+where table_name = 'puntos' and column_name like '%token%';
+
 \echo '--- registrar_punto'
-select id as punto_id, token as punto_token from registrar_punto(
+select registrar_punto(
   'Parroquia San José', 'iglesia', '17', '17001', 'Calle 12 # 4-30',
   5.0703, -75.5138, 'María Gómez', '+573001112233', 'Lun a Sáb 8am-6pm',
   '[{"slug":"agua_embotellada","nivel":"alta"},
     {"slug":"ropa_usada_buen_estado","nivel":"no_recibe"}]'::jsonb
-) \gset
+) as punto_id \gset
 
 select estado, entidad_oficial, origen,
-       token_edicion_hash = encode(extensions.digest(:'punto_token', 'sha256'), 'hex') as hash_coincide,
-       token_edicion_hash <> :'punto_token' as token_no_esta_en_claro,
        round(lat::numeric, 4) as lat, round(lng::numeric, 4) as lng
 from puntos where id = :'punto_id';
 
@@ -97,7 +101,18 @@ exception
 end
 $$;
 
-\echo '--- reportes: el repetido se ignora, al tercero se despublica solo'
+\echo '--- solicitud del responsable: se guarda pero NO empuja a despublicar'
+select reportar_punto(:'punto_id', 'info_incorrecta',
+                      'Cambiamos el horario, ahora cerramos a las 4pm',
+                      'María Gómez 3001112233', 'ip-resp', true);
+select estado, reportes_abiertos from puntos where id = :'punto_id';
+select tipo, es_responsable, comentario from reportes where punto_id = :'punto_id';
+
+\echo '--- solicitud de cierre del responsable: tampoco despublica sola'
+select reportar_punto(:'punto_id', 'cerrado', 'Ya no recibimos mas', null, 'ip-resp2', true);
+select estado, reportes_abiertos from puntos where id = :'punto_id';
+
+\echo '--- reportes de terceros: el repetido se ignora, al tercero se despublica'
 select reportar_punto(:'punto_id', 'cerrado', null, null, 'ip-a');
 select reportar_punto(:'punto_id', 'cerrado', null, null, 'ip-a');
 select estado, reportes_abiertos from puntos where id = :'punto_id';
@@ -109,3 +124,15 @@ select estado, reportes_abiertos from puntos where id = :'punto_id';
 set role anon;
 select count(*) as visibles_final from puntos_publicos;
 reset role;
+
+\echo '--- reportar un punto inexistente falla'
+do $$
+begin
+  perform reportar_punto('00000000-0000-0000-0000-000000000000'::uuid, 'spam');
+  raise exception 'FALLA: acepto un reporte sobre un punto inexistente';
+exception
+  when others then
+    if sqlerrm like '%no existe%' then raise notice 'OK: rechazo el punto inexistente';
+    else raise; end if;
+end
+$$;

@@ -1,7 +1,7 @@
 import { clienteServidor } from './supabase/servidor';
 import type {
   Categoria, Departamento, EstadoPunto, Municipio, NivelCategoria, PuntoPublico,
-  TipoOrganizacion,
+  TipoOrganizacion, TipoReporte,
 } from './tipos';
 
 /**
@@ -160,6 +160,57 @@ export async function contarPorEstado(): Promise<Record<string, number>> {
   );
 
   return Object.fromEntries(conteos);
+}
+
+export interface Solicitud {
+  id: string;
+  punto_id: string;
+  tipo: TipoReporte;
+  comentario: string | null;
+  contacto: string | null;
+  es_responsable: boolean;
+  creado_en: string;
+  puntos: {
+    nombre: string;
+    estado: EstadoPunto;
+    telefono: string;
+    responsable_nombre: string;
+    municipios: { nombre: string } | null;
+  } | null;
+}
+
+/**
+ * La bandeja: todo lo que la gente nos ha dicho sobre un punto y todavía nadie
+ * ha atendido.
+ *
+ * Lo de quien dice ser el responsable va primero. No porque esté verificado
+ * —no lo está—, sino porque suele traer el dato que hace falta para arreglar la
+ * ficha, mientras que un reporte de tercero casi siempre pide ir a confirmar.
+ */
+export async function listarSolicitudes(): Promise<Solicitud[]> {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase
+    .from('reportes')
+    .select(`
+      id, punto_id, tipo, comentario, contacto, es_responsable, creado_en,
+      puntos(nombre, estado, telefono, responsable_nombre, municipios(nombre))
+    `)
+    .eq('resuelto', false)
+    .order('es_responsable', { ascending: false })
+    .order('creado_en', { ascending: true })
+    .limit(200);
+
+  if (error) throw new Error(`No se pudo cargar la bandeja: ${error.message}`);
+  return (data ?? []) as unknown as Solicitud[];
+}
+
+export async function contarSolicitudes(): Promise<number> {
+  const supabase = await clienteServidor();
+  const { count } = await supabase
+    .from('reportes')
+    .select('id', { count: 'exact', head: true })
+    .eq('resuelto', false);
+  return count ?? 0;
 }
 
 /** Devuelve el perfil si quien está en sesión es del equipo. Si no, null. */

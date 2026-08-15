@@ -2,8 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { cerrarSesion } from './acciones';
 import { FilaModeracion } from '@/components/FilaModeracion';
+import { FilaSolicitud } from '@/components/FilaSolicitud';
 import { FormularioAcceso } from '@/components/FormularioAcceso';
-import { contarPorEstado, listarPuntosModeracion, obtenerModerador } from '@/lib/datos';
+import {
+  contarPorEstado, contarSolicitudes, listarPuntosModeracion, listarSolicitudes,
+  obtenerModerador,
+} from '@/lib/datos';
 import type { EstadoPunto } from '@/lib/tipos';
 
 export const metadata: Metadata = {
@@ -58,15 +62,19 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
     );
   }
 
+  const enBandeja = params.vista === 'solicitudes';
+
   const estadoActivo =
     (typeof params.estado === 'string' &&
       PESTANAS.some((p) => p.estado === params.estado) &&
       (params.estado as EstadoPunto)) ||
     'pendiente';
 
-  const [puntos, conteos] = await Promise.all([
-    listarPuntosModeracion(estadoActivo),
+  const [puntos, conteos, solicitudes, pendientesBandeja] = await Promise.all([
+    enBandeja ? Promise.resolve([]) : listarPuntosModeracion(estadoActivo),
     contarPorEstado(),
+    enBandeja ? listarSolicitudes() : Promise.resolve([]),
+    contarSolicitudes(),
   ]);
 
   return (
@@ -92,27 +100,37 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
 
       <nav className="flex flex-wrap gap-2">
         {PESTANAS.map((pestana) => {
-          const activa = pestana.estado === estadoActivo;
+          const activa = !enBandeja && pestana.estado === estadoActivo;
           return (
-            <Link
+            <Pestana
               key={pestana.estado}
               href={`/admin?estado=${pestana.estado}`}
-              className={`rounded-lg px-3 py-2 text-sm font-medium ${
-                activa
-                  ? 'bg-black text-white dark:bg-white dark:text-black'
-                  : 'border border-black/15 dark:border-white/20'
-              }`}
+              activa={activa}
+              cuenta={conteos[pestana.estado] ?? 0}
             >
               {pestana.etiqueta}
-              <span className={activa ? 'opacity-70' : 'opacity-50'}>
-                {' '}
-                {conteos[pestana.estado] ?? 0}
-              </span>
-            </Link>
+            </Pestana>
           );
         })}
+        <Pestana href="/admin?vista=solicitudes" activa={enBandeja} cuenta={pendientesBandeja}>
+          Solicitudes
+        </Pestana>
       </nav>
 
+      {enBandeja ? (
+        solicitudes.length === 0 ? (
+          <p className="rounded-xl border border-dashed border-black/20 p-6 text-black/60 dark:border-white/25 dark:text-white/60">
+            No hay solicitudes sin atender.
+          </p>
+        ) : (
+          <ul className="flex flex-col gap-4">
+            {solicitudes.map((solicitud) => (
+              <FilaSolicitud key={solicitud.id} solicitud={solicitud} />
+            ))}
+          </ul>
+        )
+      ) : (
+        <>
       {estadoActivo === 'pendiente' && puntos.length > 0 && (
         <p className="rounded-lg bg-black/[0.03] p-3 text-sm text-black/70 dark:bg-white/5 dark:text-white/70">
           Antes de publicar, llama al responsable y confirma que el punto existe y
@@ -133,7 +151,35 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
           ))}
         </ul>
       )}
+        </>
+      )}
     </main>
+  );
+}
+
+function Pestana({
+  href,
+  activa,
+  cuenta,
+  children,
+}: {
+  href: string;
+  activa: boolean;
+  cuenta: number;
+  children: React.ReactNode;
+}) {
+  return (
+    <Link
+      href={href}
+      className={`rounded-lg px-3 py-2 text-sm font-medium ${
+        activa
+          ? 'bg-black text-white dark:bg-white dark:text-black'
+          : 'border border-black/15 dark:border-white/20'
+      }`}
+    >
+      {children}
+      <span className={activa ? 'opacity-70' : 'opacity-50'}> {cuenta}</span>
+    </Link>
   );
 }
 

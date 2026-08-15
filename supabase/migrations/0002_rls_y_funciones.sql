@@ -101,6 +101,13 @@ create policy "perfil propio" on perfiles for select using (id = auth.uid());
 
 -- ================================================================ RPC públicas
 
+-- `create or replace` no puede cambiar el tipo de retorno de una función que ya
+-- existe. Se borran primero para que este archivo se pueda volver a correr aun
+-- después de que una migración posterior les haya cambiado la firma.
+drop function if exists registrar_punto;
+drop function if exists puntos_cercanos;
+drop function if exists reportar_punto;
+
 -- Registro de un punto desde el formulario público.
 -- Fuerza estado 'pendiente' y entidad_oficial=false: el formulario no puede
 -- publicarse solo ni auto-certificarse. Devuelve el token de edición en claro,

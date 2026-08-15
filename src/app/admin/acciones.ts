@@ -102,6 +102,24 @@ export async function marcarVerificado(formData: FormData) {
 }
 
 /**
+ * Da por atendida una solicitud.
+ *
+ * No borra: la bandeja atendida es el historial de por qué un punto quedó como
+ * quedó, y sirve para detectar al que reporta lo mismo veinte veces.
+ */
+export async function resolverSolicitud(formData: FormData) {
+  const id = String(formData.get('id') ?? '');
+
+  const supabase = await clienteServidor();
+  const { data: sesion } = await supabase.auth.getUser();
+  if (!sesion.user) redirect('/admin');
+
+  await supabase.from('reportes').update({ resuelto: true }).eq('id', id);
+
+  revalidatePath('/admin');
+}
+
+/**
  * Marca o desmarca la banda de entidad oficial.
  * Solo para alcaldías, gobernaciones, bomberos, Defensa Civil y Cruz Roja, y
  * solo después de confirmarlo por teléfono (D4).

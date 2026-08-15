@@ -49,10 +49,9 @@ Pedir cuenta antes de registrar mata la mitad de los registros. Entonces:
 
 - Formulario público → el punto entra en estado `pendiente`.
 - Moderación aprueba → pasa a `publicado`.
-- Quien registró recibe un **link secreto de edición** (token) para actualizar
-  horarios, marcar "ya no recibimos ropa" o cerrar el punto. Sin contraseñas.
-  El link se muestra en pantalla apenas termina el registro y se manda por
-  **correo**, nunca por WhatsApp (ver D8).
+- Para corregir o cerrar un punto, quien lo organiza manda una **solicitud** desde
+  la ficha y moderación la aplica. Sin cuenta, sin contraseña y sin código que
+  guardar (ver D9).
 
 Solo el equipo de moderación tiene cuenta (Supabase Auth, magic link).
 
@@ -114,7 +113,41 @@ personas:
 Ambos son enlaces `wa.me` que abren la app del usuario. No hay API, ni número de
 la plataforma, ni mensajes automáticos.
 
-**Consecuencia:** el correo pasa a ser el único camino de vuelta hacia el
-responsable de un punto, así que el formulario lo pide obligatorio. Sin él no hay
-cómo mandarle el enlace de edición ni el recordatorio de 48h de la fase 3, que es
-lo que mantiene el directorio vivo.
+**Consecuencia:** el único canal de vuelta hacia el responsable de un punto queda
+siendo el teléfono, que moderación ya usa para confirmar antes de publicar. El
+correo se pide opcional, para escribirle cuando el teléfono no contesta.
+
+## D9. Sin tokens: editar y cerrar también pasan por moderación
+
+En la v1 **nadie edita el directorio directamente**. Quien organiza un punto y
+necesita corregir el horario, cambiar lo que están recibiendo o cerrarlo, manda
+una **solicitud** desde la ficha, con un campo de observaciones donde cuenta qué
+cambió. Moderación lo lee y lo aplica.
+
+Se había diseñado con un token: un enlace secreto de edición, sin contraseña.
+Se descartó por una razón muy concreta: ese enlace hay que **hacerlo llegar**, y
+por D8 el único canal sería el correo, para el que no hay proveedor de envío
+disponible en esta ventana de tiempo. Un secreto que no se puede entregar no
+sirve, y guardarlo igual solo agrega algo más que proteger.
+
+Lo que se gana, además de quitar una dependencia:
+
+- No hay código que perder, ni enlace que se filtre en un grupo de WhatsApp y
+  termine dejando que un tercero edite un punto ajeno.
+- Un par de ojos revisa cada cambio antes de que salga publicado, que es lo mismo
+  que ya se hace al registrar.
+- Una sola bandeja para todo lo que la gente nos dice de un punto, venga de quien
+  lo organiza o de alguien que fue y encontró otra cosa.
+
+Lo que se pierde, y hay que tener presente: **corregir un punto ya no es
+instantáneo**, depende de que alguien de moderación lea la bandeja. Si el equipo
+se queda corto, las fichas se desactualizan, que es justo la forma en que estos
+directorios se mueren. Mientras eso pese más que la dependencia del correo, vale
+la pena volver a los tokens.
+
+Las solicitudes reutilizan la tabla `reportes`, que ya tenía los tipos que hacen
+falta. La única distinción nueva es `es_responsable`: quien dice organizar el
+punto está colaborando, no denunciando, así que su solicitud no cuenta para el
+umbral de tres reportes que despublica un punto solo. Si no, alguien tumbaría su
+propio punto al pedir que le corrijan el horario. Ojo: **`es_responsable` no está
+verificado**; es una pista para priorizar, no una credencial.

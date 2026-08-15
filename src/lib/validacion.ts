@@ -76,9 +76,13 @@ export const esquemaRegistro = z
     whatsapp: z.coerce.boolean().default(false),
     telefono_publico: z.coerce.boolean().default(false),
 
-    // Obligatorio desde D8: sin WhatsApp saliente, el correo es el único camino
-    // de vuelta para mandar el enlace de edición y el recordatorio de 48h.
-    correo: z.email('Escribe un correo válido'),
+    // Opcional: la plataforma no manda correos (D8), así que no hay nada que
+    // entregar por ahí. Se pide igual porque a moderación le sirve para
+    // escribirle al responsable a mano cuando el teléfono no contesta.
+    correo: z
+      .union([z.email('Escribe un correo válido'), z.literal('')])
+      .optional()
+      .transform((v) => (v === '' ? undefined : v)),
 
     horario_texto: z.string().trim()
       .min(4, 'Escribe los días y horas de atención')

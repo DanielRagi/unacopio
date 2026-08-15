@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Encabezado } from '@/components/Encabezado';
 import { ListaCategorias } from '@/components/ListaCategorias';
@@ -132,6 +133,21 @@ export default async function PaginaPunto({ params }: PageProps<'/punto/[id]'>) 
         >
           Compartir por WhatsApp
         </a>
+
+        <section className="flex flex-col gap-2 rounded-xl border border-black/10 p-4 dark:border-white/15">
+          <p className="font-medium">¿Algo de esto ya no está bien?</p>
+          <p className="text-sm text-black/70 dark:text-white/70">
+            Si eres quien organiza este punto y cambió el horario o lo que están
+            recibiendo, o si fuiste y encontraste otra cosa, cuéntanos y
+            moderación lo actualiza.
+          </p>
+          <Link
+            href={`/punto/${punto.id}/solicitud`}
+            className="self-start text-sm font-semibold underline underline-offset-4"
+          >
+            Solicitar un cambio o el cierre
+          </Link>
+        </section>
 
         <p className="text-sm text-black/60 dark:text-white/60">{AVISOS.informacionDeTerceros}</p>
       </main>

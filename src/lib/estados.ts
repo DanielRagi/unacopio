@@ -9,9 +9,16 @@
 export type EstadoRegistro =
   | { estado: 'inicial' }
   | { estado: 'error'; errores: Record<string, string[]>; mensaje?: string }
-  | { estado: 'listo'; id: string; token: string };
+  | { estado: 'listo'; id: string };
 
 export const ESTADO_INICIAL: EstadoRegistro = { estado: 'inicial' };
+
+export type EstadoSolicitud =
+  | { estado: 'inicial' }
+  | { estado: 'error'; mensaje: string }
+  | { estado: 'enviada' };
+
+export const SOLICITUD_INICIAL: EstadoSolicitud = { estado: 'inicial' };
 
 export type EstadoAcceso =
   | { estado: 'inicial' }

@@ -70,7 +70,7 @@ export function FormularioRegistro({
       : null;
   }, [municipios, mun]);
 
-  if (estado.estado === 'listo') return <Confirmacion token={estado.token} />;
+  if (estado.estado === 'listo') return <Confirmacion />;
 
   const errores = estado.estado === 'error' ? estado.errores : {};
 
@@ -235,10 +235,11 @@ export function FormularioRegistro({
 
         <Campo
           etiqueta="Correo electrónico"
-          ayuda="No se publica. Es por donde te mandamos el código para actualizar o cerrar el punto."
+          opcional
+          ayuda="No se publica. Le sirve a moderación para escribirte si no contesta el teléfono."
           error={errores.correo}
         >
-          <input name="correo" type="email" required className={CLASE_ENTRADA} />
+          <input name="correo" type="email" className={CLASE_ENTRADA} />
         </Campo>
 
         <Campo etiqueta="Algo más que deban saber" opcional error={errores.notas}>
@@ -277,30 +278,24 @@ export function FormularioRegistro({
   );
 }
 
-function Confirmacion({ token }: { token: string }) {
+function Confirmacion() {
   return (
     <section className="flex flex-col gap-5">
       <h2 className="text-2xl font-bold">Listo, quedó registrado</h2>
       <p className="text-black/80 dark:text-white/80">
-        Un moderador va a revisarlo y a confirmarlo por teléfono antes de
-        publicarlo. Mientras tanto no aparece en el directorio.
+        Un moderador va a llamarte al teléfono que dejaste para confirmar antes
+        de publicarlo. Mientras tanto el punto no aparece en el directorio.
       </p>
 
-      {token && (
-        <div className="flex flex-col gap-2 rounded-xl border-2 border-amber-500/40 bg-amber-500/5 p-4">
-          <p className="font-semibold text-amber-900 dark:text-amber-200">
-            Guarda este código
-          </p>
-          <code className="block overflow-x-auto rounded-lg bg-black/[0.06] px-3 py-2 font-mono text-sm dark:bg-white/10">
-            {token}
-          </code>
-          <p className="text-sm text-amber-900/80 dark:text-amber-200/80">
-            Con él vas a poder actualizar los horarios, cambiar lo que están
-            recibiendo o cerrar el punto, sin crear ninguna cuenta. No lo
-            compartas: quien lo tenga puede editar tu punto.
-          </p>
-        </div>
-      )}
+      <div className="flex flex-col gap-2 rounded-xl border border-black/10 bg-black/[0.03] p-4 dark:border-white/15 dark:bg-white/5">
+        <p className="font-semibold">¿Y si después cambia algo?</p>
+        <p className="text-sm text-black/70 dark:text-white/70">
+          Cuando el punto esté publicado, en su página vas a encontrar el botón{' '}
+          <strong>«Solicitar un cambio o el cierre»</strong>. Nos escribes qué
+          cambió y moderación lo actualiza. No necesitas cuenta ni contraseña, y
+          no hay ningún código que guardar.
+        </p>
+      </div>
 
       <Link
         href="/"

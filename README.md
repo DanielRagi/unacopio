@@ -48,12 +48,15 @@ npm install
    |---|---|
    | 1 | `supabase/migrations/0001_esquema.sql` |
    | 2 | `supabase/migrations/0002_rls_y_funciones.sql` |
-   | 3 | `supabase/seed/0001_categorias.sql` |
-   | 4 | `supabase/seed/0002_municipios.sql` |
+   | 3 | `supabase/migrations/0003_municipios_latlng.sql` |
+   | 4 | `supabase/migrations/0004_sin_tokens_solicitudes.sql` |
+   | 5 | `supabase/seed/0001_categorias.sql` |
+   | 6 | `supabase/seed/0002_municipios.sql` |
 
-   `0002` y los dos seeds se pueden volver a pegar completos sin romper nada. El
+   Todo, menos `0001`, se puede volver a pegar completo sin romper nada. El
    editor de Supabase aborta la corrida entera cuando algo falla, así que poder
-   reintentar sin averiguar qué alcanzó a crearse es parte del diseño.
+   reintentar sin averiguar qué alcanzó a crearse es parte del diseño. `0001` no:
+   si el esquema se crea a medias, es mejor borrar y empezar limpio que remendar.
 
    **PostGIS tiene que quedar en el esquema `extensions`** (es donde lo pone el
    botón del panel). Ahí vive el tipo `geography`, y por eso las funciones que lo
@@ -97,10 +100,10 @@ los catálogos ya se cargaron.
 | `npm run db:probar` | Levanta un PostGIS en Docker, aplica todo el SQL y corre la prueba funcional |
 
 `npm run db:probar` es la red de seguridad del esquema: verifica que el formulario
-público no pueda autopublicarse, que el token quede hasheado, que `anon` no
-alcance la tabla base, que el teléfono se enmascare sin consentimiento y que tres
-reportes despubliquen un punto. Correrlo antes de llevar cualquier cambio de SQL
-a Supabase.
+público no pueda autopublicarse, que `anon` no alcance la tabla base, que el
+teléfono se enmascare sin consentimiento, que tres reportes de terceros
+despubliquen un punto y que la solicitud de quien organiza el punto no cuente
+para ese umbral. Correrlo antes de llevar cualquier cambio de SQL a Supabase.
 
 ## Estructura
 
@@ -127,10 +130,14 @@ docs/                     plan, modelo de datos y decisiones
 ## Modelo de seguridad, en corto
 
 - El público **nunca** consulta la tabla `puntos`: solo la vista `puntos_publicos`,
-  que filtra por estado publicado y esconde el correo, el token de edición y el
-  teléfono de quien no autorizó publicarlo.
-- Registrar, buscar por cercanía y reportar van por funciones RPC `security definer`.
-  El formulario no puede publicarse solo ni marcarse como entidad oficial.
+  que filtra por estado publicado y esconde el correo y el teléfono de quien no
+  autorizó publicarlo.
+- Registrar, buscar por cercanía y mandar solicitudes van por funciones RPC
+  `security definer`. El formulario no puede publicarse solo ni marcarse como
+  entidad oficial.
+- **Nadie edita el directorio directamente.** Corregir o cerrar un punto es mandar
+  una solicitud que aplica moderación: no hay tokens, ni contraseñas, ni enlaces
+  secretos que se puedan filtrar.
 - La moderación entra con Supabase Auth; sus permisos salen de la tabla `perfiles`.
 
 Detalle en [`docs/MODELO-DATOS.md`](docs/MODELO-DATOS.md).
