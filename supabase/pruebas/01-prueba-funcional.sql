@@ -1,0 +1,106 @@
+-- Prueba funcional del esquema. Corre con `npm run db:probar`.
+--
+-- Lo que verifica, que es justo lo que no se puede romper sin darse cuenta:
+--   · los catálogos quedaron completos
+--   · el formulario público no puede autopublicarse ni autocertificarse
+--   · el token de edición se guarda hasheado, nunca en claro
+--   · anon no llega a la tabla base, solo a la vista
+--   · el teléfono se enmascara sin consentimiento (Habeas Data)
+--   · la búsqueda por cercanía respeta radio y categorías `no_recibe`
+--   · tres reportes despublican el punto solo
+
+\set ON_ERROR_STOP on
+\pset pager off
+
+truncate puntos cascade;
+
+\echo '--- catalogos'
+select (select count(*) from departamentos) as departamentos,
+       (select count(*) from municipios)    as municipios,
+       (select count(*) from municipios where centroide is null) as sin_centroide,
+       (select count(*) from categorias)    as categorias;
+
+\echo '--- registrar_punto'
+select id as punto_id, token as punto_token from registrar_punto(
+  'Parroquia San José', 'iglesia', '17', '17001', 'Calle 12 # 4-30',
+  5.0703, -75.5138, 'María Gómez', '+573001112233', 'Lun a Sáb 8am-6pm',
+  '[{"slug":"agua_embotellada","nivel":"alta"},
+    {"slug":"ropa_usada_buen_estado","nivel":"no_recibe"}]'::jsonb
+) \gset
+
+select estado, entidad_oficial, origen,
+       token_edicion_hash = encode(extensions.digest(:'punto_token', 'sha256'), 'hex') as hash_coincide,
+       token_edicion_hash <> :'punto_token' as token_no_esta_en_claro,
+       round(lat::numeric, 4) as lat, round(lng::numeric, 4) as lng
+from puntos where id = :'punto_id';
+
+\echo '--- un punto pendiente NO se ve en la vista publica'
+set role anon;
+select count(*) as visibles_pendiente from puntos_publicos;
+reset role;
+
+\echo '--- anon no puede leer la tabla base'
+do $$
+begin
+  set local role anon;
+  perform 1 from puntos limit 1;
+  raise exception 'FALLA: anon pudo leer la tabla puntos';
+exception
+  when insufficient_privilege then raise notice 'OK: anon bloqueado en puntos';
+end
+$$;
+
+\echo '--- publicado, con telefono sin consentimiento'
+update puntos set estado = 'publicado', telefono_publico = false where id = :'punto_id';
+set role anon;
+select nombre, municipio, departamento,
+       telefono as telefono_enmascarado, whatsapp,
+       jsonb_array_length(categorias) as num_categorias
+from puntos_publicos where id = :'punto_id';
+reset role;
+
+\echo '--- con consentimiento el telefono si sale'
+update puntos set telefono_publico = true where id = :'punto_id';
+set role anon;
+select telefono from puntos_publicos where id = :'punto_id';
+
+\echo '--- puntos_cercanos desde el centro de Manizales (el punto esta a ~430 m)'
+select (punto->>'nombre') as nombre, round(metros::numeric) as metros
+from puntos_cercanos(5.0689, -75.5174, 20000);
+
+\echo '--- el radio si filtra'
+select 100 as radio_m, count(*) from puntos_cercanos(5.0689, -75.5174, 100)
+union all
+select 500, count(*) from puntos_cercanos(5.0689, -75.5174, 500);
+
+\echo '--- filtro por categoria: agua SI, ropa usada NO (esta marcada no_recibe)'
+select 'agua' as filtro, count(*) from puntos_cercanos(5.0689, -75.5174, 20000, 'agua_embotellada')
+union all
+select 'ropa', count(*) from puntos_cercanos(5.0689, -75.5174, 20000, 'ropa_usada_buen_estado');
+reset role;
+
+\echo '--- coordenada fuera de Colombia: debe fallar'
+do $$
+begin
+  perform registrar_punto('Falso','ong','17','17001','x', 40.7, -74.0,
+                          'y','+57300','z','[]'::jsonb);
+  raise exception 'FALLA: acepto una coordenada fuera de Colombia';
+exception
+  when others then
+    if sqlerrm like '%dentro de Colombia%' then raise notice 'OK: rechazo la coordenada';
+    else raise; end if;
+end
+$$;
+
+\echo '--- reportes: el repetido se ignora, al tercero se despublica solo'
+select reportar_punto(:'punto_id', 'cerrado', null, null, 'ip-a');
+select reportar_punto(:'punto_id', 'cerrado', null, null, 'ip-a');
+select estado, reportes_abiertos from puntos where id = :'punto_id';
+select reportar_punto(:'punto_id', 'cerrado',   null, null, 'ip-b');
+select reportar_punto(:'punto_id', 'no_existe', null, null, 'ip-c');
+select estado, reportes_abiertos from puntos where id = :'punto_id';
+
+\echo '--- ya despublicado, desaparece de la vista'
+set role anon;
+select count(*) as visibles_final from puntos_publicos;
+reset role;
