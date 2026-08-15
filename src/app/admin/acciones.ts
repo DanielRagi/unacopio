@@ -129,9 +129,18 @@ export async function guardarPunto(
   const { data: sesion } = await supabase.auth.getUser();
   if (!sesion.user) redirect('/admin');
 
+  // El pin solo se toca si vinieron las dos coordenadas. Si el mapa no cargó
+  // —sin JavaScript, o con la red caída a mitad— es mejor dejar el punto donde
+  // estaba que moverlo a la nada.
+  const ubicacion =
+    datos.lat !== undefined && datos.lng !== undefined
+      ? { ubicacion: `SRID=4326;POINT(${datos.lng} ${datos.lat})` }
+      : {};
+
   const { error } = await supabase
     .from('puntos')
     .update({
+      ...ubicacion,
       nombre: datos.nombre,
       tipo_organizacion: datos.tipo_organizacion,
       direccion: datos.direccion,

@@ -14,7 +14,8 @@
     "db:probar": "node scripts/probar-sql.mjs",
     "db:verificar": "node --env-file=.env.local scripts/verificar-supabase.mjs",
     "probar:importacion": "node scripts/probar-importacion.mts",
-    "pilotaje": "node scripts/pilotaje.mjs"
+    "pilotaje": "node scripts/pilotaje.mjs",
+    "sembrar": "node --env-file=.env.local scripts/sembrar-pilotaje.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",

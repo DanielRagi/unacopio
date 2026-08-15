@@ -385,7 +385,8 @@ export async function obtenerPuntoParaEditar(id: string) {
     .from('puntos')
     .select(`
       id, nombre, tipo_organizacion, departamento_codigo, municipio_codigo,
-      direccion, barrio, referencia, responsable_nombre, telefono, whatsapp,
+      direccion, barrio, referencia, lat, lng,
+      responsable_nombre, telefono, whatsapp,
       telefono_publico, correo, horarios, fecha_inicio, fecha_fin,
       recibe_voluntarios, notas,
       punto_categoria(categoria_slug, nivel)
