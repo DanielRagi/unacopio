@@ -128,6 +128,55 @@ if (servicio) {
   const cerrada = err8c?.message?.includes('Solo moderación');
   console.log('0008 importar   :', cerrada ? 'cerrada ✓' : `revisar (${err8c?.message ?? 'no falló'})`);
   if (!cerrada) fallas++;
+
+  /*
+   * La prueba que faltaba: entrar de verdad como moderador.
+   *
+   * Todo lo de arriba usa `anon` o la llave de servicio. Ninguna de las dos se
+   * parece a un moderador con sesión, que es el rol `authenticated` sujeto a
+   * RLS. Por no probar esto, el panel estuvo semanas respondiendo «permission
+   * denied for table puntos» sin que ninguna prueba se enterara: 0002 le había
+   * revocado el GRANT a `authenticated`, y una policy no otorga permiso, filtra
+   * dentro del que ya hay. Lo arregla 0009.
+   */
+  console.log('\n— como moderador (rol authenticated) —');
+
+  const { data: perfiles } = await admin.from('perfiles').select('id').limit(1);
+  if (!perfiles?.length) {
+    console.log('moderación      : sin perfiles, no hay a quién probar');
+  } else {
+    const { data: cuenta } = await admin.auth.admin.getUserById(perfiles[0].id);
+    const correo = cuenta?.user?.email;
+
+    // Genera el token sin mandar correo, y lo canjea por una sesión real.
+    const { data: enlace, error: errEnlace } = await admin.auth.admin.generateLink({
+      type: 'magiclink', email: correo,
+    });
+
+    if (errEnlace) {
+      console.log('moderación      : no se pudo generar el enlace —', errEnlace.message);
+      fallas++;
+    } else {
+      const comoUsuario = createClient(url, anon, { auth: { persistSession: false } });
+      const { error: errSesion } = await comoUsuario.auth.verifyOtp({
+        token_hash: enlace.properties.hashed_token, type: 'magiclink',
+      });
+
+      if (errSesion) {
+        console.log('sesión          : NO se pudo iniciar —', errSesion.message);
+        fallas++;
+      } else {
+        console.log(`sesión          : ${correo} ✓`);
+        for (const tabla of ['puntos', 'punto_categoria', 'reportes']) {
+          const { error } = await comoUsuario.from(tabla).select('*', { head: true, count: 'exact' });
+          const ok = !error;
+          console.log(`  ${tabla.padEnd(16)}:`, ok ? 'lee ✓' : `BLOQUEADO — ${error.message || 'permission denied'} (falta 0009)`);
+          if (!ok) fallas++;
+        }
+        await comoUsuario.auth.signOut();
+      }
+    }
+  }
 }
 
 console.log(fallas === 0 ? '\n✓ el proyecto responde y RLS está en pie' : `\n✗ ${fallas} problema(s)`);

@@ -87,6 +87,7 @@ npm install
    | 8 | `supabase/seed/0001_categorias.sql` |
    | 9 | `supabase/seed/0002_municipios.sql` |
    | 10 | `supabase/migrations/0008_alcance.sql` |
+   | 11 | `supabase/migrations/0009_permisos_moderacion.sql` |
 
    `0008` va **después** de las semillas: calcula el slug de cada municipio, así
    que necesita que los 1.122 ya estén cargados.
@@ -136,7 +137,8 @@ los catálogos ya se cargaron.
 | `npm run lint` | ESLint |
 | `npm run municipios` | Regenera `supabase/seed/0002_municipios.sql` desde DIVIPOLA |
 | `npm run db:probar` | Levanta un PostGIS en Docker, aplica todo el SQL y corre la prueba funcional |
-| `npm run db:verificar` | Comprueba el proyecto real: llaves, catálogos, RLS y qué migraciones están aplicadas |
+| `npm run db:verificar` | Comprueba el proyecto real: llaves, catálogos, RLS, qué migraciones están aplicadas, y que un moderador con sesión de verdad pueda leer sus tablas |
+| `npm run acceso -- correo@x.com` | Genera un enlace de acceso a moderación sin pasar por el correo. La salida de emergencia cuando el SMTP falla |
 | `npm run probar:horarios` | Pruebas del cálculo de "abierto ahora" (zona horaria, jornadas partidas, fechas de campaña) |
 | `npm run probar:importacion` | Pruebas del parser de CSV y de la revisión fila por fila |
 | `npm run pilotaje` | Regenera el CSV de siembra desde `datos/pilotaje/*.json`, geocodificando con Nominatim |

@@ -29,9 +29,15 @@ const ARCHIVOS = [
   // 0008 va después de las semillas: calcula el slug de cada municipio, así que
   // necesita que los 1.122 ya estén cargados.
   'supabase/migrations/0008_alcance.sql',
+  'supabase/migrations/0009_permisos_moderacion.sql',
   // A propósito dos veces: el editor de Supabase aborta la corrida entera si algo
   // falla, así que 0002 y las semillas tienen que aguantar que uno los vuelva a
   // pegar. Si alguien mete un `create policy` suelto, revienta aquí y no allá.
+  //
+  // La segunda pasada de 0002 además comprueba algo que costó caro: 0002 ya no
+  // le revoca los permisos a `authenticated`, así que replayarlo no vuelve a
+  // romper el panel de moderación. Si alguien lo revierte, la prueba de abajo
+  // falla acá y no en producción.
   'supabase/migrations/0002_rls_y_funciones.sql',
   'supabase/migrations/0003_municipios_latlng.sql',
   'supabase/migrations/0004_sin_tokens_solicitudes.sql',
@@ -41,6 +47,7 @@ const ARCHIVOS = [
   'supabase/seed/0001_categorias.sql',
   'supabase/seed/0002_municipios.sql',
   'supabase/migrations/0008_alcance.sql',
+  'supabase/migrations/0009_permisos_moderacion.sql',
   'supabase/pruebas/01-prueba-funcional.sql',
 ];
 

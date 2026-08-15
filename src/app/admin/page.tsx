@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { cerrarSesion } from './acciones';
+import { AvisoDeFragmento } from '@/components/AvisoDeFragmento';
 import { FilaLlamada } from '@/components/FilaLlamada';
 import { FilaModeracion } from '@/components/FilaModeracion';
 import { FilaSolicitud } from '@/components/FilaSolicitud';
@@ -26,8 +27,14 @@ const PESTANAS: { estado: EstadoPunto; etiqueta: string }[] = [
 ];
 
 const ERRORES: Record<string, string> = {
-  sin_codigo: 'El enlace venía incompleto. Pide uno nuevo.',
-  enlace_invalido: 'Ese enlace ya se usó o se venció. Pide uno nuevo.',
+  sin_codigo: 'El enlace venía incompleto. Pide uno nuevo, o usa el código de seis dígitos.',
+  enlace_invalido:
+    'Ese enlace ya se usó o se venció. Suele pasar cuando el antivirus del correo lo abre ' +
+    'para revisarlo. Usa el código de seis dígitos del mismo correo.',
+  otro_navegador:
+    'Ese enlace solo sirve en el mismo navegador desde el que se pidió. Usa el código de ' +
+    'seis dígitos, que funciona en cualquiera.',
+  rechazado: 'Supabase rechazó el enlace.',
 };
 
 export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>) {
@@ -36,12 +43,16 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
 
   if (!sesion) {
     const error = typeof params.error === 'string' ? ERRORES[params.error] : undefined;
+    // Lo que dijo Supabase, que casi siempre es más concreto que lo nuestro.
+    const detalle = typeof params.detalle === 'string' ? params.detalle : undefined;
     return (
       <Marco titulo="Moderación">
+        <AvisoDeFragmento />
         {error && (
-          <p className="rounded-lg border border-amber-500/40 bg-amber-500/10 p-3 text-sm font-medium text-amber-900 dark:text-amber-200">
-            {error}
-          </p>
+          <div className="flex flex-col gap-1 rounded-lg border border-amber-500/40 bg-amber-500/10 p-3 text-sm text-amber-900 dark:text-amber-200">
+            <p className="font-medium">{error}</p>
+            {detalle && <p className="text-xs opacity-80">Supabase dijo: {detalle}</p>}
+          </div>
         )}
         <FormularioAcceso />
       </Marco>
