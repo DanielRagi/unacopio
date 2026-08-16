@@ -200,18 +200,6 @@ const conReglasCruzadas = <T extends z.ZodType<CamposCruzados>>(esquema: T) =>
     .refine((d) => d.categorias.some((c) => c.nivel !== 'no_recibe'), {
       message: 'Marca al menos una cosa que sí reciban',
       path: ['categorias'],
-    })
-    /*
-     * Alguna forma de contactarlos, la que sea.
-     *
-     * Reemplaza a la vieja validación de teléfono. Un punto sin número marcable
-     * y sin Instagram no se puede verificar por teléfono ni preguntarle nada, y
-     * publicar una dirección que nadie puede confirmar es exactamente lo que
-     * hace que la gente pierda el viaje.
-     */
-    .refine((d) => esTelefonoMarcable(d.telefono) || d.instagram !== undefined, {
-      message: 'Hace falta un teléfono o un Instagram para poder contactarlos',
-      path: ['telefono'],
     });
 
 /**
@@ -225,19 +213,43 @@ export const esquemaRegistro = conReglasCruzadas(
     // genera después, en el servidor, para que no puedan contradecirse.
     horarios: z.array(franja).min(1, 'Marca al menos un día de atención').max(21),
   }),
-);
+)
+  /*
+   * En el formulario público sí hace falta alguna forma de contacto.
+   *
+   * Quien registra su propio punto puede dar un número o una cuenta; si no da
+   * ninguno, nadie puede confirmar que el punto existe y estaríamos publicando
+   * una dirección a ciegas. Es también la barrera más barata contra el spam.
+   *
+   * Esta regla **no** aplica en moderación: ver el comentario de
+   * `esquemaModeracion`.
+   */
+  .refine((d) => esTelefonoMarcable(d.telefono) || d.instagram !== undefined, {
+    message: 'Hace falta un teléfono o un Instagram para poder contactarlos',
+    path: ['telefono'],
+  });
 
 /**
- * El formulario de moderación. Igual, salvo que el horario puede quedar vacío.
+ * El formulario de moderación. Igual, salvo que **no exige ni horario ni
+ * contacto**.
  *
- * Quien modera muchas veces no lo sabe: está corrigiendo un teléfono de un punto
- * que se cargó desde una lista, o acaba de colgar con alguien que dijo "eso
- * depende del día". Exigirlo bloqueaba el resto de la edición —no se podía
- * arreglar ni una dirección sin inventarse un horario—, y inventarlo es peor que
- * no tenerlo: el sello de "Abierto ahora" saldría mintiendo.
+ * Las dos excepciones nacen del mismo malentendido: tratar a quien modera como
+ * si fuera quien registra. No lo es. Quien registra sabe su horario y su
+ * teléfono; quien modera está mirando una ficha ajena y muchas veces no los
+ * tiene, y aun así necesita poder corregir la dirección o publicar.
  *
- * Sin franjas no hay sello, que es justo lo que dice D12. La base ya permite
- * `horarios` nulo; lo único que sobraba era esta validación.
+ * - **Sin horario**: acaba de colgar con alguien que dijo "eso depende del día".
+ *   Exigirlo bloqueaba el resto de la edición, e inventarlo es peor que no
+ *   tenerlo, porque el sello de "Abierto ahora" saldría mintiendo. Sin franjas
+ *   no hay sello, que es justo lo que dice D12.
+ * - **Sin contacto**: hay puntos que hay que publicar ya —un coliseo municipal,
+ *   una estación de bomberos— y que sencillamente no tienen un número propio.
+ *   Bloquear la edición de un punto de una alcaldía porque no conseguimos un
+ *   celular deja a la gente sin saber dónde está, que es peor que no poder
+ *   llamarlo. La ficha simplemente no ofrece "Llamar" (ver D17).
+ *
+ * En los dos casos la base aguanta: `horarios` es nulable y `telefono` queda en
+ * "Por confirmar". Lo único que sobraba eran estas validaciones.
  */
 export const esquemaModeracion = conReglasCruzadas(
   z.object({

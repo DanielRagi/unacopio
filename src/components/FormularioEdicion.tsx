@@ -198,9 +198,11 @@ export function FormularioEdicion({
           <input name="telefono" defaultValue={punto.telefono} className={ENTRADA} />
         </Campo>
         <p className="-mt-2 text-sm text-black/55 dark:text-white/55">
-          Si no hay un número que contesten, déjalo en «Por confirmar» y llena el
-          Instagram. La ficha deja de ofrecer «Llamar» en vez de mandar a marcar
-          a la nada.
+          Ninguno de los dos es obligatorio acá. Si no hay un número que
+          contesten, déjalo en «Por confirmar»; si tampoco hay Instagram, se
+          puede guardar y publicar igual — hay puntos oficiales que sencillamente
+          no tienen contacto propio. La ficha deja de ofrecer «Llamar» en vez de
+          mandar a marcar a la nada.
         </p>
 
         <Campo etiqueta="Instagram del punto" error={errores.instagram}>

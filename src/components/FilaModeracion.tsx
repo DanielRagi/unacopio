@@ -164,6 +164,17 @@ export function FilaModeracion({
             Rechazar
           </Boton>
         )}
+        {/*
+          La salida de emergencia: desde cualquier estado se vuelve a la cola.
+          Un punto rechazado por error, o uno publicado al que le faltó algo,
+          tiene que poder devolverse sin tocar la base a mano. Mientras esté en
+          pendiente desaparece del sitio.
+        */}
+        {punto.estado !== 'pendiente' && (
+          <Boton accion={cambiarEstado} id={punto.id} estado="pendiente">
+            Devolver a pendientes
+          </Boton>
+        )}
 
         <form action={alternarEntidadOficial}>
           <input type="hidden" name="id" value={punto.id} />
