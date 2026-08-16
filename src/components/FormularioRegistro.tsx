@@ -249,13 +249,24 @@ export function FormularioRegistro({
           </Campo>
         </div>
 
-        <Campo etiqueta="Marca el punto en el mapa">
+        {/*
+          Un <div>, NO el componente `Campo`.
+          `Campo` envuelve a sus hijos en un <label>, y un <label> reenvía cada
+          clic a su primer control: acá ese control es el botón "Usar mi
+          ubicación" que va dentro del mapa. Con el mapa adentro del label, cada
+          toque para mover el pin activaba el botón, salía "Buscando…" y, cuando
+          el navegador respondía, el mapa se iba a la ubicación de la persona sin
+          que nadie se lo hubiera pedido.
+
+          Un <label> es para un control. Un mapa no es un control.
+        */}
+        <div className="flex flex-col gap-1.5">
+          <span className="text-sm font-medium">Marca el punto en el mapa</span>
           {/*
-            El centro es el del municipio y nada más.
-            Pasarle acá la coordenada del pin —que era lo que hacía la versión
-            con búsqueda por dirección— provocaba que cada arrastre volviera a
-            entrar por el efecto que recentra el mapa: uno movía y el mapa se
-            devolvía. El pin sale del mapa; el mapa no debe salir del pin.
+            El centro es el del municipio y nada más. Pasarle acá la coordenada
+            del pin hacía que cada arrastre volviera a entrar por el efecto que
+            recentra: uno movía y el mapa se devolvía. El pin sale del mapa; el
+            mapa no debe salir del pin.
           */}
           <MapaSelector
             centroMunicipio={centroMunicipio}
@@ -265,7 +276,7 @@ export function FormularioRegistro({
             Arranca en el centro del municipio. Si estás en el punto, «Usar mi
             ubicación» es lo más rápido; si no, mueve el mapa hasta la entrada.
           </p>
-        </Campo>
+        </div>
 
         <input type="hidden" name="lat" value={coordenadas?.lat ?? ''} />
         <input type="hidden" name="lng" value={coordenadas?.lng ?? ''} />
