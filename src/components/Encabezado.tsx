@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Logo } from './Logo';
+import { FranjaBandera, Logo } from './Logo';
 import { SITIO } from '@/lib/textos';
 
 /**
@@ -13,6 +13,7 @@ import { SITIO } from '@/lib/textos';
 export function Encabezado() {
   return (
     <header className="sticky top-0 z-30 border-b border-black/8 bg-background/85 backdrop-blur-md dark:border-white/12">
+      <FranjaBandera />
       <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-5 py-3">
         <Link href="/" className="group flex items-center gap-2.5">
           <Logo className="size-9 shrink-0 text-emerald-900 transition-transform group-hover:-rotate-3 dark:text-emerald-200" />

@@ -36,7 +36,22 @@ export function leerFiltros(params: Parametros): FiltrosUrl {
   // departamento. Eso deja resolver el caso de quien cambia de departamento sin
   // cambiar el municipio, que si no filtraría por un municipio de otro lado.
   if (mun && dep && !mun.startsWith(dep)) mun = undefined;
-  if (mun && !dep) dep = mun.slice(0, 2);
+
+  /*
+   * "Todo el país" con un municipio puesto no es una búsqueda: es un formulario
+   * a medio limpiar.
+   *
+   * `dep` presente pero vacío significa que la persona eligió "Todo el país"
+   * explícitamente, y entonces el municipio sobra. Distinto de que `dep` no
+   * venga del todo —un enlace como `/?mun=05001`—, donde sí tiene sentido
+   * deducir el departamento a partir del código.
+   *
+   * Sin esta distinción, elegir "Todo el país" dejaba el municipio pegado y la
+   * lista seguía filtrada por Medellín mientras el selector decía otra cosa.
+   */
+  const depVacioAProposito = params.dep !== undefined && dep === undefined;
+  if (mun && depVacioAProposito) mun = undefined;
+  else if (mun && !dep) dep = mun.slice(0, 2);
 
   const lat = coordenada(params.lat, -5, 14);
   const lng = coordenada(params.lng, -82, -66);

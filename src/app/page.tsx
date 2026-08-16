@@ -10,6 +10,7 @@ import {
   municipioDeUbicacion, necesidadesDe,
 } from '@/lib/datos';
 import { aQueryString, leerFiltros, type FiltrosUrl } from '@/lib/filtros';
+import { EMERGENCIA } from '@/lib/textos';
 import { ubicacionPorIp } from '@/lib/ubicacion';
 
 export default async function Portada({ searchParams }: PageProps<'/'>) {
@@ -93,11 +94,11 @@ export default async function Portada({ searchParams }: PageProps<'/'>) {
             <span className="text-emerald-700 dark:text-emerald-400"> en Colombia</span>?
           </h1>
           <p className="max-w-prose text-[1.05rem] leading-relaxed text-black/70 dark:text-white/70">
-            Busca el punto de acopio más cercano y mira qué necesitan{' '}
+            Encuentra el punto de acopio más cercano y mira qué necesitan{' '}
             <strong className="font-semibold text-black dark:text-white">
-              antes de salir de la casa
+              antes de salir de casa
             </strong>
-            . Cada punto se confirma por teléfono.
+            . {EMERGENCIA.llamado}
           </p>
         </section>
 

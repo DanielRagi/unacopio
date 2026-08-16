@@ -19,7 +19,7 @@ export default function manifest(): MetadataRoute.Manifest {
     orientation: 'portrait',
     lang: 'es-CO',
     background_color: '#ffffff',
-    theme_color: '#047857',
+    theme_color: "#065f46",
     icons: [
       { src: '/icono.svg', sizes: 'any', type: 'image/svg+xml' },
       { src: '/icono-mascara.svg', sizes: 'any', type: 'image/svg+xml', purpose: 'maskable' },
