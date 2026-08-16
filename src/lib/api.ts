@@ -86,7 +86,7 @@ const COLUMNAS_CSV = [
   'id', 'nombre', 'tipo_organizacion', 'estado', 'entidad_oficial',
   'departamento_codigo', 'departamento', 'municipio_codigo', 'municipio',
   'direccion', 'barrio', 'referencia', 'lat', 'lng',
-  'responsable_nombre', 'telefono', 'whatsapp',
+  'responsable_nombre', 'telefono', 'whatsapp', 'instagram',
   'horario_texto', 'fecha_inicio', 'fecha_fin',
   'recibe_voluntarios', 'necesita_urgente', 'no_recibe', 'notas',
   'ultima_verificacion', 'actualizado_en', 'url',

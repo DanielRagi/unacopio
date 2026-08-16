@@ -7,6 +7,19 @@ export function soloDigitos(telefono: string): string {
   return telefono.replace(/\D/g, '');
 }
 
+/**
+ * El perfil de Instagram de un punto.
+ *
+ * La normalización de verdad —quitar la URL, la arroba, las mayúsculas— vive en
+ * `validacion.ts` y ya corrió antes de guardar: en la base el usuario está
+ * limpio. Acá solo se quita una arroba por si alguien pasa el valor a mano, y no
+ * se importa el normalizador para no arrastrar zod a los componentes de cliente
+ * que usan este archivo (el mapa, por ejemplo).
+ */
+export function enlaceInstagram(usuario: string): string {
+  return `https://instagram.com/${usuario.trim().replace(/^@+/, '')}`;
+}
+
 export function enlaceLlamada(telefono: string): string {
   return `tel:${telefono.replace(/[^\d+]/g, '')}`;
 }

@@ -119,6 +119,7 @@ export interface PuntoImportado {
   lng: number;
   responsable_nombre: string;
   telefono: string;
+  instagram?: string;
   horario_texto: string;
   notas?: string;
   fuente_nombre?: string;
@@ -148,6 +149,7 @@ const ALIAS: Record<string, string[]> = {
   lng: ['lng', 'lon', 'long', 'longitud'],
   responsable_nombre: ['responsable_nombre', 'responsable', 'contacto'],
   telefono: ['telefono', 'celular', 'tel'],
+  instagram: ['instagram', 'ig', 'insta', 'red_social'],
   horario_texto: ['horario_texto', 'horario', 'horarios'],
   necesita_urgente: ['necesita_urgente', 'urgente', 'prioridad'],
   recibe: ['recibe', 'categorias', 'reciben'],
@@ -280,7 +282,21 @@ export function revisarFilas(
     }
 
     const telefono = campo(v, 'telefono');
-    if (!telefono) advertencias.push('Sin teléfono: no se va a poder verificar por llamada');
+    // Sin arroba y sin URL, igual que en el resto de la aplicación.
+    const instagram = campo(v, 'instagram')
+      .trim()
+      .replace(/^https?:\/\//i, '')
+      .replace(/^(www\.)?instagram\.com\//i, '')
+      .replace(/[?#].*$/, '')
+      .replace(/\/+$/, '')
+      .replace(/^@+/, '')
+      .toLowerCase();
+
+    if (!telefono && !instagram) {
+      advertencias.push('Sin teléfono ni Instagram: no se va a poder verificar');
+    } else if (!telefono) {
+      advertencias.push('Sin teléfono: hay que escribirles por Instagram');
+    }
 
     const punto: PuntoImportado | undefined =
       errores.length > 0 || !municipio || lat === undefined || lng === undefined
@@ -297,6 +313,7 @@ export function revisarFilas(
             lng,
             responsable_nombre: campo(v, 'responsable_nombre'),
             telefono,
+            instagram: instagram || undefined,
             horario_texto: campo(v, 'horario_texto'),
             notas: campo(v, 'notas') || undefined,
             fuente_nombre: campo(v, 'fuente_nombre') || undefined,
@@ -317,6 +334,6 @@ export function revisarFilas(
 
 /** La plantilla que se le manda a quien va a preparar la lista. */
 export const PLANTILLA_CSV = [
-  'nombre,tipo_organizacion,municipio_codigo,municipio,direccion,barrio,lat,lng,responsable_nombre,telefono,horario_texto,necesita_urgente,recibe,no_recibe,notas,fuente_nombre,fuente_url',
-  'Coliseo Municipal,alcaldia,05001,Medellín,Carrera 74 # 48-10,Estadio,6.2568,-75.5906,María Gómez,3001112233,Lunes a sábado de 8am a 6pm,agua_embotellada;panales,alimentos_no_perecederos,ropa_usada_buen_estado,Reciben hasta el viernes,Alcaldía de Medellín,https://www.medellin.gov.co/',
+  'nombre,tipo_organizacion,municipio_codigo,municipio,direccion,barrio,lat,lng,responsable_nombre,telefono,instagram,horario_texto,necesita_urgente,recibe,no_recibe,notas,fuente_nombre,fuente_url',
+  'Coliseo Municipal,alcaldia,05001,Medellín,Carrera 74 # 48-10,Estadio,6.2568,-75.5906,María Gómez,3001112233,@acopiomedellin,Lunes a sábado de 8am a 6pm,agua_embotellada;panales,alimentos_no_perecederos,ropa_usada_buen_estado,Reciben hasta el viernes,Alcaldía de Medellín,https://www.medellin.gov.co/',
 ].join('\r\n');

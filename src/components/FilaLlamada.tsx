@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { registrarLlamada } from '@/app/admin/acciones';
-import { enlaceLlamada } from '@/lib/enlaces';
+import { enlaceInstagram, enlaceLlamada } from '@/lib/enlaces';
+import { esTelefonoMarcable } from '@/lib/validacion';
 import { haceCuanto } from '@/lib/textos';
 import type { PuntoPorLlamar } from '@/lib/datos';
 
@@ -48,12 +49,35 @@ export function FilaLlamada({ punto }: { punto: PuntoPorLlamar }) {
         </p>
       </div>
 
-      <a
-        href={enlaceLlamada(punto.telefono)}
-        className="self-start text-2xl font-bold tracking-tight underline underline-offset-4"
-      >
-        {punto.telefono}
-      </a>
+      {/*
+        No todos los puntos se llaman. Algunos solo tienen Instagram, y a los
+        importados les falta conseguir el número. Mostrar un enlace `tel:` con
+        "Por confirmar" adentro hace que el voluntario toque y no pase nada.
+      */}
+      {esTelefonoMarcable(punto.telefono) ? (
+        <a
+          href={enlaceLlamada(punto.telefono)}
+          className="self-start text-2xl font-bold tracking-tight underline underline-offset-4"
+        >
+          {punto.telefono}
+        </a>
+      ) : punto.instagram ? (
+        <a
+          href={enlaceInstagram(punto.instagram)}
+          target="_blank"
+          rel="noreferrer"
+          className="self-start text-xl font-bold tracking-tight underline underline-offset-4"
+        >
+          @{punto.instagram}
+          <span className="ml-2 text-sm font-normal text-black/55 dark:text-white/55">
+            escríbeles por Instagram, no hay teléfono
+          </span>
+        </a>
+      ) : (
+        <p className="self-start text-lg font-semibold text-amber-800 dark:text-amber-300">
+          Sin contacto · hay que conseguir teléfono o Instagram antes de publicarlo
+        </p>
+      )}
 
       <div className="flex flex-wrap gap-2 border-t border-black/10 pt-3 dark:border-white/15">
         <Boton id={punto.id} resultado="sigue" tono="principal">Siguen recibiendo</Boton>

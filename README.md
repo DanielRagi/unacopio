@@ -89,6 +89,7 @@ npm install
    | 10 | `supabase/migrations/0008_alcance.sql` |
    | 11 | `supabase/migrations/0009_permisos_moderacion.sql` |
    | 12 | `supabase/migrations/0010_municipio_cercano.sql` |
+   | 13 | `supabase/migrations/0011_instagram_y_telefono.sql` |
 
    `0008` va **después** de las semillas: calcula el slug de cada municipio, así
    que necesita que los 1.122 ya estén cargados.

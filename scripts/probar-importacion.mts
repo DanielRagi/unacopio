@@ -190,5 +190,35 @@ console.log('\nrevisarFilas');
   ]);
 }
 
+console.log('\ncontacto por Instagram');
+{
+  const { filas } = parsearCsv(
+    'nombre,municipio_codigo,direccion,instagram\nUno,05001,Calle 1,https://www.instagram.com/AcopioBarrio/?hl=es\n',
+  );
+  const [fila] = revisarFilas(filas, CATALOGOS);
+  igual('la URL completa se reduce al usuario', fila.punto?.instagram, 'acopiobarrio');
+  igual(
+    'avisa que hay que escribirles por ahí',
+    fila.advertencias.some((a) => a.includes('Instagram')),
+    true,
+  );
+}
+
+{
+  const { filas } = parsearCsv('nombre,municipio_codigo,direccion,ig\nUno,05001,Calle 1,@Acopio.Barrio\n');
+  const [fila] = revisarFilas(filas, CATALOGOS);
+  igual('alias "ig" y arroba', fila.punto?.instagram, 'acopio.barrio');
+}
+
+{
+  const { filas } = parsearCsv('nombre,municipio_codigo,direccion\nUno,05001,Calle 1\n');
+  const [fila] = revisarFilas(filas, CATALOGOS);
+  igual(
+    'sin teléfono ni Instagram se avisa',
+    fila.advertencias.some((a) => a.includes('ni Instagram')),
+    true,
+  );
+}
+
 console.log(fallas === 0 ? '\n✓ todo bien\n' : `\n✗ ${fallas} fallas\n`);
 process.exit(fallas === 0 ? 0 : 1);
