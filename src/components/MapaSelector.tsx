@@ -14,6 +14,14 @@ const CENTRO_COLOMBIA: [number, number] = [4.5709, -74.2973];
  * arrastrar un marcador de 20 píxeles con el dedo, en un bus, es difícil; mover
  * el mapa entero no. Además nos ahorra los iconos de Leaflet, que se rompen con
  * los bundlers porque vienen referenciados como rutas de imagen.
+ *
+ * **NO lo metas dentro de un `<label>`.** Lleva adentro un botón —"Usar mi
+ * ubicación"— y un `<label>` reenvía cualquier clic a su primer control. Con el
+ * mapa dentro de un label, cada toque para mover el pin activaba ese botón: el
+ * texto cambiaba a "Buscando…" y, al responder el navegador, el mapa saltaba a
+ * la ubicación de la persona sin que nadie lo hubiera pedido. Costó un buen
+ * rato encontrarlo porque el síntoma parecía del mapa y la causa estaba en el
+ * elemento que lo envolvía.
  */
 
 function AvisarCentro({ alMover }: { alMover: (lat: number, lng: number) => void }) {
@@ -72,6 +80,15 @@ export default function MapaSelector({
   const [buscandoUbicacion, setBuscandoUbicacion] = useState(false);
   const [ubicacionUsuario, setUbicacionUsuario] = useState<[number, number] | null>(null);
 
+  /*
+   * Sin defensa en el manejador, a propósito.
+   *
+   * Se intentó descartar los clics sintéticos mirando `detail === 0`, pero un
+   * `Enter` sobre el botón enfocado llega exactamente igual: no hay forma de
+   * distinguirlos, y el filtro habría dejado el botón inservible con teclado.
+   * El arreglo de verdad es no envolver el mapa en un `<label>`, y eso ya está
+   * hecho donde se usa.
+   */
   const usarMiUbicacion = () => {
     if (!navigator.geolocation) return;
     setBuscandoUbicacion(true);
