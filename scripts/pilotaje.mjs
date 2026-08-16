@@ -87,6 +87,13 @@ const sinTildes = (t) =>
  * que no tiene.
  */
 async function geocodificar(punto, municipio) {
+  // Si la fuente ya trae coordenada, se respeta: adivinarla otra vez solo puede
+  // empeorarla. Acopio Colombia además dice si la suya es exacta o aproximada,
+  // y eso viaja en las notas del punto.
+  if (typeof punto.lat === 'number' && typeof punto.lng === 'number') {
+    return { lat: punto.lat, lng: punto.lng, por: 'la fuente' };
+  }
+
   const nombreLimpio = punto.nombre.replace(/\s*\(.*?\)\s*/g, ' ').trim();
   const palabras = sinTildes(nombreLimpio)
     .split(/[^a-z0-9]+/)
@@ -167,7 +174,7 @@ function armarNotas(punto, ciudad, coord) {
   }
   if (!coord) {
     partes.push('PIN SIN UBICAR: quedó en el centro de la ciudad, no en la dirección. Moverlo al editar.');
-  } else if (coord.por !== 'nombre' && coord.por !== 'dirección') {
+  } else if (coord.por !== 'nombre' && coord.por !== 'dirección' && coord.por !== 'la fuente') {
     partes.push(`PIN APROXIMADO (ubicado por ${coord.por}). Verificarlo al editar.`);
   }
   if (!punto.telefono && !punto.instagram) {
@@ -199,10 +206,12 @@ for (const archivo of archivos) {
   }
 
   let ubicados = 0;
+  let deLaFuente = 0;
 
   for (const punto of ciudad.puntos) {
     const coord = await geocodificar(punto, ciudad.municipio);
     if (coord && coord.por !== 'barrio, aproximado') ubicados++;
+    if (coord?.por === 'la fuente') deLaFuente++;
     console.log(
       `  ${coord ? '·' : '?'} ${punto.nombre} — ${coord ? `por ${coord.por}` : 'centro de la ciudad'}`,
     );
@@ -224,9 +233,10 @@ for (const archivo of archivos) {
       punto.telefono ?? '',
       punto.instagram ?? '',
       punto.horario ?? ciudad.horario_reportado ?? '',
-      // Nada va como urgente: las fuentes no priorizan (ver el encabezado de
-      // cada archivo). La urgencia se pregunta en la llamada.
-      '',
+      // Solo va como urgente lo que la fuente marque explícitamente. Cuando no
+      // prioriza —el caso de la recolección manual— queda vacío: marcar todo
+      // como urgente arruinaría el agregado de "lo que más falta".
+      (punto.urgente ?? []).join(';'),
       // Las listas de la ciudad son el caso general; un punto puede traer las
       // suyas. Los de mascotas no reciben arroz, y los que solo aceptan aseo no
       // deberían salir cuando alguien filtra por alimentos.
@@ -239,8 +249,10 @@ for (const archivo of archivos) {
   }
 
   informe.push({
+    archivo,
     ciudad: ciudad.municipio,
     puntos: ciudad.puntos.length,
+    conCoordenadaDeLaFuente: deLaFuente,
     ubicados,
     aproximadosOSinUbicar: ciudad.puntos.length - ubicados,
     sinTelefono: ciudad.puntos.filter((p) => !p.telefono).length,

@@ -10,8 +10,9 @@ de llamadas, no una lista publicable. Ver `docs/DECISIONES.md`, D13 y D14.
 ## Cómo funciona
 
 ```
-2026-08-medellin.json  ─┐
-2026-08-bogota.json    ─┴─→  npm run pilotaje  ─→  salida/pilotaje.csv
+2026-08-medellin.json         ─┐
+2026-08-bogota.json           ─┤
+2026-08-*-acopio-colombia.json ┴→  npm run pilotaje  ─→  salida/pilotaje.csv
                                                         │
                                           /admin/importar (revisar + confirmar)
                                                         │
@@ -31,7 +32,8 @@ correr.
 
 | Archivo | Qué es |
 |---|---|
-| `2026-08-*.json` | Los puntos, curados a mano, con la fuente de cada dato |
+| `2026-08-medellin.json`, `2026-08-bogota.json` | Los puntos curados a mano, con la fuente de cada dato |
+| `2026-08-*-acopio-colombia.json` | Generados con `npm run acopio-colombia` desde otro directorio ciudadano. **No editar a mano**: se regeneran (ver D18) |
 | `salida/pilotaje.csv` | Lo que se carga en `/admin/importar` |
 | `cache-geocodificacion.json` | Respuestas de Nominatim, para no volver a pedirlas |
 

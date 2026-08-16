@@ -1,0 +1,774 @@
+{
+  "_lea_esto_primero": [
+    "Extraído de \"Centros de Acopio Colombia\" (emergency-rosy.vercel.app), otro",
+    "proyecto ciudadano independiente que publica el mismo tipo de directorio.",
+    "",
+    "Se leyó únicamente la portada, que su robots.txt permite; su /api está",
+    "prohibida y no se tocó. La atribución de cada punto apunta a la fuente",
+    "ORIGINAL que ellos citan, no a su sitio, porque es de donde salió el dato.",
+    "",
+    "Su estado de verificación NO nos sirve de aval: acá nada se publica sin",
+    "que un moderador llame (D13). Lo que sí aporta es que muchos traen",
+    "teléfono y coordenada exacta, que es justo lo que nos faltaba.",
+    "",
+    "Se regenera con `npm run acopio-colombia`."
+  ],
+  "municipio_codigo": "05001",
+  "municipio": "Medellín",
+  "recolectado_en": "2026-08-16",
+  "fuente_principal": {
+    "nombre": "Centros de Acopio Colombia",
+    "url": "https://emergency-rosy.vercel.app/",
+    "nota": "Proyecto ciudadano independiente. Cada punto conserva además la fuente original que ellos citan."
+  },
+  "recibe": [],
+  "no_recibe": [],
+  "puntos": [
+    {
+      "nombre": "ACSC Medellín — centro de acopio de insumos médicos",
+      "tipo": "ong",
+      "direccion": "Carrera 43A #1 Sur-100, Edificio Torre Sudameris, oficina 1004",
+      "lat": 6.203025,
+      "lng": -75.571614,
+      "telefono": "6046052298",
+      "horario": "Consultar por teléfono antes de asistir",
+      "urgente": [
+        "botiquin"
+      ],
+      "recibe": [
+        "botiquin",
+        "guantes",
+        "tapabocas",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "medicamentos_sellados"
+      ],
+      "fuente_nombre": "Asociación Colombiana de Sociedades Científicas (ACSC) — comunicado a la opinión pública (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://sociedadescientificas.com/solidaridad-con-victimas-del-terremoto-agosto-10/",
+      "nota": "Lo opera Asociación Colombiana de Sociedades Científicas (ACSC). · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Líquidos endovenosos; Tubos endotraqueales; Máscaras laríngeas; Yelcos; Equipos de succión; Agujas; Productos de higiene; Plantas generadoras de energía; Insumos abiertos o usados."
+    },
+    {
+      "nombre": "Biblioteca Pública El Poblado",
+      "tipo": "alcaldia",
+      "direccion": "Biblioteca Pública El Poblado, Medellín",
+      "lat": 6.2103777,
+      "lng": -75.5709171,
+      "horario": "9:00 a. m. – 6:00 p. m., de lunes a sábado",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Red de Bibliotecas Públicas de Medellín / Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Centro de acopio Central Mayorista de Antioquia",
+      "tipo": "empresa",
+      "direccion": "Central Mayorista de Antioquia",
+      "lat": 6.186815,
+      "lng": -75.591423,
+      "telefono": "+573206915374",
+      "horario": "8:00 a. m. – 5:00 p. m.",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "no_perecederos",
+        "comida_preparada",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "guantes_trabajo",
+        "tapabocas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Tigresas Moviéndose con Corazón — «Red Nacional de Puntos de Solidaridad» (historia destacada «📍Puntos» de la cuenta oficial de la campaña) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tigresasmoviendoseconcorazon",
+      "nota": "Lo opera Tigresas de la Patria — «Colombia un solo corazón». · Acopio Colombia lo dio por verificado el 2026-08-15 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Cascos de seguridad para rescate; Gafas de protección; Elementos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Pan y pedazo",
+      "tipo": "particular",
+      "direccion": "Calle 41A # 70-44",
+      "lat": 6.247549,
+      "lng": -75.589368,
+      "telefono": "3154208460",
+      "horario": "8am - 10pm hasta el domingo 16",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "ropa_usada_buen_estado",
+        "botiquin",
+        "medicamentos_sellados",
+        "colchonetas",
+        "cobijas",
+        "alimento_perro",
+        "formula_infantil"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/p/Db7AcInDr1o/?igsh=bDd4bGhneWo4dGJv",
+      "nota": "Acopio Colombia lo dio por verificado el 2026-08-13 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: Gerencia@panypedazo.com · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene; Equipos de rescate."
+    },
+    {
+      "nombre": "Parque Biblioteca Belén",
+      "tipo": "alcaldia",
+      "direccion": "Parque Biblioteca Belén, Medellín",
+      "lat": 6.224016,
+      "lng": -75.598125,
+      "horario": "9:00 a. m. – 6:00 p. m., de lunes a sábado",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Red de Bibliotecas Públicas de Medellín / Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Parque Biblioteca Gabriel García Márquez",
+      "tipo": "alcaldia",
+      "direccion": "Parque Biblioteca Gabriel García Márquez, Medellín",
+      "lat": 6.304329,
+      "lng": -75.577759,
+      "horario": "9:00 a. m. – 6:00 p. m., de lunes a sábado",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Red de Bibliotecas Públicas de Medellín / Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Parque Biblioteca León de Greiff",
+      "tipo": "alcaldia",
+      "direccion": "Parque Biblioteca León de Greiff, Medellín",
+      "lat": 6.251453,
+      "lng": -75.55387,
+      "horario": "9:00 a. m. – 6:00 p. m., de lunes a sábado",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Red de Bibliotecas Públicas de Medellín / Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Parque Biblioteca San Javier",
+      "tipo": "alcaldia",
+      "direccion": "Parque Biblioteca San Javier, Medellín",
+      "lat": 6.254793,
+      "lng": -75.613572,
+      "horario": "9:00 a. m. – 6:00 p. m., de lunes a sábado",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Red de Bibliotecas Públicas de Medellín / Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Punto de Acopio La 80",
+      "tipo": "particular",
+      "direccion": "Carrera 80 #49A-39, frente a Los Verdes de la 80",
+      "lat": 6.244548,
+      "lng": -75.600078,
+      "telefono": "+573226531804",
+      "horario": "8:00 a. m. – 8:00 p. m.",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "no_perecederos",
+        "comida_preparada",
+        "panales_bebe",
+        "formula_infantil",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "velas_linternas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Tigresas Moviéndose con Corazón — «Red Nacional de Puntos de Solidaridad» (historia destacada «📍Puntos» de la cuenta oficial de la campaña) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tigresasmoviendoseconcorazon",
+      "nota": "Lo opera Tigresas de la Patria — «Colombia un solo corazón». · Acopio Colombia lo dio por verificado el 2026-08-15 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos para mascotas; Artículos de aseo; Pañitos húmedos; Baterías; Botiquines; Productos vencidos."
+    },
+    {
+      "nombre": "Ragazzi Poblado",
+      "tipo": "particular",
+      "direccion": "Carrera 43b 10 38",
+      "lat": 6.211149,
+      "lng": -75.570928,
+      "telefono": "322559814",
+      "horario": "8am a 8pm",
+      "urgente": [],
+      "recibe": [
+        "botiquin",
+        "medicamentos_sellados",
+        "colchonetas",
+        "cobijas",
+        "formula_infantil",
+        "alimento_perro"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://ragazzitradicion.com",
+      "nota": "Lo opera Ragazzi. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: rgzfood.admon@gmail.com · WhatsApp: 322559814 · No cabe en nuestras categorías, preguntarlo al llamar: Aseo e higiene; Alimentos; Equipos de rescate."
+    },
+    {
+      "nombre": "Universidad EAFIT — placa cubierta",
+      "tipo": "alcaldia",
+      "direccion": "Carrera 49 #7 Sur-50, bloque de la placa cubierta",
+      "lat": 6.200202,
+      "lng": -75.578485,
+      "horario": "Lunes a viernes, 7:00 a. m. – 6:00 p. m.",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Universidad EAFIT, en alianza con la Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Fundación Banco Arquidiocesano de Alimentos (FUBAM)",
+      "tipo": "alcaldia",
+      "direccion": "Carrera 52 #30A-97, barrio Guayabal",
+      "lat": 6.227401,
+      "lng": -75.577795,
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "tejas",
+        "enlatados",
+        "panela_azucar",
+        "jabon",
+        "toallas_higienicas",
+        "panales_bebe",
+        "colchonetas",
+        "cobijas",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "medicamentos_sellados",
+        "ropa_usada_buen_estado",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera FUBAM, en alianza con la Alcaldía de Medellín y Corporación Presentes. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Garbanzos; Arvejas; Harina de maíz y trigo; Chocolate; Frutos secos; Avena; Leche en polvo; Leche UHT; Toallitas húmedas; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Fundación Saciar",
+      "tipo": "alcaldia",
+      "direccion": "Carrera 50 #25-261, barrio Belén",
+      "lat": 6.228658,
+      "lng": -75.57672,
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "tejas",
+        "enlatados",
+        "panela_azucar",
+        "jabon",
+        "papel_higienico",
+        "toallas_higienicas",
+        "panales_bebe",
+        "colchonetas",
+        "cobijas",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "medicamentos_sellados",
+        "ropa_usada_buen_estado",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Fundación Saciar, en alianza con la Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Hall principal de la Alcaldía de Medellín",
+      "tipo": "alcaldia",
+      "direccion": "Centro Administrativo Municipal La Alpujarra, Calle 44 #52-165",
+      "lat": 6.244698,
+      "lng": -75.573776,
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada",
+        "colchonetas"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Somos Belisario — oficina",
+      "tipo": "particular",
+      "direccion": "Calle 7 #35-44 (oficina)",
+      "lat": 6.206436,
+      "lng": -75.565875,
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada",
+        "ropa_nueva"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado"
+      ],
+      "fuente_nombre": "Somos Belisario Grupo Empresarial (cuenta oficial de la empresa) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/somosbelisario/p/Db6ksTmO0Us/",
+      "nota": "Lo opera Somos Belisario Grupo Empresarial. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Medicinas."
+    },
+    {
+      "nombre": "Terminal del Norte — local 9840",
+      "tipo": "alcaldia",
+      "direccion": "Terminal de Transporte del Norte, Carrera 64C #78-580, local 9840",
+      "lat": 6.278643,
+      "lng": -75.571091,
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada",
+        "colchonetas"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía de Medellín — Secretaría de Inclusión Social y Familia (boletín oficial) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
+      "nota": "Lo opera Terminales Medellín, en alianza con la Alcaldía de Medellín. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Terminal del Sur — Local 015",
+      "tipo": "empresa",
+      "direccion": "Local 015, Centro Comercial Terminal del Sur",
+      "lat": 6.21652,
+      "lng": -75.587203,
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "no_perecederos",
+        "comida_preparada",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "guantes_trabajo",
+        "tapabocas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Tigresas Moviéndose con Corazón — «Red Nacional de Puntos de Solidaridad» (historia destacada «📍Puntos» de la cuenta oficial de la campaña) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tigresasmoviendoseconcorazon",
+      "nota": "Lo opera Tigresas de la Patria — «Colombia un solo corazón». · Acopio Colombia lo dio por verificado el 2026-08-15 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Cascos de seguridad para rescate; Gafas de protección; Elementos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Bodega Guayaquiliando",
+      "tipo": "particular",
+      "direccion": "Carrera 81 #33AA-08, al lado del restaurante 7 Mesas, cerca de la iglesia de Santa Gema",
+      "lat": 6.238727,
+      "lng": -75.602998,
+      "horario": "10:00 a. m. – 8:00 p. m.",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada",
+        "formula_infantil",
+        "botiquin"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos",
+        "formula_infantil",
+        "botiquin"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Guayaquiliando — publicación propia de la cuenta que opera el punto (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/p/Db8k6QDxYux/",
+      "nota": "Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Cajas de cartón; Artículos de aseo personal; Productos vencidos."
+    },
+    {
+      "nombre": "Fundación El Arte de los Sueños",
+      "tipo": "fundacion",
+      "direccion": "Barrio Perpetuo Socorro, Carrera 48 #35-47",
+      "lat": 6.236355,
+      "lng": -75.572418,
+      "horario": "Lunes, miércoles y viernes 8:30 a. m. – 12:00 m.; martes y jueves 8:30 a. m. – 4:00 p. m.",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Pieza gráfica ciudadana difundida en redes (sin entidad identificable) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://emergency-rosy.vercel.app/",
+      "nota": "Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Librería Rodante Delfos",
+      "tipo": "particular",
+      "direccion": "Carrera 79 #52A-34, barrio Los Colores",
+      "lat": 6.270114,
+      "lng": -75.594103,
+      "horario": "Jueves, viernes y sábados",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Librería Rodante Delfos — publicación propia (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/libreriadelfos1/",
+      "nota": "Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Remanence",
+      "tipo": "particular",
+      "direccion": "Calle 10B #35-27",
+      "lat": 6.210096,
+      "lng": -75.565046,
+      "horario": "Lunes a domingo, 11:00 a. m. – 5:30 p. m.",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Pieza gráfica ciudadana difundida en redes (sin entidad identificable) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://emergency-rosy.vercel.app/",
+      "nota": "Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Batallón Girardot",
+      "tipo": "gobernacion",
+      "direccion": "Calle 66E #39-84",
+      "lat": 6.259893,
+      "lng": -75.545604,
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada",
+        "colchonetas"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Pieza gráfica ciudadana difundida en redes (sin entidad identificable) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://emergency-rosy.vercel.app/",
+      "nota": "Lo opera Ejército Nacional de Colombia. · Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "La Razón",
+      "tipo": "particular",
+      "direccion": "Calle 44 #42-70",
+      "lat": 6.245782,
+      "lng": -75.573249,
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Pieza gráfica ciudadana difundida en redes (sin entidad identificable) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://emergency-rosy.vercel.app/",
+      "nota": "Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Simón Coffee",
+      "tipo": "particular",
+      "direccion": "Carrera 37 #10-54",
+      "lat": 6.209586,
+      "lng": -75.566377,
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "panales_bebe",
+        "no_perecederos"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "medicamentos_sellados",
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Pieza gráfica ciudadana difundida en redes (sin entidad identificable) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://emergency-rosy.vercel.app/",
+      "nota": "Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · No cabe en nuestras categorías, preguntarlo al llamar: Leche; Harina; Artículos de aseo; Productos vencidos."
+    }
+  ]
+}

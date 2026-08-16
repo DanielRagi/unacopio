@@ -419,3 +419,42 @@ armar el enlace. La normalización corre en la aplicación y también dentro de
 se llama, se le escribe, y eso es más lento y deja menos información que una
 conversación. Si terminan siendo muchos, la regla de "N puntos son N/2 llamadas
 al día" deja de servir para estimar el trabajo.
+
+## D18. Se puede tomar de otro directorio, con reglas
+
+Apareció **Centros de Acopio Colombia** (emergency-rosy.vercel.app), otro
+proyecto ciudadano independiente que publica el mismo tipo de directorio y que
+tiene bastante más datos que nosotros: 145 puntos en 27 departamentos, con
+dirección, teléfono, coordenada exacta y notas de verificación serias.
+
+Lo primero que hay que decir es incómodo y es cierto: **nuestra propia página
+`/datos` argumenta que el problema de estas emergencias son cinco listas que se
+contradicen, y ahora somos una de ellas.** Lo correcto es escribirles y unir
+esfuerzos. Mientras tanto, tomar sus datos públicos es legítimo —los hechos
+sobre dónde queda un punto no son de nadie— pero con reglas, porque la
+diferencia entre reutilizar y aprovecharse está en los detalles:
+
+- **Se respeta su `robots.txt`.** Permite `/` y prohíbe `/api`. Los datos salen
+  del HTML prerenderizado de la portada, que es lo que autorizan. Su API sería
+  más cómoda y por eso mismo no se toca: un archivo `robots.txt` es una
+  preferencia explícita y legible por máquinas, y saltárselo porque conviene es
+  justo lo que uno no quiere que le hagan.
+- **Una sola petición por corrida**, con User-Agent identificado y con a dónde
+  escribirnos.
+- **La atribución apunta a la fuente original, no al agregador.** Si ellos
+  citan el comunicado de la Alcaldía, nuestro `fuente_url` es ese comunicado, y
+  la nota deja dicho que el dato pasó por Acopio Colombia. Poner solo el
+  agregador borraría de dónde salió de verdad.
+- **Su verificación no es la nuestra.** Ellos marcan puntos como `verified`
+  contra el canal propio de la entidad, y lo hacen bien. Igual entra todo como
+  `pendiente`: D13 no tiene excepciones, y si empezáramos a hacerlas la primera
+  sería siempre la más razonable.
+
+Lo que su base aporta y a nosotros nos faltaba es concreto: **coordenada exacta
+y teléfono**. De los 50 puntos suyos en Medellín y Bogotá, 19 traen número — más
+que todo lo que habíamos recolectado a mano.
+
+Y lo que nosotros tenemos y ellos no se ve en su sitio: API abierta en JSON y
+CSV con licencia, el "qué NO llevar" por punto, horarios estructurados con
+"abierto ahora", páginas por municipio y la ronda de llamadas. Hay con qué
+llegar a una conversación de iguales.

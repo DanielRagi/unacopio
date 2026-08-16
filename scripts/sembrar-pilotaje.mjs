@@ -96,10 +96,56 @@ const revisadas = revisarFilas(filas, {
 const malas = revisadas.filter((f) => !f.punto);
 for (const f of malas) console.error(`  ✗ línea ${f.numero} ${f.nombre}: ${f.errores.join('. ')}`);
 
-// Lo que ya está cargado, para no duplicar al volver a correr esto.
+/*
+ * Lo que ya está cargado, para no duplicar al volver a correr esto.
+ *
+ * Comparar el nombre exacto no basta: distintas fuentes escriben el mismo punto
+ * distinto —"Universidad EAFIT (placa cubierta)" y "Universidad EAFIT — placa
+ * cubierta"—. Pero comparar por cercanía tampoco sirve acá, y cuesta explicarlo:
+ * muchos de nuestros puntos viejos tienen el pin de respaldo en el centro de la
+ * ciudad, así que "Cruz Roja SAMU Sur" y "Cruz Roja SAMU Norte" aparecían a cero
+ * metros uno del otro y el script los fundía en uno.
+ *
+ * La señal buena es la **dirección**: dos fichas con "Carrera 24 #73-38" son el
+ * mismo lugar aunque se llamen distinto, y dos con nomenclatura distinta no lo
+ * son aunque el pin diga que sí.
+ *
+ * Y ante la duda, entra. Un duplicado que entra lo agarra el detector de los
+ * 200 metros en la cola de moderación, que para eso está; uno que el script
+ * descarta por su cuenta no lo ve nadie nunca.
+ */
+const sinTildes = (s) => s.normalize('NFD').replace(/\p{M}/gu, '').toLowerCase();
+
+/** "Carrera 52 # 30A-97, barrio Guayabal" → "cr5230a97" */
+function claveDireccion(direccion) {
+  const t = sinTildes(direccion ?? '')
+    .replace(/avenida/g, 'av')
+    .replace(/(carrera|cra|cr|kr|kra)/g, 'cr')
+    .replace(/(calle|cll|cl)/g, 'cl')
+    .replace(/(diagonal|dg|diag)/g, 'dg')
+    .replace(/(transversal|tv|trans)/g, 'tv');
+  const m = t.match(/(av\s*)?(cr|cl|dg|tv)\s*\d+[a-z]?(\s*bis)?(\s*(sur|norte|este|oeste))?\s*#?\s*\d+[a-z]?\s*-?\s*\d+/);
+  return m ? m[0].replace(/[^a-z0-9]/g, '') : null;
+}
+
+const claveNombre = (nombre) =>
+  sinTildes(nombre).replace(/[^a-z0-9]/g, '');
+
 const { data: existentes } = await db
-  .from('puntos').select('nombre, municipio_codigo').eq('origen', 'importacion');
-const yaEsta = new Set((existentes ?? []).map((p) => `${p.municipio_codigo}|${p.nombre}`));
+  .from('puntos').select('nombre, direccion, municipio_codigo').eq('origen', 'importacion');
+const cargados = (existentes ?? []).map((p) => ({
+  ...p, cNombre: claveNombre(p.nombre), cDireccion: claveDireccion(p.direccion),
+}));
+
+function yaCargado(p) {
+  const cNombre = claveNombre(p.nombre);
+  const cDireccion = claveDireccion(p.direccion);
+  return cargados.find(
+    (otro) =>
+      otro.municipio_codigo === p.municipio_codigo &&
+      (otro.cNombre === cNombre || (cDireccion !== null && otro.cDireccion === cDireccion)),
+  );
+}
 
 let creados = 0;
 let repetidos = 0;
@@ -108,14 +154,19 @@ for (const fila of revisadas) {
   const p = fila.punto;
   if (!p) continue;
 
-  if (yaEsta.has(`${p.municipio_codigo}|${p.nombre}`)) {
+  const gemelo = yaCargado(p);
+  if (gemelo) {
     repetidos++;
-    console.log(`  = ${p.nombre} (ya estaba)`);
+    console.log(
+      `  = ${p.nombre}` + (gemelo.nombre === p.nombre ? ' (ya estaba)' : `  ≈ misma dirección que "${gemelo.nombre}"`),
+    );
     continue;
   }
 
   if (soloVer) {
     console.log(`  + ${p.nombre} — ${p.municipio_codigo} — ${p.lat}, ${p.lng}`);
+    cargados.push({ nombre: p.nombre, municipio_codigo: p.municipio_codigo,
+                    cNombre: claveNombre(p.nombre), cDireccion: claveDireccion(p.direccion) });
     creados++;
     continue;
   }
@@ -164,6 +215,8 @@ for (const fila of revisadas) {
     if (errorCat) console.error(`  ! ${p.nombre}: categorías — ${errorCat.message}`);
   }
 
+  cargados.push({ nombre: p.nombre, municipio_codigo: p.municipio_codigo,
+                  cNombre: claveNombre(p.nombre), cDireccion: claveDireccion(p.direccion) });
   creados++;
   console.log(`  + ${p.nombre}`);
 }
