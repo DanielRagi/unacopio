@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="UnAcopio">
+  <!--
+    Favicon. Next lo sirve como /icon.svg y le gana al favicon.ico.
+
+    A 16 píxeles no se ve una caja de donaciones: se ve una mancha. Entonces el
+    ícono chico es solo el pin con la bandera, que es la forma que sí sobrevive
+    al tamaño de una pestaña, y de paso es lo que hace que se reconozca de lejos
+    entre veinte pestañas abiertas.
+  -->
+  <rect width="48" height="48" rx="10" fill="#065f46"/>
+  <defs>
+    <clipPath id="pin">
+      <path d="M24 6c-6 0-11 4.8-11 10.8 0 7.4 11 19.2 11 19.2s11-11.8 11-19.2C35 10.8 30 6 24 6Z"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#pin)">
+    <rect x="12" y="5" width="24" height="16" fill="#FCD116"/>
+    <rect x="12" y="21" width="24" height="8" fill="#003893"/>
+    <rect x="12" y="29" width="24" height="9" fill="#CE1126"/>
+  </g>
+  <path d="M24 6c-6 0-11 4.8-11 10.8 0 7.4 11 19.2 11 19.2s11-11.8 11-19.2C35 10.8 30 6 24 6Z"
+        fill="none" stroke="#ffffff" stroke-width="3" stroke-linejoin="round"/>
+</svg>

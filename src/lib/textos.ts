@@ -26,6 +26,22 @@ export const SITIO = {
   correo: 'hola@unacopio.co',
 } as const;
 
+/**
+ * La emergencia concreta que originó el sitio.
+ *
+ * Va en un solo lugar porque va a cambiar: cuando pase esta emergencia el sitio
+ * puede servir para la siguiente, y entonces se edita acá y no en ocho
+ * componentes. Y porque nombrar el hecho —la fecha, el sismo— es lo que le dice
+ * a quien llega que esto es de ahora y no una página vieja que quedó colgada.
+ */
+export const EMERGENCIA = {
+  fecha: '10 de agosto',
+  descripcionCorta: 'el terremoto del 10 de agosto',
+  llamado:
+    'Lo que entregues es para los municipios más golpeados por el terremoto ' +
+    'del 10 de agosto.',
+} as const;
+
 export const AVISOS = {
   sinDinero:
     'UnAcopio no recibe dinero ni donaciones. Solo publicamos información de ' +

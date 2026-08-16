@@ -35,14 +35,14 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   manifest: "/manifest.webmanifest",
-  icons: {
-    icon: [{ url: "/icono.svg", type: "image/svg+xml" }],
-    apple: "/icono.svg",
-  },
+  // El favicon lo resuelve `src/app/icon.svg`, que es solo el pin con la
+  // bandera: a 16 píxeles la caja de donaciones se vuelve una mancha. Acá va
+  // únicamente el de Apple, que se ve grande y sí aguanta la marca completa.
+  icons: { apple: "/icono.svg" },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#047857",
+  themeColor: "#065f46",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
