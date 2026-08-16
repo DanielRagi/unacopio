@@ -1,8 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Un blanco con una gota de verde. El blanco puro sobre una pantalla al sol
+     —que es donde se va a leer esto— cansa más y hace que las tarjetas no se
+     despeguen del fondo. */
+  --background: #fbfcfb;
+  --foreground: #14181a;
 }
 
 @theme inline {
@@ -14,8 +17,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0b0f0e;
+    --foreground: #e8ecea;
   }
 }
 

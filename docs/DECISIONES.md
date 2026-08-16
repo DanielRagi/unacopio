@@ -332,3 +332,47 @@ Dicho de otro modo: el correo dejó de ser el bloqueo, pero el bloqueo siguiente
 Las credenciales SMTP viven en el panel de Supabase y **no entran al repo**: la
 aplicación no manda correos, los manda Supabase Auth. Lo único versionado son las
 plantillas, en `supabase/correos/`.
+
+## D16. La portada abre en la ciudad de quien entra, y lo dice
+
+Antes la portada arrancaba mostrando Colombia entera. En una emergencia eso es
+casi lo mismo que no mostrar nada: alguien en Manizales veía una lista donde su
+municipio quedaba de decimoquinto, y encima el mapa abría al zoom del país.
+
+Ahora se elige un municipio por defecto a partir de la geolocalización por IP que
+Vercel deja en las cabeceras (`x-vercel-ip-city`, `x-vercel-ip-latitude`,
+`x-vercel-ip-longitude`). No cuesta nada, no pide permiso, no necesita
+JavaScript y llega a tiempo para renderizar en el servidor.
+
+Las reglas que lo hacen honesto:
+
+- **Se dice siempre.** "Te estamos mostrando Medellín, por tu conexión · Ver todo
+  el país". Un filtro invisible que la persona no puso es una trampa: si el
+  municipio está vacío, va a creer que no hay puntos en ninguna parte.
+- **Un filtro explícito manda.** Si la URL trae `dep`, `mun`, `cat` o
+  coordenadas, no se adivina nada. Nada peor que compartir "los puntos de
+  Quibdó" por WhatsApp y que al otro le abra en Bogotá.
+- **`?pais=1` desactiva la detección.** Tiene que ser un parámetro explícito y no
+  la simple ausencia de filtros: si "ver todo el país" llevara a `/`, la
+  detección se volvería a disparar y el botón no haría nada. Por lo mismo, el
+  formulario de filtros lo manda siempre — usarlo es elegir a mano.
+- **Solo Colombia.** A alguien que entra desde afuera no se le adivina ciudad:
+  casi siempre está buscando para un familiar y quiere elegir el municipio.
+
+**Cómo se resuelve la coordenada a un municipio, que es donde estaba la trampa.**
+La primera versión buscaba el centroide más cercano, y con eso el centro de
+Bogotá caía en **Cota**. No era redondeo: el centroide DANE de Bogotá D.C. está
+en el páramo de Sumapaz, a unos 40 km del centro urbano, porque el distrito
+incluye toda esa zona rural. Cualquier municipio grande tiene el mismo problema,
+así que arreglarlo a mano para Bogotá habría dejado la trampa puesta.
+
+`municipio_de_ubicacion` usa el **nombre** de la ciudad como señal principal y la
+distancia solo para desempatar. Compara contra el nombre y contra el slug: contra
+el nombre para que los homónimos —Argelia, La Unión, El Peñón— entren todos y
+gane el más cercano; contra el slug porque hay nombres oficiales que nadie
+escribe así, y "Bogotá D.C." es justamente el caso. Si el nombre no cuadra con
+nada, ahí sí cae al centroide más cercano.
+
+Para la distancia de verdad sigue estando el botón de GPS, que sí pide permiso.
+La IP da ciudad —y a veces la del proveedor, no la de la persona—, así que se usa
+para elegir un punto de partida, nunca para calcular "a 1,2 km".

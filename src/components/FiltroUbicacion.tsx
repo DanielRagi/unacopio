@@ -45,6 +45,14 @@ export function FiltroUbicacion({
         </>
       )}
 
+      {/*
+        Usar este formulario es elegir a mano, así que a partir de acá no se
+        vuelve a adivinar la ciudad por la IP. Sin esto, elegir "Todo el país"
+        mandaba a `/` sin filtros y la detección lo devolvía a su municipio: el
+        selector parecía roto.
+      */}
+      <input type="hidden" name="pais" value="1" />
+
       <div className="flex flex-col gap-3 sm:flex-row">
         <label className="flex flex-1 flex-col gap-1.5">
           <span className="text-sm font-medium">Departamento</span>
@@ -93,7 +101,7 @@ export function FiltroUbicacion({
           Buscar
         </button>
         {hayFiltro && (
-          <Link href="/" className="text-sm underline underline-offset-4">
+          <Link href="/?pais=1" className="text-sm underline underline-offset-4">
             Quitar filtros
           </Link>
         )}

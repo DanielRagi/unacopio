@@ -10,10 +10,11 @@ import type { NivelCategoria, TipoOrganizacion, GrupoCategoria } from './tipos';
 
 export const SITIO = {
   nombre: 'UnAcopio',
-  lema: 'Puntos de acopio para la emergencia',
+  lema: 'Dónde donar en Colombia',
   descripcion:
-    'Encuentra el punto de acopio más cercano o registra el tuyo. ' +
-    'Información abierta sobre dónde llevar donaciones en Colombia.',
+    'Encuentra el punto de acopio más cercano en Colombia y mira qué necesitan ' +
+    'antes de salir de tu casa. Directorio abierto de puntos de acopio para la ' +
+    'emergencia, verificado por teléfono.',
   dominio: 'unacopio.co',
   /**
    * El único correo del proyecto. Lo lee una persona: no es un `no-reply`.

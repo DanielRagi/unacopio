@@ -190,6 +190,32 @@ select (select count(*) from municipios where slug is null)        as sin_slug,
        (select count(*) from municipios where slug like '%-d-c%')  as slugs_feos,
        (select count(*) from municipios where slug like '%-antioquia') as desempatados_antioquia;
 
+\echo '--- municipio_de_ubicacion: el nombre manda sobre la distancia'
+select 'Bogota' as ciudad_ip, nombre, por from municipio_de_ubicacion('Bogota', 4.6486, -74.0819)
+union all
+select 'Medellin', nombre, por from municipio_de_ubicacion('Medellin', 6.2518, -75.5636)
+union all
+select 'Manizales', nombre, por from municipio_de_ubicacion('Manizales', 5.0689, -75.5174)
+union all
+-- Con tilde y con mayúsculas, como lo manda cualquier proveedor.
+select 'MEDELLÍN', nombre, por from municipio_de_ubicacion('MEDELLÍN', 6.2518, -75.5636);
+
+\echo '--- sin nombre util, cae a la cercania'
+select nombre, por from municipio_de_ubicacion(null, 5.0689, -75.5174)
+union all
+select nombre, por from municipio_de_ubicacion('Ciudad Que No Existe', 5.0689, -75.5174);
+
+\echo '--- homonimos: Argelia existe en Antioquia, Cauca y Valle; desempata la coordenada'
+select nombre, departamento, por from municipio_de_ubicacion('Argelia', 2.25, -77.24);
+
+\echo '--- fuera de Colombia y sin nombre: no hay respuesta que dar (Madrid)'
+select count(*) as resultados_madrid from municipio_de_ubicacion(null, 40.4168, -3.7038);
+
+\echo '--- y anon puede llamarla: la portada la usa sin sesion'
+set role anon;
+select count(*) as anon_puede from municipio_de_ubicacion('Medellin', 6.2518, -75.5636);
+reset role;
+
 \echo '--- necesidades agregadas en Manizales (el coliseo esta lleno, no cuenta)'
 select slug, urgente, puntos from necesidades(p_municipio => '17001');
 

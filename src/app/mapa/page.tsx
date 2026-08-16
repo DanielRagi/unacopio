@@ -3,8 +3,9 @@ import Link from 'next/link';
 import { Encabezado } from '@/components/Encabezado';
 import type { PuntoMapa } from '@/components/MapaPuntos';
 import { VistaMapa } from '@/components/VistaMapa';
-import { buscarPuntos, centroideMunicipio } from '@/lib/datos';
+import { buscarPuntos, centroideMunicipio, municipioDeUbicacion } from '@/lib/datos';
 import { aQueryString, leerFiltros } from '@/lib/filtros';
+import { ubicacionPorIp } from '@/lib/ubicacion';
 
 export const metadata: Metadata = {
   title: 'Mapa de puntos de acopio',
@@ -12,7 +13,19 @@ export const metadata: Metadata = {
 };
 
 export default async function PaginaMapa({ searchParams }: PageProps<'/mapa'>) {
-  const filtros = leerFiltros(await searchParams);
+  const params = await searchParams;
+  const leidos = leerFiltros(params);
+
+  // Igual que en la portada: si nadie pidió nada, el mapa abre en la ciudad de
+  // quien entra. Un mapa de Colombia entera al 6 de zoom no le sirve a nadie.
+  const sinFiltros =
+    params.pais === undefined && !leidos.dep && !leidos.mun && leidos.lat === undefined;
+  const aproximada = sinFiltros ? await ubicacionPorIp() : null;
+  const detectada = aproximada ? await municipioDeUbicacion(aproximada.ciudad, aproximada.lat, aproximada.lng) : null;
+
+  const filtros = detectada
+    ? { ...leidos, dep: detectada.departamento_codigo, mun: detectada.codigo }
+    : leidos;
 
   const [resultados, centroide] = await Promise.all([
     buscarPuntos({
@@ -58,6 +71,14 @@ export default async function PaginaMapa({ searchParams }: PageProps<'/mapa'>) {
             {puntos.length === 0
               ? 'No hay puntos publicados con estos filtros.'
               : `${puntos.length} ${puntos.length === 1 ? 'punto' : 'puntos'} en el mapa`}
+            {detectada && (
+              <>
+                {' '}en <strong>{detectada.nombre}</strong> ·{' '}
+                <Link href="/mapa?pais=1" className="underline underline-offset-4">
+                  todo el país
+                </Link>
+              </>
+            )}
           </p>
           <Link
             href={`/${aQueryString(filtros)}`}
@@ -79,8 +100,8 @@ export default async function PaginaMapa({ searchParams }: PageProps<'/mapa'>) {
 
         <div className="mx-auto w-full max-w-3xl px-5 py-4">
           <p className="text-sm text-black/60 dark:text-white/60">
-            Toca un marcador para ver qué reciben y cómo llegar. Los puntos en
-            verde son de entidades oficiales.
+            Toca un marcador para ver qué reciben y abrir la ruta en Google Maps
+            o Waze. Los puntos en verde son de entidades oficiales.
           </p>
         </div>
       </main>
