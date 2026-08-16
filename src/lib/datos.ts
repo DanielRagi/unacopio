@@ -262,13 +262,47 @@ const CAMPOS_MODERACION = `
   punto_categoria(nivel, categorias(nombre))
 `;
 
+/**
+ * Por dónde está filtrando quien modera.
+ *
+ * Con noventa puntos en dos ciudades, revisar sin filtrar es revolver. Y sirve
+ * para repartir el trabajo: "yo llamo los de Medellín".
+ */
+export interface FiltroModeracion {
+  dep?: string;
+  mun?: string;
+}
+
+/**
+ * El filtro de ubicación como objeto para `.match()`.
+ *
+ * Se devuelve un objeto y no se encadenan `.eq()` dentro de una función
+ * genérica: los tipos de los constructores de consultas de Supabase son tan
+ * anidados que un ayudante genérico hace que TypeScript se rinda con
+ * «type instantiation is excessively deep». Con `.match({})` —que cuando llega
+ * vacío no filtra nada— cada consulta se arma en su sitio y los tipos fluyen.
+ *
+ * El prefijo sirve para filtrar por columnas de una tabla embebida, como los
+ * reportes por el municipio de su punto.
+ */
+function ubicacion(filtro: FiltroModeracion, prefijo = ''): Record<string, string> {
+  return {
+    ...(filtro.dep ? { [`${prefijo}departamento_codigo`]: filtro.dep } : {}),
+    ...(filtro.mun ? { [`${prefijo}municipio_codigo`]: filtro.mun } : {}),
+  };
+}
+
 /** La cola de moderación. Los pendientes van del más viejo al más nuevo. */
-export async function listarPuntosModeracion(estado: EstadoPunto): Promise<PuntoModeracion[]> {
+export async function listarPuntosModeracion(
+  estado: EstadoPunto,
+  filtro: FiltroModeracion = {},
+): Promise<PuntoModeracion[]> {
   const supabase = await clienteServidor();
   const { data, error } = await supabase
     .from('puntos')
     .select(CAMPOS_MODERACION)
     .eq('estado', estado)
+    .match(ubicacion(filtro))
     .order('creado_en', { ascending: estado === 'pendiente' })
     .limit(200);
 
@@ -276,7 +310,35 @@ export async function listarPuntosModeracion(estado: EstadoPunto): Promise<Punto
   return (data ?? []) as unknown as PuntoModeracion[];
 }
 
-export async function contarPorEstado(): Promise<Record<string, number>> {
+export interface UbicacionModeracion {
+  departamento_codigo: string;
+  departamento: string;
+  municipio_codigo: string;
+  municipio: string;
+  pendientes: number;
+  total: number;
+}
+
+/**
+ * Los municipios que de verdad tienen puntos, con cuántos hay por revisar.
+ *
+ * Solo estos van en el filtro: ofrecer los 1.122 municipios sería peor que no
+ * filtrar. Ordenados por lo que falta revisar, que es donde está el trabajo.
+ */
+export async function ubicacionesModeracion(): Promise<UbicacionModeracion[]> {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase.rpc('ubicaciones_moderacion');
+
+  if (error) {
+    console.error(`No se pudieron cargar las ubicaciones: ${error.message}`);
+    return [];
+  }
+  return (data ?? []) as UbicacionModeracion[];
+}
+
+export async function contarPorEstado(
+  filtro: FiltroModeracion = {},
+): Promise<Record<string, number>> {
   const supabase = await clienteServidor();
   const estados: EstadoPunto[] = ['pendiente', 'publicado', 'lleno', 'cerrado', 'rechazado'];
 
@@ -285,7 +347,8 @@ export async function contarPorEstado(): Promise<Record<string, number>> {
       const { count } = await supabase
         .from('puntos')
         .select('id', { count: 'exact', head: true })
-        .eq('estado', estado);
+        .eq('estado', estado)
+        .match(ubicacion(filtro));
       return [estado, count ?? 0] as const;
     }),
   );
@@ -325,7 +388,9 @@ export interface PuntoPorLlamar {
  * fuera un rato: con varios voluntarios llamando a la vez, lo normal sería que
  * dos marquen el mismo número con cinco minutos de diferencia.
  */
-export async function listarPorLlamar(): Promise<PuntoPorLlamar[]> {
+export async function listarPorLlamar(
+  filtro: FiltroModeracion = {},
+): Promise<PuntoPorLlamar[]> {
   const supabase = await clienteServidor();
 
   const limite = new Date(Date.now() - HORAS_FRESCURA * 3_600_000).toISOString();
@@ -339,6 +404,7 @@ export async function listarPorLlamar(): Promise<PuntoPorLlamar[]> {
       municipios(nombre), departamentos(nombre)
     `)
     .in('estado', ['publicado', 'lleno'])
+    .match(ubicacion(filtro))
     .or(`ultima_verificacion.is.null,ultima_verificacion.lt.${limite}`)
     .or(`ultimo_intento_llamada.is.null,ultimo_intento_llamada.lt.${reserva}`)
     .order('ultima_verificacion', { ascending: true, nullsFirst: true })
@@ -348,8 +414,8 @@ export async function listarPorLlamar(): Promise<PuntoPorLlamar[]> {
   return (data ?? []) as unknown as PuntoPorLlamar[];
 }
 
-export async function contarPorLlamar(): Promise<number> {
-  return (await listarPorLlamar()).length;
+export async function contarPorLlamar(filtro: FiltroModeracion = {}): Promise<number> {
+  return (await listarPorLlamar(filtro)).length;
 }
 
 export interface Duplicado {
@@ -391,15 +457,20 @@ export interface Solicitud {
  * —no lo está—, sino porque suele traer el dato que hace falta para arreglar la
  * ficha, mientras que un reporte de tercero casi siempre pide ir a confirmar.
  */
-export async function listarSolicitudes(): Promise<Solicitud[]> {
+export async function listarSolicitudes(
+  filtro: FiltroModeracion = {},
+): Promise<Solicitud[]> {
   const supabase = await clienteServidor();
+  // `!inner` para poder filtrar por columnas del punto: sin él, PostgREST trae
+  // el reporte igual y solo deja el punto en null.
   const { data, error } = await supabase
     .from('reportes')
     .select(`
       id, punto_id, tipo, comentario, contacto, es_responsable, creado_en,
-      puntos(nombre, estado, telefono, responsable_nombre, municipios(nombre))
+      puntos!inner(nombre, estado, telefono, responsable_nombre, municipios(nombre))
     `)
     .eq('resuelto', false)
+    .match(ubicacion(filtro, 'puntos.'))
     .order('es_responsable', { ascending: false })
     .order('creado_en', { ascending: true })
     .limit(200);
@@ -408,12 +479,13 @@ export async function listarSolicitudes(): Promise<Solicitud[]> {
   return (data ?? []) as unknown as Solicitud[];
 }
 
-export async function contarSolicitudes(): Promise<number> {
+export async function contarSolicitudes(filtro: FiltroModeracion = {}): Promise<number> {
   const supabase = await clienteServidor();
   const { count } = await supabase
     .from('reportes')
-    .select('id', { count: 'exact', head: true })
-    .eq('resuelto', false);
+    .select('id, puntos!inner(id)', { count: 'exact', head: true })
+    .eq('resuelto', false)
+    .match(ubicacion(filtro, 'puntos.'));
   return count ?? 0;
 }
 
