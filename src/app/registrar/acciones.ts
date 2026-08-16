@@ -24,9 +24,21 @@ export async function registrarPunto(
     return { estado: 'listo', id: 'descartado' };
   }
 
+  /*
+   * Lo que la persona escribió, para devolvérselo si algo falla.
+   *
+   * Se guarda ANTES de validar y en crudo —tal como llegó— porque el propósito
+   * es repintar el formulario igual a como lo dejó, no como debería haber
+   * quedado. El honeypot no vuelve: no tiene por qué.
+   */
+  const valores: Record<string, string> = {};
+  for (const [campo, valor] of formData.entries()) {
+    if (typeof valor === 'string' && campo !== 'sitio_web') valores[campo] = valor;
+  }
+
   const analisis = esquemaRegistro.safeParse(leerFormulario(formData));
   if (!analisis.success) {
-    return { estado: 'error', errores: z.flattenError(analisis.error).fieldErrors };
+    return { estado: 'error', errores: z.flattenError(analisis.error).fieldErrors, valores };
   }
 
   const datos = analisis.data;
@@ -49,6 +61,7 @@ export async function registrarPunto(
         estado: 'error',
         errores: {},
         mensaje: 'No pudimos ubicar el municipio. Marca el punto en el mapa e intenta de nuevo.',
+        valores,
       };
     }
     lat = municipio.lat;
@@ -87,13 +100,19 @@ export async function registrarPunto(
       estado: 'error',
       errores: {},
       mensaje: `No pudimos guardar el punto: ${error.message}`,
+      valores,
     };
   }
 
   // Desde 0004 la función devuelve el uuid pelado, sin token de edición.
   const id = typeof data === 'string' ? data : null;
   if (!id) {
-    return { estado: 'error', errores: {}, mensaje: 'No pudimos guardar el punto. Intenta de nuevo.' };
+    return {
+      estado: 'error',
+      errores: {},
+      mensaje: 'No pudimos guardar el punto. Intenta de nuevo.',
+      valores,
+    };
   }
 
   return { estado: 'listo', id };
