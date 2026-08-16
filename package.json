@@ -17,7 +17,8 @@
     "pilotaje": "node scripts/pilotaje.mjs",
     "sembrar": "node --env-file=.env.local scripts/sembrar-pilotaje.mjs",
     "acceso": "node --env-file=.env.local scripts/acceso.mjs",
-    "acopio-colombia": "node scripts/importar-acopio-colombia.mjs"
+    "acopio-colombia": "node scripts/importar-acopio-colombia.mjs",
+    "publicar:asistido": "node --env-file=.env.local scripts/publicar-asistido.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",

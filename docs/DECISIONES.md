@@ -493,3 +493,51 @@ También de acá sale que **cualquier estado se puede devolver a `pendiente`**. 
 punto rechazado por error o uno publicado al que le faltó algo tiene que poder
 volver a la cola sin que nadie abra la base a mano. Mientras esté en `pendiente`
 desaparece del sitio, que es exactamente lo que se quiere mientras se revisa.
+
+## D20. Publicar sin llamar, cuando no llamar cuesta más
+
+Hasta acá la regla era simple: nada se publica sin confirmar por teléfono. El
+16 de agosto, seis días después del terremoto, esa regla dejó de sostenerse
+sola. Había 84 puntos en la cola, dos personas para llamarlos y gente saliendo
+de la casa con mercado en el carro sin saber a dónde llevarlo. Una lista vacía
+también desinforma; solo que lo hace en silencio.
+
+Así que se abrió una segunda vía, explícita y acotada: **revisión de escritorio**.
+Se publica el punto que aguanta cuatro preguntas sin llamar a nadie.
+
+1. **¿De quién salió?** Entidad oficial, prensa grande, o la cuenta propia de
+   quien opera el punto. Un volante anónimo circulando en redes no alcanza,
+   aunque se vea convincente — y varios se veían.
+2. **¿El pin está sobre la dirección?** Los descartados no fueron pocos: los que
+   el geocodificador dejó en el centro de la ciudad, los ubicados solo por
+   barrio, y cuatro que estaban a kilómetros sin que ninguna nota lo avisara.
+   Esto importa más de lo que parece, porque "Cómo llegar" navega a las
+   coordenadas, no a la dirección escrita: un pin a 2 km no es un detalle
+   estético, es mandar a alguien al barrio equivocado.
+3. **¿La dirección alcanza para llegar?** Un centro comercial conocido sí. Una
+   nomenclatura que dos fuentes escriben distinto, no.
+4. **¿Es el mismo punto que otro que ya está?** Las listas se copian entre sí y
+   el mismo lugar llega con dos nombres. Se publica uno.
+
+**Lo que la vía rápida no puede tocar, por más prisa que haya:**
+
+- `ultima_verificacion` sigue en `null`. Nadie llamó. Un punto publicado así
+  está publicado, no verificado, y el panel tiene que poder distinguirlos para
+  que la ronda de llamadas sepa por dónde empezar.
+- `telefono_publico` sigue en `false`. Copiar un número de una publicación no es
+  la autorización que pide la Ley 1581 de 2012, y la urgencia no la crea.
+- Las coordenadas no se inventan ni se mueven. Si el pin está mal, el punto se
+  queda en la cola.
+
+Y una consecuencia que hay que mirar de frente: las notas internas de moderación
+se publican. La vista `puntos_publicos` expone `notas`, así que "PIN APROXIMADO,
+verificarlo al editar" o "conseguir teléfono antes de poder verificar" le
+aparecen a quien va a donar. Por eso publicar incluye **reescribir la nota para
+quien dona** — quién opera el punto, qué más reciben, qué no reciben, por dónde
+se entra — y borrar el resto. El script rechaza el archivo de decisiones si
+detecta texto interno sobreviviendo en una nota.
+
+La tanda queda registrada en `datos/moderacion/`, con el motivo de cada punto
+que se dejó pendiente. No es papeleo: es la lista de trabajo de la ronda de
+llamadas, y es lo que permite deshacer la tanda entera si mañana resulta que el
+criterio estaba flojo.
