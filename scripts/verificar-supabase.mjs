@@ -154,6 +154,37 @@ if (servicio) {
    * revocado el GRANT a `authenticated`, y una policy no otorga permiso, filtra
    * dentro del que ya hay. Lo arregla 0009.
    */
+  // 0011: Instagram en la vista pública, y el teléfono ya sin exigir número.
+  const { error: err11 } = await admin.from('puntos').select('instagram').limit(1);
+  console.log('0011 instagram  :', err11 ? `NO aplicada (${err11.message})` : 'sí ✓');
+  if (err11) fallas++;
+
+  // La normalización tiene que vivir también en la base: `registrar_punto` es
+  // pública y alguien la puede llamar con la URL completa pegada del navegador.
+  const { data: usuario, error: errNorm } = await admin.rpc('usuario_instagram', {
+    p_entrada: 'https://www.instagram.com/BarrioAbajo/?hl=es',
+  });
+  const normaliza = !errNorm && usuario === 'barrioabajo';
+  console.log(
+    '0011 normaliza  :',
+    normaliza ? 'la URL se reduce al usuario ✓' : `revisar (${errNorm?.message ?? usuario})`,
+  );
+  if (!normaliza) fallas++;
+
+  // Debe rechazar por falta de contacto, no por otra cosa: es la regla nueva.
+  const { error: err11b } = await admin.rpc('registrar_punto', {
+    p_nombre: 'sonda', p_tipo_organizacion: 'ong',
+    p_departamento_codigo: '17', p_municipio_codigo: '17001', p_direccion: 'sonda',
+    p_lat: 5.07, p_lng: -75.51, p_responsable_nombre: 'sonda',
+    p_telefono: '', p_horario_texto: 'sonda', p_categorias: [], p_instagram: '',
+  });
+  const exigeContacto = err11b?.message?.includes('Instagram');
+  console.log(
+    '0011 contacto   :',
+    exigeContacto ? 'exige teléfono o Instagram ✓' : `revisar (${err11b?.message ?? 'no falló'})`,
+  );
+  if (!exigeContacto) fallas++;
+
   console.log('\n— como moderador (rol authenticated) —');
 
   const { data: perfiles } = await admin.from('perfiles').select('id').limit(1);

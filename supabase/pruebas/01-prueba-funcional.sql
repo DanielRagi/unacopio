@@ -55,10 +55,19 @@ select registrar_punto(
   -- Sin numero: el unico canal es la cuenta.
   p_telefono => '', p_horario_texto => 'Fines de semana',
   p_categorias => '[{"slug":"agua_embotellada","nivel":"si"}]'::jsonb,
-  p_instagram => '@BarrioAbajo'
+  -- La URL completa, como la pega alguien que copió del navegador.
+  p_instagram => 'https://www.instagram.com/BarrioAbajo/?hl=es'
 ) as solo_ig \gset
 
 select telefono, instagram from puntos where id = :'solo_ig';
+
+\echo '--- usuario_instagram: todas las formas terminan igual'
+select entrada, usuario_instagram(entrada) as usuario
+from (values
+  ('@Acopio'), ('acopio'), ('instagram.com/acopio'),
+  ('https://www.instagram.com/acopio/'), ('https://instagram.com/acopio?hl=es'),
+  ('@@acopio'), ('   '), (null)
+) as t(entrada);
 
 \echo '--- sin telefono y sin Instagram no se puede registrar'
 do $$

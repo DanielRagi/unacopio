@@ -27,6 +27,35 @@ comment on column puntos.instagram is
   'Usuario de Instagram del punto, sin arroba y en minúsculas. Se publica: es '
   'el canal de contacto cuando no hay teléfono que conteste.';
 
+/*
+ * La misma normalización que hace la aplicación, pero acá.
+ *
+ * No es duplicación por descuido: `registrar_punto` es pública, la puede llamar
+ * cualquiera sin pasar por el formulario, y la primera versión de esto solo
+ * quitaba la arroba. Al probarlo de verdad se guardó
+ * `https://www.instagram.com/barrioabajo/?hl=es` tal cual, y con eso el enlace
+ * de la ficha habría quedado apuntando a
+ * `instagram.com/https://www.instagram.com/...`.
+ *
+ * La base es el último lugar donde se puede garantizar la forma del dato, así
+ * que la garantiza.
+ */
+create or replace function usuario_instagram(p_entrada text)
+returns text
+language sql
+immutable
+as $$
+  select nullif(
+    regexp_replace(                                        -- arrobas del inicio
+      regexp_replace(                                      -- ruta, query o ancla
+        regexp_replace(                                    -- el dominio
+          regexp_replace(lower(trim(coalesce(p_entrada, ''))), '^https?://', ''),
+          '^(www\.)?instagram\.com/', ''),
+        '[?#/].*$', ''),
+      '^@+', ''),
+    '');
+$$;
+
 -- ---------------------------------------------------------------- vista
 
 drop view if exists puntos_publicos;
@@ -149,7 +178,7 @@ begin
     trim(p_responsable_nombre),
     coalesce(nullif(trim(p_telefono), ''), 'Por confirmar'),
     p_whatsapp, p_telefono_publico, p_correo,
-    nullif(ltrim(lower(trim(p_instagram)), '@'), ''),
+    usuario_instagram(p_instagram),
     p_horario_texto,
     case when jsonb_array_length(coalesce(p_horarios, '[]'::jsonb)) > 0 then p_horarios end,
     p_fecha_inicio, p_fecha_fin, p_recibe_voluntarios, p_notas,
@@ -233,7 +262,7 @@ begin
     coalesce(nullif(trim(p_responsable_nombre), ''), 'Por confirmar'),
     coalesce(nullif(trim(p_telefono), ''), 'Por confirmar'),
     true, false,
-    nullif(ltrim(lower(trim(p_instagram)), '@'), ''),
+    usuario_instagram(p_instagram),
     coalesce(nullif(trim(p_horario_texto), ''), 'Horario por confirmar'),
     case when jsonb_array_length(coalesce(p_horarios, '[]'::jsonb)) > 0 then p_horarios end,
     p_notas,
