@@ -6,6 +6,21 @@
      despeguen del fondo. */
   --background: #fbfcfb;
   --foreground: #14181a;
+
+  /*
+   * Lo que arregla los `<select>` en modo oscuro, y de paso los calendarios.
+   *
+   * La lista desplegable de un `<select>` no la dibuja la página: la dibuja el
+   * sistema operativo. Sin `color-scheme`, el navegador asume que la página es
+   * clara y abre el desplegable con fondo blanco — pero el texto sí hereda
+   * nuestro `--foreground`, que en modo oscuro es casi blanco. Resultado: letra
+   * blanca sobre fondo blanco, invisible.
+   *
+   * Declararlo hace que el sistema pinte los controles en el mismo esquema que
+   * la página, que es lo único que de verdad lo resuelve. Alcanza también a los
+   * `<input type="date">`, a las barras de desplazamiento y al autocompletado.
+   */
+  color-scheme: light dark;
 }
 
 @theme inline {
@@ -26,6 +41,24 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
+}
+
+/*
+ * Y por si acaso, los colores explícitos.
+ *
+ * `color-scheme` arriba es el arreglo de verdad, pero depende de que el
+ * navegador lo respete y algunos entornos antiguos no lo hacen. Fijar el color
+ * de las opciones cuesta dos reglas y quita el riesgo de que alguien no pueda
+ * elegir su municipio, que es lo primero que hace en este sitio.
+ *
+ * `option` no lleva clases de Tailwind, así que acá no hay pelea de
+ * especificidad: estas reglas son las únicas que lo tocan.
+ */
+select,
+option,
+optgroup {
+  background-color: var(--background);
+  color: var(--foreground);
 }
 
 /*
