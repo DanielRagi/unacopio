@@ -143,6 +143,7 @@ los catálogos ya se cargaron.
 | `npm run acceso -- correo@x.com` | Genera un enlace de acceso a moderación sin pasar por el correo. La salida de emergencia cuando el SMTP falla |
 | `npm run probar:horarios` | Pruebas del cálculo de "abierto ahora" (zona horaria, jornadas partidas, fechas de campaña) |
 | `npm run probar:importacion` | Pruebas del parser de CSV y de la revisión fila por fila |
+| `npm run acopio-colombia` | Trae los puntos de otro directorio ciudadano, respetando su `robots.txt` (ver D18) |
 | `npm run pilotaje` | Regenera el CSV de siembra desde `datos/pilotaje/*.json`, geocodificando con Nominatim |
 | `npm run sembrar` | Carga ese CSV en la cola de moderación. `-- --ver` para ensayar, `-- --limpiar` para deshacer |
 | `npm run tipos:scripts` | Chequeo de tipos de `scripts/`, que va aparte del proyecto |

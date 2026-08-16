@@ -1,0 +1,817 @@
+{
+  "_lea_esto_primero": [
+    "Extraído de \"Centros de Acopio Colombia\" (emergency-rosy.vercel.app), otro",
+    "proyecto ciudadano independiente que publica el mismo tipo de directorio.",
+    "",
+    "Se leyó únicamente la portada, que su robots.txt permite; su /api está",
+    "prohibida y no se tocó. La atribución de cada punto apunta a la fuente",
+    "ORIGINAL que ellos citan, no a su sitio, porque es de donde salió el dato.",
+    "",
+    "Su estado de verificación NO nos sirve de aval: acá nada se publica sin",
+    "que un moderador llame (D13). Lo que sí aporta es que muchos traen",
+    "teléfono y coordenada exacta, que es justo lo que nos faltaba.",
+    "",
+    "Se regenera con `npm run acopio-colombia`."
+  ],
+  "municipio_codigo": "11001",
+  "municipio": "Bogotá D.C.",
+  "recolectado_en": "2026-08-16",
+  "fuente_principal": {
+    "nombre": "Centros de Acopio Colombia",
+    "url": "https://emergency-rosy.vercel.app/",
+    "nota": "Proyecto ciudadano independiente. Cada punto conserva además la fuente original que ellos citan."
+  },
+  "recibe": [],
+  "no_recibe": [],
+  "puntos": [
+    {
+      "nombre": "122 Plaza Apartahotel",
+      "tipo": "particular",
+      "direccion": "Carrera 15A #122-27",
+      "lat": 4.70126,
+      "lng": -74.04618,
+      "horario": "Recepción 24 horas",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "no_perecederos",
+        "comida_preparada",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "guantes_trabajo",
+        "tapabocas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Tigresas Moviéndose con Corazón — «Red Nacional de Puntos de Solidaridad» (historia destacada «📍Puntos» de la cuenta oficial de la campaña) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tigresasmoviendoseconcorazon",
+      "nota": "Lo opera Tigresas de la Patria — «Colombia un solo corazón». · Acopio Colombia lo dio por verificado el 2026-08-15 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Cascos de seguridad para rescate; Gafas de protección; Elementos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "ACSC Bogotá D.C. — centro de acopio de insumos médicos",
+      "tipo": "ong",
+      "direccion": "Carrera 15A #120-74",
+      "lat": 4.69929,
+      "lng": -74.043834,
+      "telefono": "6017448100",
+      "horario": "Consultar por teléfono antes de asistir",
+      "urgente": [
+        "botiquin"
+      ],
+      "recibe": [
+        "botiquin",
+        "guantes",
+        "tapabocas",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "medicamentos_sellados"
+      ],
+      "fuente_nombre": "Asociación Colombiana de Sociedades Científicas (ACSC) — comunicado a la opinión pública (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://sociedadescientificas.com/solidaridad-con-victimas-del-terremoto-agosto-10/",
+      "nota": "Lo opera Asociación Colombiana de Sociedades Científicas (ACSC). · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Líquidos endovenosos; Tubos endotraqueales; Máscaras laríngeas; Yelcos; Equipos de succión; Agujas; Productos de higiene; Plantas generadoras de energía; Insumos abiertos o usados."
+    },
+    {
+      "nombre": "California Tattoo",
+      "tipo": "particular",
+      "direccion": "Av Cl 24 #40 28  tercer piso",
+      "lat": 4.631251,
+      "lng": -74.093077,
+      "telefono": "0",
+      "horario": "Lunes a viernes 11:59am a 6:40pm",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "botiquin"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/california_tattooink?igsh=MTQ1c2Y3azNnNGhtcg%3D%3D&utm_source=qr",
+      "nota": "Acopio Colombia lo dio por verificado el 2026-08-13 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: california.admin@gmail.com · WhatsApp: 3223513569 · No cabe en nuestras categorías, preguntarlo al llamar: Aseo e higiene; Alimentos."
+    },
+    {
+      "nombre": "Casa del Valle",
+      "tipo": "alcaldia",
+      "direccion": "Calle 34 #5-50, barrio La Merced",
+      "lat": 4.620462,
+      "lng": -74.065703,
+      "horario": "Desde las 7:00 a. m.; la fuente no publicó hora de cierre",
+      "urgente": [
+        "carpas",
+        "colchonetas",
+        "velas_linternas"
+      ],
+      "recibe": [
+        "no_perecederos",
+        "comida_preparada",
+        "colchonetas",
+        "cobijas",
+        "carpas",
+        "papel_higienico",
+        "tapabocas",
+        "guantes",
+        "palas_picas",
+        "velas_linternas",
+        "alimento_perro"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Gobernación del Valle del Cauca — campaña «El Valle Somos Todos» (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://valledelcauca.gov.co/publicaciones/90172/campana-el-valle-somos-todos-estos-son-los-elementos-que-se-pueden-donar-para-los-damnificados-por-el-sismo",
+      "nota": "Lo opera Gobernación del Valle del Cauca. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Kits de aseo; Gafas de protección; Bolsas resistentes; Toallas; Cascos; Productos vencidos."
+    },
+    {
+      "nombre": "Centro Cultural del Barrio",
+      "tipo": "particular",
+      "direccion": "Carrera 83 # 77 A 24",
+      "lat": 4.700122,
+      "lng": -74.099714,
+      "telefono": "3138913376",
+      "horario": "Martes a Domingo 12:00 m a 11:00 pm",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "colchonetas",
+        "cobijas",
+        "formula_infantil",
+        "alimento_perro",
+        "botiquin",
+        "medicamentos_sellados",
+        "ropa_usada_buen_estado"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/centroculturaldelbarrio/",
+      "nota": "Lo opera Teatro del barrio. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: ncelis.rod@gmail.com · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene; Equipos de rescate."
+    },
+    {
+      "nombre": "CODABAS",
+      "tipo": "particular",
+      "direccion": "Carrera 7 #180-75, módulo 2, piso 2",
+      "lat": 4.756553,
+      "lng": -74.033237,
+      "telefono": "+573057141513",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "no_perecederos",
+        "comida_preparada",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "guantes_trabajo",
+        "tapabocas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Tigresas Moviéndose con Corazón — «Red Nacional de Puntos de Solidaridad» (historia destacada «📍Puntos» de la cuenta oficial de la campaña) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tigresasmoviendoseconcorazon",
+      "nota": "Lo opera Tigresas de la Patria — «Colombia un solo corazón». · Acopio Colombia lo dio por verificado el 2026-08-15 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Cascos de seguridad para rescate; Gafas de protección; Elementos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Compranet comercio electrónico",
+      "tipo": "particular",
+      "direccion": "Cra 109a#69b-50 piso 2",
+      "lat": 4.653382,
+      "lng": -74.083633,
+      "telefono": "3108594905",
+      "horario": "De lunes a viernes de 8:30am a 5 pm",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "botiquin",
+        "medicamentos_sellados",
+        "colchonetas",
+        "cobijas",
+        "formula_infantil",
+        "ropa_usada_buen_estado"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://compranet.com.co",
+      "nota": "Lo opera Compranet. · Acopio Colombia lo dio por verificado el 2026-08-13 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: ventas@compranet.com.co · WhatsApp: 3123891109 · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene; Equipos de rescate."
+    },
+    {
+      "nombre": "Estadio El Campín",
+      "tipo": "alcaldia",
+      "direccion": "Avenida NQS (Carrera 30) entre Calle 53B Bis y Calle 57",
+      "lat": 4.64595,
+      "lng": -74.077605,
+      "horario": "8:00 a. m. – 9:00 p. m., horario continuo",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada",
+        "colchonetas"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "toallas_higienicas",
+        "panales_bebe",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/ambiente/estadio-el-campin-de-bogota-nuevo-punto-ayudas-damnificados-terremoto",
+      "nota": "Lo opera Alcaldía Mayor de Bogotá, con apoyo de la Cruz Roja Colombiana e iniciativa de Sencia Bogotá. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate; Alcohol; Clorhexidina; Biberones."
+    },
+    {
+      "nombre": "GAULA — La Castellana",
+      "tipo": "gobernacion",
+      "direccion": "Carrera 47 #94-68, barrio La Castellana",
+      "lat": 4.684328,
+      "lng": -74.059692,
+      "telefono": "+573185444431",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "no_perecederos",
+        "comida_preparada",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "guantes_trabajo",
+        "tapabocas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Tigresas Moviéndose con Corazón — «Red Nacional de Puntos de Solidaridad» (historia destacada «📍Puntos» de la cuenta oficial de la campaña) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tigresasmoviendoseconcorazon",
+      "nota": "Lo opera Tigresas de la Patria — «Colombia un solo corazón». · Acopio Colombia lo dio por verificado el 2026-08-15 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Cascos de seguridad para rescate; Gafas de protección; Elementos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Mall Plaza NQS",
+      "tipo": "empresa",
+      "direccion": "Av cra 30 #19",
+      "lat": 4.618714,
+      "lng": -74.086253,
+      "horario": "Domingo a Domingo de 12m- 8pm",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "botiquin",
+        "formula_infantil",
+        "alimento_perro",
+        "colchonetas",
+        "cobijas",
+        "medicamentos_sellados"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/mallplazaco?igsh=MTR3YmdmNXoxeWxlNA==",
+      "nota": "Acopio Colombia lo dio por verificado el 2026-08-13 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene; Equipos de rescate."
+    },
+    {
+      "nombre": "Palacio de los Deportes",
+      "tipo": "alcaldia",
+      "direccion": "Calle 63 #59A-06",
+      "lat": 4.655319,
+      "lng": -74.084058,
+      "horario": "8:00 a. m. – 8:00 p. m.",
+      "urgente": [
+        "agua_embotellada",
+        "colchonetas",
+        "panales_bebe",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "tejas",
+        "panela_azucar",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "cepillo_crema_dental",
+        "papel_higienico",
+        "panales_bebe",
+        "formula_infantil",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Alcaldía Mayor de Bogotá / Cruz Roja Colombiana. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate en polvo; Alcohol; Clorhexidina; Productos de higiene menstrual; Toallitas húmedas; Productos vencidos."
+    },
+    {
+      "nombre": "Punto de acopio Usaquén",
+      "tipo": "alcaldia",
+      "direccion": "Calle 161A #7F-55",
+      "lat": 4.737079,
+      "lng": -74.026046,
+      "horario": "8:00 a. m. – 9:00 p. m., de lunes a domingo",
+      "urgente": [
+        "agua_embotellada",
+        "colchonetas",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "tejas",
+        "panela_azucar",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "cepillo_crema_dental",
+        "papel_higienico",
+        "panales_bebe",
+        "formula_infantil",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Alcaldía Mayor de Bogotá / Cruz Roja Colombiana Seccional Cundinamarca y Bogotá. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate en polvo; Alcohol; Clorhexidina; Productos de higiene menstrual; Toallitas húmedas; Productos vencidos."
+    },
+    {
+      "nombre": "Punto de Solidaridad Park Way",
+      "tipo": "particular",
+      "direccion": "Avenida Carrera 24 #39-29",
+      "lat": 4.63202,
+      "lng": -74.075035,
+      "telefono": "+573102677601",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "no_perecederos",
+        "comida_preparada",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "guantes_trabajo",
+        "tapabocas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Tigresas Moviéndose con Corazón — «Red Nacional de Puntos de Solidaridad» (historia destacada «📍Puntos» de la cuenta oficial de la campaña) (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tigresasmoviendoseconcorazon",
+      "nota": "Lo opera Tigresas de la Patria — «Colombia un solo corazón». · Acopio Colombia lo dio por verificado el 2026-08-15 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Cascos de seguridad para rescate; Gafas de protección; Elementos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Punto Solidario de Acopio - Universidad Nacional de Colombia sede Bogotá (UNAL)",
+      "tipo": "universidad",
+      "direccion": "Capilla Cristo Maestro (edificio 251), Ciudad Universitaria, Bogotá",
+      "lat": 4.632901,
+      "lng": -74.08145,
+      "telefono": "6013165235",
+      "horario": "Lunes a viernes, 08:00-16:00",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "colchonetas",
+        "cobijas",
+        "alimento_perro",
+        "formula_infantil"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.unal.edu.co/la-sede/equipo-directivo",
+      "nota": "Lo opera Universidad Nacional de Colombia sede Bogotá. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: vrs_bog@unal.edu.co · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene."
+    },
+    {
+      "nombre": "Ramen house",
+      "tipo": "particular",
+      "direccion": "Calle 12b # 2-29",
+      "lat": 4.597158,
+      "lng": -74.070172,
+      "telefono": "3185416231",
+      "horario": "Lunes a domingo de 10 am a 8 pm",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "botiquin",
+        "colchonetas",
+        "cobijas",
+        "formula_infantil",
+        "alimento_perro",
+        "medicamentos_sellados"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/cosplays_y_sonrisas?igsh=MTdjNGsyZ3czbnFjZw==",
+      "nota": "Lo opera Cosplays y sonrisas. · Acopio Colombia lo dio por verificado el 2026-08-12 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: mpapolinars.24@gmail.com · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene."
+    },
+    {
+      "nombre": "Sede administrativa Cruz Roja",
+      "tipo": "cruz_roja",
+      "direccion": "Carrera 24 #73-38",
+      "lat": 4.664031,
+      "lng": -74.066011,
+      "horario": "Abierto 24 horas",
+      "urgente": [
+        "agua_embotellada",
+        "colchonetas"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "tejas",
+        "panela_azucar",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "cepillo_crema_dental",
+        "papel_higienico",
+        "panales_bebe",
+        "formula_infantil"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Cruz Roja Colombiana Seccional Cundinamarca y Bogotá. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate en polvo; Alcohol; Clorhexidina; Productos de higiene menstrual; Toallitas húmedas; Artículos de higiene; Productos vencidos."
+    },
+    {
+      "nombre": "Tienda Apapachando",
+      "tipo": "particular",
+      "direccion": "Diagonal 53 sur # 61d-03",
+      "lat": 4.584804,
+      "lng": -74.148501,
+      "telefono": "3015286912",
+      "horario": "Todo el día",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "ropa_usada_buen_estado",
+        "botiquin",
+        "colchonetas",
+        "cobijas",
+        "formula_infantil",
+        "alimento_perro"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/tienda_apapachando?igsh=MTVjaTU2YnhkNjNpZg==",
+      "nota": "Lo opera Zaira Reina. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: mizuki012@gmail.com · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene; Equipos de rescate."
+    },
+    {
+      "nombre": "Unicentro Bogotá",
+      "tipo": "alcaldia",
+      "direccion": "Carrera 15 #124-30 (entradas por la Carrera 13, Zona de Banderas, y por la Carrera 15, entrada principal)",
+      "lat": 4.702159,
+      "lng": -74.041281,
+      "telefono": "+573176456373",
+      "horario": "8:00 a. m. – 9:00 p. m., de lunes a domingo",
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "granos",
+        "aceite",
+        "enlatados",
+        "no_perecederos",
+        "comida_preparada",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "guantes_trabajo",
+        "tapabocas"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Alcaldía Mayor de Bogotá y Cruz Roja Colombiana Seccional Cundinamarca y Bogotá, junto con Tigresas de la Patria. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Cascos de seguridad para rescate; Gafas de protección; Elementos de aseo; Productos vencidos."
+    },
+    {
+      "nombre": "Universidad Externado de Colombia",
+      "tipo": "universidad",
+      "direccion": "Calle 12 # 1-17 Este",
+      "lat": 4.595575,
+      "lng": -74.069067,
+      "telefono": "6013419900",
+      "horario": "Lunes a viernes de 8:00 a 5:00pm",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "botiquin",
+        "medicamentos_sellados"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.uexternado.edu.co/la-universidad/unidos-por-nuestro-pais/",
+      "nota": "Lo opera Departamento de Bienestar Universitario. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · Correo: bienestar@uexternado.edu.co · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene."
+    },
+    {
+      "nombre": "Universidad Jorge Tadeo Lozano",
+      "tipo": "alcaldia",
+      "direccion": "Carrera 4 #22-61",
+      "lat": 4.606942,
+      "lng": -74.067926,
+      "horario": "8:00 a. m. – 9:00 p. m., de lunes a domingo",
+      "urgente": [
+        "agua_embotellada",
+        "colchonetas",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "tejas",
+        "panela_azucar",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "cepillo_crema_dental",
+        "papel_higienico",
+        "panales_bebe",
+        "formula_infantil",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Alcaldía Mayor de Bogotá / Cruz Roja Colombiana Seccional Cundinamarca y Bogotá. · Acopio Colombia lo dio por verificado el 2026-08-11 contra el canal propio de la entidad. Igual hay que llamar: acá no se publica nada sin confirmar de primera mano. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate en polvo; Alcohol; Clorhexidina; Productos de higiene menstrual; Toallitas húmedas; Productos vencidos."
+    },
+    {
+      "nombre": "Casa Cural Parroquia San Pedro Apóstol",
+      "tipo": "iglesia",
+      "direccion": "Calle 77a #20c-90",
+      "lat": 4.66761,
+      "lng": -74.062986,
+      "telefono": "6013461328",
+      "horario": "Lunes a Viernes - 9.00 a.m. - 5.00 p.m.",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "colchonetas",
+        "cobijas",
+        "formula_infantil",
+        "alimento_perro"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://emergency-rosy.vercel.app/",
+      "nota": "Lo opera Parroquia San Pedro Apóstol. · Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · Correo: psanpedroapostol@arquibogota.org.co · WhatsApp: 3134005838 · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene; Equipos de rescate."
+    },
+    {
+      "nombre": "Gobernación de Cundinamarca — Plaza de la Paz",
+      "tipo": "alcaldia",
+      "direccion": "Sede de la Gobernación de Cundinamarca, Calle 26 #51-53, Plaza de la Paz",
+      "lat": 4.640803,
+      "lng": -74.096969,
+      "horario": "Lunes a domingo, 8:00 a. m. – 5:00 p. m.",
+      "urgente": [
+        "no_perecederos",
+        "comida_preparada",
+        "agua_embotellada"
+      ],
+      "recibe": [
+        "no_perecederos",
+        "comida_preparada",
+        "agua_embotellada",
+        "desinfectantes",
+        "ropa_nueva",
+        "alimento_perro"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado"
+      ],
+      "fuente_nombre": "Gobernación de Cundinamarca, vía El Espectador (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.elespectador.com/bogota/donde-donar-para-los-afectados-por-el-terremoto-puntos-autorizados-en-bogota-y-cundinamarca/",
+      "nota": "Lo opera Gobernación de Cundinamarca. · Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · La fuente dice que cierra el 2026-08-23. · No cabe en nuestras categorías, preguntarlo al llamar: Elementos de aseo e higiene personal; Insumos básicos de salud; Elementos de cuidado para animales; Productos vencidos.",
+      "fecha_fin": "2026-08-23"
+    },
+    {
+      "nombre": "Paola Rojas Camacho",
+      "tipo": "particular",
+      "direccion": "Cra 103C # 82-55 barrio Bolivia",
+      "lat": 4.716851,
+      "lng": -74.111103,
+      "telefono": "+573168343709",
+      "horario": "Miércoles a sábado 10:00 am a 8:00 pm",
+      "urgente": [],
+      "recibe": [
+        "agua_embotellada",
+        "botiquin",
+        "formula_infantil",
+        "alimento_perro"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Enviado por la comunidad (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://www.instagram.com/vinoalchori?igsh=MXZ2b2lqcHU5MDNheQ==",
+      "nota": "Lo opera Vino al Chori. · Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · Correo: paorojas0504@gmail.com · WhatsApp: 3168343709 · No cabe en nuestras categorías, preguntarlo al llamar: Alimentos; Aseo e higiene."
+    },
+    {
+      "nombre": "Bodega Cruz Roja",
+      "tipo": "cruz_roja",
+      "direccion": "Diagonal 79B #62-53",
+      "lat": 4.678527,
+      "lng": -74.076555,
+      "urgente": [
+        "agua_embotellada",
+        "colchonetas",
+        "cobijas"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "tejas",
+        "panela_azucar",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "cepillo_crema_dental",
+        "papel_higienico",
+        "panales_bebe",
+        "formula_infantil"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Cruz Roja Colombiana Seccional Cundinamarca y Bogotá. · Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate en polvo; Alcohol; Clorhexidina; Productos de higiene menstrual; Toallitas húmedas; Productos vencidos."
+    },
+    {
+      "nombre": "Centro de Salvamento Acuático — Cruz Roja (Sede Barrios Unidos)",
+      "tipo": "cruz_roja",
+      "direccion": "Avenida La Esmeralda #63-81",
+      "lat": 4.66086,
+      "lng": -74.0878,
+      "urgente": [
+        "agua_embotellada",
+        "no_perecederos",
+        "comida_preparada",
+        "botiquin"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "tejas",
+        "panela_azucar",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "cepillo_crema_dental",
+        "papel_higienico",
+        "panales_bebe",
+        "formula_infantil",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "comida_preparada"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Cruz Roja Colombiana Seccional Cundinamarca y Bogotá. · Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate en polvo; Alcohol; Clorhexidina; Productos de higiene menstrual; Toallitas húmedas; Productos vencidos."
+    },
+    {
+      "nombre": "SAMU Sur — Cruz Roja",
+      "tipo": "cruz_roja",
+      "direccion": "Avenida Carrera 68 #31-41 sur",
+      "lat": 4.623314,
+      "lng": -74.124798,
+      "urgente": [
+        "agua_embotellada",
+        "colchonetas",
+        "cobijas",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "recibe": [
+        "agua_embotellada",
+        "cobijas",
+        "sabanas",
+        "colchonetas",
+        "toldillos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "tejas",
+        "panela_azucar",
+        "tapabocas",
+        "botiquin",
+        "guantes",
+        "jabon",
+        "cepillo_crema_dental",
+        "papel_higienico",
+        "panales_bebe",
+        "formula_infantil",
+        "no_perecederos",
+        "comida_preparada"
+      ],
+      "no_recibe": [
+        "comida_preparada",
+        "ropa_usada_buen_estado"
+      ],
+      "fuente_nombre": "Alcaldía Mayor de Bogotá (vía Centros de Acopio Colombia)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia",
+      "nota": "Lo opera Cruz Roja Colombiana Seccional Cundinamarca y Bogotá. · Acopio Colombia lo tiene como REPORTADO, sin verificar contra la entidad. Confirmar antes que nada. · PIN APROXIMADO según la fuente. Verificarlo al editar. · No cabe en nuestras categorías, preguntarlo al llamar: Harina; Leche en polvo; Chocolate en polvo; Alcohol; Clorhexidina; Productos de higiene menstrual; Toallitas húmedas; Productos vencidos."
+    }
+  ]
+}
