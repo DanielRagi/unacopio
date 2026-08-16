@@ -61,6 +61,21 @@ const completo = pagina.length === 1122 && pagina.some((m) => m.codigo === '1100
 console.log('catálogo paginado:', completo ? `${pagina.length} municipios, con Bogotá ✓` : `INCOMPLETO (${pagina.length})`);
 if (!completo) fallas++;
 
+// La portada llama esto sin sesión para abrir en la ciudad de quien entra.
+// Bogotá es el caso que importa: su centroide DANE cae en el páramo de Sumapaz,
+// así que resolver por cercanía la mandaba a Cota. Tiene que ganar el nombre.
+const { data: ciudad, error: errCiudad } = await cliente.rpc('municipio_de_ubicacion', {
+  p_ciudad: 'Bogota', p_lat: 4.6486, p_lng: -74.0819,
+});
+const bogotaOk = !errCiudad && ciudad?.[0]?.codigo === '11001' && ciudad[0].por === 'nombre';
+console.log(
+  'municipio por IP:',
+  bogotaOk
+    ? 'Bogotá ✓ (por nombre)'
+    : `revisar — ${errCiudad?.message ?? `${ciudad?.[0]?.nombre ?? 'sin resultado'} (${ciudad?.[0]?.por ?? '—'})`}`,
+);
+if (!bogotaOk) fallas++;
+
 const { error: rpcError } = await cliente.rpc('buscar_puntos', {
   p_lat: 5.0689, p_lng: -75.5174, p_radio_m: 20000,
 });
