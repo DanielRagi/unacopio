@@ -118,10 +118,21 @@ export async function cerrarSesion() {
   redirect('/admin');
 }
 
-/** Cambia el estado de un punto. Quien no sea moderador rebota contra RLS. */
+const ESTADOS: EstadoPunto[] = ['pendiente', 'publicado', 'rechazado', 'cerrado', 'lleno'];
+
+/**
+ * Cambia el estado de un punto. Quien no sea moderador rebota contra RLS.
+ *
+ * Cualquier estado va a cualquier otro, **incluido volver a `pendiente`**. Un
+ * punto rechazado por error, o uno publicado al que le faltó algo, tiene que
+ * poder devolverse a la cola sin que nadie toque la base a mano: mientras esté
+ * en `pendiente` desaparece del sitio y vuelve a estar donde se revisa.
+ */
 export async function cambiarEstado(formData: FormData) {
   const id = String(formData.get('id') ?? '');
-  const estado = String(formData.get('estado') ?? '') as EstadoPunto;
+  const pedido = String(formData.get('estado') ?? '');
+  if (!id || !ESTADOS.includes(pedido as EstadoPunto)) return;
+  const estado = pedido as EstadoPunto;
 
   const supabase = await clienteServidor();
   const { data: sesion } = await supabase.auth.getUser();

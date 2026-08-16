@@ -458,3 +458,38 @@ Y lo que nosotros tenemos y ellos no se ve en su sitio: API abierta en JSON y
 CSV con licencia, el "qué NO llevar" por punto, horarios estructurados con
 "abierto ahora", páginas por municipio y la ronda de llamadas. Hay con qué
 llegar a una conversación de iguales.
+
+## D19. Moderación no juega con las mismas reglas que el público
+
+Dos veces seguidas pasó lo mismo: una validación pensada para el formulario
+público terminó bloqueando a quien modera. Primero el horario obligatorio, que
+impedía corregir la dirección de un punto importado; después el contacto
+obligatorio, que impedía publicar un coliseo municipal porque no conseguíamos un
+celular. En los dos casos el punto ya estaba ahí, con su dirección, y lo único
+que faltaba era un dato que solo el formulario público tiene derecho a exigir.
+
+La regla que faltaba escribir es esta: **quien registra y quien modera no son la
+misma persona y no saben lo mismo.**
+
+- Quien registra sabe su horario y su teléfono. Exigírselos es razonable, y de
+  paso es la barrera más barata contra el spam.
+- Quien modera está mirando una ficha ajena. Muchas veces no tiene esos datos —
+  el punto salió de una lista, o la persona con la que habló no los supo— y aun
+  así necesita poder corregir lo demás.
+
+Por eso hay dos esquemas. `esquemaRegistro` exige horario y contacto;
+`esquemaModeracion` no exige ninguno de los dos, y todo lo demás sigue igual:
+municipio coherente con el departamento, al menos una categoría que sí reciban,
+dirección de verdad.
+
+**Lo que se pierde, y hay que tenerlo presente:** ahora se puede publicar un
+punto sin ninguna forma de contactarlo. Eso significa que nadie puede
+confirmarlo después, así que se queda congelado hasta que alguien pase por ahí.
+Es un intercambio consciente: para un coliseo o una estación de bomberos, saber
+dónde queda vale más que poder llamar, y bloquear la publicación por eso deja a
+la gente sin la dirección, que es peor.
+
+También de acá sale que **cualquier estado se puede devolver a `pendiente`**. Un
+punto rechazado por error o uno publicado al que le faltó algo tiene que poder
+volver a la cola sin que nadie abra la base a mano. Mientras esté en `pendiente`
+desaparece del sitio, que es exactamente lo que se quiere mientras se revisa.
