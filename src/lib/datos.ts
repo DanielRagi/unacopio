@@ -145,6 +145,43 @@ export async function municipiosConPuntos(): Promise<MunicipioConPuntos[]> {
   return (data ?? []) as MunicipioConPuntos[];
 }
 
+export interface MunicipioDetectado {
+  codigo: string;
+  nombre: string;
+  slug: string;
+  departamento_codigo: string;
+  departamento: string;
+  metros: number | null;
+  /** `nombre` si coincidió el nombre de la ciudad; `cercania` si fue el centroide. */
+  por: 'nombre' | 'cercania';
+}
+
+/**
+ * A qué municipio corresponde una ubicación aproximada.
+ *
+ * Se usa con la geolocalización por IP para elegir qué mostrar por defecto. No
+ * lanza si falla: quedarse sin portada porque no se pudo adivinar la ciudad
+ * sería absurdo — se cae a mostrar el país, que es lo que hacía antes.
+ */
+export async function municipioDeUbicacion(
+  ciudad: string | null,
+  lat: number,
+  lng: number,
+): Promise<MunicipioDetectado | null> {
+  const supabase = await clienteServidor();
+  const { data, error } = await supabase.rpc('municipio_de_ubicacion', {
+    p_ciudad: ciudad,
+    p_lat: lat,
+    p_lng: lng,
+  });
+
+  if (error) {
+    console.error(`No se pudo resolver el municipio: ${error.message}`);
+    return null;
+  }
+  return ((data ?? []) as MunicipioDetectado[])[0] ?? null;
+}
+
 /** Resuelve `/acopio/medellin` al municipio. Devuelve null si el slug no existe. */
 export async function municipioPorSlug(slug: string) {
   const supabase = await clienteServidor();

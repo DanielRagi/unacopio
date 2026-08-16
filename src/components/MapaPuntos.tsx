@@ -9,6 +9,7 @@ import Link from 'next/link';
 import { useEffect, useMemo } from 'react';
 import { MapContainer, Marker, Popup, TileLayer, useMap } from 'react-leaflet';
 import MarkerClusterGroup from 'react-leaflet-cluster';
+import { enlaceGoogleMaps, enlaceWaze } from '@/lib/enlaces';
 
 export interface PuntoMapa {
   id: string;
@@ -140,9 +141,37 @@ export default function MapaPuntos({
                   <strong>Necesitan:</strong> {punto.urgentes.slice(0, 3).join(', ')}
                 </span>
               )}
-              <Link href={`/punto/${punto.id}`} className="mt-1 block text-xs font-semibold">
-                Ver la ficha completa
-              </Link>
+
+              {/*
+                Cómo llegar, desde el propio globo del mapa.
+                Quien ya está mirando el mapa está decidiendo a cuál ir: obligarlo
+                a abrir la ficha para sacar la navegación es un paso de más justo
+                en el momento en que va saliendo de la casa.
+              */}
+              <span className="mt-2 flex flex-wrap items-center gap-1.5">
+                <a
+                  href={enlaceGoogleMaps(punto.lat, punto.lng)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-md bg-emerald-700 px-2 py-1 text-[0.7rem] font-semibold !text-white !no-underline"
+                >
+                  Google Maps
+                </a>
+                <a
+                  href={enlaceWaze(punto.lat, punto.lng)}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="rounded-md bg-sky-700 px-2 py-1 text-[0.7rem] font-semibold !text-white !no-underline"
+                >
+                  Waze
+                </a>
+                <Link
+                  href={`/punto/${punto.id}`}
+                  className="rounded-md border border-black/20 px-2 py-1 text-[0.7rem] font-semibold !no-underline"
+                >
+                  Ver ficha
+                </Link>
+              </span>
             </Popup>
           </Marker>
         ))}

@@ -30,6 +30,7 @@ const ARCHIVOS = [
   // necesita que los 1.122 ya estén cargados.
   'supabase/migrations/0008_alcance.sql',
   'supabase/migrations/0009_permisos_moderacion.sql',
+  'supabase/migrations/0010_municipio_cercano.sql',
   // A propósito dos veces: el editor de Supabase aborta la corrida entera si algo
   // falla, así que 0002 y las semillas tienen que aguantar que uno los vuelva a
   // pegar. Si alguien mete un `create policy` suelto, revienta aquí y no allá.
@@ -48,6 +49,7 @@ const ARCHIVOS = [
   'supabase/seed/0002_municipios.sql',
   'supabase/migrations/0008_alcance.sql',
   'supabase/migrations/0009_permisos_moderacion.sql',
+  'supabase/migrations/0010_municipio_cercano.sql',
   'supabase/pruebas/01-prueba-funcional.sql',
 ];
 
