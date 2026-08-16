@@ -39,8 +39,16 @@ const fechaOpcional = z
   .transform((v) => (v === '' ? undefined : v))
   .refine((v) => v === undefined || /^\d{4}-\d{2}-\d{2}$/.test(v), 'Fecha inválida');
 
-export const esquemaRegistro = z
+/** Una franja del selector de horario. */
+const franja = z
   .object({
+    dia: z.number().int().min(0).max(6),
+    desde: z.string().regex(/^\d{2}:\d{2}$/),
+    hasta: z.string().regex(/^\d{2}:\d{2}$/),
+  })
+  .refine((f) => f.hasta > f.desde, 'La hora de cierre debe ser posterior a la de apertura');
+
+const camposComunes = {
     nombre: z.string().trim()
       .min(3, 'Escribe el nombre del punto de acopio')
       .max(120, 'El nombre quedó muy largo'),
@@ -84,18 +92,6 @@ export const esquemaRegistro = z
       .optional()
       .transform((v) => (v === '' ? undefined : v)),
 
-    // El horario llega estructurado desde el selector; el texto legible se
-    // genera después, en el servidor, para que no puedan contradecirse.
-    horarios: z
-      .array(
-        z.object({
-          dia: z.number().int().min(0).max(6),
-          desde: z.string().regex(/^\d{2}:\d{2}$/),
-          hasta: z.string().regex(/^\d{2}:\d{2}$/),
-        }).refine((f) => f.hasta > f.desde, 'La hora de cierre debe ser posterior a la de apertura'),
-      )
-      .min(1, 'Marca al menos un día de atención')
-      .max(21),
     fecha_inicio: fechaOpcional,
     fecha_fin: fechaOpcional,
 
@@ -105,19 +101,70 @@ export const esquemaRegistro = z
     categorias: z
       .array(z.object({ slug: z.string(), nivel: z.enum(NIVELES) }))
       .min(1, 'Marca al menos una cosa que reciban'),
-  })
-  .refine((d) => d.municipio_codigo.startsWith(d.departamento_codigo), {
-    message: 'El municipio no corresponde al departamento',
-    path: ['municipio_codigo'],
-  })
-  .refine((d) => !d.fecha_fin || !d.fecha_inicio || d.fecha_fin >= d.fecha_inicio, {
-    message: 'La fecha de cierre no puede ser anterior a la de inicio',
-    path: ['fecha_fin'],
-  })
-  .refine((d) => d.categorias.some((c) => c.nivel !== 'no_recibe'), {
-    message: 'Marca al menos una cosa que sí reciban',
-    path: ['categorias'],
-  });
+};
+
+/** Lo mínimo que tiene que traer un esquema para que las reglas de abajo apliquen. */
+interface CamposCruzados {
+  departamento_codigo: string;
+  municipio_codigo: string;
+  fecha_inicio?: string;
+  fecha_fin?: string;
+  categorias: { slug: string; nivel: NivelCategoria }[];
+}
+
+/**
+ * Las reglas que cruzan varios campos. Iguales para el público y para moderación.
+ *
+ * El genérico va sobre `z.ZodType<CamposCruzados>` y no sobre `ZodObject`: así
+ * `refine` conserva el tipo de salida del esquema que entra, y `z.infer` del
+ * resultado sigue trayendo todos los campos en vez de `unknown`.
+ */
+const conReglasCruzadas = <T extends z.ZodType<CamposCruzados>>(esquema: T) =>
+  esquema
+    .refine((d) => d.municipio_codigo.startsWith(d.departamento_codigo), {
+      message: 'El municipio no corresponde al departamento',
+      path: ['municipio_codigo'],
+    })
+    .refine((d) => !d.fecha_fin || !d.fecha_inicio || d.fecha_fin >= d.fecha_inicio, {
+      message: 'La fecha de cierre no puede ser anterior a la de inicio',
+      path: ['fecha_fin'],
+    })
+    .refine((d) => d.categorias.some((c) => c.nivel !== 'no_recibe'), {
+      message: 'Marca al menos una cosa que sí reciban',
+      path: ['categorias'],
+    });
+
+/**
+ * El formulario público. Acá el horario **sí** es obligatorio: quien registra su
+ * propio punto sabe a qué hora abre, y es el dato que evita el viaje perdido.
+ */
+export const esquemaRegistro = conReglasCruzadas(
+  z.object({
+    ...camposComunes,
+    // El horario llega estructurado desde el selector; el texto legible se
+    // genera después, en el servidor, para que no puedan contradecirse.
+    horarios: z.array(franja).min(1, 'Marca al menos un día de atención').max(21),
+  }),
+);
+
+/**
+ * El formulario de moderación. Igual, salvo que el horario puede quedar vacío.
+ *
+ * Quien modera muchas veces no lo sabe: está corrigiendo un teléfono de un punto
+ * que se cargó desde una lista, o acaba de colgar con alguien que dijo "eso
+ * depende del día". Exigirlo bloqueaba el resto de la edición —no se podía
+ * arreglar ni una dirección sin inventarse un horario—, y inventarlo es peor que
+ * no tenerlo: el sello de "Abierto ahora" saldría mintiendo.
+ *
+ * Sin franjas no hay sello, que es justo lo que dice D12. La base ya permite
+ * `horarios` nulo; lo único que sobraba era esta validación.
+ */
+export const esquemaModeracion = conReglasCruzadas(
+  z.object({
+    ...camposComunes,
+    horarios: z.array(franja).max(21).default([]),
+  }),
+);
 
 export type DatosRegistro = z.infer<typeof esquemaRegistro>;
 

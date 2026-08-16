@@ -30,6 +30,14 @@ function AvisarCentro({ alMover }: { alMover: (lat: number, lng: number) => void
  * Mueve el mapa cuando cambia el municipio elegido o cuando la persona pide su
  * ubicación. Son dos efectos separados porque son dos disparadores distintos, y
  * así el último en cambiar es el que manda, sin tener que sincronizar estados.
+ *
+ * Las dependencias son los números y no el objeto, a propósito. Con el objeto,
+ * un padre que pasara `{lat, lng}` como literal —cosa perfectamente razonable de
+ * escribir— entraba en bucle: cada render creaba una referencia nueva, el efecto
+ * se disparaba, `setView` emitía `moveend`, el `moveend` avisaba al padre, el
+ * padre re-renderizaba y otra vez. Desde afuera no parecía un bucle sino una
+ * página muerta. Comparar valores en vez de identidades cierra esa puerta para
+ * cualquiera que use este componente después.
  */
 function Recentrar({
   municipio,
@@ -39,14 +47,17 @@ function Recentrar({
   usuario: [number, number] | null;
 }) {
   const mapa = useMap();
+  const lat = municipio?.lat ?? null;
+  const lng = municipio?.lng ?? null;
+  const [latUsuario, lngUsuario] = usuario ?? [null, null];
 
   useEffect(() => {
-    if (municipio) mapa.setView([municipio.lat, municipio.lng], Math.max(mapa.getZoom(), 15));
-  }, [municipio, mapa]);
+    if (lat !== null && lng !== null) mapa.setView([lat, lng], Math.max(mapa.getZoom(), 15));
+  }, [lat, lng, mapa]);
 
   useEffect(() => {
-    if (usuario) mapa.setView(usuario, 17);
-  }, [usuario, mapa]);
+    if (latUsuario !== null && lngUsuario !== null) mapa.setView([latUsuario, lngUsuario], 17);
+  }, [latUsuario, lngUsuario, mapa]);
 
   return null;
 }
