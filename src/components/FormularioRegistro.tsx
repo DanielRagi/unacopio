@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { useActionState, useEffect, useMemo, useState } from 'react';
+import { useActionState, useEffect, useMemo, useRef, useState } from 'react';
 import { SelectorCategorias } from './SelectorCategorias';
 import { SelectorHorario } from './SelectorHorario';
 import { registrarPunto } from '@/app/registrar/acciones';
@@ -42,10 +42,63 @@ export function FormularioRegistro({
   const previos = estado.estado === 'error' ? estado.valores : {};
   const antes = (campo: string) => previos[campo] ?? '';
 
+  // `tipoOrganizacion` y no `tipo`: adentro del <select> hay un `map` cuyo
+  // parámetro se llama `tipo`, y ensombrecerlo es pedir una confusión.
+  const [tipoOrganizacion, setTipoOrganizacion] = useState(previos.tipo_organizacion ?? '');
   const [dep, setDep] = useState(previos.departamento_codigo ?? '');
   const [mun, setMun] = useState(previos.municipio_codigo ?? '');
   const [municipios, setMunicipios] = useState<Municipio[]>([]);
   const [coordenadas, setCoordenadas] = useState<{ lat: number; lng: number } | null>(null);
+
+  /*
+   * Volver a pintar los <select> después de un envío fallido.
+   *
+   * React 19, al terminar una acción de formulario, llama al `reset()` nativo
+   * del `<form>` —se puede ver en `recursivelyResetForms`, que hace
+   * `stateNode.reset()`—. Eso devuelve cada control a su valor POR DEFECTO, y
+   * ahí los `<input>` y los `<select>` se comportan distinto:
+   *
+   *   · Un `<input>` vuelve a su atributo `value`, que React escribe desde
+   *     `defaultValue`. Como ahora ese `defaultValue` trae lo que la persona
+   *     escribió, el reset lo restaura solo. Por eso los campos de texto se
+   *     veían bien.
+   *   · Un `<select>` controlado vuelve a la opción con el atributo `selected`,
+   *     y React, para los controlados, solo toca la PROPIEDAD `selected`, nunca
+   *     el atributo (`updateOptions` recibe `setDefaultSelected = false`). No
+   *     hay atributo que restaurar, así que el navegador cae en la primera
+   *     opción: el placeholder deshabilitado.
+   *
+   * Después del reset React ya no lo arregla, porque su registro del valor no
+   * cambió y se salta la escritura al DOM. El estado de React sigue siendo el
+   * correcto; el único desfasado es el DOM. Por eso la reparación es escribirle
+   * al DOM lo que el estado ya dice, y no tocar el estado: son los `<select>`
+   * los que quedaron atrás, no nosotros.
+   */
+  const formularioRef = useRef<HTMLFormElement>(null);
+
+  useEffect(() => {
+    if (estado.estado !== 'error') return;
+    const formulario = formularioRef.current;
+    if (!formulario) return;
+
+    // Se repara con lo que el servidor devolvió, que es el envío exacto. Los
+    // `<input>` de texto ya los restauró el reset por su cuenta; escribirles el
+    // mismo valor otra vez no molesta, y así no hay que llevar una lista de
+    // cuáles sí y cuáles no.
+    for (const [campo, valor] of Object.entries(estado.valores)) {
+      const control = formulario.elements.namedItem(campo);
+      if (
+        (control instanceof HTMLSelectElement ||
+          control instanceof HTMLTextAreaElement ||
+          (control instanceof HTMLInputElement &&
+            control.type !== 'checkbox' &&
+            control.type !== 'radio')) &&
+        control.value !== valor
+      ) {
+        control.value = valor;
+      }
+    }
+  }, [estado]);
 
   const supabase = useMemo(() => clienteNavegador(), []);
 
@@ -142,7 +195,7 @@ export function FormularioRegistro({
     : null;
 
   return (
-    <form action={enviar} className="flex flex-col gap-8" noValidate>
+    <form ref={formularioRef} action={enviar} className="flex flex-col gap-8" noValidate>
       {mensajeError && (
         <p
           role="alert"
@@ -167,7 +220,8 @@ export function FormularioRegistro({
           <select
             name="tipo_organizacion"
             required
-            defaultValue={antes('tipo_organizacion')}
+            value={tipoOrganizacion}
+            onChange={(e) => setTipoOrganizacion(e.target.value)}
             className={CLASE_ENTRADA}
           >
             <option value="" disabled>Elige una opción</option>
