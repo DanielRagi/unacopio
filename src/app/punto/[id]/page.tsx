@@ -9,10 +9,12 @@ import { SelloFrescura } from '@/components/SelloFrescura';
 import { SelloLleno } from '@/components/SelloLleno';
 import { obtenerPunto } from '@/lib/datos';
 import {
-  enlaceCompartir, enlaceGoogleMaps, enlaceLlamada, enlaceWaze, enlaceWhatsapp, urlPunto,
+  enlaceCompartir, enlaceGoogleMaps, enlaceInstagram, enlaceLlamada, enlaceWaze,
+  enlaceWhatsapp, urlPunto,
 } from '@/lib/enlaces';
 import { AVISOS, TIPOS_ORGANIZACION } from '@/lib/textos';
 import type { PuntoPublico } from '@/lib/tipos';
+import { esTelefonoMarcable } from '@/lib/validacion';
 
 export async function generateMetadata({ params }: PageProps<'/punto/[id]'>): Promise<Metadata> {
   const { id } = await params;
@@ -124,11 +126,30 @@ export default async function PaginaPunto({ params }: PageProps<'/punto/[id]'>) 
 
         <Seccion titulo="Quién responde">
           <p className="text-lg">{punto.responsable_nombre}</p>
-          {punto.telefono ? (
+          {esTelefonoMarcable(punto.telefono) && (
             <p className="text-black/70 dark:text-white/70">{punto.telefono}</p>
-          ) : (
+          )}
+          {punto.instagram && (
+            <p className="text-black/70 dark:text-white/70">
+              <a
+                href={enlaceInstagram(punto.instagram)}
+                target="_blank"
+                rel="noreferrer"
+                className="underline underline-offset-4"
+              >
+                @{punto.instagram}
+              </a>{' '}
+              en Instagram
+            </p>
+          )}
+          {!esTelefonoMarcable(punto.telefono) && !punto.instagram && (
             <p className="text-sm text-black/50 dark:text-white/50">
               No autorizaron publicar el teléfono.
+            </p>
+          )}
+          {!esTelefonoMarcable(punto.telefono) && punto.instagram && (
+            <p className="text-sm text-black/50 dark:text-white/50">
+              Este punto no tiene teléfono público: se coordina por Instagram.
             </p>
           )}
         </Seccion>
@@ -188,7 +209,13 @@ function Acciones({ punto }: { punto: PuntoPublico }) {
           Abrir en Waze
         </a>
       </div>
-      {punto.telefono && (
+      {/*
+        Solo se ofrece llamar cuando hay algo que marcar. `telefono` puede traer
+        "Por confirmar" —los puntos que se coordinan por Instagram, y los que
+        entraron por importación— y un botón que abre el marcador con basura
+        hace creer que el sitio está roto.
+      */}
+      {esTelefonoMarcable(punto.telefono) && (
         <div className="flex gap-2">
           <a href={enlaceLlamada(punto.telefono)} className={secundario}>
             Llamar
@@ -205,6 +232,17 @@ function Acciones({ punto }: { punto: PuntoPublico }) {
             </a>
           )}
         </div>
+      )}
+
+      {punto.instagram && (
+        <a
+          href={enlaceInstagram(punto.instagram)}
+          target="_blank"
+          rel="noreferrer"
+          className={secundario}
+        >
+          Escribir por Instagram
+        </a>
       )}
     </div>
   );

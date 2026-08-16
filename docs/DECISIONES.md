@@ -376,3 +376,46 @@ nada, ahí sí cae al centroide más cercano.
 Para la distancia de verdad sigue estando el botón de GPS, que sí pide permiso.
 La IP da ciudad —y a veces la del proveedor, no la de la persona—, así que se usa
 para elegir un punto de partida, nunca para calcular "a 1,2 km".
+
+## D17. El teléfono deja de ser obligatorio; Instagram entra como contacto
+
+Aparece un caso que el diseño no contemplaba: puntos cuyo único contacto es una
+cuenta de Instagram. Pasa con colectivos, con parroquias jóvenes y con
+fundaciones chicas, que coordinan todo por ahí y no tienen un número que
+contesten. Antes tenían dos salidas, las dos malas: quedarse por fuera del
+directorio, o inventarse un teléfono para pasar la validación.
+
+Un teléfono inventado es peor que ninguno. Manda a un donante a marcarle a un
+desconocido, y hace que la ronda de verificación gaste llamadas en un número que
+nunca fue de nadie.
+
+Entonces:
+
+- **`telefono` acepta texto.** Lo que no sea marcable queda como "Por
+  confirmar". La columna sigue siendo `not null` porque siempre hay algo que
+  decir ahí, y el flujo de moderación se apoya en que exista.
+- **La ficha no ofrece "Llamar" ni WhatsApp cuando no hay número**, y la cola de
+  llamadas muestra el Instagram en lugar del teléfono. Un botón que abre el
+  marcador con basura hace creer que el sitio está roto, y con razón.
+- **La validación cambia de pregunta.** Ya no es "¿esto parece un teléfono?"
+  sino "¿hay alguna forma de contactarlos?". Tiene que haber teléfono marcable o
+  Instagram. Un punto sin ninguno de los dos no se puede verificar ni
+  preguntarle nada, y publicar una dirección que nadie puede confirmar es
+  exactamente lo que hace que la gente pierda el viaje.
+
+**Instagram no pasa por el consentimiento del teléfono**, y la diferencia es
+deliberada. Un número de celular es un dato personal que hay que autorizar (Ley
+1581 de 2012, ver D4). Una cuenta de Instagram que alguien escribe en un campo
+que dice "se publica" ya es pública, y es justamente por donde quiere que le
+escriban: pedirle una segunda autorización para publicar lo que acaba de
+ofrecer como canal de contacto sería teatro.
+
+Se guarda normalizado —sin arroba, sin URL, en minúsculas— porque la gente lo
+escribe de cinco formas distintas y guardar cada variante impide compararlas y
+armar el enlace. La normalización corre en la aplicación y también dentro de
+`registrar_punto`, que es pública y tiene que defenderse sola.
+
+**Lo que esto le cuesta a la ronda de llamadas (D10):** un punto de Instagram no
+se llama, se le escribe, y eso es más lento y deja menos información que una
+conversación. Si terminan siendo muchos, la regla de "N puntos son N/2 llamadas
+al día" deja de servir para estimar el trabajo.

@@ -237,6 +237,7 @@ export interface PuntoModeracion {
   lng: number;
   responsable_nombre: string;
   telefono: string;
+  instagram: string | null;
   whatsapp: boolean;
   telefono_publico: boolean;
   correo: string | null;
@@ -254,7 +255,7 @@ export interface PuntoModeracion {
 
 const CAMPOS_MODERACION = `
   id, nombre, tipo_organizacion, direccion, barrio, referencia, lat, lng,
-  responsable_nombre, telefono, whatsapp, telefono_publico, correo,
+  responsable_nombre, telefono, instagram, whatsapp, telefono_publico, correo,
   horario_texto, notas, estado, entidad_oficial, ultima_verificacion,
   reportes_abiertos, creado_en,
   municipios(nombre), departamentos(nombre),
@@ -305,6 +306,7 @@ export interface PuntoPorLlamar {
   nombre: string;
   estado: EstadoPunto;
   telefono: string;
+  instagram: string | null;
   whatsapp: boolean;
   responsable_nombre: string;
   correo: string | null;
@@ -332,7 +334,7 @@ export async function listarPorLlamar(): Promise<PuntoPorLlamar[]> {
   const { data, error } = await supabase
     .from('puntos')
     .select(`
-      id, nombre, estado, telefono, whatsapp, responsable_nombre, correo,
+      id, nombre, estado, telefono, instagram, whatsapp, responsable_nombre, correo,
       ultima_verificacion, ultimo_intento_llamada, intentos_fallidos,
       municipios(nombre), departamentos(nombre)
     `)
@@ -423,7 +425,7 @@ export async function obtenerPuntoParaEditar(id: string) {
     .select(`
       id, nombre, tipo_organizacion, departamento_codigo, municipio_codigo,
       direccion, barrio, referencia, lat, lng,
-      responsable_nombre, telefono, whatsapp,
+      responsable_nombre, telefono, instagram, whatsapp,
       telefono_publico, correo, horarios, fecha_inicio, fecha_fin,
       recibe_voluntarios, notas,
       punto_categoria(categoria_slug, nivel)

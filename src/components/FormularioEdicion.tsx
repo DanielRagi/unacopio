@@ -32,6 +32,7 @@ export interface PuntoEditable {
   referencia: string | null;
   responsable_nombre: string;
   telefono: string;
+  instagram: string | null;
   whatsapp: boolean;
   telefono_publico: boolean;
   correo: string | null;
@@ -195,6 +196,21 @@ export function FormularioEdicion({
         </Campo>
         <Campo etiqueta="Teléfono" error={errores.telefono}>
           <input name="telefono" defaultValue={punto.telefono} className={ENTRADA} />
+        </Campo>
+        <p className="-mt-2 text-sm text-black/55 dark:text-white/55">
+          Si no hay un número que contesten, déjalo en «Por confirmar» y llena el
+          Instagram. La ficha deja de ofrecer «Llamar» en vez de mandar a marcar
+          a la nada.
+        </p>
+
+        <Campo etiqueta="Instagram del punto" error={errores.instagram}>
+          <input
+            name="instagram"
+            defaultValue={punto.instagram ?? ''}
+            autoCapitalize="none"
+            placeholder="@acopiobarrioabajo"
+            className={ENTRADA}
+          />
         </Campo>
         <label className="flex items-center gap-2.5">
           <input type="checkbox" name="whatsapp" defaultChecked={punto.whatsapp} className="size-4" />

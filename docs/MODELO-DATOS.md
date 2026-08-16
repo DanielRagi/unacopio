@@ -27,9 +27,10 @@ El registro central. Un punto de acopio.
 | `ubicacion` | `geography(Point,4326)` | pin puesto en el mapa por quien registra |
 | `lat` / `lng` | `double precision` | columnas generadas a partir de `ubicacion`, para no desempacar el geography en el cliente |
 | `responsable_nombre` | `text` | |
-| `telefono` | `text` | E.164 → `+57...` |
+| `telefono` | `text` | E.164 → `+57...`, **o el texto "Por confirmar"** cuando no hay número que marcar. La app pregunta por `esTelefonoMarcable()` antes de ofrecer "Llamar" o WhatsApp: un botón que abre el marcador con basura es peor que no tener botón |
 | `whatsapp` | `boolean` | si ese número recibe WhatsApp |
 | `telefono_publico` | `boolean` | consentimiento Habeas Data; si es `false`, solo lo ve moderación |
+| `instagram` | `text null` | Usuario sin arroba y en minúsculas. **Se publica** aunque no haya consentimiento del teléfono: son cosas distintas, y una cuenta escrita en un campo que dice "se publica" ya es pública. Es el contacto de los puntos que solo se coordinan por ahí |
 | `correo` | `text null` | interno, para el enlace de edición y el recordatorio de 48h; nunca se publica. Nulable en la base por las cargas de moderación e importación, pero **obligatorio en el formulario público**: desde D8 es el único canal de vuelta hacia el responsable |
 | `horario_texto` | `text` | lo que lee la persona. **Se genera** a partir de `horarios`, no se escribe aparte: si el texto y las franjas pudieran contradecirse, el badge diría una cosa y la ficha otra |
 | `horarios` | `jsonb null` | franjas estructuradas: `[{"dia":1,"desde":"08:00","hasta":"18:00"}]`, con `dia` 0=domingo…6=sábado, igual que `Date.getDay()`. De aquí sale el badge "Abierto ahora", calculado en hora de Colombia. Null en los registros viejos y en las cargas de moderación: sin franjas no se muestra badge |

@@ -159,6 +159,7 @@ export async function ejecutarImportacion(
       p_notas: p.notas ?? null,
       p_fuente_nombre: p.fuente_nombre ?? null,
       p_fuente_url: p.fuente_url ?? null,
+      p_instagram: p.instagram ?? null,
     });
 
     if (error) fallidos.push({ numero: fila.numero, nombre: fila.nombre, mensaje: error.message });

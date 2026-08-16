@@ -122,6 +122,12 @@ create index if not exists puntos_origen_idx on puntos (origen, estado);
  * Exige sesión de moderador. No es `security definer` por gusto: necesita crear
  * el `geography`, que PostgREST no sabe construir desde el cliente.
  */
+-- Se borra primero. Migraciones posteriores le agregan parámetros, y en
+-- Postgres agregar un parámetro no reemplaza la función: crea una sobrecarga.
+-- Sin esto, volver a correr este archivo dejaba dos `importar_punto` y el
+-- `revoke` de abajo fallaba con «function name is not unique».
+drop function if exists importar_punto;
+
 create or replace function importar_punto(
   p_nombre              text,
   p_tipo_organizacion   tipo_organizacion,

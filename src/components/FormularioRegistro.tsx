@@ -211,11 +211,14 @@ export function FormularioRegistro({
           <input name="responsable_nombre" required className={CLASE_ENTRADA} />
         </Campo>
 
-        <Campo etiqueta="Teléfono" error={errores.telefono}>
+        <Campo
+          etiqueta="Teléfono"
+          ayuda="Si no tienen un número que contesten, déjalo vacío y escribe el Instagram abajo"
+          error={errores.telefono}
+        >
           <input
             name="telefono"
             type="tel"
-            required
             inputMode="tel"
             placeholder="300 123 4567"
             className={CLASE_ENTRADA}
@@ -226,6 +229,26 @@ export function FormularioRegistro({
           <input type="checkbox" name="whatsapp" defaultChecked className="mt-0.5 size-4" />
           <span className="text-sm">Ese número recibe WhatsApp</span>
         </label>
+
+        {/*
+          Instagram no pasa por la casilla de Habeas Data del teléfono: son cosas
+          distintas. Un celular es un dato personal que hay que autorizar; una
+          cuenta de Instagram escrita en un campo que dice "se publica" ya es
+          pública, y es justo por donde quieren que les escriban.
+        */}
+        <Campo
+          etiqueta="Instagram del punto"
+          ayuda="Se publica. Es el contacto para los puntos que se coordinan por ahí"
+          error={errores.instagram}
+        >
+          <input
+            name="instagram"
+            inputMode="text"
+            autoCapitalize="none"
+            placeholder="@acopiobarrioabajo"
+            className={CLASE_ENTRADA}
+          />
+        </Campo>
 
         <label className="flex items-start gap-2.5 rounded-lg bg-black/[0.03] p-3 dark:bg-white/5">
           <input type="checkbox" name="telefono_publico" className="mt-0.5 size-4" />

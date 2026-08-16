@@ -61,9 +61,14 @@ export interface PuntoPublico {
   lat: number;
   lng: number;
   responsable_nombre: string;
-  /** null si la persona no autorizó publicarlo (Habeas Data) */
+  /**
+   * null si la persona no autorizó publicarlo (Habeas Data). Puede traer un
+   * texto en vez de un número —"Por confirmar"— cuando el contacto es Instagram.
+   */
   telefono: string | null;
   whatsapp: boolean;
+  /** Usuario de Instagram, sin arroba. Se publica siempre que exista. */
+  instagram: string | null;
   horario_texto: string;
   horarios: unknown | null;
   fecha_inicio: string | null;

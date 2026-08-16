@@ -46,6 +46,51 @@ select jsonb_array_length(horarios) as franjas_guardadas,
        horarios -> 0 ->> 'desde' as primera_apertura
 from puntos where id = :'punto_id';
 
+\echo '--- un punto cuyo unico contacto es Instagram'
+select registrar_punto(
+  p_nombre => 'Colectivo Barrio Abajo', p_tipo_organizacion => 'ong',
+  p_departamento_codigo => '17', p_municipio_codigo => '17001',
+  p_direccion => 'Calle 20 # 5-10', p_lat => 5.0690, p_lng => -75.5170,
+  p_responsable_nombre => 'Sara Ruiz',
+  -- Sin numero: el unico canal es la cuenta.
+  p_telefono => '', p_horario_texto => 'Fines de semana',
+  p_categorias => '[{"slug":"agua_embotellada","nivel":"si"}]'::jsonb,
+  -- La URL completa, como la pega alguien que copió del navegador.
+  p_instagram => 'https://www.instagram.com/BarrioAbajo/?hl=es'
+) as solo_ig \gset
+
+select telefono, instagram from puntos where id = :'solo_ig';
+
+\echo '--- usuario_instagram: todas las formas terminan igual'
+select entrada, usuario_instagram(entrada) as usuario
+from (values
+  ('@Acopio'), ('acopio'), ('instagram.com/acopio'),
+  ('https://www.instagram.com/acopio/'), ('https://instagram.com/acopio?hl=es'),
+  ('@@acopio'), ('   '), (null)
+) as t(entrada);
+
+\echo '--- sin telefono y sin Instagram no se puede registrar'
+do $$
+begin
+  perform registrar_punto('Sin contacto','ong','17','17001','Calle 1', 5.07, -75.51,
+                          'Nadie','','x','[]'::jsonb);
+  raise exception 'FALLA: acepto un punto sin ninguna forma de contacto';
+exception
+  when others then
+    if sqlerrm like '%telefono%' or sqlerrm like '%teléfono%'
+      then raise notice 'OK: exige teléfono o Instagram';
+    else raise; end if;
+end
+$$;
+
+\echo '--- publicado, el Instagram SI sale (no pasa por el consentimiento del telefono)'
+update puntos set estado = 'publicado', telefono_publico = false where id = :'solo_ig';
+set role anon;
+select nombre, telefono as telefono_enmascarado, instagram
+from puntos_publicos where id = :'solo_ig';
+reset role;
+delete from puntos where id = :'solo_ig';
+
 \echo '--- un horario que no sea lista debe ser rechazado'
 do $$
 begin

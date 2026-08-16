@@ -79,6 +79,7 @@ export async function registrarPunto(
     p_fecha_fin: datos.fecha_fin ?? null,
     p_recibe_voluntarios: datos.recibe_voluntarios,
     p_notas: datos.notas ?? null,
+    p_instagram: datos.instagram ?? null,
   });
 
   if (error) {

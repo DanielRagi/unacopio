@@ -228,6 +228,7 @@ export async function guardarPunto(
       referencia: datos.referencia ?? null,
       responsable_nombre: datos.responsable_nombre,
       telefono: datos.telefono,
+      instagram: datos.instagram ?? null,
       whatsapp: datos.whatsapp,
       telefono_publico: datos.telefono_publico,
       correo: datos.correo ?? null,

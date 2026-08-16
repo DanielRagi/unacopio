@@ -18,12 +18,56 @@ const TIPOS = [
 
 const NIVELES = ['alta', 'si', 'no_recibe'] as const;
 
+/** Lo que queda en `telefono` cuando no hay un número que marcar. */
+export const SIN_TELEFONO = 'Por confirmar';
+
+/**
+ * ¿Ese "teléfono" se puede marcar?
+ *
+ * La columna `telefono` no siempre trae un número. Hay puntos cuyo único
+ * contacto es Instagram, y ahí dice "Por confirmar"; los que entraron por
+ * importación pueden decir "por conseguir". Ofrecerles un botón de "Llamar" que
+ * abre el marcador con basura es peor que no ofrecer nada: la persona cree que
+ * el sitio está roto, y con razón.
+ *
+ * Siete dígitos es el mínimo real en Colombia (un fijo sin indicativo).
+ */
+export function esTelefonoMarcable(telefono: string | null | undefined): telefono is string {
+  if (!telefono) return false;
+  const digitos = telefono.replace(/\D/g, '');
+  return digitos.length >= 7 && digitos.length <= 13;
+}
+
+/**
+ * Deja el usuario de Instagram en su forma canónica: sin arroba, sin URL, en
+ * minúsculas.
+ *
+ * La gente lo escribe de todas las formas —`@acopio`, `instagram.com/acopio`,
+ * `https://www.instagram.com/acopio/?hl=es`— y guardar cada variante tal cual
+ * significa no poder compararlas ni armar el enlace.
+ */
+export function normalizarInstagram(entrada: string): string {
+  return entrada
+    .trim()
+    .replace(/^https?:\/\//i, '')
+    .replace(/^(www\.)?instagram\.com\//i, '')
+    .replace(/[?#].*$/, '')
+    .replace(/\/+$/, '')
+    .replace(/^@+/, '')
+    .toLowerCase();
+}
+
 /**
  * Deja el teléfono en formato +57XXXXXXXXXX cuando se puede deducir.
- * Se acepta como lo escriba la gente: con espacios, guiones, con o sin +57.
+ *
+ * Se acepta como lo escriba la gente: con espacios, guiones, con o sin +57. Y
+ * si lo que llegó no es un número —"Por confirmar", "solo Instagram", vacío—
+ * se devuelve el marcador tal cual en vez de fabricar un `+57` con basura
+ * detrás, que después terminaría en un botón de "Llamar" que no marca nada.
  */
 export function normalizarTelefono(entrada: string): string {
   const digitos = entrada.replace(/\D/g, '');
+  if (digitos.length < 7 || digitos.length > 13) return SIN_TELEFONO;
   if (digitos.length === 12 && digitos.startsWith('57')) return `+${digitos}`;
   if (digitos.length === 10) return `+57${digitos}`;
   return `+57${digitos}`;
@@ -73,13 +117,35 @@ const camposComunes = {
       .min(3, 'Escribe el nombre de quien responde')
       .max(120),
 
-    telefono: z.string().trim()
-      .min(7, 'Escribe un teléfono de contacto')
-      .refine((v) => {
-        const d = v.replace(/\D/g, '');
-        return d.length >= 7 && d.length <= 12;
-      }, 'Ese teléfono no parece completo')
-      .transform(normalizarTelefono),
+    /*
+     * El teléfono ya no exige ser un número.
+     *
+     * Hay puntos —colectivos, fundaciones chicas— cuyo único contacto real es
+     * una cuenta de Instagram. Antes tenían que inventarse un número para poder
+     * registrarse, y un número inventado es peor que ninguno: manda a la gente
+     * a marcar a un desconocido y hace que la ronda de verificación pierda el
+     * tiempo. Lo que no sea marcable queda como "Por confirmar", y la ficha
+     * simplemente no ofrece el botón de llamar.
+     *
+     * La regla que reemplaza a esta —tiene que haber teléfono o Instagram— está
+     * abajo, en las reglas cruzadas, porque mira dos campos a la vez.
+     */
+    telefono: z.string().trim().max(60).transform(normalizarTelefono),
+
+    /** Sin arroba y en minúsculas. Se publica: es el canal de contacto. */
+    instagram: z
+      .string()
+      .trim()
+      .max(120)
+      .optional()
+      .transform((v) => {
+        const usuario = v ? normalizarInstagram(v) : '';
+        return usuario === '' ? undefined : usuario;
+      })
+      .refine(
+        (v) => v === undefined || /^[a-z0-9._]{1,30}$/.test(v),
+        'Ese usuario de Instagram no parece válido',
+      ),
 
     whatsapp: z.coerce.boolean().default(false),
     telefono_publico: z.coerce.boolean().default(false),
@@ -107,6 +173,8 @@ const camposComunes = {
 interface CamposCruzados {
   departamento_codigo: string;
   municipio_codigo: string;
+  telefono: string;
+  instagram?: string;
   fecha_inicio?: string;
   fecha_fin?: string;
   categorias: { slug: string; nivel: NivelCategoria }[];
@@ -132,6 +200,18 @@ const conReglasCruzadas = <T extends z.ZodType<CamposCruzados>>(esquema: T) =>
     .refine((d) => d.categorias.some((c) => c.nivel !== 'no_recibe'), {
       message: 'Marca al menos una cosa que sí reciban',
       path: ['categorias'],
+    })
+    /*
+     * Alguna forma de contactarlos, la que sea.
+     *
+     * Reemplaza a la vieja validación de teléfono. Un punto sin número marcable
+     * y sin Instagram no se puede verificar por teléfono ni preguntarle nada, y
+     * publicar una dirección que nadie puede confirmar es exactamente lo que
+     * hace que la gente pierda el viaje.
+     */
+    .refine((d) => esTelefonoMarcable(d.telefono) || d.instagram !== undefined, {
+      message: 'Hace falta un teléfono o un Instagram para poder contactarlos',
+      path: ['telefono'],
     });
 
 /**
@@ -210,6 +290,7 @@ export function leerFormulario(formData: FormData): Record<string, unknown> {
     lng: texto('lng') === '' ? undefined : texto('lng'),
     responsable_nombre: texto('responsable_nombre'),
     telefono: texto('telefono'),
+    instagram: texto('instagram'),
     whatsapp: formData.get('whatsapp') !== null,
     telefono_publico: formData.get('telefono_publico') !== null,
     correo: texto('correo'),
