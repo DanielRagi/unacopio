@@ -7,6 +7,7 @@ import { SelectorCategorias } from './SelectorCategorias';
 import { SelectorHorario } from './SelectorHorario';
 import { registrarPunto } from '@/app/registrar/acciones';
 import { ESTADO_INICIAL } from '@/lib/estados';
+import type { Franja } from '@/lib/horarios';
 import { clienteNavegador } from '@/lib/supabase/cliente';
 import { AVISOS, TIPOS_ORGANIZACION } from '@/lib/textos';
 import type { Categoria, Departamento, Municipio, TipoOrganizacion } from '@/lib/tipos';
@@ -29,10 +30,66 @@ export function FormularioRegistro({
 }) {
   const [estado, enviar, enviando] = useActionState(registrarPunto, ESTADO_INICIAL);
 
-  const [dep, setDep] = useState('');
-  const [mun, setMun] = useState('');
+  /*
+   * Lo que la persona había escrito antes del error.
+   *
+   * Llega de vuelta del servidor y se usa como `defaultValue` de cada campo:
+   * es la única forma de que un formulario no controlado sobreviva a un envío
+   * fallido. Sin esto, una tilde de más en el teléfono borraba media hora de
+   * trabajo — que en un celular, en la calle, es motivo suficiente para no
+   * volver a intentarlo.
+   */
+  const previos = estado.estado === 'error' ? estado.valores : {};
+  const antes = (campo: string) => previos[campo] ?? '';
+
+  const [dep, setDep] = useState(previos.departamento_codigo ?? '');
+  const [mun, setMun] = useState(previos.municipio_codigo ?? '');
   const [municipios, setMunicipios] = useState<Municipio[]>([]);
-  const [coordenadas, setCoordenadas] = useState<{ lat: number; lng: number } | null>(null);
+  const [coordenadas, setCoordenadas] = useState<{ lat: number; lng: number } | null>(
+    previos.lat && previos.lng ? { lat: Number(previos.lat), lng: Number(previos.lng) } : null,
+  );
+
+  /*
+   * El pin lo movió la persona, así que la dirección ya no manda.
+   *
+   * Sin esta bandera, escribir la dirección después de haber ajustado el pin a
+   * mano se lo movería otra vez, y sería exasperante: el mapa peleando contra
+   * quien lo usa.
+   */
+  const [pinPropio, setPinPropio] = useState(Boolean(previos.lat));
+  const [buscandoDireccion, setBuscandoDireccion] = useState(false);
+  const [ubicadoPorDireccion, setUbicadoPorDireccion] = useState(false);
+
+  /**
+   * Busca la dirección escrita y mueve el pin si la encuentra.
+   *
+   * Se dispara al salir del campo, no en cada tecla: es una consulta a un
+   * servicio ajeno y no hay por qué hacer veinte cuando la persona todavía
+   * está escribiendo el número. Si no encuentra nada, no pasa nada.
+   */
+  const ubicarPorDireccion = async (direccion: string) => {
+    const elegido = municipios.find((m) => m.codigo === mun);
+    if (pinPropio || !elegido?.lat || !elegido?.lng || direccion.trim().length < 6) return;
+
+    setBuscandoDireccion(true);
+    try {
+      const parametros = new URLSearchParams({
+        direccion,
+        municipio: elegido.nombre,
+        lat: String(elegido.lat),
+        lng: String(elegido.lng),
+      });
+      const { resultado } = await (await fetch(`/api/geocodificar?${parametros}`)).json();
+      if (resultado) {
+        setCoordenadas({ lat: resultado.lat, lng: resultado.lng });
+        setUbicadoPorDireccion(true);
+      }
+    } catch {
+      // El mapa se queda donde está. Es una ayuda, no un requisito.
+    } finally {
+      setBuscandoDireccion(false);
+    }
+  };
 
   const supabase = useMemo(() => clienteNavegador(), []);
 
@@ -75,11 +132,67 @@ export function FormularioRegistro({
 
   const errores = estado.estado === 'error' ? estado.errores : {};
 
+  /*
+   * Las categorías y el horario también vuelven.
+   *
+   * Las categorías llegan como campos sueltos `cat_<slug>`, igual que las manda
+   * el formulario; el horario viaja como JSON en un campo oculto. Si el JSON
+   * llegó roto se ignora en vez de reventar el render: peor que perder el
+   * horario es perder toda la página.
+   */
+  const categoriasPrevias = Object.fromEntries(
+    Object.entries(previos)
+      .filter(([campo, valor]) => campo.startsWith('cat_') && valor !== '')
+      .map(([campo, valor]) => [campo.slice(4), valor]),
+  );
+
+  const franjasPrevias = ((): Franja[] => {
+    try {
+      const leidas = JSON.parse(previos.horarios ?? '[]');
+      return Array.isArray(leidas) ? (leidas as Franja[]) : [];
+    } catch {
+      return [];
+    }
+  })();
+
+  const hayErrores = estado.estado === 'error';
+  const camposConError = Object.entries(errores).filter(([, m]) => m && m.length > 0) as [
+    string,
+    string[],
+  ][];
+
+  /**
+   * Lleva al campo que falló y le pone el foco.
+   *
+   * Se busca por el `name` del control en vez de repartir `id` por todo el
+   * formulario: son treinta campos y esto no obliga a tocar ninguno. Los que no
+   * son un control —las categorías, el horario— caen a su bloque por el id de
+   * la sección.
+   */
+  const irAlCampo = (campo: string) => (evento: React.MouseEvent) => {
+    evento.preventDefault();
+    const formulario = (evento.currentTarget as HTMLElement).closest('form');
+    const control = formulario?.elements.namedItem(campo);
+    const destino =
+      control instanceof HTMLElement
+        ? control
+        : formulario?.querySelector<HTMLElement>(`#bloque-${campo}`);
+
+    destino?.scrollIntoView({ block: 'center', behavior: 'smooth' });
+    if (control instanceof HTMLElement && 'focus' in control) control.focus({ preventScroll: true });
+  };
+  const mensajeError = hayErrores
+    ? (estado.mensaje ?? 'Revisa los campos marcados y vuelve a enviar.')
+    : null;
+
   return (
     <form action={enviar} className="flex flex-col gap-8" noValidate>
-      {estado.estado === 'error' && (
-        <p className="rounded-xl border border-red-500/40 bg-red-500/10 p-4 text-sm font-medium text-red-800 dark:text-red-300">
-          {estado.mensaje ?? 'Revisa los campos marcados y vuelve a enviar.'}
+      {mensajeError && (
+        <p
+          role="alert"
+          className="rounded-xl border border-red-500/40 bg-red-500/10 p-4 text-sm font-medium text-red-800 dark:text-red-300"
+        >
+          {mensajeError}
         </p>
       )}
 
@@ -88,13 +201,19 @@ export function FormularioRegistro({
           <input
             name="nombre"
             required
+            defaultValue={antes('nombre')}
             placeholder="Parroquia San José, Coliseo Municipal…"
             className={CLASE_ENTRADA}
           />
         </Campo>
 
         <Campo etiqueta="¿Quién lo organiza?" error={errores.tipo_organizacion}>
-          <select name="tipo_organizacion" required defaultValue="" className={CLASE_ENTRADA}>
+          <select
+            name="tipo_organizacion"
+            required
+            defaultValue={antes('tipo_organizacion')}
+            className={CLASE_ENTRADA}
+          >
             <option value="" disabled>Elige una opción</option>
             {(Object.keys(TIPOS_ORGANIZACION) as TipoOrganizacion[]).map((tipo) => (
               <option key={tipo} value={tipo}>{TIPOS_ORGANIZACION[tipo]}</option>
@@ -145,13 +264,24 @@ export function FormularioRegistro({
           </Campo>
         </div>
 
-        <Campo etiqueta="Dirección" error={errores.direccion}>
-          <input name="direccion" required placeholder="Calle 12 # 4-30" className={CLASE_ENTRADA} />
+        <Campo
+          etiqueta="Dirección"
+          ayuda="Al salir de este campo intentamos ubicarla en el mapa"
+          error={errores.direccion}
+        >
+          <input
+            name="direccion"
+            required
+            defaultValue={antes('direccion')}
+            onBlur={(e) => ubicarPorDireccion(e.target.value)}
+            placeholder="Calle 12 # 4-30"
+            className={CLASE_ENTRADA}
+          />
         </Campo>
 
         <div className="grid gap-4 sm:grid-cols-2">
           <Campo etiqueta="Barrio o vereda" opcional error={errores.barrio}>
-            <input name="barrio" className={CLASE_ENTRADA} />
+            <input name="barrio" defaultValue={antes('barrio')} className={CLASE_ENTRADA} />
           </Campo>
           <Campo
             etiqueta="Cómo ubicarlo"
@@ -161,6 +291,7 @@ export function FormularioRegistro({
           >
             <input
               name="referencia"
+              defaultValue={antes('referencia')}
               placeholder="Frente al parque, portón azul"
               className={CLASE_ENTRADA}
             />
@@ -168,7 +299,22 @@ export function FormularioRegistro({
         </div>
 
         <Campo etiqueta="Marca el punto en el mapa">
-          <MapaSelector centroMunicipio={centroMunicipio} alCambiar={(lat, lng) => setCoordenadas({ lat, lng })} />
+          <MapaSelector
+            centroMunicipio={coordenadas ?? centroMunicipio}
+            alCambiar={(lat, lng) => {
+              setCoordenadas({ lat, lng });
+              setPinPropio(true);
+            }}
+          />
+          <p className="text-sm text-black/55 dark:text-white/55" aria-live="polite">
+            {buscandoDireccion
+              ? 'Buscando la dirección en el mapa…'
+              : pinPropio
+                ? 'Pin puesto por ti. Ya no se mueve solo aunque cambies la dirección.'
+                : ubicadoPorDireccion
+                  ? 'Encontramos la dirección. Revisa que el pin quede sobre la entrada.'
+                  : 'Intentamos ubicar la dirección, pero muchas no las reconoce el mapa. Si estás en el punto, «Usar mi ubicación» es lo más rápido.'}
+          </p>
         </Campo>
 
         <input type="hidden" name="lat" value={coordenadas?.lat ?? ''} />
@@ -176,18 +322,29 @@ export function FormularioRegistro({
       </Bloque>
 
       <Bloque titulo="Cuándo reciben">
+        <div id="bloque-horarios" />
         {errores.horarios && (
           <p className="text-sm font-medium text-red-700 dark:text-red-400">
             {errores.horarios[0]}
           </p>
         )}
-        <SelectorHorario />
+        <SelectorHorario franjas={franjasPrevias} />
         <div className="grid gap-4 sm:grid-cols-2">
           <Campo etiqueta="Desde" opcional error={errores.fecha_inicio}>
-            <input type="date" name="fecha_inicio" className={CLASE_ENTRADA} />
+            <input
+              type="date"
+              name="fecha_inicio"
+              defaultValue={antes('fecha_inicio')}
+              className={CLASE_ENTRADA}
+            />
           </Campo>
           <Campo etiqueta="Hasta" opcional error={errores.fecha_fin}>
-            <input type="date" name="fecha_fin" className={CLASE_ENTRADA} />
+            <input
+              type="date"
+              name="fecha_fin"
+              defaultValue={antes('fecha_fin')}
+              className={CLASE_ENTRADA}
+            />
           </Campo>
         </div>
       </Bloque>
@@ -196,19 +353,30 @@ export function FormularioRegistro({
         titulo="Qué reciben"
         ayuda="Marcar «No llevar» es igual de importante que marcar lo que sí: evita que lleguen cosas que toca botar."
       >
+        <div id="bloque-categorias" />
         {errores.categorias && (
           <p className="text-sm font-medium text-red-700 dark:text-red-400">{errores.categorias[0]}</p>
         )}
-        <SelectorCategorias categorias={categorias} />
+        <SelectorCategorias categorias={categorias} valores={categoriasPrevias} />
         <label className="flex items-center gap-2.5">
-          <input type="checkbox" name="recibe_voluntarios" className="size-4" />
+          <input
+            type="checkbox"
+            name="recibe_voluntarios"
+            defaultChecked={previos.recibe_voluntarios !== undefined}
+            className="size-4"
+          />
           <span className="text-sm">También necesitamos voluntarios</span>
         </label>
       </Bloque>
 
       <Bloque titulo="Quién responde">
         <Campo etiqueta="Nombre del responsable" error={errores.responsable_nombre}>
-          <input name="responsable_nombre" required className={CLASE_ENTRADA} />
+          <input
+            name="responsable_nombre"
+            required
+            defaultValue={antes('responsable_nombre')}
+            className={CLASE_ENTRADA}
+          />
         </Campo>
 
         <Campo
@@ -220,13 +388,19 @@ export function FormularioRegistro({
             name="telefono"
             type="tel"
             inputMode="tel"
+            defaultValue={antes('telefono')}
             placeholder="300 123 4567"
             className={CLASE_ENTRADA}
           />
         </Campo>
 
         <label className="flex items-start gap-2.5">
-          <input type="checkbox" name="whatsapp" defaultChecked className="mt-0.5 size-4" />
+          <input
+            type="checkbox"
+            name="whatsapp"
+            defaultChecked={estado.estado === 'error' ? previos.whatsapp !== undefined : true}
+            className="mt-0.5 size-4"
+          />
           <span className="text-sm">Ese número recibe WhatsApp</span>
         </label>
 
@@ -245,13 +419,19 @@ export function FormularioRegistro({
             name="instagram"
             inputMode="text"
             autoCapitalize="none"
+            defaultValue={antes('instagram')}
             placeholder="@acopiobarrioabajo"
             className={CLASE_ENTRADA}
           />
         </Campo>
 
         <label className="flex items-start gap-2.5 rounded-lg bg-black/[0.03] p-3 dark:bg-white/5">
-          <input type="checkbox" name="telefono_publico" className="mt-0.5 size-4" />
+          <input
+            type="checkbox"
+            name="telefono_publico"
+            defaultChecked={previos.telefono_publico !== undefined}
+            className="mt-0.5 size-4"
+          />
           <span className="text-sm">{AVISOS.habeasData}</span>
         </label>
 
@@ -261,13 +441,19 @@ export function FormularioRegistro({
           ayuda="No se publica. Le sirve a moderación para escribirte si no contesta el teléfono."
           error={errores.correo}
         >
-          <input name="correo" type="email" className={CLASE_ENTRADA} />
+          <input
+            name="correo"
+            type="email"
+            defaultValue={antes('correo')}
+            className={CLASE_ENTRADA}
+          />
         </Campo>
 
         <Campo etiqueta="Algo más que deban saber" opcional error={errores.notas}>
           <textarea
             name="notas"
             rows={3}
+            defaultValue={antes('notas')}
             placeholder="Hay parqueadero, se puede descargar en carro…"
             className={CLASE_ENTRADA}
           />
@@ -285,6 +471,39 @@ export function FormularioRegistro({
       />
 
       <div className="flex flex-col gap-3">
+        {/*
+          El mismo aviso, otra vez, justo encima del botón.
+          El de arriba no lo ve nadie: quien envía está al final del formulario y
+          se queda mirando el botón sin saber si pasó algo. Repetirlo acá es feo
+          en un diseño y correcto en un formulario largo.
+        */}
+        {hayErrores && (
+          <div
+            role="alert"
+            className="flex flex-col gap-2 rounded-xl border border-red-500/40 bg-red-500/10 p-4 text-sm text-red-800 dark:text-red-300"
+          >
+            <p className="font-semibold">{mensajeError}</p>
+            {camposConError.length > 0 && (
+              <ul className="flex list-disc flex-col gap-1 pl-5">
+                {camposConError.map(([campo, mensajes]) => (
+                  <li key={campo}>
+                    <a
+                      href={`#bloque-${campo}`}
+                      onClick={irAlCampo(campo)}
+                      className="underline underline-offset-4"
+                    >
+                      {ETIQUETAS[campo] ?? campo}
+                    </a>
+                    : {mensajes[0]}
+                  </li>
+                ))}
+              </ul>
+            )}
+            <p className="text-red-800/80 dark:text-red-300/80">
+              Lo que ya habías escrito sigue ahí: solo corrige lo señalado.
+            </p>
+          </div>
+        )}
         <button
           type="submit"
           disabled={enviando}
@@ -328,6 +547,26 @@ function Confirmacion() {
     </section>
   );
 }
+
+/** Cómo se llama cada campo en el resumen de errores, en cristiano. */
+const ETIQUETAS: Record<string, string> = {
+  nombre: 'Nombre del punto',
+  tipo_organizacion: 'Quién lo organiza',
+  departamento_codigo: 'Departamento',
+  municipio_codigo: 'Municipio',
+  direccion: 'Dirección',
+  barrio: 'Barrio',
+  referencia: 'Cómo ubicarlo',
+  horarios: 'Horario',
+  fecha_inicio: 'Fecha de inicio',
+  fecha_fin: 'Fecha de cierre',
+  categorias: 'Qué reciben',
+  responsable_nombre: 'Nombre del responsable',
+  telefono: 'Teléfono',
+  instagram: 'Instagram',
+  correo: 'Correo',
+  notas: 'Notas',
+};
 
 const CLASE_ENTRADA =
   'w-full rounded-lg border border-black/15 bg-transparent px-3 py-2.5 text-base disabled:opacity-50 dark:border-white/20';

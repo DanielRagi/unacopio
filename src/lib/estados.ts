@@ -10,7 +10,20 @@ import type { FilaRevisada } from './importacion';
 
 export type EstadoRegistro =
   | { estado: 'inicial' }
-  | { estado: 'error'; errores: Record<string, string[]>; mensaje?: string }
+  /**
+   * El error devuelve además **lo que la persona había escrito**.
+   *
+   * Sin eso el formulario se vuelve a renderizar vacío y hay que llenarlo de
+   * cero: media hora de trabajo perdida por una tilde en el teléfono. Los
+   * campos no controlados no conservan nada solos, así que los valores tienen
+   * que dar la vuelta por el servidor y volver como `defaultValue`.
+   */
+  | {
+      estado: 'error';
+      errores: Record<string, string[]>;
+      mensaje?: string;
+      valores: Record<string, string>;
+    }
   | { estado: 'listo'; id: string };
 
 export const ESTADO_INICIAL: EstadoRegistro = { estado: 'inicial' };
