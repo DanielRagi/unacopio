@@ -17,32 +17,41 @@
     "",
     "Ningún ítem va como 'urgente': las fuentes no priorizan, y marcar todo como",
     "urgente arruinaría el agregado de 'lo que más falta'. La urgencia se pregunta",
-    "en la llamada."
+    "en la llamada.",
+    "",
+    "Segunda ronda (15 de agosto): se agregan los puntos que NO son de la Alcaldía — colectivos estudiantiles, una librería, tiendas de mascotas—. Esos son los que más se mueven y los que primero cierran, así que son los que más urge llamar."
   ],
-
   "municipio_codigo": "05001",
   "municipio": "Medellín",
   "recolectado_en": "2026-08-15",
-
   "fuente_principal": {
     "nombre": "Alcaldía de Medellín",
     "url": "https://www.medellin.gov.co/es/sala-de-prensa/noticias/en-10-puntos-se-recibiran-las-donaciones-para-enviar-desde-medellin-a-las-comunidades-afectadas-por-el-sismo/",
     "nota": "Anuncia los 10 puntos por nombre. No publica direcciones, horarios ni teléfonos."
   },
-
   "recibe": [
-    "agua_embotellada", "no_perecederos", "granos", "aceite", "enlatados",
-    "panela_azucar", "jabon", "cepillo_crema_dental", "toallas_higienicas",
-    "papel_higienico", "panales_bebe", "colchonetas", "cobijas"
+    "agua_embotellada",
+    "no_perecederos",
+    "granos",
+    "aceite",
+    "enlatados",
+    "panela_azucar",
+    "jabon",
+    "cepillo_crema_dental",
+    "toallas_higienicas",
+    "papel_higienico",
+    "panales_bebe",
+    "colchonetas",
+    "cobijas"
   ],
   "no_recibe": [
-    "medicamentos_sellados", "ropa_usada_buen_estado", "ropa_nueva"
+    "medicamentos_sellados",
+    "ropa_usada_buen_estado",
+    "ropa_nueva"
   ],
   "nota_categorias": "La Alcaldía dijo expresamente: no medicamentos, no ropa, no productos vencidos ni alimentos perecederos. 'Productos listos para consumo' aparece entre lo aceptado pero es ambiguo, así que `comida_preparada` se deja por fuera en vez de adivinar.",
-
   "horario_reportado": "Lunes a domingo, de 8:00 a.m. a 5:00 p.m. (por confirmar)",
   "nota_horario": "El Tiempo reporta 8am-5pm; Infobae dice 'entre 8:00 a.m. y 6:00 p.m., dependiendo del lugar'. Ninguna fuente da el horario punto por punto. Se carga como texto, sin franjas estructuradas: sin franjas UnAcopio no muestra el sello de 'Abierto ahora', que es justo lo correcto mientras nadie confirme.",
-
   "puntos": [
     {
       "nombre": "Fundación Banco Arquidiocesano de Alimentos",
@@ -128,6 +137,113 @@
       "telefono": "6044444144",
       "direccion_de": "Alcaldía de Medellín",
       "direccion_url": "https://www.medellin.gov.co/es/secretaria-de-gestion-humana/servicio-a-la-ciudadania/informacion-de-contacto-y-directorio-institucional/"
+    },
+    {
+      "nombre": "Librería Rodante Delfos",
+      "tipo": "particular",
+      "direccion": "Carrera 79 # 52A-23",
+      "barrio": "Laureles-Estadio",
+      "telefono": "3235403547",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Iniciativa de la red Reddhhpac, no de la Alcaldía. Es una librería: preguntar hasta cuándo reciben y en qué horario, que la fuente no lo dice."
+    },
+    {
+      "nombre": "Universidad de Antioquia — Proyecto Oficinas Estudiantiles (POE)",
+      "tipo": "universidad",
+      "direccion": "Calle 67 # 53-108, bloque 9 oficina 211B",
+      "barrio": "Ciudad Universitaria",
+      "telefono": "3235403547",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Reddhhpac. OJO: comparte el bloque 9 con el punto del Colectivo Afro UdeA; van a salir marcados como posible duplicado y NO lo son, son dos grupos distintos. Confirmar cuál recibe qué."
+    },
+    {
+      "nombre": "Colectivo Afro UdeA",
+      "tipo": "particular",
+      "direccion": "Calle 67 # 53-108, bajos del bloque 9",
+      "barrio": "Ciudad Universitaria",
+      "telefono": "3114505940",
+      "horario": "Lunes a viernes de 9:00 a.m. a 5:00 p.m.",
+      "recibe": [
+        "agua_embotellada",
+        "no_perecederos",
+        "granos",
+        "aceite",
+        "enlatados",
+        "panela_azucar",
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "panales_bebe",
+        "colchonetas",
+        "cobijas"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado",
+        "ropa_nueva"
+      ],
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Colectivo estudiantil. La fuente dice expresamente que NO está recibiendo ropa. El número es WhatsApp; también tienen correo colectivoafroudea@gmail.com."
+    },
+    {
+      "nombre": "Laika Agua Bendita",
+      "tipo": "empresa",
+      "direccion": "Calle 2 Sur # 32-54",
+      "recibe": [
+        "alimento_perro",
+        "alimento_gato",
+        "guacales"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/cultura/gente/asi-puede-donar-comida-y-articulos-para-mascotas-afectadas-por-el-terremoto-en-colombia-3577609",
+      "nota": "SOLO MASCOTAS: comida y accesorios para perros y gatos. Es una tienda; confirmar horario y hasta cuándo reciben."
+    },
+    {
+      "nombre": "Laika Arkadia",
+      "tipo": "empresa",
+      "direccion": "Carrera 70 # 1-141",
+      "barrio": "Centro Comercial Arkadia, Guayabal",
+      "recibe": [
+        "alimento_perro",
+        "alimento_gato",
+        "guacales"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/cultura/gente/asi-puede-donar-comida-y-articulos-para-mascotas-afectadas-por-el-terremoto-en-colombia-3577609",
+      "conflicto": "El Tiempo imprime la dirección como «Carrera 70 #1141», sin separador. Acá se interpretó como Carrera 70 # 1-141, que es la del CC Arkadia. CONFIRMAR.",
+      "nota": "SOLO MASCOTAS. Está dentro del centro comercial: preguntar en qué local."
+    }
+  ],
+  "pistas_sin_confirmar": [
+    {
+      "que": "Itagüí — Parque Principal",
+      "por_que_no_entro": "Solo operaba el martes 11 y el miércoles 12 de agosto, de 10 a. m. a 5 p. m. Ya venció. Además es otro municipio (Itagüí, 05360), no Medellín.",
+      "url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058"
+    },
+    {
+      "que": "Envigado — «Can Love»",
+      "por_que_no_entro": "El Colombiano lo menciona pero sin dirección: dice que se coordina por mensaje directo en Instagram. No se pudo confirmar la cuenta ni la dirección. Vale la pena buscarlos: es exactamente el tipo de punto que solo tiene Instagram.",
+      "url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058"
+    },
+    {
+      "que": "Laika Llanogrande",
+      "por_que_no_entro": "La fuente solo dice «Antioquia». Queda en Rionegro (05615), no en Medellín, y sin dirección.",
+      "url": "https://www.eltiempo.com/cultura/gente/asi-puede-donar-comida-y-articulos-para-mascotas-afectadas-por-el-terremoto-en-colombia-3577609"
+    },
+    {
+      "que": "Rionegro, Envigado, Bello, Sabaneta, Apartadó",
+      "por_que_no_entro": "El Espectador menciona el Coliseo Iván Ramiro Córdoba y Casa 5 Pasitos en Rionegro, La Casa Morada en Apartadó y coordinación con Cruz Roja en Envigado, Bello y Sabaneta, pero sin direcciones. Son otros municipios; valen para una siguiente ronda.",
+      "url": "https://www.elespectador.com/colombia/medellin/como-se-puede-donar-desde-antioquia-a-los-damnificados-por-el-terremoto/"
+    },
+    {
+      "que": "Centros comerciales de ACE Colombia en Medellín",
+      "por_que_no_entro": "ACE anunció 42 centros comerciales en el país, pero la lista publicada por Portafolio solo nombra los de Bogotá y Cundinamarca. Preguntarle a ACE cuáles son los de Medellín.",
+      "url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168"
     }
   ]
 }

@@ -1853,5 +1853,2161 @@
         "-75.5733736"
       ]
     }
+  ],
+  "Bomberos — Estación Puente Aranda B-4, Bogotá D.C., Colombia": [],
+  "Calle 20 # 68A-06, Bogotá D.C., Colombia": [],
+  "Puente Aranda, Bogotá D.C., Colombia": [
+    {
+      "place_id": 306722474,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11502544,
+      "lat": "4.6344035",
+      "lon": "-74.1083568",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZs Localidad Puente Aranda",
+      "display_name": "UPZs Localidad Puente Aranda, Localidad Puente Aranda, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZs Localidad Puente Aranda",
+        "suburb": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5935759",
+        "4.6451602",
+        "-74.1377987",
+        "-74.0831501"
+      ]
+    },
+    {
+      "place_id": 310691577,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11502543,
+      "lat": "4.6344035",
+      "lon": "-74.1083568",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZ Puente Aranda",
+      "display_name": "UPZ Puente Aranda, Localidad Puente Aranda, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZ Puente Aranda",
+        "suburb": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6256922",
+        "4.6451602",
+        "-74.1224387",
+        "-74.0913862"
+      ]
+    },
+    {
+      "place_id": 310657416,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5791789040,
+      "lat": "4.6317620",
+      "lon": "-74.1085116",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08007831921873805,
+      "addresstype": "neighbourhood",
+      "name": "Puente Aranda",
+      "display_name": "Puente Aranda, UPZs de Bogotá, Localidad Puente Aranda, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111611, Colombia",
+      "address": {
+        "neighbourhood": "Puente Aranda",
+        "suburb": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111611",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6217620",
+        "4.6417620",
+        "-74.1185116",
+        "-74.0985116"
+      ]
+    }
+  ],
+  "Bomberos — Estación Restrepo B-3, Bogotá D.C., Colombia": [],
+  "Avenida Carrera 27 # 19A-20 Sur, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309611745,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1052626792,
+      "lat": "4.5888539",
+      "lon": "-74.1118154",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Avenida Carrera 27",
+      "display_name": "Avenida Carrera 27, Santander Sur, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "road": "Avenida Carrera 27",
+        "neighbourhood": "Santander Sur",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5887544",
+        "4.5888614",
+        "-74.1130345",
+        "-74.1105930"
+      ]
+    },
+    {
+      "place_id": 309220918,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89619644,
+      "lat": "4.5901459",
+      "lon": "-74.1080221",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Avenida Carrera 27",
+      "display_name": "Avenida Carrera 27, Valvanera, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "road": "Avenida Carrera 27",
+        "neighbourhood": "Valvanera",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5892989",
+        "4.5909980",
+        "-74.1089061",
+        "-74.1071429"
+      ]
+    },
+    {
+      "place_id": 309971876,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89726552,
+      "lat": "4.5885462",
+      "lon": "-74.1166206",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Avenida Carrera 27",
+      "display_name": "Avenida Carrera 27, Eduardo Frey, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "road": "Avenida Carrera 27",
+        "neighbourhood": "Eduardo Frey",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5885001",
+        "4.5890480",
+        "-74.1187468",
+        "-74.1144422"
+      ]
+    }
+  ],
+  "Restrepo, Bogotá D.C., Colombia": [
+    {
+      "place_id": 310048173,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11509172,
+      "lat": "4.5917923",
+      "lon": "-74.1066590",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZ Restrepo",
+      "display_name": "UPZ Restrepo, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "quarter": "UPZ Restrepo",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5812837",
+        "4.5984321",
+        "-74.1315283",
+        "-74.0889975"
+      ]
+    },
+    {
+      "place_id": 309671900,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 6638162018,
+      "lat": "4.5854102",
+      "lon": "-74.1012769",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08007831921873805,
+      "addresstype": "neighbourhood",
+      "name": "Restrepo",
+      "display_name": "Restrepo, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "neighbourhood": "Restrepo",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5754102",
+        "4.5954102",
+        "-74.1112769",
+        "-74.0912769"
+      ]
+    }
+  ],
+  "Bomberos — Estación Kennedy B-5, Bogotá D.C., Colombia": [],
+  "Carrera 79 # 41D-20 Sur, Bogotá D.C., Colombia": [],
+  "Kennedy, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308955983,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 7819160445,
+      "lat": "4.6317782",
+      "lon": "-74.1538873",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.38307540422660474,
+      "addresstype": "neighbourhood",
+      "name": "Kennedy",
+      "display_name": "Kennedy, UPZs de Bogotá, Localidad Kennedy, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110851, Colombia",
+      "address": {
+        "neighbourhood": "Kennedy",
+        "suburb": "Localidad Kennedy",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110851",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6217782",
+        "4.6417782",
+        "-74.1638873",
+        "-74.1438873"
+      ]
+    }
+  ],
+  "Bomberos — Estación Chapinero B-1, Bogotá D.C., Colombia": [],
+  "Calle 62 # 9A-19, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309526087,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89631945,
+      "lat": "4.6462115",
+      "lon": "-74.0589874",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 62",
+      "display_name": "Calle 62, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110231, Colombia",
+      "address": {
+        "road": "Calle 62",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110231",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6455670",
+        "4.6468570",
+        "-74.0602249",
+        "-74.0577495"
+      ]
+    },
+    {
+      "place_id": 309551270,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1210314990,
+      "lat": "4.6504915",
+      "lon": "-74.0740571",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 62",
+      "display_name": "Calle 62, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "road": "Calle 62",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6504168",
+        "4.6505661",
+        "-74.0745326",
+        "-74.0735816"
+      ]
+    },
+    {
+      "place_id": 309528553,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1390110850,
+      "lat": "4.6497917",
+      "lon": "-74.0705051",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 62",
+      "display_name": "Calle 62, San Luis, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "road": "Calle 62",
+        "neighbourhood": "San Luis",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6497160",
+        "4.6498681",
+        "-74.0709640",
+        "-74.0700461"
+      ]
+    }
+  ],
+  "Chapinero, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308311780,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11249984,
+      "lat": "4.6365850",
+      "lon": "-74.0650204",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZs Localidad Chapinero",
+      "display_name": "UPZs Localidad Chapinero, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZs Localidad Chapinero",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6233501",
+        "4.6869388",
+        "-74.0683599",
+        "-74.0101412"
+      ]
+    },
+    {
+      "place_id": 308369469,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11249982,
+      "lat": "4.6365850",
+      "lon": "-74.0650204",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZ Chapinero",
+      "display_name": "UPZ Chapinero, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZ Chapinero",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6234651",
+        "4.6540340",
+        "-74.0683599",
+        "-74.0563917"
+      ]
+    },
+    {
+      "place_id": 308315746,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 7819160451,
+      "lat": "4.6453552",
+      "lon": "-74.0619385",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08007831921873805,
+      "addresstype": "neighbourhood",
+      "name": "Chapinero",
+      "display_name": "Chapinero, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110231, Colombia",
+      "address": {
+        "neighbourhood": "Chapinero",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110231",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6353552",
+        "4.6553552",
+        "-74.0719385",
+        "-74.0519385"
+      ]
+    }
+  ],
+  "Casa Jardín Origen, Bogotá D.C., Colombia": [],
+  "Calle 38 # 29-29, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309948802,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89725105,
+      "lat": "4.6265227",
+      "lon": "-74.0705713",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 38",
+      "display_name": "Calle 38, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "road": "Calle 38",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6264036",
+        "4.6266576",
+        "-74.0713402",
+        "-74.0697997"
+      ]
+    },
+    {
+      "place_id": 309695273,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89716950,
+      "lat": "4.6258836",
+      "lon": "-74.0669712",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 38",
+      "display_name": "Calle 38, Sagrado Corazón, UPZs de Bogotá, Localidad Santa Fé, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110311, Colombia",
+      "address": {
+        "road": "Calle 38",
+        "neighbourhood": "Sagrado Corazón",
+        "suburb": "Localidad Santa Fé",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6258188",
+        "4.6259496",
+        "-74.0674315",
+        "-74.0665107"
+      ]
+    },
+    {
+      "place_id": 308573240,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 531960648,
+      "lat": "4.6263722",
+      "lon": "-74.0798609",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 38",
+      "display_name": "Calle 38, Gran América, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "road": "Calle 38",
+        "neighbourhood": "Gran América",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6263313",
+        "4.6264131",
+        "-74.0803874",
+        "-74.0793344"
+      ]
+    }
+  ],
+  "Teusaquillo, Bogotá D.C., Colombia": [
+    {
+      "place_id": 310083567,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11502495,
+      "lat": "4.6286663",
+      "lon": "-74.0752959",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZs Localidad Teusaquillo",
+      "display_name": "UPZs Localidad Teusaquillo, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZs Localidad Teusaquillo",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6154416",
+        "4.6661092",
+        "-74.1104360",
+        "-74.0646404"
+      ]
+    },
+    {
+      "place_id": 308510994,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11502515,
+      "lat": "4.6286663",
+      "lon": "-74.0752959",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZ Teusaquillo",
+      "display_name": "UPZ Teusaquillo, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "quarter": "UPZ Teusaquillo",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6154416",
+        "4.6376090",
+        "-74.0831501",
+        "-74.0669836"
+      ]
+    }
+  ],
+  "Human Construction, Bogotá D.C., Colombia": [],
+  "Carrera 52A # 134D-23, local 1, Bogotá D.C., Colombia": [],
+  "Fundación Catalina Muñoz, Bogotá D.C., Colombia": [],
+  "Diagonal 48 # 19-16, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309945898,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24323017,
+      "lat": "4.6367610",
+      "lon": "-74.0717990",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Diagonal 48",
+      "display_name": "Diagonal 48, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "road": "Diagonal 48",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6361473",
+        "4.6373747",
+        "-74.0727497",
+        "-74.0708483"
+      ]
+    },
+    {
+      "place_id": 309629664,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1011045712,
+      "lat": "4.6728702",
+      "lon": "-74.1147666",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Diagonal 48",
+      "display_name": "Diagonal 48, UPZs Localidad Engativá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111071, Colombia",
+      "address": {
+        "road": "Diagonal 48",
+        "quarter": "UPZs Localidad Engativá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111071",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6725135",
+        "4.6732691",
+        "-74.1150891",
+        "-74.1144773"
+      ]
+    }
+  ],
+  "Fundación Universitaria Juan N. Corpas, Bogotá D.C., Colombia": [],
+  "Carrera 111 # 159A-61, Bogotá D.C., Colombia": [],
+  "Uniagraria, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309636917,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 374197402,
+      "lat": "4.7543395",
+      "lon": "-74.0534076",
+      "category": "amenity",
+      "type": "university",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Uniagraria",
+      "display_name": "Uniagraria, Carrera 54A, Villa del Prado, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111166, Colombia",
+      "address": {
+        "amenity": "Uniagraria",
+        "road": "Carrera 54A",
+        "neighbourhood": "Villa del Prado",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111166",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7532692",
+        "4.7553952",
+        "-74.0539211",
+        "-74.0527196"
+      ]
+    },
+    {
+      "place_id": 310804713,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5276571827,
+      "lat": "4.7528545",
+      "lon": "-74.0510679",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Uniagraria",
+      "display_name": "Uniagraria, Avenida Calle 170, Villa del Prado, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111166, Colombia",
+      "address": {
+        "highway": "Uniagraria",
+        "road": "Avenida Calle 170",
+        "neighbourhood": "Villa del Prado",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111166",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7528045",
+        "4.7529045",
+        "-74.0511179",
+        "-74.0510179"
+      ]
+    },
+    {
+      "place_id": 308489933,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 8309500312,
+      "lat": "4.7530104",
+      "lon": "-74.0536999",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Uniagraria",
+      "display_name": "Uniagraria, Avenida Calle 170, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111156, Colombia",
+      "address": {
+        "highway": "Uniagraria",
+        "road": "Avenida Calle 170",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111156",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7529604",
+        "4.7530604",
+        "-74.0537499",
+        "-74.0536499"
+      ]
+    }
+  ],
+  "Universidad Nacional — Capilla Cristo Maestro, Bogotá D.C., Colombia": [],
+  "Carrera 45 # 26-85, Ciudad Universitaria, Bogotá D.C., Colombia": [],
+  "Corferias — acopio para mascotas, Bogotá D.C., Colombia": [],
+  "Carrera 37 # 24-67, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308424753,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 2488327906,
+      "lat": "4.6303246",
+      "lon": "-74.0924284",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Corferias",
+      "display_name": "Corferias, 24-67, Carrera 37, El Recuerdo, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111321, Colombia",
+      "address": {
+        "highway": "Corferias",
+        "house_number": "24-67",
+        "road": "Carrera 37",
+        "neighbourhood": "El Recuerdo",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111321",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6302746",
+        "4.6303746",
+        "-74.0924784",
+        "-74.0923784"
+      ]
+    }
+  ],
+  "Laika La 116, Bogotá D.C., Colombia": [],
+  "Calle 116 # 18B-4, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309373092,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24714886,
+      "lat": "4.6925779",
+      "lon": "-74.0288797",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 116",
+      "display_name": "Calle 116, Usaquén, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110111, Colombia",
+      "address": {
+        "road": "Calle 116",
+        "neighbourhood": "Usaquén",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110111",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6924255",
+        "4.6926286",
+        "-74.0298567",
+        "-74.0278814"
+      ]
+    },
+    {
+      "place_id": 309444369,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 525714961,
+      "lat": "4.7019522",
+      "lon": "-74.0820616",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 116",
+      "display_name": "Calle 116, Pontevedra, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111121, Colombia",
+      "address": {
+        "road": "Calle 116",
+        "neighbourhood": "Pontevedra",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111121",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7017148",
+        "4.7021096",
+        "-74.0824836",
+        "-74.0816776"
+      ]
+    }
+  ],
+  "Laika Chapinero, Bogotá D.C., Colombia": [],
+  "Carrera 7 # 59-34, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308680213,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89481764,
+      "lat": "4.5711875",
+      "lon": "-74.0939959",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 7",
+      "display_name": "Carrera 7, Veinte de Julio, UPZs de Bogotá, Localidad San Cristóbal, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110421, Colombia",
+      "address": {
+        "road": "Carrera 7",
+        "neighbourhood": "Veinte de Julio",
+        "suburb": "Localidad San Cristóbal",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110421",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5698341",
+        "4.5725408",
+        "-74.0952922",
+        "-74.0926995"
+      ]
+    },
+    {
+      "place_id": 311391383,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 120688589,
+      "lat": "4.4894120",
+      "lon": "-74.1159921",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 7",
+      "display_name": "Carrera 7, Villa Israel, UPZs de Bogotá, Localidad Usme, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110541, Colombia",
+      "address": {
+        "road": "Carrera 7",
+        "neighbourhood": "Villa Israel",
+        "suburb": "Localidad Usme",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110541",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.4883380",
+        "4.4904306",
+        "-74.1160460",
+        "-74.1156144"
+      ]
+    },
+    {
+      "place_id": 305791550,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89084371,
+      "lat": "4.5919359",
+      "lon": "-74.0789212",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 7",
+      "display_name": "Carrera 7, Santa Bárbara, UPZs de Bogotá, UPZ La Candelaria, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111711, Colombia",
+      "address": {
+        "road": "Carrera 7",
+        "neighbourhood": "Santa Bárbara",
+        "suburb": "UPZ La Candelaria",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111711",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5914447",
+        "4.5924254",
+        "-74.0791820",
+        "-74.0786574"
+      ]
+    }
+  ],
+  "Laika Modelia, Bogotá D.C., Colombia": [],
+  "Avenida Calle 24 # 74A-57, Bogotá D.C., Colombia": [],
+  "Laika La 94, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309620018,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13313703501,
+      "lat": "4.7006730",
+      "lon": "-74.0289732",
+      "category": "amenity",
+      "type": "veterinary",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Laika",
+      "display_name": "Laika, Calle 126, Canteras, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110111, Colombia",
+      "address": {
+        "amenity": "Laika",
+        "road": "Calle 126",
+        "neighbourhood": "Canteras",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110111",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7006230",
+        "4.7007230",
+        "-74.0290232",
+        "-74.0289232"
+      ]
+    }
+  ],
+  "Centro Comercial Portal de la 80, Bogotá D.C., Colombia": [],
+  "Centro Comercial Centro Suba, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308890997,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 45869319,
+      "lat": "4.7372653",
+      "lon": "-74.0857893",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial Centro Suba",
+      "display_name": "Centro Comercial Centro Suba, Avenida Calle 145, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111131, Colombia",
+      "address": {
+        "shop": "Centro Comercial Centro Suba",
+        "road": "Avenida Calle 145",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111131",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7366996",
+        "4.7380237",
+        "-74.0865390",
+        "-74.0851511"
+      ]
+    }
+  ],
+  "Centro Comercial Paseo Villa del Río, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308438059,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 884243476,
+      "lat": "4.5980130",
+      "lon": "-74.1527065",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial Paseo Villa del Río",
+      "display_name": "Centro Comercial Paseo Villa del Río, Transversal 62G, Guadalupe, UPZs de Bogotá, Localidad Kennedy, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110841, Colombia",
+      "address": {
+        "shop": "Centro Comercial Paseo Villa del Río",
+        "road": "Transversal 62G",
+        "neighbourhood": "Guadalupe",
+        "suburb": "Localidad Kennedy",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110841",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5970006",
+        "4.5990120",
+        "-74.1538430",
+        "-74.1513404"
+      ]
+    }
+  ],
+  "Centro Comercial El Gran San, Bogotá D.C., Colombia": [
+    {
+      "place_id": 310057320,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24524622,
+      "lat": "4.5990606",
+      "lon": "-74.0792823",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial El Gran San",
+      "display_name": "Centro Comercial El Gran San, Calle 10, San Victorino, UPZs de Bogotá, Localidad Santa Fé, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110321, Colombia",
+      "address": {
+        "shop": "Centro Comercial El Gran San",
+        "road": "Calle 10",
+        "neighbourhood": "San Victorino",
+        "suburb": "Localidad Santa Fé",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110321",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5984368",
+        "4.5995365",
+        "-74.0798369",
+        "-74.0788148"
+      ]
+    }
+  ],
+  "Centro Comercial Atlantis Plaza, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308344840,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24577218,
+      "lat": "4.6661072",
+      "lon": "-74.0558166",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial Atlantis",
+      "display_name": "Centro Comercial Atlantis, 13-05, Calle 81, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110221, Colombia",
+      "address": {
+        "shop": "Centro Comercial Atlantis",
+        "house_number": "13-05",
+        "road": "Calle 81",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6656887",
+        "4.6664422",
+        "-74.0562532",
+        "-74.0553801"
+      ]
+    }
+  ],
+  "Centro Comercial Avenida Chile, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308171573,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24715701,
+      "lat": "4.6571969",
+      "lon": "-74.0577256",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial Avenida Chile",
+      "display_name": "Centro Comercial Avenida Chile, 9, Avenida Calle 72, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110221, Colombia",
+      "address": {
+        "shop": "Centro Comercial Avenida Chile",
+        "house_number": "9",
+        "road": "Avenida Calle 72",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6567328",
+        "4.6576627",
+        "-74.0581856",
+        "-74.0572657"
+      ]
+    },
+    {
+      "place_id": 306612785,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13281957918,
+      "lat": "4.6569511",
+      "lon": "-74.0581722",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Centro Comercial Avenida Chile",
+      "display_name": "Centro Comercial Avenida Chile, Avenida Calle 72, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110221, Colombia",
+      "address": {
+        "highway": "Centro Comercial Avenida Chile",
+        "road": "Avenida Calle 72",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6569011",
+        "4.6570011",
+        "-74.0582222",
+        "-74.0581222"
+      ]
+    }
+  ],
+  "Centro Comercial Centro Mayor, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308416289,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 54168221,
+      "lat": "4.5917447",
+      "lon": "-74.1242764",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.22052600253021823,
+      "addresstype": "shop",
+      "name": "Centro Comercial Centro Mayor",
+      "display_name": "Centro Comercial Centro Mayor, Avenida Carrera 27, Villa Mayor, UPZs Localidad Antonio Nariño, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111811, Colombia",
+      "address": {
+        "shop": "Centro Comercial Centro Mayor",
+        "road": "Avenida Carrera 27",
+        "neighbourhood": "Villa Mayor",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111811",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5900271",
+        "4.5934711",
+        "-74.1253783",
+        "-74.1230927"
+      ]
+    },
+    {
+      "place_id": 308444585,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 6612297332,
+      "lat": "4.5901292",
+      "lon": "-74.1243141",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Centro Comercial Centro Mayor",
+      "display_name": "Centro Comercial Centro Mayor, Diagonal 40 Sur, Villa Mayor, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "highway": "Centro Comercial Centro Mayor",
+        "road": "Diagonal 40 Sur",
+        "neighbourhood": "Villa Mayor",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5900792",
+        "4.5901792",
+        "-74.1243641",
+        "-74.1242641"
+      ]
+    }
+  ],
+  "Centro Comercial Plaza Imperial, Bogotá D.C., Colombia": [
+    {
+      "place_id": 306567543,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 172466153,
+      "lat": "4.7504863",
+      "lon": "-74.0953390",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Plaza Imperial",
+      "display_name": "Plaza Imperial, Calle 150C, Turingia, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111161, Colombia",
+      "address": {
+        "shop": "Plaza Imperial",
+        "road": "Calle 150C",
+        "neighbourhood": "Turingia",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111161",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7486874",
+        "4.7519884",
+        "-74.0967967",
+        "-74.0940823"
+      ]
+    }
+  ],
+  "Centro Comercial Nuestro Bogotá, Bogotá D.C., Colombia": [
+    {
+      "place_id": 305304902,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24156089,
+      "lat": "4.6835010",
+      "lon": "-74.1162239",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial Nuestro Bogotá",
+      "display_name": "Centro Comercial Nuestro Bogotá, Carrera 90, UPZs de Bogotá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111071, Colombia",
+      "address": {
+        "shop": "Centro Comercial Nuestro Bogotá",
+        "road": "Carrera 90",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111071",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6822417",
+        "4.6847628",
+        "-74.1174710",
+        "-74.1152133"
+      ]
+    }
+  ],
+  "Centro Comercial Plaza de las Américas, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308448256,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 17651327,
+      "lat": "4.6191423",
+      "lon": "-74.1351911",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial Plaza de las Americas",
+      "display_name": "Centro Comercial Plaza de las Americas, 6 Sur-94, Carrera 71D, Hipotecho Occidental, UPZs de Bogotá, Localidad Kennedy, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110831, Colombia",
+      "address": {
+        "shop": "Centro Comercial Plaza de las Americas",
+        "house_number": "6 Sur-94",
+        "road": "Carrera 71D",
+        "neighbourhood": "Hipotecho Occidental",
+        "suburb": "Localidad Kennedy",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110831",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6176978",
+        "4.6201731",
+        "-74.1372018",
+        "-74.1336193"
+      ]
+    }
+  ],
+  "Centro Comercial Titán Plaza, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308413883,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 2117092783,
+      "lat": "4.6960188",
+      "lon": "-74.0865400",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Centro Comercial Titán Plaza",
+      "display_name": "Centro Comercial Titán Plaza, Avenida Carrera 72, UPZs de Bogotá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111021, Colombia",
+      "address": {
+        "highway": "Centro Comercial Titán Plaza",
+        "road": "Avenida Carrera 72",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111021",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6959688",
+        "4.6960688",
+        "-74.0865900",
+        "-74.0864900"
+      ]
+    },
+    {
+      "place_id": 308989503,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 8304514222,
+      "lat": "4.6965358",
+      "lon": "-74.0848833",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Centro Comercial Titán Plaza (Av. Boyacá - Cl 9",
+      "display_name": "Centro Comercial Titán Plaza (Av. Boyacá - Cl 9, Avenida Carrera 72, Pontevedra, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111121, Colombia",
+      "address": {
+        "highway": "Centro Comercial Titán Plaza (Av. Boyacá - Cl 9",
+        "road": "Avenida Carrera 72",
+        "neighbourhood": "Pontevedra",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111121",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6964858",
+        "4.6965858",
+        "-74.0849333",
+        "-74.0848333"
+      ]
+    }
+  ],
+  "Centro Comercial Ciudad Tunal, Bogotá D.C., Colombia": [
+    {
+      "place_id": 307547989,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1360460089,
+      "lat": "4.5778996",
+      "lon": "-74.1299316",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Centro Comercial Ciudad Tunal",
+      "display_name": "Centro Comercial Ciudad Tunal, Calle 48C Sur, Ciudad Tunal, UPZs de Bogotá, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110621, Colombia",
+      "address": {
+        "shop": "Centro Comercial Ciudad Tunal",
+        "road": "Calle 48C Sur",
+        "neighbourhood": "Ciudad Tunal",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110621",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5770677",
+        "4.5787822",
+        "-74.1311838",
+        "-74.1295384"
+      ]
+    }
+  ],
+  "Centro Comercial Galerías, Bogotá D.C., Colombia": [
+    {
+      "place_id": 310796651,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 3825995924,
+      "lat": "4.6420459",
+      "lon": "-74.0739640",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Centro Comercial Galerias",
+      "display_name": "Centro Comercial Galerias, Avenida Carrera 24, Galerías, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "highway": "Centro Comercial Galerias",
+        "road": "Avenida Carrera 24",
+        "neighbourhood": "Galerías",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6419959",
+        "4.6420959",
+        "-74.0740140",
+        "-74.0739140"
+      ]
+    },
+    {
+      "place_id": 308629862,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 3825995923,
+      "lat": "4.6420317",
+      "lon": "-74.0749823",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Centro Comercial Galerias",
+      "display_name": "Centro Comercial Galerias, Avenida Calle 53, Galerías, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "highway": "Centro Comercial Galerias",
+        "road": "Avenida Calle 53",
+        "neighbourhood": "Galerías",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6419817",
+        "4.6420817",
+        "-74.0750323",
+        "-74.0749323"
+      ]
+    },
+    {
+      "place_id": 308805979,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 3825995926,
+      "lat": "4.6433589",
+      "lon": "-74.0752816",
+      "category": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "highway",
+      "name": "Centro Comercial Galerias",
+      "display_name": "Centro Comercial Galerias, Calle 53B, Galerías, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "highway": "Centro Comercial Galerias",
+        "road": "Calle 53B",
+        "neighbourhood": "Galerías",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6433089",
+        "4.6434089",
+        "-74.0753316",
+        "-74.0752316"
+      ]
+    }
+  ],
+  "Librería Rodante Delfos, Medellín, Colombia": [],
+  "Carrera 79 # 52A-23, Medellín, Colombia": [
+    {
+      "place_id": 310024035,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 33005841,
+      "lat": "6.2443147",
+      "lon": "-75.5994714",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Carrera 79",
+      "display_name": "Carrera 79, Lorena, Comuna 11 - Laureles-Estadio, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050032, Colombia",
+      "address": {
+        "road": "Carrera 79",
+        "neighbourhood": "Lorena",
+        "suburb": "Comuna 11 - Laureles-Estadio",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050032",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2439899",
+        "6.2446395",
+        "-75.5995105",
+        "-75.5994323"
+      ]
+    },
+    {
+      "place_id": 309932528,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 98742447,
+      "lat": "6.2509615",
+      "lon": "-75.5975078",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Carrera 79",
+      "display_name": "Carrera 79, Los Pinos, Comuna 12 - La América, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050031, Colombia",
+      "address": {
+        "road": "Carrera 79",
+        "neighbourhood": "Los Pinos",
+        "suburb": "Comuna 12 - La América",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050031",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2507190",
+        "6.2512037",
+        "-75.5975236",
+        "-75.5974865"
+      ]
+    },
+    {
+      "place_id": 308852161,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 424394746,
+      "lat": "6.2429320",
+      "lon": "-75.5996151",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Carrera 79",
+      "display_name": "Carrera 79, Laureles, Comuna 11 - Laureles-Estadio, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050032, Colombia",
+      "address": {
+        "road": "Carrera 79",
+        "neighbourhood": "Laureles",
+        "suburb": "Comuna 11 - Laureles-Estadio",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050032",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2428256",
+        "6.2430384",
+        "-75.5996153",
+        "-75.5996149"
+      ]
+    }
+  ],
+  "Laureles-Estadio, Medellín, Colombia": [
+    {
+      "place_id": 307518099,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7680490,
+      "lat": "6.2492382",
+      "lon": "-75.5886543",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.22052600253021823,
+      "addresstype": "suburb",
+      "name": "Comuna 11 - Laureles-Estadio",
+      "display_name": "Comuna 11 - Laureles-Estadio, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "suburb": "Comuna 11 - Laureles-Estadio",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2374448",
+        "6.2717641",
+        "-75.6175037",
+        "-75.5741709"
+      ]
+    },
+    {
+      "place_id": 305788264,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 367596766,
+      "lat": "6.2548812",
+      "lon": "-75.5787300",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Calle 50",
+      "display_name": "Calle 50, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050010, Colombia",
+      "address": {
+        "road": "Calle 50",
+        "neighbourhood": "Carlos E. Restrepo",
+        "suburb": "Comuna 11 - Laureles-Estadio",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050010",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2545308",
+        "6.2552565",
+        "-75.5794056",
+        "-75.5780410"
+      ]
+    },
+    {
+      "place_id": 308270726,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 30614009,
+      "lat": "6.2550470",
+      "lon": "-75.5787924",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Calle 50",
+      "display_name": "Calle 50, Carlos E. Restrepo, Comuna 11 - Laureles-Estadio, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050034, Colombia",
+      "address": {
+        "road": "Calle 50",
+        "neighbourhood": "Carlos E. Restrepo",
+        "suburb": "Comuna 11 - Laureles-Estadio",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050034",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2547306",
+        "6.2553881",
+        "-75.5793815",
+        "-75.5781896"
+      ]
+    }
+  ],
+  "Universidad de Antioquia — Proyecto Oficinas Estudiantiles, Medellín, Colombia": [],
+  "Calle 67 # 53-108, bloque 9 oficina 211B, Medellín, Colombia": [],
+  "Ciudad Universitaria, Medellín, Colombia": [
+    {
+      "place_id": 308886304,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13537103259,
+      "lat": "6.2673793",
+      "lon": "-75.5689131",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08006934843976499,
+      "addresstype": "neighbourhood",
+      "name": "Ciudad Universitaria",
+      "display_name": "Ciudad Universitaria, Comuna 4 - Aranjuez, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050010, Colombia",
+      "address": {
+        "neighbourhood": "Ciudad Universitaria",
+        "suburb": "Comuna 4 - Aranjuez",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050010",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2573793",
+        "6.2773793",
+        "-75.5789131",
+        "-75.5589131"
+      ]
+    }
+  ],
+  "Colectivo Afro UdeA, Medellín, Colombia": [],
+  "Calle 67 # 53-108, bajos del bloque 9, Medellín, Colombia": [],
+  "Laika Agua Bendita, Medellín, Colombia": [],
+  "Calle 2 Sur # 32-54, Medellín, Colombia": [
+    {
+      "place_id": 308654898,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 176993443,
+      "lat": "6.1944524",
+      "lon": "-75.5545864",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Calle 2 Sur",
+      "display_name": "Calle 2 Sur, Los Naranjos, Comuna 14 - El Poblado, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050022, Colombia",
+      "address": {
+        "road": "Calle 2 Sur",
+        "neighbourhood": "Los Naranjos",
+        "suburb": "Comuna 14 - El Poblado",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050022",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.1937728",
+        "6.1955520",
+        "-75.5564153",
+        "-75.5527561"
+      ]
+    },
+    {
+      "place_id": 311595306,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 354528746,
+      "lat": "6.2045508",
+      "lon": "-75.5811778",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Calle 2 Sur",
+      "display_name": "Calle 2 Sur, Comuna 15 - Guayabal, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050024, Colombia",
+      "address": {
+        "road": "Calle 2 Sur",
+        "suburb": "Comuna 15 - Guayabal",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050024",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2044162",
+        "6.2046931",
+        "-75.5814852",
+        "-75.5808665"
+      ]
+    },
+    {
+      "place_id": 308712260,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 913652146,
+      "lat": "6.2049516",
+      "lon": "-75.5818908",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Calle 2 Sur",
+      "display_name": "Calle 2 Sur, Guayabal, Comuna 15 - Guayabal, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050024, Colombia",
+      "address": {
+        "road": "Calle 2 Sur",
+        "neighbourhood": "Guayabal",
+        "suburb": "Comuna 15 - Guayabal",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050024",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2048632",
+        "6.2050400",
+        "-75.5821015",
+        "-75.5816802"
+      ]
+    }
+  ],
+  "Laika Arkadia, Medellín, Colombia": [],
+  "Carrera 70 # 1-141, Medellín, Colombia": [
+    {
+      "place_id": 309377836,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 778684464,
+      "lat": "6.2123737",
+      "lon": "-75.5947090",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.00006934843976496555,
+      "addresstype": "shop",
+      "name": "Centro Comercial Arkadia",
+      "display_name": "Centro Comercial Arkadia, # 1-141, Carrera 70, Comuna 16 - Belén, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050024, Colombia",
+      "address": {
+        "shop": "Centro Comercial Arkadia",
+        "house_number": "# 1-141",
+        "road": "Carrera 70",
+        "suburb": "Comuna 16 - Belén",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050024",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2112381",
+        "6.2129980",
+        "-75.5953272",
+        "-75.5941027"
+      ]
+    },
+    {
+      "place_id": 309246659,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11158241832,
+      "lat": "6.2122467",
+      "lon": "-75.5946822",
+      "category": "shop",
+      "type": "sports",
+      "place_rank": 30,
+      "importance": 0.00006934843976496555,
+      "addresstype": "shop",
+      "name": "Decathlon",
+      "display_name": "Decathlon, # 1-141, Carrera 70, Comuna 16 - Belén, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050024, Colombia",
+      "address": {
+        "shop": "Decathlon",
+        "house_number": "# 1-141",
+        "road": "Carrera 70",
+        "suburb": "Comuna 16 - Belén",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050024",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2121967",
+        "6.2122967",
+        "-75.5947322",
+        "-75.5946322"
+      ]
+    },
+    {
+      "place_id": 309734870,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 11613497101,
+      "lat": "6.2117701",
+      "lon": "-75.5947405",
+      "category": "shop",
+      "type": "sports",
+      "place_rank": 30,
+      "importance": 0.00006934843976496555,
+      "addresstype": "shop",
+      "name": "Puma",
+      "display_name": "Puma, # 1-141, Carrera 70, Comuna 16 - Belén, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050024, Colombia",
+      "address": {
+        "shop": "Puma",
+        "house_number": "# 1-141",
+        "road": "Carrera 70",
+        "suburb": "Comuna 16 - Belén",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050024",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2117201",
+        "6.2118201",
+        "-75.5947905",
+        "-75.5946905"
+      ]
+    }
   ]
 }

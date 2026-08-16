@@ -39,6 +39,23 @@ La caché va versionada a propósito: junto con el CSV es el rastro de auditorí
 Cuando alguien pregunte por qué un punto quedó donde quedó, la respuesta está
 en el repo.
 
+## Dos rondas
+
+**Ronda 1 (15 de agosto).** Los 10 puntos oficiales de Medellín y los 11 de la
+Alcaldía de Bogotá y la Cruz Roja.
+
+**Ronda 2 (15 de agosto, más tarde).** Lo que **no** es de la Alcaldía, que es
+donde de verdad estaba el hueco: colectivos estudiantiles, una librería, ONG,
+bomberos, universidades, tiendas de mascotas y los centros comerciales de ACE
+Colombia. Son 33 puntos más, y son los que más se mueven y los que primero
+cierran — así que son los que más urge llamar.
+
+Lo que **no** se encontró, y conviene saberlo: los puntos que solo se anuncian
+por Instagram o por cadenas de WhatsApp. Esas plataformas no son legibles sin
+sesión, así que todo lo que hay acá salió de prensa y de páginas
+institucionales. Los que aparecen mencionados sin dirección quedaron anotados
+en `pistas_sin_confirmar` de cada archivo.
+
 ## Antes de llamar, lea las notas
 
 Cada fila del CSV trae en `notas` lo que el moderador necesita saber:
@@ -51,9 +68,19 @@ Cada fila del CSV trae en `notas` lo que el moderador necesita saber:
   como posibles duplicados entre sí, porque comparten coordenada: es esperable,
   no es un error del detector.
 - **`PIN APROXIMADO`** — se ubicó por barrio. Está a menos de un kilómetro.
-- **`SIN TELÉFONO`** — no se puede verificar por llamada hasta conseguirlo. Son
-  16 de 21, y es el trabajo más urgente de todos: sin teléfono el punto se queda
-  en `pendiente` para siempre.
+- **`SIN CONTACTO`** — no se puede verificar hasta conseguir teléfono o
+  Instagram. Es el trabajo más urgente de todos: sin contacto el punto se queda
+  en `pendiente` para siempre. De los 54, solo 8 traen teléfono, y todos son de
+  Medellín.
+- **`SOLO MASCOTAS`** — Corferias y las tiendas Laika no reciben mercado ni
+  aseo. Sus categorías ya vienen puestas así, para que no salgan cuando alguien
+  filtra por alimentos.
+- **`DIRECCIÓN SIN CONFIRMAR`** — los 13 centros comerciales de ACE. La fuente
+  publicó solo el nombre, así que el pin se ubicó por nombre en OpenStreetMap y
+  el campo de dirección repite el nombre. Hay que conseguir la nomenclatura y
+  preguntar en qué parte del centro comercial está el punto.
+- **Fechas que vencen.** Corferias cierra el 17 de agosto. Si se publica, hay
+  que ponerle `fecha_fin` o revisarlo ese día.
 - **La dirección salió del directorio de la sede**, no del anuncio del acopio.
   Que la sede exista ahí es un hecho; que ese día recibiera donaciones ahí es lo
   que falta confirmar. Pasa con los 8 puntos de Medellín cuya dirección la

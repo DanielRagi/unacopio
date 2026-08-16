@@ -7,29 +7,43 @@
     "",
     "A diferencia de Medellín, acá las fuentes SÍ publicaron direcciones. Donde dos",
     "fuentes se contradicen queda anotado en `conflicto`: eso es lo primero que hay",
-    "que resolver en la llamada."
+    "que resolver en la llamada.",
+    "",
+    "Segunda ronda (15 de agosto): bomberos, ONG, universidades, un centro de acopio para mascotas y los centros comerciales de ACE Colombia."
   ],
-
   "municipio_codigo": "11001",
   "municipio": "Bogotá D.C.",
   "recolectado_en": "2026-08-15",
-
   "fuente_principal": {
     "nombre": "Alcaldía Mayor de Bogotá",
     "url": "https://bogota.gov.co/mi-ciudad/seguridad/puntos-de-donacion-en-bogota-para-damnificados-terremoto-en-colombia"
   },
-
   "recibe": [
-    "agua_embotellada", "no_perecederos", "granos", "aceite", "enlatados",
-    "panela_azucar", "cobijas", "sabanas", "colchonetas", "toldillos",
-    "tapabocas", "botiquin", "guantes", "jabon", "cepillo_crema_dental",
-    "toallas_higienicas", "papel_higienico", "panales_bebe", "ropa_nueva"
+    "agua_embotellada",
+    "no_perecederos",
+    "granos",
+    "aceite",
+    "enlatados",
+    "panela_azucar",
+    "cobijas",
+    "sabanas",
+    "colchonetas",
+    "toldillos",
+    "tapabocas",
+    "botiquin",
+    "guantes",
+    "jabon",
+    "cepillo_crema_dental",
+    "toallas_higienicas",
+    "papel_higienico",
+    "panales_bebe",
+    "ropa_nueva"
   ],
   "no_recibe": [
-    "ropa_usada_buen_estado", "comida_preparada"
+    "ropa_usada_buen_estado",
+    "comida_preparada"
   ],
   "nota_categorias": "bogota.gov.co lo dice explícito: no alimentos perecederos, no productos destapados o comenzados, no agua con el empaque golpeado, no medicamentos iniciados o próximos a vencer, no ropa usada ni ropa interior usada. `medicamentos_sellados` se deja por fuera: la fuente no los pide y tampoco los prohíbe de plano.",
-
   "puntos": [
     {
       "nombre": "Palacio de los Deportes",
@@ -125,9 +139,289 @@
       "fuente_nombre": "El Tiempo",
       "fuente_url": "https://www.eltiempo.com/colombia/otras-ciudades/como-ayudar-tras-terremoto-de-7-4-en-colombia-estos-son-los-centros-de-acopio-bancos-de-sangre-y-alimentos-canales-oficiales-y-puntos-de-donacion-3577631",
       "nota": "Recibe presencial. La fuente también publica cuentas bancarias: eso NO va al directorio (ver D6)."
+    },
+    {
+      "nombre": "Bomberos — Estación Puente Aranda B-4",
+      "tipo": "bomberos",
+      "direccion": "Calle 20 # 68A-06",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Estación de bomberos: reciben 24 horas por ser estación, pero confirmar si el acopio tiene horario propio.",
+      "barrio": "Puente Aranda"
+    },
+    {
+      "nombre": "Bomberos — Estación Restrepo B-3",
+      "tipo": "bomberos",
+      "direccion": "Avenida Carrera 27 # 19A-20 Sur",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Estación de bomberos: reciben 24 horas por ser estación, pero confirmar si el acopio tiene horario propio.",
+      "barrio": "Restrepo"
+    },
+    {
+      "nombre": "Bomberos — Estación Kennedy B-5",
+      "tipo": "bomberos",
+      "direccion": "Carrera 79 # 41D-20 Sur",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Estación de bomberos: reciben 24 horas por ser estación, pero confirmar si el acopio tiene horario propio.",
+      "barrio": "Kennedy"
+    },
+    {
+      "nombre": "Bomberos — Estación Chapinero B-1",
+      "tipo": "bomberos",
+      "direccion": "Calle 62 # 9A-19",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Estación de bomberos: reciben 24 horas por ser estación, pero confirmar si el acopio tiene horario propio.",
+      "barrio": "Chapinero"
+    },
+    {
+      "nombre": "Casa Jardín Origen",
+      "tipo": "ong",
+      "direccion": "Calle 38 # 29-29",
+      "horario": "Todos los días de 8:00 a.m. a 6:00 p.m.",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Punto de la red Manos Visibles, que coordina la ayuda hacia el Chocó.",
+      "barrio": "Teusaquillo"
+    },
+    {
+      "nombre": "Human Construction",
+      "tipo": "ong",
+      "direccion": "Carrera 52A # 134D-23, local 1",
+      "horario": "Todos los días de 8:00 a.m. a 6:00 p.m.",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Punto de la red Manos Visibles, que coordina la ayuda hacia el Chocó."
+    },
+    {
+      "nombre": "Fundación Catalina Muñoz",
+      "tipo": "ong",
+      "direccion": "Diagonal 48 # 19-16",
+      "horario": "Todos los días de 8:00 a.m. a 6:00 p.m.",
+      "fuente_nombre": "El Colombiano",
+      "fuente_url": "https://www.elcolombiano.com/colombia/donde-donar-choco-centros-acopio-cuentas-oficiales-terremoto-colombia-KB39837058",
+      "nota": "Punto de la red Manos Visibles, que coordina la ayuda hacia el Chocó."
+    },
+    {
+      "nombre": "Fundación Universitaria Juan N. Corpas",
+      "tipo": "universidad",
+      "direccion": "Carrera 111 # 159A-61",
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/vida/educacion/universidades-del-pais-se-movilizan-para-apoyar-a-las-victimas-del-terremoto-ingenieros-psicologos-y-centros-de-acopio-3578192",
+      "nota": "En alianza con el Minuto de Dios. Confirmar horario y hasta cuándo reciben."
+    },
+    {
+      "nombre": "Uniagraria",
+      "tipo": "universidad",
+      "direccion": "Calle 170 # 54A-10",
+      "recibe": [
+        "jabon",
+        "cepillo_crema_dental",
+        "toallas_higienicas",
+        "papel_higienico",
+        "panales_bebe",
+        "colchonetas",
+        "cobijas",
+        "sabanas",
+        "alimento_perro",
+        "alimento_gato"
+      ],
+      "no_recibe": [
+        "ropa_usada_buen_estado"
+      ],
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/vida/educacion/universidades-del-pais-se-movilizan-para-apoyar-a-las-victimas-del-terremoto-ingenieros-psicologos-y-centros-de-acopio-3578192",
+      "nota": "En alianza con la Cruz Roja. La fuente dice kits de higiene, insumos de hábitat y para mascotas: NO alimentos. Confirmar."
+    },
+    {
+      "nombre": "Universidad Nacional — Capilla Cristo Maestro",
+      "tipo": "universidad",
+      "direccion": "Carrera 45 # 26-85, Ciudad Universitaria",
+      "barrio": "Teusaquillo",
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/vida/educacion/universidades-del-pais-se-movilizan-para-apoyar-a-las-victimas-del-terremoto-ingenieros-psicologos-y-centros-de-acopio-3578192",
+      "nota": "La fuente da la sede (capilla Cristo Maestro) pero no la nomenclatura: la dirección es la de la Ciudad Universitaria. Preguntar por dónde se entra."
+    },
+    {
+      "nombre": "Corferias — acopio para mascotas",
+      "tipo": "empresa",
+      "direccion": "Carrera 37 # 24-67",
+      "barrio": "El arco de Corferias",
+      "horario": "Del 13 al 17 de agosto, de 10:00 a.m. a 6:00 p.m.",
+      "recibe": [
+        "alimento_perro",
+        "alimento_gato",
+        "guacales",
+        "botiquin"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "Alcaldía de Bogotá (IDPYBA)",
+      "fuente_url": "https://bogota.gov.co/mi-ciudad/ambiente/corferias-sera-centro-de-acopio-ayuda-animales-afectados-terremoto",
+      "nota": "SOLO MASCOTAS: concentrado, arena, guacales, correas, e insumos veterinarios (gasas, clorhexidina, suero). CIERRA EL 17 DE AGOSTO: si se publica, ponerle fecha_fin o revisarlo ese día."
+    },
+    {
+      "nombre": "Laika La 116",
+      "tipo": "empresa",
+      "direccion": "Calle 116 # 18B-4",
+      "recibe": [
+        "alimento_perro",
+        "alimento_gato",
+        "guacales"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/cultura/gente/asi-puede-donar-comida-y-articulos-para-mascotas-afectadas-por-el-terremoto-en-colombia-3577609",
+      "nota": "SOLO MASCOTAS. Es una tienda: confirmar horario y hasta cuándo reciben."
+    },
+    {
+      "nombre": "Laika Chapinero",
+      "tipo": "empresa",
+      "direccion": "Carrera 7 # 59-34",
+      "recibe": [
+        "alimento_perro",
+        "alimento_gato",
+        "guacales"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/cultura/gente/asi-puede-donar-comida-y-articulos-para-mascotas-afectadas-por-el-terremoto-en-colombia-3577609",
+      "nota": "SOLO MASCOTAS. Es una tienda: confirmar horario y hasta cuándo reciben."
+    },
+    {
+      "nombre": "Laika Modelia",
+      "tipo": "empresa",
+      "direccion": "Avenida Calle 24 # 74A-57",
+      "recibe": [
+        "alimento_perro",
+        "alimento_gato",
+        "guacales"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/cultura/gente/asi-puede-donar-comida-y-articulos-para-mascotas-afectadas-por-el-terremoto-en-colombia-3577609",
+      "nota": "SOLO MASCOTAS. Es una tienda: confirmar horario y hasta cuándo reciben."
+    },
+    {
+      "nombre": "Laika La 94",
+      "tipo": "empresa",
+      "direccion": "Calle 94 # 13-73",
+      "recibe": [
+        "alimento_perro",
+        "alimento_gato",
+        "guacales"
+      ],
+      "no_recibe": [],
+      "fuente_nombre": "El Tiempo",
+      "fuente_url": "https://www.eltiempo.com/cultura/gente/asi-puede-donar-comida-y-articulos-para-mascotas-afectadas-por-el-terremoto-en-colombia-3577609",
+      "nota": "SOLO MASCOTAS. Es una tienda: confirmar horario y hasta cuándo reciben."
+    },
+    {
+      "nombre": "Centro Comercial Portal de la 80",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Portal de la 80",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Centro Suba",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Centro Suba",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Paseo Villa del Río",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Paseo Villa del Río",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial El Gran San",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial El Gran San",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Atlantis Plaza",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Atlantis Plaza",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Avenida Chile",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Avenida Chile",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Centro Mayor",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Centro Mayor",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Plaza Imperial",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Plaza Imperial",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Nuestro Bogotá",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Nuestro Bogotá",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Plaza de las Américas",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Plaza de las Américas",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Titán Plaza",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Titán Plaza",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Ciudad Tunal",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Ciudad Tunal",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
+    },
+    {
+      "nombre": "Centro Comercial Galerías",
+      "tipo": "empresa",
+      "direccion": "Centro Comercial Galerías",
+      "fuente_nombre": "Portafolio",
+      "fuente_url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168",
+      "nota": "DIRECCIÓN SIN CONFIRMAR: ACE Colombia publicó solo el nombre del centro comercial, no la nomenclatura. Conseguirla, y preguntar en qué parte del centro comercial está el punto."
     }
   ],
-
   "pistas_sin_confirmar": [
     {
       "que": "Universidad Pedagógica Nacional e Instituto Pedagógico Nacional",
@@ -138,6 +432,26 @@
       "que": "El mapa oficial de Mapas Bogotá",
       "por_que_no_entro": "bogota.gov.co dice que la lista completa está en un mapa interactivo (mapas.bogota.gov.co, capa 127089), no en el texto de la nota. Ahí puede haber varios puntos más de los que están acá.",
       "url": "https://bogota.gov.co/mi-ciudad/hacienda/centros-de-acopio-para-donaciones-por-terremoto-en-bogota-2026"
+    },
+    {
+      "que": "Fundación Universitaria Konrad Lorenz",
+      "por_que_no_entro": "Su acopio (Carrera 9 Bis # 62-43) cerraba el 14 de agosto a las 8 p. m. Ya venció.",
+      "url": "https://www.eltiempo.com/vida/educacion/universidades-del-pais-se-movilizan-para-apoyar-a-las-victimas-del-terremoto-ingenieros-psicologos-y-centros-de-acopio-3578192"
+    },
+    {
+      "que": "Universidad Católica de Colombia y Unihorizonte",
+      "por_que_no_entro": "El Tiempo las menciona —la Católica recibe hasta el 19 de agosto, en alianza con el Banco de Alimentos— pero sin dirección de la sede que recibe.",
+      "url": "https://www.eltiempo.com/vida/educacion/universidades-del-pais-se-movilizan-para-apoyar-a-las-victimas-del-terremoto-ingenieros-psicologos-y-centros-de-acopio-3578192"
+    },
+    {
+      "que": "Los otros 26 centros comerciales de ACE",
+      "por_que_no_entro": "ACE anunció 42 en el país y la lista publicada solo nombra 16 (13 de Bogotá y 3 de Cundinamarca). Faltan 26, y ninguno trae dirección.",
+      "url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168"
+    },
+    {
+      "que": "Cundinamarca: Mercurio (Soacha), Meridiano (Cota), Meridiano Novaterra (Mosquera)",
+      "por_que_no_entro": "Son otros municipios, fuera del pilotaje de Bogotá y Medellín. Quedan listos para una siguiente ronda.",
+      "url": "https://www.portafolio.co/negocios/empresas/42-centros-comerciales-seran-puntos-de-acopio-para-ayudar-a-afectados-por-el-terremoto-en-colombia-500168"
     }
   ]
 }

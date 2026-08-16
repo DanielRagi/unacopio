@@ -150,8 +150,9 @@ const celda = (valor) => {
 
 const COLUMNAS = [
   'nombre', 'tipo_organizacion', 'municipio_codigo', 'municipio', 'direccion',
-  'barrio', 'lat', 'lng', 'responsable_nombre', 'telefono', 'horario_texto',
-  'necesita_urgente', 'recibe', 'no_recibe', 'notas', 'fuente_nombre', 'fuente_url',
+  'barrio', 'lat', 'lng', 'responsable_nombre', 'telefono', 'instagram',
+  'horario_texto', 'necesita_urgente', 'recibe', 'no_recibe', 'notas',
+  'fuente_nombre', 'fuente_url',
 ];
 
 /** Todo lo que un moderador necesita saber antes de marcar el teléfono. */
@@ -169,7 +170,11 @@ function armarNotas(punto, ciudad, coord) {
   } else if (coord.por !== 'nombre' && coord.por !== 'dirección') {
     partes.push(`PIN APROXIMADO (ubicado por ${coord.por}). Verificarlo al editar.`);
   }
-  if (!punto.telefono) partes.push('SIN TELÉFONO: conseguirlo antes de poder verificar.');
+  if (!punto.telefono && !punto.instagram) {
+    partes.push('SIN CONTACTO: conseguir teléfono o Instagram antes de poder verificar.');
+  } else if (!punto.telefono) {
+    partes.push('Sin teléfono: la verificación toca por Instagram.');
+  }
   if (ciudad.nota_horario) partes.push(ciudad.nota_horario);
   return partes.join(' · ');
 }
@@ -217,12 +222,16 @@ for (const archivo of archivos) {
       // `importar_punto` lo deja como "Por confirmar".
       '',
       punto.telefono ?? '',
+      punto.instagram ?? '',
       punto.horario ?? ciudad.horario_reportado ?? '',
       // Nada va como urgente: las fuentes no priorizan (ver el encabezado de
       // cada archivo). La urgencia se pregunta en la llamada.
       '',
-      ciudad.recibe.join(';'),
-      ciudad.no_recibe.join(';'),
+      // Las listas de la ciudad son el caso general; un punto puede traer las
+      // suyas. Los de mascotas no reciben arroz, y los que solo aceptan aseo no
+      // deberían salir cuando alguien filtra por alimentos.
+      (punto.recibe ?? ciudad.recibe).join(';'),
+      (punto.no_recibe ?? ciudad.no_recibe).join(';'),
       armarNotas(punto, ciudad, coord),
       punto.fuente_nombre ?? ciudad.fuente_principal.nombre,
       punto.fuente_url ?? ciudad.fuente_principal.url,
@@ -235,6 +244,7 @@ for (const archivo of archivos) {
     ubicados,
     aproximadosOSinUbicar: ciudad.puntos.length - ubicados,
     sinTelefono: ciudad.puntos.filter((p) => !p.telefono).length,
+    soloInstagram: ciudad.puntos.filter((p) => !p.telefono && p.instagram).length,
     conConflicto: ciudad.puntos.filter((p) => p.conflicto).length,
     pistasSinConfirmar: ciudad.pistas_sin_confirmar?.length ?? 0,
   });
