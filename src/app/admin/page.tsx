@@ -5,11 +5,13 @@ import { AvisoDeFragmento } from '@/components/AvisoDeFragmento';
 import { FilaLlamada } from '@/components/FilaLlamada';
 import { FilaModeracion } from '@/components/FilaModeracion';
 import { FilaSolicitud } from '@/components/FilaSolicitud';
+import { FiltroModeracion as SelectorUbicacion } from '@/components/FiltroModeracion';
 import { FormularioAcceso } from '@/components/FormularioAcceso';
 import {
   contarPorEstado, contarSolicitudes, duplicadosDe, HORAS_FRESCURA,
   listarPorLlamar, listarPuntosModeracion, listarSolicitudes, obtenerModerador,
-  type Duplicado,
+  ubicacionesModeracion,
+  type Duplicado, type FiltroModeracion,
 } from '@/lib/datos';
 import type { EstadoPunto } from '@/lib/tipos';
 
@@ -86,13 +88,38 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
       (params.estado as EstadoPunto)) ||
     'pendiente';
 
-  const [puntos, conteos, solicitudes, pendientesBandeja, porLlamar] = await Promise.all([
-    vista === 'puntos' ? listarPuntosModeracion(estadoActivo) : Promise.resolve([]),
-    contarPorEstado(),
-    vista === 'solicitudes' ? listarSolicitudes() : Promise.resolve([]),
-    contarSolicitudes(),
-    listarPorLlamar(),
-  ]);
+  /*
+   * El filtro por ubicación va en la URL como todo lo demás del panel: así se
+   * puede compartir —"revisá vos los de Medellín"— y el botón de atrás hace lo
+   * que uno espera.
+   */
+  const filtro: FiltroModeracion = {
+    dep: typeof params.dep === 'string' && /^\d{2}$/.test(params.dep) ? params.dep : undefined,
+    mun: typeof params.mun === 'string' && /^\d{5}$/.test(params.mun) ? params.mun : undefined,
+  };
+  // Los códigos DANE encajan: los 5 dígitos del municipio empiezan por los 2 del
+  // departamento. Un municipio que no corresponda es basura en la URL.
+  if (filtro.mun && filtro.dep && !filtro.mun.startsWith(filtro.dep)) filtro.mun = undefined;
+  if (filtro.mun && !filtro.dep) filtro.dep = filtro.mun.slice(0, 2);
+
+  const [puntos, conteos, solicitudes, pendientesBandeja, porLlamar, ubicaciones] =
+    await Promise.all([
+      vista === 'puntos' ? listarPuntosModeracion(estadoActivo, filtro) : Promise.resolve([]),
+      contarPorEstado(filtro),
+      vista === 'solicitudes' ? listarSolicitudes(filtro) : Promise.resolve([]),
+      contarSolicitudes(filtro),
+      listarPorLlamar(filtro),
+      ubicacionesModeracion(),
+    ]);
+
+  // Los enlaces de las pestañas tienen que arrastrar el filtro, o cambiar de
+  // pestaña lo perdería y habría que volver a elegir la ciudad cada vez.
+  const conFiltro = (base: string) => {
+    const p = new URLSearchParams(base);
+    if (filtro.dep) p.set('dep', filtro.dep);
+    if (filtro.mun) p.set('mun', filtro.mun);
+    return `/admin?${p.toString()}`;
+  };
 
   // Solo se buscan duplicados en la cola de revisión, que es donde sirven: una
   // vez publicado, el punto ya pasó por ojos humanos.
@@ -130,7 +157,7 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
 
       <nav className="flex flex-wrap gap-2">
         <Pestana
-          href="/admin?vista=llamadas"
+          href={conFiltro('vista=llamadas')}
           activa={vista === 'llamadas'}
           cuenta={porLlamar.length}
         >
@@ -139,7 +166,7 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
         {PESTANAS.map((pestana) => (
           <Pestana
             key={pestana.estado}
-            href={`/admin?estado=${pestana.estado}`}
+            href={conFiltro(`estado=${pestana.estado}`)}
             activa={vista === 'puntos' && pestana.estado === estadoActivo}
             cuenta={conteos[pestana.estado] ?? 0}
           >
@@ -147,13 +174,21 @@ export default async function PaginaAdmin({ searchParams }: PageProps<'/admin'>)
           </Pestana>
         ))}
         <Pestana
-          href="/admin?vista=solicitudes"
+          href={conFiltro('vista=solicitudes')}
           activa={vista === 'solicitudes'}
           cuenta={pendientesBandeja}
         >
           Solicitudes
         </Pestana>
       </nav>
+
+      <SelectorUbicacion
+        ubicaciones={ubicaciones}
+        dep={filtro.dep}
+        mun={filtro.mun}
+        vista={vista === 'puntos' ? undefined : vista}
+        estado={vista === 'puntos' ? estadoActivo : undefined}
+      />
 
       {vista === 'llamadas' && (
         <>

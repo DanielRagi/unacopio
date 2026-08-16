@@ -341,11 +341,17 @@ update puntos set notas = coalesce(notas, '') where id = :'importado_id';
 select 'pudo actualizar' as escritura;
 reset role;
 
+\echo '--- ubicaciones_moderacion: agrupa lo que hay en la cola'
+set role authenticated;
+select departamento, municipio, pendientes, total from ubicaciones_moderacion();
+reset role;
+
 \echo '--- pero un authenticated SIN perfil no ve nada'
 create or replace function auth.uid() returns uuid
   language sql stable as $$ select '22222222-2222-2222-2222-222222222222'::uuid $$;
 set role authenticated;
 select count(*) as filas_para_un_extrano from puntos;
+select count(*) as ubicaciones_para_un_extrano from ubicaciones_moderacion();
 reset role;
 
 do $$

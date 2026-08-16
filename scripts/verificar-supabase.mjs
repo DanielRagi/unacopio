@@ -219,6 +219,19 @@ if (servicio) {
           console.log(`  ${tabla.padEnd(16)}:`, ok ? 'lee ✓' : `BLOQUEADO — ${error.message || 'permission denied'} (falta 0009)`);
           if (!ok) fallas++;
         }
+        // 0012: el filtro por ciudad del panel. Va con la sesión de moderador
+        // porque la función es SECURITY INVOKER y depende de RLS.
+        const { data: ubicaciones, error: err12 } = await comoUsuario.rpc('ubicaciones_moderacion');
+        console.log(
+          '  0012 ubicaciones:',
+          err12
+            ? `NO aplicada (${err12.message})`
+            : `${ubicaciones.length} municipios con puntos ✓ (${ubicaciones
+                .map((u) => `${u.municipio} ${u.pendientes}`)
+                .join(', ')})`,
+        );
+        if (err12) fallas++;
+
         await comoUsuario.auth.signOut();
       }
     }
