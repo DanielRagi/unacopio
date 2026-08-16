@@ -1,0 +1,291 @@
+{
+  "_lea_esto_primero": "Decisiones de una pasada de moderación asistida, hecha por urgencia y SIN llamar a nadie. Cada punto publicado acá sigue necesitando confirmación telefónica. El campo `motivo` de los que quedan pendientes dice exactamente qué falta.",
+  "fecha": "2026-08-16",
+  "criterios_para_publicar": [
+    "La fuente es identificable: entidad oficial, prensa grande, o la cuenta propia de quien opera el punto verificada por Acopio Colombia contra su propio canal. Un volante anónimo circulando en redes NO cuenta.",
+    "El pin está sobre la dirección. Se descartaron los que quedaron en el centro de la ciudad (respaldo del geocodificador), los ubicados solo por barrio, y cuatro que el contraste contra la nomenclatura mostró a más de un kilómetro.",
+    "La dirección alcanza para llegar. Un centro comercial conocido sirve; una nomenclatura en disputa entre fuentes, no.",
+    "No es duplicado de otro registro que sí se publicó."
+  ],
+  "ajustes_aplicados": [
+    "telefono: 'Por confirmar' cuando no había número real ('por conseguir', '0').",
+    "instagram: se deja vacío. NO se escribe 'Por confirmar' ahí porque el sitio lo publica como enlace a una cuenta.",
+    "telefono_publico: sigue en false. Copiar un número de una publicación no es la autorización que pide la Ley 1581 de 2012.",
+    "notas: reescritas para quien dona. Se borró todo lo interno (estado de verificación de la fuente, avisos sobre el pin, 'conseguir teléfono antes de verificar') y se conservó lo que sirve en la puerta: quién opera el punto, qué más reciben, qué no reciben, por dónde se entra.",
+    "ultima_verificacion: se deja en null. Nadie llamó; marcarlos como verificados sería mentira."
+  ],
+  "publicar": [
+    {
+      "id": "fa7e2cd7-391c-4d1b-b63e-92df11ee7fa3",
+      "nombre": "ACSC Medellín — centro de acopio de insumos médicos",
+      "notas": "Lo opera la Asociación Colombiana de Sociedades Científicas. Es un acopio de insumos médicos: además de lo listado reciben líquidos endovenosos, tubos endotraqueales, máscaras laríngeas, yelcos, equipos de succión, agujas, productos de higiene y plantas eléctricas. No reciben insumos abiertos o usados. Llama antes de ir."
+    },
+    {
+      "id": "c79dddbc-44b4-496c-a2a3-9e4a77baa918",
+      "nombre": "Bodega Guayaquiliando",
+      "notas": "Queda al lado del restaurante 7 Mesas, cerca de la iglesia de Santa Gema. Además de lo listado reciben leche, harina, artículos de aseo y de aseo personal, y cajas de cartón. No reciben productos vencidos."
+    },
+    {
+      "id": "5dd6b404-1202-4a36-83d0-a39bf2a7ef5b",
+      "nombre": "Colectivo Afro UdeA",
+      "notas": "Colectivo estudiantil de la Universidad de Antioquia, en los bajos del bloque 9. No están recibiendo ropa."
+    },
+    {
+      "id": "65d9050f-2c4b-48f8-82be-7ddbb5ba0f1a",
+      "nombre": "Fundación Banco Arquidiocesano de Alimentos (FUBAM)",
+      "notas": "Lo opera FUBAM, en alianza con la Alcaldía de Medellín y la Corporación Presentes. Además de lo listado reciben garbanzos, arvejas, harina de maíz y de trigo, chocolate, frutos secos, avena, leche en polvo, leche UHT, toallitas húmedas y artículos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "623d5f93-5b68-4ab7-8c1f-c457d3977ce4",
+      "nombre": "Parque Biblioteca León de Greiff",
+      "notas": "Es uno de los diez puntos que habilitó la Alcaldía de Medellín."
+    },
+    {
+      "id": "8a610e7c-51e4-4f8b-8e99-b93d4ace6a17",
+      "nombre": "Parque Biblioteca San Javier",
+      "notas": "Es uno de los diez puntos que habilitó la Alcaldía de Medellín, operado por la Red de Bibliotecas Públicas. Además de lo listado reciben leche, harina y artículos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "d3df3220-0692-4545-b67d-d7cacff0e839",
+      "nombre": "Punto de Acopio La 80",
+      "notas": "Queda frente a Los Verdes de la 80. Hace parte de la Red Nacional de Puntos de Solidaridad («Colombia un solo corazón»). Además de lo listado reciben alimento para mascotas, artículos de aseo, pañitos húmedos, baterías y botiquines. No reciben productos vencidos."
+    },
+    {
+      "id": "19ea7f25-6be6-4e66-bb65-bdaad75a4548",
+      "nombre": "Ragazzi Poblado",
+      "notas": "Lo opera Ragazzi. Además de lo listado reciben alimentos, elementos de aseo e higiene y equipos de rescate."
+    },
+    {
+      "id": "7808139b-26ad-4276-934c-3e1f56723b17",
+      "nombre": "Somos Belisario — oficina",
+      "notas": "Lo opera Somos Belisario Grupo Empresarial, en su oficina. También reciben medicinas."
+    },
+    {
+      "id": "a8faea25-95fc-4d27-9be8-001cd806c1a1",
+      "nombre": "Terminal del Sur — Local 015",
+      "notas": "Queda en el local 015 del centro comercial de la Terminal del Sur. Hace parte de la Red Nacional de Puntos de Solidaridad («Colombia un solo corazón»). Además de lo listado reciben cascos de seguridad para rescate, gafas de protección y elementos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "a6c297c4-e441-456f-afe6-abaedc7542e8",
+      "nombre": "Universidad de Antioquia — Proyecto Oficinas Estudiantiles (POE)",
+      "notas": "Queda en el bloque 9, oficina 211B, de Ciudad Universitaria. En el mismo bloque hay otro punto, el del Colectivo Afro UdeA: son dos grupos distintos."
+    },
+    {
+      "id": "31c6c0c3-a47b-4eac-960a-1d4fec08a3dd",
+      "nombre": "122 Plaza Apartahotel",
+      "notas": "Se recibe en la recepción del apartahotel, que atiende 24 horas. Hace parte de la Red Nacional de Puntos de Solidaridad («Colombia un solo corazón»). Además de lo listado reciben cascos de seguridad para rescate, gafas de protección y elementos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "cb3b7cb4-de50-4273-8cfe-9b11877abdd8",
+      "nombre": "ACSC Bogotá D.C. — centro de acopio de insumos médicos",
+      "notas": "Lo opera la Asociación Colombiana de Sociedades Científicas. Es un acopio de insumos médicos: además de lo listado reciben líquidos endovenosos, tubos endotraqueales, máscaras laríngeas, yelcos, equipos de succión, agujas, productos de higiene y plantas eléctricas. No reciben insumos abiertos o usados. Llama antes de ir."
+    },
+    {
+      "id": "06be7169-733e-4da6-b4db-f7d4a2c863fc",
+      "nombre": "Banco de Alimentos de Bogotá",
+      "notas": "Recibe donaciones en persona en esa dirección."
+    },
+    {
+      "id": "32207fec-bb38-46dd-a605-a3c84b14e3b6",
+      "nombre": "Bodega Cruz Roja",
+      "notas": "Lo opera la Cruz Roja Colombiana, seccional Cundinamarca y Bogotá. Además de lo listado reciben harina, leche en polvo, chocolate en polvo, alcohol, clorhexidina, productos de higiene menstrual y toallitas húmedas. No reciben productos vencidos."
+    },
+    {
+      "id": "d52f18dc-3829-4e07-b31b-4e65faf2bbd6",
+      "nombre": "California Tattoo",
+      "notas": "El punto queda en el tercer piso. Además de lo listado reciben alimentos y elementos de aseo e higiene."
+    },
+    {
+      "id": "e6af3a06-b5f7-454e-a306-aac656a4205e",
+      "nombre": "Casa del Valle",
+      "notas": "Lo opera la Gobernación del Valle del Cauca, campaña «El Valle Somos Todos», en el barrio La Merced. Además de lo listado reciben kits de aseo, gafas de protección, bolsas resistentes, toallas y cascos. No reciben productos vencidos."
+    },
+    {
+      "id": "6dd587e4-0bc4-4095-b88c-738df4430d1d",
+      "nombre": "Centro Comercial Atlantis Plaza",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "4b2d73b7-6774-4d56-8038-839b73bf4d7a",
+      "nombre": "Centro Comercial Avenida Chile",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "5f190b06-cb71-4ab0-bee3-03cf7db5f31c",
+      "nombre": "Centro Comercial Centro Mayor",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "d9911f82-c376-41d7-ae91-6f2e4a230fa7",
+      "nombre": "Centro Comercial Centro Suba",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "4c7deae6-e397-4df1-91dd-ad91f814ef91",
+      "nombre": "Centro Comercial Ciudad Tunal",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "a7d87b65-bfe3-4c4b-b169-5514a57c281c",
+      "nombre": "Centro Comercial El Gran San",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "13d9d66e-64b5-436a-9ffd-cce140cb4d43",
+      "nombre": "Centro Comercial Galerías",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "2d847503-4811-4a0a-8f70-37f9cb631624",
+      "nombre": "Centro Comercial Nuestro Bogotá",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "bfcda6ac-5dd3-4508-8f0e-19fe380ff46d",
+      "nombre": "Centro Comercial Paseo Villa del Río",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "d9cf08c9-644c-4514-8798-8e92bdf1e91e",
+      "nombre": "Centro Comercial Plaza de las Américas",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "9a0e7704-2544-4943-920f-4de310c25724",
+      "nombre": "Centro Comercial Titán Plaza",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "aa1e52b8-3d2c-457c-b113-83384bba0f58",
+      "nombre": "Centro Cultural del Barrio",
+      "notas": "Lo opera el Teatro del Barrio. Además de lo listado reciben alimentos, elementos de aseo e higiene y equipos de rescate."
+    },
+    {
+      "id": "068126aa-78f5-418b-810e-6fc0cc9df606",
+      "nombre": "Centro de Salvamento Acuático — Cruz Roja (Sede Barrios Unidos)",
+      "notas": "Lo opera la Cruz Roja Colombiana, seccional Cundinamarca y Bogotá. Además de lo listado reciben harina, leche en polvo, chocolate en polvo, alcohol, clorhexidina, productos de higiene menstrual y toallitas húmedas. No reciben productos vencidos."
+    },
+    {
+      "id": "0ebc6ad0-1b64-427f-9eda-90bb0d79c781",
+      "nombre": "CODABAS",
+      "notas": "Queda en el módulo 2, piso 2. Hace parte de la Red Nacional de Puntos de Solidaridad («Colombia un solo corazón»). Además de lo listado reciben cascos de seguridad para rescate, gafas de protección y elementos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "3b4ed361-0e7d-4086-bc5d-6385ef846b60",
+      "nombre": "Corferias — acopio para mascotas",
+      "notas": "Acopio del Instituto de Protección y Bienestar Animal (IDPYBA) de la Alcaldía de Bogotá, SOLO para mascotas: concentrado, arena, guacales, correas e insumos veterinarios (gasas, clorhexidina, suero). Se entrega por el arco de Corferias.",
+      "fecha_fin": "2026-08-17"
+    },
+    {
+      "id": "61b58bb8-466d-4142-b0a1-33c94f5ecdc3",
+      "nombre": "Estadio El Campín",
+      "notas": "Punto habilitado por la Alcaldía Mayor de Bogotá sobre la Avenida NQS, entre la Calle 53B Bis y la Calle 57. Pregunta por cuál portería se recibe."
+    },
+    {
+      "id": "6884d401-a592-4093-bbb8-b179e8975832",
+      "nombre": "GAULA — La Castellana",
+      "notas": "Hace parte de la Red Nacional de Puntos de Solidaridad («Colombia un solo corazón»), en el barrio La Castellana. Además de lo listado reciben cascos de seguridad para rescate, gafas de protección y elementos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "63563dc1-899e-4116-bedb-e28995351317",
+      "nombre": "Gobernación de Cundinamarca — Plaza de la Paz",
+      "notas": "Lo opera la Gobernación de Cundinamarca, en la Plaza de la Paz de su sede. Además de lo listado reciben elementos de aseo e higiene personal, insumos básicos de salud y elementos de cuidado para animales. No reciben productos vencidos.",
+      "fecha_fin": "2026-08-23"
+    },
+    {
+      "id": "4e64102a-cab8-4cca-9a37-9bcb097874d9",
+      "nombre": "Mall Plaza NQS",
+      "notas": "Está dentro del centro comercial. Además de lo listado reciben alimentos, elementos de aseo e higiene y equipos de rescate."
+    },
+    {
+      "id": "35f3b22c-613e-4378-ba4f-aa6ea84074fe",
+      "nombre": "Palacio de los Deportes",
+      "notas": "Punto de la Alcaldía Mayor de Bogotá para las donaciones que van al Chocó. Queda junto al Complejo Acuático El Salitre y al parque Los Novios."
+    },
+    {
+      "id": "b89ea65e-2e3f-41d9-b6b3-306cd9d47d93",
+      "nombre": "Punto de acopio Usaquén",
+      "notas": "Lo operan la Alcaldía Mayor de Bogotá y la Cruz Roja Colombiana. Además de lo listado reciben harina, leche en polvo, chocolate en polvo, alcohol, clorhexidina, productos de higiene menstrual y toallitas húmedas. No reciben productos vencidos."
+    },
+    {
+      "id": "0287c978-f8ab-497d-9334-c09dbf6905f7",
+      "nombre": "Punto de Solidaridad Park Way",
+      "notas": "Hace parte de la Red Nacional de Puntos de Solidaridad («Colombia un solo corazón»). Además de lo listado reciben cascos de seguridad para rescate, gafas de protección y elementos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "e0596612-c70a-4394-87e9-c4d49d8ed29d",
+      "nombre": "Punto Solidario de Acopio - Universidad Nacional de Colombia sede Bogotá (UNAL)",
+      "notas": "Lo opera la Universidad Nacional de Colombia, sede Bogotá. Queda en la Capilla Cristo Maestro (edificio 251) de la Ciudad Universitaria. Además de lo listado reciben alimentos y elementos de aseo e higiene."
+    },
+    {
+      "id": "9d66d011-de41-4f31-ac22-444a73a33a73",
+      "nombre": "Ramen house",
+      "notas": "Lo opera Cosplays y Sonrisas. Además de lo listado reciben alimentos y elementos de aseo e higiene."
+    },
+    {
+      "id": "bb99661d-0335-4fde-9ad2-e49382627f1c",
+      "nombre": "SAMU Sur — Cruz Roja",
+      "notas": "Lo opera la Cruz Roja Colombiana, seccional Cundinamarca y Bogotá. Además de lo listado reciben harina, leche en polvo, chocolate en polvo, alcohol, clorhexidina, productos de higiene menstrual y toallitas húmedas. No reciben productos vencidos."
+    },
+    {
+      "id": "932d2621-ca21-41fd-a33f-1edab4d35bee",
+      "nombre": "Sede administrativa Cruz Roja",
+      "notas": "Lo opera la Cruz Roja Colombiana, seccional Cundinamarca y Bogotá; recibe 24 horas. Además de lo listado reciben harina, leche en polvo, chocolate en polvo, alcohol, clorhexidina, productos de higiene menstrual, toallitas húmedas y artículos de higiene. No reciben productos vencidos."
+    },
+    {
+      "id": "5e3bf92b-fa7c-4c00-93a3-635f6190ec29",
+      "nombre": "Tienda Apapachando",
+      "notas": "Además de lo listado reciben alimentos, elementos de aseo e higiene y equipos de rescate."
+    },
+    {
+      "id": "f1818b65-af51-44c9-8841-961fda3f8b96",
+      "nombre": "Unicentro Bogotá",
+      "notas": "Lo operan la Alcaldía Mayor de Bogotá y la Cruz Roja Colombiana, junto con Tigresas de la Patria. Hay entrada por la Carrera 13 (Zona de Banderas) y por la Carrera 15 (entrada principal). Además de lo listado reciben cascos de seguridad para rescate, gafas de protección y elementos de aseo. No reciben productos vencidos."
+    },
+    {
+      "id": "ae808d99-c1d1-402e-a722-3fb354e961a7",
+      "nombre": "Universidad Externado de Colombia",
+      "notas": "Lo opera el Departamento de Bienestar Universitario. Además de lo listado reciben alimentos y elementos de aseo e higiene."
+    }
+  ],
+  "dejar_pendiente": [
+    { "id": "3330a410-f7d1-48b5-94b1-3dec9d2245e5", "nombre": "Batallón Girardot", "motivo": "La única fuente es un volante anónimo en redes, y le atribuye el punto al Ejército Nacional. Confirmar con la unidad antes de publicarlo." },
+    { "id": "28fcdc33-6060-445b-84a3-a67aa497326f", "nombre": "Fundación El Arte de los Sueños", "motivo": "Volante anónimo en redes, sin verificar." },
+    { "id": "ad436590-1d4f-4380-b1f8-e23e391dc462", "nombre": "La Razón", "motivo": "Volante anónimo en redes, sin verificar." },
+    { "id": "0e6e862f-8e97-488a-853c-dfb4c349f1a0", "nombre": "Remanence", "motivo": "Volante anónimo en redes, sin verificar." },
+    { "id": "3e986f69-8abb-4350-a600-0743c3b387c3", "nombre": "Simón Coffee", "motivo": "Volante anónimo en redes, sin verificar." },
+    { "id": "43cdf573-859d-4dfe-9b76-22ce19255f57", "nombre": "Centro de acopio Central Mayorista de Antioquia", "motivo": "MUNICIPIO PROBABLEMENTE MAL: la Central Mayorista de Antioquia queda en Itagüí (05360), no en Medellín, y el pin cae del lado de Itagüí. Corregir el municipio y publicar; la fuente es buena." },
+    { "id": "40cd721e-fbff-4e43-a19e-c782402c18d0", "nombre": "Biblioteca Pública El Poblado", "motivo": "Pin ubicado solo por barrio. Es punto oficial de la Alcaldía: mover el pin a la sede y publicar." },
+    { "id": "3bf0379c-a477-47c4-887a-2cb1346ecd70", "nombre": "Fundación Saciar", "motivo": "Pin en el centro de la ciudad, no en la dirección. Es punto oficial de la Alcaldía: mover el pin y publicar." },
+    { "id": "e9576ac0-ad8a-4958-94ed-bbfdeb445e62", "nombre": "Librería Rodante Delfos", "motivo": "Pin ubicado solo por barrio (Laureles), a unos 500 m de la dirección." },
+    { "id": "d59a3a44-adb6-4079-b20b-40395330b4ad", "nombre": "Laika Agua Bendita", "motivo": "Pin en el centro de la ciudad, no en la dirección." },
+    { "id": "e46d436f-4654-457e-ac91-c3ae3361ff56", "nombre": "Laika Arkadia", "motivo": "La dirección está en disputa: El Tiempo la imprime sin separador («Carrera 70 #1141»). Confirmar antes de publicar." },
+    { "id": "3b9df7cc-ab59-4722-8f30-dd31b7580e5a", "nombre": "Bomberos — Estación Chapinero B-1", "motivo": "Pin ubicado por barrio, a ~1,7 km de la dirección. Fuente buena: mover el pin y publicar." },
+    { "id": "18f1d0dc-3cec-4ae5-ae31-304747463dcf", "nombre": "Bomberos — Estación Kennedy B-5", "motivo": "Pin ubicado por barrio, a ~1,6 km de la dirección. Fuente buena: mover el pin y publicar." },
+    { "id": "35b0ab61-4c11-404d-98e7-72bbead308c2", "nombre": "Bomberos — Estación Puente Aranda B-4", "motivo": "Pin ubicado por barrio. Fuente buena: mover el pin y publicar." },
+    { "id": "d8847979-b878-4754-a7ab-a6c839dd2a7d", "nombre": "Bomberos — Estación Restrepo B-3", "motivo": "Pin ubicado por barrio. Fuente buena: mover el pin y publicar." },
+    { "id": "1357d4f4-62f1-4dd1-9c81-eae942684666", "nombre": "Casa Cural Parroquia San Pedro Apóstol", "motivo": "Lo envió alguien de la comunidad y nadie lo verificó contra la parroquia. Tiene correo de la Arquidiócesis y fijo: una llamada lo resuelve." },
+    { "id": "e1bddf08-b456-4f36-946a-f4d50141e28e", "nombre": "Casa Jardín Origen", "motivo": "Pin ubicado por barrio (Teusaquillo)." },
+    { "id": "16cde2c4-00da-4ec4-b6db-4af01fc35938", "nombre": "Centro Comercial Plaza Imperial", "motivo": "Pin en el centro de la ciudad, no en el centro comercial." },
+    { "id": "dd9fb760-0cdf-43fb-83ab-32372a556ad8", "nombre": "Centro Comercial Portal de la 80", "motivo": "Pin en el centro de la ciudad, no en el centro comercial." },
+    { "id": "69621b3e-8657-48f4-9cf4-8f2434e54e4c", "nombre": "Centro Comercial Unicentro", "motivo": "Duplicado de «Unicentro Bogotá», que sí se publicó y tiene mejor pin y teléfono." },
+    { "id": "641108a6-02b9-4aed-8ccc-f2edb9ed4389", "nombre": "Compranet comercio electrónico", "motivo": "El pin es el de respaldo del centro de Bogotá: la dirección (Cra 109A #69B-50) queda a más de 6 km. Mover el pin y publicar." },
+    { "id": "7902eaea-19be-43eb-b07c-d70a8222f4ba", "nombre": "Cruz Roja — bodega", "motivo": "Duplicado de «Bodega Cruz Roja», que sí se publicó. Además el pin quedó sin ubicar." },
+    { "id": "21e129a2-00df-45fa-a781-7c3da2a05828", "nombre": "Cruz Roja — Centro de Salvamento Acuático", "motivo": "Duplicado del «Centro de Salvamento Acuático — Cruz Roja», que sí se publicó. Además el pin quedó sin ubicar." },
+    { "id": "5459998a-14ca-40a5-82b2-33a1e104c2c5", "nombre": "Cruz Roja — SAMU Norte", "motivo": "Pin sin ubicar y la dirección se contradice a sí misma en la fuente («Calle 134 - Carrera 7b bis # 132-32»)." },
+    { "id": "c92e2ec9-7af1-4238-bac0-5f88d6c1f6f5", "nombre": "Cruz Roja — SAMU Sur", "motivo": "Duplicado de «SAMU Sur — Cruz Roja», que sí se publicó. Además el pin quedó sin ubicar." },
+    { "id": "0e4e3802-5f16-48c5-965a-d6ac39c2184a", "nombre": "Cruz Roja Colombiana — sede administrativa", "motivo": "Duplicado de «Sede administrativa Cruz Roja», que sí se publicó. Además el pin quedó sin ubicar." },
+    { "id": "784969bf-c914-4249-bb3b-0616ec26f850", "nombre": "Fundación Catalina Muñoz", "motivo": "Pin en el centro de la ciudad, no en la dirección." },
+    { "id": "6b6b44ea-1af8-4686-8a0d-c6d030333ab3", "nombre": "Fundación Universitaria Juan N. Corpas", "motivo": "Pin en el centro de la ciudad; la dirección real (Cra 111 #159A-61) queda a más de 6 km." },
+    { "id": "7526ee80-71f5-45c7-adf5-f293e13936c9", "nombre": "Human Construction", "motivo": "Pin en el centro de la ciudad, no en la dirección." },
+    { "id": "2a8dfe98-9d5a-40d6-b22d-e5ab238f1e90", "nombre": "Laika Chapinero", "motivo": "Pin en el centro de la ciudad, no en la dirección." },
+    { "id": "d473afbb-ae6e-442e-a90e-a80d93ff3212", "nombre": "Laika La 116", "motivo": "Pin en el centro de la ciudad; la Calle 116 queda a unos 5 km." },
+    { "id": "25066594-37c4-470d-9c13-efb12a427f91", "nombre": "Laika La 94", "motivo": "PIN MALO sin que ninguna nota lo avisara: está a ~2,4 km al norte de la Calle 94. Moverlo y publicar." },
+    { "id": "a0ec89cb-f989-45da-88fc-a7b56a40616f", "nombre": "Laika Modelia", "motivo": "Pin en el centro de la ciudad, no en Modelia." },
+    { "id": "2da90d65-f414-4f55-964c-9cbe9395b3c3", "nombre": "Paola Rojas Camacho", "motivo": "Enviado por la comunidad y sin verificar, y el punto está a nombre de una persona natural en lo que parece una dirección residencial. Confirmar con ella antes de publicar su casa." },
+    { "id": "5f81da88-0321-479a-9b35-793dbf2d45a5", "nombre": "Punto de acopio de Usaquén", "motivo": "Duplicado de «Punto de acopio Usaquén», que sí se publicó. Su pin además está a 5 km de la Calle 161A." },
+    { "id": "45c3d8ce-9166-4e53-97f5-8511ddd8e49c", "nombre": "Uniagraria", "motivo": "PIN MALO sin aviso: a ~1,7 km de la Calle 170 #54A-10. Además la fuente dice kits de higiene e insumos de hábitat y mascotas, NO alimentos, y las categorías cargadas no lo reflejan del todo." },
+    { "id": "30bc790b-5dcd-4991-8aa5-27cb8cc976c5", "nombre": "Universidad Jorge Tadeo Lozano", "motivo": "El pin queda a ~1 km al sur de la sede (Cra 4 #22-61). Fuente oficial: mover el pin y publicar." },
+    { "id": "6d93cbf5-e330-4892-b912-150ab8ec675c", "nombre": "Universidad Nacional — Capilla Cristo Maestro", "motivo": "Duplicado del «Punto Solidario de Acopio - UNAL», que sí se publicó con la ubicación exacta del edificio y teléfono." }
+  ]
+}
