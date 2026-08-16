@@ -2,7 +2,7 @@
 
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
-import { useActionState, useState } from 'react';
+import { useActionState, useMemo, useState } from 'react';
 import { SelectorCategorias } from './SelectorCategorias';
 import { SelectorHorario } from './SelectorHorario';
 import { guardarPunto } from '@/app/admin/acciones';
@@ -64,6 +64,23 @@ export function FormularioEdicion({
   const errores = estado.estado === 'error' ? estado.errores : {};
 
   const [coordenadas, setCoordenadas] = useState({ lat: punto.lat, lng: punto.lng });
+
+  /*
+   * El centro del mapa TIENE que ser un objeto estable.
+   *
+   * Pasarlo como literal en el JSX creaba uno nuevo en cada render, y eso
+   * encendía un bucle: el efecto de `MapaSelector` que recentra el mapa se
+   * disparaba, `setView` emitía `moveend`, `moveend` llamaba a `setCoordenadas`,
+   * el render siguiente creaba otro literal, y vuelta a empezar.
+   *
+   * Desde afuera no se veía como un bucle sino como una página muerta: el botón
+   * se quedaba en "Guardando…" para siempre y los enlaces no respondían, porque
+   * React no alcanzaba a procesar nada más.
+   */
+  const centro = useMemo(
+    () => ({ lat: punto.lat, lng: punto.lng }),
+    [punto.lat, punto.lng],
+  );
   const movido =
     Math.abs(coordenadas.lat - punto.lat) > 0.00001 ||
     Math.abs(coordenadas.lng - punto.lng) > 0.00001;
@@ -122,7 +139,7 @@ export function FormularioEdicion({
         {/* El municipio sigue sin editarse: el pin se mueve dentro del mismo
             municipio. Cambiar de municipio es rechazar y volver a registrar. */}
         <MapaSelector
-          centroMunicipio={{ lat: punto.lat, lng: punto.lng }}
+          centroMunicipio={centro}
           alCambiar={(lat, lng) => setCoordenadas({ lat, lng })}
         />
         <input type="hidden" name="lat" value={coordenadas.lat} />
@@ -139,6 +156,11 @@ export function FormularioEdicion({
           <p className="text-sm font-medium text-red-700 dark:text-red-400">{errores.horarios[0]}</p>
         )}
         <SelectorHorario franjas={punto.horarios} />
+        <p className="text-sm text-black/55 dark:text-white/55">
+          Si todavía no se sabe, se puede dejar sin marcar y guardar igual. El
+          punto simplemente no muestra el sello de «Abierto ahora» hasta que
+          alguien confirme el horario.
+        </p>
         <div className="grid gap-4 sm:grid-cols-2">
           <Campo etiqueta="Desde" error={errores.fecha_inicio}>
             <input type="date" name="fecha_inicio" defaultValue={punto.fecha_inicio ?? ''} className={ENTRADA} />

@@ -8,7 +8,7 @@ import type { EstadoAcceso, EstadoEdicion } from '@/lib/estados';
 import { textoHorario } from '@/lib/horarios';
 import { clienteServidor } from '@/lib/supabase/servidor';
 import type { EstadoPunto } from '@/lib/tipos';
-import { esquemaRegistro, leerFormulario } from '@/lib/validacion';
+import { esquemaModeracion, leerFormulario } from '@/lib/validacion';
 
 /**
  * Manda el enlace de acceso al correo del moderador.
@@ -183,7 +183,9 @@ export async function guardarPunto(
   const id = String(formData.get('id') ?? '');
   if (!id) return { estado: 'error', errores: {}, mensaje: 'Falta el punto.' };
 
-  const analisis = esquemaRegistro.safeParse(leerFormulario(formData));
+  // `esquemaModeracion` y no el del formulario público: acá el horario puede
+  // quedar vacío. Ver el comentario en validacion.ts.
+  const analisis = esquemaModeracion.safeParse(leerFormulario(formData));
   if (!analisis.success) {
     return { estado: 'error', errores: z.flattenError(analisis.error).fieldErrors };
   }
@@ -201,6 +203,20 @@ export async function guardarPunto(
       ? { ubicacion: `SRID=4326;POINT(${datos.lng} ${datos.lat})` }
       : {};
 
+  /*
+   * Sin franjas no se toca `horario_texto`.
+   *
+   * `textoHorario([])` devuelve cadena vacía, así que sobrescribirlo dejaría en
+   * blanco lo que el punto ya decía —"Horario por confirmar", o lo que hubiera
+   * copiado la importación— a cambio de nada. Se guarda `null` en `horarios`
+   * para que el sello de "Abierto ahora" siga callado, que es lo correcto
+   * mientras nadie confirme el horario (D12).
+   */
+  const horario =
+    datos.horarios.length > 0
+      ? { horario_texto: textoHorario(datos.horarios), horarios: datos.horarios }
+      : { horarios: null };
+
   const { error } = await supabase
     .from('puntos')
     .update({
@@ -215,8 +231,7 @@ export async function guardarPunto(
       whatsapp: datos.whatsapp,
       telefono_publico: datos.telefono_publico,
       correo: datos.correo ?? null,
-      horario_texto: textoHorario(datos.horarios),
-      horarios: datos.horarios,
+      ...horario,
       fecha_inicio: datos.fecha_inicio ?? null,
       fecha_fin: datos.fecha_fin ?? null,
       recibe_voluntarios: datos.recibe_voluntarios,
