@@ -45,51 +45,7 @@ export function FormularioRegistro({
   const [dep, setDep] = useState(previos.departamento_codigo ?? '');
   const [mun, setMun] = useState(previos.municipio_codigo ?? '');
   const [municipios, setMunicipios] = useState<Municipio[]>([]);
-  const [coordenadas, setCoordenadas] = useState<{ lat: number; lng: number } | null>(
-    previos.lat && previos.lng ? { lat: Number(previos.lat), lng: Number(previos.lng) } : null,
-  );
-
-  /*
-   * El pin lo movió la persona, así que la dirección ya no manda.
-   *
-   * Sin esta bandera, escribir la dirección después de haber ajustado el pin a
-   * mano se lo movería otra vez, y sería exasperante: el mapa peleando contra
-   * quien lo usa.
-   */
-  const [pinPropio, setPinPropio] = useState(Boolean(previos.lat));
-  const [buscandoDireccion, setBuscandoDireccion] = useState(false);
-  const [ubicadoPorDireccion, setUbicadoPorDireccion] = useState(false);
-
-  /**
-   * Busca la dirección escrita y mueve el pin si la encuentra.
-   *
-   * Se dispara al salir del campo, no en cada tecla: es una consulta a un
-   * servicio ajeno y no hay por qué hacer veinte cuando la persona todavía
-   * está escribiendo el número. Si no encuentra nada, no pasa nada.
-   */
-  const ubicarPorDireccion = async (direccion: string) => {
-    const elegido = municipios.find((m) => m.codigo === mun);
-    if (pinPropio || !elegido?.lat || !elegido?.lng || direccion.trim().length < 6) return;
-
-    setBuscandoDireccion(true);
-    try {
-      const parametros = new URLSearchParams({
-        direccion,
-        municipio: elegido.nombre,
-        lat: String(elegido.lat),
-        lng: String(elegido.lng),
-      });
-      const { resultado } = await (await fetch(`/api/geocodificar?${parametros}`)).json();
-      if (resultado) {
-        setCoordenadas({ lat: resultado.lat, lng: resultado.lng });
-        setUbicadoPorDireccion(true);
-      }
-    } catch {
-      // El mapa se queda donde está. Es una ayuda, no un requisito.
-    } finally {
-      setBuscandoDireccion(false);
-    }
-  };
+  const [coordenadas, setCoordenadas] = useState<{ lat: number; lng: number } | null>(null);
 
   const supabase = useMemo(() => clienteNavegador(), []);
 
@@ -264,16 +220,11 @@ export function FormularioRegistro({
           </Campo>
         </div>
 
-        <Campo
-          etiqueta="Dirección"
-          ayuda="Al salir de este campo intentamos ubicarla en el mapa"
-          error={errores.direccion}
-        >
+        <Campo etiqueta="Dirección" error={errores.direccion}>
           <input
             name="direccion"
             required
             defaultValue={antes('direccion')}
-            onBlur={(e) => ubicarPorDireccion(e.target.value)}
             placeholder="Calle 12 # 4-30"
             className={CLASE_ENTRADA}
           />
@@ -299,21 +250,20 @@ export function FormularioRegistro({
         </div>
 
         <Campo etiqueta="Marca el punto en el mapa">
+          {/*
+            El centro es el del municipio y nada más.
+            Pasarle acá la coordenada del pin —que era lo que hacía la versión
+            con búsqueda por dirección— provocaba que cada arrastre volviera a
+            entrar por el efecto que recentra el mapa: uno movía y el mapa se
+            devolvía. El pin sale del mapa; el mapa no debe salir del pin.
+          */}
           <MapaSelector
-            centroMunicipio={coordenadas ?? centroMunicipio}
-            alCambiar={(lat, lng) => {
-              setCoordenadas({ lat, lng });
-              setPinPropio(true);
-            }}
+            centroMunicipio={centroMunicipio}
+            alCambiar={(lat, lng) => setCoordenadas({ lat, lng })}
           />
-          <p className="text-sm text-black/55 dark:text-white/55" aria-live="polite">
-            {buscandoDireccion
-              ? 'Buscando la dirección en el mapa…'
-              : pinPropio
-                ? 'Pin puesto por ti. Ya no se mueve solo aunque cambies la dirección.'
-                : ubicadoPorDireccion
-                  ? 'Encontramos la dirección. Revisa que el pin quede sobre la entrada.'
-                  : 'Intentamos ubicar la dirección, pero muchas no las reconoce el mapa. Si estás en el punto, «Usar mi ubicación» es lo más rápido.'}
+          <p className="text-sm text-black/55 dark:text-white/55">
+            Arranca en el centro del municipio. Si estás en el punto, «Usar mi
+            ubicación» es lo más rápido; si no, mueve el mapa hasta la entrada.
           </p>
         </Campo>
 
