@@ -1,0 +1,235 @@
+{
+  "_lea_esto_primero": "Segunda pasada de moderación asistida (16 de agosto de 2026), después de corregir 23 pines con Photon. Ninguno de estos puntos está confirmado por teléfono.",
+  "fecha": "2026-08-16",
+  "criterios_para_publicar": [
+    "Fuente identificable: entidad oficial, prensa grande, o cuenta propia de quien opera el punto verificada contra su propio canal.",
+    "Pin sobre la dirección, comprobado contra la nomenclatura de la ciudad o contra el nombre del sitio en OSM.",
+    "Sin duplicar un registro ya publicado.",
+    "Municipio correcto."
+  ],
+  "publicar": [
+    {
+      "id": "5459998a-14ca-40a5-82b2-33a1e104c2c5",
+      "nombre": "Cruz Roja — SAMU Norte",
+      "notas": "Lo opera la Cruz Roja Colombiana, seccional Cundinamarca y Bogotá. Además de lo listado reciben harina, leche en polvo, chocolate en polvo, alcohol, clorhexidina, productos de higiene menstrual y toallitas húmedas. No reciben productos vencidos."
+    },
+    {
+      "id": "7526ee80-71f5-45c7-adf5-f293e13936c9",
+      "nombre": "Human Construction",
+      "notas": "Punto de la red Manos Visibles, que coordina la ayuda hacia el Chocó. Queda en el local 1."
+    },
+    {
+      "id": "2a8dfe98-9d5a-40d6-b22d-e5ab238f1e90",
+      "nombre": "Laika Chapinero",
+      "notas": "SOLO MASCOTAS: comida y accesorios para perros y gatos. Es una tienda, así que conviene confirmar hasta cuándo reciben."
+    },
+    {
+      "id": "d473afbb-ae6e-442e-a90e-a80d93ff3212",
+      "nombre": "Laika La 116",
+      "notas": "SOLO MASCOTAS: comida y accesorios para perros y gatos. Es una tienda, así que conviene confirmar hasta cuándo reciben."
+    },
+    {
+      "id": "a0ec89cb-f989-45da-88fc-a7b56a40616f",
+      "nombre": "Laika Modelia",
+      "notas": "SOLO MASCOTAS: comida y accesorios para perros y gatos. Es una tienda, así que conviene confirmar hasta cuándo reciben."
+    },
+    {
+      "id": "f8795bdf-52bd-4064-ad2d-c8d5217b12e8",
+      "nombre": "Marcali — punto de acopio",
+      "notas": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos."
+    },
+    {
+      "id": "3b9df7cc-ab59-4722-8f30-dd31b7580e5a",
+      "nombre": "Bomberos — Estación Chapinero B-1",
+      "notas": "Estación Chapinero B-1 del Cuerpo Oficial de Bomberos de Bogotá. Funciona 24 horas por ser estación, pero el acopio puede tener horario propio: pregunta al llegar."
+    },
+    {
+      "id": "18f1d0dc-3cec-4ae5-ae31-304747463dcf",
+      "nombre": "Bomberos — Estación Kennedy B-5",
+      "notas": "Estación Kennedy B-5, «Alejandro Lince» del Cuerpo Oficial de Bomberos de Bogotá. Funciona 24 horas por ser estación, pero el acopio puede tener horario propio: pregunta al llegar."
+    },
+    {
+      "id": "35b0ab61-4c11-404d-98e7-72bbead308c2",
+      "nombre": "Bomberos — Estación Puente Aranda B-4",
+      "notas": "Estación Puente Aranda B-4 del Cuerpo Oficial de Bomberos de Bogotá. Funciona 24 horas por ser estación, pero el acopio puede tener horario propio: pregunta al llegar."
+    },
+    {
+      "id": "d8847979-b878-4754-a7ab-a6c839dd2a7d",
+      "nombre": "Bomberos — Estación Restrepo B-3",
+      "notas": "Estación Restrepo B-3 del Cuerpo Oficial de Bomberos de Bogotá. Funciona 24 horas por ser estación, pero el acopio puede tener horario propio: pregunta al llegar."
+    },
+    {
+      "id": "dd9fb760-0cdf-43fb-83ab-32372a556ad8",
+      "nombre": "Centro Comercial Portal de la 80",
+      "notas": "Punto de la campaña de los centros comerciales de Colombia (ACE). Está dentro del centro comercial: pregunta en el punto de información dónde queda el acopio."
+    },
+    {
+      "id": "96ba51ec-662d-4ca3-be98-a5024b1e349a",
+      "nombre": "Fundación Universitaria Horizonte",
+      "notas": "Además de lo listado reciben insumos de primeros auxilios y productos de limpieza. NO están recibiendo ropa."
+    },
+    {
+      "id": "af060241-c04d-457e-8b3d-5e0b72c186a2",
+      "nombre": "Universidad Católica de Colombia",
+      "notas": "En alianza con el Banco de Alimentos de Bogotá. Reciben implementos de aseo y alimentos enlatados.",
+      "fecha_fin": "2026-08-19"
+    },
+    {
+      "id": "1793c071-76b6-4127-b665-a3d6f24c49a3",
+      "nombre": "Coliseo Bernardo Caraballo",
+      "notas": "Punto oficial de la Alcaldía de Cartagena, en el Coliseo de Combate Bernardo Caraballo."
+    },
+    {
+      "id": "3127563c-75fc-4346-b698-d151466ecc68",
+      "nombre": "Coliseo Miguel Happy Lora",
+      "notas": "Punto de la Gobernación de Córdoba, en el Coliseo de Ferias Miguel «Happy» Lora."
+    },
+    {
+      "id": "56c13f09-294b-4657-aa50-85bfe4516d34",
+      "nombre": "Alcaldía de Bucaramanga — primer piso",
+      "notas": "Se recibe en el primer piso del edificio de la Alcaldía. Ojo con el horario: según la Alcaldía es solo martes, miércoles y jueves."
+    },
+    {
+      "id": "6b681579-a3eb-4f4d-ba15-614e8f4ad120",
+      "nombre": "Centroabastos",
+      "notas": "Punto en la Central de Abastos de Bucaramanga."
+    },
+    {
+      "id": "fcb31e57-a806-4642-9c0f-0c70a738bc6f",
+      "nombre": "Coliseo de Hockey Miguel Calero",
+      "notas": "Punto habilitado por la Alcaldía de Cali. Piden con urgencia agua, colchonetas y guantes de construcción; también cascos y gafas de seguridad, que no tienen categoría propia en UnAcopio. Este escenario funciona además como punto de atención en salud."
+    },
+    {
+      "id": "a060847a-3fa2-46df-aa88-cb929933902f",
+      "nombre": "Escuela Nacional del Deporte",
+      "notas": "Punto habilitado por la Alcaldía de Cali. Piden con urgencia agua, colchonetas y guantes de construcción; también cascos y gafas de seguridad, que no tienen categoría propia en UnAcopio."
+    },
+    {
+      "id": "89899e71-11ea-4bd4-a007-a6f566b96827",
+      "nombre": "Plazoleta Jairo Varela",
+      "notas": "Punto habilitado por la Alcaldía de Cali. Piden con urgencia agua, colchonetas y guantes de construcción; también cascos y gafas de seguridad, que no tienen categoría propia en UnAcopio. Queda frente al Centro Administrativo Municipal (CAM). Es el punto principal de la ciudad."
+    },
+    {
+      "id": "6f5e880b-d4c8-4446-884c-27a9ede2d3ed",
+      "nombre": "Unidad Deportiva Jaime Aparicio",
+      "notas": "Punto habilitado por la Alcaldía de Cali. Piden con urgencia agua, colchonetas y guantes de construcción; también cascos y gafas de seguridad, que no tienen categoría propia en UnAcopio."
+    },
+    {
+      "id": "685e4785-a54b-475e-b4c5-6db59e4a3dd7",
+      "nombre": "Centro Comercial Llanogrande",
+      "notas": "Punto de la campaña «Manos unidas, almas encendidas» de la Diócesis de Palmira y la Alcaldía. Está dentro del centro comercial: pregunta en información. Los colchones tienen que ser nuevos."
+    },
+    {
+      "id": "0930793e-2485-4423-9615-56dcdf866a50",
+      "nombre": "Centro Comercial Unicentro Palmira",
+      "notas": "Punto de la campaña «Manos unidas, almas encendidas» de la Diócesis de Palmira y la Alcaldía. Está dentro del centro comercial: pregunta en información. Los colchones tienen que ser nuevos."
+    }
+  ],
+  "dejar_pendiente": [
+    {
+      "id": "3330a410-f7d1-48b5-94b1-3dec9d2245e5",
+      "nombre": "Batallón Girardot",
+      "motivo": "Volante anónimo en redes, sin verificar, y le atribuye el punto al Ejército Nacional."
+    },
+    {
+      "id": "28fcdc33-6060-445b-84a3-a67aa497326f",
+      "nombre": "Fundación El Arte de los Sueños",
+      "motivo": "Volante anónimo en redes, sin verificar."
+    },
+    {
+      "id": "ad436590-1d4f-4380-b1f8-e23e391dc462",
+      "nombre": "La Razón",
+      "motivo": "Volante anónimo en redes, sin verificar."
+    },
+    {
+      "id": "0e6e862f-8e97-488a-853c-dfb4c349f1a0",
+      "nombre": "Remanence",
+      "motivo": "Volante anónimo en redes, sin verificar."
+    },
+    {
+      "id": "3e986f69-8abb-4350-a600-0743c3b387c3",
+      "nombre": "Simón Coffee",
+      "motivo": "Volante anónimo en redes, sin verificar."
+    },
+    {
+      "id": "43cdf573-859d-4dfe-9b76-22ce19255f57",
+      "nombre": "Centro de acopio Central Mayorista de Antioquia",
+      "motivo": "MUNICIPIO MAL: la Central Mayorista queda en Itagüí (05360), no en Medellín. Corregir el municipio y publicar; la fuente es buena."
+    },
+    {
+      "id": "e46d436f-4654-457e-ac91-c3ae3361ff56",
+      "nombre": "Laika Arkadia",
+      "motivo": "La dirección está en disputa entre fuentes («Carrera 70 #1141», sin separador)."
+    },
+    {
+      "id": "1357d4f4-62f1-4dd1-9c81-eae942684666",
+      "nombre": "Casa Cural Parroquia San Pedro Apóstol",
+      "motivo": "Lo envió alguien de la comunidad y nadie lo verificó contra la parroquia. Tiene fijo y correo de la Arquidiócesis: una llamada lo resuelve."
+    },
+    {
+      "id": "641108a6-02b9-4aed-8ccc-f2edb9ed4389",
+      "nombre": "Compranet comercio electrónico",
+      "motivo": "El pin sigue en el respaldo del centro de Bogotá; la dirección (Cra 109A #69B-50) queda a más de 6 km. Photon tampoco la resolvió."
+    },
+    {
+      "id": "2da90d65-f414-4f55-964c-9cbe9395b3c3",
+      "nombre": "Paola Rojas Camacho",
+      "motivo": "Sin verificar y a nombre de una persona natural en lo que parece una dirección residencial. Confirmar con ella antes de publicar su casa."
+    },
+    {
+      "id": "25066594-37c4-470d-9c13-efb12a427f91",
+      "nombre": "Laika La 94",
+      "motivo": "Pin a ~2,4 km al norte de la Calle 94, y ni Nominatim ni Photon lo resolvieron."
+    },
+    {
+      "id": "45c3d8ce-9166-4e53-97f5-8511ddd8e49c",
+      "nombre": "Uniagraria",
+      "motivo": "Pin a ~1,7 km de la Calle 170 #54A-10. Además la fuente dice kits de higiene e insumos de hábitat, NO alimentos."
+    },
+    {
+      "id": "30bc790b-5dcd-4991-8aa5-27cb8cc976c5",
+      "nombre": "Universidad Jorge Tadeo Lozano",
+      "motivo": "Pin a ~1 km al sur de la sede (Cra 4 #22-61). Fuente oficial: mover el pin y publicar."
+    },
+    {
+      "id": "5f81da88-0321-479a-9b35-793dbf2d45a5",
+      "nombre": "Punto de acopio de Usaquén",
+      "motivo": "Duplicado de «Punto de acopio Usaquén», ya publicado, y con el pin a 5 km."
+    },
+    {
+      "id": "69621b3e-8657-48f4-9cf4-8f2434e54e4c",
+      "nombre": "Centro Comercial Unicentro",
+      "motivo": "Duplicado de «Unicentro Bogotá», ya publicado. El pin quedó corregido por si se prefiere este registro."
+    },
+    {
+      "id": "0e4e3802-5f16-48c5-965a-d6ac39c2184a",
+      "nombre": "Cruz Roja Colombiana — sede administrativa",
+      "motivo": "Duplicado de «Sede administrativa Cruz Roja», ya publicado. El pin quedó corregido."
+    },
+    {
+      "id": "6d93cbf5-e330-4892-b912-150ab8ec675c",
+      "nombre": "Universidad Nacional — Capilla Cristo Maestro",
+      "motivo": "Duplicado del «Punto Solidario de Acopio - UNAL», ya publicado. El pin quedó corregido."
+    },
+    {
+      "id": "cc830b91-1ecb-4495-b1ae-0ac6666c0a83",
+      "nombre": "Fersautos",
+      "motivo": "El pin corregido cae en el anillo vial hacia Floridablanca: confirmar si el municipio es Bucaramanga o Floridablanca antes de publicarlo."
+    },
+    {
+      "id": "7115ea50-6693-413b-b147-be0df1b1dd83",
+      "nombre": "Parque de la Caña",
+      "motivo": "El pin queda a ~2,5 km del Acuaparque de la Caña. Moverlo y publicar: la fuente es la Alcaldía."
+    },
+    {
+      "id": "5668f752-1043-4435-b051-4d6776fb3c53",
+      "nombre": "CAFE Consota",
+      "motivo": "No pude contrastar el pin: Villa Consota queda en Cuba, al suroccidente, y el pin está más al centro. Verificarlo en el mapa."
+    },
+    {
+      "id": "7489a2bf-830c-4474-8641-885790e0a65e",
+      "nombre": "CAFE Comuna del Café",
+      "motivo": "No pude contrastar el pin contra la nomenclatura de Pereira. Verificarlo en el mapa."
+    }
+  ]
+}

@@ -18,7 +18,9 @@
     "sembrar": "node --env-file=.env.local scripts/sembrar-pilotaje.mjs",
     "acceso": "node --env-file=.env.local scripts/acceso.mjs",
     "acopio-colombia": "node scripts/importar-acopio-colombia.mjs",
-    "publicar:asistido": "node --env-file=.env.local scripts/publicar-asistido.mjs"
+    "publicar:asistido": "node --env-file=.env.local scripts/publicar-asistido.mjs",
+    "pendientes": "node --env-file=.env.local scripts/volcar-pendientes.mjs",
+    "pines": "node --env-file=.env.local scripts/afinar-pines.mjs"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.4",

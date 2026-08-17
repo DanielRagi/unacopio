@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Volcado regenerable de la cola de moderación (npm run pendientes).
+datos/moderacion/pendientes.json
+datos/moderacion/pendientes.txt

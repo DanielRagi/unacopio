@@ -1,0 +1,416 @@
+[
+  {
+    "id": "3b9df7cc-ab59-4722-8f30-dd31b7580e5a",
+    "nombre": "Bomberos — Estación Chapinero B-1",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Calle 62 # 9A-19",
+    "antes": {
+      "lat": 4.6479724,
+      "lng": -74.0624005
+    },
+    "despues": {
+      "lat": 4.6479724,
+      "lng": -74.0624005
+    },
+    "por": "nombre",
+    "detalle": "Estación de bomberos Chapinero B-1",
+    "calle_osm": "Carrera 9A",
+    "metros_movido": 0
+  },
+  {
+    "id": "18f1d0dc-3cec-4ae5-ae31-304747463dcf",
+    "nombre": "Bomberos — Estación Kennedy B-5",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 79 # 41D-20 Sur",
+    "antes": {
+      "lat": 4.6202849,
+      "lng": -74.1600752
+    },
+    "despues": {
+      "lat": 4.6202849,
+      "lng": -74.1600752
+    },
+    "por": "nombre",
+    "detalle": "Estación de Bomberos Alejandro Lince Kennedy B-5",
+    "calle_osm": "Carrera 79",
+    "metros_movido": 0
+  },
+  {
+    "id": "35b0ab61-4c11-404d-98e7-72bbead308c2",
+    "nombre": "Bomberos — Estación Puente Aranda B-4",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Calle 20 # 68A-06",
+    "antes": {
+      "lat": 4.6453552,
+      "lng": -74.1130266
+    },
+    "despues": {
+      "lat": 4.6453552,
+      "lng": -74.1130266
+    },
+    "por": "nombre",
+    "detalle": "Estación de Bomberos Puente Aranda B-4",
+    "calle_osm": "Calle 20",
+    "metros_movido": 0
+  },
+  {
+    "id": "d8847979-b878-4754-a7ab-a6c839dd2a7d",
+    "nombre": "Bomberos — Estación Restrepo B-3",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Avenida Carrera 27 # 19A-20 Sur",
+    "antes": {
+      "lat": 4.5896835,
+      "lng": -74.1083005
+    },
+    "despues": {
+      "lat": 4.5896835,
+      "lng": -74.1083005
+    },
+    "por": "nombre",
+    "detalle": "Estación de Bomberos Restrepo B-3",
+    "calle_osm": "Avenida Carrera 27",
+    "metros_movido": 0
+  },
+  {
+    "id": "dd9fb760-0cdf-43fb-83ab-32372a556ad8",
+    "nombre": "Centro Comercial Portal de la 80",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Centro Comercial Portal de la 80",
+    "antes": {
+      "lat": 4.7108443,
+      "lng": -74.1123707
+    },
+    "despues": {
+      "lat": 4.7108443,
+      "lng": -74.1123707
+    },
+    "por": "nombre",
+    "detalle": "Centro Comercial Portal 80",
+    "calle_osm": "Calle 80",
+    "metros_movido": 0
+  },
+  {
+    "id": "69621b3e-8657-48f4-9cf4-8f2434e54e4c",
+    "nombre": "Centro Comercial Unicentro",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 15 # 124-30",
+    "antes": {
+      "lat": 4.7031515,
+      "lng": -74.0415826
+    },
+    "despues": {
+      "lat": 4.7031515,
+      "lng": -74.0415826
+    },
+    "por": "placa",
+    "detalle": "Avenida Carrera 15 124-30",
+    "calle_osm": null,
+    "metros_movido": 0
+  },
+  {
+    "id": "5459998a-14ca-40a5-82b2-33a1e104c2c5",
+    "nombre": "Cruz Roja — SAMU Norte",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 7B Bis # 132-32",
+    "antes": {
+      "lat": 4.7111575,
+      "lng": -74.0300382
+    },
+    "despues": {
+      "lat": 4.7111575,
+      "lng": -74.0300382
+    },
+    "por": "placa",
+    "detalle": "Carrera 7B Bis 132-38",
+    "calle_osm": null,
+    "metros_movido": 0
+  },
+  {
+    "id": "0e4e3802-5f16-48c5-965a-d6ac39c2184a",
+    "nombre": "Cruz Roja Colombiana — sede administrativa",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 24 # 73-38",
+    "antes": {
+      "lat": 4.663999,
+      "lng": -74.0659824
+    },
+    "despues": {
+      "lat": 4.663999,
+      "lng": -74.0659824
+    },
+    "por": "nombre",
+    "detalle": "Cruz Roja Colombiana - Seccional Cundinamarca Y Bogota",
+    "calle_osm": "Carrera 23",
+    "metros_movido": 0
+  },
+  {
+    "id": "7526ee80-71f5-45c7-adf5-f293e13936c9",
+    "nombre": "Human Construction",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 52A # 134D-23, local 1",
+    "antes": {
+      "lat": 4.722091,
+      "lng": -74.0566235
+    },
+    "despues": {
+      "lat": 4.722091,
+      "lng": -74.0566235
+    },
+    "por": "placa",
+    "detalle": "Carrera 52A 134D-14",
+    "calle_osm": null,
+    "metros_movido": 0
+  },
+  {
+    "id": "2a8dfe98-9d5a-40d6-b22d-e5ab238f1e90",
+    "nombre": "Laika Chapinero",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 7 # 59-34",
+    "antes": {
+      "lat": 4.6444458,
+      "lng": -74.0612971
+    },
+    "despues": {
+      "lat": 4.6444458,
+      "lng": -74.0612971
+    },
+    "por": "placa",
+    "detalle": "Avenida Carrera 7 59-34",
+    "calle_osm": null,
+    "metros_movido": 0
+  },
+  {
+    "id": "d473afbb-ae6e-442e-a90e-a80d93ff3212",
+    "nombre": "Laika La 116",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Calle 116 # 18B-4",
+    "antes": {
+      "lat": 4.6983028,
+      "lng": -74.0496764
+    },
+    "despues": {
+      "lat": 4.6983028,
+      "lng": -74.0496764
+    },
+    "por": "placa",
+    "detalle": "Calle 116 18B-75",
+    "calle_osm": null,
+    "metros_movido": 0
+  },
+  {
+    "id": "a0ec89cb-f989-45da-88fc-a7b56a40616f",
+    "nombre": "Laika Modelia",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Avenida Calle 24 # 74A-57",
+    "antes": {
+      "lat": 4.6657492,
+      "lng": -74.1198408
+    },
+    "despues": {
+      "lat": 4.6657492,
+      "lng": -74.1198408
+    },
+    "por": "placa",
+    "detalle": "Avenida Calle 24 74a-59",
+    "calle_osm": null,
+    "metros_movido": 0
+  },
+  {
+    "id": "f8795bdf-52bd-4064-ad2d-c8d5217b12e8",
+    "nombre": "Marcali — punto de acopio",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 13 #34-76",
+    "antes": {
+      "lat": 4.6227779,
+      "lng": -74.0678119
+    },
+    "despues": {
+      "lat": 4.6227779,
+      "lng": -74.0678119
+    },
+    "por": "nombre",
+    "detalle": "Punto de carga Concesionario Marcali (Bogotá)",
+    "calle_osm": "Calle 35",
+    "metros_movido": 0
+  },
+  {
+    "id": "6d93cbf5-e330-4892-b912-150ab8ec675c",
+    "nombre": "Universidad Nacional — Capilla Cristo Maestro",
+    "municipio": "Bogotá D.C.",
+    "direccion": "Carrera 45 # 26-85, Ciudad Universitaria",
+    "antes": {
+      "lat": 4.6387426,
+      "lng": -74.0852375
+    },
+    "despues": {
+      "lat": 4.6387426,
+      "lng": -74.0852375
+    },
+    "por": "placa",
+    "detalle": "Carrera 45 26-85",
+    "calle_osm": null,
+    "metros_movido": 0
+  },
+  {
+    "id": "1793c071-76b6-4127-b665-a3d6f24c49a3",
+    "nombre": "Coliseo Bernardo Caraballo",
+    "municipio": "Cartagena",
+    "direccion": "Coliseo de Combate Bernardo Caraballo",
+    "antes": {
+      "lat": 10.4252358,
+      "lng": -75.5366822
+    },
+    "despues": {
+      "lat": 10.4252358,
+      "lng": -75.5366822
+    },
+    "por": "nombre",
+    "detalle": "Coliseo Bernardo Caraballo",
+    "calle_osm": "Calle 35A",
+    "metros_movido": 0
+  },
+  {
+    "id": "3127563c-75fc-4346-b698-d151466ecc68",
+    "nombre": "Coliseo Miguel Happy Lora",
+    "municipio": "Montería",
+    "direccion": "Calle 22A #12-42",
+    "antes": {
+      "lat": 8.7472479,
+      "lng": -75.8816517
+    },
+    "despues": {
+      "lat": 8.7472479,
+      "lng": -75.8816517
+    },
+    "por": "nombre",
+    "detalle": "Coliseo Miguel Happy Lora",
+    "calle_osm": "Calle 22B",
+    "metros_movido": 0
+  },
+  {
+    "id": "56c13f09-294b-4657-aa50-85bfe4516d34",
+    "nombre": "Alcaldía de Bucaramanga — primer piso",
+    "municipio": "Bucaramanga",
+    "direccion": "Primer piso del edificio de la Alcaldía de Bucaramanga",
+    "antes": {
+      "lat": 7.1177174,
+      "lng": -73.1300414
+    },
+    "despues": {
+      "lat": 7.1177174,
+      "lng": -73.1300414
+    },
+    "por": "nombre",
+    "detalle": "Alcaldía Municipal de Bucaramanga",
+    "calle_osm": "Cicloruta Centro - Plaza Guarín",
+    "metros_movido": 0
+  },
+  {
+    "id": "6b681579-a3eb-4f4d-ba15-614e8f4ad120",
+    "nombre": "Centroabastos",
+    "municipio": "Bucaramanga",
+    "direccion": "Vía Palenque - Café Madrid #44-96",
+    "antes": {
+      "lat": 7.1032407,
+      "lng": -73.1677486
+    },
+    "despues": {
+      "lat": 7.1032407,
+      "lng": -73.1677486
+    },
+    "por": "nombre",
+    "detalle": "Central de Abastos de Bucaramanga - CentroAbastos",
+    "calle_osm": "Autopista Chimitá",
+    "metros_movido": 0
+  },
+  {
+    "id": "cc830b91-1ecb-4495-b1ae-0ac6666c0a83",
+    "nombre": "Fersautos",
+    "municipio": "Bucaramanga",
+    "direccion": "Anillo vial, kilómetro 1,8, sentido Floridablanca-Girón",
+    "antes": {
+      "lat": 7.061697,
+      "lng": -73.1119485
+    },
+    "despues": {
+      "lat": 7.061697,
+      "lng": -73.1119485
+    },
+    "por": "nombre",
+    "detalle": "Concesionaria Fersautos",
+    "calle_osm": "Anillo Víal",
+    "metros_movido": 0
+  },
+  {
+    "id": "fcb31e57-a806-4642-9c0f-0c70a738bc6f",
+    "nombre": "Coliseo de Hockey Miguel Calero",
+    "municipio": "Cali",
+    "direccion": "Coliseo de Hockey Miguel Calero, Canchas Panamericanas",
+    "antes": {
+      "lat": 3.4220485,
+      "lng": -76.5379042
+    },
+    "despues": {
+      "lat": 3.4220485,
+      "lng": -76.5379042
+    },
+    "por": "nombre",
+    "detalle": "Coliseo de Hockey en Línea Miguel Calero",
+    "calle_osm": "Calle 9",
+    "metros_movido": 0
+  },
+  {
+    "id": "6f5e880b-d4c8-4446-884c-27a9ede2d3ed",
+    "nombre": "Unidad Deportiva Jaime Aparicio",
+    "municipio": "Cali",
+    "direccion": "Calle 9 #37A-01",
+    "antes": {
+      "lat": 3.4237953,
+      "lng": -76.5363238
+    },
+    "despues": {
+      "lat": 3.4237953,
+      "lng": -76.5363238
+    },
+    "por": "nombre",
+    "detalle": "Unidad deportiva Jaime Aparicio",
+    "calle_osm": "Carrera 36A Bis",
+    "metros_movido": 0
+  },
+  {
+    "id": "685e4785-a54b-475e-b4c5-6db59e4a3dd7",
+    "nombre": "Centro Comercial Llanogrande",
+    "municipio": "Palmira",
+    "direccion": "Calle 31 #44-239",
+    "antes": {
+      "lat": 3.5279185,
+      "lng": -76.3168259
+    },
+    "despues": {
+      "lat": 3.5279185,
+      "lng": -76.3168259
+    },
+    "por": "nombre",
+    "detalle": "Centro Comercial Llanogrande",
+    "calle_osm": "vía Las Palmas",
+    "metros_movido": 0
+  },
+  {
+    "id": "0930793e-2485-4423-9615-56dcdf866a50",
+    "nombre": "Centro Comercial Unicentro Palmira",
+    "municipio": "Palmira",
+    "direccion": "Calle 42 #39-68",
+    "antes": {
+      "lat": 3.5399884,
+      "lng": -76.3107555
+    },
+    "despues": {
+      "lat": 3.5399884,
+      "lng": -76.3107555
+    },
+    "por": "nombre",
+    "detalle": "Centro Comercial Unicentro Palmira",
+    "calle_osm": null,
+    "metros_movido": 0
+  }
+]
