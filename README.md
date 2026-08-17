@@ -24,8 +24,9 @@ por donde hay que empezar.
 | | |
 |---|---|
 | Qué hace y por qué | [`docs/PLAN.md`](docs/PLAN.md) |
-| Por qué está hecho así | [`docs/DECISIONES.md`](docs/DECISIONES.md) — D1 a D14 |
+| Por qué está hecho así | [`docs/DECISIONES.md`](docs/DECISIONES.md) — D1 a D20 |
 | Esquema y seguridad | [`docs/MODELO-DATOS.md`](docs/MODELO-DATOS.md) |
+| Cuentas, dominio, llaves, qué se vence | [`docs/INFRAESTRUCTURA.md`](docs/INFRAESTRUCTURA.md) |
 | Los 21 puntos sembrados | [`datos/pilotaje/LEEME.md`](datos/pilotaje/LEEME.md) |
 
 ## Qué tiene
