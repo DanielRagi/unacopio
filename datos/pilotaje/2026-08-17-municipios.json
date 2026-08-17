@@ -1,0 +1,319 @@
+{
+  "_lea_esto_primero": [
+    "Tercera ronda, 17 de agosto de 2026: municipios intermedios y pequeños.",
+    "",
+    "NADA DE ESTO ESTÁ VERIFICADO. Todo entra como 'pendiente' (ver D13).",
+    "",
+    "Esta ronda buscó fuera de las capitales grandes, y lo que apareció fue el área",
+    "metropolitana —Rionegro, Envigado, Bello, Sabaneta, Itagüí— más algunos puntos",
+    "que las listas nacionales no habían recogido. La mayoría viene sin nomenclatura:",
+    "los municipios anuncian «el parque principal» o «la Casa Morada» y con eso",
+    "basta para el que vive ahí, pero no para un mapa.",
+    "",
+    "OJO CON LAS FECHAS. Esta ronda se hizo el mismo día en que Bogotá suspendió",
+    "seis de sus puntos. Cualquier cosa de acá puede haber cerrado ya: preguntar",
+    "hasta cuándo reciben es ahora la primera pregunta de la llamada, no la última."
+  ],
+  "ciudades": [
+    {
+      "municipio_codigo": "05615",
+      "municipio": "Rionegro",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Alcaldía de Rionegro, vía El Espectador",
+        "url": "https://www.elespectador.com/colombia/medellin/como-se-puede-donar-desde-antioquia-a-los-damnificados-por-el-terremoto/"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "cepillo_crema_dental", "papel_higienico", "panales_bebe", "botiquin"],
+      "no_recibe": [],
+      "horario_reportado": "Lunes a viernes de 7:30 a.m. a 4:30 p.m.",
+      "puntos": [
+        {
+          "nombre": "Coliseo Iván Ramiro Córdoba — parqueadero",
+          "tipo": "alcaldia",
+          "direccion": "Parqueadero del Coliseo Iván Ramiro Córdoba, frente al estadio",
+          "nota": "Uno de los tres puntos que habilitó la Alcaldía de Rionegro. FALTA LA NOMENCLATURA."
+        },
+        {
+          "nombre": "Casa 5 Pasitos",
+          "tipo": "alcaldia",
+          "direccion": "Sede de la Casa 5 Pasitos",
+          "nota": "Uno de los tres puntos que habilitó la Alcaldía de Rionegro. FALTA LA NOMENCLATURA."
+        },
+        {
+          "nombre": "Antiguo Colegio San Antonio",
+          "tipo": "alcaldia",
+          "direccion": "Instalaciones del antiguo Colegio San Antonio",
+          "nota": "Uno de los tres puntos que habilitó la Alcaldía de Rionegro. FALTA LA NOMENCLATURA."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "05266",
+      "municipio": "Envigado",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Cruz Roja Colombiana Seccional Antioquia y Alcaldía, vía El Espectador",
+        "url": "https://www.elespectador.com/colombia/medellin/como-se-puede-donar-desde-antioquia-a-los-damnificados-por-el-terremoto/"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "panales_bebe", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Centro Integral Las Vegas — oficina 135",
+          "tipo": "alcaldia",
+          "direccion": "Centro Integral Las Vegas, oficina 135",
+          "nota": "Punto coordinado con la Cruz Roja Colombiana Seccional Antioquia. FALTA LA NOMENCLATURA."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "05088",
+      "municipio": "Bello",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Cruz Roja Colombiana Seccional Antioquia y Alcaldía, vía El Espectador",
+        "url": "https://www.elespectador.com/colombia/medellin/como-se-puede-donar-desde-antioquia-a-los-damnificados-por-el-terremoto/"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "panales_bebe", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Cruz Roja — Sede de Apoyo Norte",
+          "tipo": "cruz_roja",
+          "direccion": "Sede de Apoyo Norte de la Cruz Roja (alianza Copacabana-Bello)",
+          "nota": "La fuente la nombra como alianza Copacabana/Bello: confirmar en cuál de los dos municipios queda la sede. FALTA LA NOMENCLATURA."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "05631",
+      "municipio": "Sabaneta",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Cruz Roja Colombiana Seccional Antioquia y Alcaldía, vía El Espectador",
+        "url": "https://www.elespectador.com/colombia/medellin/como-se-puede-donar-desde-antioquia-a-los-damnificados-por-el-terremoto/"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "panales_bebe", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Central de Recolección de Sabaneta",
+          "tipo": "alcaldia",
+          "direccion": "Central de Recolección de Sabaneta",
+          "nota": "Punto en articulación con la Alcaldía y la Cruz Roja. FALTA LA DIRECCIÓN: la fuente solo lo nombra."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "05360",
+      "municipio": "Itagui",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Parque Principal de Itagüí",
+          "tipo": "alcaldia",
+          "direccion": "Parque principal de Itagüí",
+          "nota": "FALTA LA NOMENCLATURA. En el mismo municipio queda la Central Mayorista de Antioquia, que está cargada por error como punto de Medellín: al resolver este, resolver aquel."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "05045",
+      "municipio": "Apartadó",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Alcaldía y Bomberos de Apartadó, vía El Espectador",
+        "url": "https://www.elespectador.com/colombia/medellin/como-se-puede-donar-desde-antioquia-a-los-damnificados-por-el-terremoto/"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "La Casa Morada",
+          "tipo": "alcaldia",
+          "direccion": "La Casa Morada, barrio Policarpa",
+          "barrio": "Policarpa",
+          "nota": "Punto de la Alcaldía y los Bomberos de Apartadó. FALTA LA NOMENCLATURA."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "11001",
+      "municipio": "Bogotá D.C.",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Banco de Ropa del Minuto de Dios, vía Infobae",
+        "url": "https://www.infobae.com/colombia/2026/08/17/conozca-los-puntos-habilitados-en-bogota-para-donar-ropa-en-buen-estado-y-apoyar-a-los-damnificados-por-el-terremoto-en-colombia/"
+      },
+      "recibe": ["ropa_usada_buen_estado", "ropa_nueva", "calzado", "ropa_bebe"],
+      "no_recibe": ["medicamentos_sellados"],
+      "nota_categorias": "Los bancos de ropa reciben SOLO ropa y accesorios. La fuente es explícita en lo que rechazan: ropa interior, almohadas usadas, revistas y periódicos, electrodomésticos averiados, alimentos vencidos y medicamentos.",
+      "puntos": [
+        {
+          "nombre": "Banco de Ropa del Minuto de Dios — sede Engativá",
+          "tipo": "fundacion",
+          "direccion": "Calle 81 #73-40",
+          "barrio": "Engativá",
+          "telefono": "6015874441",
+          "horario": "Lunes a viernes de 8:00 a.m. a 12:00 m. y de 1:00 p.m. a 3:00 p.m.; sábados de 8:00 a.m. a 12:00 m.",
+          "nota": "SOLO ROPA Y ACCESORIOS: ropa usada en perfecto estado, zapatos, bolsos, cinturones y vestidos. NO reciben ropa interior, almohadas usadas, revistas ni periódicos, electrodomésticos averiados, alimentos vencidos ni medicamentos. Estos puntos siguen abiertos aunque los de la Alcaldía y la Cruz Roja se suspendieron el 17 de agosto."
+        },
+        {
+          "nombre": "Banco de Ropa del Minuto de Dios — sede Sierra Morena",
+          "tipo": "fundacion",
+          "direccion": "Transversal 53 #70-40 sur",
+          "barrio": "Sierra Morena, Ciudad Bolívar",
+          "telefono": "6015874441",
+          "horario": "Lunes a viernes de 8:00 a.m. a 1:00 p.m. y de 2:00 p.m. a 4:00 p.m.",
+          "nota": "SOLO ROPA Y ACCESORIOS: ropa usada en perfecto estado, zapatos, bolsos, cinturones y vestidos. NO reciben ropa interior, almohadas usadas, revistas ni periódicos, electrodomésticos averiados, alimentos vencidos ni medicamentos. Estos puntos siguen abiertos aunque los de la Alcaldía y la Cruz Roja se suspendieron el 17 de agosto."
+        }
+      ],
+      "pistas_sin_confirmar": [
+        "El Centro Comercial Bulevar anunció una jornada de acopio para el 22 de agosto con Bohème y la Fundación Comunidad Invencible. Es un evento de un día: confirmar antes de cargarlo."
+      ]
+    },
+    {
+      "municipio_codigo": "76001",
+      "municipio": "Cali",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Gobernación del Valle del Cauca, vía El Tiempo",
+        "url": "https://www.eltiempo.com/colombia/cali/la-solidaridad-se-moviliza-en-el-valle-del-cauca-habilitan-tres-puntos-clave-en-cali-para-donaciones-tras-el-sismo-de-magnitud-7-3577852"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "colchonetas", "cobijas", "jabon", "cepillo_crema_dental", "papel_higienico", "ropa_nueva", "alimento_perro", "alimento_gato", "guantes_trabajo", "botas"],
+      "no_recibe": ["medicamentos_sellados"],
+      "nota_categorias": "La Gobernación del Valle pide alimentos, aseo personal, ropa, colchones, alimento para mascotas e insumos de seguridad industrial, y dice expresamente que NO reciben medicamentos.",
+      "puntos": [
+        {
+          "nombre": "Centro Comercial Único — acopio para Buenaventura",
+          "tipo": "gobernacion",
+          "direccion": "Centro Comercial Único Outlet",
+          "horario": "Horario por confirmar",
+          "nota": "OJO: la Gobernación destinó este punto EXCLUSIVAMENTE a las ayudas que van para Buenaventura. Si alguien quiere donar para otro municipio, no es acá. FALTA LA NOMENCLATURA."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "76892",
+      "municipio": "Yumbo",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Pulzo",
+        "url": "https://www.pulzo.com/nacion/donde-abrieron-nuevos-puntos-acopio-bogota-medellin-para-donar-PP5273664"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Punto de acopio de Arroyo Hondo",
+          "tipo": "particular",
+          "direccion": "Carrera 30 #10-90, Arroyo Hondo",
+          "barrio": "Arroyo Hondo",
+          "telefono": "3167912163",
+          "horario": "Horario por confirmar",
+          "nota": "La fuente lo publica junto con los puntos de Cali. Confirmar si queda en Yumbo o en el límite con Cali."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "27001",
+      "municipio": "Quibdó",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Infobae",
+        "url": "https://www.infobae.com/colombia/2026/08/13/donaciones-centros-de-acopio-y-reconstruccion-de-viviendas-cantantes-colombianos-movilizan-ayuda-y-solidaridad-para-los-afectados-por-el-terremoto/"
+      },
+      "recibe": ["agua_embotellada", "no_perecederos", "enlatados", "granos", "colchonetas", "cobijas", "tapabocas", "guantes", "jabon", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Fundación Innovación Social Paz y Desarrollo",
+          "tipo": "fundacion",
+          "direccion": "Calle 27 #9-12",
+          "barrio": "El Silencio",
+          "horario": "Horario por confirmar",
+          "nota": "La fuente da como responsable a Gina Marcela Moreno, sin teléfono. Quibdó es de las ciudades más golpeadas: confirmar si recibe donaciones o si es punto de entrega a damnificados."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "68001",
+      "municipio": "Bucaramanga",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Gobernación de Santander, vía El Tiempo",
+        "url": "https://www.eltiempo.com/colombia/santander/terremoto-en-colombia-santander-se-solidariza-con-damnificados-y-abre-varios-centros-de-acopio-para-enviar-ayudas-a-regiones-seriamente-afectadas-3577536"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "alimento_perro", "alimento_gato"],
+      "no_recibe": [],
+      "horario_reportado": "Lunes a viernes de 8:00 a.m. a 5:00 p.m.",
+      "nota_categorias": "La Gobernación de Santander pide alimentos no perecederos, colchonetas, frazadas, agua y alimento para mascotas.",
+      "puntos": [
+        {
+          "nombre": "Gobernación de Santander",
+          "tipo": "gobernacion",
+          "direccion": "Sede de la Gobernación de Santander",
+          "nota": "FALTA LA NOMENCLATURA: la fuente solo nombra la entidad."
+        },
+        {
+          "nombre": "Lotería de Santander",
+          "tipo": "gobernacion",
+          "direccion": "Sede de la Lotería de Santander",
+          "nota": "Punto de la Gobernación de Santander. FALTA LA NOMENCLATURA."
+        },
+        {
+          "nombre": "INDER Santander",
+          "tipo": "gobernacion",
+          "direccion": "Sede del Instituto Departamental de Recreación y Deporte de Santander (INDER)",
+          "nota": "Punto de la Gobernación de Santander. FALTA LA NOMENCLATURA."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "68276",
+      "municipio": "Floridablanca",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Gobernación de Santander, vía El Tiempo",
+        "url": "https://www.eltiempo.com/colombia/santander/terremoto-en-colombia-santander-se-solidariza-con-damnificados-y-abre-varios-centros-de-acopio-para-enviar-ayudas-a-regiones-seriamente-afectadas-3577536"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "alimento_perro", "alimento_gato"],
+      "no_recibe": [],
+      "horario_reportado": "Lunes a viernes de 8:00 a.m. a 5:00 p.m.",
+      "puntos": [
+        {
+          "nombre": "Oficina de Gestión del Riesgo de Floridablanca",
+          "tipo": "alcaldia",
+          "direccion": "Oficina de Gestión del Riesgo de Floridablanca",
+          "nota": "Punto de la Gobernación de Santander. FALTA LA NOMENCLATURA. En este municipio queda además el concesionario Fersautos, cargado como punto de Bucaramanga: al resolver este, resolver aquel."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "25754",
+      "municipio": "Soacha",
+      "recolectado_en": "2026-08-17",
+      "fuente_principal": {
+        "nombre": "Alcaldía de Soacha, vía Periodismo Público",
+        "url": "https://periodismopublico.com/video-soacha-habilita-centro-de-acopio-para-apoyar-a-los-afectados-por-el-terremoto"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "panales_bebe", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Centro de acopio de Soacha",
+          "tipo": "alcaldia",
+          "direccion": "Centro de acopio de la Alcaldía de Soacha",
+          "horario": "Horario por confirmar",
+          "nota": "Soacha apadrinó al municipio de Vijes (Valle del Cauca) dentro de la campaña de Fedemunicipios: lo que se recoge acá va para allá. FALTA LA DIRECCIÓN: la fuente no la publicó."
+        }
+      ]
+    }
+  ]
+}

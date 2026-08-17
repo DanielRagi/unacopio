@@ -186,7 +186,17 @@ function armarNotas(punto, ciudad, coord) {
   return partes.join(' · ');
 }
 
-const archivos = readdirSync(ENTRADA).filter((f) => f.endsWith('.json') && f !== 'cache-geocodificacion.json');
+/*
+ * Se lee lo que PARECE una recolección, en vez de excluir los cachés por
+ * nombre. La lista negra se quedó corta en cuanto apareció un segundo caché
+ * —el de Photon— y el script se cayó a mitad de camino intentando contar los
+ * puntos de un diccionario de respuestas HTTP.
+ */
+const archivos = readdirSync(ENTRADA).filter((f) => {
+  if (!f.endsWith('.json')) return false;
+  const contenido = JSON.parse(readFileSync(join(ENTRADA, f), 'utf8'));
+  return Array.isArray(contenido.puntos) || Array.isArray(contenido.ciudades);
+});
 if (archivos.length === 0) {
   console.error(`No hay archivos de recolección en ${ENTRADA}`);
   process.exit(1);
