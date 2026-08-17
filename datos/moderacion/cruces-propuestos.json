@@ -1,0 +1,524 @@
+[
+  {
+    "id": "fb71b72e-efe5-400c-b1f2-98c1e9beeea9",
+    "nombre": "Automotor — punto de acopio",
+    "municipio": "Medellín",
+    "direccion": "Carrera 43A #19-105",
+    "via": "Carrera 43A",
+    "cruce": "Calle 19",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 6.2006197,
+      "lng": -75.5636832
+    },
+    "despues": {
+      "lat": 6.2199946,
+      "lng": -75.5694036
+    },
+    "metros_movido": 2248
+  },
+  {
+    "id": "28fcdc33-6060-445b-84a3-a67aa497326f",
+    "nombre": "Fundación El Arte de los Sueños",
+    "municipio": "Medellín",
+    "direccion": "Barrio Perpetuo Socorro, Carrera 48 #35-47",
+    "via": "Carrera 48",
+    "cruce": "Calle 35",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 6.236355,
+      "lng": -75.572418
+    },
+    "despues": {
+      "lat": 6.2359706,
+      "lng": -75.5724721
+    },
+    "metros_movido": 43
+  },
+  {
+    "id": "3bf0379c-a477-47c4-887a-2cb1346ecd70",
+    "nombre": "Fundación Saciar",
+    "municipio": "Medellín",
+    "direccion": "Carrera 50 # 25-261",
+    "via": "Carrera 50",
+    "cruce": "Calle 25",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 6.2697324,
+      "lng": -75.6025597
+    },
+    "despues": {
+      "lat": 6.2253645,
+      "lng": -75.5771001
+    },
+    "metros_movido": 5686
+  },
+  {
+    "id": "ad436590-1d4f-4380-b1f8-e23e391dc462",
+    "nombre": "La Razón",
+    "municipio": "Medellín",
+    "direccion": "Calle 44 #42-70",
+    "via": "Calle 44",
+    "cruce": "Carrera 42",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 6.245782,
+      "lng": -75.573249
+    },
+    "despues": {
+      "lat": 6.2422251,
+      "lng": -75.5641121
+    },
+    "metros_movido": 1086
+  },
+  {
+    "id": "e46d436f-4654-457e-ac91-c3ae3361ff56",
+    "nombre": "Laika Arkadia",
+    "municipio": "Medellín",
+    "direccion": "Carrera 70 # 1-141",
+    "via": "Carrera 70",
+    "cruce": "Calle 1",
+    "separacion_m": 65,
+    "antes": {
+      "lat": 6.2123737,
+      "lng": -75.594709
+    },
+    "despues": {
+      "lat": 6.210901,
+      "lng": -75.5948912
+    },
+    "metros_movido": 165
+  },
+  {
+    "id": "0e6e862f-8e97-488a-853c-dfb4c349f1a0",
+    "nombre": "Remanence",
+    "municipio": "Medellín",
+    "direccion": "Calle 10B #35-27",
+    "via": "Calle 10B",
+    "cruce": "Carrera 35",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 6.210096,
+      "lng": -75.565046
+    },
+    "despues": {
+      "lat": 6.2103446,
+      "lng": -75.5648486
+    },
+    "metros_movido": 35
+  },
+  {
+    "id": "3e986f69-8abb-4350-a600-0743c3b387c3",
+    "nombre": "Simón Coffee",
+    "municipio": "Medellín",
+    "direccion": "Carrera 37 #10-54",
+    "via": "Carrera 37",
+    "cruce": "Calle 10",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 6.209586,
+      "lng": -75.566377
+    },
+    "despues": {
+      "lat": 6.2091272,
+      "lng": -75.5666489
+    },
+    "metros_movido": 59
+  },
+  {
+    "id": "d2f65238-1978-4d46-bd24-7cafe5903972",
+    "nombre": "Casa Abelardista",
+    "municipio": "Barranquilla",
+    "direccion": "Carrera 49C #80-76",
+    "via": "Carrera 49C",
+    "cruce": "Calle 80",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 10.9938599,
+      "lng": -74.7926118
+    },
+    "despues": {
+      "lat": 11.0010266,
+      "lng": -74.8133801
+    },
+    "metros_movido": 2406
+  },
+  {
+    "id": "a4f7379f-f6eb-4967-9779-07588a93784e",
+    "nombre": "Centro de Acopio Barranquillita",
+    "municipio": "Barranquilla",
+    "direccion": "Carrera 43 #6-120",
+    "via": "Carrera 43",
+    "cruce": "Calle 6",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 10.9813908,
+      "lng": -74.7726223
+    },
+    "despues": {
+      "lat": 10.9819514,
+      "lng": -74.7698016
+    },
+    "metros_movido": 315
+  },
+  {
+    "id": "b5565e9a-12c8-473b-b3fe-05cd61ff56bf",
+    "nombre": "SCARE Atlántico",
+    "municipio": "Barranquilla",
+    "direccion": "Carrera 54 #68-196, piso 2, oficinas 216-222, Prado Office Center",
+    "via": "Carrera 54",
+    "cruce": "Calle 68",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 10.9938599,
+      "lng": -74.7926118
+    },
+    "despues": {
+      "lat": 10.9972439,
+      "lng": -74.7975323
+    },
+    "metros_movido": 657
+  },
+  {
+    "id": "70643cc7-268d-4b3b-80b8-d0e10447dd6a",
+    "nombre": "Punto de acopio de Tunja",
+    "municipio": "Tunja",
+    "direccion": "Carrera 12 #21-45",
+    "via": "Carrera 12",
+    "cruce": "Calle 21",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 5.5324313,
+      "lng": -73.3616014
+    },
+    "despues": {
+      "lat": 5.5347638,
+      "lng": -73.3636556
+    },
+    "metros_movido": 345
+  },
+  {
+    "id": "53fe3f16-a2cf-4bf1-971c-d6ccb925319a",
+    "nombre": "SCARE Boyacá",
+    "municipio": "Tunja",
+    "direccion": "Calle 20 #12-84, local 117, Centro Cívico y Comercial Plaza Real",
+    "via": "Calle 20",
+    "cruce": "Carrera 12",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 5.5324313,
+      "lng": -73.3616014
+    },
+    "despues": {
+      "lat": 5.5337238,
+      "lng": -73.3639246
+    },
+    "metros_movido": 295
+  },
+  {
+    "id": "c808714d-edbe-4058-bb62-30d80f05c58d",
+    "nombre": "Banco de Alimentos de Manizales",
+    "municipio": "Manizales",
+    "direccion": "Calle 49 #27A-85",
+    "via": "Calle 49",
+    "cruce": "Carrera 27A",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 5.0668907,
+      "lng": -75.5066661
+    },
+    "despues": {
+      "lat": 5.0609164,
+      "lng": -75.500787
+    },
+    "metros_movido": 931
+  },
+  {
+    "id": "bf6fabb8-0ff3-4926-a695-65dc8b1cac96",
+    "nombre": "SCARE Cesar",
+    "municipio": "Valledupar",
+    "direccion": "Calle 11 #8-79, oficinas 202-203, Edificio SOA",
+    "via": "Calle 11",
+    "cruce": "Carrera 8",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 10.4651733,
+      "lng": -73.2529512
+    },
+    "despues": {
+      "lat": 10.4805351,
+      "lng": -73.2520645
+    },
+    "metros_movido": 1713
+  },
+  {
+    "id": "d4c93d61-57a1-4b98-9e59-d62eb456b054",
+    "nombre": "Fundación Innovación Social Paz y Desarrollo",
+    "municipio": "Quibdó",
+    "direccion": "Calle 27 #9-12",
+    "via": "Calle 27",
+    "cruce": "Carrera 9",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 5.6918208,
+      "lng": -76.6558337
+    },
+    "despues": {
+      "lat": 5.6909305,
+      "lng": -76.6563031
+    },
+    "metros_movido": 112
+  },
+  {
+    "id": "e3858307-b5a0-49ac-854f-13937fa33731",
+    "nombre": "Punto de acopio de Pandeyuca",
+    "municipio": "Quibdó",
+    "direccion": "Calle 25 #6-58",
+    "via": "Calle 25",
+    "cruce": "Carrera 6",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 5.6912838,
+      "lng": -76.6531337
+    },
+    "despues": {
+      "lat": 5.6892616,
+      "lng": -76.6587616
+    },
+    "metros_movido": 663
+  },
+  {
+    "id": "da18f80a-baef-4221-a6a2-6fb63cd01fb5",
+    "nombre": "SCARE Córdoba",
+    "municipio": "Montería",
+    "direccion": "Calle 62 #7-53",
+    "via": "Calle 62",
+    "cruce": "Carrera 7",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 8.7713305,
+      "lng": -75.8635227
+    },
+    "despues": {
+      "lat": 8.7721967,
+      "lng": -75.8659305
+    },
+    "metros_movido": 282
+  },
+  {
+    "id": "bc1a9a50-d37a-4582-8adf-542e6de015e2",
+    "nombre": "SCARE Huila",
+    "municipio": "Neiva",
+    "direccion": "Carrera 5 #10-49, local 201, Centro Comercial Plaza Real",
+    "via": "Carrera 5",
+    "cruce": "Calle 10",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 2.9257038,
+      "lng": -75.2893937
+    },
+    "despues": {
+      "lat": 2.9288818,
+      "lng": -75.2897077
+    },
+    "metros_movido": 355
+  },
+  {
+    "id": "0a7e54a7-6de9-4d75-bc94-5f47291974f7",
+    "nombre": "SCARE La Guajira",
+    "municipio": "Riohacha",
+    "direccion": "Calle 7 #11-114, oficina 8, segundo piso, Edificio Doña Cándida",
+    "via": "Calle 7",
+    "cruce": "Carrera 11",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 11.5449387,
+      "lng": -72.9150522
+    },
+    "despues": {
+      "lat": 11.5493911,
+      "lng": -72.9119523
+    },
+    "metros_movido": 600
+  },
+  {
+    "id": "f98cff08-efdb-4619-a649-b2ae1513b145",
+    "nombre": "Oficina de Gestión del Riesgo (OGRICC)",
+    "municipio": "Santa Marta",
+    "direccion": "Calle 16 #14A-08, piso 2",
+    "via": "Calle 16",
+    "cruce": "Carrera 14A",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 11.2320944,
+      "lng": -74.1950916
+    },
+    "despues": {
+      "lat": 11.197703,
+      "lng": -74.2165301
+    },
+    "metros_movido": 4487
+  },
+  {
+    "id": "c7847bc1-6887-49fd-9ede-8093c08852bb",
+    "nombre": "SCARE Magdalena",
+    "municipio": "Santa Marta",
+    "direccion": "Calle 24 #3-99, Edificio 424, oficina 1007",
+    "via": "Calle 24",
+    "cruce": "Carrera 3",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 11.2320944,
+      "lng": -74.1950916
+    },
+    "despues": {
+      "lat": 11.2388646,
+      "lng": -74.2135121
+    },
+    "metros_movido": 2148
+  },
+  {
+    "id": "cbcd6eb3-223c-4063-aeef-6b68aae2e9ea",
+    "nombre": "Punto de acopio del Centro — Pasto",
+    "municipio": "Pasto",
+    "direccion": "Calle 17 #27-59",
+    "via": "Calle 17",
+    "cruce": "Carrera 27",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 1.2140275,
+      "lng": -77.2785096
+    },
+    "despues": {
+      "lat": 1.2162951,
+      "lng": -77.2805049
+    },
+    "metros_movido": 336
+  },
+  {
+    "id": "cbbcf3bb-de29-4c87-a544-ea0c330fb5a4",
+    "nombre": "SCARE Nariño",
+    "municipio": "Pasto",
+    "direccion": "Carrera 25 #15-62, oficina 201, Edificio Zaguán del Lago",
+    "via": "Carrera 25",
+    "cruce": "Calle 15",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 1.2140275,
+      "lng": -77.2785096
+    },
+    "despues": {
+      "lat": 1.2137644,
+      "lng": -77.2814195
+    },
+    "metros_movido": 325
+  },
+  {
+    "id": "465ab2ab-7610-49a0-8ab4-ca32d25463f7",
+    "nombre": "SCARE Norte de Santander",
+    "municipio": "Cúcuta",
+    "direccion": "Calle 8A #5E-25",
+    "via": "Calle 8A",
+    "cruce": "Carrera 5E",
+    "separacion_m": 96,
+    "antes": {
+      "lat": 7.8971458,
+      "lng": -72.5080387
+    },
+    "despues": {
+      "lat": 7.890727,
+      "lng": -72.4925595
+    },
+    "metros_movido": 1850
+  },
+  {
+    "id": "61e894ff-cad5-4a14-b0e2-4baedf6737aa",
+    "nombre": "Banco de Alimentos Monseñor Roberto López Londoño",
+    "municipio": "Armenia",
+    "direccion": "Calle 21 #12-25",
+    "via": "Calle 21",
+    "cruce": "Carrera 12",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 4.536307,
+      "lng": -75.6723751
+    },
+    "despues": {
+      "lat": 4.5314807,
+      "lng": -75.6725863
+    },
+    "metros_movido": 538
+  },
+  {
+    "id": "4be49880-6215-434a-a81a-2dd4a4a62a4d",
+    "nombre": "SCARE Santander",
+    "municipio": "Bucaramanga",
+    "direccion": "Calle 45 #28-36, Edificio Verona Plaza",
+    "via": "Calle 45",
+    "cruce": "Carrera 28",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 7.1274586,
+      "lng": -73.1191299
+    },
+    "despues": {
+      "lat": 7.1183583,
+      "lng": -73.1133693
+    },
+    "metros_movido": 1196
+  },
+  {
+    "id": "c970d4e6-70ae-440f-963a-d179252177de",
+    "nombre": "SCARE Sucre",
+    "municipio": "Sincelejo",
+    "direccion": "Calle 28 con Carrera 25-365, Parque Comercial Guacarí, Torre Médica, oficinas 3327-3328",
+    "via": "Carrera 2",
+    "cruce": "Calle 5",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 9.2973386,
+      "lng": -75.3926601
+    },
+    "despues": {
+      "lat": 9.3756988,
+      "lng": -75.483343
+    },
+    "metros_movido": 13241
+  },
+  {
+    "id": "0eb61dd0-f220-41f0-8e60-3d1da88fe135",
+    "nombre": "Oficina de Pastoral Social — Palmira",
+    "municipio": "Palmira",
+    "direccion": "Carrera 25 #36-39",
+    "via": "Carrera 25",
+    "cruce": "Calle 36",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 3.5308373,
+      "lng": -76.2988048
+    },
+    "despues": {
+      "lat": 3.5324808,
+      "lng": -76.2954029
+    },
+    "metros_movido": 420
+  },
+  {
+    "id": "1a06fa84-f3f8-4ea3-9f81-bf71d0959112",
+    "nombre": "Punto de acopio de Arroyo Hondo",
+    "municipio": "Yumbo",
+    "direccion": "Carrera 30 #10-90, Arroyo Hondo",
+    "via": "Carrera 30",
+    "cruce": "Calle 10",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 3.5834664,
+      "lng": -76.4952223
+    },
+    "despues": {
+      "lat": 3.5154157,
+      "lng": -76.5166772
+    },
+    "metros_movido": 7942
+  }
+]

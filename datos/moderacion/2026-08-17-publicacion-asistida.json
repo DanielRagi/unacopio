@@ -1,0 +1,248 @@
+{
+  "_lea_esto_primero": "Tercera pasada de moderación asistida (17 de agosto de 2026), después de ubicar 26 pines cruzando las vías de la dirección con Overpass. Ninguno de estos puntos está confirmado por teléfono.",
+  "fecha": "2026-08-17",
+  "criterios_para_publicar": [
+    "Fuente identificable, o corroborada al buscarla de nuevo. Tres puntos de Medellín que llevaban días frenados por venir de un volante anónimo resultaron ciertos: son de la fundación de Maluma y del Ejército.",
+    "Pin sobre la dirección, comprobado contra el nombre del sitio en OSM o contra el cruce de las dos vías de la nomenclatura.",
+    "Sin duplicar un registro ya publicado, y en el municipio correcto."
+  ],
+  "publicar": [
+    {
+      "id": "06e06d24-5c89-4892-82d8-d20df4dbb3ec",
+      "nombre": "Centro Integral Las Vegas — oficina 135",
+      "notas": "Punto de la Alcaldía de Envigado en articulación con la Cruz Roja Colombiana Seccional Antioquia. Queda en la oficina 135."
+    },
+    {
+      "id": "fb71b72e-efe5-400c-b1f2-98c1e9beeea9",
+      "nombre": "Automotor — punto de acopio",
+      "notas": "Concesionario de la red FIAT/JEEP/RAM, en El Poblado. Reciben alimentos y artículos básicos."
+    },
+    {
+      "id": "28fcdc33-6060-445b-84a3-a67aa497326f",
+      "nombre": "Fundación El Arte de los Sueños",
+      "notas": "Hace parte de la red de acopio que activó la Fundación El Arte de los Sueños, de Maluma, junto con sus marcas Remanence y Casa Eterna. Esta es la sede de la fundación, en el barrio Perpetuo Socorro."
+    },
+    {
+      "id": "0e6e862f-8e97-488a-853c-dfb4c349f1a0",
+      "nombre": "Remanence",
+      "notas": "Hace parte de la red de acopio que activó la Fundación El Arte de los Sueños, de Maluma, junto con sus marcas Remanence y Casa Eterna. Esta es la tienda Remanence."
+    },
+    {
+      "id": "3bf0379c-a477-47c4-887a-2cb1346ecd70",
+      "nombre": "Fundación Saciar",
+      "notas": "Es uno de los diez puntos que habilitó la Alcaldía de Medellín. No reciben medicamentos, ropa, productos vencidos ni perecederos."
+    },
+    {
+      "id": "e46d436f-4654-457e-ac91-c3ae3361ff56",
+      "nombre": "Laika Arkadia",
+      "notas": "SOLO MASCOTAS: comida y accesorios para perros y gatos. Está dentro del Centro Comercial Arkadia, en Guayabal: pregunta en información por el local."
+    },
+    {
+      "id": "d2f65238-1978-4d46-bd24-7cafe5903972",
+      "nombre": "Casa Abelardista",
+      "notas": "Punto ciudadano del listado nacional de la Primera Dama."
+    },
+    {
+      "id": "a4f7379f-f6eb-4967-9779-07588a93784e",
+      "nombre": "Centro de Acopio Barranquillita",
+      "notas": "Punto oficial del Distrito de Barranquilla, en el sector de Barranquillita. La ayuda que llega acá se traslada después a las zonas afectadas. Reciben también ropa en buen estado y artículos para bebés."
+    },
+    {
+      "id": "b5565e9a-12c8-473b-b3fe-05cd61ff56bf",
+      "nombre": "SCARE Atlántico",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Atlántico, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en el piso 2 del Prado Office Center, oficinas 216 a 222."
+    },
+    {
+      "id": "f762887d-4917-4b93-9c86-447b5f701080",
+      "nombre": "Banco de Ropa del Minuto de Dios — sede Engativá",
+      "notas": "SOLO ROPA Y ACCESORIOS: ropa usada en perfecto estado, zapatos, bolsos, cinturones y vestidos. NO reciben ropa interior, almohadas usadas, revistas ni periódicos, electrodomésticos averiados, alimentos vencidos ni medicamentos. Sigue abierto aunque los puntos de la Alcaldía y la Cruz Roja se suspendieron el 17 de agosto."
+    },
+    {
+      "id": "bd4e6685-3a56-42f6-9aad-5e281d4d77e6",
+      "nombre": "Banco de Ropa del Minuto de Dios — sede Sierra Morena",
+      "notas": "SOLO ROPA Y ACCESORIOS: ropa usada en perfecto estado, zapatos, bolsos, cinturones y vestidos. NO reciben ropa interior, almohadas usadas, revistas ni periódicos, electrodomésticos averiados, alimentos vencidos ni medicamentos. Sigue abierto aunque los puntos de la Alcaldía y la Cruz Roja se suspendieron el 17 de agosto."
+    },
+    {
+      "id": "1357d4f4-62f1-4dd1-9c81-eae942684666",
+      "nombre": "Casa Cural Parroquia San Pedro Apóstol",
+      "notas": "Lo opera la Parroquia San Pedro Apóstol, en su casa cural. Además de lo listado reciben alimentos, elementos de aseo e higiene y equipos de rescate."
+    },
+    {
+      "id": "e1bddf08-b456-4f36-946a-f4d50141e28e",
+      "nombre": "Casa Jardín Origen",
+      "notas": "Punto de la red Manos Visibles, que coordina la ayuda hacia el Chocó."
+    },
+    {
+      "id": "b555701b-708f-49f5-b724-6ee483edde76",
+      "nombre": "SCARE Bolívar",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Bolívar, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en Manga, en la oficina 1202 del Edificio Portus."
+    },
+    {
+      "id": "70643cc7-268d-4b3b-80b8-d0e10447dd6a",
+      "nombre": "Punto de acopio de Tunja",
+      "notas": "Punto del listado nacional de la Primera Dama. No se publicó qué entidad lo opera: pregunta al llegar."
+    },
+    {
+      "id": "53fe3f16-a2cf-4bf1-971c-d6ccb925319a",
+      "nombre": "SCARE Boyacá",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Boyacá, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en el local 117 del Centro Cívico y Comercial Plaza Real."
+    },
+    {
+      "id": "c808714d-edbe-4058-bb62-30d80f05c58d",
+      "nombre": "Banco de Alimentos de Manizales",
+      "notas": "Manizales es ciudad afectada. El banco de alimentos recibe alimentos no perecederos."
+    },
+    {
+      "id": "bf6fabb8-0ff3-4926-a695-65dc8b1cac96",
+      "nombre": "SCARE Cesar",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Cesar, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en las oficinas 202 y 203 del Edificio SOA."
+    },
+    {
+      "id": "d4c93d61-57a1-4b98-9e59-d62eb456b054",
+      "nombre": "Fundación Innovación Social Paz y Desarrollo",
+      "notas": "Punto en el barrio El Silencio. Quibdó es una de las ciudades más golpeadas: conviene preguntar si están recibiendo donaciones o entregando ayudas antes de ir."
+    },
+    {
+      "id": "e3858307-b5a0-49ac-854f-13937fa33731",
+      "nombre": "Punto de acopio de Pandeyuca",
+      "notas": "Punto en el barrio Pandeyuca, del listado nacional de la Primera Dama. Quibdó es una de las ciudades más golpeadas: conviene preguntar si están recibiendo o entregando antes de ir."
+    },
+    {
+      "id": "da18f80a-baef-4221-a6a2-6fb63cd01fb5",
+      "nombre": "SCARE Córdoba",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Córdoba, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en el barrio La Castellana."
+    },
+    {
+      "id": "bc1a9a50-d37a-4582-8adf-542e6de015e2",
+      "nombre": "SCARE Huila",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Huila, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en el local 201 del Centro Comercial Plaza Real."
+    },
+    {
+      "id": "0a7e54a7-6de9-4d75-bc94-5f47291974f7",
+      "nombre": "SCARE La Guajira",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en La Guajira, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en la oficina 8, segundo piso del Edificio Doña Cándida."
+    },
+    {
+      "id": "c7847bc1-6887-49fd-9ede-8093c08852bb",
+      "nombre": "SCARE Magdalena",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Magdalena, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en la oficina 1007 del Edificio 424."
+    },
+    {
+      "id": "cbcd6eb3-223c-4063-aeef-6b68aae2e9ea",
+      "nombre": "Punto de acopio del Centro — Pasto",
+      "notas": "Punto en el barrio Centro, del listado nacional de la Primera Dama. No se publicó qué entidad lo opera: pregunta al llegar."
+    },
+    {
+      "id": "cbbcf3bb-de29-4c87-a544-ea0c330fb5a4",
+      "nombre": "SCARE Nariño",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Nariño, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en la oficina 201 del Edificio Zaguán del Lago."
+    },
+    {
+      "id": "465ab2ab-7610-49a0-8ab4-ca32d25463f7",
+      "nombre": "SCARE Norte de Santander",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Norte de Santander, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en el barrio La Rivera."
+    },
+    {
+      "id": "61e894ff-cad5-4a14-b0e2-4baedf6737aa",
+      "nombre": "Banco de Alimentos Monseñor Roberto López Londoño",
+      "notas": "Banco de alimentos de Armenia. Recibe alimentos no perecederos."
+    },
+    {
+      "id": "5668f752-1043-4435-b051-4d6776fb3c53",
+      "nombre": "CAFE Consota",
+      "notas": "Centro de Atención a la Familia en Emergencia (CAFE) de la Alcaldía de Pereira. Pereira es ciudad afectada: estos centros atienden familias y a la vez reciben donaciones. Este queda en Villa Consota, sector Cuba, entre las manzanas 7 y 8."
+    },
+    {
+      "id": "6c760b7c-7321-499b-a46d-de696884a165",
+      "nombre": "CAFE Perla del Otún",
+      "notas": "Centro de Atención a la Familia en Emergencia (CAFE) de la Alcaldía de Pereira. Pereira es ciudad afectada: estos centros atienden familias y a la vez reciben donaciones. Este queda en el sector Cuba, diagonal a la iglesia de los 2.500 Lotes."
+    },
+    {
+      "id": "fc7b2dcb-04a4-499f-a330-04cf78480988",
+      "nombre": "CAFE Kennedy",
+      "notas": "Centro de Atención a la Familia en Emergencia (CAFE) de la Alcaldía de Pereira. Pereira es ciudad afectada: estos centros atienden familias y a la vez reciben donaciones. Este queda en el parque principal del barrio Kennedy."
+    },
+    {
+      "id": "7489a2bf-830c-4474-8641-885790e0a65e",
+      "nombre": "CAFE Comuna del Café",
+      "notas": "Centro de Atención a la Familia en Emergencia (CAFE) de la Alcaldía de Pereira. Pereira es ciudad afectada: estos centros atienden familias y a la vez reciben donaciones. Este queda en el sector A del Parque Industrial."
+    },
+    {
+      "id": "b4d6e12e-8c52-4249-8670-ce76194cf184",
+      "nombre": "Gobernación de Santander",
+      "notas": "Punto de la Gobernación de Santander en su sede. Reciben también alimento para mascotas."
+    },
+    {
+      "id": "76b73e66-76ac-437e-b87b-133e118f2b1b",
+      "nombre": "INDER Santander",
+      "notas": "Punto de la Gobernación de Santander en la sede del Instituto Departamental de Recreación y Deporte. Reciben también alimento para mascotas."
+    },
+    {
+      "id": "4be49880-6215-434a-a81a-2dd4a4a62a4d",
+      "nombre": "SCARE Santander",
+      "notas": "Sede de la Sociedad Colombiana de Anestesiología y Reanimación en Santander, una de las 16 que habilitó en el país. Recibe sobre todo insumos médicos y medicamentos, y también alimentos no perecederos y productos de higiene. Queda en el Edificio Verona Plaza."
+    },
+    {
+      "id": "0eb61dd0-f220-41f0-8e60-3d1da88fe135",
+      "nombre": "Oficina de Pastoral Social — Palmira",
+      "notas": "Punto central de la campaña «Manos unidas, almas encendidas» de la Diócesis de Palmira, cerca del Parque Obrero. Los colchones tienen que ser nuevos."
+    }
+  ],
+  "dejar_pendiente": [
+    {
+      "id": "ad436590-1d4f-4380-b1f8-e23e391dc462",
+      "nombre": "La Razón",
+      "motivo": "Busqué corroborarlo y no aparece en ninguna fuente identificable; sigue siendo solo un volante anónimo. El pin sí quedó bien ubicado."
+    },
+    {
+      "id": "3e986f69-8abb-4350-a600-0743c3b387c3",
+      "nombre": "Simón Coffee",
+      "motivo": "Busqué corroborarlo y no aparece en ninguna fuente identificable; sigue siendo solo un volante anónimo. El pin sí quedó bien ubicado."
+    },
+    {
+      "id": "25066594-37c4-470d-9c13-efb12a427f91",
+      "nombre": "Laika La 94",
+      "motivo": "Pin a ~2,4 km de la Calle 94 y ningún geocodificador lo resolvió: la Calle 94 y la Carrera 13 no se cruzan en OSM."
+    },
+    {
+      "id": "45c3d8ce-9166-4e53-97f5-8511ddd8e49c",
+      "nombre": "Uniagraria",
+      "motivo": "Pin a ~1,7 km de la Calle 170 #54A-10. Además la fuente dice kits de higiene e insumos de hábitat, NO alimentos."
+    },
+    {
+      "id": "2da90d65-f414-4f55-964c-9cbe9395b3c3",
+      "nombre": "Paola Rojas Camacho",
+      "motivo": "Sin verificar y a nombre de una persona natural en lo que parece su casa. Confirmar con ella antes de publicar la dirección."
+    },
+    {
+      "id": "6d93cbf5-e330-4892-b912-150ab8ec675c",
+      "nombre": "Universidad Nacional — Capilla Cristo Maestro",
+      "motivo": "Duplicado del «Punto Solidario de Acopio - UNAL», ya publicado."
+    },
+    {
+      "id": "78879920-f89c-4404-8128-ca907ba1f23c",
+      "nombre": "Punto de acopio barrio Los Ángeles",
+      "motivo": "La fuente da solo el barrio y el sector, sin nomenclatura. El pin queda en algún lugar del barrio."
+    },
+    {
+      "id": "2e0adf62-c533-4026-9e50-51ab7357b55e",
+      "nombre": "Punto ciudadano El Recreo",
+      "motivo": "La fuente da solo el barrio, sin nomenclatura."
+    },
+    {
+      "id": "cc830b91-1ecb-4495-b1ae-0ac6666c0a83",
+      "nombre": "Fersautos",
+      "motivo": "El pin cae en el anillo vial hacia Floridablanca. Confirmar si el municipio es Bucaramanga o Floridablanca antes de publicarlo."
+    },
+    {
+      "id": "63dd2450-74f5-411f-a2af-50eef4355528",
+      "nombre": "La Casa del Pueblo",
+      "motivo": "Iniciativa ciudadana sin verificar, y el pin no se pudo contrastar: la Carrera 9 y la Calle 4 de Cali no se cruzan en OSM."
+    },
+    {
+      "id": "7115ea50-6693-413b-b147-be0df1b1dd83",
+      "nombre": "Parque de la Caña",
+      "motivo": "El pin queda a ~2,5 km del Acuaparque de la Caña y el cruce de vías tampoco lo resolvió."
+    }
+  ]
+}

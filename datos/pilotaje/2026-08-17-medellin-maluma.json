@@ -1,0 +1,33 @@
+{
+  "_lea_esto_primero": [
+    "Punto que apareció al corroborar tres de los que estaban en cola con fuente dudosa.",
+    "",
+    "Tres puntos de Medellín entraron por una pieza gráfica sin entidad identificable y",
+    "por eso llevaban días sin publicarse: 'Fundación El Arte de los Sueños', 'Remanence'",
+    "y el 'Batallón Girardot'. Resultaron ciertos los tres. Los dos primeros son de Maluma",
+    "—la fundación es suya y Remanence es su marca de ropa— y lo reportan CNN, RCN,",
+    "Caracol y El País con dirección y horario. El batallón lo confirma la Séptima",
+    "División del Ejército.",
+    "",
+    "La tercera sede de esa red, Casa Eterna, no estaba cargada. Va acá."
+  ],
+  "municipio_codigo": "05001",
+  "municipio": "Medellín",
+  "recolectado_en": "2026-08-17",
+  "fuente_principal": {
+    "nombre": "CNN en Español",
+    "url": "https://cnnespanol.cnn.com/2026/08/12/entretenimiento/fundaciones-celebridades-colombia-terremoto-orix"
+  },
+  "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "cepillo_crema_dental", "papel_higienico", "panales_bebe", "botiquin"],
+  "no_recibe": [],
+  "puntos": [
+    {
+      "nombre": "Casa Eterna",
+      "tipo": "empresa",
+      "direccion": "Calle 23 Sur #3-133, La Explanada, vía Las Palmas",
+      "barrio": "La Explanada",
+      "horario": "Horario por confirmar",
+      "nota": "Restaurante de Maluma, habilitado como centro de acopio junto con la Fundación El Arte de los Sueños y la tienda Remanence. Confirmar el horario: es el único de los tres que las fuentes no publicaron."
+    }
+  ]
+}

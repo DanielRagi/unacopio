@@ -1,0 +1,59 @@
+[
+  {
+    "id": "f98cff08-efdb-4619-a649-b2ae1513b145",
+    "nombre": "Oficina de Gestión del Riesgo (OGRICC)",
+    "municipio": "Santa Marta",
+    "direccion": "Calle 16 #14A-08, piso 2",
+    "via": "Calle 16",
+    "cruce": "Carrera 14A",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 11.2320944,
+      "lng": -74.1950916
+    },
+    "despues": {
+      "lat": 11.197703,
+      "lng": -74.2165301
+    },
+    "metros_movido": 4487,
+    "motivo": "el cruce cae 5 km al sur del barrio El Cundí"
+  },
+  {
+    "id": "c970d4e6-70ae-440f-963a-d179252177de",
+    "nombre": "SCARE Sucre",
+    "municipio": "Sincelejo",
+    "direccion": "Calle 28 con Carrera 25-365, Parque Comercial Guacarí, Torre Médica, oficinas 3327-3328",
+    "via": "Carrera 2",
+    "cruce": "Calle 5",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 9.2973386,
+      "lng": -75.3926601
+    },
+    "despues": {
+      "lat": 9.3756988,
+      "lng": -75.483343
+    },
+    "metros_movido": 13241,
+    "motivo": "el cruce cae 13 km al noreste de Sincelejo, fuera del casco urbano"
+  },
+  {
+    "id": "1a06fa84-f3f8-4ea3-9f81-bf71d0959112",
+    "nombre": "Punto de acopio de Arroyo Hondo",
+    "municipio": "Yumbo",
+    "direccion": "Carrera 30 #10-90, Arroyo Hondo",
+    "via": "Carrera 30",
+    "cruce": "Calle 10",
+    "separacion_m": 0,
+    "antes": {
+      "lat": 3.5834664,
+      "lng": -76.4952223
+    },
+    "despues": {
+      "lat": 3.5154157,
+      "lng": -76.5166772
+    },
+    "metros_movido": 7942,
+    "motivo": "el cruce cae dentro de Cali, no de Yumbo — confirma la duda de municipio que ya tenía el punto"
+  }
+]
