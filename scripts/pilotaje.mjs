@@ -195,8 +195,21 @@ if (archivos.length === 0) {
 const filas = [];
 const informe = [];
 
+/*
+ * Un archivo puede traer una ciudad o varias.
+ *
+ * Empezó con una por archivo, que es lo cómodo cuando se recolecta a mano
+ * ciudad por ciudad. Pero la ronda nacional dejó municipios con un solo punto
+ * —una capital donde la única fuente publicó una dirección— y veintitantos
+ * archivos de tres líneas cada uno son más difíciles de leer que uno solo.
+ * Las dos formas conviven: si hay `ciudades`, son varias; si no, el archivo
+ * entero es una.
+ */
+const ciudadesDe = (contenido) =>
+  Array.isArray(contenido.ciudades) ? contenido.ciudades : [contenido];
+
 for (const archivo of archivos) {
-  const ciudad = JSON.parse(readFileSync(join(ENTRADA, archivo), 'utf8'));
+  for (const ciudad of ciudadesDe(JSON.parse(readFileSync(join(ENTRADA, archivo), 'utf8')))) {
   console.log(`\n→ ${ciudad.municipio} (${ciudad.puntos.length} puntos)`);
 
   const centro = await centroDeCiudad(ciudad.municipio);
@@ -260,6 +273,7 @@ for (const archivo of archivos) {
     conConflicto: ciudad.puntos.filter((p) => p.conflicto).length,
     pistasSinConfirmar: ciudad.pistas_sin_confirmar?.length ?? 0,
   });
+  }
 }
 
 mkdirSync(SALIDA, { recursive: true });

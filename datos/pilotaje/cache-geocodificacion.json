@@ -4009,5 +4009,4798 @@
         "-75.5946905"
       ]
     }
-  ]
+  ],
+  "Cali, Colombia": [
+    {
+      "place_id": 308131704,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1320707,
+      "lat": "3.4108435",
+      "lon": "-76.5812127",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.6437015896598781,
+      "addresstype": "county",
+      "name": "Cali",
+      "display_name": "Cali, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.2734085",
+        "3.5485770",
+        "-76.7069442",
+        "-76.4588983"
+      ]
+    },
+    {
+      "place_id": 308207796,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 8811628,
+      "lat": "3.4519988",
+      "lon": "-76.5325259",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.6437015896598781,
+      "addresstype": "city",
+      "name": "Cali ciudad",
+      "display_name": "Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.3322025",
+        "3.5062328",
+        "-76.5928361",
+        "-76.4613277"
+      ]
+    }
+  ],
+  "Plazoleta Jairo Varela, Cali, Colombia": [
+    {
+      "place_id": 308095513,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 6110087,
+      "lat": "3.4550187",
+      "lon": "-76.5348007",
+      "category": "place",
+      "type": "square",
+      "place_rank": 25,
+      "importance": 0.06673491493095292,
+      "addresstype": "square",
+      "name": "Plazoleta Jairo Varela",
+      "display_name": "Plazoleta Jairo Varela, Centenario, Comuna 2, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "square": "Plazoleta Jairo Varela",
+        "neighbourhood": "Centenario",
+        "city_district": "Comuna 2",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4545179",
+        "3.4555137",
+        "-76.5357020",
+        "-76.5340540"
+      ]
+    }
+  ],
+  "Escuela Nacional del Deporte, Cali, Colombia": [],
+  "Calle 9 #34-01, Cali, Colombia": [
+    {
+      "place_id": 309297478,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 415926816,
+      "lat": "3.4265535",
+      "lon": "-76.5366930",
+      "category": "building",
+      "type": "university",
+      "place_rank": 30,
+      "importance": 0.00006824826428621374,
+      "addresstype": "building",
+      "name": "",
+      "display_name": "34-01, Calle 9, Champagnat, Comuna 19, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 720025, Colombia",
+      "address": {
+        "house_number": "34-01",
+        "road": "Calle 9",
+        "neighbourhood": "Champagnat",
+        "city_district": "Comuna 19",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "720025",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4264587",
+        "3.4267154",
+        "-76.5368153",
+        "-76.5365414"
+      ]
+    }
+  ],
+  "Banco de Alimentos de Cali, Cali, Colombia": [],
+  "Calle 24 #6-103, Cali, Colombia": [
+    {
+      "place_id": 309453300,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 205952570,
+      "lat": "3.4319742",
+      "lon": "-76.5199653",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053401581597619555,
+      "addresstype": "road",
+      "name": "Calle 24",
+      "display_name": "Calle 24, San Cristobal, Comuna 10, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760010, Colombia",
+      "address": {
+        "road": "Calle 24",
+        "neighbourhood": "San Cristobal",
+        "city_district": "Comuna 10",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760010",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4291998",
+        "3.4347463",
+        "-76.5202901",
+        "-76.5196221"
+      ]
+    },
+    {
+      "place_id": 308295919,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 207657048,
+      "lat": "3.4409681",
+      "lon": "-76.5189087",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053401581597619555,
+      "addresstype": "road",
+      "name": "Calle 24",
+      "display_name": "Calle 24, Belalcázar, Comuna 9, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760010, Colombia",
+      "address": {
+        "road": "Calle 24",
+        "neighbourhood": "Belalcázar",
+        "city_district": "Comuna 9",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760010",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4384869",
+        "3.4434493",
+        "-76.5191805",
+        "-76.5186369"
+      ]
+    },
+    {
+      "place_id": 308900085,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 207653142,
+      "lat": "3.4371572",
+      "lon": "-76.5193261",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053401581597619555,
+      "addresstype": "road",
+      "name": "Calle 24",
+      "display_name": "Calle 24, Santa Mónica Belalcázar, Comuna 9, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760010, Colombia",
+      "address": {
+        "road": "Calle 24",
+        "neighbourhood": "Santa Mónica Belalcázar",
+        "city_district": "Comuna 9",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760010",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4358274",
+        "3.4384869",
+        "-76.5194718",
+        "-76.5191805"
+      ]
+    }
+  ],
+  "Coliseo de Hockey Miguel Calero, Cali, Colombia": [],
+  "Coliseo de Hockey Miguel Calero, Canchas Panamericanas, Cali, Colombia": [],
+  "Unidad Deportiva Panamericana, Cali, Colombia": [],
+  "Unidad Deportiva Jaime Aparicio, Cali, Colombia": [
+    {
+      "place_id": 308141811,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 6193311,
+      "lat": "3.4237953",
+      "lon": "-76.5363238",
+      "category": "leisure",
+      "type": "sports_centre",
+      "place_rank": 30,
+      "importance": 0.00006824826428621374,
+      "addresstype": "leisure",
+      "name": "Unidad deportiva Jaime Aparicio",
+      "display_name": "Unidad deportiva Jaime Aparicio, Carrera 35, Olímpico, Comuna 10, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760041, Colombia",
+      "address": {
+        "leisure": "Unidad deportiva Jaime Aparicio",
+        "road": "Carrera 35",
+        "neighbourhood": "Olímpico",
+        "city_district": "Comuna 10",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760041",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4209726",
+        "3.4265985",
+        "-76.5383916",
+        "-76.5337392"
+      ]
+    }
+  ],
+  "La Casa del Pueblo, Cali, Colombia": [],
+  "Carrera 9 #4-25, Cali, Colombia": [
+    {
+      "place_id": 308888175,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 38133298,
+      "lat": "3.4508651",
+      "lon": "-76.4945184",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053401581597619555,
+      "addresstype": "road",
+      "name": "Carrera 9",
+      "display_name": "Carrera 9, La Base, Comuna 8, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760011, Colombia",
+      "address": {
+        "road": "Carrera 9",
+        "neighbourhood": "La Base",
+        "city_district": "Comuna 8",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760011",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4506077",
+        "3.4511147",
+        "-76.4957975",
+        "-76.4932409"
+      ]
+    },
+    {
+      "place_id": 309492705,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 32057572,
+      "lat": "3.4468855",
+      "lon": "-76.5386128",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053401581597619555,
+      "addresstype": "road",
+      "name": "Carrera 9",
+      "display_name": "Carrera 9, San Antonio, Comuna 3, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760044, Colombia",
+      "address": {
+        "road": "Carrera 9",
+        "neighbourhood": "San Antonio",
+        "city_district": "Comuna 3",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760044",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4468363",
+        "3.4471743",
+        "-76.5404192",
+        "-76.5368303"
+      ]
+    },
+    {
+      "place_id": 309380843,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 315385977,
+      "lat": "3.4481156",
+      "lon": "-76.5318994",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053401581597619555,
+      "addresstype": "road",
+      "name": "Carrera 9",
+      "display_name": "Carrera 9, Santa Rosa, Comuna 3, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760044, Colombia",
+      "address": {
+        "road": "Carrera 9",
+        "neighbourhood": "Santa Rosa",
+        "city_district": "Comuna 3",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760044",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4479030",
+        "3.4482667",
+        "-76.5327996",
+        "-76.5309871"
+      ]
+    }
+  ],
+  "San Antonio, Cali, Colombia": [
+    {
+      "place_id": 307751851,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7669497,
+      "lat": "3.4474138",
+      "lon": "-76.5385434",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.21822785325192331,
+      "addresstype": "neighbourhood",
+      "name": "San Antonio",
+      "display_name": "San Antonio, Comuna 3, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "neighbourhood": "San Antonio",
+        "city_district": "Comuna 3",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4455053",
+        "3.4497871",
+        "-76.5433943",
+        "-76.5365271"
+      ]
+    },
+    {
+      "place_id": 308817623,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5984363036,
+      "lat": "3.4468563",
+      "lon": "-76.5437624",
+      "category": "natural",
+      "type": "peak",
+      "place_rank": 18,
+      "importance": 0.16006824826428626,
+      "addresstype": "peak",
+      "name": "San Antonio",
+      "display_name": "San Antonio, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, 760101, Colombia",
+      "address": {
+        "peak": "San Antonio",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "760101",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4468063",
+        "3.4469063",
+        "-76.5438124",
+        "-76.5437124"
+      ]
+    }
+  ],
+  "Todos Somos Valle — La Licorera, Cali, Colombia": [],
+  "Antigua Licorera del Valle, Cali, Colombia": [
+    {
+      "place_id": 308160603,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 265490249,
+      "lat": "3.4627632",
+      "lon": "-76.5194767",
+      "category": "landuse",
+      "type": "brownfield",
+      "place_rank": 24,
+      "importance": 0.08006824826428623,
+      "addresstype": "brownfield",
+      "name": "Antigua Licorera del Valle",
+      "display_name": "Antigua Licorera del Valle, Comuna 4, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "brownfield": "Antigua Licorera del Valle",
+        "city_district": "Comuna 4",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4614602",
+        "3.4639413",
+        "-76.5207279",
+        "-76.5186335"
+      ]
+    }
+  ],
+  "Ciudadela Petronio Álvarez, Cali, Colombia": [],
+  "Parque de la Caña, Cali, Colombia": [
+    {
+      "place_id": 309265137,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 9082170,
+      "lat": "3.4556831",
+      "lon": "-76.5079359",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16006824826428626,
+      "addresstype": "neighbourhood",
+      "name": "Parque de la Caña",
+      "display_name": "Parque de la Caña, Comuna 7, Cali ciudad, Cali, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "neighbourhood": "Parque de la Caña",
+        "city_district": "Comuna 7",
+        "city": "Cali ciudad",
+        "county": "Cali",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4533458",
+        "3.4583831",
+        "-76.5103313",
+        "-76.5053479"
+      ]
+    }
+  ],
+  "Palmira, Colombia": [
+    {
+      "place_id": 308180620,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1473610,
+      "lat": "3.5308373",
+      "lon": "-76.2988048",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.46579012336862585,
+      "addresstype": "city",
+      "name": "Palmira",
+      "display_name": "Palmira, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "city": "Palmira",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4516233",
+        "3.7180679",
+        "-76.4917422",
+        "-75.9496665"
+      ]
+    },
+    {
+      "place_id": 308788725,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 19017675,
+      "lat": "6.5439580",
+      "lon": "-75.0641353",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.18671960097657736,
+      "addresstype": "city",
+      "name": "Palmira",
+      "display_name": "Palmira, Cisneros, Nordeste, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "city": "Palmira",
+        "county": "Cisneros",
+        "state_district": "Nordeste",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.5352013",
+        "6.5528030",
+        "-75.0785585",
+        "-75.0523140"
+      ]
+    },
+    {
+      "place_id": 308860186,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 17022585,
+      "lat": "6.0116828",
+      "lon": "-73.6700366",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16004924925612266,
+      "addresstype": "neighbourhood",
+      "name": "Barrio Palmira",
+      "display_name": "Barrio Palmira, Vélez, Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "neighbourhood": "Barrio Palmira",
+        "town": "Vélez",
+        "county": "Vélez",
+        "state_district": "Vélez",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.0099616",
+        "6.0134997",
+        "-73.6713065",
+        "-73.6693608"
+      ]
+    }
+  ],
+  "Oficina de Pastoral Social — Palmira, Palmira, Colombia": [],
+  "Carrera 25 #36-39, Palmira, Colombia": [
+    {
+      "place_id": 309278580,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 501212435,
+      "lat": "3.5526762",
+      "lon": "-76.2877906",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05338692378118559,
+      "addresstype": "road",
+      "name": "Carrera 25",
+      "display_name": "Carrera 25, Palmira, Sur, Valle del Cauca, RAP Pacífico, 763532, Colombia",
+      "address": {
+        "road": "Carrera 25",
+        "city": "Palmira",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "763532",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.5515512",
+        "3.5537809",
+        "-76.2880832",
+        "-76.2874285"
+      ]
+    },
+    {
+      "place_id": 308176011,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 432156417,
+      "lat": "3.5104560",
+      "lon": "-76.2983722",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05338692378118559,
+      "addresstype": "road",
+      "name": "Carrera 25",
+      "display_name": "Carrera 25, Palmira, Sur, Valle del Cauca, RAP Pacífico, 763533, Colombia",
+      "address": {
+        "road": "Carrera 25",
+        "city": "Palmira",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "763533",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.5099480",
+        "3.5109640",
+        "-76.2984773",
+        "-76.2982671"
+      ]
+    }
+  ],
+  "Centro Comercial Unicentro Palmira, Palmira, Colombia": [
+    {
+      "place_id": 308926163,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 292794732,
+      "lat": "3.5399884",
+      "lon": "-76.3107555",
+      "category": "landuse",
+      "type": "commercial",
+      "place_rank": 24,
+      "importance": 0.08005359044785226,
+      "addresstype": "commercial",
+      "name": "Centro Comercial Unicentro Palmira",
+      "display_name": "Centro Comercial Unicentro Palmira, Palmira, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "commercial": "Centro Comercial Unicentro Palmira",
+        "city": "Palmira",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.5390659",
+        "3.5411031",
+        "-76.3115484",
+        "-76.3098456"
+      ]
+    }
+  ],
+  "Centro Comercial Llanogrande, Palmira, Colombia": [
+    {
+      "place_id": 309422705,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 421415405,
+      "lat": "3.5279185",
+      "lon": "-76.3168259",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.000053590447852247156,
+      "addresstype": "shop",
+      "name": "Centro Comercial Llanogrande",
+      "display_name": "Centro Comercial Llanogrande, Km 2, Calle 31, Palmira, Sur, Valle del Cauca, RAP Pacífico, 763533, Colombia",
+      "address": {
+        "shop": "Centro Comercial Llanogrande",
+        "house_number": "Km 2",
+        "road": "Calle 31",
+        "city": "Palmira",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "763533",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.5261210",
+        "3.5295279",
+        "-76.3185695",
+        "-76.3147847"
+      ]
+    },
+    {
+      "place_id": 309371022,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 615073078,
+      "lat": "3.5284142",
+      "lon": "-76.3171717",
+      "category": "shop",
+      "type": "mall",
+      "place_rank": 30,
+      "importance": 0.000053590447852247156,
+      "addresstype": "shop",
+      "name": "Centro Comercial Llanogrande",
+      "display_name": "Centro Comercial Llanogrande, 44-239, Calle 31, Santa Ana, Palmira, Sur, Valle del Cauca, RAP Pacífico, 763533, Colombia",
+      "address": {
+        "shop": "Centro Comercial Llanogrande",
+        "house_number": "44-239",
+        "road": "Calle 31",
+        "neighbourhood": "Santa Ana",
+        "city": "Palmira",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "postcode": "763533",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.5275205",
+        "3.5293063",
+        "-76.3179380",
+        "-76.3154167"
+      ]
+    }
+  ],
+  "Centro Comercial La Cometa, Palmira, Colombia": [],
+  "Buenaventura, Colombia": [
+    {
+      "place_id": 315577657,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1311768,
+      "lat": "3.8881929",
+      "lon": "-77.0738324",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4633985020102336,
+      "addresstype": "city",
+      "name": "Buenaventura",
+      "display_name": "Buenaventura, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "city": "Buenaventura",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.1079358",
+        "4.2340529",
+        "-81.6165521",
+        "-76.6875315"
+      ]
+    }
+  ],
+  "Banco de Alimentos de Buenaventura, Buenaventura, Colombia": [],
+  "Avenida Simón Bolívar #47C-70, Buenaventura, Colombia": [],
+  "interior del Colegio Seminario, Buenaventura, Colombia": [],
+  "Barranquilla, Colombia": [
+    {
+      "place_id": 308727234,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1335179,
+      "lat": "11.0101922",
+      "lon": "-74.8231794",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.6123147145406433,
+      "addresstype": "county",
+      "name": "Barranquilla",
+      "display_name": "Barranquilla, Atlántico, RAP Caribe, Colombia",
+      "address": {
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.9138881",
+        "11.1066448",
+        "-74.9192124",
+        "-74.7536320"
+      ]
+    },
+    {
+      "place_id": 308537877,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13466699,
+      "lat": "10.9938599",
+      "lon": "-74.7926118",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.6123147145406433,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Barranquilla",
+      "display_name": "Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.9206892",
+        "11.0453841",
+        "-74.8507896",
+        "-74.7584885"
+      ]
+    }
+  ],
+  "Centro de Acopio Barranquillita, Barranquilla, Colombia": [],
+  "Carrera 43 #6-120, Barranquilla, Colombia": [
+    {
+      "place_id": 309558168,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 762389429,
+      "lat": "10.9954439",
+      "lon": "-74.8357628",
+      "category": "highway",
+      "type": "unclassified",
+      "place_rank": 26,
+      "importance": 0.05339926070038907,
+      "addresstype": "road",
+      "name": "Carrera 43",
+      "display_name": "Carrera 43, Localidad Norte - Centro Histórico, Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, 080020, Colombia",
+      "address": {
+        "road": "Carrera 43",
+        "city_district": "Localidad Norte - Centro Histórico",
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "postcode": "080020",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.9927320",
+        "10.9988554",
+        "-74.8376697",
+        "-74.8357236"
+      ]
+    },
+    {
+      "place_id": 307253857,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1410372693,
+      "lat": "11.0031473",
+      "lon": "-74.8333266",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05339926070038907,
+      "addresstype": "road",
+      "name": "Carrera 43",
+      "display_name": "Carrera 43, Miramar, Localidad Norte - Centro Histórico, Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, 080020, Colombia",
+      "address": {
+        "road": "Carrera 43",
+        "neighbourhood": "Miramar",
+        "city_district": "Localidad Norte - Centro Histórico",
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "postcode": "080020",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "11.0030985",
+        "11.0032012",
+        "-74.8334178",
+        "-74.8332327"
+      ]
+    },
+    {
+      "place_id": 307339932,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 558576669,
+      "lat": "10.9818654",
+      "lon": "-74.7711376",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05339926070038907,
+      "addresstype": "road",
+      "name": "Carrera 43",
+      "display_name": "Carrera 43, Barranquillita, Localidad Norte - Centro Histórico, Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, 080003, Colombia",
+      "address": {
+        "road": "Carrera 43",
+        "neighbourhood": "Barranquillita",
+        "city_district": "Localidad Norte - Centro Histórico",
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "postcode": "080003",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.9816908",
+        "10.9820348",
+        "-74.7724629",
+        "-74.7698117"
+      ]
+    }
+  ],
+  "Barranquillita, Barranquilla, Colombia": [
+    {
+      "place_id": 308683509,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 8665469687,
+      "lat": "10.9813908",
+      "lon": "-74.7726223",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08006592736705574,
+      "addresstype": "neighbourhood",
+      "name": "Barranquillita",
+      "display_name": "Barranquillita, Localidad Norte - Centro Histórico, Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, 080003, Colombia",
+      "address": {
+        "neighbourhood": "Barranquillita",
+        "city_district": "Localidad Norte - Centro Histórico",
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "postcode": "080003",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.9713908",
+        "10.9913908",
+        "-74.7826223",
+        "-74.7626223"
+      ]
+    }
+  ],
+  "SCARE Atlántico, Barranquilla, Colombia": [],
+  "Carrera 54 #68-196, piso 2, oficinas 216-222, Prado Office Center, Barranquilla, Colombia": [],
+  "Casa Abelardista, Barranquilla, Colombia": [],
+  "Carrera 49C #80-76, Barranquilla, Colombia": [
+    {
+      "place_id": 307243371,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 214453942,
+      "lat": "11.0099824",
+      "lon": "-74.8355239",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05339926070038907,
+      "addresstype": "road",
+      "name": "Carrera 49C",
+      "display_name": "Carrera 49C, Villa Santos, Localidad Riomar, Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, 080020, Colombia",
+      "address": {
+        "road": "Carrera 49C",
+        "neighbourhood": "Villa Santos",
+        "suburb": "Localidad Riomar",
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "postcode": "080020",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "11.0094924",
+        "11.0112653",
+        "-74.8373842",
+        "-74.8333077"
+      ]
+    },
+    {
+      "place_id": 307271305,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 53144154,
+      "lat": "11.0083632",
+      "lon": "-74.8295652",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339926070038907,
+      "addresstype": "road",
+      "name": "Carrera 49C",
+      "display_name": "Carrera 49C, Villa Santos, Localidad Riomar, Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, 080020, Colombia",
+      "address": {
+        "road": "Carrera 49C",
+        "neighbourhood": "Villa Santos",
+        "suburb": "Localidad Riomar",
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "postcode": "080020",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "11.0080402",
+        "11.0086829",
+        "-74.8302333",
+        "-74.8288987"
+      ]
+    },
+    {
+      "place_id": 307300451,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 334688318,
+      "lat": "11.0077243",
+      "lon": "-74.8286741",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339926070038907,
+      "addresstype": "road",
+      "name": "Carrera 49C",
+      "display_name": "Carrera 49C, El Poblado, Localidad Riomar, Perímetro Urbano Barranquilla, Barranquilla, Atlántico, RAP Caribe, 080020, Colombia",
+      "address": {
+        "road": "Carrera 49C",
+        "neighbourhood": "El Poblado",
+        "suburb": "Localidad Riomar",
+        "city": "Perímetro Urbano Barranquilla",
+        "county": "Barranquilla",
+        "state": "Atlántico",
+        "ISO3166-2-lvl4": "CO-ATL",
+        "region": "RAP Caribe",
+        "postcode": "080020",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "11.0075625",
+        "11.0078861",
+        "-74.8289843",
+        "-74.8283639"
+      ]
+    }
+  ],
+  "Galería Plaza de la Paz, Barranquilla, Colombia": [],
+  "Galería de la Plaza de la Paz, Barranquilla, Colombia": [],
+  "Cartagena, Colombia": [
+    {
+      "place_id": 307233943,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1343457,
+      "lat": "10.4265566",
+      "lon": "-75.5441671",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.61259896209687,
+      "addresstype": "city",
+      "name": "Cartagena de Indias",
+      "display_name": "Cartagena de Indias, Dique, Bolívar, RAP Caribe, Colombia",
+      "address": {
+        "city": "Cartagena de Indias",
+        "state_district": "Dique",
+        "state": "Bolívar",
+        "ISO3166-2-lvl4": "CO-BOL",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "9.3777550",
+        "10.7037837",
+        "-76.1904632",
+        "-75.2872048"
+      ]
+    },
+    {
+      "place_id": 307449321,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 703272277,
+      "lat": "9.6871894",
+      "lon": "-73.2621745",
+      "category": "place",
+      "type": "hamlet",
+      "place_rank": 20,
+      "importance": 0.3860275900821097,
+      "addresstype": "hamlet",
+      "name": "Cartagena",
+      "display_name": "Cartagena, Becerril, Cesar, RAP Caribe, Colombia",
+      "address": {
+        "hamlet": "Cartagena",
+        "town": "Becerril",
+        "county": "Becerril",
+        "state": "Cesar",
+        "ISO3166-2-lvl4": "CO-CES",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "9.6671894",
+        "9.7071894",
+        "-73.2821745",
+        "-73.2421745"
+      ]
+    }
+  ],
+  "Coliseo Bernardo Caraballo, Cartagena, Colombia": [
+    {
+      "place_id": 308839708,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 95178848,
+      "lat": "10.4252358",
+      "lon": "-75.5366822",
+      "category": "building",
+      "type": "yes",
+      "place_rank": 30,
+      "importance": 0.0000661196307316246,
+      "addresstype": "building",
+      "name": "Coliseo Bernardo Caraballo",
+      "display_name": "Coliseo Bernardo Caraballo, Calle 35A, Torices, Cartagena de Indias, Dique, Bolívar, RAP Caribe, 130015, Colombia",
+      "address": {
+        "building": "Coliseo Bernardo Caraballo",
+        "road": "Calle 35A",
+        "neighbourhood": "Torices",
+        "suburb": "Torices",
+        "city": "Cartagena de Indias",
+        "state_district": "Dique",
+        "state": "Bolívar",
+        "ISO3166-2-lvl4": "CO-BOL",
+        "region": "RAP Caribe",
+        "postcode": "130015",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.4248926",
+        "10.4255791",
+        "-75.5370060",
+        "-75.5363584"
+      ]
+    }
+  ],
+  "SCARE Bolívar, Cartagena, Colombia": [],
+  "Calle 28 #26-53, Edificio Portus, oficina 1202, Cartagena, Colombia": [],
+  "Manga, Cartagena, Colombia": [
+    {
+      "place_id": 307500246,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 19110567,
+      "lat": "10.4114514",
+      "lon": "-75.5352260",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 20,
+      "importance": 0.133399452964065,
+      "addresstype": "suburb",
+      "name": "Manga",
+      "display_name": "Manga, Cartagena de Indias, Dique, Bolívar, RAP Caribe, Colombia",
+      "address": {
+        "suburb": "Manga",
+        "city": "Cartagena de Indias",
+        "state_district": "Dique",
+        "state": "Bolívar",
+        "ISO3166-2-lvl4": "CO-BOL",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.4033924",
+        "10.4195012",
+        "-75.5460853",
+        "-75.5253077"
+      ]
+    },
+    {
+      "place_id": 308803322,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1385212852,
+      "lat": "10.4144037",
+      "lon": "-75.5375358",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08006611963073164,
+      "addresstype": "neighbourhood",
+      "name": "Manga",
+      "display_name": "Manga, Cartagena de Indias, Dique, Bolívar, RAP Caribe, Colombia",
+      "address": {
+        "neighbourhood": "Manga",
+        "suburb": "Manga",
+        "city": "Cartagena de Indias",
+        "state_district": "Dique",
+        "state": "Bolívar",
+        "ISO3166-2-lvl4": "CO-BOL",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.4033924",
+        "10.4195012",
+        "-75.5460853",
+        "-75.5253077"
+      ]
+    },
+    {
+      "place_id": 308787689,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 200437349,
+      "lat": "10.4097529",
+      "lon": "-75.5356978",
+      "category": "building",
+      "type": "residential",
+      "place_rank": 30,
+      "importance": 0.0000661196307316246,
+      "addresstype": "building",
+      "name": "Manga",
+      "display_name": "Manga, cra.24, Carrera 24, Manga, Cartagena de Indias, Dique, Bolívar, RAP Caribe, 130001, Colombia",
+      "address": {
+        "building": "Manga",
+        "house_number": "cra.24",
+        "road": "Carrera 24",
+        "neighbourhood": "Manga",
+        "suburb": "Manga",
+        "city": "Cartagena de Indias",
+        "state_district": "Dique",
+        "state": "Bolívar",
+        "ISO3166-2-lvl4": "CO-BOL",
+        "region": "RAP Caribe",
+        "postcode": "130001",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.4096647",
+        "10.4098411",
+        "-75.5357664",
+        "-75.5356292"
+      ]
+    }
+  ],
+  "Banco de Alimentos de Cartagena, Cartagena, Colombia": [],
+  "Bucaramanga, Colombia": [
+    {
+      "place_id": 310179210,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1423498,
+      "lat": "7.1669842",
+      "lon": "-73.1047294",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5555572319482414,
+      "addresstype": "county",
+      "name": "Bucaramanga",
+      "display_name": "Bucaramanga, Metropolitana, Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "county": "Bucaramanga",
+        "state_district": "Metropolitana",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.0705154",
+        "7.2637150",
+        "-73.1721600",
+        "-73.0490601"
+      ]
+    },
+    {
+      "place_id": 310361993,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13473403,
+      "lat": "7.1274586",
+      "lon": "-73.1191299",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5555572319482414,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Bucaramanga",
+      "display_name": "Perímetro Urbano Bucaramanga, Bucaramanga, Metropolitana, Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Bucaramanga",
+        "county": "Bucaramanga",
+        "state_district": "Metropolitana",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.0705154",
+        "7.1801474",
+        "-73.1721600",
+        "-73.0922848"
+      ]
+    }
+  ],
+  "Alcaldía de Bucaramanga — primer piso, Bucaramanga, Colombia": [],
+  "Primer piso del edificio de la Alcaldía de Bucaramanga, Bucaramanga, Colombia": [],
+  "Centroabastos, Bucaramanga, Colombia": [
+    {
+      "place_id": 306171074,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 836205854,
+      "lat": "7.1032407",
+      "lon": "-73.1677486",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.000028699931334355954,
+      "addresstype": "amenity",
+      "name": "Central de Abastos de Bucaramanga - CentroAbastos",
+      "display_name": "Central de Abastos de Bucaramanga - CentroAbastos, Autopista Chimitá, Río de Oro I, Comuna 4 - Occidental, Perímetro Urbano Bucaramanga, Bucaramanga, Metropolitana, Santander, RAP Gran Santander, 687541, Colombia",
+      "address": {
+        "amenity": "Central de Abastos de Bucaramanga - CentroAbastos",
+        "road": "Autopista Chimitá",
+        "neighbourhood": "Río de Oro I",
+        "suburb": "Comuna 4 - Occidental",
+        "city": "Perímetro Urbano Bucaramanga",
+        "county": "Bucaramanga",
+        "state_district": "Metropolitana",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "postcode": "687541",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.1005102",
+        "7.1058748",
+        "-73.1709649",
+        "-73.1649656"
+      ]
+    }
+  ],
+  "SCARE Santander, Bucaramanga, Colombia": [],
+  "Calle 45 #28-36, Edificio Verona Plaza, Bucaramanga, Colombia": [],
+  "Fersautos, Bucaramanga, Colombia": [],
+  "Anillo vial, kilómetro 1,8, sentido Floridablanca-Girón, Bucaramanga, Colombia": [],
+  "Pereira, Colombia": [
+    {
+      "place_id": 308275868,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1343043,
+      "lat": "4.7854606",
+      "lon": "-75.7883220",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5373641375214533,
+      "addresstype": "municipality",
+      "name": "Pereira",
+      "display_name": "Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+      "address": {
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6646424",
+        "4.9062043",
+        "-75.9359150",
+        "-75.3754896"
+      ]
+    },
+    {
+      "place_id": 308872215,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7812146,
+      "lat": "4.8143159",
+      "lon": "-75.6946778",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5373641375214533,
+      "addresstype": "city",
+      "name": "Perimetro Urbano Pereira",
+      "display_name": "Perimetro Urbano Pereira, Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+      "address": {
+        "city": "Perimetro Urbano Pereira",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7821777",
+        "4.8291965",
+        "-75.7699003",
+        "-75.6567821"
+      ]
+    }
+  ],
+  "CAFE Consota, Pereira, Colombia": [
+    {
+      "place_id": 308254198,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1012011158,
+      "lat": "4.8101631",
+      "lon": "-75.7227395",
+      "category": "highway",
+      "type": "service",
+      "place_rank": 27,
+      "importance": 0.0400593339436942,
+      "addresstype": "road",
+      "name": "Via de ingreso Metroparque del café calle 50",
+      "display_name": "Via de ingreso Metroparque del café calle 50, Consota, AMCO, Area Metropolitana Centro Occidente, Pereira, Risaralda, RAP Eje Cafetero, 660005, Colombia",
+      "address": {
+        "road": "Via de ingreso Metroparque del café calle 50",
+        "suburb": "Consota",
+        "city_district": "Consota",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "660005",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8101196",
+        "4.8102612",
+        "-75.7228330",
+        "-75.7226117"
+      ]
+    },
+    {
+      "place_id": 309384019,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7623042,
+      "lat": "4.8091471",
+      "lon": "-75.7220288",
+      "category": "leisure",
+      "type": "water_park",
+      "place_rank": 30,
+      "importance": 0.00005933394369416369,
+      "addresstype": "leisure",
+      "name": "Metroparque del Café",
+      "display_name": "Metroparque del Café, Avenida de las Américas, Consota, AMCO, Area Metropolitana Centro Occidente, Pereira, Risaralda, RAP Eje Cafetero, 660005, Colombia",
+      "address": {
+        "leisure": "Metroparque del Café",
+        "road": "Avenida de las Américas",
+        "suburb": "Consota",
+        "city_district": "Consota",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "660005",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8073801",
+        "4.8109781",
+        "-75.7249631",
+        "-75.7195196"
+      ]
+    },
+    {
+      "place_id": 308261516,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 4207882515,
+      "lat": "4.7922914",
+      "lon": "-75.7110067",
+      "category": "amenity",
+      "type": "cafe",
+      "place_rank": 30,
+      "importance": 0.00005933394369416369,
+      "addresstype": "amenity",
+      "name": "WE CAFÉ",
+      "display_name": "WE CAFÉ, Calle 33, Centro Comercial Villa Verde, Villa Verde, Consota, AMCO, Area Metropolitana Centro Occidente, Pereira, Risaralda, RAP Eje Cafetero, 660004, Colombia",
+      "address": {
+        "amenity": "WE CAFÉ",
+        "road": "Calle 33",
+        "retail": "Centro Comercial Villa Verde",
+        "suburb": "Villa Verde",
+        "city_district": "Consota",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "660004",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7922414",
+        "4.7923414",
+        "-75.7110567",
+        "-75.7109567"
+      ]
+    }
+  ],
+  "CAFE Perla del Otún, Pereira, Colombia": [],
+  "Diagonal a la iglesia de los 2.500 Lotes, Pereira, Colombia": [],
+  "Cuba, Pereira, Colombia": [
+    {
+      "place_id": 309324138,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7625127,
+      "lat": "4.8053694",
+      "lon": "-75.7392398",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.18672600061036085,
+      "addresstype": "city_district",
+      "name": "Cuba",
+      "display_name": "Cuba, Perimetro Urbano Pereira, Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+      "address": {
+        "city_district": "Cuba",
+        "city": "Perimetro Urbano Pereira",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8007648",
+        "4.8100017",
+        "-75.7463443",
+        "-75.7307517"
+      ]
+    },
+    {
+      "place_id": 309633170,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7623693,
+      "lat": "4.8048206",
+      "lon": "-75.7402289",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.1600593339436942,
+      "addresstype": "suburb",
+      "name": "Cuba",
+      "display_name": "Cuba, Perimetro Urbano Pereira, Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+      "address": {
+        "suburb": "Cuba",
+        "city_district": "Cuba",
+        "city": "Perimetro Urbano Pereira",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8009441",
+        "4.8090504",
+        "-75.7463443",
+        "-75.7324982"
+      ]
+    },
+    {
+      "place_id": 309878075,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 319111447,
+      "lat": "4.8043910",
+      "lon": "-75.7389743",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08005933394369417,
+      "addresstype": "neighbourhood",
+      "name": "Cuba",
+      "display_name": "Cuba, Perimetro Urbano Pereira, Pereira, Risaralda, RAP Eje Cafetero, 660006, Colombia",
+      "address": {
+        "neighbourhood": "Cuba",
+        "suburb": "Cuba",
+        "city_district": "Cuba",
+        "city": "Perimetro Urbano Pereira",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "660006",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7943910",
+        "4.8143910",
+        "-75.7489743",
+        "-75.7289743"
+      ]
+    }
+  ],
+  "CAFE El Remanso, Pereira, Colombia": [],
+  "Avenida Principal del barrio El Remanso, al lado del Centro de Salud, Pereira, Colombia": [],
+  "El Remanso, Pereira, Colombia": [
+    {
+      "place_id": 308294109,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 10307471127,
+      "lat": "4.8145327",
+      "lon": "-75.6996175",
+      "category": "shop",
+      "type": "bed",
+      "place_rank": 30,
+      "importance": 0.00005933394369416369,
+      "addresstype": "shop",
+      "name": "El Remanso",
+      "display_name": "El Remanso, 25-26, Carrera 8, Centro, Sector Lago Uribe, Centro, Perimetro Urbano Pereira, Pereira, Risaralda, RAP Eje Cafetero, 660002, Colombia",
+      "address": {
+        "shop": "El Remanso",
+        "house_number": "25-26",
+        "road": "Carrera 8",
+        "suburb": "Centro",
+        "city_district": "Centro",
+        "city": "Perimetro Urbano Pereira",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "660002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8144827",
+        "4.8145827",
+        "-75.6996675",
+        "-75.6995675"
+      ]
+    }
+  ],
+  "CAFE Kennedy, Pereira, Colombia": [],
+  "Parque principal de Kennedy, Pereira, Colombia": [],
+  "Kennedy, Pereira, Colombia": [
+    {
+      "place_id": 308514764,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7750113,
+      "lat": "4.8088032",
+      "lon": "-75.6725498",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.1600593339436942,
+      "addresstype": "neighbourhood",
+      "name": "Kennedy",
+      "display_name": "Kennedy, Oriente, AMCO, Area Metropolitana Centro Occidente, Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+      "address": {
+        "neighbourhood": "Kennedy",
+        "suburb": "Oriente",
+        "city_district": "Oriente",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8076197",
+        "4.8102683",
+        "-75.6750558",
+        "-75.6702325"
+      ]
+    },
+    {
+      "place_id": 417960426,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1513923482,
+      "lat": "4.8089486",
+      "lon": "-75.6725749",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08005933394369417,
+      "addresstype": "neighbourhood",
+      "name": "Kennedy",
+      "display_name": "Kennedy, Oriente, AMCO, Area Metropolitana Centro Occidente, Pereira, Risaralda, RAP Eje Cafetero, Colombia",
+      "address": {
+        "neighbourhood": "Kennedy",
+        "suburb": "Oriente",
+        "city_district": "Oriente",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8076197",
+        "4.8102683",
+        "-75.6750373",
+        "-75.6702325"
+      ]
+    }
+  ],
+  "CAFE Ormaza, Pereira, Colombia": [],
+  "Calle 3 Bis #5-38, Avenida del Río, Pereira, Colombia": [],
+  "CAFE San Nicolás, Pereira, Colombia": [],
+  "Carrera 14 Bis #28-38, antigua Estación de Policía, Pereira, Colombia": [],
+  "CAFE Comuna del Café, Pereira, Colombia": [
+    {
+      "place_id": 305231161,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 1613130904,
+      "lat": "4.8223789",
+      "lon": "-75.7319939",
+      "category": "amenity",
+      "type": "police",
+      "place_rank": 30,
+      "importance": 0.00005933394369416369,
+      "addresstype": "amenity",
+      "name": "Estacion de Policia Ciudadela del Cafe",
+      "display_name": "Estacion de Policia Ciudadela del Cafe, Calle 63 bis, Comuna del Café, Parque Industrial, AMCO, Area Metropolitana Centro Occidente, Pereira, Risaralda, RAP Eje Cafetero, 660005, Colombia",
+      "address": {
+        "amenity": "Estacion de Policia Ciudadela del Cafe",
+        "road": "Calle 63 bis",
+        "suburb": "Comuna del Café",
+        "city_district": "Parque Industrial",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "municipality": "Pereira",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "660005",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8223289",
+        "4.8224289",
+        "-75.7320439",
+        "-75.7319439"
+      ]
+    }
+  ],
+  "Dosquebradas, Colombia": [
+    {
+      "place_id": 306529782,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1347548,
+      "lat": "4.8339551",
+      "lon": "-75.6713013",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.3821248718055108,
+      "addresstype": "town",
+      "name": "Dosquebradas",
+      "display_name": "Dosquebradas, Risaralda, RAP Eje Cafetero, Colombia",
+      "address": {
+        "town": "Dosquebradas",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7918206",
+        "4.8892592",
+        "-75.7186372",
+        "-75.6234810"
+      ]
+    },
+    {
+      "place_id": 307882984,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 703229473,
+      "lat": "6.0262851",
+      "lon": "-74.3831055",
+      "category": "place",
+      "type": "hamlet",
+      "place_rank": 20,
+      "importance": 0.13338600061036085,
+      "addresstype": "hamlet",
+      "name": "Dosquebradas",
+      "display_name": "Dosquebradas, Puerto Boyacá, Occidente, Boyacá, RAP (Especial) Central, 155207, Colombia",
+      "address": {
+        "hamlet": "Dosquebradas",
+        "town": "Puerto Boyacá",
+        "state_district": "Occidente",
+        "state": "Boyacá",
+        "ISO3166-2-lvl4": "CO-BOY",
+        "region": "RAP (Especial) Central",
+        "postcode": "155207",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.0062851",
+        "6.0462851",
+        "-74.4031055",
+        "-74.3631055"
+      ]
+    }
+  ],
+  "Banco de Alimentos de Dosquebradas, Dosquebradas, Colombia": [],
+  "Transversal 5 #6-30, Dosquebradas, Colombia": [
+    {
+      "place_id": 308225427,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1055828321,
+      "lat": "4.8230454",
+      "lon": "-75.6948269",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339266727702751,
+      "addresstype": "road",
+      "name": "Transversal 5",
+      "display_name": "Transversal 5, La Esneda, AMCO, Area Metropolitana Centro Occidente, Risaralda, RAP Eje Cafetero, 661002, Colombia",
+      "address": {
+        "road": "Transversal 5",
+        "neighbourhood": "La Esneda",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "661002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8222208",
+        "4.8238388",
+        "-75.6954092",
+        "-75.6942519"
+      ]
+    },
+    {
+      "place_id": 308246853,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 75265577,
+      "lat": "4.8246649",
+      "lon": "-75.6955692",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339266727702751,
+      "addresstype": "road",
+      "name": "Transversal 5",
+      "display_name": "Transversal 5, La Graciela, AMCO, Area Metropolitana Centro Occidente, Risaralda, RAP Eje Cafetero, 661002, Colombia",
+      "address": {
+        "road": "Transversal 5",
+        "residential": "La Graciela",
+        "city": "AMCO, Area Metropolitana Centro Occidente",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "661002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8238388",
+        "4.8254219",
+        "-75.6959447",
+        "-75.6954092"
+      ]
+    }
+  ],
+  "La Badea, Dosquebradas, Colombia": [
+    {
+      "place_id": 308541227,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11385244,
+      "lat": "4.8235013",
+      "lon": "-75.6964784",
+      "category": "amenity",
+      "type": "prison",
+      "place_rank": 30,
+      "importance": 0.00005933394369416369,
+      "addresstype": "amenity",
+      "name": "Cárcel de mujeres La Badea",
+      "display_name": "Cárcel de mujeres La Badea, Calle 9, La Esneda, Dosquebradas, Risaralda, RAP Eje Cafetero, 661002, Colombia",
+      "address": {
+        "amenity": "Cárcel de mujeres La Badea",
+        "road": "Calle 9",
+        "neighbourhood": "La Esneda",
+        "town": "Dosquebradas",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "661002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8225188",
+        "4.8240922",
+        "-75.6976327",
+        "-75.6954217"
+      ]
+    },
+    {
+      "place_id": 308552684,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 435660582,
+      "lat": "4.8255222",
+      "lon": "-75.6989018",
+      "category": "shop",
+      "type": "car_parts",
+      "place_rank": 30,
+      "importance": 0.00005933394369416369,
+      "addresstype": "shop",
+      "name": "Safari Accesorios",
+      "display_name": "Safari Accesorios, Parque Industrial La Badea, Carrera 5, La Graciela, Dosquebradas, Risaralda, RAP Eje Cafetero, 661002, Colombia",
+      "address": {
+        "shop": "Safari Accesorios",
+        "house_number": "Parque Industrial La Badea",
+        "road": "Carrera 5",
+        "residential": "La Graciela",
+        "town": "Dosquebradas",
+        "state": "Risaralda",
+        "ISO3166-2-lvl4": "CO-RIS",
+        "region": "RAP Eje Cafetero",
+        "postcode": "661002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.8254371",
+        "4.8256032",
+        "-75.6990299",
+        "-75.6987738"
+      ]
+    }
+  ],
+  "Manizales, Colombia": [
+    {
+      "place_id": 308933376,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 385842,
+      "lat": "5.0743694",
+      "lon": "-75.5081167",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5399602457890736,
+      "addresstype": "county",
+      "name": "Manizales",
+      "display_name": "Manizales, Centrosur, Caldas, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "county": "Manizales",
+        "state_district": "Centrosur",
+        "state": "Caldas",
+        "ISO3166-2-lvl4": "CO-CAL",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.9826309",
+        "5.1662782",
+        "-75.6791982",
+        "-75.3294904"
+      ]
+    },
+    {
+      "place_id": 308586935,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 406051,
+      "lat": "5.0668907",
+      "lon": "-75.5066661",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5399602457890736,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Manizales",
+      "display_name": "Perímetro Urbano Manizales, Manizales, Centrosur, Caldas, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Manizales",
+        "county": "Manizales",
+        "state_district": "Centrosur",
+        "state": "Caldas",
+        "ISO3166-2-lvl4": "CO-CAL",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.0225297",
+        "5.1048866",
+        "-75.5517477",
+        "-75.4203189"
+      ]
+    },
+    {
+      "place_id": 309559684,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 19119753,
+      "lat": "7.8079900",
+      "lon": "-75.3936309",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.21338746395056074,
+      "addresstype": "city_district",
+      "name": "Manizales",
+      "display_name": "Manizales, Cáceres, Bajo Cauca, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "city_district": "Manizales",
+        "town": "Cáceres",
+        "state_district": "Bajo Cauca",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.6918490",
+        "7.9240739",
+        "-75.4732970",
+        "-75.2899000"
+      ]
+    }
+  ],
+  "Banco de Alimentos de Manizales, Manizales, Colombia": [],
+  "Calle 49 #27A-85, Manizales, Colombia": [],
+  "Armenia, Colombia": [
+    {
+      "place_id": 308272937,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1343039,
+      "lat": "4.4919894",
+      "lon": "-75.7413961",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5042964459465604,
+      "addresstype": "county",
+      "name": "Armenia",
+      "display_name": "Armenia, Capital, Quindío, RAP Eje Cafetero, Colombia",
+      "address": {
+        "county": "Armenia",
+        "state_district": "Capital",
+        "state": "Quindío",
+        "ISO3166-2-lvl4": "CO-QUI",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.3957427",
+        "4.5881794",
+        "-75.7893957",
+        "-75.6324993"
+      ]
+    },
+    {
+      "place_id": 308236698,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13035416,
+      "lat": "4.5363070",
+      "lon": "-75.6723751",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5042964459465604,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Armenia",
+      "display_name": "Perímetro Urbano Armenia, Armenia, Capital, Quindío, RAP Eje Cafetero, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Armenia",
+        "county": "Armenia",
+        "state_district": "Capital",
+        "state": "Quindío",
+        "ISO3166-2-lvl4": "CO-QUI",
+        "region": "RAP Eje Cafetero",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.4934618",
+        "4.5881794",
+        "-75.7195038",
+        "-75.6324993"
+      ]
+    },
+    {
+      "place_id": 308706500,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1350552,
+      "lat": "6.1561777",
+      "lon": "-75.7870472",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4576144686094317,
+      "addresstype": "town",
+      "name": "Armenia",
+      "display_name": "Armenia, Occidente, Antioquia, RAP del Agua y la Montaña, 055860, Colombia",
+      "address": {
+        "town": "Armenia",
+        "state_district": "Occidente",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "055860",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.0987939",
+        "6.2490662",
+        "-75.8592868",
+        "-75.7403758"
+      ]
+    }
+  ],
+  "Banco de Alimentos Monseñor Roberto López Londoño, Armenia, Colombia": [],
+  "Ibagué, Colombia": [
+    {
+      "place_id": 308243245,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1342108,
+      "lat": "4.4386033",
+      "lon": "-75.2108857",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5278477019916826,
+      "addresstype": "city",
+      "name": "Ibagué",
+      "display_name": "Ibagué, Centro, Tolima, RAP (Especial) Central, Colombia",
+      "address": {
+        "city": "Ibagué",
+        "state_district": "Centro",
+        "state": "Tolima",
+        "ISO3166-2-lvl4": "CO-TOL",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.2578563",
+        "4.6993257",
+        "-75.5246959",
+        "-74.9667451"
+      ]
+    }
+  ],
+  "Banco Arquidiocesano de Alimentos de Ibagué, Ibagué, Colombia": [],
+  "Carrera 4A Estadio #23-42, Ibagué, Colombia": [
+    {
+      "place_id": 308167836,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 257193101,
+      "lat": "4.4329000",
+      "lon": "-75.2220753",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339181429770348,
+      "addresstype": "road",
+      "name": "Carrera 4A",
+      "display_name": "Carrera 4A, Nacional, Comuna 10 - Estadio, Perímetro Urbano Ibagué, Ibagué, Centro, Tolima, RAP (Especial) Central, 730001, Colombia",
+      "address": {
+        "road": "Carrera 4A",
+        "neighbourhood": "Nacional",
+        "suburb": "Comuna 10 - Estadio",
+        "city_district": "Perímetro Urbano Ibagué",
+        "city": "Ibagué",
+        "state_district": "Centro",
+        "state": "Tolima",
+        "ISO3166-2-lvl4": "CO-TOL",
+        "region": "RAP (Especial) Central",
+        "postcode": "730001",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.4321618",
+        "4.4340393",
+        "-75.2232688",
+        "-75.2205507"
+      ]
+    },
+    {
+      "place_id": 308317209,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 29706877,
+      "lat": "4.4358994",
+      "lon": "-75.2259262",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339181429770348,
+      "addresstype": "road",
+      "name": "Carrera 4A",
+      "display_name": "Carrera 4A, Hipódromo, Comuna 10 - Estadio, Perímetro Urbano Ibagué, Ibagué, Centro, Tolima, RAP (Especial) Central, 730001, Colombia",
+      "address": {
+        "road": "Carrera 4A",
+        "neighbourhood": "Hipódromo",
+        "suburb": "Comuna 10 - Estadio",
+        "city_district": "Perímetro Urbano Ibagué",
+        "city": "Ibagué",
+        "state_district": "Centro",
+        "state": "Tolima",
+        "ISO3166-2-lvl4": "CO-TOL",
+        "region": "RAP (Especial) Central",
+        "postcode": "730001",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.4352959",
+        "4.4365109",
+        "-75.2267546",
+        "-75.2250919"
+      ]
+    },
+    {
+      "place_id": 308166742,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 83270340,
+      "lat": "4.4314701",
+      "lon": "-75.2129656",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339181429770348,
+      "addresstype": "road",
+      "name": "Carrera 4A",
+      "display_name": "Carrera 4A, Arkalena, Casa Club, Comuna 10 - Estadio, Perímetro Urbano Ibagué, Ibagué, Centro, Tolima, RAP (Especial) Central, 740004, Colombia",
+      "address": {
+        "road": "Carrera 4A",
+        "neighbourhood": "Arkalena",
+        "hamlet": "Casa Club",
+        "suburb": "Comuna 10 - Estadio",
+        "city_district": "Perímetro Urbano Ibagué",
+        "city": "Ibagué",
+        "state_district": "Centro",
+        "state": "Tolima",
+        "ISO3166-2-lvl4": "CO-TOL",
+        "region": "RAP (Especial) Central",
+        "postcode": "740004",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.4312923",
+        "4.4316479",
+        "-75.2135879",
+        "-75.2123433"
+      ]
+    }
+  ],
+  "Santa Marta, Colombia": [
+    {
+      "place_id": 306926374,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13994662,
+      "lat": "11.2320944",
+      "lon": "-74.1950916",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5531975789748458,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Santa Marta",
+      "display_name": "Perímetro Urbano Santa Marta, Santa Marta, Magdalena, RAP Caribe, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Santa Marta",
+        "county": "Santa Marta",
+        "state": "Magdalena",
+        "ISO3166-2-lvl4": "CO-MAG",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "11.0782894",
+        "11.2592511",
+        "-74.2418012",
+        "-74.1399854"
+      ]
+    },
+    {
+      "place_id": 307947167,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1314687,
+      "lat": "11.0866557",
+      "lon": "-73.8803520",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.24003750133516438,
+      "addresstype": "county",
+      "name": "Santa Marta",
+      "display_name": "Santa Marta, Magdalena, RAP Caribe, Colombia",
+      "address": {
+        "county": "Santa Marta",
+        "state": "Magdalena",
+        "ISO3166-2-lvl4": "CO-MAG",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.8242438",
+        "11.3490666",
+        "-74.2418012",
+        "-73.5646983"
+      ]
+    }
+  ],
+  "Oficina de Gestión del Riesgo, Santa Marta, Colombia": [],
+  "Calle 16 #14A-08, piso 2, Santa Marta, Colombia": [],
+  "El Cundí, Santa Marta, Colombia": [
+    {
+      "place_id": 304222136,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 365979628,
+      "lat": "11.2408394",
+      "lon": "-74.2019844",
+      "category": "natural",
+      "type": "hill",
+      "place_rank": 22,
+      "importance": 0.1067267910276951,
+      "addresstype": "hill",
+      "name": "Cerro el Cundí",
+      "display_name": "Cerro el Cundí, Localidad 2 Histórica - Rodrigo de Bastidas, Perímetro Urbano Santa Marta, Santa Marta, Magdalena, RAP Caribe, Colombia",
+      "address": {
+        "hill": "Cerro el Cundí",
+        "city_district": "Localidad 2 Histórica - Rodrigo de Bastidas",
+        "city": "Perímetro Urbano Santa Marta",
+        "county": "Santa Marta",
+        "state": "Magdalena",
+        "ISO3166-2-lvl4": "CO-MAG",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "11.2402511",
+        "11.2414900",
+        "-74.2026614",
+        "-74.2014694"
+      ]
+    }
+  ],
+  "SCARE Magdalena, Santa Marta, Colombia": [],
+  "Calle 24 #3-99, Edificio 424, oficina 1007, Santa Marta, Colombia": [],
+  "Montería, Colombia": [
+    {
+      "place_id": 307625951,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1343449,
+      "lat": "8.6046053",
+      "lon": "-75.9783203",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.48683479237167826,
+      "addresstype": "administrative",
+      "name": "Montería",
+      "display_name": "Montería, Córdoba, RAP Caribe, Colombia",
+      "address": {
+        "administrative": "Montería",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.2630770",
+        "8.9463209",
+        "-76.2788082",
+        "-75.6694089"
+      ]
+    },
+    {
+      "place_id": 308775921,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 14702718,
+      "lat": "8.7509361",
+      "lon": "-75.8786806",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.48683479237167826,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Montería",
+      "display_name": "Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7127269",
+        "8.8117329",
+        "-75.9171153",
+        "-75.8371210"
+      ]
+    }
+  ],
+  "Coliseo Miguel Happy Lora, Montería, Colombia": [
+    {
+      "place_id": 307351379,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 39007619,
+      "lat": "8.7472479",
+      "lon": "-75.8816517",
+      "category": "leisure",
+      "type": "sports_centre",
+      "place_rank": 30,
+      "importance": 0.000055107194628778784,
+      "addresstype": "leisure",
+      "name": "Coliseo Miguel Happy Lora",
+      "display_name": "Coliseo Miguel Happy Lora, Calle 22B, Risaralda, Comuna 5, Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, 230003, Colombia",
+      "address": {
+        "leisure": "Coliseo Miguel Happy Lora",
+        "road": "Calle 22B",
+        "neighbourhood": "Risaralda",
+        "city_district": "Comuna 5",
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "postcode": "230003",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7468906",
+        "8.7476432",
+        "-75.8820081",
+        "-75.8812968"
+      ]
+    }
+  ],
+  "Punto ciudadano El Recreo, Montería, Colombia": [],
+  "Barrio El Recreo, Montería, Colombia": [],
+  "El Recreo, Montería, Colombia": [
+    {
+      "place_id": 308600731,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13546777313,
+      "lat": "8.7803472",
+      "lon": "-75.8682193",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.0800551071946288,
+      "addresstype": "neighbourhood",
+      "name": "El Recreo",
+      "display_name": "El Recreo, Comuna 8, Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, 230002, Colombia",
+      "address": {
+        "neighbourhood": "El Recreo",
+        "city_district": "Comuna 8",
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "postcode": "230002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7703472",
+        "8.7903472",
+        "-75.8782193",
+        "-75.8582193"
+      ]
+    }
+  ],
+  "SCARE Córdoba, Montería, Colombia": [],
+  "Calle 62 #7-53, Montería, Colombia": [
+    {
+      "place_id": 307897005,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 492214091,
+      "lat": "8.7692330",
+      "lon": "-75.8611470",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05338844052796212,
+      "addresstype": "road",
+      "name": "Calle 62",
+      "display_name": "Calle 62, La Castellana, Comuna 8, Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, 230002, Colombia",
+      "address": {
+        "road": "Calle 62",
+        "neighbourhood": "La Castellana",
+        "quarter": "La Castellana",
+        "city_district": "Comuna 8",
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "postcode": "230002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7679550",
+        "8.7705112",
+        "-75.8632255",
+        "-75.8590685"
+      ]
+    },
+    {
+      "place_id": 308872565,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 492214089,
+      "lat": "8.7724496",
+      "lon": "-75.8663245",
+      "category": "highway",
+      "type": "pedestrian",
+      "place_rank": 26,
+      "importance": 0.05338844052796212,
+      "addresstype": "road",
+      "name": "Calle 62",
+      "display_name": "Calle 62, La Castellana, Comuna 8, Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, 230002, Colombia",
+      "address": {
+        "road": "Calle 62",
+        "quarter": "La Castellana",
+        "city_district": "Comuna 8",
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "postcode": "230002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7721967",
+        "8.7727025",
+        "-75.8667184",
+        "-75.8659305"
+      ]
+    }
+  ],
+  "La Castellana, Montería, Colombia": [
+    {
+      "place_id": 307381004,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 910120057,
+      "lat": "8.7713305",
+      "lon": "-75.8635227",
+      "category": "place",
+      "type": "quarter",
+      "place_rank": 20,
+      "importance": 0.13338844052796214,
+      "addresstype": "quarter",
+      "name": "La Castellana",
+      "display_name": "La Castellana, Comuna 8, Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, Colombia",
+      "address": {
+        "quarter": "La Castellana",
+        "city_district": "Comuna 8",
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7626987",
+        "8.7763790",
+        "-75.8692440",
+        "-75.8588645"
+      ]
+    },
+    {
+      "place_id": 307387025,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13546777314,
+      "lat": "8.7671567",
+      "lon": "-75.8640780",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.0800551071946288,
+      "addresstype": "neighbourhood",
+      "name": "La Castellana",
+      "display_name": "La Castellana, Comuna 8, Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, 230002, Colombia",
+      "address": {
+        "neighbourhood": "La Castellana",
+        "quarter": "La Castellana",
+        "city_district": "Comuna 8",
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "postcode": "230002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7571567",
+        "8.7771567",
+        "-75.8740780",
+        "-75.8540780"
+      ]
+    },
+    {
+      "place_id": 307485032,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 703316093,
+      "lat": "8.7725546",
+      "lon": "-75.8663965",
+      "category": "place",
+      "type": "locality",
+      "place_rank": 25,
+      "importance": 0.06672177386129549,
+      "addresstype": "locality",
+      "name": "La Castellana",
+      "display_name": "La Castellana, Comuna 8, Perímetro Urbano Montería, Centro, Córdoba, RAP Caribe, 230002, Colombia",
+      "address": {
+        "locality": "La Castellana",
+        "quarter": "La Castellana",
+        "city_district": "Comuna 8",
+        "city": "Perímetro Urbano Montería",
+        "state_district": "Centro",
+        "state": "Córdoba",
+        "ISO3166-2-lvl4": "CO-COR",
+        "region": "RAP Caribe",
+        "postcode": "230002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "8.7625546",
+        "8.7825546",
+        "-75.8763965",
+        "-75.8563965"
+      ]
+    }
+  ],
+  "Valledupar, Colombia": [
+    {
+      "place_id": 307418665,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1423509,
+      "lat": "10.3431115",
+      "lon": "-73.3757934",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.50961825624993,
+      "addresstype": "county",
+      "name": "Valledupar",
+      "display_name": "Valledupar, Cesar, RAP Caribe, Colombia",
+      "address": {
+        "county": "Valledupar",
+        "state": "Cesar",
+        "ISO3166-2-lvl4": "CO-CES",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "9.8186050",
+        "10.8676198",
+        "-73.8383600",
+        "-73.0766077"
+      ]
+    },
+    {
+      "place_id": 308358924,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13437307,
+      "lat": "10.4651733",
+      "lon": "-73.2529512",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.50961825624993,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Valledupar",
+      "display_name": "Perímetro Urbano Valledupar, Valledupar, Cesar, RAP Caribe, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Valledupar",
+        "county": "Valledupar",
+        "state": "Cesar",
+        "ISO3166-2-lvl4": "CO-CES",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.4221134",
+        "10.5021334",
+        "-73.2969431",
+        "-73.2211251"
+      ]
+    }
+  ],
+  "SCARE Cesar, Valledupar, Colombia": [],
+  "Calle 11 #8-79, oficinas 202-203, Edificio SOA, Valledupar, Colombia": [],
+  "Centro de Solidaridad de Valledupar, Valledupar, Colombia": [],
+  "Centro de Solidaridad, Valledupar, Colombia": [],
+  "Diócesis de Valledupar, Valledupar, Colombia": [],
+  "Sede de la Diócesis de Valledupar, Valledupar, Colombia": [],
+  "Tunja, Colombia": [
+    {
+      "place_id": 309293817,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5548746213,
+      "lat": "5.5324313",
+      "lon": "-73.3616014",
+      "category": "place",
+      "type": "city",
+      "place_rank": 16,
+      "importance": 0.5477197653754928,
+      "addresstype": "city",
+      "name": "Tunja",
+      "display_name": "Tunja, Centro, Boyacá, RAP (Especial) Central, 150001, Colombia",
+      "address": {
+        "city": "Tunja",
+        "county": "Tunja",
+        "state_district": "Centro",
+        "state": "Boyacá",
+        "ISO3166-2-lvl4": "CO-BOY",
+        "region": "RAP (Especial) Central",
+        "postcode": "150001",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.3724313",
+        "5.6924313",
+        "-73.5216014",
+        "-73.2016014"
+      ]
+    },
+    {
+      "place_id": 305529936,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1344404,
+      "lat": "5.5151038",
+      "lon": "-73.3794755",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.24006034409094373,
+      "addresstype": "county",
+      "name": "Tunja",
+      "display_name": "Tunja, Centro, Boyacá, RAP (Especial) Central, Colombia",
+      "address": {
+        "county": "Tunja",
+        "state_district": "Centro",
+        "state": "Boyacá",
+        "ISO3166-2-lvl4": "CO-BOY",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.4463572",
+        "5.5840849",
+        "-73.4471472",
+        "-73.3039488"
+      ]
+    }
+  ],
+  "SCARE Boyacá, Tunja, Colombia": [],
+  "Calle 20 #12-84, local 117, Centro Cívico y Comercial Plaza Real, Tunja, Colombia": [],
+  "Punto de acopio de Tunja, Tunja, Colombia": [],
+  "Carrera 12 #21-45, Tunja, Colombia": [
+    {
+      "place_id": 305524862,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 601419872,
+      "lat": "5.5707930",
+      "lon": "-73.3473889",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053393677424277065,
+      "addresstype": "road",
+      "name": "Carrera 12",
+      "display_name": "Carrera 12, Tunja, Centro, Boyacá, RAP (Especial) Central, 150004, Colombia",
+      "address": {
+        "road": "Carrera 12",
+        "city": "Tunja",
+        "county": "Tunja",
+        "state_district": "Centro",
+        "state": "Boyacá",
+        "ISO3166-2-lvl4": "CO-BOY",
+        "region": "RAP (Especial) Central",
+        "postcode": "150004",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.5695614",
+        "5.5719949",
+        "-73.3482495",
+        "-73.3464909"
+      ]
+    },
+    {
+      "place_id": 311517135,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 271338666,
+      "lat": "5.5326887",
+      "lon": "-73.3642251",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053393677424277065,
+      "addresstype": "road",
+      "name": "Carrera 12",
+      "display_name": "Carrera 12, Las Nieves, Tunja, Centro, Boyacá, RAP (Especial) Central, 150001, Colombia",
+      "address": {
+        "road": "Carrera 12",
+        "neighbourhood": "Las Nieves",
+        "city": "Tunja",
+        "county": "Tunja",
+        "state_district": "Centro",
+        "state": "Boyacá",
+        "ISO3166-2-lvl4": "CO-BOY",
+        "region": "RAP (Especial) Central",
+        "postcode": "150001",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.5290711",
+        "5.5363595",
+        "-73.3654161",
+        "-73.3632788"
+      ]
+    },
+    {
+      "place_id": 311052737,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 128655541,
+      "lat": "5.5393831",
+      "lon": "-73.3624348",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053393677424277065,
+      "addresstype": "road",
+      "name": "Carrera 12",
+      "display_name": "Carrera 12, Las Nieves, Tunja, Centro, Boyacá, RAP (Especial) Central, 150002, Colombia",
+      "address": {
+        "road": "Carrera 12",
+        "neighbourhood": "Las Nieves",
+        "city": "Tunja",
+        "county": "Tunja",
+        "state_district": "Centro",
+        "state": "Boyacá",
+        "ISO3166-2-lvl4": "CO-BOY",
+        "region": "RAP (Especial) Central",
+        "postcode": "150002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.5367748",
+        "5.5419490",
+        "-73.3631199",
+        "-73.3616050"
+      ]
+    }
+  ],
+  "Popayán, Colombia": [
+    {
+      "place_id": 308050487,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1706524,
+      "lat": "2.4431455",
+      "lon": "-76.5463299",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5299250012884934,
+      "addresstype": "county",
+      "name": "Popayán",
+      "display_name": "Popayán, Centro, Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "county": "Popayán",
+        "state_district": "Centro",
+        "state": "Cauca",
+        "ISO3166-2-lvl4": "CO-CAU",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "2.3118584",
+        "2.5728993",
+        "-76.7730320",
+        "-76.3853447"
+      ]
+    },
+    {
+      "place_id": 308066964,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13111838,
+      "lat": "2.4422295",
+      "lon": "-76.6072368",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5299250012884934,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Popayán",
+      "display_name": "Perímetro Urbano Popayán, Popayán, Centro, Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Popayán",
+        "county": "Popayán",
+        "state_district": "Centro",
+        "state": "Cauca",
+        "ISO3166-2-lvl4": "CO-CAU",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "2.4192676",
+        "2.4971902",
+        "-76.6485077",
+        "-76.5525726"
+      ]
+    }
+  ],
+  "SCARE Cauca, Popayán, Colombia": [],
+  "Carrera 9 #18N-231, oficina 205, Edificio Terrazas del Norte, Popayán, Colombia": [],
+  "Riohacha, Colombia": [
+    {
+      "place_id": 307693940,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1314631,
+      "lat": "11.2361913",
+      "lon": "-72.8820456",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.46525419129316453,
+      "addresstype": "county",
+      "name": "Riohacha",
+      "display_name": "Riohacha, RAP Caribe, Colombia",
+      "address": {
+        "county": "Riohacha",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "10.9107166",
+        "11.5613595",
+        "-73.3856026",
+        "-72.6025520"
+      ]
+    },
+    {
+      "place_id": 305369644,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 17551457,
+      "lat": "11.5449387",
+      "lon": "-72.9150522",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.46525419129316453,
+      "addresstype": "city",
+      "name": "Riohacha",
+      "display_name": "Riohacha, RAP Caribe, Colombia",
+      "address": {
+        "city": "Riohacha",
+        "county": "Riohacha",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "11.5064866",
+        "11.5601583",
+        "-72.9438186",
+        "-72.8820475"
+      ]
+    }
+  ],
+  "SCARE La Guajira, Riohacha, Colombia": [],
+  "Calle 7 #11-114, oficina 8, segundo piso, Edificio Doña Cándida, Riohacha, Colombia": [],
+  "Neiva, Colombia": [
+    {
+      "place_id": 308703475,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1342126,
+      "lat": "2.9257038",
+      "lon": "-75.2893937",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.497261130845047,
+      "addresstype": "city",
+      "name": "Neiva",
+      "display_name": "Neiva, Norte, Huila, RAP (Especial) Central, Colombia",
+      "address": {
+        "city": "Neiva",
+        "state_district": "Norte",
+        "state": "Huila",
+        "ISO3166-2-lvl4": "CO-HUI",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "2.7830953",
+        "3.2834203",
+        "-75.6221426",
+        "-74.9708167"
+      ]
+    },
+    {
+      "place_id": 308117270,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13088575,
+      "lat": "2.9257038",
+      "lon": "-75.2893937",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.497261130845047,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Neiva",
+      "display_name": "Perímetro Urbano Neiva, Neiva, Norte, Huila, RAP (Especial) Central, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Neiva",
+        "state_district": "Norte",
+        "state": "Huila",
+        "ISO3166-2-lvl4": "CO-HUI",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "2.8859925",
+        "2.9865551",
+        "-75.3092532",
+        "-75.2363931"
+      ]
+    }
+  ],
+  "SCARE Huila, Neiva, Colombia": [],
+  "Carrera 5 #10-49, local 201, Centro Comercial Plaza Real, Neiva, Colombia": [],
+  "Villavicencio, Colombia": [
+    {
+      "place_id": 309626449,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11320537,
+      "lat": "4.1114595",
+      "lon": "-73.4967836",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 10,
+      "importance": 0.4926460092064007,
+      "addresstype": "state_district",
+      "name": "Villavicencio",
+      "display_name": "Villavicencio, Meta, RAP (Especial) Central, Colombia",
+      "address": {
+        "state_district": "Villavicencio",
+        "state": "Meta",
+        "ISO3166-2-lvl4": "CO-MET",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.9343543",
+        "4.2882346",
+        "-73.7676148",
+        "-73.1656962"
+      ]
+    },
+    {
+      "place_id": 309534120,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11375017,
+      "lat": "4.1114595",
+      "lon": "-73.4967836",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4926460092064007,
+      "addresstype": "county",
+      "name": "Villavicencio",
+      "display_name": "Villavicencio, Meta, RAP (Especial) Central, Colombia",
+      "address": {
+        "county": "Villavicencio",
+        "state_district": "Villavicencio",
+        "state": "Meta",
+        "ISO3166-2-lvl4": "CO-MET",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.9343543",
+        "4.2882346",
+        "-73.7676148",
+        "-73.1656962"
+      ]
+    },
+    {
+      "place_id": 309247533,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 14699591,
+      "lat": "4.1347644",
+      "lon": "-73.6201517",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.4926460092064007,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Villavicencio",
+      "display_name": "Perímetro Urbano Villavicencio, Villavicencio, Meta, RAP (Especial) Central, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Villavicencio",
+        "county": "Villavicencio",
+        "state_district": "Villavicencio",
+        "state": "Meta",
+        "ISO3166-2-lvl4": "CO-MET",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.0459535",
+        "4.1693285",
+        "-73.7001836",
+        "-73.5310114"
+      ]
+    }
+  ],
+  "SCARE Meta, Villavicencio, Colombia": [],
+  "Avenida 40 #16B-159, Centro Comercial Villacentro, locales 83 y 84, Villavicencio, Colombia": [],
+  "Pasto, Colombia": [
+    {
+      "place_id": 310339088,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13993673,
+      "lat": "1.2140275",
+      "lon": "-77.2785096",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5050334617616385,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Pasto",
+      "display_name": "Perímetro Urbano Pasto, Pasto, Centro, Nariño, RAP Pacífico, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Pasto",
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "1.1785788",
+        "1.2476060",
+        "-77.3112363",
+        "-77.2455409"
+      ]
+    },
+    {
+      "place_id": 307990617,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11323562,
+      "lat": "1.0877479",
+      "lon": "-77.2054866",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.24002869993133438,
+      "addresstype": "county",
+      "name": "Pasto",
+      "display_name": "Pasto, Centro, Nariño, RAP Pacífico, Colombia",
+      "address": {
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "0.8212503",
+        "1.3541459",
+        "-77.3839143",
+        "-77.0265961"
+      ]
+    }
+  ],
+  "SCARE Nariño, Pasto, Colombia": [],
+  "Carrera 25 #15-62, oficina 201, Edificio Zaguán del Lago, Pasto, Colombia": [],
+  "Punto de acopio del Centro — Pasto, Pasto, Colombia": [],
+  "Calle 17 #27-59, Pasto, Colombia": [
+    {
+      "place_id": 307808050,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 79535884,
+      "lat": "1.2000015",
+      "lon": "-77.2705001",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05338917906462192,
+      "addresstype": "road",
+      "name": "Calle 17",
+      "display_name": "Calle 17, Venecia, Comuna 5, Perímetro Urbano Pasto, Pasto, Centro, Nariño, RAP Pacífico, 520006, Colombia",
+      "address": {
+        "road": "Calle 17",
+        "neighbourhood": "Venecia",
+        "city_district": "Comuna 5",
+        "city": "Perímetro Urbano Pasto",
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "postcode": "520006",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "1.1996182",
+        "1.2005750",
+        "-77.2712612",
+        "-77.2696301"
+      ]
+    },
+    {
+      "place_id": 307774041,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 48135815,
+      "lat": "1.2245198",
+      "lon": "-77.2864175",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05338917906462192,
+      "addresstype": "road",
+      "name": "Calle 17",
+      "display_name": "Calle 17, Dorado, Comuna 9, Perímetro Urbano Pasto, Pasto, Centro, Nariño, RAP Pacífico, 520002, Colombia",
+      "address": {
+        "road": "Calle 17",
+        "neighbourhood": "Dorado",
+        "city_district": "Comuna 9",
+        "city": "Perímetro Urbano Pasto",
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "postcode": "520002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "1.2245016",
+        "1.2245446",
+        "-77.2867941",
+        "-77.2860409"
+      ]
+    },
+    {
+      "place_id": 319177231,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 438341398,
+      "lat": "1.2006647",
+      "lon": "-77.2713801",
+      "category": "highway",
+      "type": "pedestrian",
+      "place_rank": 26,
+      "importance": 0.05338917906462192,
+      "addresstype": "road",
+      "name": "Calle 17",
+      "display_name": "Calle 17, Venecia, Comuna 5, Perímetro Urbano Pasto, Pasto, Centro, Nariño, RAP Pacífico, 520006, Colombia",
+      "address": {
+        "road": "Calle 17",
+        "neighbourhood": "Venecia",
+        "city_district": "Comuna 5",
+        "city": "Perímetro Urbano Pasto",
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "postcode": "520006",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "1.2006446",
+        "1.2006848",
+        "-77.2714068",
+        "-77.2713535"
+      ]
+    }
+  ],
+  "Centro, Pasto, Colombia": [
+    {
+      "place_id": 308621774,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1020369745,
+      "lat": "1.1402765",
+      "lon": "-77.1538020",
+      "category": "amenity",
+      "type": "restaurant",
+      "place_rank": 30,
+      "importance": 0.00003500190737769158,
+      "addresstype": "amenity",
+      "name": "Colombia",
+      "display_name": "Colombia, Vía Laguna de La Cocha, El Puerto, Pasto, Centro, Nariño, RAP Pacífico, 520017, Colombia",
+      "address": {
+        "amenity": "Colombia",
+        "road": "Vía Laguna de La Cocha",
+        "hamlet": "El Puerto",
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "postcode": "520017",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "1.1402246",
+        "1.1403292",
+        "-77.1538968",
+        "-77.1537083"
+      ]
+    },
+    {
+      "place_id": 308336319,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 160694184,
+      "lat": "1.2122222",
+      "lon": "-77.2776401",
+      "category": "shop",
+      "type": "supermarket",
+      "place_rank": 30,
+      "importance": 0.3971205322578132,
+      "addresstype": "shop",
+      "name": "Dollar City Centro",
+      "display_name": "Dollar City Centro, Calle 18, El Churo, Comuna 1, Perímetro Urbano Pasto, Pasto, Centro, Nariño, RAP Pacífico, 520003, Colombia",
+      "address": {
+        "shop": "Dollar City Centro",
+        "road": "Calle 18",
+        "neighbourhood": "El Churo",
+        "city_district": "Comuna 1",
+        "city": "Perímetro Urbano Pasto",
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "postcode": "520003",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "1.2121058",
+        "1.2123373",
+        "-77.2777414",
+        "-77.2775397"
+      ]
+    },
+    {
+      "place_id": 307663709,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 115238806,
+      "lat": "1.2182607",
+      "lon": "-77.2797170",
+      "category": "shop",
+      "type": "supermarket",
+      "place_rank": 30,
+      "importance": 0.18554865524912875,
+      "addresstype": "shop",
+      "name": "Hipermercado Alkosto Centro",
+      "display_name": "Hipermercado Alkosto Centro, Calle 19, Las Cuadras, Comuna 1, Perímetro Urbano Pasto, Pasto, Centro, Nariño, RAP Pacífico, 520002, Colombia",
+      "address": {
+        "shop": "Hipermercado Alkosto Centro",
+        "road": "Calle 19",
+        "neighbourhood": "Las Cuadras",
+        "city_district": "Comuna 1",
+        "city": "Perímetro Urbano Pasto",
+        "county": "Pasto",
+        "state_district": "Centro",
+        "state": "Nariño",
+        "ISO3166-2-lvl4": "CO-NAR",
+        "region": "RAP Pacífico",
+        "postcode": "520002",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "1.2178506",
+        "1.2186235",
+        "-77.2801969",
+        "-77.2793418"
+      ]
+    }
+  ],
+  "Cúcuta, Colombia": [
+    {
+      "place_id": 309644417,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11897110,
+      "lat": "8.0776187",
+      "lon": "-72.4689002",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5374714111476415,
+      "addresstype": "county",
+      "name": "Cúcuta",
+      "display_name": "Cúcuta, Oriental, Norte de Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "county": "Cúcuta",
+        "state_district": "Oriental",
+        "state": "Norte de Santander",
+        "ISO3166-2-lvl4": "CO-NSA",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.7259946",
+        "8.4292456",
+        "-72.6068339",
+        "-72.3453757"
+      ]
+    },
+    {
+      "place_id": 308470782,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 14703120,
+      "lat": "7.8971458",
+      "lon": "-72.5080387",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.5374714111476415,
+      "addresstype": "city",
+      "name": "Perímetro Urbano Cúcuta",
+      "display_name": "Perímetro Urbano Cúcuta, Cúcuta, Oriental, Norte de Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "city": "Perímetro Urbano Cúcuta",
+        "county": "Cúcuta",
+        "state_district": "Oriental",
+        "state": "Norte de Santander",
+        "ISO3166-2-lvl4": "CO-NSA",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.8534613",
+        "7.9563762",
+        "-72.5569760",
+        "-72.4567115"
+      ]
+    }
+  ],
+  "SCARE Norte de Santander, Cúcuta, Colombia": [],
+  "Calle 8A #5E-25, Cúcuta, Colombia": [
+    {
+      "place_id": 309352618,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 316468703,
+      "lat": "7.8907039",
+      "lon": "-72.4900539",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339358892195007,
+      "addresstype": "road",
+      "name": "Calle 8A",
+      "display_name": "Calle 8A, Colsag, Comuna 2 - Centro Oriental, Perímetro Urbano Cúcuta, Cúcuta, Oriental, Norte de Santander, RAP Gran Santander, 540005, Colombia",
+      "address": {
+        "road": "Calle 8A",
+        "neighbourhood": "Colsag",
+        "city_district": "Comuna 2 - Centro Oriental",
+        "city": "Perímetro Urbano Cúcuta",
+        "county": "Cúcuta",
+        "state_district": "Oriental",
+        "state": "Norte de Santander",
+        "ISO3166-2-lvl4": "CO-NSA",
+        "region": "RAP Gran Santander",
+        "postcode": "540005",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.8906136",
+        "7.8907724",
+        "-72.4921374",
+        "-72.4879696"
+      ]
+    },
+    {
+      "place_id": 308948504,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 629997099,
+      "lat": "7.8909673",
+      "lon": "-72.4743479",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339358892195007,
+      "addresstype": "road",
+      "name": "Calle 8A",
+      "display_name": "Calle 8A, Torcoroma, Comuna 4 - Oriental, Perímetro Urbano Cúcuta, Cúcuta, Oriental, Norte de Santander, RAP Gran Santander, 540001, Colombia",
+      "address": {
+        "road": "Calle 8A",
+        "neighbourhood": "Torcoroma",
+        "city_district": "Comuna 4 - Oriental",
+        "city": "Perímetro Urbano Cúcuta",
+        "county": "Cúcuta",
+        "state_district": "Oriental",
+        "state": "Norte de Santander",
+        "ISO3166-2-lvl4": "CO-NSA",
+        "region": "RAP Gran Santander",
+        "postcode": "540001",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.8897329",
+        "7.8931083",
+        "-72.4757644",
+        "-72.4722607"
+      ]
+    },
+    {
+      "place_id": 309601340,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 810865509,
+      "lat": "7.8904530",
+      "lon": "-72.5309955",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05339358892195007,
+      "addresstype": "road",
+      "name": "Calle 8A",
+      "display_name": "Calle 8A, Doña Nidia, Comuna 8 - Occidental, Perímetro Urbano Cúcuta, Cúcuta, Oriental, Norte de Santander, RAP Gran Santander, 540013, Colombia",
+      "address": {
+        "road": "Calle 8A",
+        "neighbourhood": "Doña Nidia",
+        "city_district": "Comuna 8 - Occidental",
+        "city": "Perímetro Urbano Cúcuta",
+        "county": "Cúcuta",
+        "state_district": "Oriental",
+        "state": "Norte de Santander",
+        "ISO3166-2-lvl4": "CO-NSA",
+        "region": "RAP Gran Santander",
+        "postcode": "540013",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.8903796",
+        "7.8905789",
+        "-72.5320954",
+        "-72.5298993"
+      ]
+    }
+  ],
+  "La Rivera, Cúcuta, Colombia": [],
+  "Sincelejo, Colombia": [
+    {
+      "place_id": 307389573,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 285481028,
+      "lat": "9.2973386",
+      "lon": "-75.3926601",
+      "category": "place",
+      "type": "city",
+      "place_rank": 16,
+      "importance": 0.4571289017204116,
+      "addresstype": "city",
+      "name": "Sincelejo",
+      "display_name": "Sincelejo, Montes de María, Sucre, RAP Caribe, 700020, Colombia",
+      "address": {
+        "city": "Sincelejo",
+        "county": "Sincelejo",
+        "state_district": "Montes de María",
+        "state": "Sucre",
+        "ISO3166-2-lvl4": "CO-SUC",
+        "region": "RAP Caribe",
+        "postcode": "700020",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "9.1373386",
+        "9.4573386",
+        "-75.5526601",
+        "-75.2326601"
+      ]
+    },
+    {
+      "place_id": 307407366,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1324931,
+      "lat": "9.3154293",
+      "lon": "-75.4283299",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.24005205386434728,
+      "addresstype": "county",
+      "name": "Sincelejo",
+      "display_name": "Sincelejo, Montes de María, Sucre, RAP Caribe, Colombia",
+      "address": {
+        "county": "Sincelejo",
+        "state_district": "Montes de María",
+        "state": "Sucre",
+        "ISO3166-2-lvl4": "CO-SUC",
+        "region": "RAP Caribe",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "9.2084219",
+        "9.4223564",
+        "-75.5509557",
+        "-75.3259764"
+      ]
+    }
+  ],
+  "SCARE Sucre, Sincelejo, Colombia": [],
+  "Calle 28 con Carrera 25-365, Parque Comercial Guacarí, Torre Médica, oficinas 3327-3328, Sincelejo, Colombia": [],
+  "Quibdó, Colombia": [
+    {
+      "place_id": 309368363,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1343138,
+      "lat": "5.6912838",
+      "lon": "-76.6531337",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4804572665154754,
+      "addresstype": "city",
+      "name": "Quibdó",
+      "display_name": "Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6192719",
+        "6.3459170",
+        "-77.1427282",
+        "-76.1601892"
+      ]
+    }
+  ],
+  "Punto de acopio de Pandeyuca, Quibdó, Colombia": [],
+  "Calle 25 #6-58, Quibdó, Colombia": [
+    {
+      "place_id": 308292738,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 394319843,
+      "lat": "5.6852709",
+      "lon": "-76.6375797",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.053387558556496496,
+      "addresstype": "road",
+      "name": "Calle 25",
+      "display_name": "Calle 25, Los Castillos, Jardín, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "road": "Calle 25",
+        "neighbourhood": "Los Castillos",
+        "suburb": "Jardín",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6830500",
+        "5.6863610",
+        "-76.6427965",
+        "-76.6326430"
+      ]
+    },
+    {
+      "place_id": 308167845,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 829718920,
+      "lat": "5.6877929",
+      "lon": "-76.6495971",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053387558556496496,
+      "addresstype": "road",
+      "name": "Calle 25",
+      "display_name": "Calle 25, Los Rosales, Jardín, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "road": "Calle 25",
+        "neighbourhood": "Los Rosales",
+        "suburb": "Jardín",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6871690",
+        "5.6885398",
+        "-76.6510902",
+        "-76.6481052"
+      ]
+    },
+    {
+      "place_id": 308150745,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 136619501,
+      "lat": "5.6893487",
+      "lon": "-76.6590759",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053387558556496496,
+      "addresstype": "road",
+      "name": "Calle 25",
+      "display_name": "Calle 25, Alameda Reyes, Anillo Central, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "road": "Calle 25",
+        "neighbourhood": "Alameda Reyes",
+        "suburb": "Anillo Central",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6890371",
+        "5.6896643",
+        "-76.6602771",
+        "-76.6578737"
+      ]
+    }
+  ],
+  "Pandeyuca, Quibdó, Colombia": [],
+  "Punto de acopio barrio Los Ángeles, Quibdó, Colombia": [],
+  "Barrio Los Ángeles, sector San Gabriel, Quibdó, Colombia": [],
+  "Los Ángeles, Quibdó, Colombia": [
+    {
+      "place_id": 309242469,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13276049088,
+      "lat": "5.6886982",
+      "lon": "-76.6430979",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08005422522316316,
+      "addresstype": "neighbourhood",
+      "name": "Los Angeles",
+      "display_name": "Los Angeles, Porvenir y Platina, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "neighbourhood": "Los Angeles",
+        "suburb": "Porvenir y Platina",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6786982",
+        "5.6986982",
+        "-76.6530979",
+        "-76.6330979"
+      ]
+    }
+  ],
+  "Estación de servicio Terpel de Cabí, Quibdó, Colombia": [],
+  "Estación de servicio Terpel, Cabí, Quibdó, Colombia": [],
+  "Cabí, Quibdó, Colombia": [
+    {
+      "place_id": 308452526,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 12485248718,
+      "lat": "5.6714401",
+      "lon": "-76.6435394",
+      "category": "amenity",
+      "type": "school",
+      "place_rank": 30,
+      "importance": 0.000054225223163149727,
+      "addresstype": "amenity",
+      "name": "Escuela Rural Mixta Pte de Cabi",
+      "display_name": "Escuela Rural Mixta Pte de Cabi, 13, Alfonso López, Jardín, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "amenity": "Escuela Rural Mixta Pte de Cabi",
+        "road": "13",
+        "neighbourhood": "Alfonso López",
+        "suburb": "Jardín",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6713901",
+        "5.6714901",
+        "-76.6435894",
+        "-76.6434894"
+      ]
+    }
+  ],
+  "Cota, Colombia": [
+    {
+      "place_id": 308045200,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 7296967,
+      "lat": "4.8083869",
+      "lon": "-74.1036768",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4610311165122064,
+      "addresstype": "town",
+      "name": "Cota",
+      "display_name": "Cota, Sabana Occidente, Cundinamarca, RAP (Especial) Central, Colombia",
+      "address": {
+        "town": "Cota",
+        "subregion": "Sabana Occidente",
+        "state": "Cundinamarca",
+        "ISO3166-2-lvl4": "CO-CUN",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7225867",
+        "4.8490198",
+        "-74.1638922",
+        "-74.0775608"
+      ]
+    }
+  ],
+  "Empresa de Licores de Cundinamarca, Cota, Colombia": [],
+  "Autopista Medellín, kilómetro 3,8, vía Siberia-Cota, Cota, Colombia": [],
+  "Universidad Católica de Colombia, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308997338,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 372147377,
+      "lat": "4.6351539",
+      "lon": "-74.0688167",
+      "category": "amenity",
+      "type": "university",
+      "place_rank": 30,
+      "importance": 0.3250193457146212,
+      "addresstype": "amenity",
+      "name": "Universidad Católica de Colombia",
+      "display_name": "Universidad Católica de Colombia, Carrera 16, UPZs de Bogotá, Localidad Teusaquillo, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111311, Colombia",
+      "address": {
+        "amenity": "Universidad Católica de Colombia",
+        "road": "Carrera 16",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6344239",
+        "4.6355157",
+        "-74.0693159",
+        "-74.0683094"
+      ]
+    },
+    {
+      "place_id": 309024321,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 533471299,
+      "lat": "4.6340247",
+      "lon": "-74.0663157",
+      "category": "building",
+      "type": "university",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "building",
+      "name": "Universidad Católica de Colombia",
+      "display_name": "Universidad Católica de Colombia, Avenida Carrera 13, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110231, Colombia",
+      "address": {
+        "building": "Universidad Católica de Colombia",
+        "road": "Avenida Carrera 13",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110231",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6339888",
+        "4.6340606",
+        "-74.0664002",
+        "-74.0662313"
+      ]
+    }
+  ],
+  "Fundación Universitaria Horizonte, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309532286,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 332491623,
+      "lat": "4.6561849",
+      "lon": "-74.0631268",
+      "category": "building",
+      "type": "university",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "building",
+      "name": "Fundación Universitaria Horizonte",
+      "display_name": "Fundación Universitaria Horizonte, Calle 69 Bis, UPZs de Bogotá, Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111221, Colombia",
+      "address": {
+        "building": "Fundación Universitaria Horizonte",
+        "road": "Calle 69 Bis",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6560872",
+        "4.6563392",
+        "-74.0632675",
+        "-74.0630102"
+      ]
+    }
+  ],
+  "Autonal — punto de acopio, Bogotá D.C., Colombia": [],
+  "Avenida Boyacá #19-68, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308537153,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1148637693,
+      "lat": "4.7669207",
+      "lon": "-74.0609145",
+      "category": "highway",
+      "type": "trunk",
+      "place_rank": 26,
+      "importance": 0.29396319343666205,
+      "addresstype": "road",
+      "name": "Avenida Carrera 72",
+      "display_name": "Avenida Carrera 72, San José de Bavaria, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111166, Colombia",
+      "address": {
+        "road": "Avenida Carrera 72",
+        "neighbourhood": "San José de Bavaria",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111166",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7642888",
+        "4.7695391",
+        "-74.0628529",
+        "-74.0589962"
+      ]
+    },
+    {
+      "place_id": 308536993,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1327658329,
+      "lat": "4.7766317",
+      "lon": "-74.0607478",
+      "category": "highway",
+      "type": "construction",
+      "place_rank": 26,
+      "importance": 0.29396319343666205,
+      "addresstype": "road",
+      "name": "Avenida Carrera 72",
+      "display_name": "Avenida Carrera 72, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111166, Colombia",
+      "address": {
+        "road": "Avenida Carrera 72",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111166",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7727536",
+        "4.7802003",
+        "-74.0608625",
+        "-74.0589090"
+      ]
+    }
+  ],
+  "Marcali — punto de acopio, Bogotá D.C., Colombia": [],
+  "Carrera 13 #34-76, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309556807,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 918801402,
+      "lat": "4.6590524",
+      "lon": "-74.0599331",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 13",
+      "display_name": "Carrera 13, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110221, Colombia",
+      "address": {
+        "road": "Carrera 13",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6586485",
+        "4.6594563",
+        "-74.0602073",
+        "-74.0596589"
+      ]
+    },
+    {
+      "place_id": 309692733,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 119483067,
+      "lat": "4.5263820",
+      "lon": "-74.1185184",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 13",
+      "display_name": "Carrera 13, Santa Marta, UPZs de Bogotá, Localidad Usme, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110521, Colombia",
+      "address": {
+        "road": "Carrera 13",
+        "neighbourhood": "Santa Marta",
+        "suburb": "Localidad Usme",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110521",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5261354",
+        "4.5266286",
+        "-74.1187092",
+        "-74.1183277"
+      ]
+    },
+    {
+      "place_id": 309729535,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 119479100,
+      "lat": "4.5136118",
+      "lon": "-74.1151587",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 13",
+      "display_name": "Carrera 13, Brasilia Usme, UPZs de Bogotá, Localidad Usme, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110521, Colombia",
+      "address": {
+        "road": "Carrera 13",
+        "neighbourhood": "Brasilia Usme",
+        "suburb": "Localidad Usme",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110521",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5132760",
+        "4.5139476",
+        "-74.1152504",
+        "-74.1150670"
+      ]
+    }
+  ],
+  "Automotores Europa — punto de acopio, Bogotá D.C., Colombia": [],
+  "Calle 127 #70G-28, Bogotá D.C., Colombia": [
+    {
+      "place_id": 305357844,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 91909272,
+      "lat": "4.7293567",
+      "lon": "-74.1051666",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 127",
+      "display_name": "Calle 127, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111141, Colombia",
+      "address": {
+        "road": "Calle 127",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111141",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7288772",
+        "4.7298210",
+        "-74.1058290",
+        "-74.1045151"
+      ]
+    },
+    {
+      "place_id": 308063171,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 810890339,
+      "lat": "4.7285231",
+      "lon": "-74.1021337",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 127",
+      "display_name": "Calle 127, Aures, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111141, Colombia",
+      "address": {
+        "road": "Calle 127",
+        "neighbourhood": "Aures",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111141",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7283419",
+        "4.7286999",
+        "-74.1029326",
+        "-74.1013357"
+      ]
+    },
+    {
+      "place_id": 307884754,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 63453361,
+      "lat": "4.7045955",
+      "lon": "-74.0362735",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 127",
+      "display_name": "Calle 127, Barrio La Carolina, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110121, Colombia",
+      "address": {
+        "road": "Calle 127",
+        "neighbourhood": "Barrio La Carolina",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110121",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7045631",
+        "4.7047707",
+        "-74.0364989",
+        "-74.0360002"
+      ]
+    }
+  ],
+  "Comagro — punto de acopio, Bogotá D.C., Colombia": [],
+  "Calle 171 #22A-76, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309563758,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1020359862,
+      "lat": "4.7493219",
+      "lon": "-74.0268781",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 171",
+      "display_name": "Calle 171, Hacienda La Estancia, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110141, Colombia",
+      "address": {
+        "road": "Calle 171",
+        "neighbourhood": "Hacienda La Estancia",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110141",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7489716",
+        "4.7495741",
+        "-74.0268826",
+        "-74.0256765"
+      ]
+    },
+    {
+      "place_id": 309546834,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 88845365,
+      "lat": "4.7516905",
+      "lon": "-74.0439576",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 171",
+      "display_name": "Calle 171, La Uribe, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110141, Colombia",
+      "address": {
+        "road": "Calle 171",
+        "neighbourhood": "La Uribe",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110141",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7514749",
+        "4.7519060",
+        "-74.0447576",
+        "-74.0431577"
+      ]
+    },
+    {
+      "place_id": 309468071,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 28108578,
+      "lat": "4.7531240",
+      "lon": "-74.0487276",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 171",
+      "display_name": "Calle 171, Villa del Prado, UPZs de Bogotá, Localidad Suba, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111166, Colombia",
+      "address": {
+        "road": "Calle 171",
+        "neighbourhood": "Villa del Prado",
+        "suburb": "Localidad Suba",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111166",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7529378",
+        "4.7533102",
+        "-74.0496852",
+        "-74.0477699"
+      ]
+    }
+  ],
+  "Massy Motors — punto de acopio, Bogotá D.C., Colombia": [],
+  "Avenida Suba, Calle 145 #84-30, Bogotá D.C., Colombia": [],
+  "Punto Coca-Cola FEMSA, Bogotá D.C., Colombia": [],
+  "Avenida Carrera 15 #99-23, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309823768,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 993161390,
+      "lat": "4.7351621",
+      "lon": "-74.0393829",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Avenida Carrera 15",
+      "display_name": "Avenida Carrera 15, Villas del Mediterraneo, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110131, Colombia",
+      "address": {
+        "road": "Avenida Carrera 15",
+        "neighbourhood": "Villas del Mediterraneo",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110131",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7349746",
+        "4.7354375",
+        "-74.0396387",
+        "-74.0392232"
+      ]
+    },
+    {
+      "place_id": 309562437,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1014118044,
+      "lat": "4.6863173",
+      "lon": "-74.0479019",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Avenida Carrera 15",
+      "display_name": "Avenida Carrera 15, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110111, Colombia",
+      "address": {
+        "road": "Avenida Carrera 15",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110111",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6859322",
+        "4.6867007",
+        "-74.0479481",
+        "-74.0478431"
+      ]
+    },
+    {
+      "place_id": 308522435,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89087187,
+      "lat": "4.7276925",
+      "lon": "-74.0413784",
+      "category": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Avenida Carrera 15",
+      "display_name": "Avenida Carrera 15, Cedritos, UPZs de Bogotá, Localidad Usaquén, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110121, Colombia",
+      "address": {
+        "road": "Avenida Carrera 15",
+        "neighbourhood": "Cedritos",
+        "suburb": "Localidad Usaquén",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110121",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7272588",
+        "4.7281265",
+        "-74.0414038",
+        "-74.0413610"
+      ]
+    }
+  ],
+  "Automotor — punto de acopio, Medellín, Colombia": [],
+  "Carrera 43A #19-105, Medellín, Colombia": [
+    {
+      "place_id": 320011656,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 375276765,
+      "lat": "6.2328464",
+      "lon": "-75.5699413",
+      "category": "highway",
+      "type": "primary",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Carrera 43A",
+      "display_name": "Carrera 43A, Barrio San Diego, Comuna 10 - La Candelaria, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050015, Colombia",
+      "address": {
+        "road": "Carrera 43A",
+        "neighbourhood": "Barrio San Diego",
+        "suburb": "Comuna 10 - La Candelaria",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050015",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2312193",
+        "6.2344724",
+        "-75.5700518",
+        "-75.5698492"
+      ]
+    },
+    {
+      "place_id": 311041346,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 35058761,
+      "lat": "6.2101994",
+      "lon": "-75.5705564",
+      "category": "highway",
+      "type": "primary",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Carrera 43A",
+      "display_name": "Carrera 43A, El Poblado, Comuna 14 - El Poblado, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050003, Colombia",
+      "address": {
+        "road": "Carrera 43A",
+        "neighbourhood": "El Poblado",
+        "suburb": "Comuna 14 - El Poblado",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050003",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2098133",
+        "6.2105851",
+        "-75.5706945",
+        "-75.5704170"
+      ]
+    },
+    {
+      "place_id": 310308211,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 326066923,
+      "lat": "6.2244995",
+      "lon": "-75.5692813",
+      "category": "highway",
+      "type": "primary",
+      "place_rank": 26,
+      "importance": 0.05340268177309831,
+      "addresstype": "road",
+      "name": "Carrera 43A",
+      "display_name": "Carrera 43A, Colombia, Comuna 14 - El Poblado, Perímetro Urbano Medellín, Medellín, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 050021, Colombia",
+      "address": {
+        "road": "Carrera 43A",
+        "neighbourhood": "Colombia",
+        "suburb": "Comuna 14 - El Poblado",
+        "city": "Perímetro Urbano Medellín",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "050021",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2230566",
+        "6.2259431",
+        "-75.5693113",
+        "-75.5692722"
+      ]
+    }
+  ],
+  "Discaribe — punto de acopio, Medellín, Colombia": [],
+  "Calle 11 #51-130, avenida Guayabal, Medellín, Colombia": []
 }
