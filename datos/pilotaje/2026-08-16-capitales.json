@@ -1,0 +1,837 @@
+{
+  "_lea_esto_primero": [
+    "Ronda nacional del 16 de agosto de 2026, sobre el terremoto del 10 de agosto.",
+    "",
+    "NADA DE ESTO ESTÁ VERIFICADO. Todo entra como 'pendiente' (ver D13).",
+    "",
+    "Fuera de Bogotá y Medellín el registro público es MUCHO más pobre de lo que",
+    "uno esperaría: la mayoría de capitales tiene entre uno y cuatro puntos con",
+    "dirección publicada. Donde la fuente dio solo el nombre del sitio —un coliseo,",
+    "un parque, una plazoleta— se cargó igual, porque el nombre alcanza para llegar,",
+    "y queda anotado que falta la nomenclatura.",
+    "",
+    "La lista de la SCARE (Sociedad Colombiana de Anestesiología y Reanimación) es",
+    "la mejor fuente de esta ronda: 16 sedes con dirección exacta Y teléfono fijo,",
+    "una por departamento. Las de Bogotá y Medellín no se repiten acá porque ya",
+    "estaban cargadas como ACSC."
+  ],
+  "ciudades": [
+    {
+      "municipio_codigo": "76001",
+      "municipio": "Cali",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Alcaldía de Cali, vía Diario Occidente",
+        "url": "https://occidente.co/cali/centros-de-acopio-en-cali-puntos-de-donacion-sismo/"
+      },
+      "recibe": ["agua_embotellada", "no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "colchonetas", "cobijas", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe", "guantes_trabajo", "botiquin"],
+      "no_recibe": [],
+      "nota_categorias": "Cali es ciudad afectada y a la vez recolecta. La Alcaldía pidió expresamente guantes de construcción, gafas de seguridad, cascos, agua y colchonetas; el resto sale de la lista general que publicaron los medios. Gafas y cascos no tienen categoría propia: van en la nota.",
+      "puntos": [
+        {
+          "nombre": "Plazoleta Jairo Varela",
+          "tipo": "alcaldia",
+          "direccion": "Avenida 2 Norte #10 Norte-1",
+          "horario": "Horario por confirmar",
+          "urgente": ["agua_embotellada", "guantes_trabajo", "colchonetas"],
+          "nota": "Frente al Centro Administrativo Municipal (CAM). Es el punto principal de la Alcaldía. Piden también cascos y gafas de seguridad, que no tienen categoría en UnAcopio."
+        },
+        {
+          "nombre": "Escuela Nacional del Deporte",
+          "tipo": "alcaldia",
+          "direccion": "Calle 9 #34-01",
+          "horario": "Horario por confirmar",
+          "nota": "Segundo punto habilitado por la Alcaldía junto con la Plazoleta Jairo Varela."
+        },
+        {
+          "nombre": "Banco de Alimentos de Cali",
+          "tipo": "fundacion",
+          "direccion": "Calle 24 #6-103",
+          "horario": "Horario por confirmar",
+          "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "botiquin"],
+          "fuente_nombre": "Infobae",
+          "fuente_url": "https://www.infobae.com/colombia/2026/08/10/centros-de-acopio-habilitados-en-colombia-tras-el-terremoto-guia-por-ciudad-para-donar-y-ayudar-a-las-victimas/",
+          "nota": "Recibe alimentos no perecederos, agua embotellada y elementos de primeros auxilios."
+        },
+        {
+          "nombre": "Coliseo de Hockey Miguel Calero",
+          "tipo": "alcaldia",
+          "direccion": "Coliseo de Hockey Miguel Calero, Canchas Panamericanas",
+          "barrio": "Unidad Deportiva Panamericana",
+          "horario": "Horario por confirmar",
+          "nota": "La Alcaldía lo habilitó el 11 de agosto como punto de atención en salud Y de acopio. FALTA LA NOMENCLATURA: la fuente da solo el nombre del escenario."
+        },
+        {
+          "nombre": "Unidad Deportiva Jaime Aparicio",
+          "tipo": "alcaldia",
+          "direccion": "Unidad Deportiva Jaime Aparicio",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA NOMENCLATURA: la fuente da solo el nombre del escenario."
+        },
+        {
+          "nombre": "La Casa del Pueblo",
+          "tipo": "particular",
+          "direccion": "Carrera 9 #4-25",
+          "barrio": "San Antonio",
+          "horario": "Horario por confirmar",
+          "nota": "Iniciativa ciudadana, no de la Alcaldía. La fuente la atribuye a la exconcejala Ana Erazo."
+        },
+        {
+          "nombre": "Todos Somos Valle — La Licorera",
+          "tipo": "gobernacion",
+          "direccion": "Antigua Licorera del Valle",
+          "horario": "Horario por confirmar",
+          "nota": "Campaña «Todos Somos Valle» de la Gobernación del Valle del Cauca. FALTA LA NOMENCLATURA."
+        },
+        {
+          "nombre": "Ciudadela Petronio Álvarez",
+          "tipo": "alcaldia",
+          "direccion": "Ciudadela Petronio Álvarez",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA NOMENCLATURA: la fuente da solo el nombre del sitio."
+        },
+        {
+          "nombre": "Parque de la Caña",
+          "tipo": "alcaldia",
+          "direccion": "Parque de la Caña",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA NOMENCLATURA: la fuente da solo el nombre del parque."
+        }
+      ],
+      "pistas_sin_confirmar": [
+        "Bancos de sangre (no son acopio de insumos, por eso no se cargan): Hospital Universitario del Valle, calle 5 #36-08, urgencias. Hemolife, calle 38N #3N-21, Prados del Norte."
+      ]
+    },
+    {
+      "municipio_codigo": "76520",
+      "municipio": "Palmira",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Diócesis de Palmira y Alcaldía — campaña «Manos unidas, almas encendidas», vía El País",
+        "url": "https://www.elpais.com.co/valle/palmira-adelanta-la-campana-de-donacion-manos-unidas-almas-encendidas-tras-terremoto-en-colombia-asi-puede-sumarse-1328.html"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe", "botiquin", "colchonetas"],
+      "no_recibe": [],
+      "nota_categorias": "La fuente pide alimentos no perecederos, elementos de aseo, agua en botella, insumos médicos y colchones NUEVOS.",
+      "puntos": [
+        {
+          "nombre": "Oficina de Pastoral Social — Palmira",
+          "tipo": "iglesia",
+          "direccion": "Carrera 25 #36-39",
+          "horario": "Lunes a domingo, 8:00 a.m. a 12:00 m. y 2:00 p.m. a 6:00 p.m.",
+          "nota": "Cerca del Parque Obrero. Es el punto central de la campaña «Manos unidas, almas encendidas» de la Diócesis de Palmira. Los colchones tienen que ser nuevos."
+        },
+        {
+          "nombre": "Centro Comercial Unicentro Palmira",
+          "tipo": "empresa",
+          "direccion": "Centro Comercial Unicentro Palmira",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA NOMENCLATURA. Preguntar en qué parte del centro comercial está el punto."
+        },
+        {
+          "nombre": "Centro Comercial Llanogrande",
+          "tipo": "empresa",
+          "direccion": "Centro Comercial Llanogrande",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA NOMENCLATURA. Preguntar en qué parte del centro comercial está el punto."
+        },
+        {
+          "nombre": "Centro Comercial La Cometa",
+          "tipo": "empresa",
+          "direccion": "Centro Comercial La Cometa",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA NOMENCLATURA. Preguntar en qué parte del centro comercial está el punto."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "76109",
+      "municipio": "Buenaventura",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "jabon", "papel_higienico"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Banco de Alimentos de Buenaventura",
+          "tipo": "fundacion",
+          "direccion": "Avenida Simón Bolívar #47C-70",
+          "barrio": "interior del Colegio Seminario",
+          "horario": "Horario por confirmar",
+          "nota": "Queda dentro del Colegio Seminario. Hace parte de la red de bancos de alimentos (Abaco) que activó el Consejo Gremial Nacional."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "08001",
+      "municipio": "Barranquilla",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Alcaldía de Barranquilla — Oficina Distrital de Gestión del Riesgo, vía Infobae",
+        "url": "https://www.infobae.com/colombia/2026/08/10/centros-de-acopio-habilitados-en-colombia-tras-el-terremoto-guia-por-ciudad-para-donar-y-ayudar-a-las-victimas/"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "botiquin", "tapabocas", "guantes", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe", "ropa_bebe", "colchonetas", "cobijas", "ropa_nueva", "ropa_usada_buen_estado"],
+      "no_recibe": [],
+      "nota_categorias": "Barranquilla es de las pocas que SÍ pide ropa en buen estado explícitamente, además de insumos médicos y artículos para bebés.",
+      "puntos": [
+        {
+          "nombre": "Centro de Acopio Barranquillita",
+          "tipo": "alcaldia",
+          "direccion": "Carrera 43 #6-120",
+          "barrio": "Barranquillita",
+          "horario": "Abierto 24 horas, todos los días",
+          "nota": "Es el punto oficial del Distrito. La ayuda que llega acá se traslada después a las zonas afectadas."
+        },
+        {
+          "nombre": "SCARE Atlántico",
+          "tipo": "ong",
+          "direccion": "Carrera 54 #68-196, piso 2, oficinas 216-222, Prado Office Center",
+          "telefono": "6053861950",
+          "horario": "Horario por confirmar",
+          "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+          "fuente_nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+          "fuente_url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país. Recibe sobre todo insumos médicos y medicamentos."
+        },
+        {
+          "nombre": "Casa Abelardista",
+          "tipo": "particular",
+          "direccion": "Carrera 49C #80-76",
+          "horario": "9:00 a.m. a 5:00 p.m.",
+          "fuente_nombre": "Listado de la Primera Dama, vía Infobae",
+          "fuente_url": "https://www.infobae.com/colombia/2026/08/12/la-primera-dama-ana-lucia-pineda-revelo-los-30-puntos-donde-reciben-donaciones-para-los-afectados-por-el-terremoto-en-colombia/",
+          "nota": "La fuente lo atribuye a Fela Córdoba."
+        },
+        {
+          "nombre": "Galería Plaza de la Paz",
+          "tipo": "gobernacion",
+          "direccion": "Galería de la Plaza de la Paz",
+          "horario": "Horario por confirmar",
+          "fuente_nombre": "El Tiempo",
+          "fuente_url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654",
+          "nota": "Punto de la Gobernación del Atlántico. FALTA LA NOMENCLATURA."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "13001",
+      "municipio": "Cartagena",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Noticias Caracol",
+        "url": "https://www.noticiascaracol.com/colombia/terremoto-en-colombia-los-puntos-habilitados-para-donar-en-las-principales-ciudades-del-pais-rg10"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "cepillo_crema_dental", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Coliseo Bernardo Caraballo",
+          "tipo": "alcaldia",
+          "direccion": "Coliseo de Combate Bernardo Caraballo",
+          "horario": "8:00 a.m. a 5:00 p.m.",
+          "nota": "Punto oficial de la Alcaldía de Cartagena. FALTA LA NOMENCLATURA: la fuente da solo el nombre del escenario."
+        },
+        {
+          "nombre": "SCARE Bolívar",
+          "tipo": "ong",
+          "direccion": "Calle 28 #26-53, Edificio Portus, oficina 1202",
+          "barrio": "Manga",
+          "telefono": "6056939844",
+          "horario": "Horario por confirmar",
+          "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+          "fuente_nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+          "fuente_url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        },
+        {
+          "nombre": "Banco de Alimentos de Cartagena",
+          "tipo": "fundacion",
+          "direccion": "Banco de Alimentos de Cartagena",
+          "horario": "Horario por confirmar",
+          "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar"],
+          "fuente_nombre": "Listado de la Primera Dama, vía Infobae",
+          "fuente_url": "https://www.infobae.com/colombia/2026/08/12/la-primera-dama-ana-lucia-pineda-revelo-los-30-puntos-donde-reciben-donaciones-para-los-afectados-por-el-terremoto-en-colombia/",
+          "nota": "FALTA LA DIRECCIÓN: la fuente solo nombra la entidad."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "68001",
+      "municipio": "Bucaramanga",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Noticias Caracol",
+        "url": "https://www.noticiascaracol.com/colombia/terremoto-en-colombia-los-puntos-habilitados-para-donar-en-las-principales-ciudades-del-pais-rg10"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "cepillo_crema_dental", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Alcaldía de Bucaramanga — primer piso",
+          "tipo": "alcaldia",
+          "direccion": "Primer piso del edificio de la Alcaldía de Bucaramanga",
+          "horario": "Martes, miércoles y jueves de 8:00 a.m. a 6:00 p.m.",
+          "nota": "FALTA LA NOMENCLATURA. Ojo con el horario: solo tres días a la semana, según la fuente."
+        },
+        {
+          "nombre": "Centroabastos",
+          "tipo": "empresa",
+          "direccion": "Centroabastos",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA NOMENCLATURA: la fuente da solo el nombre de la central de abastos."
+        },
+        {
+          "nombre": "SCARE Santander",
+          "tipo": "ong",
+          "direccion": "Calle 45 #28-36, Edificio Verona Plaza",
+          "telefono": "6076973093",
+          "horario": "Horario por confirmar",
+          "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+          "fuente_nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+          "fuente_url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        },
+        {
+          "nombre": "Fersautos",
+          "tipo": "empresa",
+          "direccion": "Anillo vial, kilómetro 1,8, sentido Floridablanca-Girón",
+          "horario": "Horario por confirmar",
+          "fuente_nombre": "Pulzo",
+          "fuente_url": "https://www.pulzo.com/nacion/donde-abrieron-nuevos-puntos-acopio-bogota-medellin-para-donar-PP5273664",
+          "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "66001",
+      "municipio": "Pereira",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Alcaldía de Pereira, vía Asocapitales",
+        "url": "https://www.asocapitales.co/actualidad/noticias/ciudades-seguras/ciudades-capitales-activan-centros-de-acopio-para-apoyar-las"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe", "botiquin"],
+      "no_recibe": [],
+      "nota_categorias": "Pereira es ciudad afectada. Los CAFE (Centros de Atención a la Familia en Emergencia) son de la Alcaldía y funcionan como punto de acopio y de atención a la vez.",
+      "puntos": [
+        { "nombre": "CAFE Consota", "tipo": "alcaldia", "direccion": "Manzanas 7 y 8, Villa Consota", "barrio": "Cuba", "horario": "Horario por confirmar", "nota": "Centro de Atención a la Familia en Emergencia de la Alcaldía de Pereira." },
+        { "nombre": "CAFE Perla del Otún", "tipo": "alcaldia", "direccion": "Diagonal a la iglesia de los 2.500 Lotes", "barrio": "Cuba", "horario": "Horario por confirmar", "nota": "Centro de Atención a la Familia en Emergencia. FALTA LA NOMENCLATURA: la referencia es la iglesia." },
+        { "nombre": "CAFE El Remanso", "tipo": "alcaldia", "direccion": "Avenida Principal del barrio El Remanso, al lado del Centro de Salud", "barrio": "El Remanso", "horario": "Horario por confirmar", "nota": "Centro de Atención a la Familia en Emergencia. FALTA LA NOMENCLATURA." },
+        { "nombre": "CAFE Kennedy", "tipo": "alcaldia", "direccion": "Parque principal de Kennedy", "barrio": "Kennedy", "horario": "Horario por confirmar", "nota": "Centro de Atención a la Familia en Emergencia. FALTA LA NOMENCLATURA." },
+        { "nombre": "CAFE Ormaza", "tipo": "alcaldia", "direccion": "Calle 3 Bis #5-38, Avenida del Río", "horario": "Horario por confirmar", "nota": "Centro de Atención a la Familia en Emergencia de la Alcaldía de Pereira." },
+        { "nombre": "CAFE San Nicolás", "tipo": "alcaldia", "direccion": "Carrera 14 Bis #28-38, antigua Estación de Policía", "horario": "Horario por confirmar", "nota": "Centro de Atención a la Familia en Emergencia de la Alcaldía de Pereira." },
+        { "nombre": "CAFE Comuna del Café", "tipo": "alcaldia", "direccion": "Carrera 3 con Calle 59A, sector A, Parque Industrial", "horario": "Horario por confirmar", "nota": "Centro de Atención a la Familia en Emergencia de la Alcaldía de Pereira." }
+      ]
+    },
+    {
+      "municipio_codigo": "66170",
+      "municipio": "Dosquebradas",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Banco de Alimentos de Dosquebradas",
+          "tipo": "fundacion",
+          "direccion": "Transversal 5 #6-30",
+          "barrio": "La Badea",
+          "horario": "Horario por confirmar",
+          "nota": "Punto alterno del banco de alimentos del área metropolitana de Pereira."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "17001",
+      "municipio": "Manizales",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Banco de Alimentos de Manizales",
+          "tipo": "fundacion",
+          "direccion": "Calle 49 #27A-85",
+          "horario": "Horario por confirmar",
+          "nota": "Manizales es ciudad afectada. Recibe alimentos no perecederos."
+        }
+      ],
+      "pistas_sin_confirmar": [
+        "Puntos de donación de SANGRE, que no son acopio de insumos y por eso no se cargan: canchas auxiliares de la estación de Bomberos Palogrande, y Hemocentro del Café (carrera 21 #70-06). Priorizan O+ y O−."
+      ]
+    },
+    {
+      "municipio_codigo": "63001",
+      "municipio": "Armenia",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Banco de Alimentos Monseñor Roberto López Londoño",
+          "tipo": "fundacion",
+          "direccion": "Banco de Alimentos Monseñor Roberto López Londoño",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA DIRECCIÓN: la fuente solo nombra la entidad. Es el único punto de Armenia que apareció publicado."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "73001",
+      "municipio": "Ibagué",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Asocapitales",
+        "url": "https://www.asocapitales.co/actualidad/noticias/ciudades-seguras/ciudades-capitales-activan-centros-de-acopio-para-apoyar-las"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Banco Arquidiocesano de Alimentos de Ibagué",
+          "tipo": "fundacion",
+          "direccion": "Carrera 4A Estadio #23-42",
+          "horario": "Horario por confirmar",
+          "nota": "La dirección viene con «Estadio» en la mitad, tal como la publicó la fuente. Confirmar la nomenclatura exacta."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "47001",
+      "municipio": "Santa Marta",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Asocapitales",
+        "url": "https://www.asocapitales.co/actualidad/noticias/ciudades-seguras/ciudades-capitales-activan-centros-de-acopio-para-apoyar-las"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Oficina de Gestión del Riesgo (OGRICC)",
+          "tipo": "alcaldia",
+          "direccion": "Calle 16 #14A-08, piso 2",
+          "barrio": "El Cundí",
+          "horario": "Horario por confirmar",
+          "nota": "Oficina de Gestión del Riesgo, Infraestructura y Cambio Climático del Distrito de Santa Marta."
+        },
+        {
+          "nombre": "SCARE Magdalena",
+          "tipo": "ong",
+          "direccion": "Calle 24 #3-99, Edificio 424, oficina 1007",
+          "telefono": "6054368361",
+          "horario": "Horario por confirmar",
+          "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+          "fuente_nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+          "fuente_url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "23001",
+      "municipio": "Montería",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "botiquin"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Coliseo Miguel Happy Lora",
+          "tipo": "gobernacion",
+          "direccion": "Coliseo de Ferias Miguel Happy Lora",
+          "horario": "Horario por confirmar",
+          "nota": "Punto de la Gobernación de Córdoba. FALTA LA NOMENCLATURA: la fuente da solo el nombre del escenario."
+        },
+        {
+          "nombre": "Punto ciudadano El Recreo",
+          "tipo": "alcaldia",
+          "direccion": "Barrio El Recreo",
+          "barrio": "El Recreo",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA DIRECCIÓN: la fuente da solo el barrio."
+        },
+        {
+          "nombre": "SCARE Córdoba",
+          "tipo": "ong",
+          "direccion": "Calle 62 #7-53",
+          "barrio": "La Castellana",
+          "telefono": "6047890650",
+          "horario": "Horario por confirmar",
+          "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+          "fuente_nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+          "fuente_url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "20001",
+      "municipio": "Valledupar",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "botiquin", "alimento_perro", "alimento_gato"],
+      "no_recibe": [],
+      "nota_categorias": "El Tiempo anota que en Valledupar también reciben elementos para mascotas.",
+      "puntos": [
+        {
+          "nombre": "SCARE Cesar",
+          "tipo": "ong",
+          "direccion": "Calle 11 #8-79, oficinas 202-203, Edificio SOA",
+          "telefono": "6055893964",
+          "horario": "Horario por confirmar",
+          "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+          "fuente_nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+          "fuente_url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        },
+        {
+          "nombre": "Centro de Solidaridad de Valledupar",
+          "tipo": "alcaldia",
+          "direccion": "Centro de Solidaridad",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA DIRECCIÓN: la fuente solo lo nombra."
+        },
+        {
+          "nombre": "Diócesis de Valledupar",
+          "tipo": "iglesia",
+          "direccion": "Sede de la Diócesis de Valledupar",
+          "horario": "Horario por confirmar",
+          "nota": "FALTA LA DIRECCIÓN: la fuente solo nombra la entidad."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "15001",
+      "municipio": "Tunja",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE Boyacá",
+          "tipo": "ong",
+          "direccion": "Calle 20 #12-84, local 117, Centro Cívico y Comercial Plaza Real",
+          "telefono": "6087471763",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        },
+        {
+          "nombre": "Punto de acopio de Tunja",
+          "tipo": "alcaldia",
+          "direccion": "Carrera 12 #21-45",
+          "horario": "Horario por confirmar",
+          "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "botiquin", "jabon"],
+          "fuente_nombre": "Listado de la Primera Dama, vía Infobae",
+          "fuente_url": "https://www.infobae.com/colombia/2026/08/12/la-primera-dama-ana-lucia-pineda-revelo-los-30-puntos-donde-reciben-donaciones-para-los-afectados-por-el-terremoto-en-colombia/",
+          "nota": "La fuente da la dirección pero no dice qué entidad lo opera. Preguntarlo."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "19001",
+      "municipio": "Popayán",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE Cauca",
+          "tipo": "ong",
+          "direccion": "Carrera 9 #18N-231, oficina 205, Edificio Terrazas del Norte",
+          "telefono": "6028353770",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país. Es el único punto de Popayán que apareció publicado."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "44001",
+      "municipio": "Riohacha",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE La Guajira",
+          "tipo": "ong",
+          "direccion": "Calle 7 #11-114, oficina 8, segundo piso, Edificio Doña Cándida",
+          "telefono": "6057274999",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "41001",
+      "municipio": "Neiva",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE Huila",
+          "tipo": "ong",
+          "direccion": "Carrera 5 #10-49, local 201, Centro Comercial Plaza Real",
+          "telefono": "6088631026",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        }
+      ],
+      "pistas_sin_confirmar": [
+        "El Huila reportó dos puntos más en Neiva —uno en el barrio El Altico y otro en la Zona Industrial Sur— pero ninguna fuente publicó la dirección. Conseguirlas con la Gobernación."
+      ]
+    },
+    {
+      "municipio_codigo": "50001",
+      "municipio": "Villavicencio",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE Meta",
+          "tipo": "ong",
+          "direccion": "Avenida 40 #16B-159, Centro Comercial Villacentro, locales 83 y 84",
+          "telefono": "6086833520",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país. Es el único punto de Villavicencio que apareció publicado."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "52001",
+      "municipio": "Pasto",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE Nariño",
+          "tipo": "ong",
+          "direccion": "Carrera 25 #15-62, oficina 201, Edificio Zaguán del Lago",
+          "telefono": "6027382025",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        },
+        {
+          "nombre": "Punto de acopio del Centro — Pasto",
+          "tipo": "particular",
+          "direccion": "Calle 17 #27-59",
+          "barrio": "Centro",
+          "horario": "Horario por confirmar",
+          "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "agua_embotellada", "jabon", "papel_higienico", "botiquin"],
+          "fuente_nombre": "Listado de la Primera Dama, vía Infobae",
+          "fuente_url": "https://www.infobae.com/colombia/2026/08/12/la-primera-dama-ana-lucia-pineda-revelo-los-30-puntos-donde-reciben-donaciones-para-los-afectados-por-el-terremoto-en-colombia/",
+          "nota": "La fuente dice que lo coordina Sandra Montenegro, pero no publica teléfono. Confirmar quién lo opera."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "54001",
+      "municipio": "Cúcuta",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE Norte de Santander",
+          "tipo": "ong",
+          "direccion": "Calle 8A #5E-25",
+          "barrio": "La Rivera",
+          "telefono": "6075956341",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país."
+        }
+      ],
+      "pistas_sin_confirmar": [
+        "Se reportaron puntos en el Portal Boconó y en la zona industrial de Cúcuta, con atención continua hasta la noche, pero ninguna fuente publicó dirección."
+      ]
+    },
+    {
+      "municipio_codigo": "70001",
+      "municipio": "Sincelejo",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Sociedad Colombiana de Anestesiología y Reanimación (SCARE), vía La FM",
+        "url": "https://www.lafm.com.co/sociedad/terremoto-colombia-salud-sociedades-cientificas-407436"
+      },
+      "recibe": ["botiquin", "medicamentos_sellados", "tapabocas", "guantes", "no_perecederos", "jabon"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "SCARE Sucre",
+          "tipo": "ong",
+          "direccion": "Calle 28 con Carrera 25-365, Parque Comercial Guacarí, Torre Médica, oficinas 3327-3328",
+          "telefono": "6052765344",
+          "horario": "Horario por confirmar",
+          "nota": "Una de las 16 sedes que la SCARE habilitó en el país. La nomenclatura viene rara en la fuente: confirmarla."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "27001",
+      "municipio": "Quibdó",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Listado de la Primera Dama, vía Infobae",
+        "url": "https://www.infobae.com/colombia/2026/08/12/la-primera-dama-ana-lucia-pineda-revelo-los-30-puntos-donde-reciben-donaciones-para-los-afectados-por-el-terremoto-en-colombia/"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "cobijas", "colchonetas", "jabon", "papel_higienico", "botiquin", "tejas", "plasticos_lona"],
+      "no_recibe": [],
+      "nota_categorias": "OJO: Quibdó es de las ciudades más golpeadas. Estos puntos probablemente RECIBEN ayuda que llega de afuera y la distribuyen, no la recogen para mandarla. Confirmarlo antes de publicar: es una diferencia importante para quien va a llevar algo.",
+      "puntos": [
+        {
+          "nombre": "Punto de acopio de Pandeyuca",
+          "tipo": "alcaldia",
+          "direccion": "Calle 25 #6-58",
+          "barrio": "Pandeyuca",
+          "horario": "Horario por confirmar",
+          "nota": "Confirmar si recibe donaciones o si es punto de entrega a damnificados."
+        },
+        {
+          "nombre": "Punto de acopio barrio Los Ángeles",
+          "tipo": "particular",
+          "direccion": "Barrio Los Ángeles, sector San Gabriel",
+          "barrio": "Los Ángeles",
+          "horario": "Horario por confirmar",
+          "nota": "La fuente lo atribuye a Minerva Palacio. FALTA LA DIRECCIÓN exacta."
+        },
+        {
+          "nombre": "Estación de servicio Terpel de Cabí",
+          "tipo": "empresa",
+          "direccion": "Estación de servicio Terpel, Cabí",
+          "barrio": "Cabí",
+          "horario": "Horario por confirmar",
+          "fuente_nombre": "Asocapitales",
+          "fuente_url": "https://www.asocapitales.co/actualidad/noticias/ciudades-seguras/ciudades-capitales-activan-centros-de-acopio-para-apoyar-las",
+          "nota": "FALTA LA NOMENCLATURA. Confirmar si recibe donaciones o si es punto de entrega."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "25214",
+      "municipio": "Cota",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Gobernación de Cundinamarca, vía El Tiempo",
+        "url": "https://www.eltiempo.com/datos/este-es-el-mapa-completo-de-los-centros-de-acopio-habilitados-en-colombia-para-ayudar-a-los-damnificados-del-terremoto-de-magnitud-7-3577654"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "jabon", "papel_higienico", "alimento_perro", "alimento_gato"],
+      "no_recibe": [],
+      "puntos": [
+        {
+          "nombre": "Empresa de Licores de Cundinamarca",
+          "tipo": "gobernacion",
+          "direccion": "Autopista Medellín, kilómetro 3,8, vía Siberia-Cota",
+          "horario": "Horario por confirmar",
+          "nota": "Uno de los dos centros de acopio de la Gobernación de Cundinamarca; el otro es la Plaza de la Paz, que ya está cargada en Bogotá. Reciben también elementos para mascotas."
+        }
+      ]
+    },
+    {
+      "municipio_codigo": "11001",
+      "municipio": "Bogotá D.C.",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Pulzo",
+        "url": "https://www.pulzo.com/nacion/donde-abrieron-nuevos-puntos-acopio-bogota-medellin-para-donar-PP5273664"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe", "botiquin", "cobijas", "colchonetas"],
+      "no_recibe": [],
+      "nota_categorias": "Tercera ronda de Bogotá: puntos de empresas y universidades que no estaban en las listas oficiales de la Alcaldía.",
+      "puntos": [
+        {
+          "nombre": "Universidad Católica de Colombia",
+          "tipo": "universidad",
+          "direccion": "Diagonal 46A #15B-12",
+          "horario": "Hasta el miércoles 19 de agosto de 2026",
+          "recibe": ["enlatados", "no_perecederos", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe"],
+          "fuente_nombre": "Infobae",
+          "fuente_url": "https://www.infobae.com/colombia/2026/08/10/centros-de-acopio-habilitados-en-colombia-tras-el-terremoto-guia-por-ciudad-para-donar-y-ayudar-a-las-victimas/",
+          "nota": "En alianza con el Banco de Alimentos de Bogotá. La fuente dice implementos de aseo y alimentos enlatados. CIERRA EL 19 DE AGOSTO: ponerle fecha_fin al publicarlo."
+        },
+        {
+          "nombre": "Fundación Universitaria Horizonte",
+          "tipo": "universidad",
+          "direccion": "Calle 69 #14-30",
+          "horario": "Horario por confirmar",
+          "recibe": ["botiquin", "panales_bebe", "desinfectantes", "agua_embotellada", "jabon", "cepillo_crema_dental", "papel_higienico", "no_perecederos"],
+          "no_recibe": ["ropa_usada_buen_estado", "ropa_nueva"],
+          "fuente_nombre": "Infobae",
+          "fuente_url": "https://www.infobae.com/colombia/2026/08/10/centros-de-acopio-habilitados-en-colombia-tras-el-terremoto-guia-por-ciudad-para-donar-y-ayudar-a-las-victimas/",
+          "nota": "La fuente dice EXPRESAMENTE que no reciben ropa."
+        },
+        { "nombre": "Autonal — punto de acopio", "tipo": "empresa", "direccion": "Avenida Boyacá #19-68", "horario": "Horario por confirmar", "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos." },
+        { "nombre": "Marcali — punto de acopio", "tipo": "empresa", "direccion": "Carrera 13 #34-76", "horario": "Horario por confirmar", "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos." },
+        { "nombre": "Automotores Europa — punto de acopio", "tipo": "empresa", "direccion": "Calle 127 #70G-28", "horario": "Horario por confirmar", "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos." },
+        { "nombre": "Comagro — punto de acopio", "tipo": "empresa", "direccion": "Calle 171 #22A-76", "horario": "Horario por confirmar", "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos." },
+        { "nombre": "Massy Motors — punto de acopio", "tipo": "empresa", "direccion": "Avenida Suba, Calle 145 #84-30", "horario": "Horario por confirmar", "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos." },
+        { "nombre": "Punto Coca-Cola FEMSA", "tipo": "empresa", "direccion": "Avenida Carrera 15 #99-23", "horario": "Horario por confirmar", "nota": "Punto de Coca-Cola y Coca-Cola FEMSA para elementos de primera necesidad." }
+      ]
+    },
+    {
+      "municipio_codigo": "05001",
+      "municipio": "Medellín",
+      "recolectado_en": "2026-08-16",
+      "fuente_principal": {
+        "nombre": "Pulzo",
+        "url": "https://www.pulzo.com/nacion/donde-abrieron-nuevos-puntos-acopio-bogota-medellin-para-donar-PP5273664"
+      },
+      "recibe": ["no_perecederos", "enlatados", "granos", "aceite", "panela_azucar", "agua_embotellada", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe", "botiquin", "cobijas", "colchonetas"],
+      "no_recibe": [],
+      "puntos": [
+        { "nombre": "Automotor — punto de acopio", "tipo": "empresa", "direccion": "Carrera 43A #19-105", "barrio": "El Poblado", "horario": "Horario por confirmar", "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos." },
+        { "nombre": "Discaribe — punto de acopio", "tipo": "empresa", "direccion": "Calle 11 #51-130, avenida Guayabal", "horario": "Horario por confirmar", "nota": "Concesionario de la red FIAT/JEEP/RAM. Reciben alimentos y artículos básicos." }
+      ]
+    }
+  ]
+}
