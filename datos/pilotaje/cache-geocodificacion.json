@@ -8802,5 +8802,1053 @@
     }
   ],
   "Discaribe — punto de acopio, Medellín, Colombia": [],
-  "Calle 11 #51-130, avenida Guayabal, Medellín, Colombia": []
+  "Calle 11 #51-130, avenida Guayabal, Medellín, Colombia": [],
+  "Rionegro, Colombia": [
+    {
+      "place_id": 308912753,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 703177370,
+      "lat": "6.1536166",
+      "lon": "-75.3741691",
+      "category": "place",
+      "type": "city",
+      "place_rank": 16,
+      "importance": 0.5037008026032433,
+      "addresstype": "city",
+      "name": "Rionegro",
+      "display_name": "Rionegro, Oriente, Antioquia, RAP del Agua y la Montaña, 054040, Colombia",
+      "address": {
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state_district": "Oriente",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "054040",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.9936166",
+        "6.3136166",
+        "-75.5341691",
+        "-75.2141691"
+      ]
+    },
+    {
+      "place_id": 308862710,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1314969,
+      "lat": "7.4792888",
+      "lon": "-73.3827006",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.43096957211662124,
+      "addresstype": "county",
+      "name": "Rionegro",
+      "display_name": "Rionegro, Metropolitana, Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "county": "Rionegro",
+        "state_district": "Metropolitana",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.2083360",
+        "7.7506407",
+        "-73.7611932",
+        "-73.0769517"
+      ]
+    },
+    {
+      "place_id": 308776197,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 703169271,
+      "lat": "7.2646312",
+      "lon": "-73.1502802",
+      "category": "place",
+      "type": "town",
+      "place_rank": 18,
+      "importance": 0.43096957211662124,
+      "addresstype": "town",
+      "name": "Rionegro",
+      "display_name": "Rionegro, Metropolitana, Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "town": "Rionegro",
+        "county": "Rionegro",
+        "state_district": "Metropolitana",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.2246312",
+        "7.3046312",
+        "-73.1902802",
+        "-73.1102802"
+      ]
+    }
+  ],
+  "Coliseo Iván Ramiro Córdoba — parqueadero, Rionegro, Colombia": [],
+  "Parqueadero del Coliseo Iván Ramiro Córdoba, frente al estadio, Rionegro, Colombia": [],
+  "Casa 5 Pasitos, Rionegro, Colombia": [],
+  "Sede de la Casa 5 Pasitos, Rionegro, Colombia": [],
+  "Antiguo Colegio San Antonio, Rionegro, Colombia": [],
+  "Instalaciones del antiguo Colegio San Antonio, Rionegro, Colombia": [],
+  "Envigado, Colombia": [
+    {
+      "place_id": 308891266,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1307277,
+      "lat": "6.1701348",
+      "lon": "-75.5874150",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.5045627281328381,
+      "addresstype": "town",
+      "name": "Envigado",
+      "display_name": "Envigado, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "town": "Envigado",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.1003036",
+        "6.1983821",
+        "-75.6049283",
+        "-75.4741457"
+      ]
+    }
+  ],
+  "Centro Integral Las Vegas — oficina 135, Envigado, Colombia": [],
+  "Centro Integral Las Vegas, oficina 135, Envigado, Colombia": [],
+  "Bello, Colombia": [
+    {
+      "place_id": 307505758,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 3306812051,
+      "lat": "6.3349970",
+      "lon": "-75.5582665",
+      "category": "place",
+      "type": "city",
+      "place_rank": 16,
+      "importance": 0.4869894336103424,
+      "addresstype": "city",
+      "name": "Bello",
+      "display_name": "Bello, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 051053, Colombia",
+      "address": {
+        "city": "Bello",
+        "county": "Bello",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "051053",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.1749970",
+        "6.4949970",
+        "-75.7182665",
+        "-75.3982665"
+      ]
+    },
+    {
+      "place_id": 305776338,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1307262,
+      "lat": "6.3592090",
+      "lon": "-75.5883821",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.2400558014801251,
+      "addresstype": "county",
+      "name": "Bello",
+      "display_name": "Bello, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "county": "Bello",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.2871270",
+        "6.4312910",
+        "-75.6667128",
+        "-75.5152077"
+      ]
+    }
+  ],
+  "Cruz Roja — Sede de Apoyo Norte, Bello, Colombia": [],
+  "Sede de Apoyo Norte de la Cruz Roja (alianza Copacabana-Bello), Bello, Colombia": [],
+  "Sabaneta, Colombia": [
+    {
+      "place_id": 308667968,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 703177110,
+      "lat": "6.1515344",
+      "lon": "-75.6153715",
+      "category": "place",
+      "type": "town",
+      "place_rank": 18,
+      "importance": 0.4668490071334186,
+      "addresstype": "town",
+      "name": "Sabaneta",
+      "display_name": "Sabaneta, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, 055450, Colombia",
+      "address": {
+        "town": "Sabaneta",
+        "county": "Sabaneta",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "055450",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.1115344",
+        "6.1915344",
+        "-75.6553715",
+        "-75.5753715"
+      ]
+    },
+    {
+      "place_id": 308677611,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1307270,
+      "lat": "6.1381818",
+      "lon": "-75.6129768",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.24005434119172958,
+      "addresstype": "county",
+      "name": "Sabaneta",
+      "display_name": "Sabaneta, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "county": "Sabaneta",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.1127359",
+        "6.1634166",
+        "-75.6342014",
+        "-75.5886654"
+      ]
+    }
+  ],
+  "Central de Recolección de Sabaneta, Sabaneta, Colombia": [],
+  "Itagui, Colombia": [
+    {
+      "place_id": 309958051,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1343279,
+      "lat": "6.1724352",
+      "lon": "-75.6093254",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4940476792776439,
+      "addresstype": "town",
+      "name": "Itagüí",
+      "display_name": "Itagüí, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "town": "Itagüí",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.1536104",
+        "6.1992822",
+        "-75.6462984",
+        "-75.5808649"
+      ]
+    }
+  ],
+  "Parque Principal de Itagüí, Itagui, Colombia": [
+    {
+      "place_id": 308639519,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 137616885,
+      "lat": "6.1723858",
+      "lon": "-75.6094160",
+      "category": "leisure",
+      "type": "park",
+      "place_rank": 24,
+      "importance": 0.08005655985351336,
+      "addresstype": "park",
+      "name": "Parque Principal Itagüí",
+      "display_name": "Parque Principal Itagüí, Itagüí, Valle de Aburrá, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "park": "Parque Principal Itagüí",
+        "town": "Itagüí",
+        "state_district": "Valle de Aburrá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "6.1719411",
+        "6.1728366",
+        "-75.6098697",
+        "-75.6089689"
+      ]
+    }
+  ],
+  "Apartadó, Colombia": [
+    {
+      "place_id": 310227439,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 703176077,
+      "lat": "7.8849011",
+      "lon": "-76.6227461",
+      "category": "place",
+      "type": "city",
+      "place_rank": 16,
+      "importance": 0.48341850186395274,
+      "addresstype": "city",
+      "name": "Apartadó",
+      "display_name": "Apartadó, Urabá, Antioquia, RAP del Agua y la Montaña, 057847, Colombia",
+      "address": {
+        "city": "Apartadó",
+        "county": "Apartadó",
+        "state_district": "Urabá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "057847",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.7249011",
+        "8.0449011",
+        "-76.7827461",
+        "-76.4627461"
+      ]
+    },
+    {
+      "place_id": 308895817,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1324918,
+      "lat": "7.9221542",
+      "lon": "-76.5242348",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.2400552964065003,
+      "addresstype": "county",
+      "name": "Apartadó",
+      "display_name": "Apartadó, Urabá, Antioquia, RAP del Agua y la Montaña, Colombia",
+      "address": {
+        "county": "Apartadó",
+        "state_district": "Urabá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.7702417",
+        "8.0740014",
+        "-76.7532349",
+        "-76.4146645"
+      ]
+    }
+  ],
+  "La Casa Morada, Apartadó, Colombia": [],
+  "La Casa Morada, barrio Policarpa, Apartadó, Colombia": [],
+  "Policarpa, Apartadó, Colombia": [
+    {
+      "place_id": 310273422,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 454552428,
+      "lat": "7.8769445",
+      "lon": "-76.6127989",
+      "category": "amenity",
+      "type": "school",
+      "place_rank": 30,
+      "importance": 0.00005529640650029782,
+      "addresstype": "amenity",
+      "name": "Institución Educativa Policarpa",
+      "display_name": "Institución Educativa Policarpa, Calle 100B, Apartadó, Urabá, Antioquia, RAP del Agua y la Montaña, 057847, Colombia",
+      "address": {
+        "amenity": "Institución Educativa Policarpa",
+        "road": "Calle 100B",
+        "city": "Apartadó",
+        "county": "Apartadó",
+        "state_district": "Urabá",
+        "state": "Antioquia",
+        "ISO3166-2-lvl4": "CO-ANT",
+        "region": "RAP del Agua y la Montaña",
+        "postcode": "057847",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.8765600",
+        "7.8773360",
+        "-76.6131420",
+        "-76.6124550"
+      ]
+    }
+  ],
+  "Banco de Ropa del Minuto de Dios — sede Engativá, Bogotá D.C., Colombia": [],
+  "Calle 81 #73-40, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309362574,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 182398025,
+      "lat": "4.7023362",
+      "lon": "-74.0986061",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 81",
+      "display_name": "Calle 81, UPZs de Bogotá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111021, Colombia",
+      "address": {
+        "road": "Calle 81",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111021",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7018940",
+        "4.7027783",
+        "-74.0991551",
+        "-74.0980572"
+      ]
+    },
+    {
+      "place_id": 309401979,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 815099625,
+      "lat": "4.6685773",
+      "lon": "-74.0596058",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 81",
+      "display_name": "Calle 81, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110221, Colombia",
+      "address": {
+        "road": "Calle 81",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6684984",
+        "4.6686562",
+        "-74.0599220",
+        "-74.0592895"
+      ]
+    },
+    {
+      "place_id": 308473708,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1059223967,
+      "lat": "4.7255934",
+      "lon": "-74.1216056",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 81",
+      "display_name": "Calle 81, El Cortijo, UPZs de Bogotá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111011, Colombia",
+      "address": {
+        "road": "Calle 81",
+        "neighbourhood": "El Cortijo",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111011",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7254380",
+        "4.7257245",
+        "-74.1217555",
+        "-74.1214722"
+      ]
+    }
+  ],
+  "Engativá, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309449159,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11375621,
+      "lat": "4.7140581",
+      "lon": "-74.1386323",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZs Localidad Engativá",
+      "display_name": "UPZs Localidad Engativá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZs Localidad Engativá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6536408",
+        "4.7400513",
+        "-74.1603998",
+        "-74.0772936"
+      ]
+    },
+    {
+      "place_id": 308585404,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11375620,
+      "lat": "4.7140581",
+      "lon": "-74.1386323",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZ Engativá",
+      "display_name": "UPZ Engativá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111031, Colombia",
+      "address": {
+        "quarter": "UPZ Engativá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111031",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6944575",
+        "4.7286121",
+        "-74.1603998",
+        "-74.1216509"
+      ]
+    },
+    {
+      "place_id": 308393850,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5771674294,
+      "lat": "4.7152507",
+      "lon": "-74.1417488",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08007831921873805,
+      "addresstype": "neighbourhood",
+      "name": "Engativá",
+      "display_name": "Engativá, UPZs de Bogotá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111031, Colombia",
+      "address": {
+        "neighbourhood": "Engativá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111031",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7052507",
+        "4.7252507",
+        "-74.1517488",
+        "-74.1317488"
+      ]
+    }
+  ],
+  "Banco de Ropa del Minuto de Dios — sede Sierra Morena, Bogotá D.C., Colombia": [],
+  "Transversal 53 #70-40 sur, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308668677,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 90034572,
+      "lat": "4.6007329",
+      "lon": "-74.1170057",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Transversal 39",
+      "display_name": "Transversal 39, Remanso Sur, UPZs de Bogotá, Localidad Puente Aranda, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111631, Colombia",
+      "address": {
+        "road": "Transversal 39",
+        "neighbourhood": "Remanso Sur",
+        "suburb": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111631",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6001087",
+        "4.6013789",
+        "-74.1174516",
+        "-74.1166134"
+      ]
+    }
+  ],
+  "Sierra Morena, Ciudad Bolívar, Bogotá D.C., Colombia": [
+    {
+      "place_id": 306938777,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 322782703,
+      "lat": "4.5780929",
+      "lon": "-74.1687185",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08007831921873805,
+      "addresstype": "neighbourhood",
+      "name": "Sierra Morena",
+      "display_name": "Sierra Morena, UPZs de Bogotá, Localidad Ciudad Bolivar, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111931, Colombia",
+      "address": {
+        "neighbourhood": "Sierra Morena",
+        "suburb": "Localidad Ciudad Bolivar",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111931",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5680929",
+        "4.5880929",
+        "-74.1787185",
+        "-74.1587185"
+      ]
+    }
+  ],
+  "Centro Comercial Único — acopio para Buenaventura, Cali, Colombia": [],
+  "Centro Comercial Único Outlet, Cali, Colombia": [],
+  "Yumbo, Colombia": [
+    {
+      "place_id": 308187694,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1320727,
+      "lat": "3.5834664",
+      "lon": "-76.4952223",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.41958999249091855,
+      "addresstype": "town",
+      "name": "Yumbo",
+      "display_name": "Yumbo, Sur, Valle del Cauca, RAP Pacífico, Colombia",
+      "address": {
+        "town": "Yumbo",
+        "state_district": "Sur",
+        "state": "Valle del Cauca",
+        "ISO3166-2-lvl4": "CO-VAC",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "3.4902549",
+        "3.6998903",
+        "-76.5978080",
+        "-76.4262976"
+      ]
+    }
+  ],
+  "Punto de acopio de Arroyo Hondo, Yumbo, Colombia": [],
+  "Carrera 30 #10-90, Arroyo Hondo, Yumbo, Colombia": [],
+  "Arroyo Hondo, Yumbo, Colombia": [],
+  "Fundación Innovación Social Paz y Desarrollo, Quibdó, Colombia": [],
+  "Calle 27 #9-12, Quibdó, Colombia": [
+    {
+      "place_id": 308203860,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 136619331,
+      "lat": "5.6913708",
+      "lon": "-76.6584154",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053387558556496496,
+      "addresstype": "road",
+      "name": "Calle 27",
+      "display_name": "Calle 27, El Silencio, Anillo Central, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "road": "Calle 27",
+        "neighbourhood": "El Silencio",
+        "suburb": "Anillo Central",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6907237",
+        "5.6922164",
+        "-76.6614002",
+        "-76.6553771"
+      ]
+    },
+    {
+      "place_id": 308231872,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 830784421,
+      "lat": "5.6884519",
+      "lon": "-76.6440994",
+      "category": "highway",
+      "type": "primary",
+      "place_rank": 26,
+      "importance": 0.053387558556496496,
+      "addresstype": "road",
+      "name": "Calle 27",
+      "display_name": "Calle 27, Los Angeles, Porvenir y Platina, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "road": "Calle 27",
+        "neighbourhood": "Los Angeles",
+        "suburb": "Porvenir y Platina",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6882426",
+        "5.6886397",
+        "-76.6443308",
+        "-76.6438929"
+      ]
+    },
+    {
+      "place_id": 308160344,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 830782869,
+      "lat": "5.6881595",
+      "lon": "-76.6436496",
+      "category": "highway",
+      "type": "path",
+      "place_rank": 27,
+      "importance": 0.04005422522316319,
+      "addresstype": "road",
+      "name": "Calle 27",
+      "display_name": "Calle 27, Los Angeles, Porvenir y Platina, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "road": "Calle 27",
+        "neighbourhood": "Los Angeles",
+        "suburb": "Porvenir y Platina",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6880510",
+        "5.6882426",
+        "-76.6438929",
+        "-76.6434150"
+      ]
+    }
+  ],
+  "El Silencio, Quibdó, Colombia": [
+    {
+      "place_id": 309397347,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 13275970388,
+      "lat": "5.6918208",
+      "lon": "-76.6558337",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08005422522316316,
+      "addresstype": "neighbourhood",
+      "name": "El Silencio",
+      "display_name": "El Silencio, Anillo Central, Ciudad de Quibdó, Quibdó, Atrato, Chocó, RAP Pacífico, Colombia",
+      "address": {
+        "neighbourhood": "El Silencio",
+        "suburb": "Anillo Central",
+        "city_district": "Ciudad de Quibdó",
+        "city": "Quibdó",
+        "state_district": "Atrato",
+        "state": "Chocó",
+        "ISO3166-2-lvl4": "CO-CHO",
+        "region": "RAP Pacífico",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "5.6818208",
+        "5.7018208",
+        "-76.6658337",
+        "-76.6458337"
+      ]
+    }
+  ],
+  "Gobernación de Santander, Bucaramanga, Colombia": [
+    {
+      "place_id": 306097384,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 8024657,
+      "lat": "7.1161946",
+      "lon": "-73.1297495",
+      "category": "office",
+      "type": "government",
+      "place_rank": 30,
+      "importance": 0.00006117112993052595,
+      "addresstype": "office",
+      "name": "Gobernación de Santander",
+      "display_name": "Gobernación de Santander, Calle 37, García Rovira, Comuna 15 - Centro, Perímetro Urbano Bucaramanga, Bucaramanga, Metropolitana, Santander, RAP Gran Santander, 680006, Colombia",
+      "address": {
+        "office": "Gobernación de Santander",
+        "road": "Calle 37",
+        "neighbourhood": "García Rovira",
+        "suburb": "Comuna 15 - Centro",
+        "city": "Perímetro Urbano Bucaramanga",
+        "county": "Bucaramanga",
+        "state_district": "Metropolitana",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "postcode": "680006",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.1158248",
+        "7.1165762",
+        "-73.1302111",
+        "-73.1294448"
+      ]
+    }
+  ],
+  "Lotería de Santander, Bucaramanga, Colombia": [],
+  "Sede de la Lotería de Santander, Bucaramanga, Colombia": [],
+  "INDER Santander, Bucaramanga, Colombia": [],
+  "Sede del Instituto Departamental de Recreación y Deporte de Santander (INDER), Bucaramanga, Colombia": [],
+  "Floridablanca, Colombia": [
+    {
+      "place_id": 309534500,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1423451,
+      "lat": "7.0625677",
+      "lon": "-73.0859086",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4479209652121003,
+      "addresstype": "town",
+      "name": "Floridablanca",
+      "display_name": "Floridablanca, Metropolitana, Santander, RAP Gran Santander, Colombia",
+      "address": {
+        "town": "Floridablanca",
+        "state_district": "Metropolitana",
+        "state": "Santander",
+        "ISO3166-2-lvl4": "CO-SAN",
+        "region": "RAP Gran Santander",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "7.0171941",
+        "7.1483199",
+        "-73.1351658",
+        "-73.0020861"
+      ]
+    }
+  ],
+  "Oficina de Gestión del Riesgo de Floridablanca, Floridablanca, Colombia": [],
+  "Soacha, Colombia": [
+    {
+      "place_id": 309738771,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 1413196,
+      "lat": "4.5826886",
+      "lon": "-74.2117781",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 12,
+      "importance": 0.4892662747595588,
+      "addresstype": "city",
+      "name": "Soacha",
+      "display_name": "Soacha, Cundinamarca, RAP (Especial) Central, 25, Colombia",
+      "address": {
+        "city": "Soacha",
+        "subregion": "Soacha",
+        "state": "Cundinamarca",
+        "ISO3166-2-lvl4": "CO-CUN",
+        "region": "RAP (Especial) Central",
+        "postcode": "25",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.3823232",
+        "4.6344346",
+        "-74.3079427",
+        "-74.1737330"
+      ]
+    },
+    {
+      "place_id": 308623017,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 13444239,
+      "lat": "4.5826886",
+      "lon": "-74.2117781",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 14,
+      "importance": 0.4892662747595588,
+      "addresstype": "city",
+      "name": "Soacha ciudad",
+      "display_name": "Soacha ciudad, Soacha, Cundinamarca, RAP (Especial) Central, Colombia",
+      "address": {
+        "city": "Soacha ciudad",
+        "subregion": "Soacha",
+        "state": "Cundinamarca",
+        "ISO3166-2-lvl4": "CO-CUN",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5354874",
+        "4.6149067",
+        "-74.2537342",
+        "-74.1752947"
+      ]
+    },
+    {
+      "place_id": 309791518,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11918779,
+      "lat": "4.5065315",
+      "lon": "-74.2309401",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 10,
+      "importance": 0.3692588589939114,
+      "addresstype": "subregion",
+      "name": "Soacha",
+      "display_name": "Soacha, Cundinamarca, RAP (Especial) Central, Colombia",
+      "address": {
+        "subregion": "Soacha",
+        "state": "Cundinamarca",
+        "ISO3166-2-lvl4": "CO-CUN",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.3797185",
+        "4.6344346",
+        "-74.3092414",
+        "-74.1737330"
+      ]
+    }
+  ],
+  "Centro de acopio de Soacha, Soacha, Colombia": [],
+  "Centro de acopio de la Alcaldía de Soacha, Soacha, Colombia": []
 }

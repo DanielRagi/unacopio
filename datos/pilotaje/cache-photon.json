@@ -18573,5 +18573,3288 @@
         ]
       }
     }
-  ]
+  ],
+  "Apartadó, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703176077,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "name": "Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "057847",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6227461,
+          7.8849011
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1324918,
+        "osm_key": "boundary",
+        "osm_value": "administrative",
+        "type": "county",
+        "name": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -76.7532349,
+          8.0740014,
+          -76.4146645,
+          7.7702417
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5242348,
+          7.9221542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1508449670,
+        "osm_key": "waterway",
+        "osm_value": "river",
+        "type": "other",
+        "name": "Río Apartadó",
+        "district": "El Cuchillo",
+        "city": "San José de Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.5563026,
+          7.8896307,
+          -76.5442417,
+          7.8793447
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5500214,
+          7.8829177
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1100687852,
+        "osm_key": "waterway",
+        "osm_value": "river",
+        "type": "other",
+        "name": "Río Apartadó",
+        "city": "Puerto Girón",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.7399358,
+          7.9042961,
+          -76.7366329,
+          7.8990732
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.7384381,
+          7.9014411
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703176083,
+        "osm_key": "place",
+        "osm_value": "village",
+        "type": "city",
+        "name": "San José de Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5627159,
+          7.8843917
+        ]
+      }
+    }
+  ],
+  "La Casa Morada, Apartadó, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 224755709,
+        "osm_key": "amenity",
+        "osm_value": "community_centre",
+        "type": "house",
+        "name": "Casa de Justicia de Apartadó",
+        "street": "Calle 103B",
+        "city": "Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "057840",
+        "countrycode": "CO",
+        "extent": [
+          -76.6301645,
+          7.8878998,
+          -76.6298018,
+          7.8875678
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6299829,
+          7.8877326
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 313904385,
+        "osm_key": "building",
+        "osm_value": "yes",
+        "type": "house",
+        "name": "Casa Episcopal",
+        "street": "Carrera 94A",
+        "city": "Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "057847",
+        "countrycode": "CO",
+        "extent": [
+          -76.6279259,
+          7.882926,
+          -76.6275352,
+          7.8825485
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6277306,
+          7.8827417
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 4159656990,
+        "osm_key": "amenity",
+        "osm_value": "townhall",
+        "type": "house",
+        "name": "Casa Eduar",
+        "street": "Calle 98B",
+        "city": "Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "057847",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6227124,
+          7.8796966
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 454562895,
+        "osm_key": "amenity",
+        "osm_value": "place_of_worship",
+        "type": "house",
+        "name": "Casa Cural",
+        "street": "Calle 104A",
+        "city": "Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "057847",
+        "countrycode": "CO",
+        "extent": [
+          -76.621653,
+          7.88582,
+          -76.62141,
+          7.885673
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6215341,
+          7.885747
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1514710491,
+        "osm_key": "building",
+        "osm_value": "house",
+        "type": "house",
+        "housenumber": "1",
+        "name": "Casa Farah",
+        "street": "Calle 100C #74B-24",
+        "city": "Apartadó",
+        "county": "Apartadó",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "057840",
+        "countrycode": "CO",
+        "extent": [
+          -76.6092979,
+          7.8758443,
+          -76.6092094,
+          7.8757286
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6092541,
+          7.8757847
+        ]
+      }
+    }
+  ],
+  "La Casa Morada, barrio Policarpa, Apartadó, Colombia": [],
+  "Bello, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 3306812051,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "name": "Bello",
+        "county": "Bello",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "051053",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5582665,
+          6.334997
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1307262,
+        "osm_key": "boundary",
+        "osm_value": "administrative",
+        "type": "county",
+        "name": "Bello",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -75.6667128,
+          6.431291,
+          -75.5152077,
+          6.287127
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5883821,
+          6.359209
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1423507,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Pueblo Bello",
+        "state": "Cesar",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -73.7906249,
+          10.7416966,
+          -73.4378592,
+          10.3298413
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5909603,
+          10.4119057
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 9127744,
+        "osm_key": "place",
+        "osm_value": "neighbourhood",
+        "type": "locality",
+        "name": "Bello Horizonte",
+        "district": "Comuna 12",
+        "city": "Cali",
+        "county": "Cali",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "9"
+        },
+        "extent": [
+          -76.5049421,
+          3.4340537,
+          -76.5021747,
+          3.4319766
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5038216,
+          3.4329741
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 616554598,
+        "osm_key": "natural",
+        "osm_value": "peak",
+        "type": "other",
+        "name": "Alto Monte Bello",
+        "city": "Anorí",
+        "county": "Nordeste",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.206389,
+          7.001667
+        ]
+      }
+    }
+  ],
+  "Cruz Roja — Sede de Apoyo Norte, Bello, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 440851238,
+        "osm_key": "amenity",
+        "osm_value": "hospital",
+        "type": "house",
+        "name": "Cruz Roja Colombiana Sede Cúcuta",
+        "street": "Avenida 3",
+        "locality": "El Centro",
+        "district": "Comuna 1 - Centro",
+        "city": "Cúcuta",
+        "county": "Cúcuta",
+        "state": "Norte de Santander",
+        "country": "Colombia",
+        "postcode": "540006",
+        "countrycode": "CO",
+        "extent": [
+          -72.4997726,
+          7.8781119,
+          -72.4990877,
+          7.8778131
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -72.4994228,
+          7.8779627
+        ]
+      }
+    }
+  ],
+  "Sede de Apoyo Norte de la Cruz Roja (alianza Copacabana-Bello), Bello, Colombia": [],
+  "Envigado, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1307277,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Envigado",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -75.6049283,
+          6.1983821,
+          -75.4741457,
+          6.1003036
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.587415,
+          6.1701348
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 9936411128,
+        "osm_key": "place",
+        "osm_value": "farm",
+        "type": "locality",
+        "name": "Envigado",
+        "district": "Choles",
+        "city": "Riohacha",
+        "state": "La Guajira",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0531006,
+          11.2463446
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 544152179,
+        "osm_key": "landuse",
+        "osm_value": "residential",
+        "type": "locality",
+        "name": "Envigado Campestre",
+        "city": "Envigado",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.5823836,
+          6.1543828,
+          -75.5814811,
+          6.1532286
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5820074,
+          6.1537969
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1487964758,
+        "osm_key": "landuse",
+        "osm_value": "residential",
+        "type": "locality",
+        "name": "Casita Roja Envigado",
+        "city": "Envigado",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.5690622,
+          6.1456766,
+          -75.5688196,
+          6.1455545
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5689433,
+          6.1456141
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 829097615,
+        "osm_key": "landuse",
+        "osm_value": "retail",
+        "type": "locality",
+        "name": "Ikea Envigado",
+        "city": "Envigado",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.5935158,
+          6.1750088,
+          -75.5921492,
+          6.1741263
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5929333,
+          6.1745544
+        ]
+      }
+    }
+  ],
+  "Centro Integral Las Vegas — oficina 135, Envigado, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 358523386,
+        "osm_key": "landuse",
+        "osm_value": "commercial",
+        "type": "locality",
+        "name": "Centro Integral Las Vegas",
+        "city": "Envigado",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.5876525,
+          6.183475,
+          -75.5862122,
+          6.1818143
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5869307,
+          6.1826477
+        ]
+      }
+    }
+  ],
+  "Itagui, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1343279,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Itagüí",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -75.6462984,
+          6.1992822,
+          -75.5808649,
+          6.1536104
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6093254,
+          6.1724352
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 13968486424,
+        "osm_key": "railway",
+        "osm_value": "station",
+        "type": "house",
+        "name": "Estación del Metro Itagüí",
+        "street": "Avenida Carrera 49",
+        "district": "Cañaveralejo",
+        "city": "Sabaneta",
+        "county": "Sabaneta",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "055412",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6065851,
+          6.1630006
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1493725998,
+        "osm_key": "building",
+        "osm_value": "warehouse",
+        "type": "house",
+        "name": "Dollarcity itagui",
+        "street": "Calle 81",
+        "city": "Itagüí",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "055411",
+        "countrycode": "CO",
+        "extent": [
+          -75.5954909,
+          6.1902052,
+          -75.5953171,
+          6.1900289
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5954054,
+          6.1901179
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1289046875,
+        "osm_key": "waterway",
+        "osm_value": "stream",
+        "type": "other",
+        "name": "Quebrada Itagüí",
+        "city": "Puerto Rico",
+        "county": "San Carlos",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.051991,
+          6.18387,
+          -75.0293201,
+          6.1720392
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.0406878,
+          6.1784473
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 13541870400,
+        "osm_key": "amenity",
+        "osm_value": "place_of_worship",
+        "type": "house",
+        "housenumber": "Cra. 50A #43-99b",
+        "name": "Iglesia Pentecostal Unida de Colombia - Itagüí Central",
+        "street": "Carrera 50A",
+        "city": "Itagüí",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "055412",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6138629,
+          6.1705556
+        ]
+      }
+    }
+  ],
+  "Parque principal de Itagüí, Itagui, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 137616885,
+        "osm_key": "leisure",
+        "osm_value": "park",
+        "type": "other",
+        "name": "Parque Principal Itagüí",
+        "city": "Itagüí",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.6098697,
+          6.1728366,
+          -75.6089689,
+          6.1719411
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.609416,
+          6.1723858
+        ]
+      }
+    }
+  ],
+  "Rionegro, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703177370,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "name": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3741691,
+          6.1536166
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1314969,
+        "osm_key": "boundary",
+        "osm_value": "administrative",
+        "type": "county",
+        "name": "Rionegro",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -73.7611932,
+          7.7506407,
+          -73.0769517,
+          7.208336
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3827006,
+          7.4792888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703169271,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Rionegro",
+        "county": "Rionegro",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1502802,
+          7.2646312
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 11918580,
+        "osm_key": "place",
+        "osm_value": "subregion",
+        "type": "county",
+        "name": "Rionegro",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "5"
+        },
+        "extent": [
+          -74.5396534,
+          5.8367025,
+          -73.9719859,
+          5.0383607
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.242145,
+          5.3783511
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 3947503,
+        "osm_key": "boundary",
+        "osm_value": "administrative",
+        "type": "county",
+        "name": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -75.485857,
+          6.23381,
+          -75.3220443,
+          6.0603494
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.4132513,
+          6.1470638
+        ]
+      }
+    }
+  ],
+  "Antiguo Colegio San Antonio, Rionegro, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 12487369545,
+        "osm_key": "amenity",
+        "osm_value": "school",
+        "type": "house",
+        "name": "Colegio San Antonio",
+        "street": "Transversal 21D",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054048",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3787312,
+          6.1282261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 4727004191,
+        "osm_key": "shop",
+        "osm_value": "car",
+        "type": "house",
+        "name": "Coches Antiguos",
+        "street": "Carrera 55A",
+        "city": "San Antonio de Pereira",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054048",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3789406,
+          6.1325147
+        ]
+      }
+    }
+  ],
+  "Instalaciones del antiguo Colegio San Antonio, Rionegro, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 12487369545,
+        "osm_key": "amenity",
+        "osm_value": "school",
+        "type": "house",
+        "name": "Colegio San Antonio",
+        "street": "Transversal 21D",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054048",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3787312,
+          6.1282261
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 4727004191,
+        "osm_key": "shop",
+        "osm_value": "car",
+        "type": "house",
+        "name": "Coches Antiguos",
+        "street": "Carrera 55A",
+        "city": "San Antonio de Pereira",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054048",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3789406,
+          6.1325147
+        ]
+      }
+    }
+  ],
+  "Casa 5 Pasitos, Rionegro, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1155337111,
+        "osm_key": "building",
+        "osm_value": "house",
+        "type": "house",
+        "name": "CASA 5",
+        "street": "CARRERA 38",
+        "locality": "CIUDADELA EL MADRIGAL",
+        "county": "Pacho",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "postcode": "254001",
+        "countrycode": "CO",
+        "extent": [
+          -74.1492284,
+          5.1496219,
+          -74.1491671,
+          5.1494982
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1491976,
+          5.1495784
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 516503501,
+        "osm_key": "amenity",
+        "osm_value": "arts_centre",
+        "type": "house",
+        "name": "Casa Adulto Mayor",
+        "street": "Calle 52",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO",
+        "extent": [
+          -75.3735297,
+          6.1555215,
+          -75.3729683,
+          6.1549275
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3732517,
+          6.1552475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 618373167,
+        "osm_key": "building",
+        "osm_value": "civic",
+        "type": "house",
+        "name": "Casa Provincial",
+        "street": "Calle 51",
+        "locality": "Casas del M.A.R.",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO",
+        "extent": [
+          -75.3744236,
+          6.1548725,
+          -75.3740902,
+          6.1545096
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3742602,
+          6.1546918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 571495362,
+        "osm_key": "tourism",
+        "osm_value": "museum",
+        "type": "house",
+        "name": "Museo Histórico Casa de la Convención",
+        "street": "Calle 51",
+        "locality": "Casas del M.A.R.",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO",
+        "extent": [
+          -75.3724015,
+          6.1542941,
+          -75.371918,
+          6.1534239
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3721525,
+          6.153697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 5227146079,
+        "osm_key": "shop",
+        "osm_value": "car_repair",
+        "type": "house",
+        "name": "Casa De Columbia",
+        "street": "Carrera 57",
+        "locality": "Rionegro",
+        "district": "Localidad Barrios Unidos",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111211",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.064355,
+          4.6837688
+        ]
+      }
+    }
+  ],
+  "Sede de la Casa 5 Pasitos, Rionegro, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 11999131470,
+        "osm_key": "amenity",
+        "osm_value": "college",
+        "type": "house",
+        "name": "Cosmo Schools sede Rionegro",
+        "street": "Carrera 55A",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3786666,
+          6.1364815
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 571495362,
+        "osm_key": "tourism",
+        "osm_value": "museum",
+        "type": "house",
+        "name": "Museo Histórico Casa de la Convención",
+        "street": "Calle 51",
+        "locality": "Casas del M.A.R.",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO",
+        "extent": [
+          -75.3724015,
+          6.1542941,
+          -75.371918,
+          6.1534239
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3721525,
+          6.153697
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 516503501,
+        "osm_key": "amenity",
+        "osm_value": "arts_centre",
+        "type": "house",
+        "name": "Casa Adulto Mayor",
+        "street": "Calle 52",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO",
+        "extent": [
+          -75.3735297,
+          6.1555215,
+          -75.3729683,
+          6.1549275
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3732517,
+          6.1552475
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 618373167,
+        "osm_key": "building",
+        "osm_value": "civic",
+        "type": "house",
+        "name": "Casa Provincial",
+        "street": "Calle 51",
+        "locality": "Casas del M.A.R.",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO",
+        "extent": [
+          -75.3744236,
+          6.1548725,
+          -75.3740902,
+          6.1545096
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3742602,
+          6.1546918
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 7852021220,
+        "osm_key": "amenity",
+        "osm_value": "social_facility",
+        "type": "house",
+        "name": "Casa del buen Dios sede adultos",
+        "street": "Carrera 50",
+        "locality": "Prado",
+        "district": "La Candelaria",
+        "city": "Medellín",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "050012",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.561004,
+          6.26037
+        ]
+      }
+    }
+  ],
+  "Coliseo Iván Ramiro Córdoba — parqueadero, Rionegro, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 514031446,
+        "osm_key": "leisure",
+        "osm_value": "sports_centre",
+        "type": "house",
+        "name": "Coliseo Iván Ramiro Córdova",
+        "street": "Parqueadero Unidad Deportiva",
+        "city": "Rionegro",
+        "county": "Rionegro",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054040",
+        "countrycode": "CO",
+        "extent": [
+          -75.3744241,
+          6.1470928,
+          -75.3737053,
+          6.1464302
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.374081,
+          6.1468154
+        ]
+      }
+    }
+  ],
+  "Parqueadero del Coliseo Iván Ramiro Córdoba, frente al estadio, Rionegro, Colombia": [],
+  "Sabaneta, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703177110,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Sabaneta",
+        "county": "Sabaneta",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "055450",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6153715,
+          6.1515344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1307270,
+        "osm_key": "boundary",
+        "osm_value": "administrative",
+        "type": "county",
+        "name": "Sabaneta",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -75.6342014,
+          6.1634166,
+          -75.5886654,
+          6.1127359
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6129768,
+          6.1381818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703508216,
+        "osm_key": "place",
+        "osm_value": "village",
+        "type": "district",
+        "name": "Sabaneta",
+        "city": "San Juan de Betulia",
+        "county": "Montes de María",
+        "state": "Sucre",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1978006,
+          9.2854535
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703319118,
+        "osm_key": "place",
+        "osm_value": "village",
+        "type": "city",
+        "name": "Sabaneta",
+        "county": "Sahagún",
+        "state": "Córdoba",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3167411,
+          8.9135594
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703523950,
+        "osm_key": "natural",
+        "osm_value": "peak",
+        "type": "other",
+        "name": "Loma Sabaneta",
+        "city": "Encino",
+        "county": "Guanentá",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1176412,
+          6.0726136
+        ]
+      }
+    }
+  ],
+  "Central de Recolección de Sabaneta, Sabaneta, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703177110,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Sabaneta",
+        "county": "Sabaneta",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "055450",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6153715,
+          6.1515344
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1307270,
+        "osm_key": "boundary",
+        "osm_value": "administrative",
+        "type": "county",
+        "name": "Sabaneta",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -75.6342014,
+          6.1634166,
+          -75.5886654,
+          6.1127359
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6129768,
+          6.1381818
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703473971,
+        "osm_key": "place",
+        "osm_value": "locality",
+        "type": "locality",
+        "name": "Sabaneta",
+        "city": "Fuente de Oro",
+        "county": "Subregión Ariari",
+        "state": "Meta",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.6731854,
+          3.4904745
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1030043460,
+        "osm_key": "boundary",
+        "osm_value": "protected_area",
+        "type": "other",
+        "name": "Reserva Natural de la Sociedad Civil Hacienda Sabaneta",
+        "city": "Granada",
+        "county": "Sumapaz",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.308312,
+          4.543803,
+          -74.300801,
+          4.518337
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.3048428,
+          4.5310315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 703508216,
+        "osm_key": "place",
+        "osm_value": "village",
+        "type": "district",
+        "name": "Sabaneta",
+        "city": "San Juan de Betulia",
+        "county": "Montes de María",
+        "state": "Sucre",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.1978006,
+          9.2854535
+        ]
+      }
+    }
+  ],
+  "Banco de Ropa del Minuto de Dios — sede Engativá, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 5152416790,
+        "osm_key": "office",
+        "osm_value": "foundation",
+        "type": "house",
+        "name": "Banco de Ropas Uniminuto",
+        "street": "Transversal 73A",
+        "locality": "La Serena",
+        "district": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111021",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.090024,
+          4.7021268
+        ]
+      }
+    }
+  ],
+  "Calle 81 #73-40, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 9443057,
+        "osm_key": "amenity",
+        "osm_value": "library",
+        "type": "house",
+        "housenumber": "5-60",
+        "name": "Biblioteca Nacional de Colombia",
+        "street": "Calle 24",
+        "locality": "Las Nieves",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0688905,
+          4.6098699,
+          -74.0681942,
+          4.6092308
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0685345,
+          4.6095552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1361560509,
+        "osm_key": "landuse",
+        "osm_value": "commercial",
+        "type": "locality",
+        "housenumber": "72-32",
+        "name": "Tesla Delivery Center Bogotá",
+        "street": "Calle 81B",
+        "district": "Localidad Engativá",
+        "city": "Bogota D.C",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.0883044,
+          4.698212,
+          -74.08699,
+          4.6968963
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0876472,
+          4.6975542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1197851944,
+        "osm_key": "building",
+        "osm_value": "construction",
+        "type": "house",
+        "name": "Nueva Sede Universidad Distrital Francisco José de Caldas - Sede Calle 40",
+        "street": "Carrera 8",
+        "locality": "Sucre",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110231",
+        "countrycode": "CO",
+        "extent": [
+          -74.0658978,
+          4.6284685,
+          -74.0656113,
+          4.6282361
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.065757,
+          4.6283507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1197851946,
+        "osm_key": "building",
+        "osm_value": "university",
+        "type": "house",
+        "housenumber": "13 - 13",
+        "name": "Universidad Distrital Francisco José de Caldas - Sede Calle 34",
+        "street": "Avenida Calle 34",
+        "locality": "Samper",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0686871,
+          4.6221886,
+          -74.0683545,
+          4.6218535
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0685197,
+          4.6220255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 550938365,
+        "osm_key": "landuse",
+        "osm_value": "residential",
+        "type": "locality",
+        "housenumber": "81-90",
+        "name": "Parque Malpelo II",
+        "street": "Calle 81 Sur",
+        "district": "Localidad Bosa",
+        "city": "Bogota, D.C",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.204415,
+          4.6148706,
+          -74.2026432,
+          4.6135001
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2033161,
+          4.6138874
+        ]
+      }
+    }
+  ],
+  "Banco de Ropa del Minuto de Dios — sede Sierra Morena, Bogotá D.C., Colombia": [],
+  "Transversal 53 #70-40 sur, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 411411094,
+        "osm_key": "highway",
+        "osm_value": "tertiary",
+        "type": "street",
+        "name": "Transversal 53",
+        "locality": "Provivienda Oriental",
+        "district": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111621",
+        "countrycode": "CO",
+        "extent": [
+          -74.1224771,
+          4.6121984,
+          -74.1221453,
+          4.6120722
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1223112,
+          4.6121353
+        ]
+      }
+    }
+  ],
+  "Fundación Innovación Social Paz y Desarrollo, Quibdó, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 1230821187,
+        "osm_key": "amenity",
+        "osm_value": "hospital",
+        "type": "house",
+        "name": "FUNDACIÓN PARA EL DESARROLLO DE LA SALUD FAMILIAR Y SOCIAL- FAMISALUD",
+        "street": "Carrera 6",
+        "locality": "La Merced",
+        "district": "Comuna 3",
+        "city": "Cali",
+        "county": "Cali",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "postcode": "760044",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5348941,
+          3.449362
+        ]
+      }
+    }
+  ],
+  "Calle 27 #9-12, Quibdó, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 136619331,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Calle 27",
+        "locality": "El Silencio",
+        "district": "Anillo Central",
+        "city": "Quibdó",
+        "county": "Atrato",
+        "state": "Chocó",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.6614002,
+          5.6922164,
+          -76.6553771,
+          5.6907237
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6584154,
+          5.6913708
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 830784421,
+        "osm_key": "highway",
+        "osm_value": "primary",
+        "type": "street",
+        "name": "Calle 27",
+        "locality": "Los Angeles",
+        "district": "Porvenir y Platina",
+        "city": "Quibdó",
+        "county": "Atrato",
+        "state": "Chocó",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.6443308,
+          5.6886397,
+          -76.6438929,
+          5.6882426
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6440994,
+          5.6884519
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 830782869,
+        "osm_key": "highway",
+        "osm_value": "path",
+        "type": "street",
+        "name": "Calle 27",
+        "locality": "Los Angeles",
+        "district": "Porvenir y Platina",
+        "city": "Quibdó",
+        "county": "Atrato",
+        "state": "Chocó",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.6438929,
+          5.6882426,
+          -76.643415,
+          5.688051
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6436496,
+          5.6881595
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 550431555,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Calle 27A",
+        "locality": "Los Angeles",
+        "district": "Porvenir y Platina",
+        "city": "Quibdó",
+        "county": "Atrato",
+        "state": "Chocó",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.6441429,
+          5.6888944,
+          -76.6436761,
+          5.6885696
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6439095,
+          5.688732
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 830781842,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Calle 27B",
+        "locality": "Los Angeles",
+        "district": "Porvenir y Platina",
+        "city": "Quibdó",
+        "county": "Atrato",
+        "state": "Chocó",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.6440085,
+          5.6891131,
+          -76.6437866,
+          5.6889279
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.6438975,
+          5.6890205
+        ]
+      }
+    }
+  ],
+  "Soacha, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1413196,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "city",
+        "name": "Soacha",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -74.3079427,
+          4.6344346,
+          -74.173733,
+          4.3823232
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2117781,
+          4.5826886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 13444239,
+        "osm_key": "place",
+        "osm_value": "city",
+        "type": "district",
+        "name": "Soacha",
+        "city": "Soacha",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "7"
+        },
+        "extent": [
+          -74.2537342,
+          4.6149067,
+          -74.1752947,
+          4.5354874
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2117781,
+          4.5826886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 11918779,
+        "osm_key": "place",
+        "osm_value": "subregion",
+        "type": "county",
+        "name": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "5"
+        },
+        "extent": [
+          -74.3092414,
+          4.6344346,
+          -74.173733,
+          4.3797185
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2309401,
+          4.5065315
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 958475733,
+        "osm_key": "office",
+        "osm_value": "government",
+        "type": "house",
+        "name": "Fiscalia General sede Soacha",
+        "street": "Calle 12",
+        "locality": "La Unión",
+        "district": "Comuna Soacha Central",
+        "city": "Soacha",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "postcode": "250053",
+        "countrycode": "CO",
+        "extent": [
+          -74.2196387,
+          4.5789841,
+          -74.2194707,
+          4.5788311
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2195547,
+          4.5789076
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 28420187,
+        "osm_key": "waterway",
+        "osm_value": "river",
+        "type": "other",
+        "name": "Río Soacha",
+        "district": "Soacha",
+        "city": "Soacha",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.2436177,
+          4.6004184,
+          -74.2074873,
+          4.5824121
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2140092,
+          4.5942884
+        ]
+      }
+    }
+  ],
+  "Centro de acopio de la Alcaldía de Soacha, Soacha, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 7728845398,
+        "osm_key": "amenity",
+        "osm_value": "townhall",
+        "type": "house",
+        "housenumber": "Calle 13",
+        "name": "Alcaldía Municipal de Soacha",
+        "street": "7-30",
+        "locality": "San Luis",
+        "district": "Comuna Soacha Central",
+        "city": "Soacha Central",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "postcode": "250051",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2188987,
+          4.5821761
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1348515082,
+        "osm_key": "landuse",
+        "osm_value": "construction",
+        "type": "other",
+        "name": "Lote de acopio",
+        "district": "Comuna Compartir",
+        "city": "Soacha",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.2276777,
+          4.5670454,
+          -74.2261893,
+          4.5657775
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2268714,
+          4.566325
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 86369735,
+        "osm_key": "amenity",
+        "osm_value": "university",
+        "type": "house",
+        "name": "Centro de Tecnologías para la Construcción y la Madera (SENA)",
+        "street": "Autopista Sur",
+        "locality": "San Mateo Residencial",
+        "district": "Comuna San Mateo",
+        "city": "Comuna 5 San Mateo",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "postcode": "250055",
+        "countrycode": "CO",
+        "extent": [
+          -74.1915764,
+          4.5932669,
+          -74.1891803,
+          4.5905143
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1903852,
+          4.5918142
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 548023109,
+        "osm_key": "amenity",
+        "osm_value": "college",
+        "type": "house",
+        "name": "Centro Industrial y de Desarrollo Empresarial SENA",
+        "street": "Avenida Carrera 36",
+        "locality": "Ciudad Verde",
+        "district": "Comuna La Despensa",
+        "city": "Soacha",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "postcode": "250051",
+        "countrycode": "CO",
+        "extent": [
+          -74.2197578,
+          4.6067635,
+          -74.2189857,
+          4.6057558
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2193731,
+          4.6061421
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1020364280,
+        "osm_key": "highway",
+        "osm_value": "construction",
+        "type": "street",
+        "name": "Avenida Longitudinal de Occidente",
+        "district": "El Charquito",
+        "city": "Soacha",
+        "county": "Soacha",
+        "state": "Cundinamarca",
+        "country": "Colombia",
+        "postcode": "250057",
+        "countrycode": "CO",
+        "extent": [
+          -74.2623983,
+          4.58134,
+          -74.2583196,
+          4.5451118
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.2589581,
+          4.5635237
+        ]
+      }
+    }
+  ],
+  "Gobernación de Santander, Bucaramanga, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 8024657,
+        "osm_key": "office",
+        "osm_value": "government",
+        "type": "house",
+        "name": "Gobernación de Santander",
+        "street": "Carrera 10",
+        "locality": "García Rovira",
+        "district": "Comuna Centro",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "680006",
+        "countrycode": "CO",
+        "extent": [
+          -73.1302111,
+          7.1165762,
+          -73.1294448,
+          7.1158248
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1297495,
+          7.1161946
+        ]
+      }
+    }
+  ],
+  "INDER Santander, Bucaramanga, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1320745909,
+        "osm_key": "office",
+        "osm_value": "government",
+        "type": "house",
+        "housenumber": "14-45",
+        "name": "Indersantander",
+        "street": "Avenida Carrera 30",
+        "locality": "San Alonso",
+        "district": "Comuna 13 - Oriental",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "680001",
+        "countrycode": "CO",
+        "extent": [
+          -73.1173056,
+          7.1350811,
+          -73.1171275,
+          7.1349271
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1172165,
+          7.1350041
+        ]
+      }
+    }
+  ],
+  "Lotería de Santander, Bucaramanga, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 312645690,
+        "osm_key": "amenity",
+        "osm_value": "university",
+        "type": "house",
+        "housenumber": "27-01",
+        "name": "Universidad Industrial de Santander",
+        "street": "Calle 9",
+        "locality": "Universidad",
+        "district": "Comuna de San Francisco",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "680001",
+        "countrycode": "CO",
+        "extent": [
+          -73.1233788,
+          7.1430892,
+          -73.1155215,
+          7.1387533
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1198652,
+          7.1409311
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 121521270,
+        "osm_key": "natural",
+        "osm_value": "wood",
+        "type": "other",
+        "name": "Cerros Orientales de Bucaramanga",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.1074036,
+          7.1322829,
+          -73.0829778,
+          7.1031856
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0920196,
+          7.1177214
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1396466002,
+        "osm_key": "landuse",
+        "osm_value": "recreation_ground",
+        "type": "other",
+        "name": "Parque Didáctico Infantil del Tránsito y Transporte de Bucaramanga",
+        "district": "Comuna 13 - Oriental",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.1200017,
+          7.1259733,
+          -73.1196064,
+          7.1255557
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1198029,
+          7.1257317
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 856432536,
+        "osm_key": "landuse",
+        "osm_value": "industrial",
+        "type": "locality",
+        "name": "Parque Industrial de Bucaramanga 2da Etapa",
+        "district": "Comuna Occidental",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.1561029,
+          7.1449247,
+          -73.152187,
+          7.137579
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1542453,
+          7.1412175
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 459082251,
+        "osm_key": "landuse",
+        "osm_value": "commercial",
+        "type": "locality",
+        "housenumber": "Km8",
+        "name": "Cenfer - Centro de Eventos y Exposiciones de Bucaramanga",
+        "street": "Autopista Girón",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.1558612,
+          7.0829121,
+          -73.1529591,
+          7.0810647
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1542554,
+          7.0820684
+        ]
+      }
+    }
+  ],
+  "Sede de la Lotería de Santander, Bucaramanga, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1381274259,
+        "osm_key": "amenity",
+        "osm_value": "school",
+        "type": "house",
+        "name": "Institución Educativa Francisco de Paula Santander - Sede B",
+        "street": "Carrera 2",
+        "locality": "La Feria",
+        "district": "Comuna Occidental",
+        "city": "BUCARAMANGA",
+        "county": "Bucaramanga",
+        "state": "SANTANDER",
+        "country": "Colombia",
+        "postcode": "680006",
+        "countrycode": "CO",
+        "extent": [
+          -73.1401643,
+          7.1222121,
+          -73.1397395,
+          7.121484
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1399284,
+          7.1217886
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 12480808720,
+        "osm_key": "amenity",
+        "osm_value": "school",
+        "type": "house",
+        "name": "SEDE D INSTITUCIÓN EDUCATIVA DE SANTANDER",
+        "street": "Calle 3",
+        "locality": "La Independencia",
+        "district": "Comuna Nororiental",
+        "city": "BUCARAMANGA",
+        "county": "Bucaramanga",
+        "state": "SANTANDER",
+        "country": "Colombia",
+        "postcode": "680001",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1230472,
+          7.1438486
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1327040297,
+        "osm_key": "amenity",
+        "osm_value": "school",
+        "type": "house",
+        "name": "Escuela Normal Superior de Bucaramanga - Sede C",
+        "street": "Parque de Los Niños",
+        "locality": "Antonia Santos",
+        "district": "Comuna 13 - Oriental",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "680006",
+        "countrycode": "CO",
+        "extent": [
+          -73.1201621,
+          7.1267293,
+          -73.1193482,
+          7.1259036
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1196291,
+          7.1263449
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1473479039,
+        "osm_key": "club",
+        "osm_value": "sport",
+        "type": "house",
+        "name": "Sede de Entrenamiento del Atlético Bucaramanga F.C",
+        "street": "Autopista Floridablanca - Piedecuesta",
+        "locality": "Los Cisnes, Comuna de Barroblanco",
+        "district": "Comuna del Trapiche",
+        "city": "Piedecuesta",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "681011",
+        "countrycode": "CO",
+        "extent": [
+          -73.0452543,
+          6.9793544,
+          -73.0438265,
+          6.977729
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0448382,
+          6.9782526
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1473479042,
+        "osm_key": "landuse",
+        "osm_value": "industrial",
+        "type": "locality",
+        "name": "Planta de Cemex - Sede La Cemento",
+        "district": "Comuna Norte",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.1349962,
+          7.1620614,
+          -73.1291549,
+          7.1591621
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1330482,
+          7.1606835
+        ]
+      }
+    }
+  ],
+  "Floridablanca, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1423451,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Floridablanca",
+        "county": "Metropolitana",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -73.1351658,
+          7.1483199,
+          -73.0020861,
+          7.0171941
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0859086,
+          7.0625677
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1413354340,
+        "osm_key": "amenity",
+        "osm_value": "university",
+        "type": "house",
+        "name": "Universidad Santo Tomás sede Floridablanca",
+        "street": "Calle 48",
+        "locality": "Lagos II",
+        "district": "Comuna 6 Lagos-Bellavista",
+        "city": "Floridablanca",
+        "county": "Metropolitana",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "681002",
+        "countrycode": "CO",
+        "extent": [
+          -73.0957264,
+          7.0670525,
+          -73.0938507,
+          7.0638777
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0949817,
+          7.065423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1489591374,
+        "osm_key": "landuse",
+        "osm_value": "residential",
+        "type": "locality",
+        "name": "Floridablanca",
+        "district": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.1110456,
+          4.6992511,
+          -74.1100319,
+          4.6984037
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1105431,
+          4.6988358
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 653506768,
+        "osm_key": "landuse",
+        "osm_value": "residential",
+        "type": "locality",
+        "name": "Floridablanca",
+        "district": "Villamaría",
+        "city": "Villamaría",
+        "county": "Centrosur",
+        "state": "Caldas",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.4808336,
+          5.0266821,
+          -75.4791492,
+          5.0243041
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.4797801,
+          5.0254878
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 19977955,
+        "osm_key": "boundary",
+        "osm_value": "administrative",
+        "type": "district",
+        "name": "Perímetro Urbano de Floridablanca",
+        "city": "Floridablanca",
+        "county": "Metropolitana",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "7"
+        },
+        "extent": [
+          -73.1240503,
+          7.0990469,
+          -73.0732415,
+          7.0238848
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0986003,
+          7.0764493
+        ]
+      }
+    }
+  ],
+  "Oficina de Gestión del Riesgo de Floridablanca, Floridablanca, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1426773361,
+        "osm_key": "office",
+        "osm_value": "government",
+        "type": "house",
+        "name": "Centro de Gestión Integral de Riesgos y Desastres del Oriente",
+        "street": "Calle 5",
+        "locality": "Comuna Florida - Casco Antiguo",
+        "district": "Comuna 1 Florida-Casco Antiguo",
+        "city": "Floridablanca",
+        "county": "Metropolitana",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "681004",
+        "countrycode": "CO",
+        "extent": [
+          -73.0906464,
+          7.0612265,
+          -73.0900893,
+          7.06093
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0903669,
+          7.0611112
+        ]
+      }
+    }
+  ],
+  "Centro Comercial Único — acopio para Buenaventura, Cali, Colombia": [],
+  "Centro Comercial Único Outlet, Cali, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 9413904,
+        "osm_key": "landuse",
+        "osm_value": "retail",
+        "type": "locality",
+        "name": "Centro Comercial Único OUTLET",
+        "city": "Dosquebradas",
+        "state": "Risaralda",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -75.6790441,
+          4.8294381,
+          -75.6767591,
+          4.8280405
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6777683,
+          4.8288621
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1350815227,
+        "osm_key": "shop",
+        "osm_value": "mall",
+        "type": "house",
+        "housenumber": "103A-05",
+        "name": "Centro Comercial Único Outlet",
+        "street": "Transversal Central",
+        "locality": "Nueva Fontana",
+        "district": "Comuna Provenza",
+        "city": "Bucaramanga",
+        "county": "Bucaramanga",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "680004",
+        "countrycode": "CO",
+        "extent": [
+          -73.1222835,
+          7.0884008,
+          -73.1205866,
+          7.0866576
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.1211155,
+          7.087509
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 571372898,
+        "osm_key": "shop",
+        "osm_value": "mall",
+        "type": "house",
+        "name": "Centro Comercial Único Outlet",
+        "street": "Carrera 3 Este",
+        "locality": "Los Sauces",
+        "district": "Comuna 12",
+        "city": "Pasto",
+        "county": "Pasto",
+        "state": "Nariño",
+        "country": "Colombia",
+        "postcode": "520006",
+        "countrycode": "CO",
+        "extent": [
+          -77.2608101,
+          1.2061971,
+          -77.2584309,
+          1.2051647
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.2591433,
+          1.2056896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 318161613,
+        "osm_key": "shop",
+        "osm_value": "mall",
+        "type": "house",
+        "name": "Centro Comercial Único OUTLET",
+        "street": "Avenida Simón Bolívar",
+        "locality": "Milan",
+        "city": "Dosquebradas",
+        "state": "Risaralda",
+        "country": "Colombia",
+        "postcode": "661001",
+        "countrycode": "CO",
+        "extent": [
+          -75.6789819,
+          4.8293283,
+          -75.6775908,
+          4.8283538
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6782065,
+          4.8289063
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 6565663,
+        "osm_key": "landuse",
+        "osm_value": "retail",
+        "type": "locality",
+        "name": "Centro Comercial Único",
+        "district": "Comuna 5",
+        "city": "Cali",
+        "county": "Cali",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.5030987,
+          3.4660274,
+          -76.4992777,
+          3.4637081
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5020636,
+          3.4645742
+        ]
+      }
+    }
+  ],
+  "Yumbo, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 1320727,
+        "osm_key": "place",
+        "osm_value": "town",
+        "type": "city",
+        "name": "Yumbo",
+        "county": "Sur",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extra": {
+          "admin_level": "6"
+        },
+        "extent": [
+          -76.597808,
+          3.6998903,
+          -76.4262976,
+          3.4902549
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.4952223,
+          3.5834664
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 264385455,
+        "osm_key": "landuse",
+        "osm_value": "industrial",
+        "type": "locality",
+        "name": "Smurfit Kappa Cartón de Colombia",
+        "city": "Yumbo",
+        "county": "Sur",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.4838161,
+          3.566717,
+          -76.4754551,
+          3.5622129
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.4796612,
+          3.5648506
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 239175329,
+        "osm_key": "waterway",
+        "osm_value": "stream",
+        "type": "other",
+        "name": "Río Yumbo",
+        "city": "Yumbo",
+        "county": "Sur",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "postcode": "760517",
+        "countrycode": "CO",
+        "extent": [
+          -76.5425672,
+          3.6260034,
+          -76.5310779,
+          3.6198142
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5364105,
+          3.6231653
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1173470120,
+        "osm_key": "waterway",
+        "osm_value": "stream",
+        "type": "other",
+        "name": "Río Yumbo",
+        "city": "Yumbo",
+        "county": "Sur",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "postcode": "760501",
+        "countrycode": "CO",
+        "extent": [
+          -76.5223157,
+          3.5955695,
+          -76.5222457,
+          3.595494
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5222807,
+          3.5955318
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 749769612,
+        "osm_key": "waterway",
+        "osm_value": "stream",
+        "type": "other",
+        "name": "Río Yumbo",
+        "city": "Yumbo",
+        "county": "Sur",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -76.5222457,
+          3.595494,
+          -76.4602231,
+          3.5838814
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.4908667,
+          3.585934
+        ]
+      }
+    }
+  ],
+  "Punto de acopio de Arroyo Hondo, Yumbo, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 13009958098,
+        "osm_key": "amenity",
+        "osm_value": "charging_station",
+        "type": "house",
+        "name": "Punto de carga Primax Acopio (Yumbo)",
+        "street": "Calle 10",
+        "city": "Yumbo",
+        "county": "Sur",
+        "state": "Valle del Cauca",
+        "country": "Colombia",
+        "postcode": "760502",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.5206641,
+          3.5081253
+        ]
+      }
+    }
+  ],
+  "Carrera 30 #10-90, Arroyo Hondo, Yumbo, Colombia": [],
+  "Carrera 1 #26-85 (antiguas bodegas de la Industria de Licores del Valle), Cali, Colombia": []
 }
