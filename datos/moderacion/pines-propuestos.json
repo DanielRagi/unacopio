@@ -1,23 +1,5 @@
 [
   {
-    "id": "06e06d24-5c89-4892-82d8-d20df4dbb3ec",
-    "nombre": "Centro Integral Las Vegas — oficina 135",
-    "municipio": "Envigado",
-    "direccion": "Centro Integral Las Vegas, oficina 135",
-    "antes": {
-      "lat": 6.1826477,
-      "lng": -75.5869307
-    },
-    "despues": {
-      "lat": 6.1826477,
-      "lng": -75.5869307
-    },
-    "por": "nombre",
-    "detalle": "Centro Integral Las Vegas",
-    "calle_osm": null,
-    "metros_movido": 0
-  },
-  {
     "id": "6d93cbf5-e330-4892-b912-150ab8ec675c",
     "nombre": "Universidad Nacional — Capilla Cristo Maestro",
     "municipio": "Bogotá D.C.",
@@ -51,42 +33,6 @@
     "por": "nombre",
     "detalle": "Concesionaria Fersautos",
     "calle_osm": "Anillo Víal",
-    "metros_movido": 0
-  },
-  {
-    "id": "b4d6e12e-8c52-4249-8670-ce76194cf184",
-    "nombre": "Gobernación de Santander",
-    "municipio": "Bucaramanga",
-    "direccion": "Sede de la Gobernación de Santander",
-    "antes": {
-      "lat": 7.1161946,
-      "lng": -73.1297495
-    },
-    "despues": {
-      "lat": 7.1161946,
-      "lng": -73.1297495
-    },
-    "por": "nombre",
-    "detalle": "Gobernación de Santander",
-    "calle_osm": "Carrera 10",
-    "metros_movido": 0
-  },
-  {
-    "id": "76b73e66-76ac-437e-b87b-133e118f2b1b",
-    "nombre": "INDER Santander",
-    "municipio": "Bucaramanga",
-    "direccion": "Sede del Instituto Departamental de Recreación y Deporte de Santander (INDER)",
-    "antes": {
-      "lat": 7.1350041,
-      "lng": -73.1172165
-    },
-    "despues": {
-      "lat": 7.1350041,
-      "lng": -73.1172165
-    },
-    "por": "nombre",
-    "detalle": "Indersantander",
-    "calle_osm": "Avenida Carrera 30",
     "metros_movido": 0
   }
 ]
