@@ -119,5 +119,40 @@ igual('el domingo va al final, no se pega con el lunes',
   textoHorario([{ dia: 0, desde: '08:00', hasta: '18:00' }, { dia: 1, desde: '08:00', hasta: '18:00' }]),
   'Lunes de 8:00 a.m. a 6:00 p.m.; domingo de 8:00 a.m. a 6:00 p.m.');
 
+
+/*
+ * La fecha de cierre manda, aunque no haya horario.
+ *
+ * Este bloque existe por un fallo real: durante días, los puntos importados
+ * —que nunca traen franjas— siguieron viéndose como abiertos después de su
+ * fecha de cierre, porque la función devolvía `null` antes de mirar las
+ * fechas. Un acopio que cerró el martes se veía igual que uno abierto.
+ */
+console.log('\nestadoApertura — fechas de campaña sin horario cargado');
+
+igual('sin horario y con fecha de cierre pasada → cerrado',
+  estadoApertura(null, null, '2026-08-17', enUtc('2026-08-21T15:00:00Z')),
+  { estado: 'cerrado', abreEn: null });
+
+igual('sin horario y con fecha de cierre futura → no se afirma nada',
+  estadoApertura(null, null, '2026-08-31', enUtc('2026-08-21T15:00:00Z')),
+  null);
+
+igual('el último día todavía cuenta',
+  estadoApertura(null, null, '2026-08-21', enUtc('2026-08-21T15:00:00Z')),
+  null);
+
+igual('sin horario y antes de empezar → cerrado',
+  estadoApertura(null, '2026-08-25', null, enUtc('2026-08-21T15:00:00Z')),
+  { estado: 'cerrado', abreEn: null });
+
+igual('sin horario y sin fechas → no se afirma nada',
+  estadoApertura(null, null, null, enUtc('2026-08-21T15:00:00Z')),
+  null);
+
+igual('la fecha de cierre pasada le gana al horario de hoy',
+  estadoApertura(lunASab, null, '2026-08-17', enUtc('2026-08-21T15:00:00Z')),
+  { estado: 'cerrado', abreEn: null });
+
 console.log(fallas === 0 ? '\n✓ todo bien' : `\n✗ ${fallas} falla(s)`);
 process.exit(fallas === 0 ? 0 : 1);

@@ -21856,5 +21856,1533 @@
     }
   ],
   "Carrera 30 #10-90, Arroyo Hondo, Yumbo, Colombia": [],
-  "Carrera 1 #26-85 (antiguas bodegas de la Industria de Licores del Valle), Cali, Colombia": []
+  "Carrera 1 #26-85 (antiguas bodegas de la Industria de Licores del Valle), Cali, Colombia": [],
+  "Casa Eterna, Medellín, Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 986724135,
+        "osm_key": "building",
+        "osm_value": "yes",
+        "type": "house",
+        "name": "eterna primavera",
+        "street": "Carrera 16B",
+        "locality": "Bomboná Numero 2",
+        "district": "Buenos Aires",
+        "city": "Medellín",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "050001",
+        "countrycode": "CO",
+        "extent": [
+          -75.5463233,
+          6.2267044,
+          -75.5460275,
+          6.2265451
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5462362,
+          6.2265849
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 986724140,
+        "osm_key": "building",
+        "osm_value": "yes",
+        "type": "house",
+        "name": "eterna primavera",
+        "street": "Calle 44",
+        "locality": "Bomboná Numero 2",
+        "district": "Buenos Aires",
+        "city": "Medellín",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "050001",
+        "countrycode": "CO",
+        "extent": [
+          -75.5454584,
+          6.2266372,
+          -75.5449416,
+          6.2264683
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.545312,
+          6.2265493
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 986724139,
+        "osm_key": "building",
+        "osm_value": "yes",
+        "type": "house",
+        "name": "eterna primavera",
+        "street": "Carrera 10C",
+        "locality": "zona residencial",
+        "district": "Buenos Aires",
+        "city": "Medellín",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "050001",
+        "countrycode": "CO",
+        "extent": [
+          -75.5448638,
+          6.226799,
+          -75.5446939,
+          6.2262079
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.544777,
+          6.226507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 986724138,
+        "osm_key": "building",
+        "osm_value": "yes",
+        "type": "house",
+        "name": "eterna primavera",
+        "street": "Carrera 16B",
+        "locality": "Bomboná Numero 2",
+        "district": "Buenos Aires",
+        "city": "Medellín",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "050001",
+        "countrycode": "CO",
+        "extent": [
+          -75.5461379,
+          6.2263416,
+          -75.5457981,
+          6.2261728
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.5459702,
+          6.2262537
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 5713959622,
+        "osm_key": "tourism",
+        "osm_value": "apartment",
+        "type": "house",
+        "name": "Casa medellin",
+        "street": "Carrera 87",
+        "locality": "La Floresta",
+        "district": "La América",
+        "city": "Medellín",
+        "county": "Valle de Aburrá",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "050035",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.6039288,
+          6.25844
+        ]
+      }
+    }
+  ],
+  "Calle 23 Sur #3-133, La Explanada, vía Las Palmas, Medellín, Colombia": [],
+  "Plaza de Mercado 7 de Agosto, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 98937994,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "housenumber": "Carrera 5 # 30-40",
+        "name": "Plaza de Mercado La Perseverancia",
+        "street": "Avenida Carrera 5",
+        "locality": "San Martín",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0662596,
+          4.6167203,
+          -74.0657137,
+          4.6161912
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0659593,
+          4.6164324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1508337217,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "name": "Plaza del 7 de Agosto",
+        "street": "Calle 66",
+        "locality": "7 de Agosto",
+        "district": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111221",
+        "countrycode": "CO",
+        "extent": [
+          -74.0706602,
+          4.6576269,
+          -74.0699549,
+          4.6569522
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0703076,
+          4.6572896
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 3850681882,
+        "osm_key": "highway",
+        "osm_value": "bus_stop",
+        "type": "house",
+        "name": "Plaza 7 de Agosto",
+        "street": "Avenida Carrera 24",
+        "locality": "7 de Agosto",
+        "district": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111221",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0708513,
+          4.6570036
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 561038987,
+        "osm_key": "place",
+        "osm_value": "neighbourhood",
+        "type": "locality",
+        "name": "7 de Agosto",
+        "district": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá D.C.",
+        "country": "Colombia",
+        "postcode": "111221",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0734494,
+          4.6586107
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 11907861270,
+        "osm_key": "shop",
+        "osm_value": "car_parts",
+        "type": "house",
+        "housenumber": "28-65",
+        "name": "XTREM AUDIO Radios y Sonido para Carro 7 de Agosto",
+        "street": "Calle 64",
+        "locality": "7 de Agosto",
+        "district": "Localidad Barrios Unidos",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111221",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0755703,
+          4.6577451
+        ]
+      }
+    }
+  ],
+  "Calle 66 #23-30, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 9443057,
+        "osm_key": "amenity",
+        "osm_value": "library",
+        "type": "house",
+        "housenumber": "5-60",
+        "name": "Biblioteca Nacional de Colombia",
+        "street": "Calle 24",
+        "locality": "Las Nieves",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0688905,
+          4.6098699,
+          -74.0681942,
+          4.6092308
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0685345,
+          4.6095552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1197851944,
+        "osm_key": "building",
+        "osm_value": "construction",
+        "type": "house",
+        "name": "Nueva Sede Universidad Distrital Francisco José de Caldas - Sede Calle 40",
+        "street": "Carrera 8",
+        "locality": "Sucre",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110231",
+        "countrycode": "CO",
+        "extent": [
+          -74.0658978,
+          4.6284685,
+          -74.0656113,
+          4.6282361
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.065757,
+          4.6283507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1197851946,
+        "osm_key": "building",
+        "osm_value": "university",
+        "type": "house",
+        "housenumber": "13 - 13",
+        "name": "Universidad Distrital Francisco José de Caldas - Sede Calle 34",
+        "street": "Avenida Calle 34",
+        "locality": "Samper",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0686871,
+          4.6221886,
+          -74.0683545,
+          4.6218535
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0685197,
+          4.6220255
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 41841879,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Calle 66C",
+        "locality": "Engativá",
+        "district": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111031",
+        "countrycode": "CO",
+        "extent": [
+          -74.1406863,
+          4.7185192,
+          -74.1404032,
+          4.7180369
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1405447,
+          4.7182781
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1093941833,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Calle 66C",
+        "locality": "Modelo",
+        "district": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111221",
+        "countrycode": "CO",
+        "extent": [
+          -74.0839562,
+          4.6685227,
+          -74.0837523,
+          4.6683725
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0838542,
+          4.6684476
+        ]
+      }
+    }
+  ],
+  "Plaza de Mercado Boyacá, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 98937994,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "housenumber": "Carrera 5 # 30-40",
+        "name": "Plaza de Mercado La Perseverancia",
+        "street": "Avenida Carrera 5",
+        "locality": "San Martín",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0662596,
+          4.6167203,
+          -74.0657137,
+          4.6161912
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0659593,
+          4.6164324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 529286975,
+        "osm_key": "leisure",
+        "osm_value": "park",
+        "type": "other",
+        "name": "Plaza de Mercado",
+        "city": "Pesca",
+        "county": "Sugamuxi",
+        "state": "Boyacá",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.0530575,
+          5.560772,
+          -73.0521373,
+          5.5599002
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.0525994,
+          5.5603863
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 531532876,
+        "osm_key": "landuse",
+        "osm_value": "commercial",
+        "type": "locality",
+        "name": "Plaza de Mercado",
+        "city": "Jenesano",
+        "county": "Jenesano",
+        "state": "Boyacá",
+        "country": "Colombia",
+        "postcode": "153601",
+        "countrycode": "CO",
+        "extent": [
+          -73.3634093,
+          5.3852563,
+          -73.36261,
+          5.3846328
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.3630088,
+          5.3849346
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 497071816,
+        "osm_key": "leisure",
+        "osm_value": "park",
+        "type": "other",
+        "name": "Plaza de mercado",
+        "city": "Tuta",
+        "county": "Tuta",
+        "state": "Boyacá",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.2295032,
+          5.6908498,
+          -73.2289292,
+          5.6902706
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.2292162,
+          5.6905496
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 4934146240,
+        "osm_key": "place",
+        "osm_value": "square",
+        "type": "locality",
+        "name": "Plaza de Mercado",
+        "city": "Togüí",
+        "county": "Togüí",
+        "state": "Boyacá",
+        "country": "Colombia",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.514113,
+          5.9379164
+        ]
+      }
+    }
+  ],
+  "Calle 68B #73A-44, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "R",
+        "osm_id": 9443057,
+        "osm_key": "amenity",
+        "osm_value": "library",
+        "type": "house",
+        "housenumber": "5-60",
+        "name": "Biblioteca Nacional de Colombia",
+        "street": "Calle 24",
+        "locality": "Las Nieves",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0688905,
+          4.6098699,
+          -74.0681942,
+          4.6092308
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0685345,
+          4.6095552
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1013897779,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Diagonal 68B Sur",
+        "locality": "Casa Grande",
+        "district": "Localidad Ciudad Bolívar",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111931",
+        "countrycode": "CO",
+        "extent": [
+          -74.1605227,
+          4.5801904,
+          -74.1604759,
+          4.5800822
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1604993,
+          4.5801363
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 405944786,
+        "osm_key": "building",
+        "osm_value": "public",
+        "type": "house",
+        "housenumber": "7-44",
+        "name": "Sede Central ETB",
+        "street": "Calle 20",
+        "locality": "La Veracruz",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0716637,
+          4.607288,
+          -74.0710718,
+          4.6064676
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0713416,
+          4.6069474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1197851944,
+        "osm_key": "building",
+        "osm_value": "construction",
+        "type": "house",
+        "name": "Nueva Sede Universidad Distrital Francisco José de Caldas - Sede Calle 40",
+        "street": "Carrera 8",
+        "locality": "Sucre",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110231",
+        "countrycode": "CO",
+        "extent": [
+          -74.0658978,
+          4.6284685,
+          -74.0656113,
+          4.6282361
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.065757,
+          4.6283507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1197851946,
+        "osm_key": "building",
+        "osm_value": "university",
+        "type": "house",
+        "housenumber": "13 - 13",
+        "name": "Universidad Distrital Francisco José de Caldas - Sede Calle 34",
+        "street": "Avenida Calle 34",
+        "locality": "Samper",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0686871,
+          4.6221886,
+          -74.0683545,
+          4.6218535
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0685197,
+          4.6220255
+        ]
+      }
+    }
+  ],
+  "Plaza de Mercado El Carmen, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 680458937,
+        "osm_key": "landuse",
+        "osm_value": "retail",
+        "type": "locality",
+        "name": "plaza de mercado",
+        "city": "El Carmen de Chucurí",
+        "county": "Yariguíes",
+        "state": "Santander",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -73.5103473,
+          6.6998201,
+          -73.5097331,
+          6.6991461
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5100401,
+          6.6994751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 98937994,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "housenumber": "Carrera 5 # 30-40",
+        "name": "Plaza de Mercado La Perseverancia",
+        "street": "Avenida Carrera 5",
+        "locality": "San Martín",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0662596,
+          4.6167203,
+          -74.0657137,
+          4.6161912
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0659593,
+          4.6164324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1168890774,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "name": "Plaza de Mercado",
+        "street": "Calle 31",
+        "district": "Barrio Centro",
+        "city": "El Carmen de Viboral",
+        "county": "El Carmen de Viboral",
+        "state": "Antioquia",
+        "country": "Colombia",
+        "postcode": "054030",
+        "countrycode": "CO",
+        "extent": [
+          -75.3357184,
+          6.0841401,
+          -75.3354284,
+          6.0836929
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -75.3355734,
+          6.0839165
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 6372746740,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "name": "Plaza de Mercado",
+        "street": "Carrera 3",
+        "locality": "Nopal",
+        "city": "El Carmen de Chucurí",
+        "county": "Yariguíes",
+        "state": "Santander",
+        "country": "Colombia",
+        "postcode": "686561",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -73.5100579,
+          6.6995127
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 185139032,
+        "osm_key": "building",
+        "osm_value": "retail",
+        "type": "house",
+        "name": "Plaza de Mercado Quirigua",
+        "street": "Avenida Calle 90",
+        "locality": "Quirigua",
+        "district": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111021",
+        "countrycode": "CO",
+        "extent": [
+          -74.0984337,
+          4.7142491,
+          -74.0976954,
+          4.7135304
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0980923,
+          4.7139676
+        ]
+      }
+    }
+  ],
+  "Diagonal 49 Sur #29A-07, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 741117841,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Diagonal 49C Bis A Sur",
+        "locality": "Arboleda Sur",
+        "district": "Localidad Rafael Uribe Uribe",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111831",
+        "countrycode": "CO",
+        "extent": [
+          -74.1207635,
+          4.562695,
+          -74.1207434,
+          4.5624074
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1207534,
+          4.5625512
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 91326451,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Diagonal 49C Bis A Sur",
+        "locality": "Palermo Sur",
+        "district": "Localidad Rafael Uribe Uribe",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111841",
+        "countrycode": "CO",
+        "extent": [
+          -74.1089448,
+          4.5430817,
+          -74.1084195,
+          4.543016
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1086824,
+          4.5430424
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 176565736,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Diagonal 49C Sur",
+        "locality": "Arboleda Sur",
+        "district": "Localidad Rafael Uribe Uribe",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111831",
+        "countrycode": "CO",
+        "extent": [
+          -74.1246651,
+          4.5664113,
+          -74.1239719,
+          4.5662559
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1243193,
+          4.5663301
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 246837013,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Diagonal 49C Bis Sur",
+        "locality": "Arboleda Sur",
+        "district": "Localidad Rafael Uribe Uribe",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111831",
+        "countrycode": "CO",
+        "extent": [
+          -74.1205044,
+          4.5631005,
+          -74.1203156,
+          4.5621702
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1204651,
+          4.5626492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 246903385,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Diagonal 49C Bis Sur",
+        "locality": "San Agustín",
+        "district": "Localidad Rafael Uribe Uribe",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111841",
+        "countrycode": "CO",
+        "extent": [
+          -74.1117774,
+          4.5458323,
+          -74.1113158,
+          4.5447425
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1115493,
+          4.5452863
+        ]
+      }
+    }
+  ],
+  "Plaza de Mercado Trinidad Galán, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 541972687,
+        "osm_key": "shop",
+        "osm_value": "supermarket",
+        "type": "house",
+        "name": "Plaza de Mercado Trinidad",
+        "street": "Calle 4",
+        "locality": "San Gabriel",
+        "district": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111611",
+        "countrycode": "CO",
+        "extent": [
+          -74.1194841,
+          4.6231293,
+          -74.1189022,
+          4.6225667
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1191922,
+          4.6228423
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 98937994,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "housenumber": "Carrera 5 # 30-40",
+        "name": "Plaza de Mercado La Perseverancia",
+        "street": "Avenida Carrera 5",
+        "locality": "San Martín",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110311",
+        "countrycode": "CO",
+        "extent": [
+          -74.0662596,
+          4.6167203,
+          -74.0657137,
+          4.6161912
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0659593,
+          4.6164324
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 926661880,
+        "osm_key": "shop",
+        "osm_value": "supermarket",
+        "type": "house",
+        "name": "Plaza de Mercado San Carlos",
+        "street": "Calle 51 Sur",
+        "locality": "San Carlos",
+        "district": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110621",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1288187,
+          4.5688385
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 715895356,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "name": "Plaza de Mercado de San Carlos",
+        "street": "Calle 51 Sur",
+        "locality": "San Carlos",
+        "district": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110621",
+        "countrycode": "CO",
+        "extent": [
+          -74.1297076,
+          4.5703819,
+          -74.1292644,
+          4.5699564
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1294875,
+          4.5701885
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 550962441,
+        "osm_key": "amenity",
+        "osm_value": "marketplace",
+        "type": "house",
+        "name": "Plaza de Mercado de Bosa",
+        "street": "Carrera 80B Bis",
+        "locality": "Zona Recreativa",
+        "district": "Localidad Bosa",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110731",
+        "countrycode": "CO",
+        "extent": [
+          -74.1840898,
+          4.6085718,
+          -74.1834275,
+          4.6080326
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1837582,
+          4.6083022
+        ]
+      }
+    }
+  ],
+  "Carrera 60 #5-00, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 149290287,
+        "osm_key": "landuse",
+        "osm_value": "residential",
+        "type": "locality",
+        "housenumber": "135-60",
+        "name": "Portal de la Colina",
+        "street": "Carrera 54D",
+        "district": "Localidad Suba",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.0594685,
+          4.7259348,
+          -74.0587014,
+          4.7248139
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0591827,
+          4.7252161
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 966240434,
+        "osm_key": "landuse",
+        "osm_value": "residential",
+        "type": "locality",
+        "housenumber": "1 - 60 Sur",
+        "name": "Las Americas CLR II",
+        "street": "Carrera 69 D",
+        "district": "Localidad Kennedy",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "countrycode": "CO",
+        "extent": [
+          -74.1310188,
+          4.6212644,
+          -74.1297438,
+          4.6204218
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.130396,
+          4.6207247
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 409185746,
+        "osm_key": "building",
+        "osm_value": "university",
+        "type": "house",
+        "name": "Universidad Piloto de Colombia",
+        "street": "Carrera 9",
+        "locality": "Mariscal Sucre",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110231",
+        "countrycode": "CO",
+        "extent": [
+          -74.0662578,
+          4.6329037,
+          -74.0649527,
+          4.632089
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.065174,
+          4.632492
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 9895983866,
+        "osm_key": "amenity",
+        "osm_value": "university",
+        "type": "house",
+        "name": "Universidad Piloto de Colombia",
+        "street": "Carrera 9",
+        "locality": "Mariscal Sucre",
+        "city": "Bogotá D.C.",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110231",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0652511,
+          4.6324893
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1020855976,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Carrera 60C",
+        "locality": "Venecia Occidental",
+        "district": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110611",
+        "countrycode": "CO",
+        "extent": [
+          -74.1464196,
+          4.5905646,
+          -74.1462054,
+          4.5900841
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1463125,
+          4.5903244
+        ]
+      }
+    }
+  ],
+  "Vive Claro — centro nacional de acopio, Bogotá D.C., Colombia": [],
+  "Calle 53 con Carrera 60, Puerta 4, Bogotá D.C., Colombia": [
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 1133789772,
+        "osm_key": "amenity",
+        "osm_value": "bicycle_repair_station",
+        "type": "house",
+        "housenumber": "carrera 60 calle 4d",
+        "name": "Bicicleteria",
+        "street": "Carrera 66",
+        "locality": "Pradera Sur",
+        "district": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111611",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.1216956,
+          4.625936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "W",
+        "osm_id": 1062017772,
+        "osm_key": "highway",
+        "osm_value": "residential",
+        "type": "street",
+        "name": "Carrera 60B",
+        "locality": "Rionegro",
+        "district": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111211",
+        "countrycode": "CO",
+        "extent": [
+          -74.0677167,
+          4.6818625,
+          -74.0676602,
+          4.6814988
+        ]
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0676884,
+          4.6816807
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 4110084519,
+        "osm_key": "amenity",
+        "osm_value": "bicycle_rental",
+        "type": "house",
+        "housenumber": "26-85",
+        "name": "BicirrUN Calle 53",
+        "street": "Carrera 45",
+        "locality": "Rafael Nuñez",
+        "district": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111321",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0837819,
+          4.6429188
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 9807249035,
+        "osm_key": "historic",
+        "osm_value": "city_gate",
+        "type": "house",
+        "housenumber": "26-85",
+        "name": "Entrada Universidad Nacional calle 53",
+        "street": "Carrera 45",
+        "locality": "Nicolas de Federman",
+        "district": "Localidad Teusaquillo",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "111321",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0832538,
+          4.6434764
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "osm_type": "N",
+        "osm_id": 4442352082,
+        "osm_key": "leisure",
+        "osm_value": "sports_centre",
+        "type": "house",
+        "housenumber": "124-60",
+        "name": "La Pista Indoor",
+        "street": "Autopista Norte;Carrera 45",
+        "locality": "Paseo de Los Libertadores",
+        "district": "Localidad Usaquén",
+        "city": "BOGOTA",
+        "state": "Bogotá, Distrito Capital",
+        "country": "Colombia",
+        "postcode": "110151",
+        "countrycode": "CO"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0359062,
+          4.8067512
+        ]
+      }
+    }
+  ]
 }

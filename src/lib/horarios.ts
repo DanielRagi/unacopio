@@ -101,13 +101,22 @@ export function estadoApertura(
   fechaFin: string | null,
   base: Date = new Date(),
 ): EstadoApertura {
-  if (!horarios || horarios.length === 0) return null;
-
   const ahora = ahoraEnColombia(base);
 
-  // Fuera de las fechas de la campaña no hay horario que valga.
+  /*
+   * Las fechas de la campaña se miran ANTES que los horarios, y el orden no es
+   * cosmético: durante días, los puntos importados —que no traen franjas— se
+   * quedaron sin ningún sello después de su fecha de cierre, porque la función
+   * devolvía `null` en la primera línea y nunca llegaba a mirar `fechaFin`. Un
+   * acopio que cerró el martes seguía viéndose igual que uno abierto.
+   *
+   * Una fecha de cierre vencida es la afirmación más segura que tenemos sobre
+   * un punto: la fuente dijo hasta cuándo. Vale aunque no sepamos su horario.
+   */
   if (fechaInicio && ahora.fecha < fechaInicio) return { estado: 'cerrado', abreEn: null };
   if (fechaFin && ahora.fecha > fechaFin) return { estado: 'cerrado', abreEn: null };
+
+  if (!horarios || horarios.length === 0) return null;
 
   const deHoy = horarios.filter((f) => f.dia === ahora.dia);
   const abierta = deHoy.find(

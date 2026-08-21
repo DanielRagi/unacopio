@@ -9853,5 +9853,1223 @@
   "Centro de acopio de la Alcaldía de Soacha, Soacha, Colombia": [],
   "Casa Eterna, Medellín, Colombia": [],
   "Calle 23 Sur #3-133, La Explanada, vía Las Palmas, Medellín, Colombia": [],
-  "La Explanada, Medellín, Colombia": []
+  "La Explanada, Medellín, Colombia": [],
+  "Plaza de Mercado 12 de Octubre, Bogotá D.C., Colombia": [
+    {
+      "place_id": 307282488,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 402047794,
+      "lat": "4.6691244",
+      "lon": "-74.0744212",
+      "category": "building",
+      "type": "barn",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "building",
+      "name": "Plaza de Mercado del 12 de Octubre",
+      "display_name": "Plaza de Mercado del 12 de Octubre, Avenida Calle 72, Jorge Eliécer Gaitán, UPZs de Bogotá, Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111211, Colombia",
+      "address": {
+        "building": "Plaza de Mercado del 12 de Octubre",
+        "road": "Avenida Calle 72",
+        "neighbourhood": "Jorge Eliécer Gaitán",
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111211",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6687194",
+        "4.6695240",
+        "-74.0748503",
+        "-74.0739894"
+      ]
+    }
+  ],
+  "Plaza de Mercado 20 de Julio, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309840861,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 324801907,
+      "lat": "4.5699166",
+      "lon": "-74.0931693",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado 20 de Julio",
+      "display_name": "Plaza de Mercado 20 de Julio, Calle 25A Sur, Veinte de Julio, UPZs de Bogotá, Localidad San Cristóbal, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110421, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado 20 de Julio",
+        "road": "Calle 25A Sur",
+        "neighbourhood": "Veinte de Julio",
+        "suburb": "Localidad San Cristóbal",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110421",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5695032",
+        "4.5703667",
+        "-74.0936591",
+        "-74.0926796"
+      ]
+    }
+  ],
+  "Plaza de Mercado 7 de Agosto, Bogotá D.C., Colombia": [],
+  "Calle 66 #23-30, Bogotá D.C., Colombia": [
+    {
+      "place_id": 305624706,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 28458718,
+      "lat": "4.6491947",
+      "lon": "-74.0572650",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 66",
+      "display_name": "Calle 66, UPZs de Bogotá, Localidad Chapinero, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110231, Colombia",
+      "address": {
+        "road": "Calle 66",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Chapinero",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110231",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6487286",
+        "4.6497003",
+        "-74.0578399",
+        "-74.0565962"
+      ]
+    },
+    {
+      "place_id": 311279806,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1063409334,
+      "lat": "4.6740053",
+      "lon": "-74.0912590",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 66",
+      "display_name": "Calle 66, La Estradita, UPZs Localidad Engativá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111061, Colombia",
+      "address": {
+        "road": "Calle 66",
+        "neighbourhood": "La Estradita",
+        "quarter": "UPZs Localidad Engativá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111061",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6725518",
+        "4.6753708",
+        "-74.0927430",
+        "-74.0898654"
+      ]
+    },
+    {
+      "place_id": 308757145,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 90691563,
+      "lat": "4.6625263",
+      "lon": "-74.0780017",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Calle 66",
+      "display_name": "Calle 66, 7 de Agosto, UPZs de Bogotá, Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111221, Colombia",
+      "address": {
+        "road": "Calle 66",
+        "neighbourhood": "7 de Agosto",
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6620254",
+        "4.6631293",
+        "-74.0788201",
+        "-74.0771471"
+      ]
+    }
+  ],
+  "Barrios Unidos, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308380676,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 531534441,
+      "lat": "4.6553520",
+      "lon": "-74.0775920",
+      "category": "shop",
+      "type": "motorcycle",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Suzuki Motor de Colombia S.A",
+      "display_name": "Suzuki Motor de Colombia S.A, Avenida Carrera 30, 7 de Agosto, UPZs de Bogotá, Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111221, Colombia",
+      "address": {
+        "shop": "Suzuki Motor de Colombia S.A",
+        "road": "Avenida Carrera 30",
+        "neighbourhood": "7 de Agosto",
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6552928",
+        "4.6554113",
+        "-74.0776779",
+        "-74.0775062"
+      ]
+    },
+    {
+      "place_id": 308358272,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 5157713287,
+      "lat": "4.6615403",
+      "lon": "-74.0732690",
+      "category": "shop",
+      "type": "bicycle",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Team Colombia 1",
+      "display_name": "Team Colombia 1, Avenida Calle 68, 7 de Agosto, UPZs de Bogotá, Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111221, Colombia",
+      "address": {
+        "shop": "Team Colombia 1",
+        "road": "Avenida Calle 68",
+        "neighbourhood": "7 de Agosto",
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111221",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6614903",
+        "4.6615903",
+        "-74.0733190",
+        "-74.0732190"
+      ]
+    },
+    {
+      "place_id": 308456962,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 2214882,
+      "lat": "4.6643895",
+      "lon": "-74.0749690",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 16,
+      "importance": 0.3678453393566702,
+      "addresstype": "suburb",
+      "name": "Localidad Barrios Unidos",
+      "display_name": "Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6496094",
+        "4.6896866",
+        "-74.0933736",
+        "-74.0571828"
+      ]
+    }
+  ],
+  "Plaza de Mercado Boyacá, Bogotá D.C., Colombia": [],
+  "Calle 68B #73A-44, Bogotá D.C., Colombia": [],
+  "Plaza de Mercado El Carmen, Bogotá D.C., Colombia": [],
+  "Diagonal 49 Sur #29A-07, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308396750,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 741028873,
+      "lat": "4.5668961",
+      "lon": "-74.1193647",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Diagonal 49 Sur",
+      "display_name": "Diagonal 49 Sur, Arboleda Sur, UPZs de Bogotá, Localidad Rafael Uribe Uribe, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111831, Colombia",
+      "address": {
+        "road": "Diagonal 49 Sur",
+        "neighbourhood": "Arboleda Sur",
+        "suburb": "Localidad Rafael Uribe Uribe",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111831",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5666935",
+        "4.5671626",
+        "-74.1203369",
+        "-74.1183748"
+      ]
+    },
+    {
+      "place_id": 308508053,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 543203912,
+      "lat": "4.5920111",
+      "lon": "-74.1406821",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Diagonal 49 Sur",
+      "display_name": "Diagonal 49 Sur, Laguneta, UPZs de Bogotá, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110611, Colombia",
+      "address": {
+        "road": "Diagonal 49 Sur",
+        "neighbourhood": "Laguneta",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110611",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5918025",
+        "4.5922123",
+        "-74.1416967",
+        "-74.1396690"
+      ]
+    },
+    {
+      "place_id": 424965020,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1547932389,
+      "lat": "4.5916748",
+      "lon": "-74.1390767",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Diagonal 49 Sur",
+      "display_name": "Diagonal 49 Sur, Fatima, UPZs de Bogotá, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110611, Colombia",
+      "address": {
+        "road": "Diagonal 49 Sur",
+        "neighbourhood": "Fatima",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110611",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5915472",
+        "4.5918025",
+        "-74.1396690",
+        "-74.1384844"
+      ]
+    }
+  ],
+  "Tunjuelito, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308432028,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11509186,
+      "lat": "4.5584337",
+      "lon": "-74.1284975",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZs Localidad Tunjuelito",
+      "display_name": "UPZs Localidad Tunjuelito, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZs Localidad Tunjuelito",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5443885",
+        "4.5957516",
+        "-74.1570310",
+        "-74.1209497"
+      ]
+    },
+    {
+      "place_id": 308426790,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11509187,
+      "lat": "4.5584337",
+      "lon": "-74.1284975",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZ Tunjuelito",
+      "display_name": "UPZ Tunjuelito, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110621, Colombia",
+      "address": {
+        "quarter": "UPZ Tunjuelito",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110621",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5443885",
+        "4.5706685",
+        "-74.1405954",
+        "-74.1209497"
+      ]
+    },
+    {
+      "place_id": 308669659,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 6813169221,
+      "lat": "4.5627675",
+      "lon": "-74.1271328",
+      "category": "place",
+      "type": "neighbourhood",
+      "place_rank": 24,
+      "importance": 0.08007831921873805,
+      "addresstype": "neighbourhood",
+      "name": "Tunjuelito",
+      "display_name": "Tunjuelito, UPZs de Bogotá, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110621, Colombia",
+      "address": {
+        "neighbourhood": "Tunjuelito",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110621",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5527675",
+        "4.5727675",
+        "-74.1371328",
+        "-74.1171328"
+      ]
+    }
+  ],
+  "Plaza de Mercado Fontibón, Bogotá D.C., Colombia": [
+    {
+      "place_id": 306753338,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 71496527,
+      "lat": "4.6761707",
+      "lon": "-74.1444774",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado Fontibón",
+      "display_name": "Plaza de Mercado Fontibón, Carrera 103, Fontibón, UPZs de Bogotá, Localidad Fontibón, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110921, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado Fontibón",
+        "road": "Carrera 103",
+        "neighbourhood": "Fontibón",
+        "suburb": "Localidad Fontibón",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110921",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6758454",
+        "4.6765111",
+        "-74.1448451",
+        "-74.1441045"
+      ]
+    }
+  ],
+  "Plaza de Mercado Kennedy, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309163592,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 479820483,
+      "lat": "4.6194627",
+      "lon": "-74.1603550",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado Distrital Kennedy",
+      "display_name": "Plaza de Mercado Distrital Kennedy, Carrera 78P, Ciudad Kennedy Sur, UPZs de Bogotá, Localidad Kennedy, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110851, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado Distrital Kennedy",
+        "road": "Carrera 78P",
+        "neighbourhood": "Ciudad Kennedy Sur",
+        "suburb": "Localidad Kennedy",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110851",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6190783",
+        "4.6198470",
+        "-74.1607205",
+        "-74.1599895"
+      ]
+    }
+  ],
+  "Plaza de Mercado La Concordia, Bogotá D.C., Colombia": [
+    {
+      "place_id": 307252838,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 625451563,
+      "lat": "4.5982597",
+      "lon": "-74.0686042",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de mercado de la Concordia",
+      "display_name": "Plaza de mercado de la Concordia, Calle 14, Carrera 1, La Concordia, UPZs de Bogotá, UPZ La Candelaria, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111711, Colombia",
+      "address": {
+        "amenity": "Plaza de mercado de la Concordia",
+        "house_number": "Calle 14",
+        "road": "Carrera 1",
+        "neighbourhood": "La Concordia",
+        "suburb": "UPZ La Candelaria",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111711",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5979704",
+        "4.5986066",
+        "-74.0688447",
+        "-74.0682681"
+      ]
+    }
+  ],
+  "Plaza de Mercado Las Cruces, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308164456,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 24510162,
+      "lat": "4.5875178",
+      "lon": "-74.0781549",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado Las Cruces",
+      "display_name": "Plaza de Mercado Las Cruces, Calle 1F, Las Cruces, UPZs de Bogotá, Localidad Santa Fé, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110321, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado Las Cruces",
+        "road": "Calle 1F",
+        "neighbourhood": "Las Cruces",
+        "suburb": "Localidad Santa Fé",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110321",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5872542",
+        "4.5877838",
+        "-74.0784077",
+        "-74.0779041"
+      ]
+    }
+  ],
+  "Plaza de Mercado La Perseverancia, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308200342,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 98937994,
+      "lat": "4.6164324",
+      "lon": "-74.0659593",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado La Perseverancia",
+      "display_name": "Plaza de Mercado La Perseverancia, Carrera 5 # 30-40, Avenida Carrera 5, San Martín, UPZs de Bogotá, Localidad Santa Fé, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110311, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado La Perseverancia",
+        "house_number": "Carrera 5 # 30-40",
+        "road": "Avenida Carrera 5",
+        "neighbourhood": "San Martín",
+        "suburb": "Localidad Santa Fé",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110311",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6161912",
+        "4.6167203",
+        "-74.0662596",
+        "-74.0657137"
+      ]
+    }
+  ],
+  "Plaza de Mercado Las Ferias, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309424423,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 583317195,
+      "lat": "4.6862592",
+      "lon": "-74.0894958",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de mercado Las Ferias",
+      "display_name": "Plaza de mercado Las Ferias, 69Q - 35, Calle 74B, Las Ferias, UPZs Localidad Engativá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111061, Colombia",
+      "address": {
+        "amenity": "Plaza de mercado Las Ferias",
+        "house_number": "69Q - 35",
+        "road": "Calle 74B",
+        "neighbourhood": "Las Ferias",
+        "quarter": "UPZs Localidad Engativá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111061",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6858070",
+        "4.6869300",
+        "-74.0899251",
+        "-74.0889403"
+      ]
+    }
+  ],
+  "Plaza de Mercado Lucero, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309044416,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 540854676,
+      "lat": "4.5493400",
+      "lon": "-74.1396597",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado Los Luceros",
+      "display_name": "Plaza de Mercado Los Luceros, Calle 69B Sur, La Alameda, UPZs de Bogotá, Localidad Ciudad Bolivar, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111961, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado Los Luceros",
+        "road": "Calle 69B Sur",
+        "neighbourhood": "La Alameda",
+        "suburb": "Localidad Ciudad Bolivar",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111961",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5490825",
+        "4.5497603",
+        "-74.1398800",
+        "-74.1394342"
+      ]
+    }
+  ],
+  "Plaza de Mercado Quirigua, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308486285,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 185139032,
+      "lat": "4.7139676",
+      "lon": "-74.0980923",
+      "category": "building",
+      "type": "retail",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "building",
+      "name": "Plaza de Mercado Quirigua",
+      "display_name": "Plaza de Mercado Quirigua, Avenida Calle 90, Bachue II, UPZs de Bogotá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111021, Colombia",
+      "address": {
+        "building": "Plaza de Mercado Quirigua",
+        "road": "Avenida Calle 90",
+        "neighbourhood": "Bachue II",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111021",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7135304",
+        "4.7142491",
+        "-74.0984337",
+        "-74.0976954"
+      ]
+    },
+    {
+      "place_id": 308540152,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 3995754387,
+      "lat": "4.7140140",
+      "lon": "-74.0978623",
+      "category": "shop",
+      "type": "craft",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Artesanías Rosa de Ráquira",
+      "display_name": "Artesanías Rosa de Ráquira, Plaza de mercado Quirigua, Carrera 93, UPZs de Bogotá, Localidad Engativá, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111021, Colombia",
+      "address": {
+        "shop": "Artesanías Rosa de Ráquira",
+        "house_number": "Plaza de mercado Quirigua",
+        "road": "Carrera 93",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Engativá",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111021",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.7139640",
+        "4.7140640",
+        "-74.0979123",
+        "-74.0978123"
+      ]
+    }
+  ],
+  "Plaza de Mercado Restrepo, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309664781,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 97868570,
+      "lat": "4.5852697",
+      "lon": "-74.1025264",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado del Restrepo",
+      "display_name": "Plaza de Mercado del Restrepo, Carrera 19, Restrepo, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado del Restrepo",
+        "road": "Carrera 19",
+        "neighbourhood": "Restrepo",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5847367",
+        "4.5858025",
+        "-74.1030708",
+        "-74.1019821"
+      ]
+    },
+    {
+      "place_id": 309865082,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 704386851,
+      "lat": "4.5914791",
+      "lon": "-74.1118799",
+      "category": "shop",
+      "type": "convenience",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Plaza de Mercado Santander",
+      "display_name": "Plaza de Mercado Santander, Calle 27 Sur, Santander Sur, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "shop": "Plaza de Mercado Santander",
+        "road": "Calle 27 Sur",
+        "neighbourhood": "Santander Sur",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5911853",
+        "4.5917789",
+        "-74.1122578",
+        "-74.1115036"
+      ]
+    }
+  ],
+  "Plaza de Mercado Samper Mendoza, Bogotá D.C., Colombia": [
+    {
+      "place_id": 307563979,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 588449417,
+      "lat": "4.6187371",
+      "lon": "-74.0827221",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de Mercado Samper Mendoza",
+      "display_name": "Plaza de Mercado Samper Mendoza, Calle 22A, UPZs de Bogotá, Localidad Los Mártires, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111411, Colombia",
+      "address": {
+        "amenity": "Plaza de Mercado Samper Mendoza",
+        "road": "Calle 22A",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Los Mártires",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111411",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6182652",
+        "4.6192090",
+        "-74.0831669",
+        "-74.0822773"
+      ]
+    }
+  ],
+  "Plaza de Mercado San Benito, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308422149,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 926653828,
+      "lat": "4.5613629",
+      "lon": "-74.1299344",
+      "category": "amenity",
+      "type": "marketplace",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "amenity",
+      "name": "Plaza de mercado San Benito",
+      "display_name": "Plaza de mercado San Benito, Calle 57 Sur, Tunjuelito, UPZs de Bogotá, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110621, Colombia",
+      "address": {
+        "amenity": "Plaza de mercado San Benito",
+        "road": "Calle 57 Sur",
+        "neighbourhood": "Tunjuelito",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110621",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5613129",
+        "4.5614129",
+        "-74.1299844",
+        "-74.1298844"
+      ]
+    }
+  ],
+  "Plaza de Mercado San Carlos, Bogotá D.C., Colombia": [
+    {
+      "place_id": 308445244,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 926661880,
+      "lat": "4.5688385",
+      "lon": "-74.1288187",
+      "category": "shop",
+      "type": "supermarket",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Plaza de Mercado San Carlos",
+      "display_name": "Plaza de Mercado San Carlos, Calle 51 Sur, San Carlos, UPZs de Bogotá, Localidad Tunjuelito, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 110621, Colombia",
+      "address": {
+        "shop": "Plaza de Mercado San Carlos",
+        "road": "Calle 51 Sur",
+        "neighbourhood": "San Carlos",
+        "suburb": "Localidad Tunjuelito",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "110621",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5687885",
+        "4.5688885",
+        "-74.1288687",
+        "-74.1287687"
+      ]
+    }
+  ],
+  "Plaza de Mercado Santander, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309865082,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 704386851,
+      "lat": "4.5914791",
+      "lon": "-74.1118799",
+      "category": "shop",
+      "type": "convenience",
+      "place_rank": 30,
+      "importance": 0.00007831921873803338,
+      "addresstype": "shop",
+      "name": "Plaza de Mercado Santander",
+      "display_name": "Plaza de Mercado Santander, Calle 27 Sur, Santander Sur, UPZs de Bogotá, Localidad Antonio Nariño, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111511, Colombia",
+      "address": {
+        "shop": "Plaza de Mercado Santander",
+        "road": "Calle 27 Sur",
+        "neighbourhood": "Santander Sur",
+        "suburb": "Localidad Antonio Nariño",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111511",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.5911853",
+        "4.5917789",
+        "-74.1122578",
+        "-74.1115036"
+      ]
+    }
+  ],
+  "Plaza de Mercado Trinidad Galán, Bogotá D.C., Colombia": [],
+  "Carrera 60 #5-00, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309628628,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 89876844,
+      "lat": "4.6248987",
+      "lon": "-74.1182184",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 60",
+      "display_name": "Carrera 60, La Trinidad, UPZs de Bogotá, Localidad Puente Aranda, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111611, Colombia",
+      "address": {
+        "road": "Carrera 60",
+        "neighbourhood": "La Trinidad",
+        "suburb": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111611",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6241661",
+        "4.6256381",
+        "-74.1188316",
+        "-74.1176133"
+      ]
+    },
+    {
+      "place_id": 309635780,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 443458498,
+      "lat": "4.6212077",
+      "lon": "-74.1212402",
+      "category": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 60",
+      "display_name": "Carrera 60, Galán, UPZs de Bogotá, Localidad Puente Aranda, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111611, Colombia",
+      "address": {
+        "road": "Carrera 60",
+        "neighbourhood": "Galán",
+        "suburb": "Localidad Puente Aranda",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111611",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6211555",
+        "4.6212598",
+        "-74.1212846",
+        "-74.1211958"
+      ]
+    },
+    {
+      "place_id": 310911524,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 603099614,
+      "lat": "4.6787925",
+      "lon": "-74.0751555",
+      "category": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.05341165255207138,
+      "addresstype": "road",
+      "name": "Carrera 60",
+      "display_name": "Carrera 60, UPZs de Bogotá, Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, 111211, Colombia",
+      "address": {
+        "road": "Carrera 60",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "postcode": "111211",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6787620",
+        "4.6788230",
+        "-74.0752159",
+        "-74.0750951"
+      ]
+    }
+  ],
+  "Vive Claro — centro nacional de acopio, Bogotá D.C., Colombia": [],
+  "Calle 53 con Carrera 60, Puerta 4, Bogotá D.C., Colombia": [],
+  "Salitre, Bogotá D.C., Colombia": [
+    {
+      "place_id": 309932090,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 78285525,
+      "lat": "4.6729745",
+      "lon": "-74.1171786",
+      "category": "landuse",
+      "type": "commercial",
+      "place_rank": 24,
+      "importance": 0.24782860043147328,
+      "addresstype": "commercial",
+      "name": "Atento Colombia Sede Salitre",
+      "display_name": "Atento Colombia Sede Salitre, UPZs de Bogotá, Localidad Fontibón, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "commercial": "Atento Colombia Sede Salitre",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Fontibón",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6727083",
+        "4.6733369",
+        "-74.1175505",
+        "-74.1168082"
+      ]
+    },
+    {
+      "place_id": 309125849,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 175365129,
+      "lat": "4.6673872",
+      "lon": "-74.0880920",
+      "category": "natural",
+      "type": "wetland",
+      "place_rank": 22,
+      "importance": 0.19283288150311992,
+      "addresstype": "wetland",
+      "name": "Humedal El Salitre",
+      "display_name": "Humedal El Salitre, UPZs de Bogotá, Localidad Barrios Unidos, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "wetland": "Humedal El Salitre",
+        "neighbourhood": "UPZs de Bogotá",
+        "suburb": "Localidad Barrios Unidos",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6664413",
+        "4.6683265",
+        "-74.0884655",
+        "-74.0873968"
+      ]
+    },
+    {
+      "place_id": 309383012,
+      "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "relation",
+      "osm_id": 11375470,
+      "lat": "4.6547615",
+      "lon": "-74.1108754",
+      "category": "boundary",
+      "type": "administrative",
+      "place_rank": 18,
+      "importance": 0.16007831921873805,
+      "addresstype": "quarter",
+      "name": "UPZ Ciudad Salitre Occidental",
+      "display_name": "UPZ Ciudad Salitre Occidental, Localidad Fontibón, Bogotá, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+      "address": {
+        "quarter": "UPZ Ciudad Salitre Occidental",
+        "suburb": "Localidad Fontibón",
+        "city": "Bogotá",
+        "state": "Bogotá, Distrito Capital",
+        "ISO3166-2-lvl4": "CO-DC",
+        "region": "RAP (Especial) Central",
+        "country": "Colombia",
+        "country_code": "co"
+      },
+      "boundingbox": [
+        "4.6451602",
+        "4.6664573",
+        "-74.1208036",
+        "-74.1034380"
+      ]
+    }
+  ]
 }

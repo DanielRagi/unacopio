@@ -1,0 +1,47 @@
+{
+  "_lea_esto_primero": [
+    "Cuarta ronda, 21 de agosto de 2026. La emergencia cambio de fase y el mapa de Bogota se rehizo entero.",
+    "",
+    "Los seis puntos de la Alcaldia y la Cruz Roja se suspendieron el 17 de agosto; el 18 reabrio",
+    "solo el Palacio de los Deportes, que Galan declaro 'el unico habilitado de ahora en adelante'.",
+    "En paralelo aparecieron dos cosas nuevas y vigentes: las 19 plazas distritales de mercado",
+    "(bogota.gov.co, 19 de agosto) y el centro nacional de acopio en Vive Claro, hasta el 31 de agosto.",
+    "",
+    "Los nueve Supercades que anuncio Infobae el 19 NO se cargan: su ventana era del 18 al 20 de",
+    "agosto y ya paso.",
+    "",
+    "NADA DE ESTO ESTA VERIFICADO POR TELEFONO. Todo entra como pendiente."
+  ],
+  "municipio_codigo": "11001",
+  "municipio": "Bogotá D.C.",
+  "recolectado_en": "2026-08-21",
+  "fuente_principal": {
+    "nombre": "Alcaldía Mayor de Bogotá — Instituto para la Economía Social (IPES)",
+    "url": "https://bogota.gov.co/mi-ciudad/desarrollo-economico/plazas-distritales-de-mercado-de-bogota-puntos-acopio-ayudas-terremoto"
+  },
+  "recibe": ["no_perecederos", "granos", "enlatados", "aceite", "panela_azucar"],
+  "no_recibe": [],
+  "nota_categorias": "Las plazas piden alimentos no perecederos —granos, legumbres, leguminosas, abarrotes y viveres— y ademas elementos desechables como vasos y cucharas, que no tienen categoria propia en UnAcopio y van en la nota.",
+  "horario_reportado": "Horario por confirmar",
+  "puntos": [
+    { "nombre": "Plaza de Mercado 12 de Octubre", "tipo": "alcaldia", "direccion": "Calle 72 #51-62", "barrio": "Barrios Unidos" },
+    { "nombre": "Plaza de Mercado 20 de Julio", "tipo": "alcaldia", "direccion": "Carrera 6 #24-60 Sur", "barrio": "San Cristóbal" },
+    { "nombre": "Plaza de Mercado 7 de Agosto", "tipo": "alcaldia", "direccion": "Calle 66 #23-30", "barrio": "Barrios Unidos" },
+    { "nombre": "Plaza de Mercado Boyacá", "tipo": "alcaldia", "direccion": "Calle 68B #73A-44", "barrio": "Engativá" },
+    { "nombre": "Plaza de Mercado El Carmen", "tipo": "alcaldia", "direccion": "Diagonal 49 Sur #29A-07", "barrio": "Tunjuelito" },
+    { "nombre": "Plaza de Mercado Fontibón", "tipo": "alcaldia", "direccion": "Calle 19 #103-09", "barrio": "Fontibón" },
+    { "nombre": "Plaza de Mercado Kennedy", "tipo": "alcaldia", "direccion": "Calle 42 Sur #78M-50", "barrio": "Kennedy" },
+    { "nombre": "Plaza de Mercado La Concordia", "tipo": "alcaldia", "direccion": "Calle 12C #1-40", "barrio": "La Candelaria" },
+    { "nombre": "Plaza de Mercado Las Cruces", "tipo": "alcaldia", "direccion": "Calle 1F #4-60", "barrio": "Santa Fe" },
+    { "nombre": "Plaza de Mercado La Perseverancia", "tipo": "alcaldia", "direccion": "Carrera 5 #30A-30", "barrio": "Santa Fe" },
+    { "nombre": "Plaza de Mercado Las Ferias", "tipo": "alcaldia", "direccion": "Calle 74B #69Q-35", "barrio": "Engativá" },
+    { "nombre": "Plaza de Mercado Lucero", "tipo": "alcaldia", "direccion": "Carrera 17F Sur #69A-50", "barrio": "Ciudad Bolívar" },
+    { "nombre": "Plaza de Mercado Quirigua", "tipo": "alcaldia", "direccion": "Calle 90 #91-51", "barrio": "Engativá" },
+    { "nombre": "Plaza de Mercado Restrepo", "tipo": "alcaldia", "direccion": "Carrera 19 Sur #18-51", "barrio": "Antonio Nariño" },
+    { "nombre": "Plaza de Mercado Samper Mendoza", "tipo": "alcaldia", "direccion": "Carrera 25 #22A-13", "barrio": "Los Mártires" },
+    { "nombre": "Plaza de Mercado San Benito", "tipo": "alcaldia", "direccion": "Carrera 19C Sur #50-90", "barrio": "Tunjuelito" },
+    { "nombre": "Plaza de Mercado San Carlos", "tipo": "alcaldia", "direccion": "Carrera 19C Sur #50A-90", "barrio": "Tunjuelito" },
+    { "nombre": "Plaza de Mercado Santander", "tipo": "alcaldia", "direccion": "Calle 26 Sur #30-51", "barrio": "Antonio Nariño" },
+    { "nombre": "Plaza de Mercado Trinidad Galán", "tipo": "alcaldia", "direccion": "Carrera 60 #5-00", "barrio": "Puente Aranda" }
+  ]
+}

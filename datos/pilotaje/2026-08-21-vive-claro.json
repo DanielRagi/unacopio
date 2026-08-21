@@ -1,0 +1,26 @@
+{
+  "_lea_esto_primero": [
+    "Centro nacional de acopio del Gobierno Nacional, habilitado por OCESA y Vive Claro.",
+    "Es el punto de mayor capacidad del pais y tiene fecha de cierre publicada: 31 de agosto de 2026."
+  ],
+  "municipio_codigo": "11001",
+  "municipio": "Bogotá D.C.",
+  "recolectado_en": "2026-08-21",
+  "fuente_principal": {
+    "nombre": "Gobierno Nacional / OCESA — Vive Claro, vía La FM y El Tiempo",
+    "url": "https://www.lafm.com.co/actualidad/vive-claro-sera-centro-nacional-de-acopio-del-gobierno-nacional-para-la-recepcion-y-despacho-de-ayudas-a-los-damnificados-por-el-terremoto-en-colombia-408284"
+  },
+  "recibe": ["agua_embotellada", "no_perecederos", "granos", "enlatados", "aceite", "panela_azucar", "colchonetas", "cobijas", "sabanas", "jabon", "cepillo_crema_dental", "papel_higienico", "toallas_higienicas", "panales_bebe", "botiquin", "voluntarios"],
+  "no_recibe": [],
+  "puntos": [
+    {
+      "nombre": "Vive Claro — centro nacional de acopio",
+      "tipo": "gobernacion",
+      "direccion": "Calle 53 con Carrera 60, Puerta 4",
+      "barrio": "Salitre",
+      "horario": "Todos los días de 8:00 a. m. a 5:00 p. m., hasta el 31 de agosto de 2026",
+      "urgente": ["jabon", "cepillo_crema_dental", "colchonetas", "cobijas"],
+      "nota": "Centro nacional de acopio del Gobierno Nacional para recibir, clasificar y despachar ayudas hacia Chocó, Caldas, Risaralda, Valle del Cauca, Quindío, Cauca y Tolima. Las empresas, camiones y vehículos de gran formato entran por la Puerta 4 (Calle 53 con Carrera 60); las donaciones de particulares en carro, por la Puerta Vehicular 2. También reciben voluntarios."
+    }
+  ]
+}

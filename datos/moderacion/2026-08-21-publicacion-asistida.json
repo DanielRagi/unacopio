@@ -1,0 +1,114 @@
+{
+  "_lea_esto_primero": "Cuarta pasada de moderación asistida (21 de agosto de 2026). Puntos nuevos de Bogotá tras el cambio de fase de la emergencia. Ninguno está confirmado por teléfono.",
+  "fecha": "2026-08-21",
+  "criterios_para_publicar": [
+    "Fuente oficial y reciente: bogota.gov.co del 19 de agosto para las plazas, Gobierno Nacional y OCESA para Vive Claro.",
+    "Pin verificado: 15 plazas las ubicó Nominatim por su nombre propio; el 7 de Agosto, Trinidad Galán y Vive Claro se confirmaron contra Photon con el tipo de sitio correcto (marketplace, supermarket, events_venue).",
+    "Vigencia comprobada: se descartaron los nueve Supercades porque su ventana era del 18 al 20 de agosto y ya pasó."
+  ],
+  "publicar": [
+    {
+      "id": "82e9f615-4e96-49e4-9e7f-7aa171e203a1",
+      "nombre": "Plaza de Mercado 12 de Octubre",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "2e755799-0d08-43c3-87f6-2e8cf60bca22",
+      "nombre": "Plaza de Mercado 20 de Julio",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "dfe670da-97e4-46cc-9832-bab026d2fd9b",
+      "nombre": "Plaza de Mercado 7 de Agosto",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "5222e3a0-595b-43f9-9514-1c4597d5f408",
+      "nombre": "Plaza de Mercado Fontibón",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "f0770b62-6c8c-4f25-99da-3fa7ca104746",
+      "nombre": "Plaza de Mercado Kennedy",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "ee453659-396e-4ffd-8f09-aab2c56343af",
+      "nombre": "Plaza de Mercado La Concordia",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "d2188d7a-340f-45e3-80fa-9ccd184dff29",
+      "nombre": "Plaza de Mercado Las Cruces",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "7fd5f497-bfcc-4b33-8f4b-c8597b68ea93",
+      "nombre": "Plaza de Mercado La Perseverancia",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "408d30c2-e7d6-47ad-b3bb-59d326437c43",
+      "nombre": "Plaza de Mercado Las Ferias",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "4a780908-d3de-4885-b2f8-31a76616475c",
+      "nombre": "Plaza de Mercado Lucero",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "3b2966c6-477a-45d8-93ac-7ed46088714b",
+      "nombre": "Plaza de Mercado Quirigua",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "9469f725-78b0-40b9-bc0a-a82ffc9c25a3",
+      "nombre": "Plaza de Mercado Restrepo",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "eafb5a1d-6780-4645-9a53-1351540c00e9",
+      "nombre": "Plaza de Mercado Samper Mendoza",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "95a41ff6-94e7-48a7-b7b1-6719758ef3c6",
+      "nombre": "Plaza de Mercado San Benito",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "354cd68b-76a7-4b77-bb4f-c9a43b6d8622",
+      "nombre": "Plaza de Mercado San Carlos",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "600cad0d-9421-4111-a135-663fd7dcd53d",
+      "nombre": "Plaza de Mercado Santander",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "191fafe5-6991-4ba6-9558-6793224e5083",
+      "nombre": "Plaza de Mercado Trinidad Galán",
+      "notas": "Punto de acopio del Instituto para la Economía Social (IPES) en una plaza distrital de mercado. Reciben alimentos no perecederos —granos, legumbres, abarrotes y víveres— y también elementos desechables como vasos y cucharas. Pregunta el horario al llegar: la Alcaldía no lo publicó."
+    },
+    {
+      "id": "6bee9575-eb6c-4cd7-ba69-a4454a455ab3",
+      "nombre": "Vive Claro — centro nacional de acopio",
+      "notas": "Centro nacional de acopio del Gobierno Nacional: acá se reciben, clasifican y despachan las ayudas hacia Chocó, Caldas, Risaralda, Valle del Cauca, Quindío, Cauca y Tolima. Es el punto de mayor capacidad del país. Las empresas, camiones y vehículos grandes entran por la Puerta 4, en la Calle 53 con Carrera 60; las donaciones de particulares en carro, por la Puerta Vehicular 2. También reciben voluntarios.",
+      "fecha_fin": "2026-08-31"
+    }
+  ],
+  "dejar_pendiente": [
+    {
+      "id": "044fd6ae-0bc4-4e09-a4cf-a09c894a08e0",
+      "nombre": "Plaza de Mercado Boyacá",
+      "motivo": "El pin quedó a ~4 km de la Calle 68B con Carrera 73A y ni Photon ni el cruce de vías la conocen. Moverlo a mano y publicar: la fuente es la Alcaldía."
+    },
+    {
+      "id": "31bf6890-ceed-4985-a6bd-67f4792db88c",
+      "nombre": "Plaza de Mercado El Carmen",
+      "motivo": "Pin ubicado solo por barrio (Tunjuelito), a ~1,6 km de la dirección. Moverlo a mano y publicar: la fuente es la Alcaldía."
+    }
+  ]
+}
